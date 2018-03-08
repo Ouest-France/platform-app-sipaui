@@ -89,12 +89,16 @@ gulp.task("clean-js", function() {
     ]);
 });
 
-gulp.task('copie-prod', function () {
-    del(destination);
-    return gulp.src([source + '/**/*',
-                  '!' + source + '/assets/css/*.min.css',
+gulp.task('clean-prod', function () {
+    return del(destination);
+});
+gulp.task('copie-prod', ['clean-prod'], function () {
+
+    return
+        gulp.src([source + '/**/*',
+                  '!' + source + '/assets/css/!(*.min).css',
                   '!' + source + '/src{,/**}'])
-    .pipe(gulp.dest(destination + ''));
+        .pipe(gulp.dest(destination + ''));
 });
 
 
