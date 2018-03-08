@@ -1,0 +1,172 @@
+// SipaUI
+// Variables
+//
+
+// voir https://robots.thoughtbot.com/sass-default pour explications sur !default
+
+
+$version:                   0.0.1;
+$urlDossierFont: 			'../fonts' !default;
+
+// RUPTURES ------------------------------------------------------------------------------------------------------------------
+$min-breakpoint-mobile-wide:    30em;      /* min-breakpoint-mobile-wide :      480px */
+$min-breakpoint-tablet:         48em;      /* $min-breakpoint-tablet :          768px */
+$min-breakpoint-desktop:        61.25em;   /* $min-breakpoint-desktop :         980px */
+$min-breakpoint-desktop-wide:   80em;      /* $min-breakpoint-desktop-wide :    1280px */
+
+$max-breakpoint-mobile-narrow:  29.938em;   /* $max-breakpoint-mobile-narrow :  479px */
+$max-breakpoint-mobile:         47.938em;   /* $max-breakpoint-mobile :         767px */
+$max-breakpoint-tablet:         61.188em;   /* $max-breakpoint-tablet :         979px */
+$max-breakpoint-desktop:        79.938em;   /* $max-breakpoint-desktop :        1279px */
+
+// COULEURS ------------------------------------------------------------------------------------------------------------------
+// NUANCIER
+$blanc:                     #fff    !default;
+$gris-tres-clair:			#efefef !default;
+$gris-plus-clair:           #d4d4d4 !default;
+$gris-clair:                #c1bfc0 !default;
+$gris:                      #878787 !default;
+$gris-fonce:                #666    !default;
+$gris-plus-fonce:           #333    !default;
+$noir:                      #000    !default;
+
+$rouge:                     #e2001a !default;
+$rouge-fonce:               #b40015 !default;
+$rouge-plus-fonce:          #8c0010 !default;
+
+// COULEURS DOMINANTES
+$couleur-principale-1: $blanc               !default;
+$couleur-principale-2: $gris-tres-clair     !default;
+$couleur-principale-3: $gris-plus-clair     !default;
+$couleur-principale-4: $gris-clair          !default;
+$couleur-principale-5: $gris                !default;
+$couleur-principale-6: $gris-fonce          !default;
+$couleur-principale-7: $gris-plus-fonce     !default;
+$couleur-principale-8: $noir                !default;
+
+$couleur-secondaire-1: $rouge               !default;
+$couleur-secondaire-2: $rouge-fonce         !default;
+$couleur-secondaire-3: $rouge-plus-fonce    !default;
+$couleur-secondaire-4: null                 !default;
+
+// RÉSEAUX SOCIAUX ET MARQUES
+$facebook:          #3b5998   !default;
+$twitter:           #55acee   !default;
+$linkedin:          #0e76a8   !default;
+$google:            #dd4839   !default;
+$fluxrss:           #f0801a   !default;
+$snapchat:          #fffc00   !default;
+$viadeo:            #ec7500   !default;
+$youtube:           #bb0000   !default;
+$instagram:         #e23076   !default;
+$pinterest:         #cb2027   !default;
+$vine:              #00bf8f   !default;
+$tumblr:            #32506d   !default;
+$soundcloud:        #FF6600   !default;
+$itunes:            #000000   !default;
+$flickr:            #0063DC   !default;
+$dailymotion:       #0066dc   !default;
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+// TYPO ----------------------------------------------------------------------------------
+$font-family-base:       Arial, Helvetica, sans-serif !default;
+$font-family-secondaire: null !default;
+
+$font-size-root: 10px !default;// Valeur en pixel pour s'adapter au responsive. Appliqué à l'élément <html>.
+$font-size-xsmall:  1.2rem !default;
+$font-size-small:   1.4rem !default;
+$font-size-medium1: 1.6rem !default;
+$font-size-medium2: 1.8rem !default;
+$font-size-tall:    2.4rem !default;
+$font-size-xtall:   3rem   !default;
+$font-size-xxtall:  4rem   !default;
+
+$smaller-font-size: 80% !default;
+
+$line-height-base:  1.5 !default;
+
+$font-weight-maigre: 300 !default;
+$font-weight-medium: 500 !default;
+$font-weight-gras:   700 !default;
+
+// Texte standard
+$color-texte: $couleur-principale-8 !default;
+$font-size-base: $font-size-medium1 !default;
+
+// Titres
+$font-family-titres: $font-family-secondaire !default;
+$color-titres: null              !default;
+$font-size-h1: $font-size-xxtall !default;
+$margin-bottom-h1: $font-size-h1 * 1.2  !default;
+$font-size-h2: $font-size-xtall  !default;
+$margin-bottom-h2: $font-size-h2 * 1.1  !default;
+$font-size-h3: $font-size-tall   !default;
+$margin-bottom-h3: $font-size-h3 * 1  !default;
+$font-size-h4: $font-size-medium2   !default;
+$font-size-h5: $font-size-base   !default;
+$font-size-h6: $font-size-base   !default;
+$font-weight-titres: $font-weight-medium !default;
+
+// MARGES --------------------------------------------------------------------------------
+//margin-bottom
+$margin-xsmall:     .5rem   !default;
+$margin-small:      1rem    !default;
+$margin-medium1:    1.5rem  !default;
+$margin-medium2:    2rem    !default;
+$margin-large:      3rem    !default;
+$margin-xlarge:     4rem    !default;
+
+$margin-standard: $margin-medium2;
+$margin-standard-large: $margin-xlarge;
+
+// OMBRES --------------------------------------------------------------------------------
+$ombre-1: 0 0 10px rgba(0,0,0, .5) !default;
+
+
+// VARIABLES OBJETS -----------------------------------------------------------------------------------------------------------------------------------------
+// BODY
+$background-body: null !default;
+
+// LIENS STANDARDS
+$color-lien:         $couleur-principale-5  !default;
+$color-lien-hover:   $couleur-secondaire-2  !default;
+$color-lien-active:  $color-lien-hover      !default;
+$color-lien-focus:   $color-lien-hover      !default;
+$color-lien-visited: $color-texte           !default;
+
+// LIENS NEUTRES
+$color-lien-neutre:         $color-texte                !default;
+$color-lien-neutre-hover:   $color-lien-hover           !default;
+$color-lien-neutre-active:  $color-lien-neutre-hover    !default;
+$color-lien-neutre-focus:   $color-lien-neutre-hover    !default;
+$color-lien-neutre-visited: $color-texte                !default;
+
+// LIENS ÉDITORIAUX
+$color-lien-voyant:         $couleur-secondaire-1       !default;
+$color-lien-voyant-hover:   $color-lien-hover           !default;
+$color-lien-voyant-active:  $color-lien-voyant-hover    !default;
+$color-lien-voyant-focus:   $color-lien-voyant-hover    !default;
+$color-lien-voyant-visited: $couleur-secondaire-3       !default;
+
+// BOUTONS
+$background-bouton: $couleur-principale-3   !default;
+$color-bouton: $couleur-principale-8        !default;
+$border-bouton: null                        !default;
+$radius-bouton: .3rem                       !default;
+$shadow-bouton: null                        !default;
+$font-family-bouton: null                   !default;
+$font-weight-bouton: $font-weight-gras      !default;
+$padding-bouton: 1.2rem 2rem                !default;
+// hover
+$background-bouton-hover: $couleur-principale-4 !default;
+$color-bouton-hover: $couleur-principale-8      !default;
+$border-bouton-hover: null                      !default;
+$shadow-bouton-hover: null                      !default;
+
+// TABLEAUX
+$border-tableau: 1px solid $couleur-principale-3        !default;
+$padding-tableau: $margin-xsmall                        !default;
+$border-tableau-plus: 1px solid $couleur-principale-4   !default;
+$background-tableau-plus-header: $couleur-principale-3  !default;
+$background-tableau-plus-even: lighten($couleur-principale-2, 5%)    !default;

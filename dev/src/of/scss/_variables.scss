@@ -1,0 +1,127 @@
+// Ouest-France
+// Variables
+//
+
+// COULEURS ------------------------------------------------------------------------------------------------------------------
+// NUANCIER OUEST-FRANCE
+$blanc:                     #fff;
+$gris-tres-clair:			#efefef;
+$gris-plus-clair:           #d4d4d4;
+$gris-clair:                #c1bfc0;
+$gris:                      #878787;
+$gris-fonce:                #666;
+$gris-plus-fonce:           #333;
+$noir:                      #000;
+
+                                                    $gris02:           #c1bfc0;
+                                                    $gris02-fonce:     #999596;
+                                                    $gris02-plus-fonce:#6e6868;
+
+$rouge:                     #e2001a;
+$rouge-fonce:               #b40015;
+$rouge-plus-fonce:          #8c0010;
+
+$jaune:                     #fc3   ;
+$jaune-fonce:               #e7af07;
+$jaune-plus-fonce:          #b28600;
+
+$jaune02:                   #dba504;
+$jaune02-fonce:             #c2940c;
+
+$bleu-clair:                #3b99fc;
+$bleu:                      #004864;
+$bleu-fonce:                #003448;
+$bleu-plus-fonce:           #001A23;
+
+$vermillon:                 #F7440B;
+$vermillon-fonce:           #C12F01;
+$vermillon-plus-fonce:      #982500;
+
+$vert:                      #87A62C;
+$vert-fonce:                #678511;
+$vert-plus-fonce:           #445C00;
+
+$turquoise:                 #127173;
+$turquoise-fonce:           #004646;
+$turquoise-plus-fonce:      #002A2A;
+
+$turquoiseFormation:        #01adc5;
+
+
+// APPLICATION DES COULEURS ---------------------------------------
+
+// UNIVERS OUEST-FRANCE
+$body-bg:    $blanc;
+$body-color: $gris-plus-fonce;
+
+$actu-1: $rouge;
+$actu-2: $rouge-fonce;
+$actu-3: $rouge-plus-fonce;
+
+$loisir-1: $vermillon;
+$loisir-2: $vermillon-fonce;
+$loisir-3: $vermillon-plus-fonce;
+
+$entreprise-1: $bleu;
+$entreprise-2: $bleu-fonce;
+$entreprise-3: $bleu-plus-fonce;
+
+$sport-1: $vert;
+$sport-2: $vert-fonce;
+$sport-3: $vert-plus-fonce;
+
+$abo-1: $jaune;
+$abo-2: $jaune-fonce;
+$abo-3: $jaune-plus-fonce;
+
+$etudiants-1: $turquoise;
+$etudiants-2: $turquoise-fonce;
+$etudiants-3: $turquoise-plus-fonce;
+
+                                                                    $annexes-1: $gris02;
+                                                                    $annexes-2: $gris02-fonce;
+                                                                    $annexes-3: $gris02-plus-fonce;
+
+$services-1: $gris02;
+$services-2: $gris02-fonce;
+$services-3: $gris02-plus-fonce;
+
+$formation-1: $turquoiseFormation;
+
+$premium-1:   $jaune02;
+$premium-2:   $jaune02-fonce;
+
+
+// COULEURS DOMINANTES
+$couleur-principale-1: $blanc;
+$couleur-principale-2: $gris-tres-clair;
+$couleur-principale-3: $gris-plus-clair;
+$couleur-principale-4: $gris-clair;
+$couleur-principale-5: $gris;
+$couleur-principale-6: $gris-fonce;
+$couleur-principale-7: $gris-plus-fonce;
+$couleur-principale-8: $noir;
+
+$couleur-secondaire-1: $rouge;
+$couleur-secondaire-2: $rouge-fonce;
+$couleur-secondaire-3: $rouge-plus-fonce;
+$couleur-secondaire-4: null;
+
+
+// VARIABLES OBJETS -----------------------------------------------------------------------------------------------------------------------------------------
+
+// BOUTONS
+$background-bouton: $couleur-secondaire-1;
+$color-bouton: $couleur-principale-1;
+$border-bouton: null;
+$radius-bouton: .3rem;
+$shadow-bouton: null;
+$font-family-bouton: null;
+//$font-weight-bouton: $font-weight-gras;
+$font-weight-bouton: 300;
+$padding-bouton: 1.2rem 2rem;
+// hover
+$background-bouton-hover: $couleur-secondaire-2;
+$color-bouton-hover: $color-bouton;
+$border-bouton-hover: null;
+$shadow-bouton-hover: null;

@@ -1,0 +1,201 @@
+// SipaUI
+/* Styles globaux */
+//
+
+html {
+    box-sizing: border-box;
+    font-size: $font-size-root;
+    // voir https://github.com/twbs/bootstrap/issues/18543 (bug ergo IE 10 : interraction gênante entre la scrollbar et une eventuelle zone active à côté de la scrollbar)
+    -ms-overflow-style: scrollbar;
+    height: 100%;
+    -webkit-overflow-scrolling: touch; // Pour avoir un défilement avec inertie sur les blocs avec scroll (ie : burger)
+}
+
+html *,
+html *::before,
+html *::after {
+    box-sizing: border-box;
+}
+
+* {
+    outline: none;
+}
+
+
+body {
+    height: 100%;
+    background: $background-body;
+    min-height: 100vh;
+    position: relative;
+}
+
+// Voir https://getbootstrap.com/getting-started/#support-ie10-width pour l'explication du hack.
+@at-root {
+    @-ms-viewport { width: device-width; }
+}
+
+// Credit: https://github.com/suitcss/base
+[tabindex="-1"]:focus {
+    outline: none !important;
+}
+
+//
+/* -- CODE -------------------------------------------------------------------- */
+//
+pre {
+    // Reset des marges
+    margin-top: 0;
+    margin-bottom: 1rem;
+    // Normalize v4 a enlevé cette propriété, ce qui fait que le contenu de <pre> sort de sont bloc s'il est plus long que la taille du <pre>
+    overflow: auto;
+}
+
+
+//
+/* -- FIGURES -------------------------------------------------------------------- */
+//
+figure {
+    margin: 0 0 1rem;
+}
+
+
+//
+/* -- IMAGES -------------------------------------------------------------------- */
+//
+img {
+    // centre par défaut les images verticalement
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+
+// iOS : apparence cliquable pour les éléments théoriquement non cliquables (ie: <div> cliquable par JS) avec un role="button"
+// voir https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+[role="button"] {
+    cursor: pointer;
+}
+// Avoid 300ms click delay on touch devices that support the `touch-action` CSS property.
+//
+// In particular, unlike most other browsers, IE11+Edge on Windows 10 on touch devices and IE Mobile 10-11
+// DON'T remove the click delay when `<meta name="viewport" content="width=device-width">` is present.
+// However, they DO support removing the click delay via `touch-action: manipulation`.
+// See:
+// * https://v4-alpha.getbootstrap.com/content/reboot/#click-delay-optimization-for-touch
+// * http://caniuse.com/#feat=css-touch-action
+// * https://patrickhlauke.github.io/touch/tests/results/#suppressing-300ms-delay
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+    touch-action: manipulation;
+}
+
+//
+/* -- TIME -------------------------------------------------------------------- */
+//
+time {
+    vertical-align: top;
+}
+//
+/* -- TABLES -------------------------------------------------------------------- */
+//
+table {
+    // Retiré de Normalize depuis la v4
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+    caption-side: bottom;
+}
+
+th {
+    // Par défaut, le contenu des th est centré. On force le ferrage à gauche.
+    text-align: left;
+}
+th,
+td {
+    vertical-align: top;
+    padding-right: $margin-small;
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+//
+/* -- FORMS -------------------------------------------------------------------- */
+//
+label {
+    // Permet aux labels d'utiliser le margin pour gérer l'espace.
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+input,
+button,
+select,
+textarea {
+    // Normalize inclut `font: inherit;`, so `font-family`. `font-size`, etc are
+    // properly inherited. However, `line-height` isn't inherited there.
+    line-height: inherit;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    // Force le curseur sur les cases à cocher ou  les boutons radio.
+    //
+    // Note: ni les boutons radios ni les cases à cocher ne peuvent être en "read-only".
+    &:disabled {
+        cursor: pointer;
+    }
+}
+
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+    // Bug report: https://github.com/twbs/bootstrap/issues/11266
+    -webkit-appearance: listbox;
+}
+
+textarea {
+    // Textareas ne devrait que s'agrandir verticalement pour ne pas casser le parent.
+    resize: vertical;
+}
+
+fieldset {
+    // Voir https://github.com/twbs/bootstrap/issues/12359.
+    min-width: 0;
+    // Mise à zéro de l'apparence par défaut des fieldset (avec bordure) pour qu'ils n'aient pas d'impact sur le layout.
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+legend {
+    // Reset l'élément legend pour coller au fieldset
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+}
+
+input[type="search"] {
+    // Voir https://github.com/twbs/bootstrap/issues/11586. (ré-initialise l'apparence des input type="search" dans iOS)
+    -webkit-appearance: none;
+}
+
+
+// Toujours masquer un élément avec l'attribut HTML `hidden` HTML attribute.
+[hidden] {
+    display: none !important;
+}

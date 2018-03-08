@@ -1,0 +1,41 @@
+.su-button {
+    cursor: pointer;
+    display: inline-block;
+    background: $background-bouton;
+    color: $color-bouton;
+    border: $border-bouton;
+    font-family: $font-family-bouton;
+    font-weight: $font-weight-bouton;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: $padding-bouton;
+    line-height: 1em;
+    border-radius: $radius-bouton;
+    box-shadow: $shadow-bouton;
+    -webkit-user-select: none;
+    -moz-user-select:    none;
+    -ms-user-select:     none;
+    user-select:         none;
+    -webkit-tap-highlight-color: transparent;
+//    will-change: '';
+//    min-height: 1em;
+//    vertical-align: baseline;
+//    text-transform: none;
+//    text-shadow: none;
+
+    &:hover {
+        background: $background-bouton-hover;
+        color: $color-bouton-hover;
+        border: $border-bouton-hover;
+        box-shadow: $shadow-bouton-hover;
+    }
+/*
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        text-decoration: none;
+                    }
+*/
+}

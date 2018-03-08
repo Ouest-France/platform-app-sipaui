@@ -1,0 +1,47 @@
+// Démo SipaUI
+// Styles du projet
+//
+
+body {
+    margin: 1rem 2rem;
+}
+nav {
+    margin: 2rem 0 4rem;
+
+    li {
+        margin-right: 1rem;
+    }
+}
+
+.liste-boutons {
+    li {
+        margin-bottom: 2rem;
+    }
+}
+
+.cell {
+    display: table-cell;
+}
+.bottom {
+    vertical-align: bottom;
+}
+
+.tableau-suivi {
+    th,
+    td {
+        width: 45%;
+
+        &:first-child {
+            width: 10%;
+        }
+    }
+}
+
+/* Point de rupture desktop (980px) */
+@media only screen and (min-width: 79.938em) {
+    body {
+        margin: 1rem auto;
+        width: 80%;
+    }
+}
+

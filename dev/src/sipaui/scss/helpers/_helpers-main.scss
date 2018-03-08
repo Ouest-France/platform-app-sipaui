@@ -1,0 +1,67 @@
+// SipaUI
+// Utilitaires
+//
+
+.clearfix,
+.cf {
+    @include clearfix();
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden; // Les lecteurs d'écrans parfois ne prennent pas en compte le display none
+}
+
+// Pour cacher quelque-chose qui doit rester accessible aux lecteurs d'écrans
+.visually-hidden { // https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+body:hover .visually-hidden {
+    a,
+    input,
+    button {
+        display: none !important;
+    }
+}
+
+//
+/* -- DISPLAY -------------------------------------------------------------------- */
+//
+.block {
+    display: block !important;
+}
+.inline-block {
+    display: inline-block !important;
+}
+
+//
+/* -- POSITION -------------------------------------------------------------------- */
+//
+.relative {
+	position: relative;
+}
+
+//
+/* -- MARGES -------------------------------------------------------------------- */
+//
+.su-margin-0 {
+    margin: 0 !important;
+}
+.su-margin-small {
+    margin-bottom: $margin-small !important;                // 10px
+}
+.su-margin-medium {
+    margin-bottom: $margin-medium1 !important;              // 15px
+}
+.su-margin-standard {
+   margin-bottom: $margin-standard !important;             // 20px
+}
+.su-margin-large {
+    margin-bottom: $margin-standard-large !important;       // 40px
+}
