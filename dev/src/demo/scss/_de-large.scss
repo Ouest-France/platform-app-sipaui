@@ -1,0 +1,12 @@
+// Site SipaUI
+// CSS pour écrans larges spécifiques au projet
+//
+
+/* Point de rupture desktop (980px) */
+@media only screen and (min-width: $min-breakpoint-desktop) {
+    body {
+        margin: 1rem auto;
+        width: 80%;
+    }
+}
+

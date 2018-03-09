@@ -1,5 +1,5 @@
-// Démo SipaUI
-// Styles du projet
+// Site SipaUI
+// CSS par défaut spécifiques au projet
 //
 
 body {
@@ -34,14 +34,6 @@ nav {
         &:first-child {
             width: 10%;
         }
-    }
-}
-
-/* Point de rupture desktop (980px) */
-@media only screen and (min-width: 79.938em) {
-    body {
-        margin: 1rem auto;
-        width: 80%;
     }
 }
 
