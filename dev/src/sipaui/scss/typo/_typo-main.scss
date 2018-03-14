@@ -91,13 +91,17 @@ ul + .h4 {
 }
 
 //
-// Emphasis
+// Emphase
 //
 strong {
     font-weight: $font-weight-gras;
 }
 .su-strong {
     @extend strong;
+}
+.su-important {
+    font-weight: $font-weight-gras;
+    color: $couleur-important;
 }
 
 .su-text-center {

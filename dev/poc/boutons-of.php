@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-    	<title>SipaUI POC</title>
-    	<meta charset="UTF-8" />
-
-    	<!-- Styles -->
-        <link rel="stylesheet" href="assets/css/default-of.css" type="text/css" media="screen" charset="utf-8">
-        <link rel="stylesheet" media="screen and (min-width: 64em)" href="assets/css/large-of.css" type="text/css" media="screen" charset="utf-8">
-	</head>
+	<?php
+    include("assets/fragments/head-of.php");
+    ?>
 	<body>
-    	<header>
-        	<h1>SipaUI <em>POC</em></h1>
-        </header>
+    	<?php
+        include("assets/fragments/header.php");
+        ?>
 
     	<nav>
-        	<ul class="su-horizontal">
-            	<li><a href="../index.html">Architecture</a></li>
-            	<li><a href="../avancement.html">Avancement</a></li>
-        		<li><a href="index.html">POC</a></li>
-        	</ul>
-        	<ul class="su-horizontal">
-        		<li><a href="version-neutre.html">Boutons sans thème</a></li>
-        		<li><a href="version-of.html">Boutons thème Ouest-France</a></li>
+        	<?php
+            $actif='poc';
+            include("../assets/fragments/nav.php");
+            ?>
+        	<ul class="su-horizontal sous-menu">
+        		<li><a href="boutons-neutre.php">Boutons sans thème</a></li>
+        		<li><a href="boutons-of.php" class="actif">Boutons thème Ouest-France</a></li>
         	</ul>
         </nav>
 

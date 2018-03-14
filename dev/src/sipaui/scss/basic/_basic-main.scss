@@ -189,6 +189,7 @@ ul.su-horizontal {
 //
 /* -- AUTRES -------------------------------------------------------------------- */
 //
+
 //Citations
 /* Pour avoir des quotes */
 HTML:lang(fr),
@@ -226,11 +227,11 @@ address {
 
 
 //
-// Horizontal rules
+// Ligne horizontale
 //
 hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: $margin-standard;
+    margin-bottom: $margin-standard;
     border: 0;
-    border-top: .1rem solid $gris-plus-fonce;
+    border-top: .1rem solid $couleur-principale-4;
 }

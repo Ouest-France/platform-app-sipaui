@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-    	<title>SipaUI POC</title>
-    	<meta charset="UTF-8" />
-
-    	<!-- Styles -->
-        <link rel="stylesheet" href="assets/css/default-demo.css" type="text/css" media="screen" charset="utf-8">
-        <link rel="stylesheet" media="screen and (min-width: 64em)" href="assets/css/large-demo.css" type="text/css" media="screen" charset="utf-8">
-	</head>
+	<?php
+    include("assets/fragments/head.php");
+    ?>
 	<body>
-    	<header>
-        	<h1>SipaUI <em>POC</em></h1>
-        </header>
+    	<?php
+        include("assets/fragments/header.php");
+        ?>
 
     	<nav>
-        	<ul class="su-horizontal">
-            	<li><a href="../index.html">Architecture</a></li>
-            	<li><a href="../avancement.html">Avancement</a></li>
-        		<li><a href="index.html">POC</a></li>
-        	</ul>
-        	<ul class="su-horizontal">
-        		<li><a href="version-neutre.html">Boutons sans thème</a></li>
-        		<li><a href="version-of.html">Boutons thème Ouest-France</a></li>
+        	<?php
+            $actif='poc';
+            include("../assets/fragments/nav.php");
+            ?>
+        	<ul class="su-horizontal sous-menu">
+        		<li><a href="boutons-neutre.php" class="actif">Boutons sans thème</a></li>
+        		<li><a href="boutons-of.php">Boutons thème Ouest-France</a></li>
         	</ul>
         </nav>
 
@@ -31,7 +25,7 @@
         	<p>Chaque bouton a 4 états : normal (/ ou <code>link</code>), survolé (<code>hover</code>), cliqué (<code>active</code>) et visité (<code>visited</code>)</p>
         	<ul class="liste-boutons">
         		<li>
-        		    <a class="su-button">Bouton <code>basic</code></a>
+        		    <a class="su-button" href="#">Bouton <code>basic</code></a>
         		</li>
         		<li>
         		    <a class="su-button" href="#">Bouton <code>primary</code></a>

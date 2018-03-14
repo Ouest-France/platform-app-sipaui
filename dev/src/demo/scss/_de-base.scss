@@ -11,6 +11,27 @@ nav {
     li {
         margin-right: 1rem;
     }
+    a {
+        display: inline-block;
+        border: 1px solid transparent;
+        border-radius: $radius-bouton;
+        padding: $padding-bouton;
+
+        &.actif {
+            border-color: $color-lien;
+
+            &:hover {
+                border-color: $color-lien-hover;
+            }
+        }
+    }
+    .sous-menu {
+        margin-top: $margin-standard;
+        a {
+            border-style: dashed;
+            padding: .6rem 2rem;
+        }
+    }
 }
 
 .liste-boutons {
@@ -22,7 +43,7 @@ nav {
 .cell {
     display: table-cell;
 }
-.bottom {
+.bas {
     vertical-align: bottom;
 }
 

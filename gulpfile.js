@@ -65,12 +65,6 @@ gulp.task("scripts-demo", ["clean-js-demo"], function() {
     });
 });
 
-gulp.task("clean-demo", function() {
-    return del([
-        source + '/assets/**/*'
-    ]);
-});
-
 gulp.task("clean-sass-demo", function() {
     return del([
         source + '/assets/**/*.css',
@@ -85,10 +79,6 @@ gulp.task("clean-js-demo", function() {
 });
 
 ////// POC ////////////////////////////////////////////////////////////////////////////////////////////////
-
-gulp.task('clean-poc', function () {
-    return del(source + '/poc/assets/**/*');
-});
 
 gulp.task("clean-sass-poc", function() {
     return del([
@@ -142,15 +132,15 @@ gulp.task("scripts-poc", ["clean-js-poc"], function() {
     });
 });
 
-gulp.task('sass-poc', ["clean-poc"], function () {
+gulp.task('sass-poc', ["clean-sass-poc"], function () {
     gulp.src(source + '/poc/src/fonts/**/*')
         .pipe(gulp.dest(source + "/poc/assets/fonts"));
     return gulp.start('make-sass-poc');
 });
 
-gulp.task('copie-assets-poc', ["clean-poc"], function () {
-    return gulp.src(source + '/assets/**/*')
-    .pipe(gulp.dest(source + '/poc/assets/'));
+gulp.task('copie-assets-poc', ["clean-sass-poc"], function () {
+    return gulp.src(source + '/assets/css/*')
+        .pipe(gulp.dest(source + '/poc/assets/css/'));
 });
 
 ////// Prod ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -182,9 +172,9 @@ gulp.task("watch", function() {
     });
 });
 
-gulp.task("demo", ["clean-demo", "scripts-demo", "sass-demo"]);
+gulp.task("demo", ["clean-sass-demo", "scripts-demo", "sass-demo"]);
 
-gulp.task("poc", ["clean-poc", "scripts-poc", "sass-poc", "copie-assets-poc"]);
+gulp.task("poc", ["clean-sass-poc", "scripts-poc", "sass-poc", "copie-assets-poc"]);
 
 gulp.task("prod", ["copie-prod"]);
 

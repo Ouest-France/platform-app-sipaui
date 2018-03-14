@@ -49,6 +49,9 @@ $couleur-secondaire-2: $rouge-fonce         !default;
 $couleur-secondaire-3: $rouge-plus-fonce    !default;
 $couleur-secondaire-4: null                 !default;
 
+$couleur-important: $couleur-secondaire-2   !default;
+
+
 // RÉSEAUX SOCIAUX ET MARQUES
 $facebook:          #3b5998   !default;
 $twitter:           #55acee   !default;
@@ -142,7 +145,7 @@ $color-lien-neutre-active:  $color-lien-neutre-hover    !default;
 $color-lien-neutre-focus:   $color-lien-neutre-hover    !default;
 $color-lien-neutre-visited: $color-texte                !default;
 
-// LIENS ÉDITORIAUX
+// LIENS VOYANTS
 $color-lien-voyant:         $couleur-secondaire-1       !default;
 $color-lien-voyant-hover:   $color-lien-hover           !default;
 $color-lien-voyant-active:  $color-lien-voyant-hover    !default;

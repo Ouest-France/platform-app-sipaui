@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-    	<title>SipaUI</title>
-    	<meta charset="UTF-8" />
-
-    	<!-- Styles -->
-        <link rel="stylesheet" href="assets/css/default-demo.css" type="text/css" media="screen" charset="utf-8">
-        <link rel="stylesheet" media="screen and (min-width: 64em)" href="assets/css/large-demo.css" type="text/css" media="screen" charset="utf-8">
-	</head>
+	<?php
+    include("assets/fragments/head.php");
+    ?>
 	<body>
-    	<header>
-        	<h1>SipaUI</h1>
-<!--         	<h1><a href="index.html">SipaUI</a></h1> -->
-        </header>
+    	<?php
+        include("assets/fragments/header.php");
+        ?>
 
     	<nav>
-        	<ul class="su-horizontal">
-            	<li><a href="index.html">Architecture</a></li>
-            	<li><a href="avancement.html">Avancement</a></li>
-        		<li><a href="poc/index.html">POC</a></li>
-        	</ul>
+            <?php
+            $actif='avancement';
+            include("assets/fragments/nav.php");
+            ?>
         </nav>
+
         <main class="su-editorial">
             <h2>Suivi de l’avancement du projet</h2>
 
