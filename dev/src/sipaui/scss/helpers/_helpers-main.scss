@@ -2,18 +2,18 @@
 // Utilitaires
 //
 
-.clearfix,
-.cf {
+.su-clearfix,
+.su-cf {
     @include clearfix();
 }
 
-.hidden {
+.su-hidden {
     display: none !important;
     visibility: hidden; // Les lecteurs d'écrans parfois ne prennent pas en compte le display none
 }
 
 // Pour cacher quelque-chose qui doit rester accessible aux lecteurs d'écrans
-.visually-hidden { // https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
+.su-visually-hidden { // https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px);
     padding: 0 !important;
@@ -22,7 +22,7 @@
     width: 1px !important;
     overflow: hidden;
 }
-body:hover .visually-hidden {
+body:hover .su-visually-hidden {
     a,
     input,
     button {
@@ -33,17 +33,17 @@ body:hover .visually-hidden {
 //
 /* -- DISPLAY -------------------------------------------------------------------- */
 //
-.block {
+.su-block {
     display: block !important;
 }
-.inline-block {
+.su-inline-block {
     display: inline-block !important;
 }
 
 //
 /* -- POSITION -------------------------------------------------------------------- */
 //
-.relative {
+.su-relative {
 	position: relative;
 }
 

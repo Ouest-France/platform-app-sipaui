@@ -15,17 +15,17 @@ body {
 //
 
 h1,
-.h1,
+.su-h1,
 h2,
-.h2,
+.su-h2,
 h3,
-.h3,
+.su-h3,
 h4,
-.h4,
+.su-h4,
 h5,
-.h5,
+.su-h5,
 h6,
-.h6 {
+.su-h6 {
     margin-top: 0;
     margin-bottom: $margin-small;
     font-family: $font-family-titres;
@@ -36,30 +36,30 @@ h6,
 }
 
 h1,
-.h1 {
+.su-h1 {
     font-size: $font-size-h1;
     margin-bottom: $margin-bottom-h1;
 }
 h2,
-.h2 {
+.su-h2 {
     font-size: $font-size-h2;
     margin-bottom: $margin-bottom-h2;
 }
 h3,
-.h3 {
+.su-h3 {
     font-size: $font-size-h3;
     margin-bottom: $margin-bottom-h3;
 }
 h4,
-.h4 {
+.su-h4 {
     font-size: $font-size-h4;
 }
 h5,
-.h5 {
+.su-h5 {
     font-size: $font-size-h5;
 }
 h6,
-.h6 {
+.su-h6 {
     font-size: $font-size-h6;
 }
 
@@ -76,17 +76,17 @@ ul + p {
     margin-top: $margin-standard
 }
 p + h2,
-p + .h2,
+p + .su-h2,
 p + h3,
-p + .h3,
+p + .su-h3,
 p + h4,
-p + .h4,
+p + .su-h4,
 ul + h2,
-ul + .h2,
+ul + .su-h2,
 ul + h3,
-ul + .h3,
+ul + .su-h3,
 ul + h4,
-ul + .h4 {
+ul + .su-h4 {
     margin-top: $margin-standard-large
 }
 
