@@ -4,16 +4,18 @@
     include("assets/fragments/head.php");
     ?>
 	<body>
-    	<?php
-        include("assets/fragments/header.php");
-        ?>
-
-        <nav>
-            <?php
-            $actif='archi';
-            include("assets/fragments/nav.php");
+    	<header>
+        	<?php
+            include("assets/fragments/titre.php");
             ?>
-        </nav>
+
+            <nav>
+                <?php
+                $actif='archi';
+                include("assets/fragments/nav.php");
+                ?>
+            </nav>
+        </header>
 
 
         <main class="su-editorial">

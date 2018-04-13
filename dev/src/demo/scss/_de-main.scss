@@ -2,45 +2,83 @@
 // CSS par défaut spécifiques au projet
 //
 
-body {
-    margin: 1rem 2rem 0;
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    .titre {
+        padding: 5px 20px;
+        background: radial-gradient(circle at 100% 100%, $couleur-principale-6, $couleur-principale-7);
+        color: $couleur-principale-1;
+    }
+    h1 {
+        margin-bottom: 0;
+    }
+    .version {
+        background: $couleur-principale-8;
+        padding: 3px 13px;
+        border-radius:  3px;
+        font-size: 1.5rem;
+
+    }
+    h1 a {
+        transition: text-shadow .3s ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: inherit;
+            text-shadow: 0 0 2px $couleur-principale-1;
+        }
+    }
 }
 nav {
-    margin: 2rem 0 4rem;
+    background: $couleur-principale-8;
+    padding: 5px 20px;
+    box-shadow: 0 2px 3px  1px rgba(0,0,0, .5);
 
     li {
-        margin-right: 1rem;
+        margin-right: 20px;
     }
     a {
+        $couleur: $couleur-principale-1;
         display: inline-block;
-        border: 1px solid transparent;
-        border-radius: $radius-bouton;
-        padding: $padding-bouton;
+        color: $couleur;
+        opacity: .6;
+        text-decoration: none;
+        transition: opacity .3s ease;
 
+        &:hover,
         &.actif {
-            border-color: $color-lien;
-
-            &:hover {
-                border-color: $color-lien-hover;
-            }
+            color: $couleur;
+            opacity: 1;
         }
     }
     .sous-menu {
         margin-top: $margin-standard;
         a {
             border-style: dashed;
-            padding: .6rem 2rem;
+            padding: .60px 20px;
         }
     }
 }
 main {
-    padding-bottom: 2rem;
+    padding: 120px 2rem 20px;
 }
 
 .liste-boutons {
     li {
-        margin-bottom: 2rem;
+        margin-bottom: 20px;
     }
+}
+
+.intro {
+    font-size: 2rem;
+    border: 1px solid $couleur-principale-4;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 500px;
 }
 
 .cell {
@@ -51,8 +89,8 @@ main {
 }
 
 .carte {
-    width: 50rem;
-    margin-bottom: 1rem;
+    width: 500px;
+    margin-bottom: 10px;
 }
 
 .tableau-suivi {
