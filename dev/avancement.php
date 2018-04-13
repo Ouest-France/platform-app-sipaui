@@ -65,6 +65,27 @@
                         	</ul>
         	            </td>
             		</tr>
+            		<tr>
+            			<td><time datetime="2018-03-15">15/03/2018</time></td>
+            			<td>
+                			<ul>
+                                <li>Périodicité des réunions&nbsp;: les jeudis, tous les 15 jours à 16h00.</li>
+                                <li>Rappel de la création du canal Slack #sipa-ui</li>
+                                <li>Présentation de l’architecture CSS en cours de réflexion (cf. colonne interrogations).</li>
+                                <li>Annonce d'une réunion prévue sur vue.js avec un représentant d‘OFM (Ouest-France Multimédia).</li>
+                                <li>Besoin de standardisations des composants entre le Studio et l’Intégration.<br />
+                                    -> Planification d’une réunion pour avancer sur ce point.</li>
+                        	</ul>
+        	            </td>
+        	            <td>
+            	            <ul>
+                                <li>Grosse inconnue technique sur la gestion des appels CSS et de leur inter-opérabilité&nbsp;: comment les blocs des Blocks Providers vont-ils intégrer leurs CSS dans le site (attention aux problèmes de performance)</li>
+                                <li>Incompréhension sur le terme «&nbsp;composants&nbsp;»&nbsp;: pour l’équipe qui gère le Page-Builder, un composant a un sens technique différent («&nbsp;composants on the shelf&nbsp;») du sens donné par le Studio et l’Intégration. Du coup quel sera l’approche composants de sipaUI&nbsp;?</li>
+                                <li>Les points de rupture aujourd'hui en place sur SipaUI (480, 768, 980, 1280) ne répondent pas forcément au besoins du Studio.<br />
+                                    -> à rediscuter. </li>
+                            </ul>
+        	            </td>
+            		</tr>
             	</tbody>
             </table>
 
