@@ -45,7 +45,7 @@ nav {
         $couleur: $couleur-principale-1;
         display: inline-block;
         color: $couleur;
-        opacity: .6;
+        opacity: .7;
         text-decoration: none;
         transition: opacity .3s ease;
 
@@ -93,13 +93,28 @@ main {
     margin-bottom: 10px;
 }
 
+.trop-large-responsif {
+    overflow-x: scroll;
+}
 .tableau-suivi {
+    caption {
+        caption-side: top;
+        color: $couleur-principale-5;
+    }
     th,
     td {
         width: 45%;
 
         &:first-child {
             width: 10%;
+        }
+    }
+    .resolu {
+        color: $couleur-principale-4;
+
+        &::before,
+        li::before {
+            background: $couleur-principale-4;
         }
     }
 }
