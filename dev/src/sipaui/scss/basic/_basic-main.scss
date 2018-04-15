@@ -34,21 +34,38 @@ a:not([href]):not([tabindex]) {
 }
 
 a[target="_blank"].su-blank {
-                                                                                //content: '\e984';
-                                                                                //font-family: 'picto-of2' !important;
-                                                                                //font-size: 2.4rem;
-                                                                                //vertical-align: -5px;
-                                                                                //margin-left: 0.5rem;
-    display: inline-block;
-    text-decoration: none;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 19.9 18.7" style="enable-background:new 0 0 19.9 18.7;" xml:space="preserve">
+	 <style type="text/css">.st0{fill:#878787;}</style>
+     <path class="st0" d="M11,0v1.5h6.2l-8.6,8.6l1.1,1.1l8.6-8.6v6.2h1.5V0C19.9,0,11,0,11,0z"/>
+     <path class="st0" d="M14.6,18.7H1.2c-0.7,0-1.2-0.6-1.2-1.4V5.3c0-0.8,0.5-1.4,1.2-1.4h8.7v1.3H1.3c0,0,0,0.1,0,0.2c0,0,0,0,0,0
+	v11.9c0,0,0,0,0,0c0,0.1,0,0.1,0,0.2l13.2,0c0,0,0-0.1,0-0.2c0,0,0,0,0,0v-5.8h1.3v5.8C15.8,18.1,15.3,18.7,14.6,18.7L14.6,18.7z"/>
+    </svg>');
+    padding-right: 18px;
+    background-size: auto 80%;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+
+
+/*
+    &:after {
+        content: '\e984';
+        font-family: 'picto-of2' !important;
+        font-size: 2.4rem;
+        vertical-align: -5px;
+        margin-left: 0.5rem;
+        display: inline-block;
+        text-decoration: none;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+*/
 }
 
 /* -- LIENS  NEUTRES -------------------------- */
