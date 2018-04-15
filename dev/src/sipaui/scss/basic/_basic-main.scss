@@ -110,6 +110,11 @@ h6 a {
 .su-table {
     border: $border-tableau;
 
+    caption {
+        font-style: italic;
+        font-size: small;
+    }
+
     th,
     td {
         border: $border-tableau;
