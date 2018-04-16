@@ -30,7 +30,7 @@ scsslist =
     ]
 ;
 
-gulp.task('make-sass', function () {
+gulp.task('make-sass', ['clean-css'], function () {
     scsslist.forEach(function(a) {
         gulp.src(a[0])
             .pipe(plumber(function(e){log.error('oh no!', e);}))
@@ -60,15 +60,23 @@ gulp.task("clean-assets", function() {
         destination + '/fonts/**/*'
     ]);
 });
-gulp.task("clean", ["clean-js", "clean-css", "clean-assets"]);
+gulp.task("clean", ["clean-js", "clean-css", "clean-assets"], function(){
+    return del([
+        build + '/**/*'
+    ]);
+});
 
 
 //
 // Commandes utiles ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 gulp.task("watch", function() {
-    gulp.start('sass');
-    watch(source + '/src/scss/**/*.scss', function(){
+    gulp.start('make-sass');
+    watch( [
+            source + '/scss/**/*.scss',
+            doc + '/scss/**/*.scss',
+            poc + '/scss/**/*.scss',
+        ], function(){
         gulp.start('make-sass');
     });
 });
