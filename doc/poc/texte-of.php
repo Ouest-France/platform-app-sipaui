@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<?php
-    include("assets/fragments/head-of.php");
+    <?php
+    include("/doc/_fragments/_head-of.php");
     ?>
-	<body>
-    	<?php
-        include("assets/fragments/header.php");
+    <body>
+        <?php
+        include("/doc/_fragments/_header.php");
         ?>
 
-    	<nav>
-        	<?php
+        <nav>
+            <?php
             $actif='poc';
-            include("../assets/fragments/nav.php");
+            include("doc/_fragments/_nav.php");
             ?>
-        	<ul class="su-horizontal sous-menu">
-        		<li><a href="texte-neutre.php">Textes sans thème</a></li>
-        		<li><a href="texte-of.php" class="actif">Textes thème Ouest-France</a></li>
-        	</ul>
+            <ul class="su-horizontal sous-menu">
+                <li><a href="texte-neutre.php">Textes sans thème</a></li>
+                <li><a href="texte-of.php" class="actif">Textes thème Ouest-France</a></li>
+            </ul>
         </nav>
 
         <main>
-        	<h2>Textes Ouest-France</h2>
-        	<h3>Standards</h3>
+            <h2>Textes Ouest-France</h2>
+            <h3>Standards</h3>
 
             <h3>Titres</h3>
 
@@ -55,5 +55,5 @@
             <p>Lorem ipsum <em>dolor sit amet</em>.</p>
 
         </main>
-	</body>
+    </body>
 </html>

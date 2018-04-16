@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<?php
-    include("assets/fragments/head.php");
+    include("/doc/_fragments/_head.php");
     ?>
 	<body>
     	<?php
-        include("assets/fragments/header.php");
+        include("/doc/_fragments/_header.php");
         ?>
 
         <nav>
             <?php
             $actif='poc';
-            include("../assets/fragments/nav.php");
+            include("doc/_fragments/_nav.php");
             ?>
         </nav>
 

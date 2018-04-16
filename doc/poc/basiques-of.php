@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<?php
-    include("assets/fragments/head-of.php");
+    include("/doc/_fragments/_head-of.php");
     ?>
 	<body>
     	<?php
-        include("assets/fragments/header.php");
+        include("/doc/_fragments/_header.php");
         ?>
 
     	<nav>
         	<?php
             $actif='poc';
-            include("../assets/fragments/nav.php");
+            include("doc/_fragments/_nav.php");
             ?>
         	<ul class="su-horizontal sous-menu">
         		<li><a href="basiques-neutre.php">Objets basiques sans thème</a></li>

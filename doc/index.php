@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<?php
-    include("assets/fragments/head.php");
+    <?php
+    include("/doc/_fragments/_head.php");
     ?>
-	<body>
-    	<header>
-        	<?php
-            include("assets/fragments/titre.php");
+    <body>
+        <header>
+            <?php
+            include("/doc/_fragments/_titre.php");
             ?>
 
             <nav>
                 <?php
-                include("assets/fragments/nav.php");
+                include("/doc/_fragments/_nav.php");
                 ?>
             </nav>
         </header>
@@ -23,5 +23,5 @@
                 <p>Construisez vos sites SIPA en responsif et «&nbsp;mobile-first&nbsp;», tout en l’adaptant au thème visuel de votre marque&nbsp;! SipaUI est un framework agnostique, un fichier de variables SASS vous permet de thématiser l’apparence des composants visuels en fonction de vos besoins.</p>
             </section>
         </main>
-	</body>
+    </body>
 </html>
