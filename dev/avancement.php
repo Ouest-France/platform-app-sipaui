@@ -130,10 +130,9 @@
 
 
 
-            <div class="su-hidde">
+            <div class="su-hidde" style="margin-top: 20px;">
                 <h4>A faire&nbsp;:</h4>
                 <ul>
-                	<li>Gérer OL</li>
                 	<li>Liste&nbsp;: puces responsives</li>
                 	<li>Gulpfile&nbsp;: faire en sorte que le gulp prod compile avant + export et rename.</li>
                 	<li>Réparer le watch</li>
@@ -151,7 +150,7 @@
                 	<li>Mettre URL Github ici</li>
                 </ul>
 
-                <h4>A voire&nbsp;:</h4>
+                <h4>A voir&nbsp;:</h4>
                 <ul>
                 	<li>Fonte pictos&nbsp;?</li>
                 	<li>On garde toujours IE9 dans le scope des navigateurs&nbsp;?</li>

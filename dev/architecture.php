@@ -25,7 +25,12 @@
             <p>SipaUI porte tout le CSS et le JS nécessaire à l’affichage des composants graphiques. Un site l’utilisant ne devrait donc pas avoir besoin de CSS supplémentaire pour afficher ces composants, d’autant plus que SipaUI intègre un système de «&nbsp;templating&nbsp;» poussé qui devrait lui permettre de répondre à ses besoins de personnalisation. Par contre, ce site aura besoin de CSS pour gérer la mise-en-page et la gestion des blocs. Il lui faudra donc concaténer ces CSS avec ceux de SipaUI suivant la même logique afin d’optimiser les performances.</p>
 
             <h3>SipaUI et les Blocks Providers</h3>
-            <p>Un bloc ne devrait pas avoir de CSS propres. Dans quasiment tous les cas, les composants graphiques de SipaUI devraient suffirent à gérer l’affichage du contenu d’un bloc. Dans le cas contraire, le créateur du bloc devra faire une demande d’évolution du framework. Il y aura toutefois des exceptions possibles, comme, par exemple le bloc Météo qui portera les CSS nécessaires à l’affichage des données météo. Dans ce cas, il serait possible que ces CSS soient appelées dans le body pour éviter de ralentir le site, mais attention à l’effet <a href="https://fr.wikipedia.org/wiki/FOUC" target="_blank" class="su-blank">FOUC</a>…</p>
+            <p>Un bloc ne devrait pas avoir de CSS propres. Dans quasiment tous les cas, les composants graphiques de SipaUI devraient suffirent à gérer l’affichage du contenu d’un bloc. Dans le cas contraire, le créateur du bloc devra passer la validation de l'équipe Plateforme. Il y aura alors 2 possibilités&nbsp;:</p>
+                <ul>
+                	<li>Il y a des manques dans le framework et l’équipe accepte les évolutions nécessaires via les pull-requests sur Github.</li>
+                	<li>Il s'agit de besoins spécifiques à un BP très particulier (ie un bloc météo) et dans ce cas le bloc pourra porter ses propres CSS. Il serait alors possible que ces CSS soient appelées dans le body (au lieu d’être concaténées avec les CSS du site) pour éviter de ralentir le site, mais attention à l’effet <a href="https://fr.wikipedia.org/wiki/FOUC" target="_blank" class="su-blank">FOUC</a></li>
+                </ul>
+                <p>Dans tous les cas (mais surtout le second), l’équipe Plateforme veillera à ce que cela soit une exception plutôt que la norme (l'ajout de ressources JS/CSS a un impact direct sur les performances frontend de la page).</p>
 
         	<h3>Matriochka de SCSS</h3>
 
