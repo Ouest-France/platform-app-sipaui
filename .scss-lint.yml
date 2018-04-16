@@ -1,0 +1,13 @@
+linters:
+  Indentation:
+    width: 4
+  EmptyLineBetweenBlocks:
+    enabled: false
+  ImportantRule:
+    enabled: false
+  PropertySortOrder:
+    enabled: false
+  PlaceholderInExtend:
+    enabled: false
+  VendorPrefix:
+    enabled: false
