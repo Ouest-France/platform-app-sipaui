@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<?php
+    <?php
     include("/doc/_fragments/_head.php");
     ?>
-	<body>
-    	<?php
+    <body>
+        <?php
         include("/doc/_fragments/_header.php");
         ?>
 
-    	<nav>
+        <nav>
             <?php
             $actif='poc';
             include("doc/_fragments/_nav.php");
             ?>
             <ul class="su-horizontal sous-menu">
-        		<li><a href="texte-neutre.php" class="actif">Textes sans thème</a></li>
-        		<li><a href="texte-of.php">Textes thème Ouest-France</a></li>
-        	</ul>
+                <li><a href="texte-neutre.php" class="actif">Textes sans thème</a></li>
+                <li><a href="texte-of.php">Textes thème Ouest-France</a></li>
+            </ul>
         </nav>
 
         <main>
-        	<h2>Textes neutres</h2>
+            <h2>Textes neutres</h2>
 
-        	<h3>Titres</h3>
+            <h3>Titres</h3>
 
             <p class="h1">Titre <code>h1</code> ou <code>class="h1"</code></p>
             <p class="h2">Titre <code>h2</code> ou <code>class="h2"</code></p>
@@ -55,5 +55,5 @@
 
 
         </main>
-	</body>
+    </body>
 </html>
