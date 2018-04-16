@@ -11,7 +11,7 @@
 
             <nav>
                 <?php
-                $actif='archi';
+                $actif='avancement';
                 include(__DIR__."/_fragments/_nav.php");
                 ?>
             </nav>
@@ -130,12 +130,10 @@
 
 
 
-            <div class="su-hidde" style="margin-top: 20px;">
+            <div class="su-hidden" style="margin-top: 20px;">
                 <h4>A faire&nbsp;:</h4>
                 <ul>
                     <li>Liste&nbsp;: puces responsives</li>
-                    <li>Gulpfile&nbsp;: faire en sorte que le gulp prod compile avant + export et rename.</li>
-                    <li>Réparer le watch</li>
 
                     <li>Breakpoints</li>
                     <li>Liens focus et active</li>
