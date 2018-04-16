@@ -4,9 +4,7 @@ var gulp            = require("gulp"),
     rename          = require("gulp-rename"),
     uglify          = require("gulp-uglify"),
     sass            = require("gulp-sass"),
-    zip             = require('gulp-zip'),
     php2html        = require('gulp-php2html'),
-    replace         = require('gulp-replace'),
     watch           = require("gulp-watch"),
     sourcemaps      = require('gulp-sourcemaps'),
     plumber         = require('gulp-plumber'),
@@ -15,167 +13,64 @@ var gulp            = require("gulp"),
     ;
 
 // Variables de chemins
-var source = './dev'; // dossier de travail
-var destination = './web'; // dossier à livrer
+var source = './src'; // dossier de travail
+var doc = './doc/assets'; // dossier de travail
+var poc = './doc/poc'; // dossier de travail
+var destination = './dist'; // dossier à livrer
+var build = './build'; // dossier de compilation
 
-
+scsslist =
+    [
+        [source + '/scss/default-sipaui.scss', 'default-sipaui.min.css'],
+        [source + '/scss/large-sipaui.scss', 'large-sipaui.min.css'],
+        [doc + '/scss/default-demo.scss', 'default-demo.min.css'],
+        [doc + '/scss/large-demo.scss', 'large-demo.min.css'],
+        [poc + '/scss/of/default-of.scss', 'default-of.min.css'],
+        [poc + '/scss/of/large-of.scss', 'large-of.min.css'],
+    ]
+;
 
 gulp.task('make-sass', function () {
-    [
-        [source + '/src/demo/scss/default-demo.scss', 'default-demo.min.css'],
-        [source + '/src/demo/scss/large-demo.scss', 'large-demo.min.css']
-    ].forEach(function(a) {
+    scsslist.forEach(function(a) {
         gulp.src(a[0])
             .pipe(plumber(function(e){log.error('oh no!', e);}))
             .pipe(sourcemaps.init())
             .pipe(sass())
             .pipe(sourcemaps.write())
-            .pipe(gulp.dest('./Dev/assets/css'))
+            .pipe(gulp.dest(destination+'/css'))
             .pipe(cssnano({zindex: false}))
             .pipe(rename(a[1]))
-            .pipe(gulp.dest("./Dev/assets/css"));
+            .pipe(gulp.dest(destination+'/css'));
     });
 });
 
-gulp.task('sass-demo', ["clean-sass-demo"], function () {
-    gulp.src(source + '/src/fonts/**/*')
-        .pipe(gulp.dest(source + "/assets/fonts"));
-    return gulp.start('make-sass');
-});
 
-gulp.task("scripts-demo", ["clean-js-demo"], function() {
-    [
-        'sipaui.head',
-        'sipaui.foot'
-    ].forEach(function(a) {
-        gulp.src("./Dev/src/js/"+a+".js")
-            .pipe(include({
-                    extensions: "js",
-                    hardFail: true,
-                    includePaths: [
-                      __dirname + source + "/src/js"
-                    ]
-                }))
-                .on('error', console.log)
-            .pipe(gulp.dest(source + "/assets/js"))
-            .pipe(uglify()
-                .on('error', console.log))
-            .pipe(rename(a+'.min.js'))
-            .pipe(gulp.dest(source + "/assets/js"));
-    });
-});
-
-gulp.task("clean-sass-demo", function() {
+gulp.task("clean-css", function() {
     return del([
-        source + '/assets/**/*.css',
-        source + '/assets/fonts'
+        destination + '/**/*.css'
     ]);
 });
-
-gulp.task("clean-js-demo", function() {
+gulp.task("clean-js", function() {
     return del([
-        source + '/assets/**/*.js'
+        destination + '/**/*.js'
     ]);
 });
-
-////// POC ////////////////////////////////////////////////////////////////////////////////////////////////
-
-gulp.task("clean-sass-poc", function() {
+gulp.task("clean-assets", function() {
     return del([
-        source + '/poc/assets/**/*.css',
-        source + '/poc/assets/fonts'
+        destination + '/fonts/**/*'
     ]);
 });
-
-gulp.task("clean-js-poc", function() {
-    return del([
-        source + '/poc/assets/**/*.js'
-    ]);
-});
-
-gulp.task('make-sass-poc', function () {
-    [
-        [source + '/poc//src/of/scss/default-of.scss', 'default-of.min.css'],
-        [source + '/poc/src/of/scss/large-of.scss', 'large-of.min.css']
-    ].forEach(function(a) {
-        gulp.src(a[0])
-            .pipe(plumber(function(e){log.error('oh no!', e);}))
-            .pipe(sourcemaps.init())
-            .pipe(sass())
-            .pipe(sourcemaps.write())
-            .pipe(gulp.dest('./Dev/poc/assets/css'))
-            .pipe(cssnano({zindex: false}))
-            .pipe(rename(a[1]))
-            .pipe(gulp.dest("./Dev/poc/assets/css"));
-    });
-});
-
-gulp.task("scripts-poc", ["clean-js-poc"], function() {
-    [
-        'sipaui.head',
-        'sipaui.foot'
-    ].forEach(function(a) {
-        gulp.src("./Dev/src/js/"+a+".js")
-            .pipe(include({
-                    extensions: "js",
-                    hardFail: true,
-                    includePaths: [
-                      __dirname + source + "/src/js"
-                    ]
-                }))
-                .on('error', console.log)
-            .pipe(gulp.dest(source + "/assets/js"))
-            .pipe(uglify()
-                .on('error', console.log))
-            .pipe(rename(a+'.min.js'))
-            .pipe(gulp.dest(source + "/assets/js"));
-    });
-});
-
-gulp.task('sass-poc', ["clean-sass-poc"], function () {
-    gulp.src(source + '/poc/src/fonts/**/*')
-        .pipe(gulp.dest(source + "/poc/assets/fonts"));
-    return gulp.start('make-sass-poc');
-});
-
-gulp.task('copie-assets-poc', ["clean-sass-poc"], function () {
-    return gulp.src(source + '/assets/css/*')
-        .pipe(gulp.dest(source + '/poc/assets/css/'));
-});
-
-////// Prod ////////////////////////////////////////////////////////////////////////////////////////////////
-
-gulp.task('clean-prod', function () {
-    return del(destination);
-});
-
-gulp.task('copie-prod', ['clean-prod'], function () {
-    return gulp.src([source + '/**/*',
-          '!' + source + '/assets/css/!(*.min).css',
-          '!' + source + '/poc/assets/css/!(*.min).css',
-          '!' + source + '/src{,/**}'])
-    .pipe(gulp.dest(destination + ''));
-});
+gulp.task("clean", ["clean-js", "clean-css", "clean-assets"]);
 
 
 //
 // Commandes utiles ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-
 gulp.task("watch", function() {
     gulp.start('sass');
     watch(source + '/src/scss/**/*.scss', function(){
         gulp.start('make-sass');
     });
-    watch(source + '/src/js/**/*.js', function(){
-        gulp.start('scripts-demo');
-    });
 });
 
-gulp.task("demo", ["clean-sass-demo", "scripts-demo", "sass-demo"]);
-
-gulp.task("poc", ["clean-sass-poc", "scripts-poc", "sass-poc", "copie-assets-poc"]);
-
-gulp.task("prod", ["copie-prod"]);
-
-gulp.task("default", ["demo", "poc"]);
+gulp.task("default", ["clean", "make-sass"]);
