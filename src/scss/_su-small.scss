@@ -4,15 +4,15 @@
 
 /* Point de rupture mobile et phablette (979px) */
 @media only screen and (max-width: $max-breakpoint-tablet) {
-
+    //@import 'basic/basic-small-medium';
 }
 
 /* Point de rupture mobile only (767px) */
 @media only screen and (max-width: $max-breakpoint-mobile) {
-
+    //@import 'basic/basic-small';
 }
 
 /* Point de rupture phablette only (768px à 979px) */
 @media only screen and (min-width: $min-breakpoint-tablet) and (max-width: $max-breakpoint-tablet) {
-
+    //@import 'basic/basic-medium';
 }
