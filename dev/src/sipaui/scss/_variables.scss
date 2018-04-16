@@ -5,7 +5,7 @@
 // voir https://robots.thoughtbot.com/sass-default pour explications sur !default
 
 
-$version:                   0.0.1;
+$version:                   0.0.1 alpha;
 $urlDossierFont: 			'../fonts' !default;
 
 // RUPTURES ------------------------------------------------------------------------------------------------------------------
@@ -127,7 +127,7 @@ $margin-standard-large: $margin-xlarge;
 $ombre-1: 0 0 10px rgba(0,0,0, .5) !default;
 
 
-// VARIABLES OBJETS -----------------------------------------------------------------------------------------------------------------------------------------
+// VARIABLES GLOBAL & BASICC -----------------------------------------------------------------------------------------------------------------------------------------
 // BODY
 $background-body: null !default;
 
@@ -152,6 +152,20 @@ $color-lien-voyant-active:  $color-lien-voyant-hover    !default;
 $color-lien-voyant-focus:   $color-lien-voyant-hover    !default;
 $color-lien-voyant-visited: $couleur-secondaire-3       !default;
 
+// TABLEAUX
+$border-tableau: 1px solid $couleur-principale-3        !default;
+$padding-tableau: $margin-xsmall                        !default;
+$caption-color-tableau: $couleur-principale-5           !default;
+$caption-side-tableau: bottom                           !default;
+$caption-align-tableau: center                          !default;
+$caption-padding-tableau: $margin-xsmall 0               !default;
+
+$border-tableau-plus: 1px solid $couleur-principale-4   !default;
+$background-tableau-plus-header: $couleur-principale-3  !default;
+$background-tableau-plus-even: lighten($couleur-principale-2, 5%)    !default;
+
+
+// VARIABLES OBJETS -----------------------------------------------------------------------------------------------------------------------------------------
 // BOUTONS
 $background-bouton: $couleur-principale-3   !default;
 $color-bouton: $couleur-principale-8        !default;
@@ -166,10 +180,3 @@ $background-bouton-hover: $couleur-principale-4 !default;
 $color-bouton-hover: $couleur-principale-8      !default;
 $border-bouton-hover: null                      !default;
 $shadow-bouton-hover: null                      !default;
-
-// TABLEAUX
-$border-tableau: 1px solid $couleur-principale-3        !default;
-$padding-tableau: $margin-xsmall                        !default;
-$border-tableau-plus: 1px solid $couleur-principale-4   !default;
-$background-tableau-plus-header: $couleur-principale-3  !default;
-$background-tableau-plus-even: lighten($couleur-principale-2, 5%)    !default;

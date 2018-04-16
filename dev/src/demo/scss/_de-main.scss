@@ -97,10 +97,6 @@ main {
     overflow-x: scroll;
 }
 .tableau-suivi {
-    caption {
-        caption-side: top;
-        color: $couleur-principale-5;
-    }
     th,
     td {
         width: 45%;
