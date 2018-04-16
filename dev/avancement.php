@@ -22,7 +22,7 @@
 
             <h3>Réunions d’avancement</h3>
             <div class="trop-large-responsif">
-                <table class="su-table tableau-suivi">
+                <table class="su-table su-plus tableau-suivi">
                     <caption>Tableau des réunions par dates antichronologiques. En gris, interrogations résolues.</caption>
                 	<thead>
                 		<tr>

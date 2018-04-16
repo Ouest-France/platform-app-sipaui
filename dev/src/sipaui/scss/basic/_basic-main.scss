@@ -113,8 +113,11 @@ h6 a {
     caption {
         font-style: italic;
         font-size: small;
+        color: $caption-color-tableau;
+        caption-side: $caption-side-tableau;
+        text-align: $caption-align-tableau;
+        padding: $caption-padding-tableau;
     }
-
     th,
     td {
         border: $border-tableau;
