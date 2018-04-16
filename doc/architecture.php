@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
     <?php
-    include("/doc/_fragments/_head.php");
+    include(__DIR__."/_fragments/_head.php");
     ?>
     <body>
         <header>
             <?php
-            include("/doc/_fragments/_titre.php");
+            include(__DIR__."/_fragments/_titre.php");
             ?>
 
             <nav>
                 <?php
                 $actif='archi';
-                include("/doc/_fragments/_nav.php");
+                include(__DIR__."/_fragments/_nav.php");
                 ?>
             </nav>
         </header>
