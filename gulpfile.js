@@ -88,6 +88,7 @@ function myPhp2Html(file, enc, cb) {
         file.contents = new Buffer(phpResponse
             .replace(/\/dist\//g, '\/')
             .replace(/\/doc\//g, '\/')
+            .replace(/\.php/g, '.html')
             .replace(/(['"])([^"']+)\.js/g, '$1$2.min.js')
             .replace(/(['"])([^"']+)\.css/g, '$1$2.min.css')
         );
