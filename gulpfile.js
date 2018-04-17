@@ -1,18 +1,17 @@
 var gulp            = require("gulp"),
     del             = require("del"),
     include         = require("gulp-include"),
-    replace         = require("gulp-replace"),
     rename          = require("gulp-rename"),
     uglify          = require("gulp-uglify"),
     sass            = require("gulp-sass"),
-    php2html        = require('gulp-php2html'),
     watch           = require("gulp-watch"),
     sourcemaps      = require('gulp-sourcemaps'),
     plumber         = require('gulp-plumber'),
     cssnano         = require('gulp-cssnano'),
     log             = require('fancy-log'),
-    es              = require('event-stream')
-
+    es              = require('event-stream'),
+    through2        = require('through2'),
+    runner          = require('child_process')
     ;
 
 // Variables de chemins
@@ -82,27 +81,42 @@ gulp.task("clean", ["clean-html", "clean-js", "clean-css", "clean-assets"], func
     ]);
 });
 
+function myPhp2Html(file, enc, cb) {
+    runner.exec('php ' + file.path, function(err, phpResponse, stderr) {
+        if(err) console.log(err); /* log error */
+
+        file.contents = new Buffer(phpResponse
+            .replace(/\/dist\//g, '\/')
+            .replace(/\/doc\//g, '\/')
+            .replace(/(['"])([^"']+)\.js/g, '$1$2.min.js')
+            .replace(/(['"])([^"']+)\.css/g, '$1$2.min.css')
+        );
+
+        return cb(null, file);
+    });
+}
+function php2html(glob, dest){
+    return gulp.src(glob)
+        .pipe(through2.obj(myPhp2Html))
+        .pipe(rename(function (path) {
+            path.extname = ".html"
+        }))
+        .pipe(gulp.dest(dest));
+}
+
 gulp.task("generate-doc", ["make-prod-assets"], function() {
     // Generate doc
-    return gulp.src(["./doc/*.php"])
-        .pipe(php2html())
-        .pipe(gulp.dest(build + "/"));
+    return php2html(["./doc/*.php"], build + "/");
 });
 gulp.task("generate-poc", ["make-prod-assets"], function() {
     // Generate poc
-    return gulp.src(["./doc/poc/*.php"])
-        .pipe(php2html())
-        .pipe(gulp.dest(build + "/poc/"));
+    return php2html(["./doc/poc/*.php"], build + "/poc");
 });
 
 
 gulp.task("generate-html", ["generate-poc","generate-doc", "clean-html", "make-prod-assets"], function() {
     // replace html
     return gulp.src([build + '/**/*.html'])
-        .pipe(replace(/\/dist\//g, '\/'))
-        .pipe(replace(/\/doc\//g, '\/'))
-        .pipe(replace(/(['"])([^"']+)\.js/g, '$1$2.min.js'))
-        .pipe(replace(/(['"])([^"']+)\.css/g, '$1$2.min.css'))
         .pipe(gulp.dest(destination + '/'));
 });
 
