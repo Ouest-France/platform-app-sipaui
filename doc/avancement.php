@@ -126,45 +126,6 @@
                     </tbody>
                 </table>
             </div>
-
-
-
-
-            <div class="su-hidden" style="margin-top: 20px;">
-                <h4>A faire&nbsp;:</h4>
-                <ul>
-                    <li>Liste&nbsp;: puces responsives</li>
-
-                    <li>Breakpoints</li>
-                    <li>Liens focus et active</li>
-                    <li>Gérer la hauteur des boutons avec un height ou le padding&nbsp;?</li>
-                    <li>Bug&nbsp;: pb hauteur HTML et Body à 100% de la fenêtre + margin sur  main inactif</li>
-                    <li>Taille de texte sur mobile -> Corine, -wekkit-text-size-adjust ? font-size de HTML ? taille en vw ?</li>
-                    <li>Carte&nbsp;: revoir le graphisme + intégrer la logique sans CSS autres…</li>
-                    <li>Carte&nbsp;: ajouter entre () l’origine du fichier variable</li>
-                    <li>Faire un schéma en mode fichier ?</li>
-                    <li>Vrai accueil</li>
-                    <li>Mettre sur Github</li>
-                    <li>Mettre URL Github ici</li>
-                </ul>
-
-                <h4>A voir&nbsp;:</h4>
-                <ul>
-                    <li>Fonte pictos&nbsp;?</li>
-                    <li>On garde toujours IE9 dans le scope des navigateurs&nbsp;?</li>
-                    <li>La grille, on garde la même ? On passe à du grid-layout&nbsp;?</li>
-                    <li>Utilisons-nous toujours du REM pour les tailles de blocs, de marges…</li>
-                    <li>Identité SipaUI -> Corine</li>
-                    <li>Cf. gitbook et storybook</li>
-                    <li>Cf. Github</li>
-                </ul>
-
-
-                <h4>ODJ prochaine réunion&nbsp;:</h4>
-                <ul>
-                    <li></li>
-                </ul>
-            </div>
         </main>
     </body>
 </html>
