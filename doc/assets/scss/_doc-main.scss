@@ -34,12 +34,13 @@ header {
     }
 }
 nav {
-    background: $couleur-principale-8;
-    padding: 5px 20px;
+    $bgColor-menu: $couleur-principale-8;
+    $bgColor-sousMenu: $couleur-principale-6;
     box-shadow: 0 2px 3px  1px rgba(0,0,0, .5);
 
-    li {
-        margin-right: 20px;
+    ul {
+        background: $bgColor-menu;
+        padding: 5px 20px 0;
     }
     a {
         $couleur: $couleur-principale-1;
@@ -48,6 +49,8 @@ nav {
         opacity: .7;
         text-decoration: none;
         transition: opacity .3s ease;
+        margin-right: 20px;
+        border-bottom: 5px solid $bgColor-menu;
 
         &:hover,
         &.actif {
@@ -56,15 +59,14 @@ nav {
         }
     }
     .sous-menu {
-        margin-top: $margin-standard;
+        background: $bgColor-sousMenu;
         a {
-            border-style: dashed;
-            padding: .60px 20px;
+            border-bottom-color: $bgColor-sousMenu;
         }
     }
 }
 main {
-    padding: 120px 2rem 20px;
+    padding: 150px 2rem 20px;
 }
 
 .liste-boutons {

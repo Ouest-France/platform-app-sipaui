@@ -4,16 +4,18 @@
     include(__DIR__."/_fragments/_head.php");
     ?>
     <body>
-        <?php
-        include(__DIR__."/_fragments/_header.php");
-        ?>
-
-        <nav>
+        <header>
             <?php
-            $actif='poc';
-            include(__DIR__."/../_fragments/_nav.php");
+            include(__DIR__."/../_fragments/_titre.php");
             ?>
-        </nav>
+
+            <nav>
+                <?php
+                $actif='poc';
+                include(__DIR__."/../_fragments/_nav.php");
+                ?>
+            </nav>
+        </header>
 
         <main class="su-editorial">
             <h2>Proof Of Concept</h2>

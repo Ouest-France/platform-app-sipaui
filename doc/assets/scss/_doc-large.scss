@@ -1,0 +1,18 @@
+// Site SipaUI
+// CSS pour écrans larges spécifiques au projet
+//
+
+/* Point de rupture desktop (980px) */
+nav {
+    a {
+        &.actif {
+            border-bottom-color: $couleur-principale-1;
+        }
+    }
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
