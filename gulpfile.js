@@ -126,13 +126,13 @@ gulp.task("generate-html", ["generate-poc","generate-doc", "clean-html", "make-p
 // Commandes utiles ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 gulp.task("watch", function() {
-    gulp.start('make-sass');
+    gulp.start('make-dev-assets');
     watch( [
             source + '/scss/**/*.scss',
             doc + '/scss/**/*.scss',
             poc + '/scss/**/*.scss',
         ], function(){
-        gulp.start('make-sass');
+        gulp.start('make-dev-assets');
     });
 });
 
