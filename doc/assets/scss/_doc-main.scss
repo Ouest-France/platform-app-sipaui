@@ -49,7 +49,7 @@ nav {
         opacity: .7;
         text-decoration: none;
         transition: opacity .3s ease;
-        margin-right: 20px;
+        margin-right: $margin-resp-standard;
         border-bottom: 5px solid $bgColor-menu;
 
         &:hover,
@@ -66,20 +66,20 @@ nav {
     }
 }
 main {
-    padding: 150px 2rem 20px;
+    padding: 15rem 2rem 20px;
 }
 
 .liste-boutons {
     li {
-        margin-bottom: 20px;
+        margin-bottom: $margin-resp-standard;
     }
 }
 
 .intro {
-    font-size: 2rem;
+    font-size: $font-size-medium2;
     border: 1px solid $couleur-principale-4;
-    border-radius: 1rem;
-    padding: 1rem;
+    border-radius: 10px;
+    padding: 10px;
     max-width: 500px;
 }
 
@@ -92,7 +92,7 @@ main {
 
 .carte {
     width: 500px;
-    margin-bottom: 10px;
+    margin-bottom: $margin-resp-small;
 }
 
 .trop-large-responsif {

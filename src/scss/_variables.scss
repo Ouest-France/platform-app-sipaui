@@ -76,7 +76,8 @@ $dailymotion:       #0066dc   !default;
 $font-family-base:       Arial, Helvetica, sans-serif !default;
 $font-family-secondaire: null !default;
 
-$font-size-root: 10px !default;// Valeur en pixel pour s'adapter au responsive. Appliqué à l'élément <html>.
+$font-size-root: 10px      !default;// Valeur en pixel pour s'adapter au responsive. Appliqué à l'élément <html>.
+
 $font-size-xsmall:  1.2rem !default;
 $font-size-small:   1.4rem !default;
 $font-size-medium1: 1.6rem !default;
@@ -99,29 +100,40 @@ $font-size-base: $font-size-medium1 !default;
 
 // Titres
 $font-family-titres: $font-family-secondaire !default;
-$color-titres: null              !default;
-$font-size-h1: $font-size-xxtall !default;
+$color-titres: null                     !default;
+$font-size-h1: $font-size-xxtall        !default;
 $margin-bottom-h1: $font-size-h1 * 1.2  !default;
-$font-size-h2: $font-size-xtall  !default;
+$font-size-h2: $font-size-xtall         !default;
 $margin-bottom-h2: $font-size-h2 * 1.1  !default;
-$font-size-h3: $font-size-tall   !default;
-$margin-bottom-h3: $font-size-h3 * 1  !default;
-$font-size-h4: $font-size-medium2   !default;
-$font-size-h5: $font-size-base   !default;
-$font-size-h6: $font-size-base   !default;
+$font-size-h3: $font-size-tall          !default;
+$margin-bottom-h3: $font-size-h3 * 1    !default;
+$font-size-h4: $font-size-medium2       !default;
+$font-size-h5: $font-size-base          !default;
+$font-size-h6: $font-size-base          !default;
 $font-weight-titres: $font-weight-medium !default;
 
 // MARGES --------------------------------------------------------------------------------
-//margin-bottom
-$margin-xsmall:     .5rem   !default;
-$margin-small:      1rem    !default;
-$margin-medium1:    1.5rem  !default;
-$margin-medium2:    2rem    !default;
-$margin-large:      3rem    !default;
-$margin-xlarge:     4rem    !default;
+//marges en PX
+$margin-xsmall:     5px     !default;
+$margin-small:      10px    !default;
+$margin-medium1:    15px    !default;
+$margin-medium2:    20px    !default;
+$margin-large:      30px    !default;
+$margin-xlarge:     40px    !default;
 
 $margin-standard: $margin-medium2;
 $margin-standard-large: $margin-xlarge;
+
+//marges responsives liées au font-size défini sur HTML ($font-size-root) en REM
+$margin-resp-xsmall:     .5rem   !default;
+$margin-resp-small:      1rem    !default;
+$margin-resp-medium1:    1.5rem  !default;
+$margin-resp-medium2:    2rem    !default;
+$margin-resp-large:      3rem    !default;
+$margin-resp-xlarge:     4rem    !default;
+
+$margin-resp-standard: $margin-resp-medium2         !default;
+$margin-resp-standard-large: $margin-resp-xlarge    !default;
 
 // OMBRES --------------------------------------------------------------------------------
 $ombre-1: 0 0 10px rgba(0,0,0, .5) !default;
@@ -152,13 +164,16 @@ $color-lien-voyant-active:  $color-lien-voyant-hover    !default;
 $color-lien-voyant-focus:   $color-lien-voyant-hover    !default;
 $color-lien-voyant-visited: $couleur-secondaire-3       !default;
 
+// LISTES À PUCES
+
+
 // TABLEAUX
 $border-tableau: 1px solid $couleur-principale-3        !default;
 $padding-tableau: $margin-xsmall                        !default;
 $caption-color-tableau: $couleur-principale-5           !default;
 $caption-side-tableau: bottom                           !default;
 $caption-align-tableau: center                          !default;
-$caption-padding-tableau: $margin-xsmall 0               !default;
+$caption-padding-tableau: $margin-resp-xsmall 0              !default;
 
 $border-tableau-plus: 1px solid $couleur-principale-4   !default;
 $background-tableau-plus-header: $couleur-principale-3  !default;
@@ -170,11 +185,11 @@ $background-tableau-plus-even: lighten($couleur-principale-2, 5%)    !default;
 $background-bouton: $couleur-principale-3   !default;
 $color-bouton: $couleur-principale-8        !default;
 $border-bouton: null                        !default;
-$radius-bouton: .3rem                       !default;
+$radius-bouton: 3px                         !default;
 $shadow-bouton: null                        !default;
 $font-family-bouton: null                   !default;
 $font-weight-bouton: $font-weight-gras      !default;
-$padding-bouton: 1.2rem 2rem                !default;
+$padding-bouton: 12px 2px                   !default;
 // hover
 $background-bouton-hover: $couleur-principale-4 !default;
 $color-bouton-hover: $couleur-principale-8      !default;

@@ -27,7 +27,7 @@ h5,
 h6,
 .su-h6 {
     margin-top: 0;
-    margin-bottom: $margin-small;
+    margin-bottom: $margin-resp-small;
     font-family: $font-family-titres;
     font-weight: $font-weight-titres;
     line-height: 1.2;
@@ -72,7 +72,7 @@ p {
 }
 p + p,
 ul + p {
-    margin-top: $margin-standard
+    margin-top: $margin-resp-standard
 }
 p + h2,
 p + .su-h2,
@@ -86,7 +86,7 @@ ul + h3,
 ul + .su-h3,
 ul + h4,
 ul + .su-h4 {
-    margin-top: $margin-standard-large
+    margin-top: $margin-resp-standard-large
 }
 
 //
@@ -98,8 +98,7 @@ strong {
 .su-strong {
     @extend strong;
 }
-.su-important {
-    font-weight: $font-weight-gras;
+strong.su-important {
     color: $couleur-important;
 }
 

@@ -206,11 +206,11 @@ ol.su-list,
 }
 
 dt {
-    font-weight: $margin-medium1;
+    font-weight: $margin-resp-medium1;
 }
 
 dd {
-    margin-bottom: $margin-xsmall;
+    margin-bottom: $margin-resp-xsmall;
     margin-left: 0; // Undo browser default
 }
 ul.su-horizontal {
@@ -264,8 +264,8 @@ address {
 // Ligne horizontale
 //
 hr {
-    margin-top: $margin-standard;
-    margin-bottom: $margin-standard;
+    margin-top: $margin-resp-standard;
+    margin-bottom: $margin-resp-standard;
     border: 0;
     border-top: .1rem solid $couleur-principale-4;
 }

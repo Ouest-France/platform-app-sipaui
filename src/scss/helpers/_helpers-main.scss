@@ -54,14 +54,14 @@ body:hover .su-visually-hidden {
     margin: 0 !important;
 }
 .su-margin-small {
-    margin-bottom: $margin-small !important;                // 10px
+    margin-bottom: $margin-resp-small !important;                // 10px
 }
 .su-margin-medium {
-    margin-bottom: $margin-medium1 !important;              // 15px
+    margin-bottom: $margin-resp-medium1 !important;              // 15px
 }
 .su-margin-standard {
-   margin-bottom: $margin-standard !important;             // 20px
+   margin-bottom: $margin-resp-standard !important;             // 20px
 }
 .su-margin-large {
-    margin-bottom: $margin-standard-large !important;       // 40px
+    margin-bottom: $margin-resp-standard-large !important;       // 40px
 }

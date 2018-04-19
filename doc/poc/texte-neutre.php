@@ -43,9 +43,9 @@
 
             <h3>Emphase</h3>
 
-            <h4>Classe <code>class="su-important"</code></h4>
+            <h4>Gras <code>strong</code> avec la classe <code>class="su-important"</code></h4>
 
-            <p>Lorem ipsum <span class="su-important">dolor sit amet</em>.</p>
+            <p>Lorem ipsum <strong class="su-important">dolor sit amet</strong>.</p>
 
             <h4>Gras <code>strong</code></h4>
 
