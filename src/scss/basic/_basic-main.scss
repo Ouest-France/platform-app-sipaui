@@ -87,10 +87,14 @@ a.su-neutral-link  {
 a.su-bright-link  {
     color: $color-lien-voyant;
 
-    &:hover,
-    &:focus,
-    &:active {
+    &:hover {
         color: $color-lien-voyant-hover;
+    }
+    &:active {
+        color: $color-lien-voyant-active;
+    }
+    &:focus {
+        color: $color-lien-voyant-focus;
     }
 }
 /* -- LIENS SUR TITRES -------------------------- */
