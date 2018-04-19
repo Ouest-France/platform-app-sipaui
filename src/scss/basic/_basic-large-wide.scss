@@ -7,3 +7,28 @@
 //
 /* -- LISTES -------------------------------------------------------------------- */
 //
+$taille-puce-retrait: $taille-puce-desktop + $taille-espace-puce-desktop;
+%liste-a-puces {
+    padding-left: $taille-puce-retrait;
+
+    > li {
+        &::before {
+            width: $taille-puce-desktop;
+            height: $taille-puce-desktop;
+            margin-left: - $taille-puce-retrait;
+            margin-right: $taille-espace-puce-desktop
+        }
+    }
+}
+ul.su-list,
+.su-editorial ul {
+    @extend %liste-a-puces;
+}
+ul.su-list ul.su-list,
+.su-editorial ul ul {
+    li::before {
+        width: $taille-puce-desktop / 1.3;
+        height: $taille-puce-desktop / 1.3;
+        margin-right: $taille-espace-puce-desktop / 1.3;
+    }
+}

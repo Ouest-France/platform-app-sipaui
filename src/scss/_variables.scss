@@ -165,7 +165,10 @@ $color-lien-voyant-focus:   $color-lien-voyant-hover    !default;
 $color-lien-voyant-visited: $couleur-secondaire-3       !default;
 
 // LISTES À PUCES
-
+$taille-puce-mobile: .8rem;
+$taille-espace-puce-mobile: .8rem;
+$taille-puce-desktop: 1rem;
+$taille-espace-puce-desktop: 1rem;
 
 // TABLEAUX
 $border-tableau: 1px solid $couleur-principale-3        !default;
