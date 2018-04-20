@@ -74,11 +74,8 @@ main {
         padding-right: $margin-standard;
     }
 }
-
-.liste-boutons {
-    li {
-        margin-bottom: $margin-resp-standard;
-    }
+.trop-large-responsif {
+    overflow-x: scroll;
 }
 
 .intro {
@@ -99,9 +96,14 @@ main {
     width: 500px;
     margin-bottom: $margin-resp-small;
 }
-
-.trop-large-responsif {
-    overflow-x: scroll;
+.integre {
+    > ul > li {
+        margin-bottom: $margin-resp-standard;
+    }
+    h2,
+    h3 {
+        margin-bottom: $margin-resp-small;
+    }
 }
 .tableau-suivi {
     th,
@@ -119,6 +121,12 @@ main {
         li::before {
             background: $couleur-principale-4;
         }
+    }
+}
+
+.liste-boutons {
+    li {
+        margin-bottom: $margin-resp-standard;
     }
 }
 

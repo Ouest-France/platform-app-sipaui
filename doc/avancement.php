@@ -19,6 +19,36 @@
 
         <main class="su-editorial">
 
+            <article class="conteneur integre">
+                <h1>Liste des composants intégrés</h1>
+
+                <ul class="su-not-list">
+                	<li>
+                	    <h2>Typo</h2>
+                	    <ul>
+                	    	<li>Titres</li>
+                	    	<li>Paragraphe</li>
+                	    	<li>Emphase</li>
+                	    </ul>
+                	</li>
+                	<li>
+                	    <h2>Objets basiques</h2>
+                	    <ul>
+                	    	<li>Liens</li>
+                	    	<li>Listes</li>
+                	    	<li>Tableaux</li>
+                	    	<li>Citations</li>
+                	    	<li>Code</li>
+                	    	<li>Séparateur (<code>hr</code>)</li>
+                	    </ul>
+                    </li>
+                	<li>
+                	    <h2>Boutons</h2>
+                	    <p>En cours…</p>
+                	</li>
+                </ul>
+            </article>
+
             <article class="conteneur">
                 <h1>Suivi de l’avancement du projet</h1>
 
