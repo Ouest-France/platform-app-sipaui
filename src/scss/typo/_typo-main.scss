@@ -72,7 +72,7 @@ p {
 }
 p + p,
 ul + p {
-    margin-top: $margin-resp-standard
+    margin-top: $margin-top-entre-blocs-petit;
 }
 p + h2,
 p + .su-h2,
@@ -85,8 +85,9 @@ ul + .su-h2,
 ul + h3,
 ul + .su-h3,
 ul + h4,
-ul + .su-h4 {
-    margin-top: $margin-resp-standard-large
+ul + .su-h4,
+article + article {
+    margin-top: $margin-top-entre-blocs-grand;
 }
 
 //

@@ -113,7 +113,7 @@ $font-size-h6: $font-size-base          !default;
 $font-weight-titres: $font-weight-medium !default;
 
 // MARGES --------------------------------------------------------------------------------
-//marges en PX
+// Marges en PX
 $margin-xsmall:     5px     !default;
 $margin-small:      10px    !default;
 $margin-medium1:    15px    !default;
@@ -124,7 +124,7 @@ $margin-xlarge:     40px    !default;
 $margin-standard: $margin-medium2;
 $margin-standard-large: $margin-xlarge;
 
-//marges responsives liées au font-size défini sur HTML ($font-size-root) en REM
+// Marges responsives liées au font-size défini sur HTML ($font-size-root) en REM
 $margin-resp-xsmall:     .5rem   !default;
 $margin-resp-small:      1rem    !default;
 $margin-resp-medium1:    1.5rem  !default;
@@ -134,6 +134,10 @@ $margin-resp-xlarge:     4rem    !default;
 
 $margin-resp-standard: $margin-resp-medium2         !default;
 $margin-resp-standard-large: $margin-resp-xlarge    !default;
+
+// Marges spécifiques
+$margin-top-entre-blocs-petit: $margin-resp-standard          !default; // séparateur entre 2 blocs de texte (ie : p + p…)
+$margin-top-entre-blocs-grand: $margin-resp-standard-large    !default; // séparateur entre 2 blocs de texte majeurs (ie : article + article, p + h2…)
 
 // OMBRES --------------------------------------------------------------------------------
 $ombre-1: 0 0 10px rgba(0,0,0, .5) !default;
