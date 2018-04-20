@@ -21,7 +21,7 @@ $taille-puce-retrait: $taille-puce-desktop + $taille-espace-puce-desktop;
     }
 }
 ul.su-list,
-.su-editorial ul {
+.su-editorial ul:not(.su-not-list) {
     @extend %liste-a-puces;
 }
 ul.su-list ul.su-list,

@@ -177,7 +177,7 @@ $taille-puce-retrait: $taille-puce-mobile + $taille-espace-puce-mobile;
     }
 }
 ul.su-list,
-.su-editorial ul {
+.su-editorial ul:not(.su-not-list) {
     @extend %liste-a-puces;
 }
 ul.su-list ul.su-list,
