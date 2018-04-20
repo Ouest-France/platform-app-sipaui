@@ -4,9 +4,9 @@
                 <h2>Titres</h2>
 
                 <p class="su-h1">Titre <code>h1</code> ou <code>class="su-h1"</code></p>
-                <p class="su-h1">Titre <code>h1</code> ou <code>class="su-h1"</code></p>
                 <p class="su-h2">Titre <code>h2</code> ou <code>class="su-h2"</code></p>
                 <p class="su-h3">Titre <code>h3</code> ou <code>class="su-h3"</code></p>
+                <p class="su-h4">Titre <code>h4</code> ou <code>class="su-h4</code></p>
                 <p class="su-h5">Titre <code>h5</code> ou <code>class="su-h5"</code></p>
                 <p class="su-h6">Titre <code>h6</code> ou <code>class="su-h6"</code></p>
 
