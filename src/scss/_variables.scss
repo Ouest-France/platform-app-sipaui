@@ -153,6 +153,7 @@ $color-lien-hover:   $couleur-secondaire-2  !default;
 $color-lien-active:  $color-lien-hover      !default;
 $color-lien-focus:   $color-lien-hover      !default;
 $color-lien-visited: $color-texte           !default;
+$text-decoration-link: null                !default;
 
 // LIENS NEUTRES
 $color-lien-neutre:         $color-texte                !default;
@@ -169,10 +170,13 @@ $color-lien-voyant-focus:   $color-lien-voyant-hover    !default;
 $color-lien-voyant-visited: $couleur-secondaire-3       !default;
 
 // LISTES À PUCES
-$taille-puce-mobile: .8rem;
-$taille-espace-puce-mobile: .8rem;
-$taille-puce-desktop: 1rem;
-$taille-espace-puce-desktop: 1rem;
+$taille-puce-mobile: .8rem         !default;
+$taille-espace-puce-mobile: .8rem  !default;
+$taille-puce-desktop: 1rem         !default;
+$taille-espace-puce-desktop: 1rem  !default;
+
+// LISTES NUMÉROTÉES
+$weight-numero-ol: $font-weight-gras        !default;
 
 // TABLEAUX
 $border-tableau: 1px solid $couleur-principale-3        !default;
@@ -180,7 +184,7 @@ $padding-tableau: $margin-xsmall                        !default;
 $caption-color-tableau: $couleur-principale-5           !default;
 $caption-side-tableau: bottom                           !default;
 $caption-align-tableau: center                          !default;
-$caption-padding-tableau: $margin-resp-xsmall 0              !default;
+$caption-padding-tableau: $margin-resp-xsmall 0         !default;
 
 $border-tableau-plus: 1px solid $couleur-principale-4   !default;
 $background-tableau-plus-header: $couleur-principale-3  !default;

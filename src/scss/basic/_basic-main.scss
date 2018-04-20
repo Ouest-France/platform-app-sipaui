@@ -8,6 +8,7 @@
 //
 a {
     color: $color-lien;
+    text-decoration: $text-decoration-link;
 
     &:hover {
         color: $color-lien-hover;
@@ -86,6 +87,7 @@ a.su-neutral-link  {
 /* -- LIENS VOYANTS -------------------------- */
 a.su-bright-link  {
     color: $color-lien-voyant;
+    text-decoration: $text-decoration-link;
 
     &:hover {
         color: $color-lien-voyant-hover;
@@ -204,6 +206,7 @@ ol.su-list,
             padding-right: 1rem;
             text-align: right;
             padding-bottom: .4rem;
+            font-weight: $weight-numero-ol;
         }
     }
 }
@@ -233,7 +236,7 @@ HTML:lang(fr),
 :lang(fr) q,
 :lang(fr) blockquote { quotes: '«\00A0' '\00A0»' '"' '"';} /* défini les quotes pour tout le site. \00A0 = espace insécable. Le premier niveaun de quote est à la fançaise, le second est droit */
 
-cite, blockquote p, q, cite .origine {
+cite, blockquote, blockquote p, q, cite .origine {
 	font-style: italic;
 	}
 header cite,
