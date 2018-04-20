@@ -15,18 +15,18 @@
                 include(__DIR__."/../_fragments/_nav.php");
                 ?>
                 <ul class="su-horizontal sous-menu">
-                <li><a href="basiques-neutre.php">Objets basiques sans thème</a></li>
-                <li><a href="basiques-of.php" class="actif">Objets basiques thème Ouest-France</a></li>
-            </ul>
+                    <li><a href="basiques-neutre.php">Objets basiques sans thème</a></li>
+                    <li><a href="basiques-of.php" class="actif">Objets basiques thème Ouest-France</a></li>
+                </ul>
             </nav>
         </header>
 
         <main>
 
-            <article class="conteneur">
-                <h1>Objets basiques Ouest-France</h1>
-                <h2>Standards</h2>
-            <article class="conteneur">
+            <?php
+            $template='Ouest-France';
+            include(__DIR__."/_fragments/_contenu-basiques.php");
+            ?>
 
         </main>
     </body>

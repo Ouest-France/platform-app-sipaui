@@ -23,10 +23,10 @@
 
         <main>
 
-            <article class="conteneur">
-                <h1>Objets basiques neutres</h1>
-                <h2>Standards</h2>
-            <article class="conteneur">
+            <?php
+            $template='neutres';
+            include(__DIR__."/_fragments/_contenu-basiques.php");
+            ?>
 
         </main>
     </body>
