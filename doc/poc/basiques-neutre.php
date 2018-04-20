@@ -22,8 +22,11 @@
         </header>
 
         <main>
-            <h2>Objets basiques neutres</h2>
-            <h3>Standards</h3>
+
+            <article class="conteneur">
+                <h1>Objets basiques neutres</h1>
+                <h2>Standards</h2>
+            <article class="conteneur">
 
         </main>
     </body>
