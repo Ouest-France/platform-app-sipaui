@@ -69,6 +69,10 @@ main {
     > *:first-child {
         padding-top: 15rem;
     }
+    .conteneur {
+        padding-left: $margin-standard;
+        padding-right: $margin-standard;
+    }
 }
 
 .liste-boutons {
