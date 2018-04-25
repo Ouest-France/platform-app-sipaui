@@ -4,12 +4,12 @@
     include(__DIR__."/_fragments/_head.php");
     ?>
     <body>
-        <header>
+        <header role="banner">
             <?php
             include(__DIR__."/_fragments/_titre.php");
             ?>
 
-            <nav>
+            <nav role="navigation">
                 <?php
                 $actif='archi';
                 include(__DIR__."/_fragments/_nav.php");
@@ -18,9 +18,9 @@
         </header>
 
 
-        <main class="su-editorial">
+        <main class="su-editorial" role="main">
 
-            <article class="conteneur">
+            <article class="conteneur" role="article">
                 <h1>Architecture</h2>
 
                 <h2>SipaUI intégré dans un site</h2>

@@ -1,4 +1,4 @@
-<article class="conteneur">
+<article class="conteneur" role="article">
                 <h1>Textes <?php if($template==true) echo $template ?></h1>
 
                 <h2>Titres</h2>

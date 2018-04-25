@@ -4,12 +4,12 @@
     include(__DIR__."/_fragments/_head.php");
     ?>
     <body>
-        <header>
+        <header role="banner">
             <?php
             include(__DIR__."/_fragments/_titre.php");
             ?>
 
-            <nav>
+            <nav role="navigation">
                 <?php
                 $actif='avancement';
                 include(__DIR__."/_fragments/_nav.php");
@@ -17,9 +17,9 @@
             </nav>
         </header>
 
-        <main class="su-editorial">
+        <main class="su-editorial" role="main">
 
-            <article class="conteneur integre">
+            <article class="conteneur integre" role="article">
                 <h1>Liste des composants intégrés</h1>
 
                 <ul class="su-not-list">
@@ -49,7 +49,7 @@
                 </ul>
             </article>
 
-            <article class="conteneur">
+            <article class="conteneur" role="article">
                 <h1>Suivi de l’avancement du projet</h1>
 
                 <h2>Réunions d’avancement</h2>

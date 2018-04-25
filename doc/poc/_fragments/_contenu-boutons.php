@@ -1,4 +1,4 @@
-<article class="conteneur">
+<article class="conteneur" role="article">
                 <h1>Boutons <?php if($template==true) echo $template ?></h1>
                 <h2>Standards</h2>
                 <p>Chaque bouton a 4 états : normal (/ ou <code>link</code>), survolé (<code>hover</code>), cliqué (<code>active</code>) et visité (<code>visited</code>)</p>

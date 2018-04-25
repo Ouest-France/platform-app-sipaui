@@ -4,12 +4,12 @@
     include(__DIR__."/_fragments/_head.php");
     ?>
     <body>
-        <header>
+        <header role="banner">
             <?php
             include(__DIR__."/../_fragments/_titre.php");
             ?>
 
-            <nav>
+            <nav role="navigation">
                 <?php
                 $actif='poc';
                 include(__DIR__."/../_fragments/_nav.php");
@@ -17,9 +17,9 @@
             </nav>
         </header>
 
-        <main class="su-editorial">
+        <main class="su-editorial" role="main">
 
-            <article class="conteneur">
+            <article class="conteneur" role="article">
                 <h1>Proof Of Concept</h1>
 
                 <h2>La typo</h2>

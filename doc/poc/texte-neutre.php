@@ -4,12 +4,12 @@
     include(__DIR__."/_fragments/_head.php");
     ?>
     <body>
-        <header>
+        <header role="banner">
             <?php
             include(__DIR__."/../_fragments/_titre.php");
             ?>
 
-            <nav>
+            <nav role="navigation">
                 <?php
                 $actif='poc';
                 include(__DIR__."/../_fragments/_nav.php");
@@ -21,7 +21,7 @@
             </nav>
         </header>
 
-        <main>
+        <main role="main">
 
             <?php
             $template='neutres';
