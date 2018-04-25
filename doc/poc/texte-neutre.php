@@ -16,7 +16,7 @@
                 ?>
                 <ul class="su-horizontal sous-menu">
                     <li><a href="texte-neutre.php" class="actif">Textes sans thème</a></li>
-                    <li><a href="texte-of.php">Textes thème Ouest-France</a></li>
+                    <li><a href="texte-of.php">Textes thème OF</a></li>
                 </ul>
             </nav>
         </header>

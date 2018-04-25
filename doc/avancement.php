@@ -27,7 +27,7 @@
                 	    <h2>Typo</h2>
                 	    <ul>
                 	    	<li>Titres</li>
-                	    	<li>Paragraphe</li>
+                	    	<li>Paragraphes</li>
                 	    	<li>Emphase</li>
                 	    </ul>
                 	</li>
@@ -67,7 +67,7 @@
                              <tr>
                                 <td><time datetime="2018-03-15">12/04/2018</time></td>
                                 <td>
-                                    <ol>
+                                    <ul>
                                         <li>Afin de pouvoir avancer sur ce projet qui est assez attendu et peut devenir un point de blocage pour d’autres projets, il a été accepté que&nbsp;:
                                             <ul>
                                                 <li>chaque semaine un jour minimum lui serait réservé</li>

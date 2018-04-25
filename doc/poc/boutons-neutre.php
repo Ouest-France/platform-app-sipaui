@@ -16,7 +16,7 @@
                 ?>
                 <ul class="su-horizontal sous-menu">
                 <li><a href="boutons-neutre.php" class="actif">Boutons sans thème</a></li>
-                <li><a href="boutons-of.php">Boutons thème Ouest-France</a></li>
+                <li><a href="boutons-of.php">Boutons thème OF</a></li>
             </ul>
             </nav>
         </header>

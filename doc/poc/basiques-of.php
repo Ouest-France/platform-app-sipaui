@@ -16,7 +16,7 @@
                 ?>
                 <ul class="su-horizontal sous-menu">
                     <li><a href="basiques-neutre.php">Objets basiques sans thème</a></li>
-                    <li><a href="basiques-of.php" class="actif">Objets basiques thème Ouest-France</a></li>
+                    <li><a href="basiques-of.php" class="actif">Objets basiques thème OF</a></li>
                 </ul>
             </nav>
         </header>
