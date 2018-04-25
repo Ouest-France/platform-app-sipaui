@@ -41,14 +41,20 @@ body:hover .su-visually-hidden {
 }
 
 //
-/* -- POSITION -------------------------------------------------------------------- */
+/* -- POSITIONS -------------------------------------------------------------------- */
 //
 .su-relative {
 	position: relative;
 }
+.su-absolute {
+	position: absolute;
+}
+.su-fixed {
+	position: fixed;
+}
 
 //
-/* -- MARGES -------------------------------------------------------------------- */
+/* -- MARGES BASSSES-------------------------------------------------------------------- */
 //
 .su-margin-0 {
     margin: 0 !important;
@@ -60,10 +66,29 @@ body:hover .su-visually-hidden {
     margin-bottom: $margin-resp-medium1 !important;              // 15px
 }
 .su-margin-standard {
-   margin-bottom: $margin-resp-standard !important;             // 20px
+    margin-bottom: $margin-resp-standard !important;             // 20px
 }
 .su-margin-large {
     margin-bottom: $margin-resp-standard-large !important;       // 40px
+}
+
+//
+/* -- PADDING BAS -------------------------------------------------------------------- */
+//
+.su-padding-0 {
+    padding: 0 !important;
+}
+.su-padding-small {
+    padding-bottom: $margin-resp-small !important;                // 10px
+}
+.su-padding-medium {
+    padding-bottom: $margin-resp-medium1 !important;              // 15px
+}
+.su-padding-standard {
+    padding-bottom: $margin-resp-standard !important;             // 20px
+}
+.su-padding-large {
+    padding-bottom: $margin-resp-standard-large !important;       // 40px
 }
 
 //

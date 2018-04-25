@@ -17,7 +17,7 @@
             </nav>
         </header>
 
-        <main class="su-editorial" role="main">
+        <main class="su-editorial su-padding-standard" role="main">
 
             <article class="conteneur" role="article">
                 <h1>Proof Of Concept</h1>

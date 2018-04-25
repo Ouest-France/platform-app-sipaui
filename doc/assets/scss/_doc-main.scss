@@ -10,7 +10,10 @@ header {
     .titre {
         padding: 5px 20px;
         background: radial-gradient(circle at 100% 100%, $couleur-principale-6, $couleur-principale-7);
-        color: $couleur-principale-1;
+
+        * {
+            color: $couleur-principale-1 !important;
+        }
     }
     h1 {
         margin-bottom: 0;
