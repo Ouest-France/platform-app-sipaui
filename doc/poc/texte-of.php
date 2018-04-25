@@ -21,7 +21,7 @@
             </nav>
         </header>
 
-        <main role="main">
+        <main role="main" class="su-editorial">
 
             <?php
             $template='Ouest-France';

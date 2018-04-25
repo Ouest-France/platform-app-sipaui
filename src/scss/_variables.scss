@@ -88,7 +88,10 @@ $font-size-xxtall:  4rem   !default;
 
 $smaller-font-size: 80% !default;
 
-$line-height-base:  1.5 !default;
+$line-height-xsmall: 1   !default;
+$line-height-small:  1.2 !default;
+$line-height-medium: 1.5 !default;
+$line-height-base: $line-height-medium !default;
 
 $font-weight-maigre: 300 !default;
 $font-weight-medium: 500 !default;
@@ -100,7 +103,7 @@ $font-size-base: $font-size-medium1 !default;
 
 // Titres
 $font-family-titres: $font-family-secondaire !default;
-$color-titres: null                     !default;
+$color-titres: $couleur-principale-8    !default;
 $font-size-h1: $font-size-xxtall        !default;
 $margin-bottom-h1: $font-size-h1 * 1.2  !default;
 $font-size-h2: $font-size-xtall         !default;
@@ -111,6 +114,22 @@ $font-size-h4: $font-size-medium2       !default;
 $font-size-h5: $font-size-base          !default;
 $font-size-h6: $font-size-base          !default;
 $font-weight-titres: $font-weight-medium !default;
+
+// Titres éditoriaux
+$font-family-titres-edito: null                 !default;
+$font-weight-titres-edito: $font-weight-gras    !default;
+$color-titres-edito: $couleur-principale-5      !default;
+$font-size-h1-edito: null                       !default;
+$margin-bottom-h1-edito: null                   !default;
+$font-size-h2-edito: null                       !default;
+$margin-bottom-h2-edito: null                   !default;
+$font-size-h3-edito: null                       !default;
+$margin-bottom-h3-edito: null                   !default;
+$font-size-h4-edito: null                       !default;
+$font-size-h5-edito: null                       !default;
+$font-size-h6-edito: null                       !default;
+
+
 
 // MARGES --------------------------------------------------------------------------------
 // Marges en PX

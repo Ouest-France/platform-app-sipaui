@@ -30,7 +30,7 @@ h6,
     margin-bottom: $margin-resp-small;
     font-family: $font-family-titres;
     font-weight: $font-weight-titres;
-    line-height: 1.2;
+    line-height: $line-height-small;
     color: $color-titres;
     display: block;
 }
@@ -63,12 +63,60 @@ h6,
     font-size: $font-size-h6;
 }
 
+.su-editorial {
+    h1,
+    .su-h1,
+    h2,
+    .su-h2,
+    h3,
+    .su-h3,
+    h4,
+    .su-h4,
+    h5,
+    .su-h5,
+    h6,
+    .su-h6 {
+        font-family: $font-family-titres-edito;
+        font-weight: $font-weight-titres-edito;
+        color: $color-titres-edito;
+    }
+
+    h1,
+    .su-h1 {
+        font-size: $font-size-h1-edito;
+        margin-bottom: $margin-bottom-h1-edito;
+    }
+    h2,
+    .su-h2 {
+        font-size: $font-size-h2-edito;
+        margin-bottom: $margin-bottom-h2-edito;
+    }
+    h3,
+    .su-h3 {
+        font-size: $font-size-h3-edito;
+        margin-bottom: $margin-bottom-h3-edito;
+    }
+    h4,
+    .su-h4 {
+        font-size: $font-size-h4-edito;
+    }
+    h5,
+    .su-h5 {
+        font-size: $font-size-h5-edito;
+    }
+    h6,
+    .su-h6 {
+        font-size: $font-size-h6-edito;
+    }
+}
+
 
 //
 /* -- TEXTES -------------------------------------------------------------------- */
 //
 p {
     margin: 0;
+    line-height: $line-height-base;
 }
 p + p,
 ul + p {
