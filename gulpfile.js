@@ -32,8 +32,8 @@ scsslist =
         [poc + '/src/scss/neutre/default-poc-neutre.scss', 'default-poc-neutre.min.css'],
         [poc + '/src/scss/neutre/large-poc-neutre.scss', 'large-poc-neutre.min.css'],
 
-        [poc + '/scss/of/default-poc-of.scss', 'default-poc-of.min.css'],
-        [poc + '/scss/of/large-poc-of.scss', 'large-poc-of.min.css'],
+        [poc + '/src/scss/of/default-poc-of.scss', 'default-poc-of.min.css'],
+        [poc + '/src/scss/of/large-poc-of.scss', 'large-poc-of.min.css'],
     ]
 ;
 
