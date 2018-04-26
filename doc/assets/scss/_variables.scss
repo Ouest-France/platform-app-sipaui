@@ -1,3 +1,56 @@
-// Site SipaUI
+// Documentation SipaUI
 // Variables
 //
+
+// Variables par défaut
+@import 'src/scss/variables';
+
+// COULEURS ------------------------------------------------------------------------------------------------------------------
+// NUANCIER OUEST-FRANCE
+$blanc:                     #fff;
+$gris-tres-clair:			#efefef;
+$gris-plus-clair:           #d4d4d4;
+$gris-clair:                #c1bfc0;
+$gris:                      #878787;
+$gris-fonce:                #666;
+$gris-plus-fonce:           #333;
+$noir:                      #000;
+
+$poupre-clair:  #be0030;
+$poupre:        #950030;
+$poupre-fonce:  #6e0030;
+
+
+
+
+// APPLICATION DES COULEURS ---------------------------------------
+
+$body-bg:    $blanc;
+$body-color: $gris-plus-fonce;
+
+
+// COULEURS DOMINANTES
+$couleur-principale-1: $blanc;
+$couleur-principale-2: $gris-tres-clair;
+$couleur-principale-3: $gris-plus-clair;
+$couleur-principale-4: $gris-clair;
+$couleur-principale-5: $gris;
+$couleur-principale-6: $gris-fonce;
+$couleur-principale-7: $gris-plus-fonce;
+$couleur-principale-8: $noir;
+
+$couleur-secondaire-1: $poupre-clair;
+$couleur-secondaire-2: $poupre;
+$couleur-secondaire-3: $poupre-fonce;
+$couleur-secondaire-4: null;
+
+$couleur-important: $couleur-secondaire-2;
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+// TYPO ----------------------------------------------------------------------------------
+$font-family-secondaire: null !default;
+
+// Titres éditoriaux
+$font-weight-titres-edito: $font-weight-maigre;
+$color-titres-edito: $couleur-secondaire-2;

@@ -25,17 +25,22 @@ scsslist =
     [
         [source + '/scss/default-sipaui.scss', 'default-sipaui.min.css'],
         [source + '/scss/large-sipaui.scss', 'large-sipaui.min.css'],
+
         [doc + '/scss/default-demo.scss', 'default-demo.min.css'],
         [doc + '/scss/large-demo.scss', 'large-demo.min.css'],
-        [poc + '/scss/of/default-of.scss', 'default-of.min.css'],
-        [poc + '/scss/of/large-of.scss', 'large-of.min.css'],
+
+        [poc + '/scss/neutre/default-poc-neutre.scss', 'default-poc-neutre.min.css'],
+        [poc + '/scss/neutre/large-poc-neutre.scss', 'large-poc-neutre.min.css'],
+
+        [poc + '/scss/of/default-poc-of.scss', 'default-poc-of.min.css'],
+        [poc + '/scss/of/large-poc-of.scss', 'large-poc-of.min.css'],
     ]
 ;
 
 gulp.task('make-sass', ['clean'], function () {
     return es.merge(scsslist.map(function(a) {
         return gulp.src(a[0])
-            .pipe(plumber(function(e){log.error('Erreur lors de la compilation SASS!', e);}))
+            .pipe(plumber(function(e){log.error('Erreur lors de la compilation SASS !', e);}))
             .pipe(sourcemaps.init())
             .pipe(sass())
             .pipe(sourcemaps.write())

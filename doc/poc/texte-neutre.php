@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <?php
-    include(__DIR__."/_fragments/_head.php");
+    include(__DIR__."/_fragments/_head-neutre.php");
     ?>
     <body>
         <header role="banner">

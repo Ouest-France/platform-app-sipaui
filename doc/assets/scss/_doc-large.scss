@@ -4,8 +4,8 @@
 
 /* Point de rupture desktop (980px) */
 nav {
-    a {
-        &.actif {
+    .sous-menu {
+        a.actif {
             border-bottom-color: $couleur-principale-1;
         }
     }
