@@ -64,8 +64,60 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td><time datetime="2018-04-26">26/04/2018</time></td>
+                                <td>
+                                    <ul>
+                                        <li>Équipe&nbsp;: le besoin d’un DEV se fait sentir pour valider le mode d’intégration et, plus tard, mettre en place un vrai POC (un projet créé suivant la cible et intégrant SipaUI).</li>
+                                        <li>Population du Github&nbsp;: <a href="https://github.com/ouest-france/sipaui" target="_blank" class="su-blank">github.com/ouest-france/sipaui</a></li>
+                                        <li>Ouverture de ce site au public</li>
+                                        <li>Automatisation de la mise en Prod (sur le site SipaUI)</li>
+                                        <li>Nouveautés sur ce site&nbsp;:
+                                            <ul>
+                                                <li>design amélioré (dont création d’un thème spécifique à la doc)</li>
+                                                <li>architecture&nbsp;: «&nbsp;SipaUI intégré dans un site&nbsp;», «&nbsp;SipaUI et les Blocks Providers&nbsp;» et «&nbsp;Gestion des tailles&nbsp;»</li>
+                                                <li>avancement&nbsp;: «&nbsp;Liste des composants intégrés&nbsp;»</li>
+                                                <li>POC&nbsp;: «&nbsp;Les objets HTML basiques&nbsp;»</li>
+                                            </ul>
+                                        </li>
+                                        <li>Le Studio a rédigé une doc de référence pour le design des textes (titres, paragraphes, liens…). Ce document nous servira à initier le template Ouest-France sur la base de SipaUI actuel et valider nos choix de variables.</li>
+                                        <li>La prochaine réunion ne sera pas avant 3 semaines au mieux.</li>
+                                        <li>A suivre&nbsp;:
+                                            <ul>
+                                                <li>Intégration de la gestion de police spécifique.</li>
+                                                <li>Validation des breakpoints et de l’attendu en fonction de ceux-ci.</li>
+                                                <li>Intégration des boutons.</li>
+                                                <li>Intégration de JS.</li>
+                                                <li>Intégration de la grille. (Quand tout ça sera fait, on devrait pouvoir passer en Beta…)</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>On garde toujours IE9 dans le scope des navigateurs&nbsp;?
+                                        <li>Gestion des pictos&nbsp;: continuons-nous avec une fonte de pictos&nbsp;?<br />
+                                        	-> gestion lourde pour le Studio,<br />
+                                        	-> impossibilité de picto avec plus d’une couleur,<br />
+                                        	-> ressource lourde à charger une fois,<br />
+                                        	-> quid des autres sites que Ouest-France&nbsp;?<br />
+                                        	MAIS, si pas fonte&nbsp;:<br />
+                                        	-> comment garantir la portabilité des icônes&nbsp;?<br />
+                                        	-> quelle est la meilleure solution poids / capacité de design&nbsp;?<br />
+                                        	Et si fonte&nbsp;:<br />
+                                        	-> ne serait-ce pas mieux qu’elle soit gérée par les intégrateurs&nbsp;?<br />
+                                        <li>Utilise-t-on la même grille qu’actuellement sur la Refonte&nbsp;?</li>
+                                        <li>Comment Ouest-France gérera-t-il ses guidelines&nbsp;? Via les guidelines actuels ou via une version Ouest-France du site SipaUI&nbsp;?</li>
+                                        <li>Quid des sites externes&nbsp;?<br />
+                                        	-> Comment intégreront-ils un header Ouest-France&nbsp;? Quel sera le contenu de ce header&nbsp;? Comment pourront-ils le personnaliser&nbsp;?<br />
+                                        	-> Il faudrait un référentiel des sites externes.
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <!-- ---------------------------------------------------------------------->
                              <tr>
-                                <td><time datetime="2018-03-15">12/04/2018</time></td>
+                                <td><time datetime="2018-04-12">12/04/2018</time></td>
                                 <td>
                                     <ul>
                                         <li>Afin de pouvoir avancer sur ce projet qui est assez attendu et peut devenir un point de blocage pour d’autres projets, il a été accepté que&nbsp;:
@@ -85,12 +137,12 @@
                                         <li>Vue.js.&nbsp;: après présentation du framework par OFM, il s’avère qu’il n’est pas vraiment adapté aux besoins d’un framework de composants graphiques. En effets les composants vue.js sont des composants au sens informatique, pas forcément au sens graphique. Du coup, sipaUI restera sur les technos JS présentes dans OuestStrap (jQuery + Vanilla).</li>
                                         <li>Pour avancer, une date de réunion sur les points de rupture sera fixée avec le studio, ainsi qu’une date pour avancer sur les composants graphiques (faire une liste des objets à créer et les classer par priorité).</li>
                                         <li>Document technique en cours&nbsp;: <a href="https://docs.google.com/document/d/12kJPyE8PlvCnfkdUXbfUci_c5qZUAvK82zpYEgcVqzk" target="_blank" class="su-blank">document Google</a></li>
-                                    </ol>
+                                    </ul>
                                 </td>
                                 <td>
                                     <ul>
                                         <li>Les points de rupture aujourd'hui en place sur SipaUI (480, 768, 980, 1280) ne répondent pas forcément au besoins du Studio.<br />
-                                            -> à rediscuter. </li>
+                                            -> à rediscuter.</li>
                                     </ul>
                                 </td>
                             </tr>
