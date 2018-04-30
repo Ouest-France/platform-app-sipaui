@@ -183,7 +183,7 @@ ul.su-list,
     @extend %liste-a-puces;
 }
 ul.su-list ul.su-list,
-.su-editorial ul ul {
+.su-editorial ul:not(.su-not-list) ul:not(.su-not-list) {
     li::before {
         width: $taille-puce-mobile / 1.3;
         height: $taille-puce-mobile / 1.3;
