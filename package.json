@@ -4,11 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/gulp/bin/gulp.js",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ouest-France/SipaUI"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@storybook/addon-knobs": "^3.4.4",
+    "@storybook/addon-options": "^3.4.4",
+    "@storybook/addon-viewport": "^3.4.4",
+    "@storybook/vue": "^3.4.4",
+    "babel-core": "^6.26.3",
     "child_process": "^1.0.2",
     "del": "^3.0.0",
     "event-stream": "^3.3.4",
@@ -25,7 +36,17 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^2.1.2",
     "gulp-watch": "^4.3.11",
+    "storybook-readme": "^3.3.0",
     "through2": "^2.0.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "ajv": "^6.5.0",
+    "babel-runtime": "^6.26.0",
+    "css-loader": "^0.28.11",
+    "sass-loader": "^7.0.1",
+    "vue": "^2.5.16",
+    "vue-loader": "^14.2.1",
+    "vue-template-compiler": "^2.5.16",
+    "vuex": "^3.0.1"
+  }
 }
