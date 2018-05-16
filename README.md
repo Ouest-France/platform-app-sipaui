@@ -24,6 +24,7 @@ Publish directory `dist/`
 ```
 yarn install
 gulp html
+npm run build-storybook
 ```
 
 
