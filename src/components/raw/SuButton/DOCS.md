@@ -2,8 +2,8 @@
 
 Normal application button.
 
-```js
-import SuButton from 'components/SuButton';
+```html
+<button class="su-button basic">SipaUi Button basic</button>
 ```
 
 <!-- STORY -->
@@ -19,10 +19,3 @@ normal
 **secondary** - call to action secondaire
 
 **featured** -
-
-```js
-{
-  components: { SuButton },
-  template: `<su-buton class="secondary">bouton</su-button>`
-}
-```
