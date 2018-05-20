@@ -5,7 +5,7 @@
 
                 <h3>Titres standards</h3>
 
-                <div class="pas-editorial su-margin-large">
+                <div class="pas-editorial su-margin-b-large">
                     <p class="su-h1">Titre <code>h1</code> ou <code>class="su-h1"</code></p>
                     <p class="su-h2">Titre <code>h2</code> ou <code>class="su-h2"</code></p>
                     <p class="su-h3">Titre <code>h3</code> ou <code>class="su-h3"</code></p>

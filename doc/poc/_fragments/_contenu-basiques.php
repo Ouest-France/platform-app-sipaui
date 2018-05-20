@@ -57,7 +57,7 @@
 
                 <h2>Tableaux</h2>
                 <h3>Tableau de base</h3>
-                <table summary="Résumé du tableau" class="su-margin-standard">
+                <table summary="Résumé du tableau" class="su-margin-b-standard">
                 	<caption>Légende du tableau</caption>
                 	<thead>
                 		<tr>
@@ -95,7 +95,7 @@
                 </table>
 
                 <h3>Tableau designé avec <code>.su-table</code></h3>
-                <table summary="Résumé du tableau" class="su-table su-margin-standard">
+                <table summary="Résumé du tableau" class="su-table su-margin-b-standard">
                 	<caption>Légende du tableau</caption>
                 	<thead>
                 		<tr>
@@ -133,7 +133,7 @@
                 </table>
 
                 <h3>Tableau designé avec <code>.su-table</code> + <code>.su-plus</code></h3>
-                <table summary="Résumé du tableau" class="su-table su-plus su-margin-standard">
+                <table summary="Résumé du tableau" class="su-table su-plus su-margin-b-standard">
                 	<caption>Légende du tableau</caption>
                 	<thead>
                 		<tr>

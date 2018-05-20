@@ -17,8 +17,8 @@
         </header>
 
 
-        <main class="su-editorial su-padding-standard" role="main">
-            <article class="intro su-margin-large" role="article">
+        <main class="su-editorial su-padding-b-standard" role="main">
+            <article class="presentation su-margin-b-large" role="article">
                 <div class="conteneur">
                     <p>SipaUI est le framework front-end (CSS et JS) de composants graphiques pour les sites du Groupe Sipa-Ouest‑France.</p>
                     <p>Construisez vos sites SIPA en responsif et «&nbsp;mobile-first&nbsp;», tout en l’adaptant au thème visuel de votre marque&nbsp;! SipaUI est un framework agnostique, un fichier de variables SASS vous permet de thématiser l’apparence des composants visuels en fonction de vos besoins.</p>
