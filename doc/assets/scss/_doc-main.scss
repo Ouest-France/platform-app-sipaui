@@ -6,34 +6,34 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    background: radial-gradient(circle at 100% 100%, $couleur-secondaire-1, $couleur-secondaire-3);
 
+    .identite {
+        padding: $margin-small $margin-small $margin-small $margin-medium2;
+
+        a {
+            transition: text-shadow .3s ease;
+            text-decoration: none;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: inherit;
+                text-shadow: 0 0 2px $couleur-principale-1;
+            }
+        }
+        svg,
+        .titre,
+        .version {
+            vertical-align: middle;
+        }
+    }
+    * {
+        color: $couleur-principale-1 !important;
+    }
     .titre {
-        padding: 5px 20px;
-        background: radial-gradient(circle at 100% 100%, $couleur-secondaire-1, $couleur-secondaire-3);
-
-        * {
-            color: $couleur-principale-1 !important;
-        }
-    }
-    h1 {
-        margin-bottom: 0;
-    }
-    .version {
-        background: rgba(0,0,0, .4);
-        padding: 3px 13px;
-        border-radius:  3px;
-        font-size: 1.5rem;
-
-    }
-    h1 a {
-        transition: text-shadow .3s ease;
-
-        &:hover,
-        &:focus,
-        &:active {
-            color: inherit;
-            text-shadow: 0 0 2px $couleur-principale-1;
-        }
+        font-size: $font-size-tall;
+        margin-left: $margin-resp-small
     }
 }
 nav {

@@ -6,7 +6,7 @@
     <body>
         <header role="banner">
             <?php
-            include(__DIR__."/_fragments/_titre.php");
+            include(__DIR__."/_fragments/_identite.php");
             ?>
 
             <nav role="navigation">
