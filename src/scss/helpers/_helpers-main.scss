@@ -103,3 +103,15 @@ body:hover .su-visually-hidden {
 .su-line-height-xsmall {
     line-height: $line-height-xsmall !important;
 }
+
+//
+/* -- JUSTIFY -------------------------------------------------------------------- */
+//
+.su-justify {
+    text-align: justify;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens:    auto;
+    -ms-hyphens:     auto;
+    hyphens:         auto;
+}
