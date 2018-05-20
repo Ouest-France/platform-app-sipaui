@@ -82,16 +82,40 @@ main {
     overflow-x: scroll;
 }
 
-.intro {
+
+.version {
+    background: rgba(0,0,0, .4);
+    padding: 3px 13px;
+    border-radius:  3px;
+    font-size: 1.5rem;
+    display: inline-block;
+
+}
+.presentation {
     font-size: $font-size-medium2;
     color: $couleur-principale-1;
     background: radial-gradient(circle at 35% 10%, $couleur-secondaire-1, $couleur-secondaire-3);
     padding-bottom: 10rem;
 
-    &::after {
-        content: '';
-        background: #000;
-        border-radius: 100%;
+    .titre {
+        text-align: center;
+        margin-bottom: $margin-large;
+        * {
+            color: $couleur-principale-1 !important;
+        }
+        h1 {
+            margin-bottom: $margin-medium2;
+            font-size: $font-size-xxxtall;
+        }
+    }
+    .baseline {
+        font-size: $font-size-tall;
+        text-align: center;
+    }
+    .intro {
+        background: rgba(0,0,0, .2);
+        padding: 1rem;
+        border-radius:  10px;
     }
 }
 
