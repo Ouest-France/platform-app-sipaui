@@ -149,6 +149,11 @@ main {
             width: 10%;
         }
     }
+    h3 {
+        margin-bottom: $margin-resp-xsmall;
+        font-size: $font-size-medium1;
+        line-height: $line-height-medium;
+    }
     .resolu {
         color: $couleur-principale-5;
 

@@ -65,8 +65,37 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td><time datetime="2018-05-14">14/05/2018</time></td>
+                                <td>
+                                    <h3>Réunion «&nbsp;Stratégie d’intégration de SIPA-UI dans le Backoffice&nbsp;»</h3>
+                                    <ul>
+                                        <li>On ne réinvente pas tous les composants mais on se base sur Vuetify (material-design).</li>
+                                        <li>3 déclinaisons des composants&nbsp;:
+                                            <ul>
+                                                <li>Composants HTML / CSS (déclinable en thème&nbsp;: OF, V&V, EDS&nbsp;?)</li>
+                                                <li>Composants Vue.js, utilisant composants HTML/CSS (ex Spinnet attente sur click bouton)</li>
+                                                <li>Composants Vanilla.js  pour le site OF.fr&nbsp;?</li>
+                                            </ul>
+                                        </li>
+                                        <li>Pas de css spécifiques dans composant Vue.js</li>
+                                        <li>Pour les widgets&nbsp;: Composant de sipa-ui wrappent des composants de Vuetify</li>
+                                        <li>Pour ce qui n’est pas widgets  et qui n’est pas proposé par Vuetify&nbsp;: versé dans SIPA-UI</li>
+                                        <li>Pour les composants SIPA UI&nbsp;: utilisation des conventions d’interfaces Vuetify</li>
+                                        <li>Ne pas mettre un composant dans SIPA-UI doit être une exception</li>
+                                        <li>Quand un composant Vue.j est ajouté à SIPA-UI le composant HTML/CSS pendant doit aussi être ajouté dans SIPA-UI</li>
+                                        <li>un ajout de composant dans SIPA-UI entraîne une validation de la pull request par l’équipe SIPA-UI</li>
+                                        <li>SIPA-UI a plusieurs themes&nbsp;: OF, V&V…</li>
+                                    </ul>
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+                            <!-- ---------------------------------------------------------------------->
+                            <tr>
                                 <td><time datetime="2018-04-26">26/04/2018</time></td>
                                 <td>
+                                    <h3>Réunion de suivi</h3>
                                     <ul>
                                         <li>Équipe&nbsp;: le besoin d’un DEV se fait sentir pour valider le mode d’intégration et, plus tard, mettre en place un vrai POC (un projet créé suivant la cible et intégrant SipaUI).</li>
                                         <li>Population du Github&nbsp;: <a href="https://github.com/ouest-france/sipaui" target="_blank" class="su-blank">github.com/ouest-france/sipaui</a></li>
@@ -95,7 +124,6 @@
                                 </td>
                                 <td>
                                     <ul>
-                                        <li>On garde toujours IE9 dans le scope des navigateurs&nbsp;?
                                         <li>Gestion des pictos&nbsp;: continuons-nous avec une fonte de pictos&nbsp;?<br />
                                         	-> gestion lourde pour le Studio,<br />
                                         	-> impossibilité de picto avec plus d’une couleur,<br />
@@ -119,6 +147,7 @@
                              <tr>
                                 <td><time datetime="2018-04-12">12/04/2018</time></td>
                                 <td>
+                                    <h3>Réunion de suivi</h3>
                                     <ul>
                                         <li>Afin de pouvoir avancer sur ce projet qui est assez attendu et peut devenir un point de blocage pour d’autres projets, il a été accepté que&nbsp;:
                                             <ul>
@@ -150,6 +179,7 @@
                             <tr>
                                 <td><time datetime="2018-03-15">15/03/2018</time></td>
                                 <td>
+                                    <h3>Réunion de suivi</h3>
                                     <ul>
                                         <li>Périodicité des réunions&nbsp;: les jeudis, tous les 15 jours à 16h00.</li>
                                         <li>Rappel de la création du canal Slack #sipa-ui</li>
@@ -170,6 +200,7 @@
                             <tr>
                                 <td><time datetime="2018-03-02">02/03/2018</time></td>
                                 <td>
+                                    <h3>Réunion de suivi</h3>
                                     <ul>
                                         <li>Le nom du framework a été défini à SipaUI</li>
                                         <li>Préfixage : les classes utilisées par SipaUI seront toutes préfixées par «&nbsp;su-&nbsp;» ou par «&nbsp;su-js-&nbsp;» s'il s'agit d’une classe utilisée par du JS.</li>
@@ -200,6 +231,7 @@
                             <tr>
                                 <td><time datetime="2018-02-15">15/02/2018</time></td>
                                 <td>
+                                    <h3>Réunion de suivi</h3>
                                     <ul>
                                         <li>Le nom des composant sera en anglais, excepté pour des notions métier où le français pourrait être utilisé, si jamais le cas devait se présenter</li>
                                         <li>Le type de nommage des classes pour les composants s’appuiera sur <a href="https://semantic-ui.com" target="_blank" class="su-blank">SemanticUI</a>.</li>
