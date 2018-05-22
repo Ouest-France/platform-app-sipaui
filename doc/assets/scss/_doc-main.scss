@@ -7,6 +7,7 @@ header {
     width: 100%;
     top: 0;
     background: radial-gradient(circle at 100% 100%, $couleur-secondaire-1, $couleur-secondaire-3);
+    z-index: 1000;
 
     .identite {
         padding: $margin-small $margin-small $margin-small $margin-medium2;
