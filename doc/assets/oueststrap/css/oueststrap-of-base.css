@@ -9,12 +9,12 @@
 /* 1279px */
 @font-face {
   font-family: 'picto-of2';
-  src: url("../fonts/picto-of2.woff2?fpy9gz") format("woff2"), url("../fonts/picto-of2.woff?fpy9gz") format("woff");
+  src: url("https://www.ouest-france.fr/assets/fonts/picto-of2.woff2?fpy9gz") format("woff2"), url("https://www.ouest-france.fr/assets/fonts/picto-of2.woff?fpy9gz") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
+  /* use !important to prevent issues with browser extensions that chanhttps://www.ouest-france.fr/assets/fonts/*/
   font-family: 'picto-of2' !important;
   speak: none;
   font-style: normal;
@@ -583,7 +583,7 @@
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  src: local("Oswald Regular"), local("Oswald-Regular"), url("../fonts/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald-Regular.woff") format("woff"); }
+  src: local("Oswald Regular"), local("Oswald-Regular"), url("https://www.ouest-france.fr/assets/fonts/Oswald-Regular.woff2") format("woff2"), url("https://www.ouest-france.fr/assets/fonts/Oswald-Regular.woff") format("woff"); }
 
 /* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
