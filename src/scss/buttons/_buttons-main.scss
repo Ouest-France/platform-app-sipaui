@@ -1,4 +1,5 @@
-.su-button {
+.su-button,
+.su-button:visited {
     cursor: pointer;
     display: inline-block;
     background: $background-bouton;
@@ -19,23 +20,162 @@
     -ms-user-select:     none;
     user-select:         none;
     -webkit-tap-highlight-color: transparent;
-//    will-change: '';
-//    min-height: 1em;
-//    vertical-align: baseline;
-//    text-transform: none;
-//    text-shadow: none;
 
-    &:hover {
+    &:not(.su-disabled):hover,
+    &:not(.su-disabled):focus {
         background: $background-bouton-hover;
         color: $color-bouton-hover;
         border: $border-bouton-hover;
-        box-shadow: $shadow-bouton-hover;
     }
-/*
-                    &:active,
-                    &:focus,
-                    &:hover {
-                        text-decoration: none;
-                    }
-*/
+    &:not(.su-disabled):active {
+        background: $background-bouton-active;
+        color: $color-bouton-active;
+        border: $border-bouton-active;
+    }
+
+    &.su-primary {
+        background: $background-bouton-principal;
+        color: $color-bouton-principal;
+        border: $border-bouton-principal;
+        border-radius: $radius-bouton-principal;
+        box-shadow: $shadow-bouton-principal;
+
+        &:not(.su-disabled):hover,
+        &:not(.su-disabled):focus {
+            background: $background-bouton-principal-hover;
+            color: $color-bouton-principal-hover;
+            border: $border-bouton-principal-hover;
+        }
+        &:not(.su-disabled):active {
+            background: $background-bouton-principal-active;
+            color: $color-bouton-principal-active;
+            border: $border-bouton-principal-active;
+        }
+    }
+    &.su-secondary {
+        background: $background-bouton-secondaire;
+        color: $color-bouton-secondaire;
+        border: $border-bouton-secondaire;
+        border-radius: $radius-bouton-principal;
+        box-shadow: $shadow-bouton-secondaire;
+
+        &:not(.su-disabled):hover,
+        &:not(.su-disabled):focus{
+            background: $background-bouton-secondaire-hover;
+            color: $color-bouton-secondaire-hover;
+            border: $border-bouton-secondaire-hover;
+        }
+        &:not(.su-disabled):active {
+            background: $background-bouton-secondaire-active;
+            color: $color-bouton-secondaire-active;
+            border: $border-bouton-secondaire-active;
+        }
+    }
+    &.su-basic {
+        background: $background-bouton-basic;
+        color: $color-bouton-basic;
+        border: $border-bouton-basic;
+        border-radius: $radius-bouton-basic;
+        box-shadow: $shadow-bouton-basic;
+
+        &:not(.su-disabled):hover,
+        &:not(.su-disabled):focus {
+            background: $background-bouton-basic-hover;
+            color: $color-bouton-basic-hover;
+            border: $border-bouton-basic-hover;
+        }
+        &:not(.su-disabled):active {
+            background: $background-bouton-basic-active;
+            color: $color-bouton-basic-active;
+            border: $border-bouton-basic-active;
+        }
+    }
+                        &.su-subscription {
+                            background: $background-bouton-abonnement;
+                            color: $color-bouton-abonnement;
+                            border: $border-bouton-abonnement;
+                            border-radius: $radius-bouton-abonnement;
+                            box-shadow: $shadow-bouton-abonnement;
+
+                            &:not(.su-disabled):hover,
+                            &:not(.su-disabled):focus {
+                                background: $background-bouton-abonnement-hover;
+                                color: $color-bouton-abonnement-hover;
+                                border: $border-bouton-abonnement-hover;
+                            }
+                            &:not(.su-disabled):active {
+                                background: $background-bouton-abonnement-active;
+                                color: $color-bouton-abonnement-active;
+                                border: $border-bouton-abonnement-active;
+                            }
+                        }
+                        &.su-premium {
+                            background: $background-bouton-premium;
+                            color: $color-bouton-premium;
+                            border: $border-bouton-premium;
+                            border-radius: $radius-bouton-premium;
+                            box-shadow: $shadow-bouton-premium;
+
+                            &:not(.su-disabled):hover,
+                            &:not(.su-disabled):focus {
+                                background: $background-bouton-premium-hover;
+                                color: $color-bouton-premium-hover;
+                                border: $border-bouton-premium-hover;
+                            }
+                            &:not(.su-disabled):active {
+                                background: $background-bouton-premium-active;
+                                color: $color-bouton-premium-active;
+                                border: $border-bouton-premium-active;
+                            }
+                            &.su-inverted {
+                                color: $background-bouton-premium;
+                            }
+                        }
+    &.su-inverted {
+        background: $background-bouton-negatif;
+        &:not(.su-disabled):hover,
+        &:not(.su-disabled):focus {
+            background: $background-bouton-negatif-hover;
+        }
+        &:not(.su-disabled):active {
+            background: $background-bouton-negatif-active;
+            color: $color-bouton-negatif-active;
+            border: $border-bouton-negatif-active;
+        }
+    }
+    &.su-light {
+        background: transparent;
+        &:not(.su-disabled):hover,
+        &:not(.su-disabled):focus {
+            background: transparent;
+        }
+        &:not(.su-disabled):active {
+            background: $background-bouton-leger-active;
+            color: $color-bouton-leger-active;
+            border: $border-bouton-leger-active;
+        }
+    }
+
+    &.su-disabled {
+        opacity: .2;
+    }
 }
+
+
+
+
+
+
+
+
+
+// ----------------------------------------------------------------------------------------------------------------
+// RETRO-COMPATIBILITÉ OUESTSTRAP
+/*Contrer le a:not(.btn) d’OS pour que SipaUI puisse faire son taf.
+  Solution pour ne pas avoir à le faire ici : transformer dans OS en a:not(.btn, .su-button)
+  Ne fonctionne que sur Safari)    */
+a:not(.btn, .su-basic, .su-subscription, .su-premium.su-inverted).su-button {
+    color: $color-bouton;
+}
+
+// Mettre abonnement et premium ds sipaUI ?

@@ -119,17 +119,35 @@ $color-code: $vert-fonce;
 // VARIABLES OBJETS -----------------------------------------------------------------------------------------------------------------------------------------
 
 // BOUTONS
-$background-bouton: $couleur-secondaire-1;
-$color-bouton: $couleur-principale-1;
-$border-bouton: null;
-$radius-bouton: .3rem;
+$background-bouton:             $couleur-secondaire-1;
+$background-bouton-principal:   $couleur-secondaire-1;
+$background-bouton-secondaire:  $couleur-principale-6;
+$background-bouton-basic:       $couleur-principale-1;
+$background-bouton-abonnement:  $abo-1;
+$background-bouton-premium:     $premium-1;
+$background-bouton-negatif:     $couleur-principale-1;
+    $color-bouton: $couleur-principale-1;
+    $color-bouton-basic:       $couleur-principale-7;
+    $color-bouton-abonnement:  $couleur-principale-7;
+$border-bouton-basic: 1px solid $couleur-principale-7;
+    $radius-bouton: .3rem;
+    $radius-bouton-basic: 5rem;
 $shadow-bouton: null;
 $font-family-bouton: null;
 //$font-weight-bouton: $font-weight-gras;
 $font-weight-bouton: 300;
-$padding-bouton: 1.2rem 2rem;
+$padding-bouton: .8em 1.25em;
 // hover
-$background-bouton-hover: $couleur-secondaire-2;
-$color-bouton-hover: $color-bouton;
+$background-bouton-hover:             $couleur-secondaire-2;
+$background-bouton-principal-hover:   $couleur-secondaire-2;
+$background-bouton-secondaire-hover:  $couleur-principale-7;
+$background-bouton-basic-hover:       $couleur-principale-1;
+$background-bouton-abonnement-hover:  $abo-2;
+$background-bouton-premium-hover:     $premium-2;
+$background-bouton-negatif-hover:     $couleur-principale-2;
+    $color-bouton-hover:            $color-bouton;
+    $color-bouton-basic-hover:      $couleur-secondaire-2;
+    $color-bouton-abonnement-hover: $color-bouton-abonnement;
 $border-bouton-hover: null;
-$shadow-bouton-hover: null;
+$border-bouton-basic-hover: 1px solid $couleur-secondaire-2;
+    $shadow-bouton-hover: null;

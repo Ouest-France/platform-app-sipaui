@@ -34,6 +34,9 @@ scsslist =
 
         [poc + '/src/scss/of/default-poc-of.scss', 'default-poc-of.min.css'],
         [poc + '/src/scss/of/large-poc-of.scss', 'large-poc-of.min.css'],
+
+        [poc + '/src/scss/of/default-sipa-of.scss', 'default-sipa-of.min.css'],
+        [poc + '/src/scss/of/large-sipa-of.scss', 'large-sipa-of.min.css'],
     ]
 ;
 
