@@ -1,0 +1,10 @@
+/* Font oswlad en local */
+
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url('#{$urlDossierFont}/Oswald-Regular.woff2') format('woff2'),
+        url('#{$urlDossierFont}/Oswald-Regular.woff') format('woff');
+}
