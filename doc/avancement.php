@@ -26,7 +26,7 @@
                 	<li>
                 	    <h2>Typo</h2>
                 	    <ul>
-                	    	<li>Titres</li>
+                	    	<li>Titres (avec gestion de typo spécifique)</li>
                 	    	<li>Paragraphes</li>
                 	    	<li>Emphase</li>
                 	    </ul>
