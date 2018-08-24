@@ -72,7 +72,7 @@ nav {
 }
 main {
     > *:first-child {
-        padding-top: 15rem;
+        padding-top: 12rem;
     }
     .conteneur {
         padding-left: $margin-standard;
@@ -187,4 +187,8 @@ main {
         font-weight: $font-weight-titres !important;
         color: $color-titres !important;
     }
+}
+
+.accueil .illustration {
+    width: 150px;
 }

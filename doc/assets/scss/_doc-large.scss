@@ -16,5 +16,11 @@ main {
         padding-left: 10%;
         padding-right: 10%;
     }
+    > *:first-child {
+        padding-top: 15rem;
+    }
 }
 
+.accueil .illustration {
+    width: 250px;
+}
