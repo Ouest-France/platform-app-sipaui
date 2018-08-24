@@ -115,3 +115,12 @@ body:hover .su-visually-hidden {
     -ms-hyphens:     auto;
     hyphens:         auto;
 }
+
+//
+/* -- JUSTIFY -------------------------------------------------------------------- */
+//
+.su-block-center {
+    display: block; //utile pour forcer le centrage d’un objet non block comme les SVG
+    margin-left: auto;
+    margin-right: auto;
+}
