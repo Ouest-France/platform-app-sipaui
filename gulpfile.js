@@ -64,6 +64,11 @@ gulp.task("make-oueststrap", ["make-sass"], function() {
         .pipe(gulp.dest(destination + ''));
 });
 
+gulp.task("make-assets", ["clean"], function() {
+    return gulp.src([source + '/fonts/**/*'])
+        .pipe(gulp.dest(destination + '/fonts'));
+});
+
 gulp.task("clean-css", function() {
     return del([
         destination + '/**/*.css'
@@ -145,7 +150,7 @@ gulp.task("watch", function() {
     });
 });
 
-gulp.task("make-dev-assets", ["clean", "make-sass", "make-css-dev"]);
-gulp.task("make-prod-assets", ["clean", "make-sass", "make-css-prod", "make-oueststrap"]);
+gulp.task("make-dev-assets", ["clean", "make-assets", "make-sass", "make-css-dev"]);
+gulp.task("make-prod-assets", ["clean", "make-assets", "make-sass", "make-css-prod", "make-oueststrap"]);
 gulp.task("default", ["clean", "make-dev-assets"]);
 gulp.task("html", ["clean", "generate-doc", "generate-poc", "generate-html"]);
