@@ -170,25 +170,11 @@ main {
     }
 }
 
-.pas-editorial {
-    h1,
-    .su-h1,
-    h2,
-    .su-h2,
-    h3,
-    .su-h3,
-    h4,
-    .su-h4,
-    h5,
-    .su-h5,
-    h6,
-    .su-h6 {
-        font-family: $font-family-titres !important;
-        font-weight: $font-weight-titres !important;
-        color: $color-titres !important;
-    }
-}
-
 .accueil .illustration {
     width: 150px;
+}
+
+.titre-doc {
+    color: #950030 !important;
+    font-weight: $font-weight-maigre;
 }
