@@ -63,6 +63,7 @@ h6,
     font-size: $font-size-h6;
 }
 
+// Éditorial
 .su-editorial {
     h1,
     .su-h1,
@@ -109,7 +110,63 @@ h6,
         font-size: $font-size-h6-edito;
     }
 }
-
+h1,
+.su-h1,
+h2,
+.su-h2,
+h3,
+.su-h3,
+h4,
+.su-h4,
+h5,
+.su-h5,
+h6,
+.su-h6 {
+    &.su-editorial {
+        font-family: $font-family-titres-edito;
+        font-weight: $font-weight-titres-edito;
+        color: $color-titres-edito;
+    }
+}
+h1,
+.su-h1 {
+    &.su-editorial {
+        font-size: $font-size-h1-edito;
+        margin-bottom: $margin-bottom-h1-edito;
+    }
+}
+h2,
+.su-h2 {
+    &.su-editorial {
+        font-size: $font-size-h2-edito;
+        margin-bottom: $margin-bottom-h2-edito;
+    }
+}
+h3,
+.su-h3 {
+    &.su-editorial {
+        font-size: $font-size-h3-edito;
+        margin-bottom: $margin-bottom-h3-edito;
+    }
+}
+h4,
+.su-h4 {
+    &.su-editorial {
+        font-size: $font-size-h4-edito;
+    }
+}
+h5,
+.su-h5 {
+    &.su-editorial {
+        font-size: $font-size-h5-edito;
+    }
+}
+h6,
+.su-h6 {
+    &.su-editorial {
+        font-size: $font-size-h6-edito;
+    }
+}
 
 //
 /* -- TEXTES -------------------------------------------------------------------- */

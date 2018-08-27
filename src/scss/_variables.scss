@@ -106,7 +106,8 @@ $font-size-base: $font-size-medium1 !default;
 $color-code: chocolate !default;
 
 // Titres
-$font-family-titres: $font-family-secondaire !default;
+$font-family-titres: null               !default;
+$font-weight-titres: $font-weight-gras  !default;
 $color-titres: $couleur-principale-8    !default;
 $font-size-h1: $font-size-xxtall        !default;
 $margin-bottom-h1: $font-size-h1 * 1.2  !default;
@@ -120,18 +121,18 @@ $font-size-h6: $font-size-base          !default;
 $font-weight-titres: $font-weight-medium !default;
 
 // Titres éditoriaux
-$font-family-titres-edito: null                 !default;
-$font-weight-titres-edito: $font-weight-gras    !default;
-$color-titres-edito: $couleur-principale-5      !default;
-$font-size-h1-edito: null                       !default;
-$margin-bottom-h1-edito: null                   !default;
-$font-size-h2-edito: null                       !default;
-$margin-bottom-h2-edito: null                   !default;
-$font-size-h3-edito: null                       !default;
-$margin-bottom-h3-edito: null                   !default;
-$font-size-h4-edito: null                       !default;
-$font-size-h5-edito: null                       !default;
-$font-size-h6-edito: null                       !default;
+$font-family-titres-edito: $font-family-secondaire   !default;
+$font-weight-titres-edito: $font-weight-maigre       !default;
+$color-titres-edito: $couleur-principale-5           !default;
+$font-size-h1-edito: null                            !default;
+$margin-bottom-h1-edito: null                        !default;
+$font-size-h2-edito: null                            !default;
+$margin-bottom-h2-edito: null                        !default;
+$font-size-h3-edito: null                            !default;
+$margin-bottom-h3-edito: null                        !default;
+$font-size-h4-edito: null                            !default;
+$font-size-h5-edito: null                            !default;
+$font-size-h6-edito: null                            !default;
 
 
 
@@ -249,7 +250,7 @@ $radius-bouton-abonnement:      null               !default;
 $radius-bouton-premium:         null               !default;
     $font-family-bouton: null                   !default;
 $font-weight-bouton: $font-weight-gras      !default;
-    $padding-bouton: .79em 1.5em                   !default;
+$padding-bouton: 1.2rem 1rem                   !default;
 
 // hover
 $background-bouton-hover:             $couleur-principale-4   !default;
@@ -271,29 +272,31 @@ $border-bouton-secondaire-hover:  null                    !default;
 $border-bouton-basic-hover:       null                    !default;
 $border-bouton-abonnement-hover:  null                    !default;
 $border-bouton-premium-hover:     null                    !default;
+    $shadow-bouton-hover: null                      !default;
 
 // active
-$background-bouton-active:             $couleur-principale-4   !default;
+$background-bouton-active:             $background-bouton-hover   !default;
 $background-bouton-principal-active:   null                    !default;
 $background-bouton-secondaire-active:  null                    !default;
 $background-bouton-basic-active:       null                    !default;
 $background-bouton-abonnement-active:  null                    !default;
 $background-bouton-premium-active:     null                    !default;
 $background-bouton-negatif-active:     null                    !default;
-$background-bouton-leger-active:     null                    !default;
-    $color-bouton-active:             $couleur-principale-8   !default;
+$background-bouton-leger-active:       null                    !default;
+    $color-bouton-active:             $color-bouton-hover     !default;
     $color-bouton-principal-active:   null                    !default;
     $color-bouton-secondaire-active:  null                    !default;
     $color-bouton-basic-active:       null                    !default;
     $color-bouton-abonnement-active:  null                    !default;
     $color-bouton-premium-active:     null                    !default;
     $color-bouton-negatif-active:     null                    !default;
-    $color-bouton-leger-active:     null                    !default;
-$border-bouton-active:             null                    !default;
+    $color-bouton-leger-active:       null                    !default;
+$border-bouton-active:             $border-bouton-hover    !default;
 $border-bouton-principal-active:   null                    !default;
 $border-bouton-secondaire-active:  null                    !default;
 $border-bouton-basic-active:       null                    !default;
 $border-bouton-abonnement-active:  null                    !default;
 $border-bouton-premium-active:     null                    !default;
 $border-bouton-negatif-active:     null                    !default;
-$border-bouton-leger-active:     null                    !default;
+$border-bouton-leger-active:       null                    !default;
+    $shadow-bouton-active: $shadow-bouton-hover         !default;
