@@ -21,7 +21,7 @@
             </nav>
         </header>
 
-        <main role="main" class="su-editorial su-padding-b-standard">
+        <main role="main" class="su-padding-b-standard">
 
             <?php
             $template='neutres';
