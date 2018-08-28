@@ -225,13 +225,14 @@ $shadow-bouton: null                        !default;
 $font-family-bouton: null                   !default;
 $font-weight-bouton: $font-weight-gras      !default;
 $padding-bouton: 1.2rem 1rem                !default;
-// hover
+// hover, focus
 $background-bouton-hover: $couleur-principale-4 !default;
 $color-bouton-hover: $couleur-principale-8      !default;
 $border-bouton-hover: null                      !default;
 $shadow-bouton-hover: null                      !default;
-// active, focus
-$background-bouton-active: $background-bouton-hover !default;
-$color-bouton-active: $color-bouton-hover           !default;
-$border-bouton-active: $border-bouton-hover         !default;
-$shadow-bouton-active: $shadow-bouton-hover         !default;
+// active
+$background-bouton-active: darken($background-bouton-hover, 5%) !default;
+$color-bouton-active: $color-bouton-hover        !default;
+$border-bouton-active: null         !default;
+$shadow-bouton-active: null         !default;
+
