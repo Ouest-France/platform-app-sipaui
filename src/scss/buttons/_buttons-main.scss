@@ -36,10 +36,37 @@
         box-shadow: $shadow-bouton-hover;
     }
 
-    &:active {
+
+    &:active:not(.su-disabled) {
         background:$background-bouton-active;
         color: $color-bouton-active;
         border: $border-bouton-active;
         box-shadow: $shadow-bouton-active;
+    }
+}
+
+.su-disabled,
+[disabled="disabled"] {
+    opacity: $opacity-disabled;
+    cursor: default;
+
+    &:hover,
+    &:focus {
+        background: inherit;
+        color: inherit;
+        border: inherit;
+        box-shadow: inherit;
+    }
+}
+
+.su-button.su-disabled,
+.su-button[disabled="disabled"] {
+    &:hover,
+    &:focus,
+    &:active {
+        background: $background-bouton;
+        color: $color-bouton;
+        border: $border-bouton;
+        box-shadow: $shadow-bouton;
     }
 }

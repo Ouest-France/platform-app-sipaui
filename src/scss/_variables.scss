@@ -223,7 +223,7 @@ $border-bouton: 0                           !default;
 $radius-bouton: 3px                         !default;
 $shadow-bouton: null                        !default;
 $font-family-bouton: null                   !default;
-$font-weight-bouton: $font-weight-gras      !default;
+$font-weight-bouton: null                   !default;
 $padding-bouton: 1.2rem 1rem                !default;
 // hover, focus
 $background-bouton-hover: $couleur-principale-4 !default;
@@ -235,4 +235,5 @@ $background-bouton-active: darken($background-bouton-hover, 5%) !default;
 $color-bouton-active: $color-bouton-hover        !default;
 $border-bouton-active: null         !default;
 $shadow-bouton-active: null         !default;
-
+// disabled
+$opacity-disabled: .4;
