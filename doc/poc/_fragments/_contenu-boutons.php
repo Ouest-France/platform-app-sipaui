@@ -3,7 +3,7 @@
                 <h2 class="titre-doc">Standards</h2>
                 <p class="su-margin-b-standard">Chaque bouton possède 4 états HTML standards&nbsp;: normal, survolé (<code>hover</code>), cliqué (<code>active</code>), et avec focus (<code>focus</code>)</p>
                 <ul class="liste-boutons">
-                    <li><h3 class="titre-doc">Bouton basic <code>.su-button</code></h3>
+                    <li class="su-margin-b-large"><h3 class="titre-doc">Bouton basic <code>.su-button</code></h3>
                         <ul>
                             <li>
                                 <p>Balise <code>&lt;a&gt;</code></p>
@@ -20,7 +20,29 @@
                             <li>
                                 <p>Balise <code>&lt;button&gt;</code></p>
                                 <div class="su-margin-b-small">
-                                    <button class="su-button" tabindex="0" href="#">Bouton &lt;button&gt;</button>
+                                    <button class="su-button" tabindex="0">Bouton &lt;button&gt;</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="su-margin-b-large"><h3 class="titre-doc">Bouton inactif <code>disabled</code> ou <code>.su-disabled</code></h3>
+                        <ul>
+                            <li>
+                                <p>Balise <code>&lt;a&gt;</code> et <code>.su-disabled</code></p>
+                                <div class="su-margin-b-small">
+                                    <a class="su-button su-disabled" href="#">Bouton &lt;a&gt;</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Balise <code>&lt;input&gt;</code> et attribut <code>disabled</code></p>
+                                <div class="su-margin-b-small">
+                                    <input class="su-button" type="button" disabled="disabled" value="Bouton &lt;input&gt;">
+                                </div>
+                            </li>
+                            <li>
+                                <p>Balise <code>&lt;button&gt;</code> et attribut <code>disabled</code></p>
+                                <div class="su-margin-b-small">
+                                    <button class="su-button" tabindex="1" disabled="disabled">Bouton &lt;button&gt;</button>
                                 </div>
                             </li>
                         </ul>
