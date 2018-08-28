@@ -17,7 +17,7 @@
                             <button class="su-button" tabindex="0" href="#">Bouton &lt;button&gt;</button>
                         </div>
                     </li>
-                    <li><h3 class="titre-doc">Bouton <code>primary</code></h3>
+                    <!--li><h3 class="titre-doc">Bouton <code>primary</code></h3>
                         <div>
                             <a class="su-button" href="#">Bouton</a>
                         </div>
@@ -31,10 +31,10 @@
                         <div>
                             <a class="su-button" href="#">Bouton</a>
                         </div>
-                    </li>
+                    </li-->
                 </ul>
 
-                <h2 class="titre-doc">Tailles</h2>
+                <!-- h2 class="titre-doc">Tailles</h2>
                 <p class="su-margin-b-standard">Chaque taille peut être appliquée à chaque type de bouton.</p>
                 <ul class="liste-boutons">
                     <li>Bouton <code>basic</code>
@@ -67,5 +67,5 @@
                         </div>
                     </li>
                 </ul>
-                <p>Positive, negative, icône seule, icône à gauche, icône à droite, circulaire</p>
+                <p>Positive, negative, icône seule, icône à gauche, icône à droite, circulaire</p-->
             </article>
