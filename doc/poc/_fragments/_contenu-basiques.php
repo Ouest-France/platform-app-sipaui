@@ -3,10 +3,10 @@
                 <h1 class="titre-doc">Objets basiques <?php if($template==true) echo $template ?></h1>
 
                 <h2 class="titre-doc">Liens</h2>
-                <h3 class="titre-doc">Liens standards</h3>
+                <h3 class="titre-doc">Liens standards <code>a[href]</code></h3>
                 <p><a href="#">Lien standard</a></p>
 
-                <h3 class="titre-doc">Liens avec <code>target="_blank"</code> + <code>.su-blank</code></h3>
+                <h3 class="titre-doc">Liens avec <code>a[target="_blank"]</code> + <code>.su-blank</code></h3>
                 <p><a href="#" target="_blank" class="su-blank">Lien _blank</a></p>
 
                 <h3 class="titre-doc">Liens neutres <code>.su-neutral-link</code></h3>
@@ -18,7 +18,7 @@
                 <hr/><!--------------------------------------------------------------------------------- -->
 
                 <h2 class="titre-doc">Listes</h2>
-                <h3 class="titre-doc">Liste base <code>ul</code> (ou <code>ul.su-not-list</code> si dans un bloc <code>.su-editorial ul</code>)</h3>
+                <h3 class="titre-doc">Liste base <code><code>ul</code></code> (ou <code>ul.su-not-list</code> si dans un bloc <code>.su-editorial ul</code>)</h3>
                 <ul>
                     <li>Item 1</li>
                     <li>Item 2</li>
@@ -51,12 +51,21 @@
                     <li>Item 1</li>
                     <li>Item 2</li>
                     <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                    <li>Item 6</li>
+                    <li>Item 7</li>
+                    <li>Item 8</li>
+                    <li>Item 9</li>
+                    <li>Item 10</li>
+                    <li>Item 11</li>
+                    <li>Item 12</li>
                 </ol>
 
                 <hr/><!--------------------------------------------------------------------------------- -->
 
                 <h2 class="titre-doc">Tableaux</h2>
-                <h3 class="titre-doc">Tableau de base</h3>
+                <h3 class="titre-doc">Tableau de base <code>table</code></h3>
                 <table summary="Résumé du tableau" class="su-margin-b-standard">
                 	<caption>Légende du tableau</caption>
                 	<thead>
@@ -176,10 +185,10 @@
                 <h3 class="titre-doc">Bloc <code>blockquote</code></h3>
                 <blockquote cite="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
 
-                <h3 class="titre-doc">Incise <code>q</code> dans <code>p</code></h3>
+                <h3 class="titre-doc">Incise <code>p q</code></h3>
                 <p>Lorem ipsum <q cite="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</q></p>
 
-                <h3 class="titre-doc">Origine <code>cite</code> dans <code>p</code></h3>
+                <h3 class="titre-doc">Origine <code>p cite</code></h3>
                 <p>Lorem ipsum <cite>Cite</cite></p>
 
 
