@@ -128,8 +128,9 @@ $font-family-bouton: null;
 //$font-weight-bouton: $font-weight-gras;
 $font-weight-bouton: 300;
 $padding-bouton: 1.2rem 2rem;
-// hover
+// hover, focus
 $background-bouton-hover: $couleur-secondaire-2;
 $color-bouton-hover: $color-bouton;
-$border-bouton-hover: null;
-$shadow-bouton-hover: null;
+// active
+$background-bouton-active: $couleur-secondaire-3;
+$color-bouton-active: $color-bouton-hover;

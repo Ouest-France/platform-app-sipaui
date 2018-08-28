@@ -1,9 +1,9 @@
 <article class="conteneur" role="article">
                 <h1 class="titre-doc">Boutons <?php if($template==true) echo $template ?></h1>
                 <h2 class="titre-doc">Standards</h2>
-                <p class="su-margin-b-standard">Chaque bouton a 4 états : normal (/ ou <code>link</code>), survolé (<code>hover</code>), cliqué (<code>active</code>) et visité (<code>visited</code>)</p>
+                <p class="su-margin-b-standard">Chaque bouton possède 4 états HTML standards&nbsp;: normal, survolé (<code>hover</code>), cliqué (<code>active</code>), et avec focus (<code>focus</code>)</p>
                 <ul class="liste-boutons">
-                    <li>Bouton <code>basic</code>
+                    <li><h3 class="titre-doc">Bouton <code>basic</code></h3>
                         <p>Balise <code>&lt;a&gt;</code></p>
                         <div class="su-margin-b-small">
                             <a class="su-button" href="#">Bouton &lt;a&gt;</a>
@@ -14,20 +14,20 @@
                         </div>
                         <p>Balise <code>&lt;button&gt;</code></p>
                         <div class="su-margin-b-small">
-                            <button class="su-button" href="#">Bouton &lt;button&gt;</button>
+                            <button class="su-button" tabindex="0" href="#">Bouton &lt;button&gt;</button>
                         </div>
                     </li>
-                    <li>Bouton <code>primary</code>
+                    <li><h3 class="titre-doc">Bouton <code>primary</code></h3>
                         <div>
                             <a class="su-button" href="#">Bouton</a>
                         </div>
                     </li>
-                    <li>Bouton <code>secondary</code>
+                    <li><h3 class="titre-doc">Bouton <code>secondary</code></h3>
                         <div>
                             <a class="su-button" href="#">Bouton</a>
                         </div>
                     </li>
-                    <li>Bouton <code>featured</code>
+                    <li><h3 class="titre-doc">Bouton <code>featured</code></h3>
                         <div>
                             <a class="su-button" href="#">Bouton</a>
                         </div>

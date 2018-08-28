@@ -1,6 +1,5 @@
 .su-button {
     cursor: pointer;
-    display: inline-block;
     background: $background-bouton;
     color: $color-bouton;
     border: $border-bouton;
@@ -9,9 +8,10 @@
     font-style: normal;
     text-align: center;
     text-decoration: none;
+    line-height: 1em;
+    display: inline-block;
     margin: 0;
     padding: $padding-bouton;
-    line-height: 1em;
     border-radius: $radius-bouton;
     box-shadow: $shadow-bouton;
     -webkit-user-select: none;
@@ -19,23 +19,27 @@
     -ms-user-select:     none;
     user-select:         none;
     -webkit-tap-highlight-color: transparent;
+    transition: background .1s ease,
+                color .1s ease,
+                box-shadow .1s ease;
 //    will-change: '';
 //    min-height: 1em;
 //    vertical-align: baseline;
 //    text-transform: none;
 //    text-shadow: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
         background: $background-bouton-hover;
         color: $color-bouton-hover;
         border: $border-bouton-hover;
         box-shadow: $shadow-bouton-hover;
     }
-/*
-                    &:active,
-                    &:focus,
-                    &:hover {
-                        text-decoration: none;
-                    }
-*/
+
+    &:active {
+        background:$background-bouton-active;
+        color: $color-bouton-active;
+        border: $border-bouton-active;
+        box-shadow: $shadow-bouton-active;
+    }
 }
