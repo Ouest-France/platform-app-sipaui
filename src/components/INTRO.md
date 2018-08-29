@@ -1,6 +1,6 @@
 ## raw
 
-Correspond à la partie framework HTML / CSS classique
+**Correspond** à la partie framework HTML / CSS classique
 
 
 ## vue
