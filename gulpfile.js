@@ -143,7 +143,7 @@ gulp.task("watch", function() {
     watch( [
             source + '/scss/**/*.scss',
             doc + '/scss/**/*.scss',
-            poc + '/scss/**/*.scss',
+            poc + '/src/scss/**/*.scss',
         ], function(){
         gulp.start('make-dev-assets');
     });
