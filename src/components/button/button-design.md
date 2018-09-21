@@ -106,8 +106,3 @@ Type | Class |Enable | Hover / Focus / Pressed | Typographie
 - " Lire la suite + "
 - “ Votre adresse email OK ”
 - " Géolocalisez-vous "
-
-
-
-
-Test push git
