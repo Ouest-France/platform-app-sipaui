@@ -70,7 +70,7 @@ Type | Class | Enable | Hover / Focus / Pressed | Typographie
 - Mettre le minimum de texte dans le bouton  tout en expliquant clairement ce qui se passe lorsque ce bouton est activé.
 
 ![Image_button_texte minimum_ok](design/Image_button_texte minimum_ok.png)  |![Image_button_texte minimum_ko](design/Image_button_texte minimum_ko.png)
------------- | ------------- | ------------- | -------------
+------------ | ------------- 
   ![Rectangle vert](design/rectangle-vert.png) **Do** Utiliser un texte simple | ![Rectangle rouge](design/rectangle-rouge.png) **Don't** Ne pas surcharger le texte
 
 - Éviter d'afficher plusieurs boutons primaires. Les secondaires peuvent apparaître plusieurs fois.
