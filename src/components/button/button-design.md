@@ -2,7 +2,7 @@
 
 Un bouton indique à l'utilisateur qu'une action est possible.
 
-## 1- Objectifs Utilisateur
+## 1- Usage
 
 
 ### Primaire
@@ -19,21 +19,21 @@ Donner plus de visibilité et d'accessibilité à une action.
 Donner plus de visibilité et d'accessibilité à une action sur un petit écran.
 
 ### Abonnement
-Informer du contexte.
+Informer sur le contexte Abonnement.
 
 ### Premium
-Informer du contexte.
+Informer sur le contexte Premium.
 
 ### Petit bouton
 Informer qu'une action mineure.
 
-## 2- Variations majeures
+## 2- États
 
-Type | Class |Enable | Hover / Focus / Pressed | Typographie
---|---|---|---|---|---|--
+Type | Class | Enable | Hover / Focus / Pressed | Typographie
+------------ | ------------- | ------------- | ------------- | ------------- |
 **Primaire** | su-button su-primary | ![button_su-button_su-primary](design/su-button_su-primary.png) #E2001A| ![button_su-button_su-primary_hover](design/su-button_su-primary_hover.png) #B40015 | Bold #FFFFFF
-**Secondaire** |su-button su-secondary | ![su-button_su-secondary](design/su-button_su-secondary.png) #333333|![su-button_su-secondary_pressed](design/su-button_su-secondary_hover.png) #B40015 | Regular #333333 #B40015
-**Abonnement** | su-button su-subscription | ![su-button_su-subscription](design/su-button_su-subscription.png) #FFCC33 | ![/Users/administrateur/Desktop/SipaUI/src/components/button/design/su-button-su-subscription-focus](design/su-button-su-subscription-hover.png) #E7AF07 | Bold #333333
+**Secondaire** | su-button su-secondary | ![su-button_su-secondary](design/su-button_su-secondary.png) #333333|![su-button_su-secondary_pressed](design/su-button_su-secondary_hover.png) #B40015 | Regular #333333 #B40015
+**Abonnement** | su-button su-subscription | ![su-button_su-subscription](design/su-button_su-subscription.png) #FFCC33 | ![design/su-button-su-subscription-focus](design/su-button-su-subscription-hover.png) #E7AF07 | Bold #333333
 **Premium** | su-button su-primary su-premium|  ![su-button_su-primary_premium](design/su-button_su-primary_premium.png) #DBA504 | ![su-button_su-primary_premium_pressed](design/su-button_su-primary_premium_hover.png) #C2940C | Bold #FFFFFF
 
 
@@ -63,23 +63,23 @@ Type | Class |Enable | Hover / Focus / Pressed | Typographie
 - Taille de caractère : 14px
 
 
-## 4- Usages
+## 4- Bonnes pratiques
 
-- Le texte du bouton doit être uniquement sur une seule ligne.
 - La 1re lettre du bouton est en majuscule, le reste est en minuscule.
+- Le texte du bouton doit être uniquement sur une seule ligne.
 - Mettre le minimum de texte dans le bouton  tout en expliquant clairement ce qui se passe lorsque ce bouton est activé.
 
 ![Image_button_texte minimum_ok](design/Image_button_texte minimum_ok.png)  |![Image_button_texte minimum_ko](design/Image_button_texte minimum_ko.png)
---|---|---|--
-  ![Rectangle vert](src/components/button/design/rectangle-vert.png) **Do** Utiliser un texte simple | ![Rectangle rouge](src/components/button/design/rectangle-rouge.png) **Don't** Ne pas surcharger le texte
+------------ | ------------- | ------------- | -------------
+  ![Rectangle vert](design/rectangle-vert.png) **Do** Utiliser un texte simple | ![Rectangle rouge](design/rectangle-rouge.png) **Don't** Ne pas surcharger le texte
 
-- Dans un container, n'afficher qu'un seul bouton primaire et les autres secondaire.
+- Éviter d'afficher plusieurs boutons primaires. Les secondaires peuvent apparaître plusieurs fois.
 
 - Lorsqu'il y a plusieurs boutons, les classer par ordre d'importance de gauche à droite. Une exeption s'applique obligatoirement dans le cas d'écran séquentiel. Par exemple dans un guide, le bouton "Retour" est à gauche afin de respecter le sens de navigation.
 
 ![Image_button_sequentiel](design/Image_button_sequentiel.png)
 
-  ![Rectangle vert](src/components/button/design/rectangle-vert.png) **Do** Mettre le bouton " Retour " à gauche
+  ![Rectangle vert](design/rectangle-vert.png) **Do** Mettre le bouton " Retour " à gauche
 
 - Sur un mobile lorsqu’il y a un seul bouton, le mettre en pleine largeur.
 
@@ -89,9 +89,9 @@ Type | Class |Enable | Hover / Focus / Pressed | Typographie
 
 - Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte.
 
-![Image_button_2 buttons_ko](design/Image_button_2 buttons_ko.png)
+![Image_button_2 buttons_ko](design/Image_button_buttons_ko.png)
 
-![Rectangle rouge](src/components/button/design/rectangle-rouge.png) **Don't** Ne placez pas ces boutons l'un en dessous de l'autre.
+![Rectangle rouge](design/rectangle-rouge.png) **Don't** Ne placez pas ces boutons l'un en dessous de l'autre.
 
 
 
