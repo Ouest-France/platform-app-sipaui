@@ -69,9 +69,6 @@ Type | Class | Enable | Hover / Focus / Pressed | Typographie
 - Le texte du bouton doit être uniquement sur une seule ligne.
 - Mettre le minimum de texte dans le bouton  tout en expliquant clairement ce qui se passe lorsque ce bouton est activé.
 
-![Image_button_texte minimum_ok](design/Image_button_texte_minimum_ok.png)
-![button_su-button_su-primary](design/su-button_su-primary.png)
-
 
 ![Image_button_texte minimum_ok](design/Image_button_texte_minimum_ok.png)  |![Image_button_texte minimum_ko](design/Image_button_texte_minimum_ko.png)
 ------------ | -------------
