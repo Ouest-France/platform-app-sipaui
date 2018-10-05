@@ -1,7 +1,21 @@
 # SipaUI
 Ouest-France/Sipa Group guidelines
 
-# Installation
+## How is it organized
+
+Every components are exposed in [src/components](src/components).
+Every component have:
+- file `{component-name}-design.md` : design document
+- file `{component-name}.sketch` : sketch symbol
+- file `{component-name}-js.md` : vanilla js version development document
+- file `{component-name}-vue.md` : vue.js version development document
+- folder `design` : contain component screenshots
+- folder `code` : contain component code
+  - folder `js` : contain vanilla js component code
+  - folder `vue` : contain uve js component code
+
+
+## Installation
 
 ```
 yarn install
@@ -31,7 +45,7 @@ npm run build-storybook
 &nbsp;
 ---
 
-# Storybook
+## Storybook
 
 ### dev
 
@@ -52,4 +66,3 @@ yarn install
 gulp
 npm run build-storybook
 ```
-
