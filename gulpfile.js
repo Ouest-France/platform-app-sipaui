@@ -59,10 +59,6 @@ gulp.task("make-css-prod", ["make-sass"], function() {
     return gulp.src([build + '/css/min/**/*'])
         .pipe(gulp.dest(destination + '/css'));
 });
-gulp.task("make-oueststrap", ["make-sass"], function() {
-    return gulp.src([doc + '/oueststrap/**/*'])
-        .pipe(gulp.dest(destination + ''));
-});
 
 gulp.task("make-assets", ["clean"], function() {
     return gulp.src([source + '/fonts/**/*'])
@@ -151,6 +147,6 @@ gulp.task("watch", function() {
 });
 
 gulp.task("make-dev-assets", ["clean", "make-assets", "make-sass", "make-css-dev"]);
-gulp.task("make-prod-assets", ["clean", "make-assets", "make-sass", "make-css-prod", "make-oueststrap"]);
+gulp.task("make-prod-assets", ["clean", "make-assets", "make-sass", "make-css-prod"]);
 gulp.task("default", ["clean", "make-dev-assets"]);
 gulp.task("html", ["clean", "generate-doc", "generate-poc", "generate-html"]);

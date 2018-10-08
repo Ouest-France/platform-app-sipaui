@@ -5,7 +5,7 @@
 // voir https://robots.thoughtbot.com/sass-default pour explications sur !default
 
 
-$version:                   0.0.1 alpha;
+$version:                   1.0.0;
 $urlDossierFont: 			'../fonts' !default;
 
 // RUPTURES ------------------------------------------------------------------------------------------------------------------
@@ -48,6 +48,11 @@ $couleur-secondaire-1: $rouge               !default;
 $couleur-secondaire-2: $rouge-fonce         !default;
 $couleur-secondaire-3: $rouge-plus-fonce    !default;
 $couleur-secondaire-4: null                 !default;
+
+$couleur-tertiaire-1: null                  !default;
+$couleur-tertiaire-2: null                  !default;
+$couleur-tertiaire-3: null                  !default;
+$couleur-tertiaire-4: null                  !default;
 
 $couleur-important: $couleur-secondaire-2   !default;
 
@@ -110,11 +115,11 @@ $font-family-titres: null               !default;
 $font-weight-titres: $font-weight-gras  !default;
 $color-titres: $couleur-principale-8    !default;
 $font-size-h1: $font-size-xxtall        !default;
-$margin-bottom-h1: $font-size-h1 * 1.2  !default;
+$margin-bottom-h1: $font-size-h1 * 1    !default;
 $font-size-h2: $font-size-xtall         !default;
-$margin-bottom-h2: $font-size-h2 * 1.1  !default;
+$margin-bottom-h2: $font-size-h2 * .8   !default;
 $font-size-h3: $font-size-tall          !default;
-$margin-bottom-h3: $font-size-h3 * 1    !default;
+$margin-bottom-h3: $font-size-h3 * .7   !default;
 $font-size-h4: $font-size-medium2       !default;
 $font-size-h5: $font-size-base          !default;
 $font-size-h6: $font-size-base          !default;

@@ -29,12 +29,22 @@ header {
             vertical-align: middle;
         }
     }
-    * {
-        color: $couleur-principale-1 !important;
-    }
     .titre {
         font-size: $font-size-tall;
-        margin-left: $margin-resp-small
+        margin-left: $margin-resp-small;
+        color: $couleur-principale-1;
+    }
+    .bandeau {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        background: $couleur-tertiaire-2;
+        padding: 5px;
+        width: 170px;
+        transform: translate(50px, -50%) rotate(45deg);
+        box-shadow: 0 2px 7px 3px rgba(0, 0, 0, 0.3);
+        color: $couleur-secondaire-2;
+        text-align: center;
     }
 }
 nav {
@@ -90,8 +100,9 @@ main {
     border-radius:  3px;
     font-size: 1.5rem;
     display: inline-block;
-
+    color: $couleur-principale-1;
 }
+
 .presentation {
     font-size: $font-size-medium2;
     color: $couleur-principale-1;
@@ -101,12 +112,10 @@ main {
     .titre {
         text-align: center;
         margin-bottom: $margin-large;
-        * {
-            color: $couleur-principale-1 !important;
-        }
         h1 {
             margin-bottom: $margin-medium2;
             font-size: $font-size-xxxtall;
+            color: $couleur-principale-1;
         }
     }
     .baseline {
@@ -115,7 +124,7 @@ main {
     }
     .intro {
         background: rgba(0,0,0, .2);
-        padding: 1rem;
+        padding: 1.4rem 2rem;
         border-radius:  10px;
     }
 }
@@ -171,4 +180,13 @@ main {
 .titre-doc {
     color: #950030 !important;
     font-weight: $font-weight-maigre;
+}
+
+.plan-versions {
+    .version {
+        margin: 0 $margin-medium1 $margin-small 0;
+    }
+    .fait {
+        color: $couleur-principale-5;
+    }
 }
