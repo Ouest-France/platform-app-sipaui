@@ -26,12 +26,12 @@ import SuButton from 'components/SuButton';
 ```js
 {
   components: { SuButton },
-  template: `<su-buton icon="mail">Send mail</su-button>`
+  template: `<su-old-buton icon="mail">Send mail</su-old-button>`
 }
 
 {
   components: { SuButton },
-  template: `<su-buton icon="trash" iconPosition="right">Send mail</su-button>`
+  template: `<su-old-buton icon="trash" iconPosition="right">Send mail</su-old-button>`
 }
 ```
 
@@ -44,6 +44,6 @@ For example:
 ```js
 {
   components: { SuButton },
-  template: `<su-buton v-on:click=={remove} value={item.id}>Remove</su-button>`
+  template: `<su-old-buton v-on:click=={remove} value={item.id}>Remove</su-old-button>`
 }
 ```

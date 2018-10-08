@@ -1,4 +1,4 @@
-.su-button {
+.su-old-button {
     cursor: pointer;
     background: $background-bouton;
     color: $color-bouton;
@@ -37,7 +37,7 @@
     }
 
 
-    &:active:not(.su-disabled) {
+    &:active:not(.su-old-disabled) {
         background:$background-bouton-active;
         color: $color-bouton-active;
         border: $border-bouton-active;
@@ -45,7 +45,7 @@
     }
 }
 
-.su-disabled,
+.su-old-disabled,
 [disabled="disabled"] {
     opacity: $opacity-disabled;
     cursor: default;
@@ -59,8 +59,8 @@
     }
 }
 
-.su-button.su-disabled,
-.su-button[disabled="disabled"] {
+.su-old-button.su-old-disabled,
+.su-old-button[disabled="disabled"] {
     &:hover,
     &:focus,
     &:active {

@@ -20,12 +20,12 @@ $taille-puce-retrait: $taille-puce-desktop + $taille-espace-puce-desktop;
         }
     }
 }
-ul.su-list,
-.su-editorial ul:not(.su-not-list) {
+ul.su-old-list,
+.su-old-editorial ul:not(.su-old-not-list) {
     @extend %liste-a-puces;
 }
-ul.su-list ul.su-list,
-.su-editorial ul:not(.su-not-list) ul:not(.su-not-list) {
+ul.su-old-list ul.su-old-list,
+.su-old-editorial ul:not(.su-old-not-list) ul:not(.su-old-not-list) {
     li::before {
         width: $taille-puce-desktop / 1.3;
         height: $taille-puce-desktop / 1.3;

@@ -15,17 +15,17 @@ body {
 //
 
 h1,
-.su-h1,
+.su-old-h1,
 h2,
-.su-h2,
+.su-old-h2,
 h3,
-.su-h3,
+.su-old-h3,
 h4,
-.su-h4,
+.su-old-h4,
 h5,
-.su-h5,
+.su-old-h5,
 h6,
-.su-h6 {
+.su-old-h6 {
     margin-top: 0;
     margin-bottom: $margin-resp-small;
     font-family: $font-family-titres;
@@ -36,134 +36,134 @@ h6,
 }
 
 h1,
-.su-h1 {
+.su-old-h1 {
     font-size: $font-size-h1;
     margin-bottom: $margin-bottom-h1;
 }
 h2,
-.su-h2 {
+.su-old-h2 {
     font-size: $font-size-h2;
     margin-bottom: $margin-bottom-h2;
 }
 h3,
-.su-h3 {
+.su-old-h3 {
     font-size: $font-size-h3;
     margin-bottom: $margin-bottom-h3;
 }
 h4,
-.su-h4 {
+.su-old-h4 {
     font-size: $font-size-h4;
 }
 h5,
-.su-h5 {
+.su-old-h5 {
     font-size: $font-size-h5;
 }
 h6,
-.su-h6 {
+.su-old-h6 {
     font-size: $font-size-h6;
 }
 
 // Éditorial
-.su-editorial {
+.su-old-editorial {
     h1,
-    .su-h1,
+    .su-old-h1,
     h2,
-    .su-h2,
+    .su-old-h2,
     h3,
-    .su-h3,
+    .su-old-h3,
     h4,
-    .su-h4,
+    .su-old-h4,
     h5,
-    .su-h5,
+    .su-old-h5,
     h6,
-    .su-h6 {
+    .su-old-h6 {
         font-family: $font-family-titres-edito;
         font-weight: $font-weight-titres-edito;
         color: $color-titres-edito;
     }
 
     h1,
-    .su-h1 {
+    .su-old-h1 {
         font-size: $font-size-h1-edito;
         margin-bottom: $margin-bottom-h1-edito;
     }
     h2,
-    .su-h2 {
+    .su-old-h2 {
         font-size: $font-size-h2-edito;
         margin-bottom: $margin-bottom-h2-edito;
     }
     h3,
-    .su-h3 {
+    .su-old-h3 {
         font-size: $font-size-h3-edito;
         margin-bottom: $margin-bottom-h3-edito;
     }
     h4,
-    .su-h4 {
+    .su-old-h4 {
         font-size: $font-size-h4-edito;
     }
     h5,
-    .su-h5 {
+    .su-old-h5 {
         font-size: $font-size-h5-edito;
     }
     h6,
-    .su-h6 {
+    .su-old-h6 {
         font-size: $font-size-h6-edito;
     }
 }
 h1,
-.su-h1,
+.su-old-h1,
 h2,
-.su-h2,
+.su-old-h2,
 h3,
-.su-h3,
+.su-old-h3,
 h4,
-.su-h4,
+.su-old-h4,
 h5,
-.su-h5,
+.su-old-h5,
 h6,
-.su-h6 {
-    &.su-editorial {
+.su-old-h6 {
+    &.su-old-editorial {
         font-family: $font-family-titres-edito;
         font-weight: $font-weight-titres-edito;
         color: $color-titres-edito;
     }
 }
 h1,
-.su-h1 {
-    &.su-editorial {
+.su-old-h1 {
+    &.su-old-editorial {
         font-size: $font-size-h1-edito;
         margin-bottom: $margin-bottom-h1-edito;
     }
 }
 h2,
-.su-h2 {
-    &.su-editorial {
+.su-old-h2 {
+    &.su-old-editorial {
         font-size: $font-size-h2-edito;
         margin-bottom: $margin-bottom-h2-edito;
     }
 }
 h3,
-.su-h3 {
-    &.su-editorial {
+.su-old-h3 {
+    &.su-old-editorial {
         font-size: $font-size-h3-edito;
         margin-bottom: $margin-bottom-h3-edito;
     }
 }
 h4,
-.su-h4 {
-    &.su-editorial {
+.su-old-h4 {
+    &.su-old-editorial {
         font-size: $font-size-h4-edito;
     }
 }
 h5,
-.su-h5 {
-    &.su-editorial {
+.su-old-h5 {
+    &.su-old-editorial {
         font-size: $font-size-h5-edito;
     }
 }
 h6,
-.su-h6 {
-    &.su-editorial {
+.su-old-h6 {
+    &.su-old-editorial {
         font-size: $font-size-h6-edito;
     }
 }
@@ -180,17 +180,17 @@ ul + p {
     margin-top: $margin-top-entre-blocs-petit;
 }
 p + h2,
-p + .su-h2,
+p + .su-old-h2,
 p + h3,
-p + .su-h3,
+p + .su-old-h3,
 p + h4,
-p + .su-h4,
+p + .su-old-h4,
 ul + h2,
-ul + .su-h2,
+ul + .su-old-h2,
 ul + h3,
-ul + .su-h3,
+ul + .su-old-h3,
 ul + h4,
-ul + .su-h4,
+ul + .su-old-h4,
 article + article {
     margin-top: $margin-top-entre-blocs-grand;
 }
@@ -201,13 +201,13 @@ article + article {
 strong {
     font-weight: $font-weight-gras;
 }
-.su-strong {
+.su-old-strong {
     @extend strong;
 }
-strong.su-important {
+strong.su-old-important {
     color: $couleur-important;
 }
 
-.su-text-center {
+.su-old-text-center {
     text-align: center;
 }

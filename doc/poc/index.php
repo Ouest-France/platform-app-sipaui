@@ -17,9 +17,9 @@
             </nav>
         </header>
 
-        <main class="su-padding-b-standard" role="main">
+        <main class="su-old-padding-b-standard" role="main">
 
-            <article class="conteneur su-editorial" role="article">
+            <article class="conteneur su-old-editorial" role="article">
                 <h1>Proof Of Concept</h1>
 
                 <h2>Les boutons</h2>

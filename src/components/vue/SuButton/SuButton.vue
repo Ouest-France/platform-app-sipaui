@@ -1,5 +1,5 @@
 <template>
-  <button class="su-button" :class="[typeClass]">
+  <button class="su-old-button" :class="[typeClass]">
     <slot></slot>
   </button>
 </template>

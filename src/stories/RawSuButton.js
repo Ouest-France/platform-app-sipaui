@@ -17,20 +17,20 @@ storiesOf('raw', module)
   .addDecorator(withDocs(SuButtonDocs))
   .addDecorator(withReadme(SuButtonReadme))
   .add('SuButton', () => ({
-    template: '<button class="su-button basic">SipaUi Button basic</button>',
+    template: '<button class="su-old-button basic">SipaUi Button basic</button>',
   }))
 ;
 storiesOf('raw', module)
   .add('SuButton.basic', () => ({
-    template: '<button class="su-button basic">SipaUi Button basic</button>',
+    template: '<button class="su-old-button basic">SipaUi Button basic</button>',
   }))
   .add('SuButton.primary', () => ({
-    template: '<button class="su-button primary">SipaUi Button primary</button>',
+    template: '<button class="su-old-button primary">SipaUi Button primary</button>',
   }))
   .add('SuButton.secondary', () => ({
-    template: '<button class="su-button secondary">SipaUi Button secondary</button>',
+    template: '<button class="su-old-button secondary">SipaUi Button secondary</button>',
   }))
   .add('SuButton.featured', () => ({
-    template: '<button class="su-button featured">SipaUi Button featured</button>',
+    template: '<button class="su-old-button featured">SipaUi Button featured</button>',
   }))
 ;

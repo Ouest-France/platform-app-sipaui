@@ -6,37 +6,37 @@
                 <h3 class="titre-doc">Liens standards <code>a[href]</code></h3>
                 <p><a href="#">Lien standard</a></p>
 
-                <h3 class="titre-doc">Liens avec <code>a[target="_blank"]</code> + <code>.su-blank</code></h3>
-                <p><a href="#" target="_blank" class="su-blank">Lien _blank</a></p>
+                <h3 class="titre-doc">Liens avec <code>a[target="_blank"]</code> + <code>.su-old-blank</code></h3>
+                <p><a href="#" target="_blank" class="su-old-blank">Lien _blank</a></p>
 
-                <h3 class="titre-doc">Liens neutres <code>.su-neutral-link</code></h3>
-                <p><a href="#" class="su-neutral-link">Lien neutre</a></p>
+                <h3 class="titre-doc">Liens neutres <code>.su-old-neutral-link</code></h3>
+                <p><a href="#" class="su-old-neutral-link">Lien neutre</a></p>
 
-                <h3 class="titre-doc">Liens voyants <code>.su-bright-link</code></h3>
-                <p><a href="#" class="su-bright-link">Lien voyant</a></p>
+                <h3 class="titre-doc">Liens voyants <code>.su-old-bright-link</code></h3>
+                <p><a href="#" class="su-old-bright-link">Lien voyant</a></p>
 
                 <hr/><!--------------------------------------------------------------------------------- -->
 
                 <h2 class="titre-doc">Listes</h2>
-                <h3 class="titre-doc">Liste base <code><code>ul</code></code> (ou <code>ul.su-not-list</code> si dans un bloc <code>.su-editorial ul</code>)</h3>
+                <h3 class="titre-doc">Liste base <code><code>ul</code></code> (ou <code>ul.su-old-not-list</code> si dans un bloc <code>.su-old-editorial ul</code>)</h3>
                 <ul>
                     <li>Item 1</li>
                     <li>Item 2</li>
                     <li>Item 3</li>
                 </ul>
 
-                <h3 class="titre-doc">Liste à puces <code>ul.su-list</code> ou <code>.su-editorial ul</code></h3>
-                <ul class="su-list">
+                <h3 class="titre-doc">Liste à puces <code>ul.su-old-list</code> ou <code>.su-old-editorial ul</code></h3>
+                <ul class="su-old-list">
                     <li>Item 1</li>
                     <li>Item 2</li>
                     <li>Item 3</li>
                 </ul>
 
-                <h3 class="titre-doc">Liste à puces à 2 niveaux <code>ul.su-list / ul</code> ou <code>.su-editorial ul / ul</code></h3>
-                <ul class="su-list">
+                <h3 class="titre-doc">Liste à puces à 2 niveaux <code>ul.su-old-list / ul</code> ou <code>.su-old-editorial ul / ul</code></h3>
+                <ul class="su-old-list">
                     <li>
                         Item 1
-                        <ul class="su-list">
+                        <ul class="su-old-list">
                             <li>Item n2 1</li>
                             <li>Item n2 2</li>
                             <li>Item n2 3</li>
@@ -46,8 +46,8 @@
                     <li>Item 3</li>
                 </ul>
 
-                <h3 class="titre-doc">Liste numérotée <code>ol.su-list</code></h3>
-                <ol class="su-list">
+                <h3 class="titre-doc">Liste numérotée <code>ol.su-old-list</code></h3>
+                <ol class="su-old-list">
                     <li>Item 1</li>
                     <li>Item 2</li>
                     <li>Item 3</li>
@@ -66,7 +66,7 @@
 
                 <h2 class="titre-doc">Tableaux</h2>
                 <h3 class="titre-doc">Tableau de base <code>table</code></h3>
-                <table summary="Résumé du tableau" class="su-margin-b-standard">
+                <table summary="Résumé du tableau" class="su-old-margin-b-standard">
                 	<caption>Légende du tableau</caption>
                 	<thead>
                 		<tr>
@@ -103,8 +103,8 @@
                 	</tbody>
                 </table>
 
-                <h3 class="titre-doc">Tableau designé avec <code>.su-table</code></h3>
-                <table summary="Résumé du tableau" class="su-table su-margin-b-standard">
+                <h3 class="titre-doc">Tableau designé avec <code>.su-old-table</code></h3>
+                <table summary="Résumé du tableau" class="su-old-table su-old-margin-b-standard">
                 	<caption>Légende du tableau</caption>
                 	<thead>
                 		<tr>
@@ -141,8 +141,8 @@
                 	</tbody>
                 </table>
 
-                <h3 class="titre-doc">Tableau designé avec <code>.su-table</code> + <code>.su-plus</code></h3>
-                <table summary="Résumé du tableau" class="su-table su-plus su-margin-b-standard">
+                <h3 class="titre-doc">Tableau designé avec <code>.su-old-table</code> + <code>.su-old-plus</code></h3>
+                <table summary="Résumé du tableau" class="su-old-table su-old-plus su-old-margin-b-standard">
                 	<caption>Légende du tableau</caption>
                 	<thead>
                 		<tr>

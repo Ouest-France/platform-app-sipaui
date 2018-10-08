@@ -17,12 +17,12 @@
             </nav>
         </header>
 
-        <main class="su-editorial su-padding-b-standard" role="main">
+        <main class="su-old-editorial su-old-padding-b-standard" role="main">
 
             <article class="conteneur integre" role="article">
                 <h1>Liste des composants intégrés</h1>
 
-                <ul class="su-not-list">
+                <ul class="su-old-not-list">
                 	<li>
                 	    <h2>Boutons</h2>
                 	    <ul>
@@ -41,7 +41,7 @@
             <article class="conteneur plan-versions" role="article">
                 <h1>Plan de versions prévisionnel</h1>
 
-                <ul class="su-not-list">
+                <ul class="su-old-not-list">
                 	<li>
                 	    <div class="cell"><span class="version">0.1.0</span></div>
                 	    <div class="cell"><span class="fait">Boutons standards (primaire et secondaire), boutons Abonnement et Premium</span></div>

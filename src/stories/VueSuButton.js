@@ -22,7 +22,7 @@ storiesOf('vue', module)
       components: {
         VueSuButton,
       },
-      template: `<button class="su-button basic">SipaUi Button primary</button>`,
+      template: `<button class="su-old-button basic">SipaUi Button primary</button>`,
     };
   })
 ;

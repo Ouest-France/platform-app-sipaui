@@ -14,14 +14,14 @@
                 $actif='poc';
                 include(__DIR__."/../_fragments/_nav.php");
                 ?>
-                <ul class="su-horizontal sous-menu">
+                <ul class="su-old-horizontal sous-menu">
                     <li><a href="basiques-neutre.php">Objets basiques sans thème</a></li>
                     <li><a href="basiques-of.php" class="actif">Objets basiques thème OF</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main role="main" class="su-padding-b-standard">
+        <main role="main" class="su-old-padding-b-standard">
 
             <?php
             $template='Ouest-France';
