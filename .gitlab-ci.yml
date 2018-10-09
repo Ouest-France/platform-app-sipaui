@@ -30,12 +30,24 @@ package_review:
   script:
     - cdp docker --image-tag-branch-name --use-gitlab-registry
   dependencies:
-    - build_front
-    - build_server
+    - build
   only:
     - branches
   except:
     - master
+    - develop
+  tags:
+    - int
+
+package_staging:
+  image: $CDP_IMAGE
+  stage: package
+  script:
+    - cdp docker --image-tag-branch-name --use-aws-ecr
+  dependencies:
+    - build
+  only:
+    - develop
   tags:
     - int
 
@@ -53,4 +65,28 @@ deploy_review:
     - develop
   tags:
     - int
+
+deploy_staging:
+  image: $CDP_IMAGE
+  stage: deploy
+  script:
+    - cdp k8s --use-aws-ecr --namespace-project-branch-name --image-tag-branch-name --create-default-helm
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+  only:
+    - develop
+  tags:
+    - staging
+
+deploy_prod:
+  image: $CDP_IMAGE
+  stage: deploy
+  script:
+    - cdp k8s --use-aws-ecr --namespace-project-branch-name --image-tag-branch-name --create-default-helm
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+  only:
+    - master
+  tags:
+    - prod
 
