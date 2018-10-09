@@ -11,7 +11,7 @@ build:
   image: $NODE_IMAGE
   stage: build
   script:
-    - yarn install
+    - npm install
     - npx gulp html
     - npm run build-storybook
   artifacts:
