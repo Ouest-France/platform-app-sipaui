@@ -20,8 +20,6 @@ build:
     expire_in: 1day
   only:
     - branches
-  except:
-    - master
   tags:
     - int
 
@@ -48,6 +46,7 @@ package_staging:
   dependencies:
     - build
   only:
+    - master
     - develop
   tags:
     - int
