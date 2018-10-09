@@ -1,0 +1,93 @@
+variables:
+  CDP_IMAGE: ouestfrance/cdp:latest
+  NODE_IMAGE: jihoun/php-node:latest
+
+stages:
+  - build
+  - package
+  - deploy
+
+build:
+  image: $NODE_IMAGE
+  stage: build
+  script:
+    - npm install
+    - npx gulp html
+    - npm run build-storybook
+  artifacts:
+    paths:
+      - dist
+    expire_in: 1day
+  only:
+    - branches
+  except:
+    - master
+  tags:
+    - int
+
+package_review:
+  image: $CDP_IMAGE
+  stage: package
+  script:
+    - cdp docker --image-tag-branch-name --use-gitlab-registry
+  dependencies:
+    - build
+  only:
+    - branches
+  except:
+    - master
+    - develop
+  tags:
+    - int
+
+package_staging:
+  image: $CDP_IMAGE
+  stage: package
+  script:
+    - cdp docker --image-tag-branch-name --use-aws-ecr
+  dependencies:
+    - build
+  only:
+    - develop
+  tags:
+    - int
+
+deploy_review:
+  image: $CDP_IMAGE
+  stage: deploy
+  script:
+    - cdp k8s --internal-port=80 --use-gitlab-registry --namespace-project-branch-name --image-tag-branch-name --delete-labels=120 --create-default-helm
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+  only:
+    - branches
+  except:
+    - master
+    - develop
+  tags:
+    - int
+
+deploy_staging:
+  image: $CDP_IMAGE
+  stage: deploy
+  script:
+    - cdp k8s --internal-port=80 --use-aws-ecr --namespace-project-name --image-tag-branch-name --create-default-helm
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+  only:
+    - develop
+  tags:
+    - staging
+
+deploy_prod:
+  image: $CDP_IMAGE
+  stage: deploy
+  script:
+    - cdp k8s --internal-port=80 --use-aws-ecr --namespace-project-name --image-tag-branch-name --create-default-helm
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+  only:
+    - master
+  tags:
+    - prod
+
