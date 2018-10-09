@@ -10,8 +10,8 @@ build:
   image: $CDP_IMAGE
   stage: build
   script:
-    - yarn install
-    - ./node_modules/gulp/bin/gulp.js html
+    - npm install
+    - npx gulp html
     - npm run build-storybook
   artifacts:
     paths:
