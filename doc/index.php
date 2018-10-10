@@ -36,7 +36,7 @@
             </article>
             <article class="conteneur">
                 <h1>SipaUI sur Github&nbsp;!</h1>
-                <p>Vous pouvez trouver le repository GIT de SipaUI à cette adresse&nbsp;: <a href="https://github.com/Ouest-France/SipaUI" target="_blank" class="su-old-blank">github.com/Ouest-France/SipaUI</a>.</p>
+                <p>Vous pouvez trouver le repository GIT de SipaUI à cette adresse&nbsp;: <a href="https://github.com/Ouest-France/platform-app-sipaui" target="_blank" class="su-old-blank">github.com/Ouest-France/platform-app-sipaui</a>.</p>
             </article>
         </main>
     </body>

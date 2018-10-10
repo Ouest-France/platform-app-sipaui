@@ -21,7 +21,7 @@
         <main class="su-old-editorial su-old-padding-b-standard" role="main">
 
             <article class="conteneur" role="article">
-                <h1>Architecture</h2>
+                <h1>Architecture Fonctionnelle</h2>
 
                 <h2>SipaUI intégré dans un site</h2>
                 <p>SipaUI porte tout le CSS et le JS nécessaire à l’affichage des composants graphiques prévus par la charte. Un site l’utilisant ne devrait donc pas avoir besoin de CSS supplémentaire pour afficher ces composants, d’autant plus que SipaUI intègre un système de «&nbsp;templating&nbsp;» poussé qui devrait lui permettre de répondre à ses besoins de personnalisation. SipaUI intègre aussi une grille sur 24 colonnes et des classes de marges qui permettent de mettre en page le contenu de façon basique. Toutefois, ce site aura besoin de CSS propres pour gérer la mise en page et la gestion des blocs plus finement, ainsi que tous les cas non prévus dans SipaUI. Par conséquent, il faudra <strong>concaténer les CSS du site avec ceux de SipaUI suivant la même logique</strong> (même découpage en fonction des media-querries) afin d’optimiser les performances en évitant d’appeler plusieurs fichiers CSS.</p>

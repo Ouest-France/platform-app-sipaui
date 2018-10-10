@@ -190,3 +190,22 @@ main {
         color: $couleur-principale-5;
     }
 }
+
+.green {
+    color: #0f0;
+}
+.red {
+    color: #f00;
+}
+.noir {
+    color: #000;
+    font-weight: 700;
+}
+pre code {
+    font-size: 12px;
+    font-family: Courier;
+    background: #eee;
+    padding: 5px;
+    line-height: 15px;
+    display: block;
+}
