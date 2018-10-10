@@ -3,12 +3,11 @@
 //
 
 // Reset
-@import 'libs/normalize';
-@import 'global';
+@import 'src/core/scss/libs/normalize';
+@import 'src/core/scss/global';
 
 @import 'helpers/helpers-main';
 
 @import 'typo/typo-main';
 @import 'basic/basic-main';
-@import 'buttons/buttons-main';
 
