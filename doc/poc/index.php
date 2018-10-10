@@ -19,16 +19,16 @@
 
         <main class="su-old-padding-b-standard" role="main">
 
-            <article class="conteneur su-old-editorial" role="article">
-                <h1>Proof Of Concept</h1>
+            <article class="conteneur" role="article">
+                <h1 class="titre-doc">Proof Of Concept</h1>
 
-                <h2>Les boutons</h2>
+                <h2 class="titre-doc">Les boutons</h2>
 
-                <p>Système de thèmes sur les boutons&nbsp;:</p>
-                <ul>
-                    <li><a href="boutons-neutre.php">Boutons sans thème</a></li>
-                    <li><a href="boutons-of.php">Boutons thème Ouest-France</a></li>
-                </ul>
+                 <?php
+                $template='neutres';
+                include(__DIR__."/_fragments/_contenu-boutons.php");
+                ?>
+
             </article>
 
         </main>

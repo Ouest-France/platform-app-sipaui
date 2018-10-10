@@ -29,7 +29,7 @@
                     </svg>
                     <p class="baseline su-old-margin-b-large">Framework frontend (CSS et JS) de composants graphiques et de styles éditoriaux pour les sites du Groupe SIPA-Ouest‑France.</p>
                     <section class="intro su-old-justify">
-                        <p>SipaUI vous permettra de construire vos sites <strong>SIPA</strong> ou vos blocs <span style="color: LimeGreen; font-weight: bold">???</span> en responsif et «&nbsp;mobile-first&nbsp;», tout en l’adaptant au thème visuel de votre marque&nbsp;! SipaUI est un framework agnostique, un fichier de variables SASS vous permet de thématiser l’apparence des composants visuels en fonction de vos besoins.</p>
+                        <p>SipaUI vous permettra de construire vos sites <strong>SIPA</strong> ou vos blocs de contenu en responsif et «&nbsp;mobile-first&nbsp;», tout en l’adaptant au thème visuel de votre marque&nbsp;! SipaUI est un framework agnostique, un fichier de variables SASS vous permet de thématiser l’apparence des composants visuels en fonction de vos besoins.</p>
                         <p>Vous pourrez aussi utiliser/créer la version <strong>Vue.js</strong> d’un composant dans vos projets orientés <strong>application web</strong>.</p>
                     </section>
                 </div>
