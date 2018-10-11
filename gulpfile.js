@@ -134,6 +134,7 @@ gulp.task("watch", function() {
     gulp.start('make-dev-assets');
     watch( [
             source+ '/core/scss/**/*.scss',
+            source+ '/components/**/*.scss',
             doc+ '/scss/**/*.scss',
         ], function(){
         gulp.start('make-dev-assets');
