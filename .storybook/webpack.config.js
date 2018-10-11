@@ -12,7 +12,9 @@ module.exports = (storybookBaseConfig, configType) => {
   //   loaders: ["style-loader", "css-loader", "sass-loader"],
   //   include: path.resolve(__dirname, "../src/core/scss/")
   // });
-
+    storybookBaseConfig.node = {
+      fs: 'empty'
+    }
   // Return the altered config
   return storybookBaseConfig;
 };

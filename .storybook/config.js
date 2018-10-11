@@ -16,4 +16,4 @@ setOptions({
   enableShortcuts: false, // true by default
 });
 
-configure(() => require('../src/stories'), module);
+configure(() => require('../doc/storybook/stories'), module);
