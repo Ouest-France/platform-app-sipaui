@@ -35,12 +35,13 @@
                 <pre class="noir">
 <i class="green">src / </i>
     components /
-        <i class="green">doc-design.md </i>
-        <i class="green">doc-html.md </i>
-        <i class="green">doc-vuejs.md </i>
-        ( [component-name]-[theme-name].js )? > suivant resultat du poc Stephane
-        [component-name].scss
-        [component-name].vue.js
+        [component-name]
+            <i class="green">doc-design.md </i>
+            <i class="green">doc-html.md </i>
+            <i class="green">doc-vuejs.md </i>
+            main-[theme-name].scss ?> suivant resultat du poc Stephane
+            main.scss
+            index.vue.js
 
     core /
         _variables-[theme-name].scss

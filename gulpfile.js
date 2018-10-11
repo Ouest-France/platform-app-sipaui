@@ -12,6 +12,7 @@ var gulp            = require("gulp"),
     es              = require('event-stream'),
     through2        = require('through2'),
     runner          = require('child_process')
+    fs              = require('file-system')
     ;
 
 // Variables de chemins
@@ -21,32 +22,28 @@ var poc = './doc/poc'; // dossier de travail
 var destination = './dist'; // dossier à livrer
 var build = './build'; // dossier de compilation
 
-scsslist =
-    [
-        [source + '/scss/default-sipaui.scss', 'default-sipaui.min.css'],
-        [source + '/scss/large-sipaui.scss', 'large-sipaui.min.css'],
-
-        [doc + '/scss/default-demo.scss', 'default-demo.min.css'],
-        [doc + '/scss/large-demo.scss', 'large-demo.min.css'],
-
-        [poc + '/src/scss/neutre/default-poc-neutre.scss', 'default-poc-neutre.min.css'],
-        [poc + '/src/scss/neutre/large-poc-neutre.scss', 'large-poc-neutre.min.css'],
-
-        [poc + '/src/scss/of/default-poc-of.scss', 'default-poc-of.min.css'],
-        [poc + '/src/scss/of/large-poc-of.scss', 'large-poc-of.min.css'],
-    ]
-;
 
 gulp.task('make-sass', ['clean'], function () {
-    return es.merge(scsslist.map(function(a) {
-        return gulp.src(a[0])
+    var scssList = [];
+
+    fs.readdirSync(doc+ '/scss/', { withFileTypes: true })
+        .filter(dirent => !dirent.startsWith('_'))
+        .filter(dirent => dirent.endsWith('.scss'))
+        .map(dirent => scssList.push(doc+ '/scss/' +dirent));
+
+    fs.readdirSync(source+ '/core/scss/', { withFileTypes: true })
+        .filter(dirent => !dirent.startsWith('_'))
+        .filter(dirent => dirent.endsWith('.scss'))
+        .map(dirent => scssList.push(source+ '/core/scss/' +dirent));
+
+    return es.merge(scssList.map(function(a) {
+        return gulp.src(a)
             .pipe(plumber(function(e){log.error('Erreur lors de la compilation SASS !', e);}))
             .pipe(sourcemaps.init())
             .pipe(sass())
             .pipe(sourcemaps.write())
             .pipe(gulp.dest(build + '/css/dev'))
             .pipe(cssnano({zindex: false}))
-            .pipe(rename(a[1]))
             .pipe(gulp.dest(build + '/css/min'));
     }));
 });
