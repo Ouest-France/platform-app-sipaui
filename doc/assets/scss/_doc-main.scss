@@ -191,13 +191,13 @@ main {
     }
 }
 
-.green {
-    color: #0f0;
+.documentation {
+    color: #40a42b;
 }
-.red {
-    color: #f00;
+.catalogue {
+    color: $couleur-secondaire-1;
 }
-.noir {
+.livrable {
     color: #000;
     font-weight: 700;
 }
