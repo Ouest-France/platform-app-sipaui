@@ -12,7 +12,7 @@ var gulp            = require("gulp"),
     es              = require('event-stream'),
     through2        = require('through2'),
     runner          = require('child_process')
-    fs              = require('file-system')
+    fs              = require('fs')
     ;
 
 // Variables de chemins
