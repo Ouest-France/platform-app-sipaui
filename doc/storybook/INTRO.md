@@ -1,9 +1,14 @@
-## raw
+## DESIGN
 
-**Correspond** à la partie framework HTML / CSS classique
+Correspond à la vision **design** fonctionnelle du composant.
+Comment s'en servir, dans quelles conditions, ce qu'il ne faut pas faire etc
 
 
-## vue
+## HTML
 
-Correspond à son équivalent Vue.js
-(avec potentiellement des composants supplémentaires)
+Correspond à la partie framework **HTML / CSS** classique
+
+
+## VUEJS
+
+Correspond à son équivalent **Vue.js**

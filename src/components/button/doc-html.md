@@ -5,6 +5,9 @@ Normal application button.
 ```html
 <button class="su-old-button basic">SipaUi Button basic</button>
 ```
+<button class="su-button basic">SipaUi Button basic</button>
+<button class="su-button primary">SipaUi Button basic</button>
+
 
 <!-- STORY -->
 

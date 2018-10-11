@@ -3,9 +3,9 @@
 Normal application button.
 
 ```js
-import SuButton from 'components/SuButton';
+import SuButton from 'sipaui/components/button';
 ```
 
 <!-- STORY -->
 
-CF raw
+CF HTML

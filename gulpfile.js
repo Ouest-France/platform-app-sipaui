@@ -20,7 +20,7 @@ var source = './src'; // dossier de travail
 var doc = './doc/assets'; // dossier de travail
 var poc = './doc/poc'; // dossier de travail
 var destination = './dist'; // dossier à livrer
-var build = './build'; // dossier de compilation
+var build = './build'; // dossier de ocmpilation
 
 
 gulp.task('make-sass', ['clean'], function () {
@@ -120,8 +120,6 @@ gulp.task("generate-poc", ["make-prod-assets"], function() {
     // Generate poc
     return php2html(["./doc/poc/*.php"], build + "/poc");
 });
-
-
 gulp.task("generate-html", ["generate-poc","generate-doc", "clean-html", "make-prod-assets"], function() {
     // replace html
     return gulp.src([build + '/**/*.html'])
@@ -135,9 +133,8 @@ gulp.task("generate-html", ["generate-poc","generate-doc", "clean-html", "make-p
 gulp.task("watch", function() {
     gulp.start('make-dev-assets');
     watch( [
-            source + '/scss/**/*.scss',
-            doc + '/scss/**/*.scss',
-            poc + '/src/scss/**/*.scss',
+            source+ '/core/scss/**/*.scss',
+            doc+ '/scss/**/*.scss',
         ], function(){
         gulp.start('make-dev-assets');
     });

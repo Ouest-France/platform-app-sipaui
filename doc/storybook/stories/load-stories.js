@@ -6,62 +6,29 @@ import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 
 import CommonFooterDocs from '../COMMON_FOOTER.md';
 import introDocs from '../INTRO.md';
-
-var fs = require('fs');
+import doc_design from '../../../src/components/button/doc-design.md';
+import doc_html from '../../../src/components/button/doc-html.md';
+import doc_vue from '../../../src/components/button/doc-vuejs.md';
 
 // Globablly
 withDocs.addFooterDocs(CommonFooterDocs);
 
 // Collection
-
 storiesOf('intro', module)
     .addDecorator(withKnobs)
     .addDecorator(withDocs(introDocs))
     .add('Documentation', () => ({
-    template: '<h1>SipaUI Storybook</h1>',
+        template: '<h1>SipaUI Storybook</h1>',
     }))
 ;
 
-var components_dir = '../../../components/';
-// Pour chaque component
-fs.readdirSync(components_dir).map(item => {
-    comp_name = item.name;
-    comp_dir = components_dir + comp_name;
+['button'].map(item => {
+    var comp_name = item;
 
-    var doc_design = fs.readFileSync( comp_dir + '/doc-design.md' );
-    // HTML
-
-    storiesOf('Version HTML', module)
+    storiesOf(item, module)
         .addDecorator(withKnobs)
-        .addDecorator(withDocs(doc_design))
-        .add(comp_name, () => ({
-        template: req(comp_dir + '/doc-html.md'),
-        }))
-    ;
-
-
-    const req = require.context(comp_dir, true, /^stories\.js$/)
-
-    function loadStories() {
-      req.keys().forEach((filename) => req(filename))
-    }
-
-    storiesOf(loadStories, module);
-
-
-    // Ajout du pendant VUEJS
-    var vue_component = fs.readFileSync( comp_dir + '/'+ item + '.vue' );
-    var vue_component_doc = fs.readFileSync( comp_dir + '/doc-vuejs.md' );
-
-    storiesOf('Version vuejs', module)
-      .addDecorator(withKnobs)
-      .addDecorator(withDocs(vue_component_doc))
-      .add('Documentation', () => {
-        return {
-          components: {
-            vue_component,
-          }
-        };
-      })
+        .add('DESIGN', doc(doc_design))
+        .add('HTML', doc(doc_html))
+        .add('VUEJS', doc(doc_vue))
     ;
 });
