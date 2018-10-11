@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/gulp/bin/gulp.js",
     "storybook": "start-storybook -p 9001 -s ./dist -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o ./dist/storybook"
+    "build-storybook": "build-storybook -c .storybook -s ./dist -o ./dist/storybook"
   },
   "repository": {
     "type": "git",
