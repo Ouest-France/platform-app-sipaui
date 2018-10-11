@@ -27,14 +27,14 @@ gulp.task('make-sass', ['clean'], function () {
     var scssList = [];
 
     fs.readdirSync(doc+ '/scss/', { withFileTypes: true })
-        .filter(dirent => !dirent.startsWith('_'))
-        .filter(dirent => dirent.endsWith('.scss'))
-        .map(dirent => scssList.push(doc+ '/scss/' +dirent));
+        .filter(dirent => !dirent.name.startsWith('_'))
+        .filter(dirent => dirent.name.endsWith('.scss'))
+        .map(dirent => scssList.push(doc+ '/scss/' +dirent.name));
 
     fs.readdirSync(source+ '/core/scss/', { withFileTypes: true })
-        .filter(dirent => !dirent.startsWith('_'))
-        .filter(dirent => dirent.endsWith('.scss'))
-        .map(dirent => scssList.push(source+ '/core/scss/' +dirent));
+        .filter(dirent => !dirent.name.startsWith('_'))
+        .filter(dirent => dirent.name.endsWith('.scss'))
+        .map(dirent => scssList.push(source+ '/core/scss/' +dirent.name));
 
     return es.merge(scssList.map(function(a) {
         return gulp.src(a)
