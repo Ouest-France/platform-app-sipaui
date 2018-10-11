@@ -26,19 +26,19 @@
                 <h2>Contenu de SipaUi</h2>
                 <p>Légende:
                 <ul>
-                    <li>les fichiers présent dans le <i class="noir">livrable</i></li>
-                    <li>les éléments lié à l'explication du <i class="green">projet</i> et de la documentation</li>
-                    <li>les fichiers nécéssaire à la génération du <i class="red">catalogue</i></li>
+                    <li>les fichiers présent dans le <i class="livrable">livrable</i></li>
+                    <li>les éléments lié à l'explication du <i class="documentation">projet</i> et de la documentation</li>
+                    <li>les fichiers nécéssaire à la génération du <i class="catalogue">catalogue</i></li>
                 </ul>
                 </p>
 
-                <pre class="noir">
-<i class="green">src / </i>
+                <pre class="livrable">
+<i class="documentation">src / </i>
     components /
         [component-name]
-            <i class="green">doc-design.md </i>
-            <i class="green">doc-html.md </i>
-            <i class="green">doc-vuejs.md </i>
+            <i class="documentation">doc-design.md </i>
+            <i class="documentation">doc-html.md </i>
+            <i class="documentation">doc-vuejs.md </i>
             main-[theme-name].scss ?> suivant resultat du poc Stephane
             main.scss
             index.vue.js
@@ -52,16 +52,16 @@ dist /
     css / sipaui-xxx.css
     js  / sipaui-xxx.js
 
-<i class="green">
+<i class="documentation">
 doc /
     index
     [page-name].php</i>
 
-<i class="green">src /</i>
+<i class="documentation">src /</i>
     plugins /
         [plugin-name].js
 
-<i class="red">storybook /
+<i class="catalogue">storybook /
     config.js
     head.html </i>
                 </pre>

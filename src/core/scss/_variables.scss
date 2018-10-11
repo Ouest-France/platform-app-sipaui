@@ -75,8 +75,22 @@ $itunes:            #000000   !default;
 $flickr:            #0063DC   !default;
 $dailymotion:       #0066dc   !default;
 
+
+
 $font-size-root: 10px;
 $background-body: $blanc;
 
-$margin-small: 15px;
+// MARGES --------------------------------------------------------------------------------
+// Marges en PX
+$margin-xsmall:     5px     !default;
+$margin-small:      10px    !default;
+$margin-medium1:    15px    !default;
+$margin-medium2:    20px    !default;
+$margin-large:      30px    !default;
+$margin-xlarge:     40px    !default;
 
+$margin-standard: $margin-medium2;
+$margin-standard-large: $margin-xlarge;
+
+// disabled
+$opacity-disabled: .4;
