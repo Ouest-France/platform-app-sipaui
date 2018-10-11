@@ -48,9 +48,9 @@
     "sass-loader": "^7.1.0",
     "storybook-readme": "^3.3.0",
     "through2": "^2.0.3",
-    "vue": "@2.5.16",
-    "vue-loader": "@14.2.1",
-    "vue-template-compiler": "@2.5.16",
+    "vue": "^2.5.16",
+    "vue-loader": "^14.2.1",
+    "vue-template-compiler": "^2.5.16",
     "vuex": "^3.0.1",
     "webpack": "^4.20.2"
   },
