@@ -115,7 +115,7 @@ body:hover .su-visually-hidden {
 }
 
 /* -- FULL WIDTH -------------------------------------------------------------------- */
-.su-fullwith {
+.su-fullwidth {
     width: 100% !important;
 }
 
@@ -131,7 +131,7 @@ body:hover .su-visually-hidden {
 //
 
 @media only screen and (max-width: $max-breakpoint-mobile) {
-    .su-fullwith-mobile {
+    .su-fullwidth-mobile {
         width: 100% !important;
     }
 }
