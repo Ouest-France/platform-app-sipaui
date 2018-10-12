@@ -34,7 +34,7 @@ Type | Class | Enable | Hover / Focus / Pressed | Typographie
 **Primaire** | su-button su-primary | ![button_su-button_su-primary](design/su-button_su-primary.png) #E2001A| ![button_su-button_su-primary_hover](design/su-button_su-primary_hover.png) #B40015 | Bold #FFFFFF
 **Secondaire** | su-button su-secondary | ![su-button_su-secondary](design/su-button_su-secondary.png) #333333|![su-button_su-secondary_pressed](design/su-button_su-secondary_hover.png) #B40015 | Regular #333333 #B40015
 **Abonnement** | su-button su-subscription | ![su-button_su-subscription](design/su-button_su-subscription.png) #FFCC33 | ![design/su-button-su-subscription-focus](design/su-button-su-subscription-hover.png) #E7AF07 | Bold #333333
-**Premium** | su-button su-primary su-premium|  ![su-button_su-primary_premium](design/su-button_su-primary_premium.png) #DBA504 | ![su-button_su-primary_premium_pressed](design/su-button_su-primary_premium_hover.png) #C2940C | Bold #FFFFFF
+**Premium** | su-button su-premium|  ![su-button_su-premium](design/su-button_su-premium.png) #DBA504 | ![su-button_su-premium_pressed](design/su-button_su-premium_hover.png) #C2940C | Bold #FFFFFF
 
 
 ## 3- Spécifications
