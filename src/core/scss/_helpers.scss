@@ -2,18 +2,18 @@
 // Utilitaires
 //
 
-.su-old-clearfix,
-.su-old-cf {
+.su-clearfix,
+.su-cf {
     @include clearfix();
 }
 
-.su-old-hidden {
+.su-hidden {
     display: none !important;
     visibility: hidden; // Les lecteurs d'écrans parfois ne prennent pas en compte le display none
 }
 
 // Pour cacher quelque-chose qui doit rester accessible aux lecteurs d'écrans
-.su-old-visually-hidden { // https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
+.su-visually-hidden { // https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px);
     padding: 0 !important;
@@ -22,7 +22,7 @@
     width: 1px !important;
     overflow: hidden;
 }
-body:hover .su-old-visually-hidden {
+body:hover .su-visually-hidden {
     a,
     input,
     button {
@@ -30,85 +30,73 @@ body:hover .su-old-visually-hidden {
     }
 }
 
-//
 /* -- DISPLAY -------------------------------------------------------------------- */
-//
-.su-old-block {
+.su-block {
     display: block !important;
 }
-.su-old-inline-block {
+.su-inline-block {
     display: inline-block !important;
 }
 
-//
 /* -- POSITIONS -------------------------------------------------------------------- */
-//
-.su-old-relative {
-	position: relative;
+.su-relative {
+	position: relative !important;
 }
-.su-old-absolute {
-	position: absolute;
+.su-absolute {
+	position: absolute !important;
 }
-.su-old-fixed {
-	position: fixed;
+.su-fixed {
+	position: fixed !important;
 }
 
-//
-/* -- MARGES BASSSES-------------------------------------------------------------------- */
-//
-.su-old-margin-0 {
+/* -- MARGINS -------------------------------------------------------------------- */
+.su-margin-0 {
     margin: 0 !important;
 }
-.su-old-margin-b-small {
+.su-margin-b-small {
     margin-bottom: $margin-resp-small !important;                // 10px
 }
-.su-old-margin-b-medium {
+.su-margin-b-medium {
     margin-bottom: $margin-resp-medium1 !important;              // 15px
 }
-.su-old-margin-b-standard {
+.su-margin-b-standard {
     margin-bottom: $margin-resp-standard !important;             // 20px
 }
-.su-old-margin-b-large {
+.su-margin-b-large {
     margin-bottom: $margin-resp-standard-large !important;       // 40px
 }
 
-//
-/* -- PADDING BAS -------------------------------------------------------------------- */
-//
-.su-old-padding-0 {
+/* -- PADDINGS  -------------------------------------------------------------------- */
+.su-padding-0 {
     padding: 0 !important;
 }
-.su-old-padding-b-small {
+.su-padding-b-small {
     padding-bottom: $margin-resp-small !important;                // 10px
 }
-.su-old-padding-b-medium {
+.su-padding-b-medium {
     padding-bottom: $margin-resp-medium1 !important;              // 15px
 }
-.su-old-padding-b-standard {
+.su-padding-b-standard {
     padding-bottom: $margin-resp-standard !important;             // 20px
 }
-.su-old-padding-b-large {
+.su-padding-b-large {
     padding-bottom: $margin-resp-standard-large !important;       // 40px
 }
 
-//
 /* -- LINE-HEIGHT -------------------------------------------------------------------- */
-//
-.su-old-line-height-base {
+.su-line-height-base {
     line-height: $line-height-base !important;
 }
-.su-old-line-height-small {
+.su-line-height-small {
     line-height: $line-height-small !important;
 }
-.su-old-line-height-xsmall {
+.su-line-height-xsmall {
     line-height: $line-height-xsmall !important;
 }
 
-//
 /* -- JUSTIFY -------------------------------------------------------------------- */
-//
-.su-old-justify {
-    text-align: justify;
+.su-justify {
+    text-align: justify !important;
     word-wrap: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens:    auto;
@@ -116,11 +104,34 @@ body:hover .su-old-visually-hidden {
     hyphens:         auto;
 }
 
+/* -- CENTER -------------------------------------------------------------------- */
+.su-block-center {
+    display: block !important; //utile pour forcer le centrage d’un objet non block comme les SVG
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.su-text-center {
+    text-align: center !important;
+}
+
+/* -- FULL WIDTH -------------------------------------------------------------------- */
+.su-fullwith {
+    width: 100% !important;
+}
+
+[disabled="disabled"],
+.su-disabled {
+    opacity: $opacity-disabled;
+    cursor: default !important;
+}
+
+
 //
-/* -- JUSTIFY -------------------------------------------------------------------- */
+/* -- MOBILE ONLY ---------------------------------------------------------------------------------------------------------------------------------- */
 //
-.su-old-block-center {
-    display: block; //utile pour forcer le centrage d’un objet non block comme les SVG
-    margin-left: auto;
-    margin-right: auto;
+
+@media only screen and (max-width: $max-breakpoint-mobile) {
+    .su-fullwith-mobile {
+        width: 100% !important;
+    }
 }

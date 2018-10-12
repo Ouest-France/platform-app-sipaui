@@ -18,7 +18,7 @@
         </header>
 
 
-        <main class="su-old-editorial su-old-padding-b-standard" role="main">
+        <main class="su-old-editorial su-padding-b-standard" role="main">
 
             <article class="conteneur" role="article">
                 <h1>Architecture Technique</h2>

@@ -9,10 +9,11 @@
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------
 // TYPO ----------------------------------------------------------------------------------
 $font-family-base:       Arial, Helvetica, sans-serif !default;
-$font-family-secondaire: null !default;
+$font-family-secondary: null !default;
 
-$font-size-root: 10px      !default;// Valeur en pixel pour s'adapter au responsive. Appliqué à l'élément <html>.
+//$font-size-root: 10px      !default;// Valeur en pixel pour s'adapter au responsive. Appliqué à l'élément <html>.
 
+/*
 $font-size-xsmall:  1.2rem !default;
 $font-size-small:   1.4rem !default;
 $font-size-medium1: 1.6rem !default;
@@ -21,29 +22,38 @@ $font-size-tall:    2.4rem !default;
 $font-size-xtall:   3rem   !default;
 $font-size-xxtall:  4rem   !default;
 $font-size-xxxtall: 6rem   !default;
+*/
 
-$smaller-font-size: 80% !default;
+//$smaller-font-size: 80% !default;
 
+/*
 $line-height-xsmall: 1   !default;
 $line-height-small:  1.2 !default;
 $line-height-medium: 1.5 !default;
+$line-height-tall:   1.8 !default;
+$line-height-xtall:  2   !default;
 $line-height-base: $line-height-medium !default;
+*/
 
-$font-weight-maigre: 300 !default;
+/*
+$font-weight-thin:   300 !default;
 $font-weight-medium: 500 !default;
-$font-weight-gras:   700 !default;
+$font-weight-bold:   700 !default;
+*/
 
 // Texte standard
-$color-texte: $couleur-principale-8 !default;
+/*
+$color-texte: $color-main-8 !default;
 $font-size-base: $font-size-medium1 !default;
+*/
 
 // Code
 $color-code: chocolate !default;
 
 // Titres
 $font-family-titres: null               !default;
-$font-weight-titres: $font-weight-gras  !default;
-$color-titres: $couleur-principale-8    !default;
+$font-weight-titres: $font-weight-bold  !default;
+$color-titres: $color-main-8    !default;
 $font-size-h1: $font-size-xxtall        !default;
 $margin-bottom-h1: $font-size-h1 * 1    !default;
 $font-size-h2: $font-size-xtall         !default;
@@ -56,9 +66,9 @@ $font-size-h6: $font-size-base          !default;
 $font-weight-titres: $font-weight-medium !default;
 
 // Titres éditoriaux
-$font-family-titres-edito: $font-family-secondaire   !default;
-$font-weight-titres-edito: $font-weight-maigre       !default;
-$color-titres-edito: $couleur-principale-5           !default;
+$font-family-titres-edito: $font-family-secondary   !default;
+$font-weight-titres-edito: $font-weight-thin       !default;
+$color-titres-edito: $color-main-5           !default;
 $font-size-h1-edito: null                            !default;
 $margin-bottom-h1-edito: null                        !default;
 $font-size-h2-edito: null                            !default;
@@ -86,6 +96,7 @@ $margin-standard-large: $margin-xlarge;
 */
 
 // Marges responsives liées au font-size défini sur HTML ($font-size-root) en REM
+/*
 $margin-resp-xsmall:     .5rem   !default;
 $margin-resp-small:      1rem    !default;
 $margin-resp-medium1:    1.5rem  !default;
@@ -95,6 +106,7 @@ $margin-resp-xlarge:     4rem    !default;
 
 $margin-resp-standard: $margin-resp-medium2         !default;
 $margin-resp-standard-large: $margin-resp-xlarge    !default;
+*/
 
 // Marges spécifiques
 $margin-top-entre-blocs-petit: $margin-resp-standard          !default; // séparateur entre 2 blocs de texte (ie : p + p…)
@@ -106,11 +118,11 @@ $ombre-1: 0 0 10px rgba(0,0,0, .5) !default;
 
 // VARIABLES GLOBAL & BASICC -----------------------------------------------------------------------------------------------------------------------------------------
 // BODY
-$background-body: null !default;
+//$background-body: null !default;
 
 // LIENS STANDARDS
-$color-lien:         $couleur-principale-5  !default;
-$color-lien-hover:   $couleur-secondaire-2  !default;
+$color-lien:         $color-main-5  !default;
+$color-lien-hover:   $color-secondary-2  !default;
 $color-lien-active:  $color-lien-hover      !default;
 $color-lien-focus:   $color-lien-hover      !default;
 $color-lien-visited: $color-texte           !default;
@@ -124,11 +136,11 @@ $color-lien-neutre-focus:   $color-lien-neutre-hover    !default;
 $color-lien-neutre-visited: $color-texte                !default;
 
 // LIENS VOYANTS
-$color-lien-voyant:         $couleur-secondaire-1       !default;
+$color-lien-voyant:         $color-secondary-1       !default;
 $color-lien-voyant-hover:   $color-lien-hover           !default;
 $color-lien-voyant-active:  $color-lien-voyant-hover    !default;
 $color-lien-voyant-focus:   $color-lien-voyant-hover    !default;
-$color-lien-voyant-visited: $couleur-secondaire-3       !default;
+$color-lien-voyant-visited: $color-secondary-3       !default;
 
 // LISTES À PUCES
 $taille-puce-mobile: .8rem         !default;
@@ -137,16 +149,16 @@ $taille-puce-desktop: 1rem         !default;
 $taille-espace-puce-desktop: 1rem  !default;
 
 // LISTES NUMÉROTÉES
-$weight-numero-ol: $font-weight-gras        !default;
+$weight-numero-ol: $font-weight-bold        !default;
 
 // TABLEAUX
-$border-tableau: 1px solid $couleur-principale-3        !default;
+$border-tableau: 1px solid $color-main-3        !default;
 $padding-tableau: $margin-xsmall                        !default;
-$caption-color-tableau: $couleur-principale-5           !default;
+$caption-color-tableau: $color-main-5           !default;
 $caption-side-tableau: bottom                           !default;
 $caption-align-tableau: center                          !default;
 $caption-padding-tableau: $margin-resp-xsmall 0         !default;
 
-$border-tableau-plus: 1px solid $couleur-principale-4   !default;
-$background-tableau-plus-header: $couleur-principale-3  !default;
-$background-tableau-plus-even: lighten($couleur-principale-2, 5%)    !default;
+$border-tableau-plus: 1px solid $color-main-4   !default;
+$background-tableau-plus-header: $color-main-3  !default;
+$background-tableau-plus-even: lighten($color-main-2, 5%)    !default;

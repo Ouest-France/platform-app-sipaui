@@ -17,7 +17,7 @@
             </nav>
         </header>
 
-        <main class="su-old-padding-b-standard" role="main">
+        <main class="su-padding-b-standard" role="main">
 
             <article class="conteneur" role="article">
                 <h1 class="titre-doc">Proof Of Concept</h1>
