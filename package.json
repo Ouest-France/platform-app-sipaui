@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/gulp/bin/gulp.js",
+    "add-component": "node ./.utils/add-component.js",
     "storybook": "start-storybook -p 9001 -s ./dist -c .storybook",
     "build-storybook": "build-storybook -c .storybook -s ./dist -o ./dist/storybook"
   },
@@ -56,6 +57,7 @@
   },
   "dependencies": {
     "file-loader": "^2.0.0",
+    "fs-extra": "^7.0.0",
     "image-webpack-loader": "^4.3.1"
   }
 }
