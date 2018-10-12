@@ -1,4 +1,13 @@
-$couleur-principale-1: blue;
+/*
+    Variables de theme Voiles et Voiliers
+    ex:
+    $couleur-principale-1: blue;
+*/
 
-// Surcharge composants
+
+
+/*
+    Variable Surcharge composants
+*/
 @import "../../components/button/theme-vv";
+@import "../../components/text-fields/theme-vv";

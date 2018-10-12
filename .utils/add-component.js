@@ -1,5 +1,6 @@
 var fs = require('fs');
 var fse = require('fs-extra');
+var replace = require('replace-in-file');
 
 var comp_name = process.env.npm_config_name || null;
 
@@ -12,6 +13,17 @@ console.log('Ajout du composant', comp_name);
 
 fse.copy('.utils/component-template', 'src/components/'+comp_name)
     .then(() => {
+
+console.log('Remplacement des variables...');
+        var opts = {
+            files: 'src/components/'+comp_name+'/*.*',
+            from: new RegExp('component-name', 'g'),
+            to: comp_name,
+        };
+        console.log(opts);
+        console.log(replace.sync(opts));
+
+console.log('Remplacement des noms de fichiers...');
         fs.readdirSync('src/components/'+comp_name, {withFileTypes: true})
             .filter(dirent => !dirent.isDirectory())
             .filter(dirent => dirent.name.startsWith('component-name'))
