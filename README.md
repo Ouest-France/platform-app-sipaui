@@ -5,7 +5,7 @@ Ouest-France/Sipa Group guidelines
 
 ```
 yarn install
-gulp
+npx gulp
 ```
 
 ### build doc
@@ -14,7 +14,7 @@ Publish directory `dist/`
 
 ```
 yarn install
-gulp html
+npx gulp html
 npm run build-storybook
 ```
 
@@ -26,6 +26,18 @@ npm run build-storybook
 
 ```
 yarn install
-gulp watch
+npx gulp watch
 npm run storybook
 ```
+
+
+---
+
+### Add a component
+
+
+```
+yarn install
+npm run add-component [comp-name]
+```
+

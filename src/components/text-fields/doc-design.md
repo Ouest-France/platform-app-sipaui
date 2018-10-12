@@ -6,13 +6,11 @@ Les champs de texte permettent aux utilisateurs de saisir et de modifier du text
 
 ## 2- États !!!en cours !!!
 
-Type | Class | Enable | H
+Type | Class | Declinaison 1 | Declinaison 2 | Remarque
 ------------ | ------------- | ------------- | ------------- | ------------- |
-**Default** | su- | ![text-field_su-button_su-primary](design/su-button_su-primary.png) #E2001A| ![button_su-button_su-primary_hover](design/su-button_su-primary_hover.png) #B40015
-**Active** | su- | ![su-button_su-secondary](design/su-button_su-secondary.png) #333333|![su-button_su-secondary_pressed](design/su-button_su-secondary_hover.png) #B40015
-**Focus à definir** | su- | ![su-button_su-subscription](design/su-button_su-subscription.png) #FFCC33 | ![design/su-button-su-subscription-focus](design/su-button-su-subscription-hover.png) #E7AF07
-**Error** | su-|  ![su-button_su-primary_premium](design/su-button_su-primary_premium.png) #DBA504 | ![su-button_su-primary_premium_pressed](design/su-button_su-primary_premium_hover.png) #C2940C
-**Disabled** | su-|  ![su-button_su-primary_premium](design/su-button_su-primary_premium.png) #DBA504 | ![su-button_su-primary_premium_pressed](design/su-button_su-primary_premium_hover.png) #C2940C
+**etat 1** | classes | exemple | exemple | description
+**etat 2** | classes | exemple | exemple | description
+**etat 3** | classes | exemple | exemple | description
 
 **naming ????** Stéphane pas pour le moment
 ## 1- Spécifications
