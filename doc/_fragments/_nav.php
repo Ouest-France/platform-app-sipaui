@@ -1,6 +1,7 @@
-<ul class="su-horizontal">
-    <li><a href="/doc/architecture.php" <?php if($actif=='archi') echo 'class="actif"' ?>>Archi</a></li>
-    <li><a href="/doc/avancement.php" <?php if($actif=='avancement') echo 'class="actif"' ?>>Suivi</a></li>
-    <li><a href="/doc/poc/index.php" <?php if($actif=='poc') echo 'class="actif"' ?>>POC</a></li>
+<ul class="su-old-horizontal">
+    <li><a href="/doc/architecture-fonctionnelle.php" <?php if($actif=='archi') echo 'class="actif"' ?>>Architecture fonctionnelle</a></li>
+    <li><a href="/doc/architecture-technique.php" <?php if($actif=='tech') echo 'class="actif"' ?>>Architecture technique</a></li>
+    <li><a href="/doc/telechargement.php" <?php if($actif=='telechargement') echo 'class="actif"' ?>>Téléchargement</a></li>
+    <li><a href="/doc/suivi.php" <?php if($actif=='suivi') echo 'class="actif"' ?>>Suivi</a></li>
     <li><a href="/dist/storybook">Catalogue</a></li>
 </ul>

@@ -12,6 +12,7 @@ var gulp            = require("gulp"),
     es              = require('event-stream'),
     through2        = require('through2'),
     runner          = require('child_process')
+    fs              = require('fs')
     ;
 
 // Variables de chemins
@@ -19,34 +20,30 @@ var source = './src'; // dossier de travail
 var doc = './doc/assets'; // dossier de travail
 var poc = './doc/poc'; // dossier de travail
 var destination = './dist'; // dossier à livrer
-var build = './build'; // dossier de compilation
+var build = './build'; // dossier de ocmpilation
 
-scsslist =
-    [
-        [source + '/scss/default-sipaui.scss', 'default-sipaui.min.css'],
-        [source + '/scss/large-sipaui.scss', 'large-sipaui.min.css'],
-
-        [doc + '/scss/default-demo.scss', 'default-demo.min.css'],
-        [doc + '/scss/large-demo.scss', 'large-demo.min.css'],
-
-        [poc + '/src/scss/neutre/default-poc-neutre.scss', 'default-poc-neutre.min.css'],
-        [poc + '/src/scss/neutre/large-poc-neutre.scss', 'large-poc-neutre.min.css'],
-
-        [poc + '/src/scss/of/default-poc-of.scss', 'default-poc-of.min.css'],
-        [poc + '/src/scss/of/large-poc-of.scss', 'large-poc-of.min.css'],
-    ]
-;
 
 gulp.task('make-sass', ['clean'], function () {
-    return es.merge(scsslist.map(function(a) {
-        return gulp.src(a[0])
+    var scssList = [];
+
+    fs.readdirSync(doc+ '/scss/', { withFileTypes: true })
+        .filter(dirent => !dirent.name.startsWith('_'))
+        .filter(dirent => dirent.name.endsWith('.scss'))
+        .map(dirent => scssList.push(doc+ '/scss/' +dirent.name));
+
+    fs.readdirSync(source+ '/core/scss/', { withFileTypes: true })
+        .filter(dirent => !dirent.name.startsWith('_'))
+        .filter(dirent => dirent.name.endsWith('.scss'))
+        .map(dirent => scssList.push(source+ '/core/scss/' +dirent.name));
+
+    return es.merge(scssList.map(function(a) {
+        return gulp.src(a)
             .pipe(plumber(function(e){log.error('Erreur lors de la compilation SASS !', e);}))
             .pipe(sourcemaps.init())
             .pipe(sass())
             .pipe(sourcemaps.write())
             .pipe(gulp.dest(build + '/css/dev'))
             .pipe(cssnano({zindex: false}))
-            .pipe(rename(a[1]))
             .pipe(gulp.dest(build + '/css/min'));
     }));
 });
@@ -58,10 +55,6 @@ gulp.task("make-css-dev", ["make-sass"], function() {
 gulp.task("make-css-prod", ["make-sass"], function() {
     return gulp.src([build + '/css/min/**/*'])
         .pipe(gulp.dest(destination + '/css'));
-});
-gulp.task("make-oueststrap", ["make-sass"], function() {
-    return gulp.src([doc + '/oueststrap/**/*'])
-        .pipe(gulp.dest(destination + ''));
 });
 
 gulp.task("make-assets", ["clean"], function() {
@@ -103,8 +96,6 @@ function myPhp2Html(file, enc, cb) {
             .replace(/\/dist\//g, '\/')
             .replace(/\/doc\//g, '\/')
             .replace(/\.php/g, '.html')
-            .replace(/(['"])([^"']+)\.js/g, '$1$2.min.js')
-            .replace(/(['"])([^"']+)\.css/g, '$1$2.min.css')
         );
 
         return cb(null, file);
@@ -127,8 +118,6 @@ gulp.task("generate-poc", ["make-prod-assets"], function() {
     // Generate poc
     return php2html(["./doc/poc/*.php"], build + "/poc");
 });
-
-
 gulp.task("generate-html", ["generate-poc","generate-doc", "clean-html", "make-prod-assets"], function() {
     // replace html
     return gulp.src([build + '/**/*.html'])
@@ -142,15 +131,15 @@ gulp.task("generate-html", ["generate-poc","generate-doc", "clean-html", "make-p
 gulp.task("watch", function() {
     gulp.start('make-dev-assets');
     watch( [
-            source + '/scss/**/*.scss',
-            doc + '/scss/**/*.scss',
-            poc + '/src/scss/**/*.scss',
+            source+ '/core/scss/**/*.scss',
+            source+ '/components/**/*.scss',
+            doc+ '/scss/**/*.scss',
         ], function(){
         gulp.start('make-dev-assets');
     });
 });
 
 gulp.task("make-dev-assets", ["clean", "make-assets", "make-sass", "make-css-dev"]);
-gulp.task("make-prod-assets", ["clean", "make-assets", "make-sass", "make-css-prod", "make-oueststrap"]);
+gulp.task("make-prod-assets", ["clean", "make-assets", "make-sass", "make-css-prod"]);
 gulp.task("default", ["clean", "make-dev-assets"]);
 gulp.task("html", ["clean", "generate-doc", "generate-poc", "generate-html"]);

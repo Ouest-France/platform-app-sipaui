@@ -1,0 +1,148 @@
+/*
+    Variables de theme Ouest-France
+    ex:
+    $couleur-principale-1: $rouge;
+*/
+
+// voir https://robots.thoughtbot.com/sass-default pour explications sur !default
+
+
+$version:                   1.0.0;
+$urlDossierFont: 			'../fonts' !default;
+
+// BREAKPOINTS ------------------------------------------------------------------------------------------------------------------
+$min-breakpoint-mobile-wide:    30em;      /* min-breakpoint-mobile-wide :      480px */
+$min-breakpoint-tablet:         48em;      /* $min-breakpoint-tablet :          768px */
+$min-breakpoint-desktop:        61.25em;   /* $min-breakpoint-desktop :         980px */
+$min-breakpoint-desktop-wide:   80em;      /* $min-breakpoint-desktop-wide :    1280px */
+
+$max-breakpoint-mobile-narrow:  29.938em;   /* $max-breakpoint-mobile-narrow :  479px */
+$max-breakpoint-mobile:         47.938em;   /* $max-breakpoint-mobile :         767px */
+$max-breakpoint-tablet:         61.188em;   /* $max-breakpoint-tablet :         979px */
+$max-breakpoint-desktop:        79.938em;   /* $max-breakpoint-desktop :        1279px */
+
+// COLORS ------------------------------------------------------------------------------------------------------------------
+// CHART
+$blanc:                     #fff    !default;
+$gris-tres-clair:			#efefef !default;
+$gris-plus-clair:           #d4d4d4 !default;
+$gris-clair:                #c1bfc0 !default;
+$gris:                      #878787 !default;
+$gris-fonce:                #666    !default;
+$gris-plus-fonce:           #333    !default;
+$noir:                      #000    !default;
+
+$rouge:                     #e2001a !default;
+$rouge-fonce:               #b40015 !default;
+$rouge-plus-fonce:          #8c0010 !default;
+
+$jaune:                     #ffcc33 !default;
+$jaune-fonce:               #e7af07 !default;
+$jaune-plus-fonce:          #b28600 !default;
+
+$jaune2:                     #dba504 !default;
+$jaune2-fonce:               #c2940c !default;
+
+// DEFINITIONS
+$color-main-1: $blanc               !default;
+$color-main-2: $gris-tres-clair     !default;
+$color-main-3: $gris-plus-clair     !default;
+$color-main-4: $gris-clair          !default;
+$color-main-5: $gris                !default;
+$color-main-6: $gris-fonce          !default;
+$color-main-7: $gris-plus-fonce     !default;
+$color-main-8: $noir                !default;
+
+$color-secondary-1: $rouge               !default;
+$color-secondary-2: $rouge-fonce         !default;
+$color-secondary-3: $rouge-plus-fonce    !default;
+$color-secondary-4: null                 !default;
+
+$color-tertiary-1: null                  !default;
+$color-tertiary-2: null                  !default;
+$color-tertiary-3: null                  !default;
+$color-tertiary-4: null                  !default;
+
+$color-important: $color-secondary-2     !default;
+
+$color-subscription-1: $jaune               !default;
+$color-subscription-2: $jaune-fonce         !default;
+$color-subscription-3: $jaune-plus-fonce    !default;
+
+$color-premium-1: $jaune2               !default;
+$color-premium-2: $jaune2-fonce         !default;
+
+
+// RÉSEAUX SOCIAUX ET MARQUES
+$facebook:          #3b5998   !default;
+$twitter:           #55acee   !default;
+$linkedin:          #0e76a8   !default;
+$google:            #dd4839   !default;
+$fluxrss:           #f0801a   !default;
+$snapchat:          #fffc00   !default;
+$viadeo:            #ec7500   !default;
+$youtube:           #bb0000   !default;
+$instagram:         #e23076   !default;
+$pinterest:         #cb2027   !default;
+$vine:              #00bf8f   !default;
+$tumblr:            #32506d   !default;
+$soundcloud:        #FF6600   !default;
+$itunes:            #000000   !default;
+$flickr:            #0063DC   !default;
+$dailymotion:       #0066dc   !default;
+
+
+// GLOBAL --------------------------------------------------------------------------------
+$font-size-root: 62.5%;
+$background-body: $blanc;
+
+
+// TYPO ----------------------------------------------------------------------------------
+$font-size-xsmall:  1.2rem !default;
+$font-size-small:   1.4rem !default;
+$font-size-medium1: 1.6rem !default;
+$font-size-medium2: 1.8rem !default;
+$font-size-tall:    2.4rem !default;
+$font-size-xtall:   3rem   !default;
+$font-size-xxtall:  4rem   !default;
+$font-size-xxxtall: 6rem   !default;
+
+$font-size-base: $font-size-medium1 !default;
+$color-texte: $color-main-8 !default;
+
+$font-weight-thin:   200 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold:   700 !default;
+
+$line-height-xsmall: 1   !default;
+$line-height-small:  1.2 !default;
+$line-height-medium: 1.5 !default;
+$line-height-tall:   1.8 !default;
+$line-height-xtall:  2   !default;
+$line-height-base: $line-height-medium !default;
+
+
+// MARGES --------------------------------------------------------------------------------
+// Marges en PX
+$margin-xsmall:     5px     !default;
+$margin-small:      10px    !default;
+$margin-medium1:    15px    !default;
+$margin-medium2:    20px    !default;
+$margin-large:      30px    !default;
+$margin-xlarge:     40px    !default;
+
+$margin-standard: $margin-medium2;
+$margin-standard-large: $margin-xlarge;
+
+$margin-resp-xsmall:     .5rem   !default;
+$margin-resp-small:      1rem    !default;
+$margin-resp-medium1:    1.5rem  !default;
+$margin-resp-medium2:    2rem    !default;
+$margin-resp-large:      3rem    !default;
+$margin-resp-xlarge:     4rem    !default;
+
+$margin-resp-standard: $margin-resp-medium2         !default;
+$margin-resp-standard-large: $margin-resp-xlarge    !default;
+
+// disabled
+$opacity-disabled: .4;

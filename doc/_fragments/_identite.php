@@ -6,5 +6,6 @@
         </svg>
         <span class="titre su-hidden-xs su-hidden-sm">SipaUI</span>
     </a>
-    &nbsp;<span class="version su-hidden-xs su-hidden-sm">0.0.1-alpha</span>
+    &nbsp;<span class="version su-hidden-xs su-hidden-sm">0.1.0</span>
 </div>
+<p class="bandeau"><strong>ßeta</strong></p>
