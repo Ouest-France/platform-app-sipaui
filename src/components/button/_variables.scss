@@ -71,7 +71,7 @@ $shadow-button-subscription-active:      $shadow-button-subscription-hover      
 
 // PREMIUM -------------------------------------------------------------------------------------------/
 $background-button-premium:     $color-premium-1                  !default;
-$color-button-premium:          $color-main-7                     !default;
+$color-button-premium:          $color-main-1                     !default;
 $text-transform-button-premium: none                              !default;
 $border-button-premium:         0                                 !default;
 $radius-button-premium:         $radius-button-primary            !default;
@@ -81,8 +81,8 @@ $font-weight-button-premium:    $font-weight-bold                 !default;
 // hover, focus
 $background-button-premium-hover:   $color-premium-2         !default;
 $color-button-premium-hover:        $color-button-premium    !default;
-$border-button-premium-hover:       null                          !default;
-$shadow-button-premium-hover:       null                          !default;
+$border-button-premium-hover:       null                     !default;
+$shadow-button-premium-hover:       null                     !default;
 // active
 $background-button-premium-active:  $background-button-premium-hover  !default;
 $color-button-premium-active:       $color-button-premium-hover       !default;
