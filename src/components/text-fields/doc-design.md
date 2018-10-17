@@ -1,58 +1,71 @@
 # Text fields
 
-Les champs de texte permettent aux utilisateurs de saisir et de modifier du texte. Ils se trouvent généralement dans des formulaires mais aussi dans des modales.
+Les champs de texte permettent aux utilisateurs de saisir et de modifier du texte. Ils se trouvent généralement dans des formulaires.
 
 
 
-## 2- États !!!en cours !!!
+## 1- États !!!en cours !!!
 
-Type | Class | Declinaison 1 | Declinaison 2 | Remarque
------------- | ------------- | ------------- | ------------- | ------------- |
-**etat 1** | classes | exemple | exemple | description
-**etat 2** | classes | exemple | exemple | description
-**etat 3** | classes | exemple | exemple | description
+Type | Simple
+------------ | ------------- | ------------- | ------------- |
+**Default** | ![text-field-default](design/text-field-default.png)
+**Focus** | ![text-field-focus](design/text-field-focus.png)
+**With default value** |  ![text-field-with-default-value](design/text-field-with-default-value.png)
+**Error** | ![text-field-error](design/text-field-error.png)
+**Disabled** | ![text-field-disabled](design/text-field-disabled.png)
+**With icon** | ![text-field-with-icon](design/text-field-with-icon.png)
 
-**naming ????** Stéphane pas pour le moment
-## 1- Spécifications
+## 2- Spécifications
 
-- Hauteur : 44px
-- Largeur : celle son parent moins le padding de celui-ci
-- Largueur minimale : 140px
-- Couleur : #333333
-- Police du thème
-- L’opacité d’un champ non modifiable (su-disabled) : 40 %
 
 #### Label
 - Indique le type d’information demandé
 - La 1re lettre est en majuscule, le reste est en minuscule
 - Doit être court, clair et entièrement visible sur une seule ligne
 
-!**!! image !!!** don't entrée, tour, bâtiment, immeuble, résidence
+**!!! image !!!** don't entrée, tour, bâtiment, immeuble, résidence
+- Couleur : #333333
+- Police du thème
 - Taille de caractère : 14px
-- Graisse de caractère : bold
+- Graisse de caractère
+  - Texte standard : bold
+  - Texte d'aide ou "facultatif" : régular
 - Champs obligatoires/facultatifs
   - Par défaut tous les champs sont obligatoires
   - “facultatif” est précisé entre parenthèse suite au label
 
-**!! image !!!** des champs obligatoires et 1 facultatif
+**!!! image !!!** des champs obligatoires et 1 facultatif
 
-#### Input text
-- Lieu où le texte est saisi
-- Padding gauche : 15px
-- Taille de caractère : 14px
-- Graisse de caractère : regular
+
 
 #### Container
+- Indique à l'utilisateur où saisir l'information
 - Aligné à gauche avec le label
-- Se situe à 2px sous le label
+- Padding bottom : 2px sous le label
+- Hauteur : 44px
+- Largeur : celle son parent moins le padding de celui-ci
+- Largueur minimale : 140px
 - Couleur : #EFEFEF
 - Présente un contour
   - Couleur par défaut : #D4D4D4
   - Couleur en focus et press : #878787
   - Epaisseur : 1px
 
-## 2-Gestion des erreurs
+#### Input text
+  - Texte saisi
+  - Padding gauche : 15px du container
+  - Couleur : #333333
+  - Police du thème
+  - Taille de caractère : 14px
+  - Graisse de caractère : regular
+
+#### Champ non modifiable
+  - Opacité (su-disabled) : 40 %
+
+
+## 3-Gestion des erreurs
 - Un champ est défini comme ko lorsque le texte n'est pas correct ou est absent.
+
 #### Message d'erreur
 - S’affiche lorsque le champ est ko
 - Guide l’utilisateur sur la manière de résoudre le problème
@@ -64,30 +77,26 @@ Type | Class | Declinaison 1 | Declinaison 2 | Remarque
   - Couleur : #B40015
   - Title : error
 
-  #### Container
-  - Lorsque le champ est ko, le contour devient rouge #B40015.
+#### Contour du container
+  - Couleur : #B40015
+  - Epaisseur : 1px
 
-## Les icônes
+
+## 4-Icônes
+- Est un bouton intégré dans le container qui permet une action spécifique
+- Situé à droite dans le container
 - Taille maximale : 34x34px
 - Zone de tap : 44x44px
 - L’icône est centrée dans la zone de tap avec une marge minimale : 5px
 - Couleur : #878787
 
-
-#### Icône bouton
-- Permet une action spécifique Par ex : une icône de calendrier permet d’afficher un sélecteur de date
-- Situé à droite dans le container
-- Cas particulier : la croix apparait uniquement sur les champs focus et pré-saisis
-
-#### Icône d'information
-
-- Apporte une information supplémentaire au label
-- Situé à gauche dans le container
+#### Cas particulier : la croix
+  - Une croix permet la suppression totale et directe d'un champ.
+  - Elle apparait uniquement dans un champs focus et pré-saisi.
 
 ## 5- Autres composants
 - Champs de recherche
 - “ Votre adresse email OK ”
 - Mot de passe
-- Téléphone
 - Tooltip
-- Drop-down menu
+- Select

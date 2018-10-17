@@ -29,12 +29,12 @@ Informer qu'une action mineure.
 
 ## 2- États
 
-Type | Class | Enable | Hover / Focus / Pressed | Typographie
------------- | ------------- | ------------- | ------------- | ------------- |
-**Primaire** | su-button su-primary | ![button_su-button_su-primary](design/su-button_su-primary.png) #E2001A| ![button_su-button_su-primary_hover](design/su-button_su-primary_hover.png) #B40015 | Bold #FFFFFF
-**Secondaire** | su-button su-secondary | ![su-button_su-secondary](design/su-button_su-secondary.png) #333333|![su-button_su-secondary_pressed](design/su-button_su-secondary_hover.png) #B40015 | Regular #333333 #B40015
-**Abonnement** | su-button su-subscription | ![su-button_su-subscription](design/su-button_su-subscription.png) #FFCC33 | ![design/su-button-su-subscription-focus](design/su-button-su-subscription-hover.png) #E7AF07 | Bold #333333
-**Premium** | su-button su-premium|  ![su-button_su-premium](design/su-button_su-premium.png) #DBA504 | ![su-button_su-premium_pressed](design/su-button_su-premium_hover.png) #C2940C | Bold #FFFFFF
+Type | Enable | Hover / Focus / Pressed | Typographie
+------------ | ------------- | ------------- | ------------- |
+**Primaire** | ![button_su-button_su-primary](design/su-button_su-primary.png) #E2001A| ![button_su-button_su-primary_hover](design/su-button_su-primary_hover.png) #B40015 | Bold #FFFFFF
+**Secondaire** | ![su-button_su-secondary](design/su-button_su-secondary.png) #333333 fond transparent|![su-button_su-secondary_pressed](design/su-button_su-secondary_hover.png) #B40015 fond transparent | Regular #333333 #B40015
+**Abonnement** | ![su-button_su-subscription](design/su-button_su-subscription.png) #FFCC33 | ![design/su-button-su-subscription-focus](design/su-button-su-subscription-hover.png) #E7AF07 | Bold #333333
+**Premium** | ![su-button_su-premium](design/su-button_su-premium.png) #DBA504 | ![su-button_su-premium_pressed](design/su-button_su-premium_hover.png) #C2940C | Bold #FFFFFF
 
 
 ## 3- Spécifications
@@ -45,19 +45,15 @@ Type | Class | Enable | Hover / Focus / Pressed | Typographie
 - Border radius : 3px
 - Police du thème
 - Taille de caractère : 16px
-- Opacité d'un bouton inactif (su-disabled) : 40 %
+- Opacité d'un bouton inactif : 40 %
 
 #### Bouton pleine largeur
-- su-fullwith
 - Largeur : celle son parent moins le padding de celui-ci
 
 #### Bouton pleine largeur Mobile
-- su-fullwith-mobile
 - Largeur : celle son parent moins le padding de celui-ci
 
 #### Petit bouton
-- su-small
-- La class : su-small
 - Hauteur : 34px
 - Padding : 15px
 - Taille de caractère : 14px
