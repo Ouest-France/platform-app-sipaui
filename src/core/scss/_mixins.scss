@@ -312,3 +312,38 @@
     -webkit-flex: $flexFlexValue;
     flex: $flexFlexValue;
 }
+
+@mixin importFonts() {
+    @if $font-import-use-local == null {
+        @import url($font-import-url);
+
+    } @else {
+        @font-face {
+            font-family: $font-import-name;
+            src: url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Regular.woff2') format('woff2'),
+                url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @if $font-import-medium {
+            @font-face {
+                font-family: $font-import-name;
+                src: url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Medium.woff2') format('woff2'),
+                    url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Medium.woff') format('woff');
+                font-weight: 500;
+                font-style: normal;
+            }
+        }
+
+        @if $font-import-bold {
+            @font-face {
+                font-family: $font-import-name;
+                src: url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Bold.woff2') format('woff2'),
+                    url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Bold.woff') format('woff');
+                font-weight: 700;
+                font-style: normal;
+            }
+        }
+    }
+}

@@ -7,19 +7,31 @@
 // voir https://robots.thoughtbot.com/sass-default pour explications sur !default
 
 
-$version:                   1.0.0;
-$urlDossierFont: 			'../fonts' !default;
+$version:               1.0.0;
+
+// Import Fonts
+$font-import-url:        'https://fonts.googleapis.com/css?family=Oswald' !default;
+$font-import-use-local:  null       !default;
+$font-import-directory:  '../fonts'  !default;
+$font-import-path:       'oswald/'   !default;
+$font-import-medium:     null       !default;
+$font-import-bold:       null       !default;
+$font-import-name:       'Oswald'    !default;
+
+$font-family-base: Arial, Helvetica, sans-serif      !default;
+$font-family-secondaire: 'Oswald', $font-family-base !default;
+
 
 // BREAKPOINTS ------------------------------------------------------------------------------------------------------------------
-$min-breakpoint-mobile-wide:    30em;      /* min-breakpoint-mobile-wide :      480px */
-$min-breakpoint-tablet:         48em;      /* $min-breakpoint-tablet :          768px */
-$min-breakpoint-desktop:        61.25em;   /* $min-breakpoint-desktop :         980px */
-$min-breakpoint-desktop-wide:   80em;      /* $min-breakpoint-desktop-wide :    1280px */
+$min-breakpoint-mobile-wide:    30em     !default;   /* 480px  */
+$min-breakpoint-tablet:         48em     !default;   /* 768px  */
+$min-breakpoint-desktop:        61.25em  !default;   /* 980px  */
+$min-breakpoint-desktop-wide:   80em     !default;   /* 1280px */
 
-$max-breakpoint-mobile-narrow:  29.938em;   /* $max-breakpoint-mobile-narrow :  479px */
-$max-breakpoint-mobile:         47.938em;   /* $max-breakpoint-mobile :         767px */
-$max-breakpoint-tablet:         61.188em;   /* $max-breakpoint-tablet :         979px */
-$max-breakpoint-desktop:        79.938em;   /* $max-breakpoint-desktop :        1279px */
+$max-breakpoint-mobile-narrow:  29.938em !default;   /* 479px  */
+$max-breakpoint-mobile:         47.938em !default;   /* 767px  */
+$max-breakpoint-tablet:         61.188em !default;   /* 979px  */
+$max-breakpoint-desktop:        79.938em !default;   /* 1279px */
 
 // COLORS ------------------------------------------------------------------------------------------------------------------
 // CHART
@@ -145,4 +157,4 @@ $margin-resp-standard: $margin-resp-medium2         !default;
 $margin-resp-standard-large: $margin-resp-xlarge    !default;
 
 // disabled
-$opacity-disabled: .4;
+$opacity-disabled: .4 !default;

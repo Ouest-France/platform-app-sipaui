@@ -3,8 +3,14 @@
     ex:
     $couleur-principale-1: blue;
 */
+$font-import-url:    'https://fonts.googleapis.com/css?family=Montserrat:400,500,700';
+$font-import-path:   'montserrat/';
+$font-import-medium: true;
+$font-import-bold:   true;
+$font-import-name:   'Montserrat';
 
-@import "variables";
+$font-family-base: $font-import-name, Arial, Helvetica, sans-serif;
+$font-family-secondaire: $font-family-base;
 
 // COLORS ------------------------------------------------------------------------------------------------------------------
 // CHART
@@ -22,8 +28,10 @@ $color-secondary-2: $bleu-clair;
 $color-secondary-3: $bleu-fonce;
 $color-secondary-4: $bleu-tres-fonce;
 
+
 /*
     Variable Surcharge composants
 */
+@import "variables";
 @import "../../components/button/theme-vv";
 @import "../../components/text-fields/theme-vv";

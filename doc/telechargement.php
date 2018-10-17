@@ -39,8 +39,8 @@
 
                 <h4>Exemple d'un composant Scss</h4>
                 <p>
-                    <pre><code>@import "sipaui/core";
-@import "sipaui/button";</code></pre>
+                    <pre><code>@import "sipaui/core/main";
+@import "sipaui/button/main";</code></pre>
                 </p>
 
                 <h4>Et avec thème</h4>
@@ -61,8 +61,15 @@
 require("sipaui/toggle");</code></pre>
                 </p>
 
+                <h4>Exemple fonts local plutot que googlefonts</h4>
+                <p>
+                    <pre><code>$font-import-use-local: true;
+                        @import "sipaui/core/main-sipaui";</code></pre>
+                </p>
+
             </article>
 
         </main>
     </body>
 </html>
+

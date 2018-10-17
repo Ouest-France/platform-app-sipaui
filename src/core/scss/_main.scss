@@ -5,6 +5,8 @@
 @import "mixins";
 @import "variables";
 
+@include importFonts();
+
 // reset
 @import "libs/normalize";
 
