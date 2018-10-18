@@ -39,7 +39,5 @@ npm run storybook
 ```
 yarn install
 npm run add-component [comp-name]
+npx gulp html
 ```
-A la main, ajouter l'import sas au fichier main sipaui
-Ajouter l'import des variables du composant dans chaque main theme
-Modifier le load stories.js
