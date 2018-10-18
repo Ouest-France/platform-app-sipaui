@@ -1,6 +1,6 @@
 variables:
   CDP_IMAGE: ouestfrance/cdp:latest
-  NODE_IMAGE: matthieupresse/php7-node10:latest
+  NODE_IMAGE: matthieupresse/php7-node10:latest # CF ./utils/Dockerfile-build-cdp
 
 stages:
   - build

@@ -8,12 +8,12 @@ Les champs de texte permettent aux utilisateurs de saisir et de modifier du text
 
 Type | Simple
 ------------ | ------------- | ------------- | ------------- |
-**Default** | ![text-field-default](design/text-field-default.png)
-**Focus** | ![text-field-focus](design/text-field-focus.png)
-**With default value** |  ![text-field-with-default-value](design/text-field-with-default-value.png)
-**Error** | ![text-field-error](design/text-field-error.png)
-**Disabled** | ![text-field-disabled](design/text-field-disabled.png)
-**With icon** | ![text-field-with-icon](design/text-field-with-icon.png)
+**Default** | text-field-default design/text-field-default.png
+**Focus** | text-field-focus design/text-field-focus.png
+**With default value** |  text-field-with-default-value design/text-field-with-default-value.png
+**Error** | text-field-error design/text-field-error.png
+**Disabled** | text-field-disabled design/text-field-disabled.png
+**With icon** | text-field-with-icon design/text-field-with-icon.png
 
 ## 2- Spécifications
 
