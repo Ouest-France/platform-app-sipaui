@@ -1,4 +1,46 @@
 <!-- Styles -->
+<script>
+    (function(){
+        var theme = sessionStorage.getItem('theme') || 'of';
+        var link = document.createElement('link');
+        link.id = 'theme_sipa';
+        link.rel = 'stylesheet';
+        link.media ="screen";
+        link.charset ="utf-8";
+        link.href = 'css/main-sipaui'+ ((theme == 'of') ? '' : '-'+theme) +'.css';
+        document.head.appendChild(link);
+        console.log('coucou');
 
-<link rel="stylesheet" href="css/main-sipaui.css" type="text/css" media="screen" charset="utf-8">
+        var selector = document.createElement('select');
+        selector.id = 'theme_sipa_selector';
 
+        document.addEventListener('DOMContentLoaded', function(){
+            document.body.appendChild(selector);
+            selector.innerHTML = `
+                <select>
+                    <option value="" disabled selected>Thème</option>
+                    <option value="of">Ouest-France</option>
+                    <option value="vv">Voiles-et-Voiliers</option>
+                </select>
+            `;
+            selector.addEventListener('change', function(){
+                sessionStorage.setItem('theme', this.value||'of');
+                window.location.href = window.location.href;
+            });
+        });
+    })();
+</script>
+<style type="text/css">
+    #theme_sipa_selector {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        background: transparent;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        height: 34px;
+        width: 268px;
+        padding: 5px;
+    }
+</style>

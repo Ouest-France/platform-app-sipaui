@@ -1,8 +1,8 @@
 import Vue from 'vue';
 
 import { storiesOf } from '@storybook/vue';
-import { withReadme, withDocs, doc } from 'storybook-readme';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { withReadme, withDocs, doc } from 'storybook-readme';
 
 import CommonFooterDocs from '../COMMON_FOOTER.md';
 import introDocs from '../INTRO.md';

@@ -11,7 +11,7 @@ var gulp            = require("gulp"),
     log             = require('fancy-log'),
     es              = require('event-stream'),
     through2        = require('through2'),
-    runner          = require('child_process')
+    runner          = require('child_process'),
     fs              = require('fs')
     ;
 
