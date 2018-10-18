@@ -85,4 +85,4 @@ setOptions({
     enableShortcuts: false, // true by default
 });
 
-configure(() => require('../doc/storybook/stories'), module);
+configure(() => require('../build/storybook/stories'), module);
