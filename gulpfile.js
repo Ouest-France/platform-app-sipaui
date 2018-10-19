@@ -156,7 +156,7 @@ gulp.task("generate-doc", ["make-prod-assets"], function() {
     return php2html(["./doc/*.php"], build + "/");
 });
 
-gulp.task("generate-html", ["generate-poc","generate-doc", "clean-html", "make-prod-assets"], function() {
+gulp.task("generate-html", ["generate-doc", "clean-html", "make-prod-assets"], function() {
     // replace html
     return gulp.src([build + '/**/*.html'])
         .pipe(gulp.dest(destination + '/'));
