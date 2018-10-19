@@ -56,10 +56,6 @@
                     </svg>
                 </div>
                 <p>Il y a donc 2 feuilles de styles appelées dans le <code>&lt;head&gt;</code> du site&nbsp;: <code>default-projet.css</code> et <code>large-projet.css</code>. Ces feuilles de styles importent dans l’ordre&nbsp;: les variables propres au projet (notamment pour thématiser SipaUI), SipaUI, puis les styles spécifiques au projet.</p>
-
-                <h2>Gestion des tailles</h2>
-
-                <p>SipaUI intègre la variable de taille de police <code>$font-size-root</code> qui règle la taille de référence à <strong>10px</strong> pour tout ce qui sera défini en <code>rem</code> (textes bien sûr, mais aussi potentiellement les marges, paddings, border-radius, width…). Cela peut permettre de gérer simplement les tailles en fonction de différentes tailles d’écran (pour afficher du contenu un peu plus gros sur grands écrans de smartphone par exemple). Du coup, <strong class="su-old-important">à chaque fois que l’on définit une taille</strong>, il est bon de se poser la question&nbsp;: «&nbsp;<strong class="su-old-important">Cette taille doit-elle être proportionnelle ou fixe&nbsp;?</strong>&nbsp;». C'est pourquoi SipaUI intègre 2 types de taille différents&nbsp;: <code>$margin-</code> (ie&nbsp;: $margin-standard) et <code>$margin-resp-</code> (ie&nbsp;: $margin-resp-standard). Cela permet de choisir des tailles en <code>px</code> ou en <code>rem</code>.</p>
             </article>
 
         </main>
