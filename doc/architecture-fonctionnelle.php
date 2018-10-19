@@ -28,11 +28,20 @@
 
                 <h2>SipaUI et les Blocks Providers</h2>
                 <p>Un bloc ne devrait pas avoir de CSS propres. Dans quasiment tous les cas, les composants graphiques de SipaUI devraient suffirent à gérer l’affichage du contenu d’un bloc. Dans le cas contraire, le créateur du bloc devra passer la validation de l'équipe Plateforme. Il y aura alors 2 possibilités&nbsp;:</p>
-                    <ul>
-                        <li>Il y a des manques dans le framework et l’équipe accepte les évolutions nécessaires via les pull-requests sur Github.</li>
-                        <li>Il s'agit de besoins spécifiques à un BP très particulier (ie un bloc météo) et dans ce cas le bloc pourra porter ses propres CSS. Il serait alors possible que ces CSS soient appelées dans le body (au lieu d’être concaténées avec les CSS du site) pour éviter de ralentir le site, mais attention à l’effet <a href="https://fr.wikipedia.org/wiki/FOUC" target="_blank" class="su-old-blank">FOUC</a></li>
-                    </ul>
-                    <p>Dans tous les cas (mais surtout le second), l’équipe Plateforme veillera à ce que cela soit une exception plutôt que la norme (l'ajout de ressources JS/CSS a un impact direct sur les performances frontend de la page).</p>
+                <ul>
+                    <li>Il y a des manques dans le framework et l’équipe accepte les évolutions nécessaires via les pull-requests sur Github.</li>
+                    <li>Il s'agit de besoins spécifiques à un BP très particulier (ie un bloc météo) et dans ce cas le bloc pourra porter ses propres CSS. Il serait alors possible que ces CSS soient appelées dans le body (au lieu d’être concaténées avec les CSS du site) pour éviter de ralentir le site, mais attention à l’effet <a href="https://fr.wikipedia.org/wiki/FOUC" target="_blank" class="su-old-blank">FOUC</a></li>
+                </ul>
+                <p>Dans tous les cas (mais surtout le second), l’équipe Plateforme veillera à ce que cela soit une exception plutôt que la norme (l'ajout de ressources JS/CSS a un impact direct sur les performances frontend de la page).</p>
+
+                <h2>Récupération de SipaUI</h2>
+                <p>Il existe plusieurs méthode pour récupérer SipaUI&nbsp;:</p>
+                <ul>
+                    <li>Récupération de l’intégralité du code sur <a href="https://github.com/Ouest-France/platform-app-sipaui" target="_blank" class="su-old-blank">GitHub</a> afin de l’intégrer avec son propre code et compiler le tout.</li>
+                    <li>Appeler SipaUI distant directement dans sa page via un CDN (cf. la page <a href="/doc/telechargement.php" >Téléchargement</a>).</li>
+                    <li>Appeler des composants de SipaUI via npmjs (cf. la page <a href="/doc/telechargement.php" >Téléchargement</a>).</li>
+                </ul>
+
 
                 <!--h2>Matriochka de SCSS</h2>
 
