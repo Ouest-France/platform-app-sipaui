@@ -63,6 +63,17 @@ h6,
     font-size: $font-size-h6;
 }
 
+li {
+    > h1,
+    > h3,
+    > h2,
+    > h4,
+    > h5,
+    > h6 {
+        display: inline-block;
+    }
+}
+
 // Éditorial
 .su-old-editorial {
     h1,
