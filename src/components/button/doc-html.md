@@ -44,7 +44,7 @@ L’aspect inactif peut être porté par la classe `su-disabled` ou par l’attr
 ```
 <button class="su-button su-primary su-small">Bouton petit</button> <button class="su-button su-secondary su-small">Bouton petit</button>
 
-## pleine largeur
+## Pleine largeur
 ```html
 <button class="su-button su-primary su-fullwidth">Bouton pleine largeur</button>
 ```
