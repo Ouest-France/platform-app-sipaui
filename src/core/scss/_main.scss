@@ -1,0 +1,15 @@
+/*
+    Core SipaUI
+*/
+
+@import "mixins";
+@import "variables";
+
+@include importFonts();
+
+// reset
+@import "libs/normalize";
+
+// style principal
+@import "global";
+@import 'helpers';

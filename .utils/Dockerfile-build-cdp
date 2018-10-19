@@ -1,0 +1,40 @@
+FROM php:7.0-fpm
+
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get update \
+	&& apt-get install -y dialog apt-utils sudo curl wget gnupg
+
+# images
+RUN apt-get update \
+	&& apt-get install -y \
+		libfreetype6-dev \
+		libjpeg62-turbo-dev \
+		libpng-dev \
+		libgd-dev \
+	&& docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
+	&& docker-php-ext-install -j$(nproc) \
+		gd \
+		exif
+
+# compression
+RUN apt-get update \
+	&& apt-get install -y \
+		libbz2-dev \
+		zlib1g-dev \
+	&& docker-php-ext-install -j$(nproc) \
+		zip
+
+## NodeJS, NPM
+# Install NodeJS
+RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - \
+	&& apt-get update \
+	&& apt-get install -y nodejs
+
+RUN curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - \
+	&& echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list \
+	&& sudo apt-get update \
+	&& sudo apt-get install yarn
+
+# Install Gulp globally
+RUN npm install -g gulp-cli

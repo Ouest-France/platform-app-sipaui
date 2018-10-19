@@ -1,0 +1,349 @@
+/*
+    SipaUI
+    fonctions et mixin SASS
+*/
+
+@mixin hover-active-focus {
+    &:hover,
+    &:active,
+    &:focus {
+        @content
+    }
+}
+
+@mixin clearfix() {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+// transform
+@mixin transform($transforms) {
+    -ms-transform: $transforms;
+    transform: $transforms;
+}
+
+// transition
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+// rotate
+@mixin rotate ($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+
+// keyframes
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+//animatuion
+@mixin animation ($delay, $duration, $timing, $iteration, $animation) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-timing-function:  $timing;
+    -webkit-animation-iteration-count: $iteration;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-timing-function : $timing;
+    -moz-animation-iteration-count: $iteration;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -ms-animation-delay: $delay;
+    -ms-animation-duration: $duration;
+    -ms-animation-name: $animation;
+    -ms-animation-timing-function:  $timing;
+    -ms-animation-iteration-count: $iteration;
+    -ms-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-timing-function:  $timing;
+    animation-iteration-count: $iteration;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+
+
+// transform origin
+@mixin transform-origin ($origin) {
+    -webkit-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    transform-origin: $origin;
+}
+
+// appearence
+@mixin appearance ($appearance) {
+    -moz-appearance: $appearance;
+    -webkit-appearance: $appearance;
+    -ms-appearance: $appearance;
+    appearance: $appearance;
+}
+
+// dégradé horizontal
+@mixin gradient-horizontal($start-color, $end-color, $start-percent, $end-percent) {
+    background-image: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
+    background-image: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
+    background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); // IE9 and down
+}
+// dégradé vertical
+@mixin gradient-vertical($start-color, $end-color, $start-percent, $end-percent) {
+    background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
+    background-image: -o-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
+    background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
+}
+
+// arrow
+@mixin arrow($direction: top, $size: 10px, $color: #ccc, $center: 50%, $margin: -1px, $pseudo: before){
+    position: relative;
+    //border-color: $color;
+
+    &:#{$pseudo} {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-color: $color;
+
+        @if $direction == "right" {
+            top: $center;
+            left: 100%;
+            margin-left: $margin;
+            margin-top: $size * -1;
+            border-top: $size solid transparent;
+            border-bottom: $size solid transparent;
+            border-left: $size solid $color;
+            border-left-color: inherit;
+        } @else if $direction == "bottom" {
+            top: 100%;
+            left: $center;
+            margin-top: $margin;
+            margin-left: $size * -1;
+            border-left: $size solid transparent;
+            border-right: $size solid transparent;
+            border-top: $size solid $color;
+        } @else if $direction == "left" {
+            top: $center;
+            right: 100%;
+            margin-right: $margin;
+            margin-top: $size * -1;
+            border-top: $size solid $color;
+            border-bottom: $size solid transparent;
+            border-right:$size solid transparent;
+        } @else if $direction == "top" {
+            bottom: 100%;
+            left: $center;
+            margin-bottom: $margin;
+            margin-left: $size * -1;
+            border-left: $size solid transparent;
+            border-right: $size solid transparent;
+            border-bottom: $size solid $color;
+        }
+    }
+}
+
+
+// pour les hide et show selon les breakpoints
+@mixin responsive-visibility($parent) {
+  #{$parent} {
+    display: block !important;
+  }
+  table#{$parent}  { display: table !important; }
+  tr#{$parent}     { display: table-row !important; }
+  th#{$parent},
+  td#{$parent}     { display: table-cell !important; }
+}
+
+// [converter] $parent hack
+@mixin responsive-invisibility($parent) {
+  #{$parent} {
+    display: none !important;
+  }
+}
+
+
+// TRONCATURES ————————————————————————————————————————————————————————————————————————————————————————————————
+// troncature 1 ligne
+@mixin truncate ($width-truncate) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: $width-truncate;
+}
+
+// hauteur déroulée avec transition
+@mixin transitionedHeight ($lineHeight, $lineCount: 1, $easing: cubic-bezier(0.77, 0, 0.175, 1)) {
+    @include transition(max-height 0.25s $easing 0s);
+    min-height: $lineHeight * $lineCount;
+    max-height: $lineHeight * $lineCount;
+    overflow: hidden;
+
+    &.ouvert {
+        max-height: 200rem;
+        &:before,
+        &:after {
+            opacity: 0;
+        }
+    }
+}
+
+// troncature multiligne //
+@mixin multiLineEllipsis($lineHeight: 1.6em, $lineCount: 1, $bgColor: white){
+    @include transitionedHeight($lineHeight * $lineCount);
+    line-height: $lineHeight;
+    position: relative;
+    hyphens: auto;
+    padding-right: 1.5rem;
+
+    &:before,
+    &:after {
+        @include transition(opacity 0.25s cubic-bezier(0.77, 0, 0.175, 1) 0s);
+        opacity: 1;
+    }
+    &:before {
+        content: ' ';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 2rem;
+        height: 2rem;
+        margin-top: 0.2rem;
+        background: $bgColor;
+    }
+    &:after {
+        content: '...';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 2rem;
+        line-height: 1.4em;
+        text-align: right;
+    }
+}
+
+// Permet de s'assurer qu'un texte ne dépasse pas (coupe seche, sans les "..." qui ont besoin d'un texte justifié)
+@mixin multiLineTruncate($lineHeight: 1.6em, $lineCount: 1){
+    overflow: hidden;
+    position: relative;
+    line-height: $lineHeight;
+    height: $lineHeight * $lineCount;
+}
+
+// COLUMN MODEL ————————————————————————————————————————————————————————————————————————————————————————————————
+//column
+@mixin column-count($column-count) {
+    -moz-column-count: $column-count;
+    -webkit-column-count: $column-count;
+    column-count: $column-count;
+}
+// column_gap
+@mixin column-gap($column-gap) {
+    -moz-column-gap: $column-gap;
+    -webkit-column-gap: $column-gap;
+    column-gap: $column-gap;
+}
+
+// FLEXBOX MODEL ————————————————————————————————————————————————————————————————————————————————————————————————
+@mixin flexDisplay() {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flexDirection($flexDirection, $flexDirectionOld) {
+    -webkit-box-orient: $flexDirectionOld; // horizontal, vertical
+    -webkit-flex-direction: $flexDirection; // row, column
+    flex-direction: $flexDirection;
+}
+
+@mixin flexAlign($flexAlign) {
+    -webkit-box-align: $flexAlign; //flex-start, flex-end, center, baseline, stretch
+    -webkit-align-items: $flexAlign;
+    align-items: $flexAlign;
+}
+
+@mixin flexJustify($flexJustify, $flexJustifyOld) {
+    -webkit-box-pack: $flexJustifyOld; //start, end, center, justify
+    -webkit-justify-content: $flexJustify; //flex-start, flex-end, center, space-between, space-around
+    justify-content: $flexJustify;
+}
+
+@mixin flexWrap($flexWrap) { // not possible with the 2009 model for android pre 4.4
+    -webkit-flex-wrap: $flexWrap; // no-wrap, wrap, wrap-reverse
+    flex-wrap: $flexWrap;
+}
+
+@mixin flexOrder($flexOrder) {
+    -webkit-box-ordinal-group: $flexOrder;
+    -webkit-order: $flexOrder;
+    order: $flexOrder;
+}
+
+@mixin flexAlignSelf($flexAlignSelf) {
+    -webkit-align-self: $flexAlignSelf; //for flex's childs : flex-start, flex-end, center, baseline, stretch
+    align-self: $flexAlignSelf;
+}
+
+@mixin flexFlexValue($flexFlexValue) {
+    -webkit-box-flex: $flexFlexValue; //for flex's childs : 0 = not sized, integer (1) = sized to fill the space
+    -webkit-flex: $flexFlexValue;
+    flex: $flexFlexValue;
+}
+
+@mixin importFonts() {
+    @if $font-import-use-local == null {
+        @import url($font-import-url);
+
+    } @else {
+        @font-face {
+            font-family: $font-import-name;
+            src: url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Regular.woff2') format('woff2'),
+                url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @if $font-import-medium {
+            @font-face {
+                font-family: $font-import-name;
+                src: url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Medium.woff2') format('woff2'),
+                    url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Medium.woff') format('woff');
+                font-weight: 500;
+                font-style: normal;
+            }
+        }
+
+        @if $font-import-bold {
+            @font-face {
+                font-family: $font-import-name;
+                src: url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Bold.woff2') format('woff2'),
+                    url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Bold.woff') format('woff');
+                font-weight: 700;
+                font-style: normal;
+            }
+        }
+    }
+}

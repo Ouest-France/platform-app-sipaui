@@ -1,0 +1,37 @@
+/*
+    Variables de theme Voiles et Voiliers
+    ex:
+    $couleur-principale-1: blue;
+*/
+$font-import-url:    'https://fonts.googleapis.com/css?family=Montserrat:400,500,700';
+$font-import-path:   'montserrat/';
+$font-import-medium: true;
+$font-import-bold:   true;
+$font-import-name:   'Montserrat';
+
+$font-family-base: $font-import-name, Arial, Helvetica, sans-serif;
+$font-family-secondaire: $font-family-base;
+
+// COLORS ------------------------------------------------------------------------------------------------------------------
+// CHART
+$gris-tres-clair:       #F3F3F3;
+$bleu-tres-clair:       #E6F5FD;
+$bleu-clair:            #268BCD;
+$bleu-fonce:            #20407A;
+$bleu-tres-fonce:       #192F57;
+
+// DEFINITIONS
+$color-main-2: $gris-tres-clair;
+
+$color-secondary-1: $bleu-tres-clair;
+$color-secondary-2: $bleu-clair;
+$color-secondary-3: $bleu-fonce;
+$color-secondary-4: $bleu-tres-fonce;
+
+
+/*
+    Variable Surcharge composants
+*/
+@import "variables";
+@import "../../components/button/theme-vv";
+@import "../../components/text-fields/theme-vv";

@@ -1,0 +1,164 @@
+// SipaUI
+// Variables
+//
+
+// voir https://robots.thoughtbot.com/sass-default pour explications sur !default
+
+@import 'src/core/scss/variables';
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+// TYPO ----------------------------------------------------------------------------------
+$font-family-base:       Arial, Helvetica, sans-serif !default;
+$font-family-secondary: null !default;
+
+//$font-size-root: 10px      !default;// Valeur en pixel pour s'adapter au responsive. Appliqué à l'élément <html>.
+
+/*
+$font-size-xsmall:  1.2rem !default;
+$font-size-small:   1.4rem !default;
+$font-size-medium1: 1.6rem !default;
+$font-size-medium2: 1.8rem !default;
+$font-size-tall:    2.4rem !default;
+$font-size-xtall:   3rem   !default;
+$font-size-xxtall:  4rem   !default;
+$font-size-xxxtall: 6rem   !default;
+*/
+
+//$smaller-font-size: 80% !default;
+
+/*
+$line-height-xsmall: 1   !default;
+$line-height-small:  1.2 !default;
+$line-height-medium: 1.5 !default;
+$line-height-tall:   1.8 !default;
+$line-height-xtall:  2   !default;
+$line-height-base: $line-height-medium !default;
+*/
+
+/*
+$font-weight-thin:   300 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold:   700 !default;
+*/
+
+// Texte standard
+/*
+$color-texte: $color-main-8 !default;
+$font-size-base: $font-size-medium1 !default;
+*/
+
+// Code
+$color-code: chocolate !default;
+
+// Titres
+$font-family-titres: null               !default;
+$font-weight-titres: $font-weight-bold  !default;
+$color-titres: $color-main-8    !default;
+$font-size-h1: $font-size-xxtall        !default;
+$margin-bottom-h1: $font-size-h1 * 1    !default;
+$font-size-h2: $font-size-xtall         !default;
+$margin-bottom-h2: $font-size-h2 * .8   !default;
+$font-size-h3: $font-size-tall          !default;
+$margin-bottom-h3: $font-size-h3 * .7   !default;
+$font-size-h4: $font-size-medium2       !default;
+$font-size-h5: $font-size-base          !default;
+$font-size-h6: $font-size-base          !default;
+$font-weight-titres: $font-weight-medium !default;
+
+// Titres éditoriaux
+$font-family-titres-edito: $font-family-secondary   !default;
+$font-weight-titres-edito: $font-weight-thin       !default;
+$color-titres-edito: $color-main-5           !default;
+$font-size-h1-edito: null                            !default;
+$margin-bottom-h1-edito: null                        !default;
+$font-size-h2-edito: null                            !default;
+$margin-bottom-h2-edito: null                        !default;
+$font-size-h3-edito: null                            !default;
+$margin-bottom-h3-edito: null                        !default;
+$font-size-h4-edito: null                            !default;
+$font-size-h5-edito: null                            !default;
+$font-size-h6-edito: null                            !default;
+
+
+
+// MARGES --------------------------------------------------------------------------------
+// Marges en PX
+/*
+$margin-xsmall:     5px     !default;
+$margin-small:      10px    !default;
+$margin-medium1:    15px    !default;
+$margin-medium2:    20px    !default;
+$margin-large:      30px    !default;
+$margin-xlarge:     40px    !default;
+
+$margin-standard: $margin-medium2;
+$margin-standard-large: $margin-xlarge;
+*/
+
+// Marges responsives liées au font-size défini sur HTML ($font-size-root) en REM
+/*
+$margin-resp-xsmall:     .5rem   !default;
+$margin-resp-small:      1rem    !default;
+$margin-resp-medium1:    1.5rem  !default;
+$margin-resp-medium2:    2rem    !default;
+$margin-resp-large:      3rem    !default;
+$margin-resp-xlarge:     4rem    !default;
+
+$margin-resp-standard: $margin-resp-medium2         !default;
+$margin-resp-standard-large: $margin-resp-xlarge    !default;
+*/
+
+// Marges spécifiques
+$margin-top-entre-blocs-petit: $margin-resp-standard          !default; // séparateur entre 2 blocs de texte (ie : p + p…)
+$margin-top-entre-blocs-grand: $margin-resp-standard-large    !default; // séparateur entre 2 blocs de texte majeurs (ie : article + article, p + h2…)
+
+// OMBRES --------------------------------------------------------------------------------
+$ombre-1: 0 0 10px rgba(0,0,0, .5) !default;
+
+
+// VARIABLES GLOBAL & BASICC -----------------------------------------------------------------------------------------------------------------------------------------
+// BODY
+//$background-body: null !default;
+
+// LIENS STANDARDS
+$color-lien:         $color-main-5  !default;
+$color-lien-hover:   $color-secondary-2  !default;
+$color-lien-active:  $color-lien-hover      !default;
+$color-lien-focus:   $color-lien-hover      !default;
+$color-lien-visited: $color-texte           !default;
+$text-decoration-link: null                !default;
+
+// LIENS NEUTRES
+$color-lien-neutre:         $color-texte                !default;
+$color-lien-neutre-hover:   $color-lien-hover           !default;
+$color-lien-neutre-active:  $color-lien-neutre-hover    !default;
+$color-lien-neutre-focus:   $color-lien-neutre-hover    !default;
+$color-lien-neutre-visited: $color-texte                !default;
+
+// LIENS VOYANTS
+$color-lien-voyant:         $color-secondary-1       !default;
+$color-lien-voyant-hover:   $color-lien-hover           !default;
+$color-lien-voyant-active:  $color-lien-voyant-hover    !default;
+$color-lien-voyant-focus:   $color-lien-voyant-hover    !default;
+$color-lien-voyant-visited: $color-secondary-3       !default;
+
+// LISTES À PUCES
+$taille-puce-mobile: .8rem         !default;
+$taille-espace-puce-mobile: .8rem  !default;
+$taille-puce-desktop: 1rem         !default;
+$taille-espace-puce-desktop: 1rem  !default;
+
+// LISTES NUMÉROTÉES
+$weight-numero-ol: $font-weight-bold        !default;
+
+// TABLEAUX
+$border-tableau: 1px solid $color-main-3        !default;
+$padding-tableau: $margin-xsmall                        !default;
+$caption-color-tableau: $color-main-5           !default;
+$caption-side-tableau: bottom                           !default;
+$caption-align-tableau: center                          !default;
+$caption-padding-tableau: $margin-resp-xsmall 0         !default;
+
+$border-tableau-plus: 1px solid $color-main-4   !default;
+$background-tableau-plus-header: $color-main-3  !default;
+$background-tableau-plus-even: lighten($color-main-2, 5%)    !default;

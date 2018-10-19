@@ -1,0 +1,23 @@
+// BOUTONS
+$font-family-button:  $font-family-base;
+
+// PRIMARY -------------------------------------------------------------------------------------------/
+$background-button-primary:     $color-secondary-2;
+$radius-button-primary:         0;
+$font-weight-button-primary:    $font-weight-medium;
+// hover, focus
+$background-button-primary-hover:   $color-secondary-3;
+
+
+// SECONDARY -------------------------------------------------------------------------------------------/
+$color-button-secondary:          $color-main-7;
+$shadow-button-secondary:         0 0 0 1px $color-main-5 inset;
+// hover, focus
+$shadow-button-secondary-hover:   $shadow-button-secondary;
+
+
+// SUBSCRIPTION -------------------------------------------------------------------------------------------/
+$text-transform-button-subscription: uppercase;
+$font-weight-button-subscription:    $font-weight-medium;
+// hover, focus
+$color-button-subscription-hover:        $color-main-1;
