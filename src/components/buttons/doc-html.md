@@ -1,8 +1,12 @@
 # Boutons
 
-Chaque bouton a 4 états : **normal** (/ ou *link*), **survolé** (*hover*), **cliqué** (*active*) et avec **focus** (*focus*)
+Comme le prévoit le HTML, chaque bouton a 4 états&nbsp;: **normal** (/ ou *link*), **survolé** (*hover*), **cliqué** (*active*) et avec **focus** (*focus*). Toutefois, la charte Ouest-France assigne la même apparence aux états *survolé*, *cliqué*, et avec *focus*.
 
-Les *classes* de bouton peuvent être appliquées indifférement sur des `<buttons>`, des `<inputs type="button">` ou des `<a>`.
+Un bouton a besoin d’**au moins 2 classes**&nbsp;: `su-button` pour appliquer le design commun aux boutons et une seconde pour le design lié à sa fonction (comme `su-primary`).
+
+Les *classes* de bouton peuvent être appliquées indifférement sur des `<buttons>`, des `<input type="button">` ou des `<a>`.
+
+<!-- STORY -->
 
 ## Primaire
 ```html
