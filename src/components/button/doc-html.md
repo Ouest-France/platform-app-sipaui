@@ -2,7 +2,7 @@
 
 Chaque bouton a 4 états : **normal** (/ ou *link*), **survolé** (*hover*), **cliqué** (*active*) et avec **focus** (*focus*)
 
-Les *classes* de bouton peuvent être appliquées indifférement sur des `<buttons>`, des `<inputs type="button">` ou des `<a>`.
+Les *classes* de bouton peuvent être appliquées indifférement sur des `<buttons>`, des `<input type="button">` ou des `<a>`.
 
 ## Primaire
 ```html
