@@ -1,3 +1,8 @@
+/*
+    Styles du composant Buttons de SipaUI
+    Utilise les variables à la fois globales et du composant
+*/
+
 @import "variables";
 
 .su-button {
@@ -6,7 +11,7 @@
     font-size: $font-size-button;
     font-style: normal;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none !important;
     display: inline-block;
     margin: 0;
     padding: 0 $side-padding-button;
@@ -22,6 +27,13 @@
     height: $height-button;
     line-height: $height-button;
     text-shadow: none;
+
+/*
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+*/
 
     &.su-small {
         font-size: $font-size-button-small;

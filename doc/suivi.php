@@ -41,32 +41,48 @@
             <article class="conteneur plan-versions" role="article">
                 <h1>Plan de versions prévisionnel</h1>
 
-                <ul class="su-old-not-list">
-                	<li>
+                <ul class="su-old-not-list table">
+                	<li class="row">
                 	    <div class="cell"><span class="version">0.1.0</span></div>
-                	    <div class="cell"><span class="fait">Boutons standards (primaire et secondaire), boutons Abonnement et Premium</span></div>
+                	    <div class="cell"><span class="fait">Boutons standards (primaire et secondaire), boutons Abonnement et Premium.</span></div>
                     </li>
-                	<li>
+                	<li class="row">
                 	    <div class="cell"><span class="version">0.2.0</span></div>
-                	    <div class="cell">Champs texte standards (input text, mail, tél… + textarea), input mot de passe</div>
+                	    <div class="cell">Champs texte standards (input text, mail, tél… + textarea), liens standards.</div>
                     </li>
-                	<li>
+                    <li class="row">
                 	    <div class="cell"><span class="version">0.3.0</span></div>
-                	    <div class="cell">Bouton radio standard, checkbox standard, select, interrupteur, input file, liens</div>
+                	    <div class="cell">Mot de passe, tooltip.</div>
                     </li>
-                	<li>
+                	<li class="row">
                 	    <div class="cell"><span class="version">0.4.0</span></div>
-                	    <div class="cell">Loader, input avec loader, champ d’inscription, champ de recherche statique avec auto-complete (+ champ de recherche dynamique ?)</div>
+                	    <div class="cell">Bouton radio, checkbox, select simple.</div>
                     </li>
-                	<li>
+                	<li class="row">
                 	    <div class="cell"><span class="version">0.5.0</span></div>
-                	    <div class="cell">Stepper, fil d'ariane, popin, pagination, onglets, accordéons</div>
+                	    <div class="cell">Loader, input avec loader, champ d’inscription.</div>
                     </li>
-                	<li>
+                	<li class="row">
                 	    <div class="cell"><span class="version">0.6.0</span></div>
-                	    <div class="cell">Carrousels, tooltips</div>
+                	    <div class="cell">Stepper, fil d'Ariane, pagination.</div>
                     </li>
-                	<li>
+                	<li class="row">
+                	    <div class="cell"><span class="version">0.7.0</span></div>
+                	    <div class="cell">Popins</div>
+                    </li>
+                    <li class="row">
+                	    <div class="cell"><span class="version">0.8.0</span></div>
+                	    <div class="cell">Accordéons</div>
+                    </li>
+                    <li class="row">
+                	    <div class="cell"><span class="version">0.9.0</span></div>
+                	    <div class="cell">Onglets</div>
+                    </li>
+                    <li class="row">
+                	    <div class="cell"><span class="version">0.10.0</span></div>
+                	    <div class="cell">Carrousels</div>
+                    </li>
+                	<li class="row">
                 	    <div class="cell"><span class="version">1.0.0</span></div>
                 	    <div class="cell">Début des composants éditoriaux (titraille, grille…)</div>
                     </li>

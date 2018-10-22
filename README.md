@@ -18,11 +18,11 @@ npx gulp html
 npm run build-storybook
 ```
 
-&nbsp;
 ---
 
-### dev
+## Dev
 
+### dev mode
 
 ```
 yarn install
@@ -30,14 +30,11 @@ npx gulp watch
 npm run storybook
 ```
 
-
----
-
 ### Add a component
-
 
 ```
 yarn install
-npm run add-component [comp-name]
+npm run add-component --name=comp-name
 npx gulp html
 ```
+Then, relaunch Storybook in build or dev mode.
