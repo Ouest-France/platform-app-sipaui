@@ -30,7 +30,7 @@ npx gulp watch
 npm run storybook
 ```
 
-## Add a component
+### Add a component
 
 ```
 yarn install
