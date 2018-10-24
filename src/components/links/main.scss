@@ -1,0 +1,18 @@
+/*
+    Styles du composant Links de SipaUI
+    Utilise les variables à la fois globales et du composant
+*/
+@import "variables";
+
+a,
+body a.su-link {
+    color: $color-link;
+    text-decoration: $text-decoration-link;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-link-hover;
+        text-decoration: $text-decoration-link-hover;
+    }
+}
