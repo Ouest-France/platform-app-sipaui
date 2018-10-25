@@ -7,9 +7,19 @@
 
 // LIENS
 
-// STANDARD -------------------------------------------------------------------------------------------/
-$color-link:                 $color-main-5              !default;
-$text-decoration-link:       underline                  !default;
+// LIEN ÉDITORIAL -------------------------------------------------------------------------------------------/
+$color-link-editorial:                 $color-secondary-1             !default;
+$text-decoration-link-editorial:       none                           !default;
 
-$color-link-hover:                  $color-secondary-2           !default;
-$text-decoration-link-hover:        none                         !default;
+$color-link-editorial-hover:                  $color-secondary-2           !default;
+$text-decoration-link-editorial-hover:        underline                    !default;
+
+// LIEN BOUTON -------------------------------------------------------------------------------------------/
+$color-link-button:                 $color-secondary-1             !default;
+$text-decoration-link-button:       none                           !default;
+$font-size-link-button:             $font-size-base                !default;
+$font-weight-link-button:           $font-weight-bold              !default;
+
+$color-link-button-hover:                  $color-secondary-2           !default;
+$text-decoration-link-button-hover:        underline                    !default;
+

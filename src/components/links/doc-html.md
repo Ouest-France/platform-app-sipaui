@@ -1,18 +1,44 @@
 # links
 
-À terme, SipaUI proposera **au moins** 2 types de liens (lien standard, lien éditorial, lien neutre [?]…). Pour l’instant, ce composant ne présente que le lien standard.
+SipaUI propose 2 types de liens&nbsp;: les **liens éditoriaux** et les **liens bouton**.
 
 Comme le prévoit le HTML, les liens ont 4 états&nbsp;: **normal** (/ ou *link*), **survolé** (*hover*), **cliqué** (*active*) et avec **focus** (*focus*). Toutefois, la charte Ouest-France assigne la même apparence aux états *survolé*, *cliqué*, et avec *focus*.
 
 <!-- STORY -->
 
-## Lien standard
+## Lien éditorial
 
-Si vous utilisez SipaUI comme système de design de base de votre site, ou si vous faites un bloc qui s’insère dans un tel site, le simple fait de mettre une balise `<a>` devrait suffire à lui donner la bonne apparence. Dans le cas contraire, utiliser la classe `su-link`.
+Le lien éditorial est le **lien intégré dans du contenu textuel** (article ou tout autre texte). À ce titre, sa police, sa taille, sa graisse sont dépendants du texte dans lequel il est inclus.
+
+Ce lien est affiché sur n’importe quelle balise `<a>` intégrée dans un parent ayant la classe `su-editorial` ou sur un lien ayant la classe `su-link`.
+
+### Version avec la classe `su-editorial` sur un parent
+```html
+<setion class="su-editorial">
+	<a href="javascript:;">Lien éditorial SipaUI</a>
+</section>
+```
+<setion class="su-editorial">
+	<a href="javascript:;">Lien éditorial SipaUI</a>
+</section>
 
 ### Version avec la classe `su-link`
 ```html
-<a href="javascript:;" class="su-link">Lien standard SipaUI</a>
+<a href="javascript:;" class="su-link">Lien éditorial SipaUI</a>
 ```
-<a href="javascript:;" class="su-link">Lien standard SipaUI</a>
+<a href="javascript:;" class="su-link">Lien éditorial SipaUI</a>
+
+
+## Lien bouton
+
+Le lien bouton sert pour un **lien isolé qui a une fonctionnalité proche du bouton, sans en avoir le poids** (ie&nbsp;: un lien «&nbsp;Créer un compte&nbsp;» dans un formulaire de connexion). Il ne peut donc être inclus dans un texte.
+
+Utiliser la classe `su-link-button`.
+
+### Version avec la classe `su-link`
+```html
+<a href="javascript:;" class="su-link-button">Lien bouton SipaUI</a>
+```
+<a href="javascript:;" class="su-link-button">Lien bouton SipaUI</a>
+
 

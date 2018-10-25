@@ -7,9 +7,12 @@
 
 // LIENS
 
-// STANDARD -------------------------------------------------------------------------------------------/
-$color-link:                 $color-secondary-3;
-$text-decoration-link:       none;
+// LIEN ÉDITORIAL -------------------------------------------------------------------------------------------/
+$color-link-editorial:                 $color-secondary-3;
 
-$color-link-hover:                  $color-secondary-2;
-$text-decoration-link-hover:        none;
+$text-decoration-link-editorial-hover:        none;
+
+// LIEN BOUTON -------------------------------------------------------------------------------------------/
+$color-link-button:                 $color-secondary-3;
+
+$text-decoration-link-button-hover:        none;

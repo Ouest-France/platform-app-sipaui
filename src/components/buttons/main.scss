@@ -28,13 +28,6 @@
     line-height: $height-button;
     text-shadow: none;
 
-/*
-    &:hover,
-    &:focus {
-        text-decoration: none;
-    }
-*/
-
     &.su-small {
         font-size: $font-size-button-small;
         padding: 0 $side-padding-button-small;
