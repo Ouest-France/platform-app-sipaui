@@ -40,7 +40,7 @@ Type | Enable | Hover / Focus / Pressed | Typographie
 ## 3- Spécifications
 
 - Hauteur : 44px
-- Largeur : paddind 20px
+- Largeur : padding 20px
 - Largueur minimale : 140px
 - Border radius : 3px
 - Police du thème
