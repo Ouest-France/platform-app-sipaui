@@ -1,10 +1,10 @@
-# Text fields
+# Text field
 
-Les champs de texte permettent aux utilisateurs de saisir et de modifier du texte. Ils se trouvent généralement dans des formulaires.
+Un champs de texte permet à l'utilisateur de saisir et de modifier du texte. Il se trouve généralement dans un formulaire.
 
 
 
-## 1- États !!!en cours !!!
+## 1- États
 
 Type | Simple
 ------------ | ------------- | ------------- | ------------- |
@@ -45,22 +45,23 @@ Type | Simple
 - Hauteur : 44px
 - Largeur : celle son parent moins le padding de celui-ci
 - Largueur minimale : 140px
-- Couleur : #EFEFEF
+- Couleur par défaut : #FAFAFA
+- Couleur en focus et press : #FFFFFF
 - Présente un contour
   - Couleur par défaut : #D4D4D4
   - Couleur en focus et press : #878787
   - Epaisseur : 1px
 
-#### Input text
+#### Text
   - Texte saisi
   - Padding gauche : 15px du container
   - Couleur : #333333
   - Police du thème
-  - Taille de caractère : 14px
+  - Taille de caractère : 16px
   - Graisse de caractère : regular
 
-#### Champ non modifiable
-  - Opacité (su-disabled) : 40 %
+#### Champ non modifiable (readonly)
+  - Opacité : 40 %
 
 
 ## 3-Gestion des erreurs
@@ -72,6 +73,7 @@ Type | Simple
 - Apparait sur une seule ligne
 - Présent sous la ligne de saisie
 - Est affiché tant que l'erreur n'est pas corrigée. Dans un formulaire, l'état d’erreur disparait suite à la validation de l’ensemble du formulaire.
+- Taille de caractère : 14px
 - Couleur : #B40015
 - Une icône d'erreur précède le message d'erreur
   - Couleur : #B40015

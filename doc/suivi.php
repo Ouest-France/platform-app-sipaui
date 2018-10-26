@@ -22,7 +22,7 @@
             <article class="conteneur integre" role="article">
                 <h1>Liste des composants intégrés</h1>
 
-                <ul class="su-old-not-list">
+                <ul>
                 	<li>
                 	    <h2>Boutons</h2>
                 	    <ul>
@@ -34,6 +34,19 @@
                 	    	<li>Bouton Abonnement</li>
                 	    	<li>Bouton Premium</li>
                 	    </ul>
+                	</li>
+                	<li>
+                	    <h2>Champs texte</h2>
+                	    <ul>
+                	    	<li>Input text</li>
+                	    	<li>Input tel</li>
+                	    	<li>Input mail</li>
+                	    	<li>…</li>
+                	    	<li>Textarea</li>
+                	    </ul>
+                	</li>
+                	<li>
+                	    <h2>Liens standards</h2>
                 	</li>
                 </ul>
             </article>
@@ -48,19 +61,19 @@
                     </li>
                 	<li class="row">
                 	    <div class="cell"><span class="version">0.2.0</span></div>
-                	    <div class="cell">Champs texte standards (input text, mail, tél… + textarea), liens standards.</div>
+                	    <div class="cell"><span class="fait">Champs texte standards (input text, mail, tél… + textarea), liens standards.</span></div>
                     </li>
                     <li class="row">
                 	    <div class="cell"><span class="version">0.3.0</span></div>
-                	    <div class="cell">Mot de passe, tooltip.</div>
-                    </li>
-                	<li class="row">
-                	    <div class="cell"><span class="version">0.4.0</span></div>
                 	    <div class="cell">Bouton radio, checkbox, select simple.</div>
                     </li>
                 	<li class="row">
+                	    <div class="cell"><span class="version">0.4.0</span></div>
+                	    <div class="cell">Mot de passe.</div>
+                    </li>
+                	<li class="row">
                 	    <div class="cell"><span class="version">0.5.0</span></div>
-                	    <div class="cell">Loader, input avec loader, champ d’inscription.</div>
+                	    <div class="cell">Loader, input avec loader.</div>
                     </li>
                 	<li class="row">
                 	    <div class="cell"><span class="version">0.6.0</span></div>

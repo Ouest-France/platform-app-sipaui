@@ -1,0 +1,56 @@
+/*
+    Styles du composant Links de SipaUI
+    Utilise les variables à la fois globales et du composant
+*/
+@import "variables";
+
+// LIEN ÉDITORIAL ------------------------------------------------------------------------------------------/
+body a,
+body .su-editorial a,
+body a.su-link {
+    color: $color-link-editorial;
+    text-decoration: $text-decoration-link-editorial;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-link-editorial-hover;
+        text-decoration: $text-decoration-link-editorial-hover;
+    }
+    &.su-disabled {
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-link-editorial;
+            text-decoration: $text-decoration-link-editorial;
+        }
+    }
+}
+
+
+// LIEN BOUTON ------------------------------------------------------------------------------------------/
+body a.su-link-button {
+    color: $color-link-button;
+    text-decoration: $text-decoration-link-button;
+    font-weight: $font-weight-link-button;
+    font-size: $font-size-link-button;
+    display: inline-block;
+    height: $height-link-button;
+    line-height: $height-link-button;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-link-button-hover;
+        text-decoration: $text-decoration-link-button-hover;
+    }
+    &.su-disabled {
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-link-button;
+            text-decoration: $text-decoration-link-button;
+        }
+    }
+}
+

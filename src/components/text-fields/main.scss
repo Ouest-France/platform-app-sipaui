@@ -3,3 +3,107 @@
     Utilise les variables à la fois globales et du composant
 */
 @import "variables";
+
+$inputTextBase: 'input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"], textarea, .su-input-text';
+$inputTextPlus: $inputTextBase + ', input[type="date"]' ;
+
+
+body {
+    input,
+    textarea,
+    select,
+    .input-text {
+        font-size: $font-size-base;
+
+    }
+
+    label {
+        color: $color-label;
+        font-size: $font-size-label;
+        font-weight: $font-weight-label;
+        margin-bottom: $margin-bottom-label;
+
+        .su-label-garnish {
+            font-weight: $font-weight-thin;
+        }
+    }
+
+    #{$inputTextBase} {
+        -webkit-appearance: none;
+    }
+    #{$inputTextPlus} {
+        display: block;
+        width: 100%;
+        min-width: 140px;
+        height: $height-input;
+        border-radius:  $border-radius-input;
+        color: $color-input;
+        background: $background-input;
+        border: $border-input;
+        transition: all .3s ease-out;
+        padding: 0 15px;
+
+        &:focus {
+            background: $background-input-focus;
+            border: $border-input-focus;
+        }
+
+        &[readonly] {
+            opacity: 0.4;
+            cursor: default;
+
+            &:focus {
+                background: $background-input;
+                border: $border-input;
+            }
+        }
+    }
+    textarea {
+        padding: 10px 15px;
+        min-height: 68px;
+    }
+
+    // Erreurs
+        .su-error-message {
+            display: none;
+            font-size: $font-size-error;
+            color: $color-error;
+        }
+
+        .su-error {
+            .su-error-message {
+                display: block;
+            }
+
+            #{$inputTextPlus} {
+                border: $border-input-error;
+            }
+        }
+/*
+        &.input-error {
+            background-color: $formulaire-erreurs;
+            border-top-color: $formulaire-erreurs;
+            border-left-color: $formulaire-erreurs;
+            border-right-color: $formulaire-erreurs;
+            border-bottom-color: $formulaire-erreurs-fonce;
+            &:focus {
+                background-color: $formulaire-erreurs;
+            }
+        }
+*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
