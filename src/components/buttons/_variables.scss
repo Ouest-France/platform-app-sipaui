@@ -1,5 +1,5 @@
 /*
-    Variables liés au composant Buttons
+    Variables liés au composant [buttons]
     ex:
     $border-button-premium: 3px !default;
 */
@@ -10,7 +10,7 @@
 $font-family-button:    null                        !default;
 $font-size-button:      $font-size-base             !default;
 $side-padding-button:   20px                        !default;
-$height-button:         44px                        !default;
+$height-button:         $height-finger              !default;
 
 $font-size-button-small:      $font-size-small            !default;
 $side-padding-button-small:   15px                        !default;
