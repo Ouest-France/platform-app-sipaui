@@ -1,4 +1,4 @@
-# Boutons
+# Buttons
 
 Comme le prévoit le HTML, chaque bouton a 4 états&nbsp;: **normal** (/ ou *link*), **survolé** (*hover*), **cliqué** (*active*) et avec **focus** (*focus*). Toutefois, la charte Ouest-France assigne la même apparence aux états *survolé*, *cliqué*, et avec *focus*.
 
@@ -8,31 +8,35 @@ Les *classes* de bouton peuvent être appliquées indifférement sur des `<butto
 
 <!-- STORY -->
 
-## Primaire
+## Types de boutons
+
+### Bouton primaire
 ```html
 <button class="su-button su-primary">Bouton primaire</button>
 ```
 <button class="su-button su-primary">Bouton primaire</button>
 
-## Secondaire
+### Bouton secondaire
 ```html
 <button class="su-button su-secondary">Bouton secondaire</button>
 ```
 <button class="su-button su-secondary">Bouton secondaire</button>
 
-## Abonnement
+### Bouton abonnement
 ```html
 <button class="su-button su-subscription">Bouton abonnement</button>
 ```
 <button class="su-button su-subscription">Bouton abonnement</button>
 
-## Premium
+### Bouton Premium
 ```html
 <button class="su-button su-premium">Bouton premium</button>
 ```
 <button class="su-button su-premium">Bouton premium</button>
 
-## Inactif
+## Contextes particuliers
+
+### Boutons inactifs
 L’aspect inactif peut être porté par la classe `su-disabled` ou par l’attribut `disabled`.
 ```html
 <button class="su-button su-primary" disabled="disabled">Bouton primaire inactif</button>
@@ -41,20 +45,20 @@ L’aspect inactif peut être porté par la classe `su-disabled` ou par l’attr
 ```
 <button class="su-button su-primary su-" disabled="disabled">Bouton primaire</button> <button class="su-button su-secondary su-disabled">Bouton secondaire inactif</button> <button class="su-button su-subscription su-disabled">Bouton abonnement inactif</button>
 
-## Petit
+### Petits boutons
 ```html
 <button class="su-button su-primary su-small">Bouton petit</button>
 <button class="su-button su-secondary su-small">Bouton petit</button>
 ```
 <button class="su-button su-primary su-small">Bouton petit</button> <button class="su-button su-secondary su-small">Bouton petit</button>
 
-## Pleine largeur
+### Bouton pleine largeur
 ```html
 <button class="su-button su-primary su-fullwidth">Bouton pleine largeur</button>
 ```
 <button class="su-button su-primary su-fullwidth">Bouton pleine largeur</button>
 
-## Petit pleine largeur sur mobile
+### Bouton pleine largeur sur mobile
 ```html
 <button class="su-button su-primary su-fullwidth-mobile">Bouton pleine largeur mobile</button>
 ```
