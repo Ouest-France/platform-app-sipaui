@@ -65,15 +65,15 @@
                     </li>
                     <li class="row">
                 	    <div class="cell"><span class="version">0.3.0</span></div>
-                	    <div class="cell">Mot de passe, tooltip.</div>
-                    </li>
-                	<li class="row">
-                	    <div class="cell"><span class="version">0.4.0</span></div>
                 	    <div class="cell">Bouton radio, checkbox, select simple.</div>
                     </li>
                 	<li class="row">
+                	    <div class="cell"><span class="version">0.4.0</span></div>
+                	    <div class="cell">Mot de passe.</div>
+                    </li>
+                	<li class="row">
                 	    <div class="cell"><span class="version">0.5.0</span></div>
-                	    <div class="cell">Loader, input avec loader, champ d’inscription.</div>
+                	    <div class="cell">Loader, input avec loader.</div>
                     </li>
                 	<li class="row">
                 	    <div class="cell"><span class="version">0.6.0</span></div>
