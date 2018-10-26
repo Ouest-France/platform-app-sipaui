@@ -58,6 +58,10 @@ body {
             }
         }
     }
+    textarea {
+        padding: 10px 15px;
+        min-height: 68px;
+    }
 
     // Erreurs
         .su-error-message {
