@@ -1,78 +1,103 @@
-# Buttons
+# Buttons/boutons
 
-Un bouton indique à l'utilisateur qu'une action est possible.
+Les boutons indiquent à l'utilisateur une action qui est accessible par le tap ou le clic. Le texte des boutons aide l'utilisateur à comprendre l'action produite.
 
-## 1- Usage
+## Usage
 
+Les boutons rendent les actions visibles et permettent aux utilisateurs d'effectuer une action. Par exemple, utilisez un bouton pour permettre aux utilisateurs de souscrire à un abonnement.
 
-### Primaire
+## Types de Boutons
 
-Attirer l'attention, mettre en évidence une action dans un formulaire ou lors d’un changement de page.
+### Bouton primaire
 
-### Secondaire
-Donner une importance moindre à une action. Généralement, l’utilisateur reste sur la même page.
-
-### Pleine largeur
-Donner plus de visibilité et d'accessibilité à une action.
-
-### Pleine largeur Mobile
-Donner plus de visibilité et d'accessibilité à une action sur un petit écran.
-
-### Abonnement
-Informer sur le contexte Abonnement.
-
-### Premium
-Informer sur le contexte Premium.
-
-### Petit bouton
-Informer qu'une action mineure.
-
-## 2- États
-
-Type | Enable | Hover / Focus / Pressed | Typographie
------------- | ------------- | ------------- | ------------- |
-**Primaire** | ![button_su-button_su-primary](design/su-button_su-primary.png) #E2001A| ![button_su-button_su-primary_hover](design/su-button_su-primary_hover.png) #B40015 | Bold #FFFFFF
-**Secondaire** | ![su-button_su-secondary](design/su-button_su-secondary.png) #333333 fond transparent|![su-button_su-secondary_pressed](design/su-button_su-secondary_hover.png) #B40015 fond transparent | Regular #333333 #B40015
-**Abonnement** | ![su-button_su-subscription](design/su-button_su-subscription.png) #FFCC33 | ![design/su-button-su-subscription-focus](design/su-button-su-subscription-hover.png) #E7AF07 | Bold #333333
-**Premium** | ![su-button_su-premium](design/su-button_su-premium.png) #DBA504 | ![su-button_su-premium_pressed](design/su-button_su-premium_hover.png) #C2940C | Bold #FFFFFF
+Le bouton principal, sur fond de couleur, met en évidence une action importante dans une page. Il est utilisé principalement sur une action spécifique ou dans un formulaire. Son utilisation dans une page doit être limitée.
 
 
-## 3- Spécifications
-
-- Hauteur : 44px
-- Largeur : padding 20px
-- Largueur minimale : 140px
-- Border radius : 3px
-- Police du thème
-- Taille de caractère : 16px
-- Opacité d'un bouton inactif : 40 %
-
-#### Bouton pleine largeur
-- Largeur : celle son parent moins le padding de celui-ci
-
-#### Bouton pleine largeur Mobile
-- Largeur : celle son parent moins le padding de celui-ci
-
-#### Petit bouton
-- Hauteur : 34px
-- Padding : 15px
-- Taille de caractère : 14px
+Enable | Hover / Focus / Pressed | Inactif
+------------ | ------------- | ------------- |
+![button__primary](design/button__primary.png) !!!à modifier!!!| ![button__primary__hover](src/components/button/design/button-primary-hover.png) !!!à modifier!!! | ![button__primary__hover](src/components/button/design/button-primary-hover.png) !!!à modifier!!!
+Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Largeur : minimum 140px et padding 20px  <br> Border radius : 3px  <br> Couleur : rouge principal #E2001A   <br>  Border radius : 3px  <br> Texte : 16px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> - <br> - <br> - <br> Texte : #B40015 | Opacité : 40 %
 
 
-## 4- Bonnes pratiques
+#### Cas spécifiques
+**Bouton primaire pleine largeur**
+
+Comme le bouton principal, le bouton primaire pleine largeur s'adapte à la largeur du container (Mobile et Desktop).
+
+**Enable**
+
+![button__primary](design/button__primary.png) !!!à modifier!!!
+
+
+**Bouton primaire, hauteur 34px**
+
+Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et principalement sur Desktop.
+
+
+
+  Enable | Hover / Focus / Pressed | Inactif
+  ------------ | ------------- | ------------- |
+  ![A](src/components/button/design/a.png) !!!à modifier!!!| ![A](src/components/button/design/a.png) !!!à modifier!!! | ![A](src/components/button/design/a.png) !!!à modifier!!!
+  Hauteur : 34px  <br> Largeur : minimum ???px 100 et padding 15px  <br> Border radius : 3px  <br> Couleur : rouge principal #E2001A ou #333333 ?   <br> Texte : 14px, regular, police du thème, #E2001A ou #333333 ? | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
+
+
+**Bouton primaire, contexte Abonnement**
+
+Dans un contexte Abonnment, la couleur de fond du bouton primaire devient #FFCC33.
+
+
+  Enable | Hover / Focus / Pressed
+  ------------ | -------------
+![su-button_su-premium](design/su-button_su-premium.png) !!!à modifier!!!|   ![su-button_su-premium_hover](design/su-button_su-premium_hover.png) !!!à modifier!!!
+Couleur : #FFCC33 |  Couleur : #E7AF07
+
+
+**Bouton primaire, contexte Premium**
+
+Dans un contexte Premium, la couleur de fond du bouton primaire devient #DBA504 et celle du texte #333333.
+
+
+  Enable | Hover / Focus / Pressed
+  ------------ | -------------
+![su-button_su-subscription](design/su-button_su-subscription.png) !!!à modifier!!!|   ![su-button-su-subscription-hover](design/su-button-su-subscription-hover.png) !!!à modifier!!!
+Couleur : #DBA504 |  Couleur : #C2940C
+
+### Bouton secondaire
+
+Le bouton secondaire transparent avec un cadre fin est utilisé pour des actions de moindre importance. Il est souvent associé avec le bouton primaire.
+
+
+Enable | Hover / Focus / Pressed | Inactif
+------------ | ------------- | ------------- |
+![A](design/su-button_su-secondary_hover.png) !!!à modifier!!!| ![A](design/su-button_su-secondary_hover.png) !!!à modifier!!! | ![A](design/su-button_su-secondary_hover.png) !!!à modifier!!!
+Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Border radius : 3px  <br> Couleur : rouge principal #E2001A ou #333333 ? et transparent  <br> Texte : 16px, regular, police du thème, #E2001A ou #333333 ? | - <br> - <br> Couleur :  <br> Texte : #B40015 | Opacité : 40 %
+
+
+#### Cas spécifique
+**Bouton secondaire, hauteur 34px**
+
+Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et principalement sur Desktop.
+
+
+Enable | Hover / Focus / Pressed | Inactif
+------------ | ------------- | ------------- |
+![A](src/components/button/design/a.png) !!!à modifier!!!| ![A](src/components/button/design/a.png) !!!à modifier!!! | ![A](src/components/button/design/a.png) !!!à modifier!!!
+Hauteur : 34px  <br> Largeur : minimum ???px et padding 15px  <br> Border radius : 3px  <br> Couleur : rouge principal #E2001A ou #333333 ?   <br> Texte : 14px, regular, police du thème, #E2001A ou #333333 ? | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
+
+## Règles ou Bonnes pratiques ou recommendations ???
 
 - La 1re lettre du bouton est en majuscule, le reste est en minuscule.
-- Le texte du bouton doit être uniquement sur une seule ligne.
-- Mettre le minimum de texte dans le bouton  tout en expliquant clairement ce qui se passe lorsque ce bouton est activé.
+- Le texte du bouton est limité à une ligne.
+- Le texte du bouton doit être explicite et décrire l'action de celui-ci.
 
 
 ![Image_button_texte minimum_ok](design/Image_button_texte_minimum_ok.png)  |![Image_button_texte minimum_ko](design/Image_button_texte_minimum_ko.png)
 ------------ | -------------
   ![Rectangle vert](design/rectangle-vert.png) **Do** Utiliser un texte simple | ![Rectangle rouge](design/rectangle-rouge.png) **Don't** Ne pas surcharger le texte
 
-- Éviter d'afficher plusieurs boutons primaires. Les secondaires peuvent apparaître plusieurs fois.
 
-- Lorsqu'il y a plusieurs boutons, les classer par ordre d'importance de gauche à droite. Une exeption s'applique obligatoirement dans le cas d'écran séquentiel. Par exemple dans un guide, le bouton "Retour" est à gauche afin de respecter le sens de navigation.
+- Lorsque vous utilisez un bouton primaire et un bouton secondaire, le bouton primaire doit être placé à gauche. Une exeption s'applique dans le cas d'écran séquentiel, le bouton primaire est à droite.
+image + petit Decouvrez toutes nos offres... Do/ don't
 
 ![Image_button_sequentiel](design/Image_button_sequentiel.png)
 
@@ -80,21 +105,20 @@ Type | Enable | Hover / Focus / Pressed | Typographie
 
 - Sur un mobile lorsqu’il y a un seul bouton, le mettre en pleine largeur.
 
-- L'état inactif est utlisé uniquement lorsqu'une autre action doit être effectuer avant que ce bouton ne soit utilisable.
+!!!image!!!Autre que Abonnement
 
-- Ne pas modifiez la police, la couleur, l’angle ou le remplissage des boutons.
 
 - Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte.
 
 ![Image_button_2 buttons_ko](design/Image_button_buttons_ko.png)
 
-![Rectangle rouge](design/rectangle-rouge.png) **Don't** Ne placez pas ces boutons l'un en dessous de l'autre.
+![Rectangle rouge](design/rectangle-rouge.png) **Don't** Ne placez pas ces boutons les uns en dessous de l'autre.
 
 
 
-- N'utilisez pas une couleur d'arrière-plan similaire à celle du bouton. Par exemple, n'utilisez pas un fond rose sous un bouton rouge.
+- La couleur d'arrière-plan ne doit pas être similaire à celle du bouton afin de mettre en avant l'action. Par exemple, le fond noir est à proscrire sous un bouton rouge.
 
-## 5- Autres composants
+## Autres composants
 - Liens
 - Boutons avec un picto
 - Boutons avec un picto et du texte
