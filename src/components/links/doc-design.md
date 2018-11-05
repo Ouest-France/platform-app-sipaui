@@ -1,11 +1,11 @@
-# Links
+# Links/Liens
 
 ## Lien éditorial
 
 Un lien éditorial permet d'atteindre un autre endroit de la page, une autre page ou un autre site.
 À la différence d’un lien standard, il se trouve parmi un bloc de texte.
 
-### 1- Spécifications
+### Spécifications
 #### Design
 
 - Police du texte
@@ -17,7 +17,7 @@ Un lien éditorial permet d'atteindre un autre endroit de la page, une autre pag
 !!!image!!! Don’t : ne pas mettre un texte en rouge souligné pour le mettre en évidence
 - Ne pas avoir le même nom pour différents liens.
 
-### 2- Bonnes pratiques
+### Bonnes pratiques
 #### Contenu
 
 - Mettre le minimum de texte tout en expliquant clairement ce qui se passe lorsque ce lien est activé.
@@ -39,7 +39,7 @@ Un lien éditorial permet d'atteindre un autre endroit de la page, une autre pag
 
 Un lien bouton permet d'atteindre un autre endroit de la page, une autre page ou un autre site. Son action est mineure par rapport à un bouton.
 
-### 1- Spécifications
+### Spécifications
 
 - Hauteur : 44px
 - Largeur du texte
@@ -51,7 +51,7 @@ Un lien bouton permet d'atteindre un autre endroit de la page, une autre page ou
 
 !!!2 images!!! lien enable et lien focus
 
-### 2- Bonnes pratiques
+### Bonnes pratiques
 #### Contenu
 
 - La 1re lettre du lien est en majuscule, le reste est en minuscule.
@@ -67,7 +67,7 @@ Un lien bouton permet d'atteindre un autre endroit de la page, une autre page ou
 
 !!!2 images!!! Do/don't Abonnement Je valide
 
-### 3- Autres composants
+### Autres composants
 - Lien éditorial
 - Retour
 - Titre avec chevron
