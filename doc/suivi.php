@@ -91,10 +91,6 @@
                 	    <div class="cell"><span class="version">0.9.0</span></div>
                 	    <div class="cell">Onglets</div>
                     </li>
-                    <li class="row">
-                	    <div class="cell"><span class="version">0.10.0</span></div>
-                	    <div class="cell">Carrousels</div>
-                    </li>
                 	<li class="row">
                 	    <div class="cell"><span class="version">1.0.0</span></div>
                 	    <div class="cell">Début des composants éditoriaux (titraille, grille…)</div>
