@@ -1,4 +1,4 @@
-# Links
+# Links/liens
 
 SipaUI propose 2 types de liens&nbsp;: les **liens éditoriaux** et les **liens boutons**.
 

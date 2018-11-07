@@ -1,4 +1,4 @@
-# Links/Liens
+# Links/liens
 
 ## Lien éditorial
 
