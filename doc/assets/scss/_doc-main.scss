@@ -36,8 +36,8 @@ header {
     }
     .bandeau {
         position: absolute;
-        top: 50%;
-        right: 0;
+        top: 30px;
+        right: -10px;
         background: $couleur-tertiaire-2;
         padding: 5px;
         width: 170px;
@@ -82,7 +82,7 @@ nav {
 }
 main {
     > *:first-child {
-        padding-top: 12rem;
+        padding-top: 19rem;
     }
     .conteneur {
         padding-left: $margin-standard;
