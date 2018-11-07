@@ -1,4 +1,4 @@
-# Text field
+# Text field/champs de texte
 
 Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés (ie : le mot de passe) sont développés spécifiquement.
 
