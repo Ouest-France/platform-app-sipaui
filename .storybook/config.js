@@ -10,14 +10,19 @@ import Vuex from 'vuex'; // Vue plugins
 Vue.use(Vuex);
 
 var theme_sipaui = themes.dark;
-theme_sipaui.mainBackground= 'radial-gradient(circle at 35% 10%, #be0030, #6e0030)';
-theme_sipaui.barFill= 'radial-gradient(circle at 35% 10%, #be0030, #6e0030)'; // coll de droite
-theme_sipaui.mainFill= 'rgba(255,255,255,0.1)'; // coll de droite
-theme_sipaui.barSelectedColor= '#dedede';
-theme_sipaui.dimmedTextColor= '#dedede';
-theme_sipaui.mainTextColor= '#dedede';
+theme_sipaui.mainBackground= 'radial-gradient(circle at 80% 0, #333, #000)';
+theme_sipaui.mainFill= 'rgba(255,255,255, .1)'; // coll de droite + Filter à gauche
+theme_sipaui.mainBorder= 'none';
+theme_sipaui.barFill= 'rgba(0,0,0, 1)'; // onglets coll de droite
+theme_sipaui.mainTextFace='Arial, Helvetica, sans-serif';
+theme_sipaui.mainTextSize='16';
+theme_sipaui.inputFill= 'transparent';
+theme_sipaui.barSelectedColor= '#fff'; // onglets coll de droite
+theme_sipaui.mainTextColor= '#fff';
+theme_sipaui.dimmedTextColor= 'rgba(255,255,255, .7)';
+theme_sipaui.highlightColor= '#000';
 theme_sipaui.brand= {
-    background: 'radial-gradient(circle at 35% 10%, #be0030, #6e0030)'
+    background: 'radial-gradient(circle at 100% 100%, #be0030, #6e0030)'
 };
 
 // Option defaults:
@@ -26,12 +31,12 @@ setOptions({
      * name to display in the top left corner
      * @type {String}
      */
-    name: 'Sipa UI',
+    name: 'SipaUI',
     /**
      * URL for name in top left corner to link to
      * @type {String}
      */
-    url: '#',
+    url: '/',
     /**
      * show story component as full screen
      * @type {Boolean}
