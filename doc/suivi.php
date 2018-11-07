@@ -65,7 +65,7 @@
                     </li>
                     <li class="row">
                 	    <div class="cell"><span class="version">0.3.0</span></div>
-                	    <div class="cell">Bouton radio, checkbox, select simple.</div>
+                	    <div class="cell">Bouton radio, checkbox, select simple, marges.</div>
                     </li>
                 	<li class="row">
                 	    <div class="cell"><span class="version">0.4.0</span></div>
