@@ -1,12 +1,24 @@
 import { configure } from '@storybook/vue';
 import { setOptions } from '@storybook/addon-options';
 import { configureViewport } from '@storybook/addon-viewport';
+import { themes } from '@storybook/components';
 
 import Vue from 'vue';
 import Vuex from 'vuex'; // Vue plugins
 
 // Install Vue plugins.
 Vue.use(Vuex);
+
+var theme_sipaui = themes.dark;
+theme_sipaui.mainBackground= 'radial-gradient(circle at 35% 10%, #be0030, #6e0030)';
+theme_sipaui.barFill= 'radial-gradient(circle at 35% 10%, #be0030, #6e0030)'; // coll de droite
+theme_sipaui.mainFill= 'rgba(255,255,255,0.1)'; // coll de droite
+theme_sipaui.barSelectedColor= '#dedede';
+theme_sipaui.dimmedTextColor= '#dedede';
+theme_sipaui.mainTextColor= '#dedede';
+theme_sipaui.brand= {
+    background: 'radial-gradient(circle at 35% 10%, #be0030, #6e0030)'
+};
 
 // Option defaults:
 setOptions({
@@ -83,6 +95,7 @@ setOptions({
      * @type {Boolean}
      */
     enableShortcuts: false, // true by default
+    theme: themes.dark,
 });
 
 configure(() => require('../build/storybook/stories'), module);
