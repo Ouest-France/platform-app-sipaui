@@ -6,7 +6,7 @@ Les boutons indiquent à l'utilisateur une action qui est accessible par le tap 
 
 Les boutons rendent les actions visibles et permettent aux utilisateurs d'effectuer une action. Par exemple, utilisez un bouton pour permettre aux utilisateurs de souscrire à un abonnement.
 
-## Types de Boutons
+## Types de boutons
 
 ### Bouton primaire
 
@@ -16,7 +16,7 @@ Le bouton principal, sur fond de couleur, met en évidence une action importante
 Enable | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
 ![button__primary](design/button__primary.png) !!!à modifier!!!| ![button__primary__hover](src/components/button/design/button-primary-hover.png) !!!à modifier!!! | ![button__primary__hover](src/components/button/design/button-primary-hover.png) !!!à modifier!!!
-Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Largeur : minimum 140px et padding 20px  <br> Border radius : 3px  <br> Couleur : rouge principal #E2001A   <br>  Border radius : 3px  <br> Texte : 16px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> - <br> - <br> - <br> Texte : #B40015 | Opacité : 40 %
+Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Largeur : minimum 140px et padding 20px  <br> Contour : angle 3px  <br> Couleur : rouge principal #E2001A   <br>  Contour : angle 3px  <br> Texte : 16px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> - <br> - <br> - <br> Texte : #B40015 | Opacité : 40 %
 
 
 #### Cas spécifiques
@@ -38,7 +38,7 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
   Enable | Hover / Focus / Pressed | Inactif
   ------------ | ------------- | ------------- |
   ![A](src/components/button/design/a.png) !!!à modifier!!!| ![A](src/components/button/design/a.png) !!!à modifier!!! | ![A](src/components/button/design/a.png) !!!à modifier!!!
-  Hauteur : 34px  <br> Largeur : minimum ???px 100 et padding 15px  <br> Border radius : 3px  <br> Couleur : rouge principal #E2001A ou #333333 ?   <br> Texte : 14px, regular, police du thème, #E2001A ou #333333 ? | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
+  Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : angle 3px <br> Couleur : rouge principal #E2001A <br> Texte : 14px, regular, police du thème, #FFFFFF | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
 
 
 **Bouton primaire, contexte Abonnement**
@@ -70,7 +70,7 @@ Le bouton secondaire transparent avec un cadre fin est utilisé pour des actions
 Enable | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
 ![A](design/su-button_su-secondary_hover.png) !!!à modifier!!!| ![A](design/su-button_su-secondary_hover.png) !!!à modifier!!! | ![A](design/su-button_su-secondary_hover.png) !!!à modifier!!!
-Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Border radius : 3px  <br> Couleur : rouge principal #E2001A ou #333333 ? et transparent  <br> Texte : 16px, regular, police du thème, #E2001A ou #333333 ? | - <br> - <br> Couleur :  <br> Texte : #B40015 | Opacité : 40 %
+Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Contour : angle 3px <br> Couleur : rouge principal #E2001A et transparent  <br> Texte : 16px, regular, police du thème, #E2001A | - <br> - <br> - <br> Couleur :  <br> Texte : #B40015 | Opacité : 40 %
 
 
 #### Cas spécifique
@@ -82,9 +82,9 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
 Enable | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
 ![A](src/components/button/design/a.png) !!!à modifier!!!| ![A](src/components/button/design/a.png) !!!à modifier!!! | ![A](src/components/button/design/a.png) !!!à modifier!!!
-Hauteur : 34px  <br> Largeur : minimum ???px et padding 15px  <br> Border radius : 3px  <br> Couleur : rouge principal #E2001A ou #333333 ?   <br> Texte : 14px, regular, police du thème, #E2001A ou #333333 ? | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
+Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : épaisseur 1px, angle 3px <br> Couleur : rouge principal #E2001A <br> Texte : 14px, regular, police du thème, #E2001A | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
 
-## Règles ou Bonnes pratiques ou recommendations ???
+## Bonnes pratiques
 
 - La 1re lettre du bouton est en majuscule, le reste est en minuscule.
 - Le texte du bouton est limité à une ligne.
@@ -96,7 +96,7 @@ Hauteur : 34px  <br> Largeur : minimum ???px et padding 15px  <br> Border radius
   ![Rectangle vert](design/rectangle-vert.png) **Do** Utiliser un texte simple | ![Rectangle rouge](design/rectangle-rouge.png) **Don't** Ne pas surcharger le texte
 
 
-- Lorsque vous utilisez un bouton primaire et un bouton secondaire, le bouton primaire doit être placé à gauche. Une exeption s'applique dans le cas d'écran séquentiel, le bouton primaire est à droite.
+- Lorsque vous utilisez un bouton primaire et un bouton secondaire, le bouton primaire doit être placé à gauche. Une exception s'applique dans le cas d'écran séquentiel, le bouton primaire est à droite.
 image + petit Decouvrez toutes nos offres... Do/ don't
 
 ![Image_button_sequentiel](design/Image_button_sequentiel.png)
@@ -121,7 +121,6 @@ image + petit Decouvrez toutes nos offres... Do/ don't
 ## Autres composants
 - Liens
 - Boutons avec un picto
-- Boutons avec un picto et du texte
 - Floating action buttons
 - “ Voir plus “
 - " Lire la suite + "

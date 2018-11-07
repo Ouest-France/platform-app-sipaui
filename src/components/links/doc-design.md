@@ -1,75 +1,54 @@
 # Links/liens
 
-## Lien éditorial
+## Lien
 
-Un lien éditorial permet d'atteindre un autre endroit de la page, une autre page ou un autre site.
-À la différence d’un lien standard, il se trouve parmi un bloc de texte.
+Un lien permet à l'utilisateur d'atteindre un autre endroit de la page, une autre page, un autre site ou un document non web.
 
-### Spécifications
-#### Design
+## Usage
 
-- Police du texte
-- Taille du texte
-- Graisse du texte
-- Enable : #E2001A
-- Hover / Focus / Pressed : l’ensemble du lien est souligné et la couleur est #B40015
+Les liens rendent les actions visibles et permettent aux utilisateurs d'effectuer une action. Par exemple dans un article, un lien permet d'ouvrir un autre article.
 
-!!!image!!! Don’t : ne pas mettre un texte en rouge souligné pour le mettre en évidence
-- Ne pas avoir le même nom pour différents liens.
+## Types de liens
+### Lien bouton
+L'action d'un lien bouton est mineure par rapport aux boutons primaires et secondaires.
 
-### Bonnes pratiques
-#### Contenu
+Enable | Hover / Focus / Pressed | Inactif
+------------ | ------------- | ------------- |
+image | image | image
+Hauteur : 44px  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère : 16px <br> Graisse : bold <br> Police du thème | - <br> - <br> Couleur : #B40015  <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 | Opacité : 40 %
+
+Contrairement aux boutons primaires et secondaires, le lien bouton ne présente pas de padding et sa largeur minimale n'est pas définie.
+
+### Lien éditorial
+Un lien éditorial se trouve parmi un bloc de texte. Il apporte une information supplémentaire.
+
+Enable | Hover / Focus / Pressed
+------------ | ------------- |
+image | image
+Hauteur du texte  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
+
+## Bonnes pratiques
+### Comportement
+- Si l'action modifie des données, utiliser un bouton.
+!!!2 images!!! Do/don't Abonnement Je valide
+- Do !!!image!!! France 3 Auvergne Rhône Alpes. Lorsque le lien dirige vers un autre site, l'indiquer à l'utilisateur.
+
+### Contenu
 
 - Mettre le minimum de texte tout en expliquant clairement ce qui se passe lorsque ce lien est activé.
+- Évitez les termes génériques tels que «Cliquez ici», «Ici», «En savoir plus» ou l'adresse Web qui ne fournissent pas d'information aux utilisateurs sur le contenu du lien.
+- Sur une même page, mettre des noms distincts pour des liens différents.
+#### Lien bouton
+- La 1re lettre du lien est en majuscule, le reste est en minuscule.
+- Le texte du lien doit être uniquement sur une seule ligne.
+#### Lien éditorial
 - Commencer par les mots-clés.
 - Il est conseillé que le lien n’ait pas plus de 10 mots pour une meilleure performance.
 - Le texte du lien doit être similaire au titre de la page qu'il ouvre.
-- Évitez le terme génériques tels que «Cliquez ici», «Ici», «En savoir plus» ou l'adresse Web qui ne fournissent pas d'information aux utilisateurs sur le contenu qu'ils trouveront en cliquant sur ce lien.
-- Sur une même page, pas mettre le même nom pour des liens différents.
+- Ne pas mettre le même nom pour différents liens.
+- !!!image!!! Don’t : ne pas mettre un texte en rouge souligné pour le mettre en évidence
 
-#### Comportement
-
-- Si le lien ouvre un document non web par ex : pdf, ouvrir un nouvel onglet dans le même navigateur.
-- Indiquer si l'utilisateur est dirigé vers un autre site.
-
-!!!image!!! France 3 Auvergne Rhône Alpes
-
-
-## Lien bouton
-
-Un lien bouton permet d'atteindre un autre endroit de la page, une autre page ou un autre site. Son action est mineure par rapport à un bouton.
-
-### Spécifications
-
-- Hauteur : 44px
-- Largeur du texte
-- Police du thème
-- Taille de caractère : 16px
-- Graisse : bold
-- Enable : #E2001A
-- Hover / Focus / Pressed : l’ensemble du lien est souligné et la couleur est #B40015
-
-!!!2 images!!! lien enable et lien focus
-
-### Bonnes pratiques
-#### Contenu
-
-- La 1re lettre du lien est en majuscule, le reste est en minuscule.
-- Le texte du lien doit être uniquement sur une seule ligne.
-- Mettre le minimum de texte tout en expliquant clairement ce qui se passe lorsque ce lien est activé.
-- Évitez le terme génériques tels que «Cliquez ici», «Ici», «En savoir plus» ou l'adresse Web qui ne fournissent pas d'information aux utilisateurs sur le contenu qu'ils trouveront en cliquant sur ce lien.
-- Ne pas mettre le même nom pour des liens différents.
-
-#### Comportement
-
-- Indiquer si l'utilisateur est dirigé vers un autre site.
-- Si l'action modifie des données, utiliser un bouton.
-
-!!!2 images!!! Do/don't Abonnement Je valide
-
-### Autres composants
-- Lien éditorial
-- Retour
+## Autres composants
 - Titre avec chevron
 - Lien blank
 - Lien download
