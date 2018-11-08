@@ -1,20 +1,21 @@
 # Text field/champs de texte
 
-Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés (ie : le mot de passe) sont développés spécifiquement.
+Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés (ie&nbsp;: le mot de passe) sont développés spécifiquement.
 
+<p style="color: red;">!!&nbsp;ATTENTION&nbsp;: la police d’icône n’est pas encore intégrée à SipaUI. Par conséquent, le text-field avec icône n’est pas présenté. Pour la même raison, le message d’erreur n’est pas confrome.&nbsp;!!</p>
 <!-- STORY -->
 
 ## Input text
 
 
 ### Standard
-Input standard avec le texte expliquant qu'il est facultatif et un placeholder. Le style est appliqué par défaut sur les inputs dans un site SipaUI. Il est possible de forcer cet affichage avec la classe `su-input-text`.
+Input standard avec le texte expliquant qu'il est facultatif et un placeholder. Le style est appliqué par défaut sur les inputs dans un site SipaUI. Il est possible de forcer cet affichage avec la classe `su-input-text`. Pour le texte en complément dans le label, utiliser la classe `su-label-complement`
 
 ```html
-<label for="input1">Label <span class="su-label-garnish">(facultatif)</span></label>
+<label for="input1">Label<span class="su-label-complement"> (facultatif)</span></label>
 <input id="input1" type="text" placeholder="Placeholder">
 ```
-<label for="input1">Label <span class="su-label-garnish">(facultatif)</span></label><input id="input1" type="text" placeholder="Placeholder">
+<label for="input1">Label<span class="su-label-complement"> (facultatif)</span></label><input id="input1" type="text" placeholder="Placeholder">
 
 ### Prérempli
 Input standard prérempli.

@@ -1,12 +1,12 @@
 # Text field/champs de texte
 
-Les champs de texte permettent à l'utilisateur de saisir et de modifier du texte. Il se trouve généralement dans un formulaire.
+Les champs de texte permettent à l'utilisateur de saisir et de modifier du texte. Ils se trouvent généralement dans un formulaire. Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés, comme le mot de passe sont des composants spécifiques.
 
 
 ## États
 
 Type | Simple
------------- | ------------- | ------------- | ------------- |
+------------ | ------------- |
 **Default** | text-field-default design/text-field-default.png
 **Focus** | text-field-focus design/text-field-focus.png
 **With default value** |  text-field-with-default-value design/text-field-with-default-value.png
@@ -21,30 +21,31 @@ Type | Simple
 - Il doit être court, précis et entièrement visible sur une seule ligne.
 
 **!!! image !!!** don't entrée, tour, bâtiment, immeuble, résidence
-- Taille de caractère : 14px ou 16 ?
+- Taille de caractère : 14px
 - Graisse de caractère
   - Texte standard : bold
-  - Texte d'aide ou "facultatif" : régular
+  - Texte d'aide ou «&nbsp;facultatif&nbsp;» : régular
 - Police du thème
 - Couleur : #333333
+- Margin bottom : 2px
 - Champs obligatoires/facultatifs
   - Par défaut, tous les champs sont obligatoires.
-  - “facultatif” est précisé entre parenthèse suite au label.
+  - «&nbsp;facultatif&nbsp;» est précisé entre parenthèse suite au label.
 
 **!!! image !!!** des champs obligatoires et 1 facultatif
 
 #### Container
 - Un container indique à l'utilisateur où saisir l'information.
 - Il est aligné à gauche avec le label.
-- Padding bottom : 2px sous le label
 - Hauteur : 44px
 - Largeur : celle son parent moins le padding de celui-ci
 - Largueur minimale : 140px
-- Couleur par défaut : #FAFAFA
-- Couleur en focus et press : #FFFFFF
-- Présente un contour
+- Couleur de fond&nbsp;:
+  - Par défaut : #FAFAFA
+  - En focus et actif : #FFFFFF
+- Contour&nbsp;:
   - Couleur par défaut : #D4D4D4
-  - Couleur en focus et press : #878787
+  - Couleur en focus et actif : #878787
   - Épaisseur : 1px
 
 #### Texte
