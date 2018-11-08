@@ -8,6 +8,15 @@
 	html * {
     	box-sizing: content-box;
 	}
+	.css-1e1vreg, /* Colonne centrale contenant la preview */
+	.css-1929wko { /* Colonne droite contenant les actions */
+    	padding: 0 !important;
+	}
+
+    .Resizer.vertical::after {
+        border-color: rgba(255,255,255, .5) !important;
+    }
+
 	.css-ypfoxr { /* col gauche -> zone marque */
 	    text-transform: none !important;
 	}
@@ -21,5 +30,22 @@
 	}
 	.css-tg6jhz:hover { /* col gauche -> élément sélectionné */
 	    color: inherit !important;
+	}
+
+	.css-o46hsw { /* col droite -> élément sélectionné */
+    	padding: 10px !important;
+    	background: none !important;
+	}
+	.css-1fw2m0f { /* col droite -> boutons en bas à droite */
+    	border: 1px solid #ddd !important;
+    	border-radius: 3px !important;
+    	color: #ddd !important;
+    	transition: all ease-out .2s;
+    	cursor: pointer !important;
+	}
+	.css-1fw2m0f:hover { /* col droite -> boutons en bas à droite */
+    	background: #000 !important;
+    	color: #fff !important;
+    	border-color: #fff !important;
 	}
 </style>
