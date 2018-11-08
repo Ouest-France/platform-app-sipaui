@@ -15,7 +15,7 @@ Le bouton principal, sur fond de couleur, met en évidence une action importante
 
 Enable | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
-![button__primary](design/button__primary.png) !!!à modifier!!!| ![button__primary__hover](src/components/button/design/button-primary-hover.png) !!!à modifier!!! | ![button__primary__hover](src/components/button/design/button-primary-hover.png) !!!à modifier!!!
+![button__primary](design/button__primary.png) !!!à modifier!!!| ![button__primary__hover](design/button-primary-hover.png) !!!à modifier!!! | ![button__primary__hover](design/button-primary-hover.png) !!!à modifier!!!
 Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Largeur : minimum 140px et padding 20px  <br> Contour : angle 3px  <br> Couleur : rouge principal #E2001A   <br>  Contour : angle 3px  <br> Texte : 16px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> - <br> - <br> - <br> Texte : #B40015 | Opacité : 40 %
 
 
@@ -37,7 +37,7 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
 
   Enable | Hover / Focus / Pressed | Inactif
   ------------ | ------------- | ------------- |
-  ![A](src/components/button/design/a.png) !!!à modifier!!!| ![A](src/components/button/design/a.png) !!!à modifier!!! | ![A](src/components/button/design/a.png) !!!à modifier!!!
+  ![A](design/a.png) !!!à modifier!!!| ![A](design/a.png) !!!à modifier!!! | ![A](design/a.png) !!!à modifier!!!
   Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : angle 3px <br> Couleur : rouge principal #E2001A <br> Texte : 14px, regular, police du thème, #FFFFFF | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
 
 
@@ -81,7 +81,7 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
 
 Enable | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
-![A](src/components/button/design/a.png) !!!à modifier!!!| ![A](src/components/button/design/a.png) !!!à modifier!!! | ![A](src/components/button/design/a.png) !!!à modifier!!!
+![A](design/a.png) !!!à modifier!!!| ![A](design/a.png) !!!à modifier!!! | ![A](design/a.png) !!!à modifier!!!
 Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : épaisseur 1px, angle 3px <br> Couleur : rouge principal #E2001A <br> Texte : 14px, regular, police du thème, #E2001A | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
 
 ## Bonnes pratiques
