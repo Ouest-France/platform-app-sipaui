@@ -4,7 +4,7 @@
 */
 @import "variables";
 
-$inputTextBase: 'input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"], textarea, .su-input-text';
+$inputTextBase: 'input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"], textarea, .su-input-text, .su-textarea';
 $inputTextPlus: $inputTextBase + ', input[type="date"]' ;
 
 
@@ -12,7 +12,7 @@ body {
     input,
     textarea,
     select,
-    .input-text {
+    .su-input-text {
         font-size: $font-size-base;
 
     }
@@ -23,7 +23,7 @@ body {
         font-weight: $font-weight-label;
         margin-bottom: $margin-bottom-label;
 
-        .su-label-garnish {
+        .su-label-complement {
             font-weight: $font-weight-thin;
         }
     }
@@ -58,40 +58,28 @@ body {
             }
         }
     }
-    textarea {
+    textarea,
+    .su-textarea {
         padding: 10px 15px;
         min-height: 68px;
     }
 
     // Erreurs
+    .su-error-message {
+        display: none;
+        font-size: $font-size-error;
+        color: $color-error;
+    }
+
+    .su-error {
         .su-error-message {
-            display: none;
-            font-size: $font-size-error;
-            color: $color-error;
+            display: block;
         }
 
-        .su-error {
-            .su-error-message {
-                display: block;
-            }
-
-            #{$inputTextPlus} {
-                border: $border-input-error;
-            }
+        #{$inputTextPlus} {
+            border: $border-input-error;
         }
-/*
-        &.input-error {
-            background-color: $formulaire-erreurs;
-            border-top-color: $formulaire-erreurs;
-            border-left-color: $formulaire-erreurs;
-            border-right-color: $formulaire-erreurs;
-            border-bottom-color: $formulaire-erreurs-fonce;
-            &:focus {
-                background-color: $formulaire-erreurs;
-            }
-        }
-*/
-
+    }
 }
 
 
