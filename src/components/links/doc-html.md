@@ -8,9 +8,9 @@ Comme le prévoit le HTML, les liens ont 4 états&nbsp;: **normal** (/ ou *link*
 
 ## Lien éditorial
 
-Le lien éditorial est le **lien intégré dans du contenu textuel** (article ou tout autre texte). À ce titre, sa police, sa taille, sa graisse sont dépendants du texte dans lequel il est inclus.
+Le lien éditorial s'intégrant dans du contenu textuel sa police, sa taille, sa graisse sont dépendants du texte dans lequel il est inclus.
 
-Ce lien est le lien par défaut pour toute balise `<a>` dans un site utilisant SipaUI. Il peut être forcé sur un bloc de texte ayant la classe `su-editorial` ou sur un lien ayant la classe `su-link`.
+Ce lien est le lien par défaut pour toute balise `<a>` dans un site utilisant SipaUI. Il peut être forcé en intégrant la classe `su-editorial` sur un bloc parent ou la classe `su-link` directement sur un lien.
 
 ### Version avec la classe `su-editorial` sur un parent
 ```html
@@ -31,14 +31,18 @@ Ce lien est le lien par défaut pour toute balise `<a>` dans un site utilisant S
 
 ## Lien bouton
 
-Le lien bouton sert pour un **lien isolé qui a une fonctionnalité proche du bouton, sans en avoir le poids** (ie&nbsp;: un lien «&nbsp;Créer un compte&nbsp;» dans un formulaire de connexion). Il ne peut donc être inclus dans un texte.
-
 Utiliser la classe `su-link-button`.
 
-### Version avec la classe `su-link`
+### Version standard
 ```html
 <a href="javascript:;" class="su-link-button">Lien bouton SipaUI</a>
 ```
 <a href="javascript:;" class="su-link-button">Lien bouton SipaUI</a>
+
+### Version inactive
+```html
+<a href="javascript:;" class="su-link-button su-disabled">Lien bouton SipaUI</a>
+```
+<a href="javascript:;" class="su-link-button su-disabled">Lien bouton SipaUI</a>
 
 

@@ -1,7 +1,5 @@
 # Links/liens
 
-## Lien
-
 Un lien permet à l'utilisateur d'atteindre un autre endroit de la page, une autre page, un autre site ou un document non web.
 
 ## Usage
@@ -9,8 +7,16 @@ Un lien permet à l'utilisateur d'atteindre un autre endroit de la page, une aut
 Les liens rendent les actions visibles et permettent aux utilisateurs d'effectuer une action. Par exemple dans un article, un lien permet d'ouvrir un autre article.
 
 ## Types de liens
+### Lien éditorial
+Un lien éditorial se trouve **parmi un bloc de texte** (article…). Il apporte une information supplémentaire.
+
+Enable | Hover / Focus / Pressed
+------------ | ------------- |
+image | image
+Hauteur du texte  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
+
 ### Lien bouton
-L'action d'un lien bouton est mineure par rapport aux boutons primaires et secondaires.
+Un «&nbsp;lien bouton&nbsp;» se positionne comme un bouton mais a l’apparence d’un lien. Son action est mineure par rapport aux boutons primaires et secondaires. Un tel lien ne peut donc pas être inclus dans du texte.
 
 Enable | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
@@ -18,14 +24,6 @@ image | image | image
 Hauteur : 44px  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère : 16px <br> Graisse : bold <br> Police du thème | - <br> - <br> Couleur : #B40015  <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 | Opacité : 40 %
 
 Contrairement aux boutons primaires et secondaires, le lien bouton ne présente pas de padding et sa largeur minimale n'est pas définie.
-
-### Lien éditorial
-Un lien éditorial se trouve parmi un bloc de texte. Il apporte une information supplémentaire.
-
-Enable | Hover / Focus / Pressed
------------- | ------------- |
-image | image
-Hauteur du texte  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
 
 ## Bonnes pratiques
 ### Comportement
