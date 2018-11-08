@@ -67,14 +67,33 @@ gulp.task("copy-storybook", ["clean"], function() {
         .pipe(gulp.dest(build + '/storybook'));
 });
 
-gulp.task("loader-storybook", ["clean", "copy-storybook"], function() {
+gulp.task("copy-stories", ["clean", "copy-storybook"], function() {
+    return gulp.src(['src/components/**/*'])
+        .pipe(gulp.dest('dist/components'));
+});
+
+gulp.task("build-stories", ["clean", "copy-storybook", "copy-stories"], function() {
+    var components = fs.readdirSync('dist/components/', {withFileTypes: true})
+        .filter(dirent => dirent.isDirectory())
+        .forEach(dirent => {
+
+
+            return gulp.src('dist/components/' + dirent.name + '/**/*.md')
+                .pipe(replace(/\]\((design\/[^.]+\..{3,4})\)/g, '](components/' + dirent.name + '/$1)'))
+                .pipe(gulp.dest('dist/components/' + dirent.name));
+
+        });
+    ;
+});
+
+gulp.task("loader-storybook", ["clean", "build-stories"], function() {
     var components = fs.readdirSync('src/components/', {withFileTypes: true})
         .filter(dirent => dirent.isDirectory())
         .map(dirent => dirent.name)
 
     var imports = components.map(component =>
         ['design', 'html', 'vuejs']
-            .map(type => 'import doc_' + type + '_' + component.replace('-', '_') + ' from \'../../../src/components/' + component + '/doc-' + type + '.md\';')
+            .map(type => 'import doc_' + type + '_' + component.replace('-', '_') + ' from \'../../../dist/components/' + component + '/doc-' + type + '.md\';')
             .join(`
 `)
         )
