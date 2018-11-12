@@ -15,8 +15,8 @@ Le bouton principal, sur fond de couleur, met en évidence une action importante
 
 Enable | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
-![button__primary](design/button__primary.png) !!!à modifier!!!| ![button__primary__hover](design/button-primary-hover.png) !!!à modifier!!! | ![button__primary__hover](design/button-primary-hover.png) !!!à modifier!!!
-Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Largeur : minimum 140px et padding 20px  <br> Contour : angle 3px  <br> Couleur : rouge principal #E2001A   <br>  Contour : angle 3px  <br> Texte : 16px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> - <br> - <br> - <br> Texte : #B40015 | Opacité : 40 %
+![button__primary__enabled](design/button__primary__enabled.png)| ![button__primary__hover](design/button__primary__hover.png)| ![button__primary__disabled](design/button__primary__disabled.png)
+Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Largeur : minimum 140px et padding 20px  <br> Contour : angle 3px  <br> Couleur : #E2001A   <br>  Contour : angle 3px  <br> Texte : 16px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> - <br> - <br> - <br> Texte : #B40015 | Opacité : 40 %
 
 
 #### Cas spécifiques
@@ -37,8 +37,8 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
 
   Enable | Hover / Focus / Pressed | Inactif
   ------------ | ------------- | ------------- |
-  ![A](design/a.png) !!!à modifier!!!| ![A](design/a.png) !!!à modifier!!! | ![A](design/a.png) !!!à modifier!!!
-  Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : angle 3px <br> Couleur : rouge principal #E2001A <br> Texte : 14px, regular, police du thème, #FFFFFF | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
+  ![button__primary__small__enabled](design/button__primary__small__enabled.png)|![A](design/a.png) !!!à modifier!!! | ![A](design/a.png) !!!à modifier!!!
+  Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : angle 3px <br> Couleur : #E2001A <br> Texte : 14px, regular, police du thème, #FFFFFF | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
 
 
 **Bouton primaire, contexte Abonnement**
@@ -48,7 +48,7 @@ Dans un contexte Abonnment, la couleur de fond du bouton primaire devient #FFCC3
 
   Enable | Hover / Focus / Pressed
   ------------ | -------------
-![su-button_su-premium](design/su-button_su-premium.png) !!!à modifier!!!|   ![su-button_su-premium_hover](design/su-button_su-premium_hover.png) !!!à modifier!!!
+![button__primary__abo__enabled](design/button__primary__abo__enabled.png)|   ![su-button_su-premium_hover](design/su-button_su-premium_hover.png) !!!à modifier!!!
 Couleur : #FFCC33 |  Couleur : #E7AF07
 
 
@@ -70,7 +70,7 @@ Le bouton secondaire transparent avec un cadre fin est utilisé pour des actions
 Enable | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
 ![A](design/su-button_su-secondary_hover.png) !!!à modifier!!!| ![A](design/su-button_su-secondary_hover.png) !!!à modifier!!! | ![A](design/su-button_su-secondary_hover.png) !!!à modifier!!!
-Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Contour : angle 3px <br> Couleur : rouge principal #E2001A et transparent  <br> Texte : 16px, regular, police du thème, #E2001A | - <br> - <br> - <br> Couleur :  <br> Texte : #B40015 | Opacité : 40 %
+Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Contour : angle 3px <br> Couleur : #333333 et transparent  <br> Texte : 16px, regular, police du thème, #E2001A | - <br> - <br> - <br> Couleur :  <br> Texte : #B40015 | Opacité : 40 %
 
 
 #### Cas spécifique
@@ -82,7 +82,7 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
 Enable | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
 ![A](design/a.png) !!!à modifier!!!| ![A](design/a.png) !!!à modifier!!! | ![A](design/a.png) !!!à modifier!!!
-Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : épaisseur 1px, angle 3px <br> Couleur : rouge principal #E2001A <br> Texte : 14px, regular, police du thème, #E2001A | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
+Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : épaisseur 1px, angle 3px <br> Couleur : rouge principal #333333 <br> Texte : 14px, regular, police du thème, #E2001A | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
 
 ## Bonnes pratiques
 
