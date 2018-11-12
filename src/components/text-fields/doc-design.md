@@ -76,7 +76,7 @@ Type | Simple
 - Couleur : #878787
 - Cas particulier : la croix
  - Une croix permet la suppression totale et directe d'un champ.
- - Elle apparait uniquement dans un champ focus et pré-saisi.
+ - Elle est présente lorsque l’input est en focus et qu'un contenu est présent.
 
 ## Gestion des erreurs
 - Un champ est défini comme ko lorsque le texte n'est pas correct ou est absent.
