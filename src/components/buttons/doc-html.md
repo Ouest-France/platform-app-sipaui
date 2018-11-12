@@ -6,6 +6,8 @@ Un bouton a besoin d’**au moins 2 classes**&nbsp;: `su-button` pour appliquer 
 
 Les *classes* de bouton peuvent être appliquées indifférement sur des `<buttons>`, des `<input type="button">` ou des `<a>`.
 
+<a href="#liste-classes" target="_self" class="su-link">&gt;&nbsp;Liste des classes disponibles</a>
+
 <!-- STORY -->
 
 ## Types de boutons
@@ -63,3 +65,18 @@ L’aspect inactif peut être porté par la classe `su-disabled` ou par l’attr
 <button class="su-button su-primary su-fullwidth-mobile">Bouton pleine largeur mobile</button>
 ```
 <button class="su-button su-primary su-fullwidth-mobile">Bouton pleine largeur mobile</button>
+
+<div id="liste-classes">
+
+## Liste des classes disponibles
+- `su-button`
+- `su-primary`
+- `su-secondary`
+- `su-subscription`
+- `su-premium`
+- `su-small`
+- `su-fullwidth`
+- `su-fullwidth-mobile`
+- `su-disabled`
+
+</div>
