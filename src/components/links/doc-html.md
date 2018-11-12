@@ -4,6 +4,8 @@ SipaUI propose 2 types de liens&nbsp;: les **liens éditoriaux** et les **liens 
 
 Comme le prévoit le HTML, les liens ont 4 états&nbsp;: **normal** (/ ou *link*), **survolé** (*hover*), **cliqué** (*active*) et avec **focus** (*focus*). Toutefois, la charte Ouest-France assigne la même apparence aux états *survolé*, *cliqué*, et avec *focus*.
 
+<a href="#liste-classes" target="_self" class="su-link">&gt;&nbsp;Liste des classes disponibles</a>
+
 <!-- STORY -->
 
 ## Lien éditorial
@@ -45,4 +47,12 @@ Utiliser la classe `su-link-button`.
 ```
 <a href="javascript:;" class="su-link-button su-disabled">Lien bouton SipaUI</a>
 
+<div id="liste-classes">
 
+## Liste des classes disponibles
+- `su-editorial`
+- `su-link` (si besoin de surcharge)
+- `su-link-button`
+- `su-disabled`
+
+</div>
