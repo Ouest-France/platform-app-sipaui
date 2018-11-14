@@ -2,8 +2,6 @@
 
 Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés (ie&nbsp;: le mot de passe) sont développés spécifiquement.
 
-<p style="color: red;">!!&nbsp;ATTENTION&nbsp;: la police d’icône n’est pas encore intégrée à SipaUI. Par conséquent, le text-field avec icône n’est pas présenté. Pour la même raison, le message d’erreur n’est pas confrome.&nbsp;!!</p>
-
 <a href="#liste-classes" target="_self" class="su-link">&gt;&nbsp;Liste des classes disponibles</a>
 
 <!-- STORY -->
@@ -43,10 +41,10 @@ Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a 
 <div class="su-error">
 	<label for="input4">Label</label>
 	<input id="input4" type="email" value="Jacques Cartier">
-	<div class="su-error-message">Message d’erreur</div>
+	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 ```
-<div class="su-error"><label for="input4">Label</label><input id="input4" type="email" value="Jacques Cartier"><div class="su-error-message">Message d’erreur</div></div>
+<div class="su-error"><label for="input4">Label</label><input id="input4" type="email" value="Jacques Cartier"><div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div></div>
 
 ## Textarea
 Textarea standard. Il est possible de forcer cet affichage avec la classe `su-textarea`.
