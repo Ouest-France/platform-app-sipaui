@@ -1,26 +1,72 @@
-# icons
+# Icons/icones
 
-Description.
+Catalogue des icônes disponibles dans la fonte *su-icons*.
 
 
 <!-- STORY -->
 
-## Exemples
-
-- specification 1
+## Exemple
 ```html
-<icons class="su-icons basic">SipaUi icons</icons>
+<span class="su-icon-alert"></span>
 ```
-<icons class="su-icons basic">SipaUi icons</icons>
+<span class="su-icon-alert"></span>
 
-- specification 2
-```html
-<icons class="su-icons basic">SipaUi icons</icons>
-```
-<icons class="su-icons basic">SipaUi icons</icons>
+## Catalogue
 
-- specification 3
-```html
-<icons class="su-icons basic">SipaUi icons</icons>
-```
-<icons class="su-icons basic">SipaUi icons</icons>
+
+<div class="catalogue">
+	<div class="icone">
+		<h3>Alerte</h3>
+		<code>su-icon-alert</code>
+		<div style="font-size: 16px"><span class="su-icon-alert"></span></div>
+		<div style="font-size: 32px"><span class="su-icon-alert"></span></div>
+	</div>
+	<div class="icone">
+		<h3>Alerte</h3>
+		<code>su-icon-alert</code>
+		<div style="font-size: 16px"><span class="su-icon-alert"></span></div>
+		<div style="font-size: 32px"><span class="su-icon-alert"></span></div>
+	</div>
+	<div class="icone">
+		<h3>Alerte</h3>
+		<code>su-icon-alert</code>
+		<div style="font-size: 16px"><span class="su-icon-alert"></span></div>
+		<div style="font-size: 32px"><span class="su-icon-alert"></span></div>
+	</div>
+	<div class="icone">
+		<h3>Alerte</h3>
+		<code>su-icon-alert</code>
+		<div style="font-size: 16px"><span class="su-icon-alert"></span></div>
+		<div style="font-size: 32px"><span class="su-icon-alert"></span></div>
+	</div>
+	<div class="icone">
+		<h3>Alerte</h3>
+		<code>su-icon-alert</code>
+		<div style="font-size: 16px"><span class="su-icon-alert"></span></div>
+		<div style="font-size: 32px"><span class="su-icon-alert"></span></div>
+	</div>
+	<div class="icone">
+		<h3>Alerte</h3>
+		<code>su-icon-alert</code>
+		<div style="font-size: 16px"><span class="su-icon-alert"></span></div>
+		<div style="font-size: 32px"><span class="su-icon-alert"></span></div>
+	</div>
+	<div class="icone">
+		<h3>Alerte</h3>
+		<code>su-icon-alert</code>
+		<div style="font-size: 16px"><span class="su-icon-alert"></span></div>
+		<div style="font-size: 32px"><span class="su-icon-alert"></span></div>
+	</div>
+	<div class="icone">
+		<h3>Alerte</h3>
+		<code>su-icon-alert</code>
+		<div style="font-size: 16px"><span class="su-icon-alert"></span></div>
+		<div style="font-size: 32px"><span class="su-icon-alert"></span></div>
+	</div>
+	<div class="icone">
+		<h3>Alerte</h3>
+		<code>su-icon-alert</code>
+		<div style="font-size: 16px"><span class="su-icon-alert"></span></div>
+		<div style="font-size: 32px"><span class="su-icon-alert"></span></div>
+	</div>
+</div>
