@@ -65,7 +65,7 @@
                     </li>
                     <li class="row">
                 	    <div class="cell"><span class="version">0.3.0</span></div>
-                	    <div class="cell">Bouton radio, checkbox, select simple, marges.</div>
+                	    <div class="cell">Bouton radio, checkbox, select simple, marges, police d’icônes.</div>
                     </li>
                 	<li class="row">
                 	    <div class="cell"><span class="version">0.4.0</span></div>
@@ -77,7 +77,7 @@
                     </li>
                 	<li class="row">
                 	    <div class="cell"><span class="version">0.6.0</span></div>
-                	    <div class="cell">Stepper, fil d'Ariane, pagination.</div>
+                	    <div class="cell">Stepper, pagination.</div>
                     </li>
                 	<li class="row">
                 	    <div class="cell"><span class="version">0.7.0</span></div>
