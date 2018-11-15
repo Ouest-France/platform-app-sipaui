@@ -26,7 +26,7 @@ Comme le bouton principal, le bouton primaire pleine largeur s'adapte à la larg
 
 **Enable**
 
-![button__primary](design/button__primary.png) !!!à modifier!!!
+![button__primary__full-width](design/button__primary__full-width.png)
 
 
 **Bouton primaire, hauteur 34px**
@@ -37,29 +37,29 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
 
   Enable | Hover / Focus / Pressed | Inactif
   ------------ | ------------- | ------------- |
-  ![button__primary__small__enabled](design/button__primary__small__enabled.png)|![A](design/a.png) !!!à modifier!!! | ![A](design/a.png) !!!à modifier!!!
+  ![button__primary__small__enabled](design/button__primary__small__enabled.png)|![button__primary__small__hover](design/button__primary__small__hover.png)| ![button__primary__small__disabled](design/button__primary__small__disabled.png)
   Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : angle 3px <br> Couleur : #E2001A <br> Texte : 14px, regular, police du thème, #FFFFFF | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
 
 
 **Bouton primaire, contexte Abonnement**
 
-Dans un contexte Abonnment, la couleur de fond du bouton primaire devient #FFCC33.
+Dans un contexte Abonnment, la couleur de fond du bouton primaire devient #FFCC33 et celle du texte #333333.
 
 
   Enable | Hover / Focus / Pressed
   ------------ | -------------
-![button__primary__abo__enabled](design/button__primary__abo__enabled.png)|   ![su-button_su-premium_hover](design/su-button_su-premium_hover.png) !!!à modifier!!!
+![button__primary__subscription__enabled](design/button__primary__subscription__enabled.png)|   ![button__primary__subscription__hover](design/button__primary__subscription__hover.png)
 Couleur : #FFCC33 |  Couleur : #E7AF07
 
 
 **Bouton primaire, contexte Premium**
 
-Dans un contexte Premium, la couleur de fond du bouton primaire devient #DBA504 et celle du texte #333333.
+Dans un contexte Premium, la couleur de fond du bouton primaire devient #DBA504.
 
 
   Enable | Hover / Focus / Pressed
   ------------ | -------------
-![su-button_su-subscription](design/su-button_su-subscription.png) !!!à modifier!!!|   ![su-button-su-subscription-hover](design/su-button-su-subscription-hover.png) !!!à modifier!!!
+![sbutton__primary__premium__enabled](design/button__primary__premium__enabled.png)|   ![button__primary__premium__hover](design/button__primary__premium__hover.png)
 Couleur : #DBA504 |  Couleur : #C2940C
 
 ### Bouton secondaire
@@ -69,7 +69,7 @@ Le bouton secondaire transparent avec un cadre fin est utilisé pour des actions
 
 Enable | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
-![A](design/su-button_su-secondary_hover.png) !!!à modifier!!!| ![A](design/su-button_su-secondary_hover.png) !!!à modifier!!! | ![A](design/su-button_su-secondary_hover.png) !!!à modifier!!!
+![button__secondary__enabled](design/button__secondary__enabled.png)| ![button__secondary__hover](design/button__secondary__hover.png)| ![button__secondary__disabled](design/button__secondary__disabled.png)
 Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Contour : angle 3px <br> Couleur : #333333 et transparent  <br> Texte : 16px, regular, police du thème, #E2001A | - <br> - <br> - <br> Couleur :  <br> Texte : #B40015 | Opacité : 40 %
 
 
@@ -81,7 +81,7 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
 
 Enable | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
-![A](design/a.png) !!!à modifier!!!| ![A](design/a.png) !!!à modifier!!! | ![A](design/a.png) !!!à modifier!!!
+![button__secondary__small__enabled](design/button__secondary__small__enabled.png)| ![button__secondary__small__hover](design/button__secondary__small__hover.png)| ![button__secondary__small__disabled](design/button__secondary__small__disabled.png)
 Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : épaisseur 1px, angle 3px <br> Couleur : rouge principal #333333 <br> Texte : 14px, regular, police du thème, #E2001A | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
 
 ## Bonnes pratiques
@@ -104,8 +104,6 @@ image + petit Decouvrez toutes nos offres... Do/ don't
   ![Rectangle vert](design/rectangle-vert.png) **Do** Mettre le bouton " Retour " à gauche
 
 - Sur un mobile lorsqu’il y a un seul bouton, le mettre en pleine largeur.
-
-!!!image!!!Autre que Abonnement
 
 
 - Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte.
