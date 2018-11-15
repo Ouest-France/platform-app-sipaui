@@ -58,7 +58,7 @@ gulp.task("make-css-prod", ["make-sass"], function() {
 });
 
 gulp.task("make-assets", ["clean"], function() {
-    return gulp.src([source + '/fonts/**/*'])
+    return gulp.src([source + '/core/fonts/**/*'])
         .pipe(gulp.dest(destination + '/fonts'));
 });
 

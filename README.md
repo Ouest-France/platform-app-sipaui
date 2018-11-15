@@ -14,8 +14,7 @@ Publish directory `dist/`
 
 ```
 yarn install
-npx gulp html
-npm run build-storybook
+yarn build
 ```
 
 ---
@@ -26,15 +25,15 @@ npm run build-storybook
 
 ```
 yarn install
-npx gulp watch
-npm run storybook
+yarn watch
+yarn storybook
 ```
 
 ### Add a component
 
 ```
 yarn install
-npm run add-component --name=comp-name
-npx gulp html
+yarn add-component --name=comp-name
+yarn build
 ```
 Then, relaunch Storybook in build or dev mode.
