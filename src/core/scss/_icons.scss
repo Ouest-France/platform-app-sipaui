@@ -26,6 +26,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.su-icon-show2:before {
+  content: "\e904";
+}
+.su-icon-show:before {
+  content: "\e901";
+}
+.su-icon-close:before {
+  content: "\e902";
+}
+.su-icon-calendar:before {
+  content: "\e903";
+}
 .su-icon-alert:before {
   content: "\e900";
 }

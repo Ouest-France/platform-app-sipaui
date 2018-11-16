@@ -9,6 +9,9 @@ $inputTextPlus: $inputTextBase + ', input[type="date"]' ;
 
 
 body {
+    $size-button: 44px;
+    $padding-lateral-input: 15px;
+
     input,
     textarea,
     select,
@@ -41,7 +44,7 @@ body {
         background: $background-input;
         border: $border-input;
         transition: all .3s ease-out;
-        padding: 0 15px;
+        padding: 0 $padding-lateral-input;
 
         &:focus {
             background: $background-input-focus;
@@ -57,6 +60,28 @@ body {
                 border: $border-input;
             }
         }
+        &.su-input-icon {
+            padding-right: $size-button + $padding-lateral-input;
+        }
+    }
+    .su-input-action {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: $size-button;
+        width: $size-button;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: $color-main-5;
+        font-size: $font-size-medium1;
+
+        &:hover {
+            color: $color-main-7;
+        }
+        + .su-input-action {
+            transform: translateX(-$size-button);
+        }
     }
     textarea,
     .su-textarea {
@@ -70,7 +95,6 @@ body {
         font-size: $font-size-error;
         color: $color-error;
     }
-
     .su-error {
         .su-error-message {
             display: block;
