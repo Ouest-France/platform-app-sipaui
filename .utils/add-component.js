@@ -2,11 +2,11 @@ var fs = require('fs');
 var fse = require('fs-extra');
 var replace = require('replace-in-file');
 
-var comp_name = process.env.npm_config_name || null;
+var comp_name = process.argv ? process.argv[2].split('--name=')[1] : (process.env.npm_config_name || null);
 
 if(comp_name == null) {
     console.log('\x1b[31m%s\x1b[0m', 'Err usage');
-    console.log('\x1b[31m%s\x1b[0m', 'npm run add-component --name=comp-name');
+    console.log('\x1b[31m%s\x1b[0m', 'yarn add-component --name=comp-name');
     return;
 }
 console.log('Ajout du composant', comp_name);
