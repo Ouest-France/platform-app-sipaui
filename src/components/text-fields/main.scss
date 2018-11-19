@@ -60,11 +60,16 @@ body {
                 border: $border-input;
             }
         }
-        &.su-input-icon {
-            padding-right: $size-button + $padding-lateral-input;
+    }
+    .su-input-icon {
+        position: relative;
+
+        #{$inputTextBase} {
+            padding-right: $size-button;
         }
     }
     .su-input-action {
+        display: none;
         position: absolute;
         top: 0;
         right: 0;
@@ -82,6 +87,9 @@ body {
         + .su-input-action {
             transform: translateX(-$size-button);
         }
+    }
+    .su-js-button .su-input-action {
+        display: block;
     }
     textarea,
     .su-textarea {
