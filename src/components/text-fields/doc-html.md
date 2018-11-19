@@ -67,15 +67,15 @@ Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a 
 ### RAZ (remise à zéro)
 Input standard avec l’icône pour vider le champ quand il est en focus et contient du contenu. Classes utilisées&nbsp;: `su-input-icon` sur l’input pour réserver la place à droite et `su-input-action` sur le bouton.
 
-Le JS supprime l’attribut `hidden` sur le bouton et ajoute la classe `su-input-icon` sur l’input (positionné par le JS). Déclencheur&nbsp;: focus sur l’input + au moins un caractère dedans -> la croix apparaît lors de la saisie dans un champ vide, mais aussi au clic dans un champ pré-rempli.
+Le JS ajoute la classe `su-js-button` sur le `<div>` parent de l’input (celui qui a déjà la classe `su-input-icon`). Déclencheur&nbsp;: focus sur l’input + au moins un caractère dedans -> la croix apparaît lors de la saisie dans un champ vide, mais aussi au clic dans un champ pré-rempli (qui n’est pas en readonly bien sûr).
 
 *Attention&nbsp;! Ne pas oublier le `type="button"` sur le `<button>`, sans quoi le bouton soumettra le formulaire&nbsp;!*
 
 ```html
 <label for="input5">Label</label>
-<div class="su-relative">
-	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required class="su-input-icon">
-	<button type="button" class="su-input-action" hidden>
+<div class="su-input-icon">
+	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required>
+	<button type="button" class="su-input-action">
 		<span class="su-icon-close"></span>
 	</button>
 </div>
@@ -83,9 +83,9 @@ Le JS supprime l’attribut `hidden` sur le bouton et ajoute la classe `su-input
 
 <div><!-- échappement markdown -->
 <label for="input5">Label</label>
-<div class="su-relative">
-	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required class="su-input-icon">
-	<button type="button" class="su-input-action" hidden>
+<div class="su-input-icon">
+	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required>
+	<button type="button" class="su-input-action">
 		<span class="su-icon-close"></span>
 	</button>
 </div>
@@ -135,6 +135,7 @@ Textarea standard. Il est possible de forcer cet affichage avec la classe `su-te
 - `su-input-text` (si besoin de surcharge)
 - `su-input-icon`
 - `su-input-action`
+- `su-js-button` (positioné par le JS)
 - `su-textarea` (si besoin de surcharge)
 - `su-disabled`
 - `su-error`
