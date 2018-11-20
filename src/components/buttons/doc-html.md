@@ -50,7 +50,7 @@ Cerise&nbsp;:
 ## Contextes particuliers
 
 ### Boutons inactifs
-L’aspect inactif peut être porté par la classe `su-disabled` ou par l’attribut `disabled`.
+L’aspect inactif peut être porté par la classe `su-disabled` (issu des *helpers*) ou par l’attribut `disabled`.
 ```html
 <button class="su-button su-primary" disabled="disabled">Bouton primaire inactif</button>
 <button class="su-button su-secondary su-disabled">Bouton secondaire inactif</button>
@@ -86,8 +86,8 @@ L’aspect inactif peut être porté par la classe `su-disabled` ou par l’attr
 - `su-subscription`
 - `su-premium`
 - `su-small`
-- `su-fullwidth`
-- `su-fullwidth-mobile`
-- `su-disabled`
+- `su-fullwidth` (issu des *helpers*)
+- `su-fullwidth-mobile` (issu des *helpers*) 
+- `su-disabled` (issu des *helpers*) 
 
 </div>
