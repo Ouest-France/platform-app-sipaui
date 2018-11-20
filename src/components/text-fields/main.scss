@@ -10,7 +10,7 @@ $inputTextPlus: $inputTextBase + ', input[type="date"]' ;
 
 body {
     $size-button: 44px;
-    $padding-lateral-input: 15px;
+    $padding-lateral-input: 10px;
 
     input,
     textarea,
@@ -24,11 +24,14 @@ body {
     .su-label {
         color: $color-label;
         font-size: $font-size-label;
+        line-height: $line-height-label;
         font-weight: $font-weight-label;
         margin-bottom: $margin-bottom-label;
     }
     .su-label-complement {
         font-weight: $font-weight-thin;
+        color: $color-label-complement;
+        font-size: $font-size-label-complement;
     }
 
     #{$inputTextBase} {

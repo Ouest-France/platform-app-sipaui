@@ -40,12 +40,12 @@ Input standard prérempli.
 <input id="input2" name="input2" type="text" role="textbox" required value="Champ prérempli">
 
 ### Readonly
-Input standard prérempli et en readonly.
+Input standard prérempli et en readonly. Attention, si le `readonly` suffit à l’input pour changer son opacité, il faut une classe `su-disabled` sur le label pour le changer aussi.
 ```html
-<label for="input3">Label</label>
+<label for="input3" class="su-disabled">Label</label>
 <input id="input3" name="input3" type="text" role="textbox" required readonly aria-readonly="true" value="Champ prérempli">
 ```
-<label for="input2">Label</label>
+<label for="input2" class="su-disabled">Label</label>
 <input id="input2" name="input3" type="text" role="textbox" required readonly aria-readonly="true" value="Champ prérempli">
 
 ### Erreur
