@@ -8,8 +8,12 @@
 // LABEL ------------------------------------------------------------------------------------------/
 $color-label:         $color-main-7             !default;
 $font-size-label:     $font-size-small          !default;
+$line-height-label:   $line-height-xsmall       !default;
 $font-weight-label:   $font-weight-bold         !default;
-$margin-bottom-label: 2px                       !default;
+$margin-bottom-label: 4px                       !default;
+
+$color-label-complement:        $color-main-6           !default;
+$font-size-label-complement:    12px                    !default;
 
 
 // INPUT ------------------------------------------------------------------------------------------/
@@ -21,7 +25,7 @@ $border-input:        1px solid $color-main-3       !default;
 
 // FOCUS
 $background-input-focus: #fff                            !default;
-$border-input-focus:     1px solid $color-main-5         !default;
+$border-input-focus:     1px solid $color-main-7         !default;
 
 // ERROR
 $border-input-error:     1px solid $color-error       !default;
