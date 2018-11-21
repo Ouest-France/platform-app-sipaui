@@ -8,11 +8,11 @@ Les champs de texte permettent à l'utilisateur de saisir et de modifier du text
 Type | Simple
 ------------ | ------------- |
 **Default** | ![textfield__default](design/textfield__default.png)
-**Focus** |
+**Focus** |![textfield__focus](design/textfield__focus.png)
 **With default value** |  ![textfield__with-default-value](design/textfield__with-default-value.png)
 **Error** | ![textfield__error](design/textfield__error.png)
-**Disabled** | text-field-disabled design/text-field-disabled.png
-**With icon** | text-field-with-icon design/text-field-with-icon.png
+**Disabled** | ![textfield__disabled](design/textfield__disabled.png)
+**With icon** | ![textfield__with-icon-right](design/textfield__with-icon-right.png)
 
 ## Spécifications
 #### Label
@@ -22,21 +22,22 @@ Type | Simple
 
 **!!! image !!!** don't entrée, tour, bâtiment, immeuble, résidence
 - Taille de caractère : 14px
+- Line-height: 16px
 - Graisse de caractère
   - Texte standard : bold
   - Texte d'aide ou «&nbsp;facultatif&nbsp;» : régular
 - Police du thème
 - Couleur : #333333
-- Margin bottom : 2px
+- Margin bottom : 4px
 - Champs obligatoires/facultatifs
   - Par défaut, tous les champs sont obligatoires.
   - Le texte, par exemple «&nbsp;facultatif&nbsp;»
-    - Est précisé entre parenthèse suite au label.
-    - Arial Regular
+    - Est précisé entre parenthèse suite au label
+    - Regular
     - Color: #666666
     - Taille de caractère : 13px
 
-**!!! image !!!** des champs obligatoires et 1 facultatif
+![](design/textfield__exemple__3.png)
 
 #### Container
 - Un container indique à l'utilisateur où saisir l'information.
@@ -49,7 +50,7 @@ Type | Simple
   - En focus et actif : #FFFFFF
 - Contour
   - Couleur par défaut : #D4D4D4
-  - Couleur en focus et actif : #878787
+  - Couleur en focus et actif : #333333
   - Épaisseur : 1px
 
 #### Texte
@@ -63,7 +64,7 @@ Type | Simple
 #### Texte du placeholder
 - Le texte du placeholder est une description supplémentaire au label. En aucun cas, il ne le substitue.
 - Il se trouve dans le container et n'est plus visible lors de la saisie.
-- Padding gauche et à droite : 15px du container
+- Padding gauche et à droite : 10px du container (11px avec le filet)
 - Taille de caractère : 16px
 - Graisse de caractère : regular
 - Police du thème
@@ -94,6 +95,7 @@ Type | Simple
 - Celui-ci est présent sous la ligne de saisie.
 - Tant que l'erreur n'est pas corrigée, il reste affiché. Dans un formulaire, l'état d’erreur disparait suite à la validation de l’ensemble du formulaire.
 - Taille de caractère : 14px
+- Line-height : 18px
 - Graisse de caractère : regular
 - Police du thème
 - Couleur : #B40015
