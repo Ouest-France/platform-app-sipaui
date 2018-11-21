@@ -24,9 +24,12 @@ body {
     .su-label {
         color: $color-label;
         font-size: $font-size-label;
-        line-height: $line-height-label;
         font-weight: $font-weight-label;
+        line-height: $line-height-small;
+        height: $font-size-label + .2;
         margin-bottom: $margin-bottom-label;
+        display: block;
+        overflow: hidden;
     }
     .su-label-complement {
         font-weight: $font-weight-thin;
