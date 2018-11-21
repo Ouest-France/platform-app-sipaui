@@ -4,22 +4,22 @@ Les checkboxes permettent à l’utilisateur de sélectionner ou désélectionne
 
 ## Usage
 
-- Une case à cocher permet un choix binaire.
-!!!image!!! Do Par exemple, accepter ou non des conditions générales.
-- Elle est considérée comme «activée» lorsqu’elle est cochée et désactivée lorsqu’elle est vide.
+- Une case à cocher permet un choix binaire. Par exemple, accepter ou non des conditions générales.
+- Elle est considérée comme « activée » lorsqu’elle est cochée et désactivée lorsqu’elle est vide.
 
 
 ## Spécifications
 
 - Aucune, une ou plusieurs options peuvent être choisies.
 - Les cases à cocher sont indépendantes les unes des autres.
+- La zone de touch contient la case à cocher et le texte associé. Sa hauteur est de 34px !!!à tester!!!
 
 Désactivée / Hover | Activée / Focus | Inactif
 ------------ | ------------- | ------------- |
 ![à compléter](design/à compléter.png)| ![à compléter](design/à compléter.png)| ![à compléter](design/à compléter.png)
-Hauteur : 20px <br> Largeur : 20px <br> Fond : #FAFAFA <br> Contour : épaisseur 2px, border radius 3px et #D4D4D4 <br> Icône : absent  <br> Texte : 16px, regular, police du thème #333333 ? <br> Padding : 6px | -  <br> - <br> Fond : #E2001A <br> Contour : épaisseur 2px, border radius 3px et #E2001A <br> Icône : épaisseur 3px, #FFFFFF <br> - <br> - | Opacité : 40 % + message d'explication
+Hauteur : 20px <br> Largeur : 20px <br> Fond : #FAFAFA <br> Contour : épaisseur 2px, border radius 3px et #D4D4D4 <br> Icône : absent  <br> Texte : 16px, regular, police du thème #333333 <br> Padding : 6px | -  <br> - <br> Fond : #E2001A <br> Contour : épaisseur 2px, border radius 3px et #E2001A <br> Icône : épaisseur 3px, #FFFFFF <br> - <br> - | Opacité : 40 % + message d'explication
 
-La zone de touch contient la case à cocher et le texte associé. Sa hauteur est de 34px !!!à tester!!!
+
 
 #### Variation
 
@@ -36,17 +36,13 @@ La case à cocher parent est utilisée pour activer et désactiver toutes les ca
 
 - La 1re lettre du bouton est en majuscule, le reste est en minuscule.
 - Le texte du bouton est limité à une ligne.
-- N'utilisez pas de point en la fin du texte.
-- Le texte du bouton doit être explicite, positif et actif.
-
-!!!image!!!Don’t Le libellé ne doit pas être négatif. Eviter “Ne m'envoyez plus d’email", ce qui signifierait que l'utilisateur devrait cocher la case pour que quelque chose ne se produise pas.
-
+- N'utilisez pas de point à la fin du texte.
+- Le texte doit être explicite, actif et positif.
+- !!!image!!!“Ne m'envoyez plus d’email" Don't Eviter le terme négatif, ici ce qui signifierait que l'utilisateur devrait cocher la case pour que quelque chose ne se produise pas.
 - Lorsqu’il y a plusieurs case à cocher, les présenter dans un ordre logique, par exemple : les plus susceptibles d’être sélectionnées en premier.
-- Dans le cas de plus de deux case à cocher, elles sont disposées verticalement, avec une case à cocher par ligne. (illustration https://uxplanet.org/radio-buttons-ux-design-588e5c0a50dc)
-
+- Dans le cas de plus de deux case à cocher, elles sont disposées verticalement, avec une case à cocher par ligne.
 - Si les options s’excluent mutuellement, utilisez des radio boutons.
 - Lorsque l’utilisateur doit activer / désactiver une option ou pour exécuter une commande ; un switch est recommandé.
-
 
 ## Autres composants
 

@@ -13,7 +13,7 @@ Les boutons radio affichent un ensemble d’options parmi lesquelles l’utilisa
 
 Désactivé / Hover | Activé / Focus | Inactif
 ------------ | ------------- | ------------- |
-![à compléter](design/à compléter.png)| ![à compléter](design/à compléter.png)| ![à compléter](design/à compléter.png)
+![button-radio__desactivated](design/button-radio__desactivated.png)|![button-radio__activated](design/button-radio__activated.png)|![button-radio__disabled](design/button-radio__disabled.png)
 Hauteur : 20px <br> Largeur : 20px <br> Fond : #FAFAFA <br> Contour : épaisseur 2px, radius 100 % et #D4D4D4 <br> Texte : 16px, regular, police du thème #333333 <br> Padding : 6px | -  <br> - <br> Fond : #FFFFFF <br> Contour : épaisseur interne 7px, radius 100 % et #E2001A <br> - <br> - | Opacité : 40 %
 
 - La zone de touch contient le radio bouton et le texte associé. Sa hauteur est de 34px !!!à tester!!!
@@ -23,7 +23,7 @@ Hauteur : 20px <br> Largeur : 20px <br> Fond : #FAFAFA <br> Contour : épaisseur
 
 !!image 1 bouton radio!!! Don’t N’utilisez jamais un seul bouton radio, une case à cocher est appropriée.
 
-!!image!!! Don’t Si plusieurs éléments peuvent être choisis en même temps, utiliser des cases à cocher. https://www.audi.com/ci/en/guides/user-interface/components/selections-controls.html
+!!image!!! Don’t Si plusieurs éléments peuvent être choisis en même temps, utiliser plutôt des cases à cocher. https://www.audi.com/ci/en/guides/user-interface/components/selections-controls.html
 
 Don't !!! image !!!Si le nombre d’option est supérieur à 3, utilisez un autre composant, par exemple un select.https://design.firefox.com/photon/components/radio-buttons.html
 
@@ -43,8 +43,8 @@ Le texte doit décrire le choix de manière claire et distincte.
 - Lorsque les boutons radio sont disposés horizontalement, utiliser un espacement constant.
 - Par défaut, les boutons radio peuvent être désactivés ou bien activés. Cependant, il est préférable d'activer une des options, la plus probable ou la première.
 - Si un état non sélectionné est nécessaire, ajoutez simplement un bouton radio “Aucun”.
-- Une fois qu'une option est sélectionnée, l'état initiale ne peut plus être atteint par l'utilisateur. https://design.firefox.com/photon/components/radio-buttons.html
-- Le label qui accompagnent des boutons radio n’est pas obligatoire.
+- Une fois qu'une option est sélectionnée, l'état initiale ne peut plus être atteint par l'utilisateur.
+- Le label qui accompagne des boutons radio n’est pas obligatoire.
 
 ## Autres composants
 
