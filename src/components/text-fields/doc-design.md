@@ -7,10 +7,10 @@ Les champs de texte permettent à l'utilisateur de saisir et de modifier du text
 
 Type | Simple
 ------------ | ------------- |
-**Default** | text-field-default design/text-field-default.png
-**Focus** | text-field-focus design/text-field-focus.png
-**With default value** |  text-field-with-default-value design/text-field-with-default-value.png
-**Error** | text-field-error design/text-field-error.png
+**Default** | ![textfield__default](design/textfield__default.png)
+**Focus** |
+**With default value** |  ![textfield__with-default-value](design/textfield__with-default-value.png)
+**Error** | ![textfield__error](design/textfield__error.png)
 **Disabled** | text-field-disabled design/text-field-disabled.png
 **With icon** | text-field-with-icon design/text-field-with-icon.png
 
@@ -30,7 +30,11 @@ Type | Simple
 - Margin bottom : 2px
 - Champs obligatoires/facultatifs
   - Par défaut, tous les champs sont obligatoires.
-  - «&nbsp;facultatif&nbsp;» est précisé entre parenthèse suite au label.
+  - Le texte, par exemple «&nbsp;facultatif&nbsp;»
+    - Est précisé entre parenthèse suite au label.
+    - Arial Regular
+    - Color: #666666
+    - Taille de caractère : 13px
 
 **!!! image !!!** des champs obligatoires et 1 facultatif
 
@@ -40,10 +44,10 @@ Type | Simple
 - Hauteur : 44px
 - Largeur : celle son parent moins le padding de celui-ci
 - Largueur minimale : 140px
-- Couleur de fond&nbsp;:
+- Couleur de fond
   - Par défaut : #FAFAFA
   - En focus et actif : #FFFFFF
-- Contour&nbsp;:
+- Contour
   - Couleur par défaut : #D4D4D4
   - Couleur en focus et actif : #878787
   - Épaisseur : 1px
@@ -73,7 +77,9 @@ Type | Simple
 - Taille maximale : 34x34px
 - Zone de tap : 44x44px
 - L’icône est centrée dans la zone de tap avec une marge minimale : 5px
-- Couleur : #878787
+- Couleur
+  - Par défaut : #878787
+  - En hover, focus et pressed : #333333
 - Cas particulier : la croix
  - Une croix permet la suppression totale et directe d'un champ.
  - Elle est présente lorsque l’input est en focus et qu'un contenu est présent.
