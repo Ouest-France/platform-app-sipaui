@@ -2,53 +2,6 @@
     Classes utiles SipaUI
 */
 
-.su-clearfix,
-.su-cf {
-    @include clearfix();
-}
-
-.su-hidden {
-    display: none !important;
-    visibility: hidden; // Les lecteurs d'écrans parfois ne prennent pas en compte le display none
-}
-
-// Pour cacher quelque-chose qui doit rester accessible aux lecteurs d'écrans
-.su-visually-hidden { // https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
-    position: absolute !important;
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-}
-body:hover .su-visually-hidden {
-    a,
-    input,
-    button {
-        display: none !important;
-    }
-}
-
-/* -- DISPLAY -------------------------------------------------------------------- */
-.su-block {
-    display: block !important;
-}
-.su-inline-block {
-    display: inline-block !important;
-}
-
-/* -- POSITIONS -------------------------------------------------------------------- */
-.su-relative {
-	position: relative !important;
-}
-.su-absolute {
-	position: absolute !important;
-}
-.su-fixed {
-	position: fixed !important;
-}
-
 /* -- MARGINS -------------------------------------------------------------------- */
 .su-margin-0 {
     margin: 0 !important;
@@ -92,46 +45,4 @@ body:hover .su-visually-hidden {
 }
 .su-line-height-xsmall {
     line-height: $line-height-xsmall !important;
-}
-
-/* -- JUSTIFY -------------------------------------------------------------------- */
-.su-justify {
-    text-align: justify !important;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens:    auto;
-    -ms-hyphens:     auto;
-    hyphens:         auto;
-}
-
-/* -- CENTER -------------------------------------------------------------------- */
-.su-block-center {
-    display: block !important; //utile pour forcer le centrage d’un objet non block comme les SVG
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-.su-text-center {
-    text-align: center !important;
-}
-
-/* -- FULL WIDTH -------------------------------------------------------------------- */
-.su-fullwidth {
-    width: 100% !important;
-}
-
-[disabled="disabled"],
-.su-disabled {
-    opacity: $opacity-disabled;
-    cursor: default !important;
-}
-
-
-//
-/* -- MOBILE ONLY ---------------------------------------------------------------------------------------------------------------------------------- */
-//
-
-@media only screen and (max-width: $max-breakpoint-mobile) {
-    .su-fullwidth-mobile {
-        width: 100% !important;
-    }
 }

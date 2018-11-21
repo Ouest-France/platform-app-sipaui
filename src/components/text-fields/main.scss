@@ -9,6 +9,9 @@ $inputTextPlus: $inputTextBase + ', input[type="date"]' ;
 
 
 body {
+    $size-button: 44px;
+    $padding-lateral-input: 10px;
+
     input,
     textarea,
     select,
@@ -21,11 +24,14 @@ body {
     .su-label {
         color: $color-label;
         font-size: $font-size-label;
+        line-height: $line-height-label;
         font-weight: $font-weight-label;
         margin-bottom: $margin-bottom-label;
     }
     .su-label-complement {
         font-weight: $font-weight-thin;
+        color: $color-label-complement;
+        font-size: $font-size-label-complement;
     }
 
     #{$inputTextBase} {
@@ -41,7 +47,7 @@ body {
         background: $background-input;
         border: $border-input;
         transition: all .3s ease-out;
-        padding: 0 15px;
+        padding: 0 $padding-lateral-input;
 
         &:focus {
             background: $background-input-focus;
@@ -58,6 +64,36 @@ body {
             }
         }
     }
+    .su-input-icon {
+        position: relative;
+
+        #{$inputTextBase} {
+            padding-right: $size-button;
+        }
+    }
+    .su-input-action {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: $size-button;
+        width: $size-button;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: $color-main-5;
+        font-size: $font-size-medium1;
+
+        &:hover {
+            color: $color-main-7;
+        }
+        + .su-input-action {
+            transform: translateX(-$size-button);
+        }
+    }
+    .su-js-button .su-input-action {
+        display: block;
+    }
     textarea,
     .su-textarea {
         padding: 10px 15px;
@@ -70,7 +106,6 @@ body {
         font-size: $font-size-error;
         color: $color-error;
     }
-
     .su-error {
         .su-error-message {
             display: block;

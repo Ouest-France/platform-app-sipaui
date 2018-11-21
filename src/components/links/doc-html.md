@@ -4,13 +4,13 @@ SipaUI propose 2 types de liens&nbsp;: les **liens éditoriaux** et les **liens 
 
 Comme le prévoit le HTML, les liens ont 4 états&nbsp;: **normal** (/ ou *link*), **survolé** (*hover*), **cliqué** (*active*) et avec **focus** (*focus*). Toutefois, la charte Ouest-France assigne la même apparence aux états *survolé*, *cliqué*, et avec *focus*.
 
-<a href="#liste-classes" target="_self" class="su-link">&gt;&nbsp;Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self"  role="button" class="su-button su-secondary su-small">&gt;&nbsp;Liste des classes disponibles</a>
 
 <!-- STORY -->
 
 ## Lien éditorial
 
-Le lien éditorial s'intégrant dans du contenu textuel sa police, sa taille, sa graisse sont dépendants du texte dans lequel il est inclus.
+Le lien éditorial s’intégrant dans du contenu textuel sa police, sa taille, sa graisse sont dépendants du texte dans lequel il est inclus.
 
 Ce lien est le lien par défaut pour toute balise `<a>` dans un site utilisant SipaUI. Il peut être forcé en intégrant la classe `su-editorial` sur un bloc parent ou la classe `su-link` directement sur un lien.
 
