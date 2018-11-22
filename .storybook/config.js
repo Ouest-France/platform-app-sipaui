@@ -11,7 +11,7 @@ Vue.use(Vuex);
 
 var theme_sipaui = themes.dark;
 //theme_sipaui.mainBackground= 'radial-gradient(circle at 80% 0, #333, #000)';
-theme_sipaui.mainBackground= '#000';
+theme_sipaui.mainBackground= '#333';
 theme_sipaui.mainFill= 'rgba(255,255,255, .2)'; // coll de droite + Filter à gauche
 theme_sipaui.mainBorder= 'none';
 theme_sipaui.mainBorderRadius= '1';

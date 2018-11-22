@@ -6,7 +6,7 @@ Un bouton a besoin d’**au moins 2 classes**&nbsp;: `su-button` pour appliquer 
 
 Les *classes* de bouton peuvent être appliquées indifféremment sur des `<buttons>`, des `<input type="button">` ou des `<a>`.
 
-<a href="#liste-classes" target="_self"  role="button" class="su-button su-secondary su-small">&gt;&nbsp;Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="su-link">Liste des classes disponibles</a>
 
 
 **Accessibilité**
