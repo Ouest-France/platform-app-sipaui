@@ -61,7 +61,7 @@
                     </li>
                 	<li class="row">
                 	    <div class="cell"><span class="version">0.2.0</span></div>
-                	    <div class="cell"><span class="fait">Champs texte standards (input text, mail, tél… + textarea), liens standards.</span></div>
+                	    <div class="cell"><span class="fait">Champs texte standards (input text, mail, tél… + textarea), liens standards, helpers.</span></div>
                     </li>
                     <li class="row">
                 	    <div class="cell"><span class="version">0.3.0</span></div>
