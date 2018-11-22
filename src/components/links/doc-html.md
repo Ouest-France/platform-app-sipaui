@@ -4,7 +4,7 @@ SipaUI propose 2 types de liens&nbsp;: les **liens éditoriaux** et les **liens 
 
 Comme le prévoit le HTML, les liens ont 4 états&nbsp;: **normal** (/ ou *link*), **survolé** (*hover*), **cliqué** (*active*) et avec **focus** (*focus*). Toutefois, la charte Ouest-France assigne la même apparence aux états *survolé*, *cliqué*, et avec *focus*.
 
-<a href="#liste-classes" target="_self"  role="button" class="su-button su-secondary su-small">&gt;&nbsp;Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="su-link">Liste des classes disponibles</a>
 
 <!-- STORY -->
 
@@ -17,18 +17,18 @@ Ce lien est le lien par défaut pour toute balise `<a>` dans un site utilisant S
 ### Version avec la classe `su-editorial` sur un parent
 ```html
 <setion class="su-editorial">
-	<a href="javascript:;">Lien éditorial SipaUI</a>
+	<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien éditorial SipaUI</a> Tortor Cursus.</p>
 </section>
 ```
 <section class="su-editorial">
-	<a href="javascript:;">Lien éditorial SipaUI</a>
+	<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien éditorial SipaUI</a> Tortor Cursus.</p>
 </section>
 
 ### Version avec la classe `su-link`
 ```html
 <a href="javascript:;" class="su-link">Lien éditorial SipaUI</a>
 ```
-<a href="javascript:;" class="su-link">Lien éditorial SipaUI</a>
+<p>Etiam Venenatis Bibendum <a href="javascript:;" class="su-link">Lien éditorial SipaUI</a> Tortor Cursus. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor.</p>
 
 
 ## Lien bouton

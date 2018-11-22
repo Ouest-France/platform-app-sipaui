@@ -2,7 +2,7 @@
 
 Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés (ie&nbsp;: le mot de passe) sont développés spécifiquement.
 
-<a href="#liste-classes" target="_self"  role="button" class="su-button su-secondary su-small">&gt;&nbsp;Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="su-link">Liste des classes disponibles</a>
 
 **Accessibilité**
 
