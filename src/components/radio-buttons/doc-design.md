@@ -25,7 +25,7 @@ Hauteur : 20px <br> Largeur : 20px <br> Fond : #FAFAFA <br> Contour : épaisseur
 
 !!image!!! Don’t Si plusieurs éléments peuvent être choisis en même temps, utiliser plutôt des cases à cocher. https://www.audi.com/ci/en/guides/user-interface/components/selections-controls.html
 
-Don't !!! image !!!Si le nombre d’option est supérieur à 3, utilisez un autre composant, par exemple un select.https://design.firefox.com/photon/components/radio-buttons.html
+Don't !!! image !!!Si le nombre d’option est strictement supérieur à 3, utilisez un autre composant, par exemple un select.https://design.firefox.com/photon/components/radio-buttons.html
 
 
 ### Gestion des erreurs
