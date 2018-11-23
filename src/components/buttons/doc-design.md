@@ -65,7 +65,7 @@ Le bouton secondaire transparent avec un cadre fin est utilisé pour des actions
 Enabled | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
 ![button__secondary__enabled](design/button__secondary__enabled.png)| ![button__secondary__hover](design/button__secondary__hover.png)| ![button__secondary__disabled](design/button__secondary__disabled.png)
-Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Contour : angle 3px <br> Couleur : #333333 et transparent  <br> Texte : 16px, regular, police du thème, #E2001A | - <br> - <br> - <br> Couleur :  <br> Texte : #B40015 | Opacité : 40 %
+Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px  <br> Contour : angle 3px <br> Couleur : #333333 et transparent  <br> Texte : 16px, regular, police du thème, #333333 | - <br> - <br> - <br> Couleur : #B40015 <br> Texte : #B40015 | Opacité : 40 %
 
 
 #### Cas spécifique
@@ -77,7 +77,7 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
 Enabled | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
 ![button__secondary__small__enabled](design/button__secondary__small__enabled.png)| ![button__secondary__small__hover](design/button__secondary__small__hover.png)| ![button__secondary__small__disabled](design/button__secondary__small__disabled.png)
-Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : épaisseur 1px, angle 3px <br> Couleur : rouge principal #333333 <br> Texte : 14px, regular, police du thème, #E2001A | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
+Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : épaisseur 1px, angle 3px <br> Couleur : #333333 et transparent <br> Texte : 14px, regular, police du thème, #333333 | - <br> - <br> - <br> Couleur : #B40015 <br> Texte : #B40015 | Opacité : 40 %
 
 ## Bonnes pratiques
 
