@@ -1,13 +1,29 @@
-# selects
+# Selects/Menu déroulant
 
-Description
+Les selects permettent à l’utilisateur de sélectionner une option dans une liste.
 
 
-## 1- Usage
+## Usage
 
-### Titre
+Un select permet d’afficher un nombre illimité d'options dans une liste déroulante. L’utilisateur peut choisir une seule des options parmi cette liste.
+Il empêche les utilisateurs de saisir des données erronées et il permet d'économiser quelques frappes.
+On le trouve généralement dans un formulaire.
 
-Description
+## Spécifications
+
+→ Un tableau, Type
+
+Default
+
+With default value
+
+Focus
+
+Scroll
+
+Error
+
+Disabled (ex : lors de l’inscription, choix ville qd pas encore de mot de passe) 40%
 
 
 ## 2- États
@@ -25,7 +41,7 @@ Type | Class | Declinaison 1 | Declinaison 2 | Remarque
 - specification 2
 - specification 3
 
-#### Titre
+### Gestion des erreurs
 
 - specification 1
 - specification 2
@@ -34,13 +50,16 @@ Type | Class | Declinaison 1 | Declinaison 2 | Remarque
 
 ## 4- Bonnes pratiques
 
-- specification 1
-- specification 2
-- specification 3
+- Si le nombre d’options est inférieure à 3, utiliser un bouton radio. définir le choix de l’un ou l’autre ???
+- Eviter les très longues listes nécessitant un scroll car elles empêchent les utilisateurs de voir tous leurs choix en un coup d'œil.
+- Pour une quantité, le choix d’une année, utiliser un text field standard plutôt qu’un select. La saisie est plus rapide. ?
+- Suite à la saisie d’un code postal, ne pas utiliser un sélect pour une liste de ville (lié à la fusion des communes).
+- Il est fortement recommandé de ne pas styler les selects pour des raisons d'accessibilité.
+- Le select est pris en charge par un clavier.
 
 
 ## 5- Autres composants
 
-- specification 1
-- specification 2
-- specification 3
+- Select avec une sélection multiple
+- Select avec un champ de recherche
+- Datepicker

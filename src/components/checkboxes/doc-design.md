@@ -16,7 +16,7 @@ Les checkboxes permettent à l’utilisateur de sélectionner ou désélectionne
 
 Désactivée / Hover | Activée / Focus | Inactif
 ------------ | ------------- | ------------- |
-![à compléter](design/à compléter.png)| ![à compléter](design/à compléter.png)| ![à compléter](design/à compléter.png)
+![checkboxes__desactivated](design/checkboxes__desactivated.png)|![checkboxes__activated](design/checkboxes__activated.png)|![checkboxes__desactivated__disabled](design/checkboxes__desactivated__disabled.png)
 Hauteur : 20px <br> Largeur : 20px <br> Fond : #FAFAFA <br> Contour : épaisseur 2px, border radius 3px et #D4D4D4 <br> Icône : absent  <br> Texte : 16px, regular, police du thème #333333 <br> Padding : 6px | -  <br> - <br> Fond : #E2001A <br> Contour : épaisseur 2px, border radius 3px et #E2001A <br> Icône : épaisseur 3px, #FFFFFF <br> - <br> - | Opacité : 40 % + message d'explication
 
 
