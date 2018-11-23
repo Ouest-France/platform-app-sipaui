@@ -5,7 +5,11 @@
 @import "variables";
 
 // LIEN ÉDITORIAL ------------------------------------------------------------------------------------------/
-body a,
+body a {
+    -webkit-text-decoration-skip: ink !important;
+            text-decoration-skip: ink !important;
+}
+
 body .su-editorial a,
 body a.su-link {
     color: $color-link-editorial;
