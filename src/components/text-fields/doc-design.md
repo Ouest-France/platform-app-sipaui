@@ -18,17 +18,35 @@ Type | Simple
 #### Label
 - Un label indique le type d’information demandée sous celui-ci.
 - La 1re lettre est en majuscule, le reste est en minuscule.
-- Il doit être court, précis et entièrement visible sur une seule ligne.
 
-**!!! image !!!** don't entrée, tour, bâtiment, immeuble, résidence
+
+  <div class="do-dont">
+  <div class="do">
+
+![textfield__ex__label__do](design/textfield__ex__label__do.png) |
+  ------------ |
+  **Do** <br/> Utiliser un texte court et précis. |
+
+   </div>
+
+   <div class="dont">
+
+![textfield__ex__label__dont](design/textfield__ex__label__dont.png) |
+  ------------ |
+  **Don’t** <br/> Ne pas rédiger un label sur plus d'une ligne. |
+
+   </div>
+   </div>
+
+
 - Taille de caractère : 14px
-- Line-height: 16px
+- Line-height: 1,2
 - Graisse de caractère
   - Texte standard : bold
   - Texte d'aide ou «&nbsp;facultatif&nbsp;» : régular
 - Police du thème
 - Couleur : #333333
-- Margin bottom : 4px
+- Margin bottom : 3px
 - Champs obligatoires/facultatifs
   - Par défaut, tous les champs sont obligatoires.
   - Le texte, par exemple «&nbsp;facultatif&nbsp;»
@@ -37,7 +55,7 @@ Type | Simple
     - Color: #666666
     - Taille de caractère : 13px
 
-![](design/textfield__exemple__3.png)
+![textfield__ex__champs-obligatoire-facultatif](design/textfield__ex__champs-obligatoire-facultatif.png)
 
 #### Container
 - Un container indique à l'utilisateur où saisir l'information.

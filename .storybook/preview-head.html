@@ -30,6 +30,10 @@
     })();
 </script>
 <style type="text/css">
+    body.sb-show-main {
+        margin: 0 10%;
+    }
+
     #theme_sipa_selector {
         position: fixed;
         top: 20px;
@@ -55,33 +59,51 @@
     h3,
     h4,
     h5 {
-        color: #950030;
+        color: #000;
         font-weight: 300 !important;
+        border: none !important;
     }
     h1 {
         font-size: 4rem !important;
-    }
-    h2 {
-        font-size: 3rem !important;
-    }
-    h3 {
-        margin: 40px 0 5px !important;
-    }
-    h2 + h3 {
-        margin-top: 0 !important;
-    }
-    .markdown-body h1 {
         border: none !important;
     }
-    .markdown-body h2 {
-        border-color: #ccc !important;
-        padding-bottom: 5px !important;
-        margin-top: 60px !important;
+    h2 {
+        font-size: 3.4rem !important;
+        margin: 100px 0 20px !important;
+        padding: 0 !important;
+    }
+    h3 {
+        font-size: 2.8rem !important;
+        margin: 50px 0 10px !important;
+    }
+    h4 {
+        font-size: 2.4rem !important;
+        margin: 30px 0 5px !important;
+    }
+    h5 {
+        font-size: 1.9rem !important;
+        margin: 25px 0 5px !important;
+    }
+    h2 + h3,
+    h3 + h4,
+    h4 + h5 {
+        margin-top: 0 !important;
+    }
+    p,
+    div,
+    td {
+        color: #555;
     }
     .markdown-body .highlight pre,
     .markdown-body pre,
     .markdown-body code {
         background:  #eee!important;
+    }
+
+    .alerte {
+        padding: 10px;
+        background: #fdd;
+        border-radius:  10px;
     }
 
     #liste-classes {
@@ -93,5 +115,55 @@
     #liste-classes h2 {
         margin-top: 0 !important;
     }
+    table tr,
+    table th,
+    table td {
+        border-color: #d4d4d4 !important;
+    }
+
+    .do-dont {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .do-dont > div {
+        margin-right: 5%;
+    }
+    .do-dont > div:last-child {
+        margin-right: 0;
+    }
+    ul + .do-dont {
+        margin-left: 32px;
+    }
+    .do table th,
+    .dont table th,
+    .do table td,
+    .dont table td,
+    .dont table tr,
+    .do table tr {
+        padding: 0 !important;
+        font-size: 1.4rem !important;
+    }
+    .do table td,
+    .dont table td,
+    .dont table tr,
+    .do table tr {
+        border: none !important;
+    }
+    .do table th {
+        border-bottom: 10px solid #34af57 !important;
+    }
+    .do strong {
+        color: #34af57 !important;
+        font-size: 1.6rem !important;
+    }
+    .dont table th {
+        border-bottom: 10px solid #DF3036 !important;
+    }
+    .dont strong {
+        color: #DF3036 !important;
+        font-size: 1.6rem !important;
+    }
+
 </style>
     <meta name="viewport" content="width=device-width">

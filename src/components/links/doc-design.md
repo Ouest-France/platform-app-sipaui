@@ -10,15 +10,15 @@ Les liens rendent les actions visibles et permettent aux utilisateurs d'effectue
 ### Lien éditorial
 Un lien éditorial se trouve **parmi un bloc de texte** (article…). Il apporte une information supplémentaire.
 
-Enable | Hover / Focus / Pressed
+Enabled | Hover / Focus / Pressed
 ------------ | ------------- |
-image | image
+image |image
 Hauteur du texte  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
 
 ### Lien bouton
 Un «&nbsp;lien bouton&nbsp;» se positionne comme un bouton mais a l’apparence d’un lien. Son action est mineure par rapport aux boutons primaires et secondaires. Un tel lien ne peut donc pas être inclus dans du texte.
 
-Enable | Hover / Focus / Pressed | Disabled
+Enabled | Hover / Focus / Pressed | Disabled
 ------------ | ------------- | ------------- |
 image | image | image
 Hauteur : 44px  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère : 16px <br> Graisse : bold <br> Police du thème | - <br> - <br> Couleur : #B40015  <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 | Opacité : 40 %
@@ -27,24 +27,70 @@ Contrairement aux boutons primaires et secondaires, le lien bouton ne présente 
 
 ## Bonnes pratiques
 ### Comportement
-- Si l'action modifie des données, utiliser un bouton.
-!!!2 images!!! Do/don't Abonnement Je valide
-- Do !!!image!!! France 3 Auvergne Rhône Alpes. Lorsque le lien dirige vers un autre site, l'indiquer à l'utilisateur.
+
+<div class="do-dont">
+<div class="do">
+
+![button-link__ex__button-do](design/button-link__ex__button-do.png)  |
+------------ |
+**Do** <br/> Si l'action modifie des données, utiliser un bouton. |
+
+ </div>
+
+ <div class="dont">
+
+![button-link__ex__enable-dont](design/button-link__ex__enable-dont.png)  |
+------------ |
+**Don’t** <br/> Si l'action modifie des données, ne pas utiliser un lien. |
+
+ </div>
+ </div>
+
+- Lorsque vous utilisez un bouton primaire et un bouton secondaire, le bouton primaire doit être placé à gauche. **Une exception s'applique dans le cas d'écran séquentiel**, le bouton primaire est à droite.
+
+<div class="do-dont">
+<div class="do">
+
+![Image_button_sequentiel](design/Image_button_sequentiel.png)  |
+------------ |
+**Do** <br/> Mettre le bouton «&nbsp;Retour&nbsp;» à gauche
+
+ </div>
+ </div>
+
+
+
+ - Do **!!!image!!!** France 3 Auvergne Rhône Alpes. Lorsque le lien dirige vers un autre site, l'indiquer à l'utilisateur.
 
 ### Contenu
 
 - Mettre le minimum de texte tout en expliquant clairement ce qui se passe lorsque ce lien est activé.
 - Évitez les termes génériques tels que «Cliquez ici», «Ici», «En savoir plus» ou l'adresse Web qui ne fournissent pas d'information aux utilisateurs sur le contenu du lien.
 - Sur une même page, mettre des noms distincts pour des liens différents.
-#### Lien bouton
-- La 1re lettre du lien est en majuscule, le reste est en minuscule.
-- Le texte du lien doit être uniquement sur une seule ligne.
 #### Lien éditorial
+
+Enable | Hover / Focus / Pressed
+------------ | -------------
+![article-link__ex__enable-link](design/article-link__ex__enable-link.png) |![article-link__ex__hover](design/article-link__ex__hover.png)
+
 - Commencer par les mots-clés.
 - Il est conseillé que le lien n’ait pas plus de 10 mots pour une meilleure performance.
 - Le texte du lien doit être similaire au titre de la page qu'il ouvre.
 - Ne pas mettre le même nom pour différents liens.
-- !!!image!!! Don’t : ne pas mettre un texte en rouge souligné pour le mettre en évidence
+
+<div class="do-dont">
+<div class="dont">
+
+![article-link__ex__link-default-underline](design/article-link__ex__link-default-underline.png) |
+------------ |
+**Don’t** <br/> Ne pas mettre un texte en rouge souligné pour le mettre en évidence.
+
+</div>
+</div>
+
+#### Lien bouton
+- La 1re lettre du lien est en majuscule, le reste est en minuscule.
+- Le texte du lien doit être uniquement sur une seule ligne.
 
 ## Autres composants
 - Titre avec chevron
