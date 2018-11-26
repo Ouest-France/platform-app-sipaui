@@ -19,9 +19,25 @@ Type | Simple
 - Un label indique le type d’information demandée sous celui-ci.
 - La 1re lettre est en majuscule, le reste est en minuscule.
 
-![textfield__ex__label__do](design/textfield__ex__label__do.png)  |![textfield__ex__label__dont](design/textfield__ex__label__dont.png)
------------- | -------------
-  ![Rectangle vert](design/rectangle-vert.png) **Do** Utiliser un texte court et précis. | ![Rectangle rouge](design/rectangle-rouge.png) **Don't** Ne pas rédiger un label sur plus d'une ligne
+
+  <div class="do-dont">
+  <div class="do">
+
+![textfield__ex__label__do](design/textfield__ex__label__do.png) |
+  ------------ |
+  **Do** <br/> Utiliser un texte court et précis. |
+
+   </div>
+
+   <div class="dont">
+
+![textfield__ex__label__dont](design/textfield__ex__label__dont.png) |
+  ------------ |
+  **Don’t** <br/> Ne pas rédiger un label sur plus d'une ligne. |
+
+   </div>
+   </div>
+
 
 - Taille de caractère : 14px
 - Line-height: 1,2
