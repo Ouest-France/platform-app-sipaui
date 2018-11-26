@@ -2,6 +2,8 @@
 
 Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés (ie&nbsp;: le mot de passe) sont développés spécifiquement.
 
+<p class="alerte"><span class="su-icon-alert"></span> <em>SipaUI n’intégrant pas pour l’instant de JS, les comportements dynamiques seront à mettre en place par les équipes intégrant nos composant.</em></p>
+
 <a href="#liste-classes" target="_self" class="su-link">Liste des classes disponibles</a>
 
 **Accessibilité**
@@ -49,7 +51,7 @@ Input standard prérempli et en readonly. Attention, si le `readonly` suffit à 
 <input id="input2" name="input3" type="text" role="textbox" required readonly aria-readonly="true" value="Champ prérempli">
 
 ### Erreur
-Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Le message d’erreur sera identifé par la classe `su-error-message`.
+Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Cette classe, absente par défaut, sera positionnée par le développeur (soit dynamiquement, soit par réponse serveur). Le message d’erreur sera identifé par la classe `su-error-message`.
 
 ```html
 <div class="su-error">
@@ -65,9 +67,10 @@ Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a 
 </div>
 
 ### RAZ (remise à zéro)
-Input standard avec l’icône pour vider le champ quand il est en focus et contient du contenu. Classes utilisées&nbsp;: `su-input-icon` sur l’input pour réserver la place à droite et `su-input-action` sur le bouton.
 
-Le JS ajoute la classe `su-js-button` sur le `<div>` parent de l’input (celui qui a déjà la classe `su-input-icon`). Déclencheur&nbsp;: focus sur l’input + au moins un caractère dedans -> la croix apparaît lors de la saisie dans un champ vide, mais aussi au clic dans un champ pré-rempli (qui n’est pas en readonly bien sûr).
+Il s'agit d’un input standard amélioré. L’utilisateur peut vider tout le champ d’un coup en cliquant sur un bouton «&nbsp;croix&nbsp;». Le bouton apparaît quand le champ est en focus ET qu'il a du contenu.
+
+Classes à appliquer par défaut&nbsp;: `su-input-icon` sur l’input pour réserver la place à droite et `su-input-action` sur le bouton.
 
 *Attention&nbsp;! Ne pas oublier le `type="button"` sur le `<button>`, sans quoi le bouton soumettra le formulaire&nbsp;!*
 
@@ -91,8 +94,38 @@ Le JS ajoute la classe `su-js-button` sur le `<div>` parent de l’input (celui 
 </div>
 </div>
 
-### Exemple complexe (RAZ + gestion d’erreur)
+#### Interractivité a créer en JS
+ 
+##### 1 Affichage du boutton
+ 
+Le JS doit ajouter la classe `su-js-button` sur le `<div>` parent de l’input (celui qui a déjà la classe `su-input-icon`). Déclencheur&nbsp;: focus sur l’input + au moins un caractère dedans -> la croix apparaît lors de la saisie dans un champ vide, mais aussi au clic dans un champ pré-rempli (qui n’est pas en readonly bien sûr).
 
+```html
+<label for="input5">Label</label>
+<div class="su-input-icon su-js-button">
+	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required required value="Lorem ipsum">
+	<button type="button" class="su-input-action">
+		<span class="su-icon-close"></span>
+	</button>
+</div>
+```
+
+<div><!-- échappement markdown -->
+<label for="input5">Label</label>
+<div class="su-input-icon su-js-button">
+	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required value="Lorem ipsum">
+	<button type="button" class="su-input-action">
+		<span class="su-icon-close"></span>
+	</button>
+</div>
+</div>
+
+##### 2 Vider le champ
+
+Cliquer sur la croix supprime l’attribut `value` de l’ìnput.
+
+
+### Exemple de champ complexe (complément de label, placeholder, RAZ et gestion d’erreur)
 
 ```html
 <div class="su-error">
