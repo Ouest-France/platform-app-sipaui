@@ -1,4 +1,4 @@
-# Links/liens
+# Links/Liens
 
 Les liens permettent à l'utilisateur d'atteindre un autre endroit de la page, une autre page, un autre site ou un document non web.
 
@@ -16,7 +16,7 @@ image |image
 Hauteur du texte  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
 
 ### Lien bouton
-Un «&nbsp;lien bouton&nbsp;» se positionne comme un bouton mais a l’apparence d’un lien. Son action est mineure par rapport aux boutons primaires et secondaires. Un tel lien ne peut donc pas être inclus dans du texte.
+Un «&nbsp;lien bouton&nbsp;» **se positionne comme un bouton** mais a l’apparence d’un lien. Son action est mineure par rapport aux boutons primaires et secondaires. Un tel lien ne peut donc pas être inclus dans du texte.
 
 Enabled | Hover / Focus / Pressed | Disabled
 ------------ | ------------- | ------------- |
