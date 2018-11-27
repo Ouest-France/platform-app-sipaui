@@ -1,0 +1,135 @@
+/*
+    Styles du text-fields de SipaUI
+    Utilise les variables à la fois globales et du composant
+*/
+@import "variables";
+
+$inputTextBase: 'input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"], textarea, .su-input-text, .su-textarea';
+$inputTextPlus: $inputTextBase + ', input[type="date"]' ;
+
+
+body {
+    $size-button: 44px;
+    $padding-lateral-input: 10px;
+
+    input,
+    textarea,
+    select,
+    .su-input-text {
+        font-size: $font-size-base;
+
+    }
+
+    label,
+    .su-label {
+        color: $color-label;
+        font-size: $font-size-label;
+        font-weight: $font-weight-label;
+        line-height: $line-height-small;
+        height: $font-size-label + .2;
+        margin-bottom: $margin-bottom-label;
+        display: block;
+        overflow: hidden;
+    }
+    .su-label-complement {
+        font-weight: $font-weight-thin;
+        color: $color-label-complement;
+        font-size: $font-size-label-complement;
+    }
+
+    #{$inputTextBase} {
+        -webkit-appearance: none;
+    }
+    #{$inputTextPlus} {
+        display: block;
+        width: 100%;
+        min-width: 140px;
+        height: $height-input;
+        border-radius:  $border-radius-input;
+        color: $color-input;
+        background: $background-input;
+        border: $border-input;
+        transition: all .3s ease-out;
+        padding: 0 $padding-lateral-input;
+
+        &:focus {
+            background: $background-input-focus;
+            border: $border-input-focus;
+        }
+
+        &[readonly] {
+            opacity: 0.4;
+            cursor: default;
+
+            &:focus {
+                background: $background-input;
+                border: $border-input;
+            }
+        }
+    }
+    .su-input-icon {
+        position: relative;
+
+        #{$inputTextBase} {
+            padding-right: $size-button;
+        }
+    }
+    .su-input-action {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: $size-button;
+        width: $size-button;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: $color-main-5;
+        font-size: $font-size-medium1;
+
+        &:hover {
+            color: $color-main-7;
+        }
+        + .su-input-action {
+            transform: translateX(-$size-button);
+        }
+    }
+    .su-js-button .su-input-action {
+        display: block;
+    }
+    textarea,
+    .su-textarea {
+        padding: 10px 15px;
+        min-height: 68px;
+    }
+
+    // Erreurs
+    .su-error-message {
+        display: none;
+        font-size: $font-size-error;
+        color: $color-error;
+    }
+    .su-error {
+        .su-error-message {
+            display: block;
+        }
+
+        #{$inputTextPlus} {
+            border: $border-input-error;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
