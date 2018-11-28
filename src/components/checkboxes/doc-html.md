@@ -1,4 +1,4 @@
-# checkboxes
+# Checkboxes / Case à cocher
 
 Description.
 
