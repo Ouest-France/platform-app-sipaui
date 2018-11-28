@@ -1,4 +1,4 @@
-# Icons/icones
+# Icons / Icônes
 
 Catalogue des icônes disponibles dans la fonte *su-icons*.
 

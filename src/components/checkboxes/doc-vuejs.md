@@ -1,6 +1,6 @@
-# checkboxes
+# Checkboxes / Case à cocher
 
-checkboxes
+Checkboxes
 
 ```js
 import checkboxes from 'sipaui/components/checkboxes';
