@@ -15,7 +15,7 @@ Les checkboxes permettent à l’utilisateur de sélectionner ou désélectionne
 - La zone de touch contient la case à cocher et le texte associé. Sa hauteur est de 34px.
 
 Desactivated / Hover | Activated / Focus | Error | Disabled
------------- | ------------- | ------------- |
+------------ | ------------- | ------------- | ------------- |
 ![checkboxes__desactivated](design/checkboxes__desactivated.png)|![checkboxes__activated](design/checkboxes__activated.png)|![checkboxes__error](design/checkboxes__error.png)|![checkboxes__desactivated__disabled](design/checkboxes__desactivated__disabled.png)
 Hauteur : 20px <br> Largeur : 20px <br> Fond : #FAFAFA <br> Contour : épaisseur 2px, border radius 3px et #D4D4D4 <br> Icône : absent  <br> Texte : 16px, regular, police du thème #333333 <br> Padding : 6px | -  <br> - <br> Fond : #E2001A <br> Contour : épaisseur 2px, border radius 3px et #E2001A <br> Icône : épaisseur 3px, #FFFFFF <br> - <br> - |  -  <br> - <br> -  <br> - <br> Contour : épaisseur 2px, border radius 3px et #B40015 <br> - <br> -  | Opacité : 40 %
 
@@ -29,7 +29,7 @@ Hauteur : 20px <br> Largeur : 20px <br> Fond : #FAFAFA <br> Contour : épaisseur
 
 
 Multiple désactivated / over | Multiple activated / focus | Multiple partial
------------- | ------------- |
+------------ | ------------- | ------------- |
 ![checkboxes__multiple__desactived](design/checkboxes__multiple__desactived.png)|![checkboxes__multiple__activated](design/checkboxes__multiple__activated.png)|![checkboxes__multiple__partial](design/checkboxes__multiple__partial.png)
 
 

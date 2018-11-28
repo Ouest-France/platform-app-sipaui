@@ -12,7 +12,7 @@ Les boutons radio affichent un ensemble d’options parmi lesquelles l’utilisa
 ## Spécifications
 
 Desactivated / Hover | Actived / Focus | Disabled
------------- | ------------- | ------------- | ------------- |
+------------ | ------------- | ------------- |
 ![button-radio__desactivated](design/button-radio__desactivated.png)|![button-radio__activated](design/button-radio__activated.png)|![button-radio__disabled](design/button-radio__disabled.png)
 Hauteur : 20px <br> Largeur : 20px <br> Fond : #FAFAFA <br> Contour : épaisseur 2px, radius 100 % et #D4D4D4 <br> Texte : 16px, regular, police du thème #333333 <br> Padding : 6px | -  <br> - <br> Fond : #FFFFFF <br> Contour : épaisseur interne 7px, radius 100 % et #E2001A <br> - <br> - | Contour : épaisseur interne 7px, radius 100 % et #E2001A
 
@@ -30,9 +30,7 @@ Hauteur : 20px <br> Largeur : 20px <br> Fond : #FAFAFA <br> Contour : épaisseur
 
  </div>
 
-
- <div class="do-dont">
-  <div class="dont">
+ <div class="dont">
 
 ![button-radio__ex__dont-multiple-activaton](design/button-radio__ex__dont-multiple-activaton.png) |
  ------------ |
@@ -40,15 +38,14 @@ Hauteur : 20px <br> Largeur : 20px <br> Fond : #FAFAFA <br> Contour : épaisseur
 
   </div>
 
-
-  <div class="do-dont">
-   <div class="dont">
+  <div class="dont">
 
 ![button-radio__ex__dont-greater-than-3](design/button-radio__ex__dont-greater-than-3.png) |
   ------------ |
   **Don't** <br/> Si le nombre d’option est strictement supérieur à 3, utilisez un autre composant, par exemple un select. |
 
    </div>
+</div>
 
 
 ### Gestion des erreurs

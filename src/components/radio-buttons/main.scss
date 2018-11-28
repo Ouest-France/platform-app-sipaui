@@ -4,3 +4,16 @@
 */
 @import "variables";
 
+body {
+    input[type="radio"] + label,
+    input[type="radio"] + .su-label {
+        color: $color-label-radio;
+        font-size: $font-size-label-radio;
+        font-weight: $font-weight-label-radio;
+        line-height: $line-height-small;
+        height: $font-size-label-radio + .2;
+        margin-bottom: 0;
+        display: inline-block;
+        overflow: hidden;
+    }
+}
