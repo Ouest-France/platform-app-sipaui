@@ -1,4 +1,4 @@
-# Text field/champs de texte
+# Text field / Champs de texte
 
 text-fields
 

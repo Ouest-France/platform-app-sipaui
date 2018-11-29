@@ -1,6 +1,6 @@
-# Text field/champs de texte
+# Text field / Champs de texte
 
-Les champs de texte permettent à l'utilisateur de saisir et de modifier du texte. Ils se trouvent généralement dans un formulaire. Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés, comme le mot de passe sont des composants spécifiques.
+Les champs de texte permettent à l'utilisateur de saisir et de modifier du texte. Ils se trouvent généralement dans un formulaire. Ce composant regroupe les champs texte standards (input text, input number… et le text area).
 
 
 ## États
@@ -40,7 +40,7 @@ Type | Simple
 
 
 - Taille de caractère : 14px
-- Line-height: 1,2
+- Line-height : 1,2
 - Graisse de caractère
   - Texte standard : bold
   - Texte d'aide ou «&nbsp;facultatif&nbsp;» : régular
@@ -52,7 +52,7 @@ Type | Simple
   - Le texte, par exemple «&nbsp;facultatif&nbsp;»
     - Est précisé entre parenthèse suite au label
     - Regular
-    - Color: #666666
+    - Color : #666666
     - Taille de caractère : 13px
 
 ![textfield__ex__champs-obligatoire-facultatif](design/textfield__ex__champs-obligatoire-facultatif.png)
@@ -107,11 +107,10 @@ Type | Simple
 - Un champ est défini comme ko lorsque le texte n'est pas correct ou est absent.
 
 #### Message d'erreur
-- Le message d'error s’affiche lorsque le champ est ko.
-- Il guide l’utilisateur sur la manière de résoudre le problème.
+- Lorsque le champ est ko, un message d'erreur guide l’utilisateur sur la manière de résoudre le problème.
 - Il apparait sur une seule ligne.
-- Celui-ci est présent sous la ligne de saisie.
-- Tant que l'erreur n'est pas corrigée, il reste affiché. Dans un formulaire, l'état d’erreur disparait suite à la validation de l’ensemble du formulaire.
+- Tant que l'erreur n'est pas corrigée, il reste affiché. Dans un formulaire, l'état d’erreur disparait suite à la validation de l’ensemble de la page.
+- Le message s'affiche sous la ligne de saisie : 10px
 - Taille de caractère : 14px
 - Line-height : 18px
 - Graisse de caractère : regular
@@ -132,3 +131,4 @@ Type | Simple
 - Mot de passe
 - Tooltip
 - Sélecteur de date
+- Etc.

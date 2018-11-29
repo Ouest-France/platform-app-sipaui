@@ -1,4 +1,4 @@
-# Text field/champs de texte
+# Text field / Champs de texte
 
 Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés (ie&nbsp;: le mot de passe) sont développés spécifiquement.
 
@@ -170,7 +170,7 @@ Textarea standard. Il est possible de forcer cet affichage avec la classe `su-te
 - `su-input-action`
 - `su-js-button` (positioné par le JS)
 - `su-textarea` (si besoin de surcharge)
-- `su-disabled`
+- `su-disabled` (dépendant du composant *helpers*)
 - `su-error`
 - `su-error-message`
 

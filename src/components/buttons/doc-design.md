@@ -1,4 +1,4 @@
-# Buttons/boutons
+# Buttons / Boutons
 
 Les boutons indiquent à l'utilisateur une action qui est accessible par le tap ou le clic. Le texte des boutons aide l'utilisateur à comprendre l'action produite.
 
@@ -87,19 +87,19 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 <div class="do-dont">
  <div class="do">
- 
+
 ![Image_button_texte minimum_ok](design/Image_button_texte_minimum_ok.png)  |
 ------------ |
 **Do** <br/> Utiliser un texte simple |
-  
+
  </div>
-  
+
  <div class="dont">
- 
+
 ![Image_button_texte minimum_ko](design/Image_button_texte_minimum_ko.png)  |
 ------------ |
 **Don’t** <br/> Ne pas surcharger le texte |
-  
+
  </div>
  </div>
 
@@ -107,7 +107,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 <div class="do-dont">
 <div class="do">
- 
+
 ![Image_button_sequentiel](design/Image_button_sequentiel.png)  |
 ------------ |
 **Do** <br/> Mettre le bouton «&nbsp;Retour&nbsp;» à gauche
@@ -120,14 +120,14 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 - Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte. |
 
-  
+
  <div class="do-dont">
  <div class="dont">
- 
+
 ![Image_button_2 buttons_ko](design/Image_button_buttons_ko.png)  |
 ------------ |
 **Don’t** <br/> Ne placez pas ces boutons les uns en dessous de l'autre.
-  
+
  </div>
  </div>
 
@@ -143,3 +143,4 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 - " Lire la suite + "
 - “ Votre adresse email OK ”
 - " Géolocalisez-vous "
+- Etc.
