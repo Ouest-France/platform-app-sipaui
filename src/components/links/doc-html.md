@@ -1,4 +1,4 @@
-# Links/liens
+# Links / Liens
 
 SipaUI propose 2 types de liens&nbsp;: les **liens éditoriaux** et les **liens boutons**.
 
@@ -53,6 +53,6 @@ Utiliser la classe `su-link-button`.
 - `su-editorial`
 - `su-link` (si besoin de surcharge)
 - `su-link-button`
-- `su-disabled`
+- `su-disabled` (dépendant du composant *helpers*)
 
 </div>

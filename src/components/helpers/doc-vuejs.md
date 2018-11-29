@@ -1,4 +1,4 @@
-# helpers
+# Helpers / Classes d’aide
 
 helpers
 

@@ -1,4 +1,4 @@
-# Buttons/boutons
+# Buttons / Boutons
 
 Normal application button.
 

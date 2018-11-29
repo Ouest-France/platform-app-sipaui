@@ -1,4 +1,4 @@
-# Buttons/boutons
+# Buttons / Boutons
 
 Comme le prévoit le HTML, chaque bouton a 4 états&nbsp;: **normal** (/ ou *link*), **survolé** (*hover*), **cliqué** (*active*) et avec **focus** (*focus*). Toutefois, la charte Ouest-France assigne la même apparence aux états *survolé*, *cliqué*, et avec *focus*.
 
@@ -88,6 +88,6 @@ L’aspect inactif peut être porté par la classe `su-disabled` (issu des *help
 - `su-small`
 - `su-fullwidth` (issu des *helpers*)
 - `su-fullwidth-mobile` (issu des *helpers*) 
-- `su-disabled` (issu des *helpers*) 
+- `su-disabled` (dépendant du composant *helpers*) 
 
 </div>
