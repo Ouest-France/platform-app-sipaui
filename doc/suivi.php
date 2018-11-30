@@ -23,31 +23,11 @@
                 <h1>Liste des composants intégrés</h1>
 
                 <ul>
-                	<li>
-                	    <h2>Boutons</h2>
-                	    <ul>
-                	    	<li>Bouton primaire</li>
-                	    	<li>Bouton secondaire</li>
-                	    	<li>Bouton pleine largeur</li>
-                	    	<li>Bouton pleine largeur Mobile</li>
-                	    	<li>Petit bouton</li>
-                	    	<li>Bouton Abonnement</li>
-                	    	<li>Bouton Premium</li>
-                	    </ul>
-                	</li>
-                	<li>
-                	    <h2>Champs texte</h2>
-                	    <ul>
-                	    	<li>Input text</li>
-                	    	<li>Input tel</li>
-                	    	<li>Input mail</li>
-                	    	<li>…</li>
-                	    	<li>Textarea</li>
-                	    </ul>
-                	</li>
-                	<li>
-                	    <h2>Liens standards</h2>
-                	</li>
+                	<li>Boutons</li>
+                	<li>Champs texte (input texte, textarea)
+                	<li>Liens articles</li>
+                	<li>Helpers (classes d’aide)</li>
+                	<li>Boutons radio</li>
                 </ul>
             </article>
 
