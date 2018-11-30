@@ -1,0 +1,69 @@
+/*
+    Styles du composant radio-buttons de SipaUI
+    Utilise les variables à la fois globales et du composant
+*/
+@import "variables";
+
+body {
+    input[type="radio"],
+    .su-input-radio {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+
+        border-radius: 50%;
+        width: $height-input-radio;
+        height: $height-input-radio;
+        transition: 0.2s all linear;
+        outline: none;
+        margin-right: 5px;
+        position: relative;
+        top: 4px;
+
+        background: $background-input-radio;
+        border: $border-input-radio;
+
+        &:checked {
+            border: $border-input-radio-checked;;
+            background: $background-input-radio-checked;
+        }
+    }
+    input[type="radio"] + label,
+    .su-label-radio,
+    .su-radio-area label {
+        color: $color-label-radio;
+        font-size: $font-size-label-radio;
+        font-weight: $font-weight-label-radio;
+        line-height: $height-input-radio;
+        height: $height-input-radio + 6px;
+        margin: 0;
+        display: inline-block;
+        overflow: hidden;
+
+        & + input[type="radio"],
+        & + input[type="radio"],
+        & + label {
+            margin-left: $margin-medium2;
+        }
+        & + span {
+            margin: 0 $margin-medium2;
+        }
+    }
+    .su-radio-area.su-radio-column {
+        label,
+        .su-label-radio {
+            display: block;
+            margin-bottom: $margin-medium2 - 6px;
+            margin-left: 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .su-radio-area {
+        .su-error-message {
+            margin-top: $margin-small - 6px;
+        }
+    }
+}
