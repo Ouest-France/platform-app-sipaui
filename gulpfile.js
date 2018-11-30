@@ -48,6 +48,11 @@ gulp.task('make-sass', ['clean'], function () {
     }));
 });
 
+gulp.task("make-scripts-dev", ["scripts"], function() {
+    return gulp.src([build + '/js/dev/**/*'])
+        .pipe(gulp.dest(destination + '/js'));
+});
+
 gulp.task("make-css-dev", ["make-sass"], function() {
     return gulp.src([build + '/css/dev/**/*'])
         .pipe(gulp.dest(destination + '/css'));
@@ -60,6 +65,27 @@ gulp.task("make-css-prod", ["make-sass"], function() {
 gulp.task("make-assets", ["clean"], function() {
     return gulp.src([source + '/core/fonts/**/*'])
         .pipe(gulp.dest(destination + '/fonts'));
+});
+
+gulp.task("scripts", ["clean-js"], function() {
+    [
+        'oueststrap',
+    ].forEach(function(a) {
+        gulp.src(source+"/js/"+a+".js")
+            .pipe(include({
+                    extensions: "js",
+                    hardFail: true,
+                    includePaths: [
+                      __dirname + source+"/js"
+                    ]
+                }))
+                .on('error', console.log)
+            .pipe(gulp.dest(destination+"/js"))
+            .pipe(uglify()
+                .on('error', console.log))
+            .pipe(rename(a+'.min.js'))
+            .pipe(gulp.dest(destination+"/js"));
+    });
 });
 
 gulp.task("copy-storybook", ["clean"], function() {
@@ -196,7 +222,7 @@ gulp.task("watch", function() {
     });
 });
 
-gulp.task("make-dev-assets", ["clean", "make-assets", "make-sass", "make-css-dev", "loader-storybook"]);
+gulp.task("make-dev-assets", ["clean", "make-assets", "make-sass", "make-css-dev", "scripts", "make-scripts-dev", "loader-storybook"]);
 gulp.task("make-prod-assets", ["clean", "make-assets", "make-sass", "make-css-prod", "loader-storybook"]);
 gulp.task("default", ["clean", "make-dev-assets"]);
 gulp.task("html", ["clean", "generate-doc",  "generate-html"]);
