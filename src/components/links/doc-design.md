@@ -8,7 +8,7 @@ Les liens rendent les actions visibles et permettent aux utilisateurs d'effectue
 
 ## Types de liens
 ### Lien article
-Un lien article se trouve **parmi un bloc de texte** (article…). Il apporte une information supplémentaire.
+Un «&nbsp;lien article&nbsp;» se trouve **parmi un bloc de texte** (article…). Il apporte une information supplémentaire.
 
 
 Enabled | Hover / Focus / Pressed
@@ -22,7 +22,7 @@ Un «&nbsp;lien bouton&nbsp;» **se positionne comme un bouton** mais a l’appa
 
 Enabled | Hover / Focus / Pressed | Disabled
 ------------ | ------------- | ------------- |
-![button-link__enabled](design/button-link__enabled.png) | ![button-link__hover](design/article-link__hover.png) | ![button-link__disabled](design/button-link__disabled.png)
+![button-link__enabled](design/button-link__enabled.png) | ![button-link__hover](design/button-link__hover.png) | ![button-link__disabled](design/button-link__disabled.png)
 Hauteur : 44px  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère : 16px <br> Graisse : bold <br> Police du thème | - <br> - <br> Couleur : #B40015  <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 | Opacité : 40 %
 
 Contrairement aux boutons primaires et secondaires, le lien bouton ne présente pas de padding et sa largeur minimale n'est pas définie.

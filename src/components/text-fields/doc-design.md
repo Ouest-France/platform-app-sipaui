@@ -7,7 +7,7 @@ Les champs de texte permettent à l'utilisateur de saisir et de modifier du text
 
 Type | Simple
 ------------ | ------------- |
-**Default** | ![textfield__default](design/textfield__default.png)
+**Enabled** | ![textfield__default](design/textfield__default.png)
 **Focus** |![textfield__focus](design/textfield__focus.png)
 **With default value** |  ![textfield__with-default-value](design/textfield__with-default-value.png)
 **Error** | ![textfield__error](design/textfield__error.png)
@@ -53,7 +53,7 @@ Type | Simple
     - Est précisé entre parenthèse suite au label
     - Regular
     - Color : #666666
-    - Taille de caractère : 13px
+    - Taille de caractère : 12px
 
 ![textfield__ex__champs-obligatoire-facultatif](design/textfield__ex__champs-obligatoire-facultatif.png)
 
