@@ -1,6 +1,6 @@
 # Text field / Champs de texte
 
-Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés (ie&nbsp;: le mot de passe) sont développés spécifiquement.
+Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés (par exemple&nbsp;: le mot de passe) sont développés spécifiquement.
 
 <p class="alerte"><span class="su-icon-alert"></span> <em>SipaUI n’intégrant pas pour l’instant de JS, les comportements dynamiques seront à mettre en place par les équipes intégrant nos composant.</em></p>
 
@@ -15,7 +15,7 @@ Règles minimales&nbsp;:
 - Si le champ n’a pas de label, lui ajouter un `aria-label=""`.
 
 Cerise&nbsp;:
-- utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener" class="su-link">pour en savoir plus</a>)
+- Utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener" class="su-link">«&nbsp;Utiliser l'attribut aria-labelledby&nbsp;» chez MDN Web docs [moz://a]</a>).
 
 <!-- STORY -->
 
@@ -23,32 +23,41 @@ Cerise&nbsp;:
 
 
 ### Standard
-Input standard avec le texte expliquant qu’il est facultatif et un placeholder. Le style est appliqué par défaut sur les inputs dans un site SipaUI. Il est possible de forcer cet affichage avec les classes `su-label` et `su-input-text`. Pour le texte en complément dans le label, utiliser la classe `su-label-complement`.
+Input standard avec un placeholder. Le style est appliqué par défaut sur les inputs dans un site SipaUI. Il est possible de forcer cet affichage avec les classes `su-label` et `su-input-text`.
 
 ```html
-<label for="input1">Label<span class="su-label-complement"> (facultatif)</span></label>
-<input id="input1" name="input1" type="text" role="textbox" placeholder="Exemple de contenu attendu">
+<label for="input1">Label</label>
+<input id="input1" name="input1" type="text" role="textbox" placeholder="Placeholder">
 ```
 <label for="input1">Label<span class="su-label-complement"> (facultatif)</span></label>
-<input id="input1" name="input1" type="text" role="textbox" placeholder="Exemple de contenu attendu">
+<input id="input1" name="input1" type="text" role="textbox" placeholder="Placeholder">
+
+### Facultatif
+Input facultatif. Pour le texte en complément dans le label, utiliser la classe `su-label-complement`.
+```html
+<label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
+<input id="input2" name="input2" type="text" role="textbox" required value="Value">
+```
+<label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
+<input id="input2" name="input2" type="text" role="textbox" required value="Value">
 
 ### Prérempli
 Input standard prérempli.
 ```html
 <label for="input2">Label</label>
-<input id="input2" name="input2" type="text" role="textbox" required value="Champ prérempli">
+<input id="input2" name="input2" type="text" role="textbox" required value="Value">
 ```
 <label for="input2">Label</label>
-<input id="input2" name="input2" type="text" role="textbox" required value="Champ prérempli">
+<input id="input2" name="input2" type="text" role="textbox" required value="Value">
 
 ### Readonly
 Input standard prérempli et en readonly. Attention, si le `readonly` suffit à l’input pour changer son opacité, il faut une classe `su-disabled` sur le label pour le changer aussi.
 ```html
 <label for="input3" class="su-disabled">Label</label>
-<input id="input3" name="input3" type="text" role="textbox" required readonly aria-readonly="true" value="Champ prérempli">
+<input id="input3" name="input3" type="text" role="textbox" required readonly aria-readonly="true" value="Value">
 ```
 <label for="input2" class="su-disabled">Label</label>
-<input id="input2" name="input3" type="text" role="textbox" required readonly aria-readonly="true" value="Champ prérempli">
+<input id="input2" name="input3" type="text" role="textbox" required readonly aria-readonly="true" value="Value">
 
 ### Erreur
 Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Cette classe, absente par défaut, sera positionnée par le développeur (soit dynamiquement, soit par réponse serveur). Le message d’erreur sera identifé par la classe `su-error-message`.
@@ -56,13 +65,13 @@ Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a 
 ```html
 <div class="su-error">
 	<label for="input4">Label</label>
-	<input id="input4" name="input4" type="email" role="textbox" required value="Jacques Cartier">
+	<input id="input4" name="input4" type="email" role="textbox" required value="Value">
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 ```
 <div class="su-error">
 	<label for="input4">Label</label>
-	<input id="input4" name="input4" type="email" role="textbox" required value="Jacques Cartier">
+	<input id="input4" name="input4" type="email" role="textbox" required value="Value">
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 
@@ -94,16 +103,16 @@ Classes à appliquer par défaut&nbsp;: `su-input-icon` sur l’input pour rése
 </div>
 </div>
 
-#### Interractivité a créer en JS
+#### Interractivité à créer en JS
  
-##### 1 Affichage du boutton
+##### 1. Affichage du boutton
  
-Le JS doit ajouter la classe `su-js-button` sur le `<div>` parent de l’input (celui qui a déjà la classe `su-input-icon`). Déclencheur&nbsp;: focus sur l’input + au moins un caractère dedans -> la croix apparaît lors de la saisie dans un champ vide, mais aussi au clic dans un champ pré-rempli (qui n’est pas en readonly bien sûr).
+Le JS doit ajouter la classe `su-js-button` sur le `<div>` parent de l’input (qui a déjà la classe `su-input-icon`). Déclencheur&nbsp;: focus sur l’input + au moins un caractère dedans -> la croix apparaît lors de la saisie dans un champ vide, mais aussi au clic dans un champ pré-rempli (qui n’est pas en readonly bien sûr).
 
 ```html
 <label for="input5">Label</label>
 <div class="su-input-icon su-js-button">
-	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required required value="Lorem ipsum">
+	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required required value="Value">
 	<button type="button" class="su-input-action">
 		<span class="su-icon-close"></span>
 	</button>
@@ -113,14 +122,14 @@ Le JS doit ajouter la classe `su-js-button` sur le `<div>` parent de l’input (
 <div><!-- échappement markdown -->
 <label for="input5">Label</label>
 <div class="su-input-icon su-js-button">
-	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required value="Lorem ipsum">
+	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required value="Value">
 	<button type="button" class="su-input-action">
 		<span class="su-icon-close"></span>
 	</button>
 </div>
 </div>
 
-##### 2 Vider le champ
+##### 2. Vider le champ
 
 Cliquer sur la croix supprime l’attribut `value` de l’ìnput.
 
@@ -131,7 +140,7 @@ Cliquer sur la croix supprime l’attribut `value` de l’ìnput.
 <div class="su-error">
 	<label for="input6">Label<span class="su-label-complement"> (facultatif)</span></label>
 	<div class="su-relative">
-		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" class="su-input-icon" required value="Jacques Cartier">
+		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" class="su-input-icon" required value="Value">
 		<button type="button" class="su-input-action" hidden>
 			<span class="su-icon-close"></span>
 		</button>
@@ -143,7 +152,7 @@ Cliquer sur la croix supprime l’attribut `value` de l’ìnput.
 <div class="su-error">
 	<label for="input6">Label<span class="su-label-complement"> (facultatif)</span></label>
 	<div class="su-relative">
-		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" class="su-input-icon" required value="Jacques Cartier">
+		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" class="su-input-icon" required value="Value">
 		<button type="button" class="su-input-action" hidden>
 			<span class="su-icon-close"></span>
 		</button>
