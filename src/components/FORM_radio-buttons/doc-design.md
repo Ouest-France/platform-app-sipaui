@@ -62,14 +62,9 @@ Lorsqu'aucun bouton radio est coché par défaut et qu'un choix est obligatoire,
 - N'utilisez pas de point à la fin du texte.
 Le texte doit décrire le choix de manière claire et distincte.
 - Afficher les options dans un ordre logique, par ex : les plus susceptibles d’être sélectionnées en premier.
-
-
-!!!image!!! bouton hory
 - Lorsque l'espace est suffisant et que la lisibilité est optimale, les boutons radio sont disposés horizontalement. L'espacement entre chaque élément est constant.
 
-
-
-
+![button-radio__ex__opposite](design/button-radio__ex__opposite.png)
 - Par défaut, les boutons radio peuvent être désactivés ou bien activés. Cependant, il est préférable d'activer une des options, la plus probable ou la première.
 - Si un état non sélectionné est nécessaire, ajoutez simplement un bouton radio “Aucun”.
 - L'indicateur de groupe, par ex : civilité qui accompagne des boutons radio n’est pas obligatoire.
