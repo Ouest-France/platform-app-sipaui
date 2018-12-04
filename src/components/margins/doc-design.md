@@ -9,11 +9,13 @@ Les marges permettent le placement cohérent des éléments, des composants dans
 
 ## Types de Marges
 
-Type | Taille | Illustration
------------- | ------------- | ------------- |
-**Small** | Xpx ? | image
-**Medium** |  Xpx ? | image
-**Large** |  Xpx ? | image
+Taille | Mesure | Illustration
+------------ | ------------- | ------------- | ------------- | ------------- |
+**XS** | 5px | ![spacing__5px](design/spacing__5px.png)
+**S** | 10px | ![spacing__10px](design/spacing__10px.png)
+**M** | 20px | ![spacing__20px](design/spacing__20px.png)
+**L** | 30px | ![spacing__30px](design/spacing__30px.png)
+**XL** | 40px | ![spacing__40px](design/spacing__40px.png)
 
 ## Objectifs
 

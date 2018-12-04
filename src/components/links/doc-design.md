@@ -13,8 +13,8 @@ Un «&nbsp;lien article&nbsp;» se trouve **parmi un bloc de texte** (article…
 
 Enabled | Hover / Focus / Pressed
 ------------ | ------------- |
-![article-link__enabled](design/article-link__enabled.png) | ![article-link__hover](design/article-link__hover.png)
-Hauteur du texte  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
+![article-link__enabled](design/article-link__enabled.png)| ![article-link__hover](design/article-link__hover.png)
+Hauteur du texte  <br> Largeur du texte <br> Couleur : #E878787 <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
 
 
 ### Lien bouton
@@ -67,16 +67,6 @@ Enabled | Hover / Focus / Pressed
 - Il est conseillé que le lien n’ait pas plus de 10 mots pour une meilleure performance.
 - Le texte du lien doit être similaire au titre de la page qu'il ouvre.
 - Ne pas mettre le même nom pour différents liens.
-
-<div class="do-dont">
-<div class="dont">
-
-![article-link__ex__link-default-underline](design/article-link__ex__link-default-underline.png) |
------------- |
-**Don’t** <br/> Ne pas mettre un texte en rouge souligné pour le mettre en évidence.
-
-</div>
-</div>
 
 #### Lien bouton
 - La 1re lettre du lien est en majuscule, le reste est en minuscule.
