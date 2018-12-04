@@ -42,7 +42,7 @@ Taille : 20x20px : 20px <br> Fond : #FAFAFA <br> Contour : épaisseur 2px, radiu
 
 ![button-radio__ex__dont-greater-than-3](design/button-radio__ex__dont-greater-than-3.png) |
   ------------ |
-  **Don't** <br/> Si le nombre d’option est strictement supérieur à 3, utilisez un autre composant, par exemple un select. |
+  **Don't** <br/> Si le nombre d’option est supérieur ou égal à 4, utilisez un autre composant, par exemple un select. |
 
    </div>
 </div>
