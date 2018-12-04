@@ -7,14 +7,15 @@ Les champs de texte permettent à l'utilisateur de saisir et de modifier du text
 
 Type | Simple
 ------------ | ------------- |
-**Default** | ![textfield__default](design/textfield__default.png)
-**Focus** |![textfield__focus](design/textfield__focus.png)
+**Enabled** | ![textfield__default](design/textfield__default.png)
 **With default value** |  ![textfield__with-default-value](design/textfield__with-default-value.png)
+**Focus** |![textfield__focus](design/textfield__focus.png)
 **Error** | ![textfield__error](design/textfield__error.png)
 **Disabled** | ![textfield__disabled](design/textfield__disabled.png)
 **With icon** | ![textfield__with-icon-right](design/textfield__with-icon-right.png)
 
 ## Spécifications
+
 #### Label
 - Un label indique le type d’information demandée sous celui-ci.
 - La 1re lettre est en majuscule, le reste est en minuscule.
@@ -53,7 +54,7 @@ Type | Simple
     - Est précisé entre parenthèse suite au label
     - Regular
     - Color : #666666
-    - Taille de caractère : 13px
+    - Taille de caractère : 12px
 
 ![textfield__ex__champs-obligatoire-facultatif](design/textfield__ex__champs-obligatoire-facultatif.png)
 
@@ -80,7 +81,7 @@ Type | Simple
   - Couleur : #333333
 
 #### Texte du placeholder
-- Le texte du placeholder est une description supplémentaire au label. En aucun cas, il ne le substitue.
+- Le texte du placeholder est une description supplémentaire au label. En aucun cas, il ne le substitue. Il doit guider l’utilisateur sur le format de données attendu. On peut ainsi présenter un exemple («&nbsp;prenom.nom@domaine.fr&nbsp;») ou un pattern (date&nbsp;: «&nbsp;jj/mm/aaaa&nbsp;»).
 - Il se trouve dans le container et n'est plus visible lors de la saisie.
 - Padding gauche et à droite : 10px du container (11px avec le filet)
 - Taille de caractère : 16px

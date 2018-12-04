@@ -13,20 +13,22 @@ body a {
 body .su-editorial a,
 body a.su-link {
     color: $color-link-editorial;
-    text-decoration: $text-decoration-link-editorial;
+    text-decoration: none;
+    border-bottom: 1px solid $color-link-editorial;
 
     &:hover,
     &:focus,
     &:active {
         color: $color-link-editorial-hover;
-        text-decoration: $text-decoration-link-editorial-hover;
+        text-decoration: none;
+        border-color: $color-link-editorial-hover;
     }
     &.su-disabled {
         &:hover,
         &:focus,
         &:active {
             color: $color-link-editorial;
-            text-decoration: $text-decoration-link-editorial;
+            border-color: $color-link-editorial;
         }
     }
 }

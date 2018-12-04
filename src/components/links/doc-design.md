@@ -8,13 +8,13 @@ Les liens rendent les actions visibles et permettent aux utilisateurs d'effectue
 
 ## Types de liens
 ### Lien article
-Un lien article se trouve **parmi un bloc de texte** (article…). Il apporte une information supplémentaire.
+Un «&nbsp;lien article&nbsp;» se trouve **parmi un bloc de texte** (article…). Il apporte une information supplémentaire.
 
 
 Enabled | Hover / Focus / Pressed
 ------------ | ------------- |
-![article-link__enabled](design/article-link__enabled.png) | ![article-link__hover](design/article-link__hover.png)
-Hauteur du texte  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
+![article-link__enabled](design/article-link__enabled.png)| ![article-link__hover](design/article-link__hover.png)
+Hauteur du texte  <br> Largeur du texte <br> Couleur : #E878787 <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
 
 
 ### Lien bouton
@@ -22,7 +22,7 @@ Un «&nbsp;lien bouton&nbsp;» **se positionne comme un bouton** mais a l’appa
 
 Enabled | Hover / Focus / Pressed | Disabled
 ------------ | ------------- | ------------- |
-![button-link__enabled](design/button-link__enabled.png) | ![button-link__hover](design/article-link__hover.png) | ![button-link__disabled](design/button-link__disabled.png)
+![button-link__enabled](design/button-link__enabled.png) | ![button-link__hover](design/button-link__hover.png) | ![button-link__disabled](design/button-link__disabled.png)
 Hauteur : 44px  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère : 16px <br> Graisse : bold <br> Police du thème | - <br> - <br> Couleur : #B40015  <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 | Opacité : 40 %
 
 Contrairement aux boutons primaires et secondaires, le lien bouton ne présente pas de padding et sa largeur minimale n'est pas définie.
@@ -67,16 +67,6 @@ Enabled | Hover / Focus / Pressed
 - Il est conseillé que le lien n’ait pas plus de 10 mots pour une meilleure performance.
 - Le texte du lien doit être similaire au titre de la page qu'il ouvre.
 - Ne pas mettre le même nom pour différents liens.
-
-<div class="do-dont">
-<div class="dont">
-
-![article-link__ex__link-default-underline](design/article-link__ex__link-default-underline.png) |
------------- |
-**Don’t** <br/> Ne pas mettre un texte en rouge souligné pour le mettre en évidence.
-
-</div>
-</div>
 
 #### Lien bouton
 - La 1re lettre du lien est en majuscule, le reste est en minuscule.

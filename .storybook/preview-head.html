@@ -51,7 +51,8 @@
     h2,
     h3,
     h4,
-    h5 {
+    h5,
+    div {
         font-family: Arial, Helvetica, sans-serif;
     }
     h1,
@@ -163,6 +164,12 @@
     .dont strong {
         color: #DF3036 !important;
         font-size: 1.6rem !important;
+    }
+
+    @media screen and (max-width: 376px) {
+        .markdown-body pre {
+            width: 270px;
+        }
     }
 
 </style>
