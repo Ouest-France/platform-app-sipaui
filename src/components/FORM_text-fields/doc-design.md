@@ -8,7 +8,8 @@ Les champs de texte permettent à l'utilisateur de saisir et de modifier du text
 Type | Simple
 ------------ | ------------- |
 **Enabled** | ![textfield__default](design/textfield__default.png)
-**With default value** |  ![textfield__with-default-value](design/textfield__with-default-value.png)
+**With placeholder** | ![textfield__with-placeholder](design/textfield__with-placeholder.png)
+**With default value** |  ![textfield__with-default-value](design/textfield__with-default-value.png)  
 **Focus** |![textfield__focus](design/textfield__focus.png)
 **Error** | ![textfield__error](design/textfield__error.png)
 **Disabled** | ![textfield__disabled](design/textfield__disabled.png)

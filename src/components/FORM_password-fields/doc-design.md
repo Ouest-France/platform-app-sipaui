@@ -11,8 +11,8 @@ Les champs mot de passe sont des champs de texte où les caractères saisis sont
 
 Type | Simple
 ------------ | ------------- |------------ | ------------- |
-**Enabled** | image
-**Focus** |image
+**Enabled** | ![password__enabled](design/password__enabled.png)
+**Focus** | ![password__focus](design/password__focus.png)
 **1er caractère saisi** | image
 **Champ visible** | image
 **Error** | image
