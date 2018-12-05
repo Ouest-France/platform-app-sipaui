@@ -4,52 +4,30 @@
 */
 @import "variables";
 
+$height-input-radio:     20px;
+$top-input-radio:        4px;
+$height-radio-area: $height-input-radio + $top-input-radio;
+$line-height-label: 1.2;
+
 body {
-    input[type="radio"],
-    .su-input-radio {
-        -webkit-appearance: none;
-           -moz-appearance: none;
-                appearance: none;
+    .su-radio-area {
+        height: $height-radio-area;
 
-        border-radius: 50%;
-        width: $height-input-radio;
-        height: $height-input-radio;
-        transition: 0.2s all linear;
-        outline: none;
-        margin-right: 5px;
-        position: relative;
-        top: 4px;
-
-        background: $background-input-radio;
-        border: $border-input-radio;
-
-        &:checked {
-            border: $border-input-radio-checked;;
-            background: $background-input-radio-checked;
+        &.su-disabled {
+            label,
+            su-label,
+            input,
+            .su-input-radio {
+                cursor: default;
+            }
         }
-    }
-    input[type="radio"] + label,
-    .su-label-radio,
-    .su-radio-area label {
-        color: $color-label-radio;
-        font-size: $font-size-label-radio;
-        font-weight: $font-weight-label-radio;
-        line-height: $height-input-radio;
-        height: $height-input-radio + 6px;
-        margin: 0;
-        display: inline-block;
-        overflow: hidden;
-
-        & + input[type="radio"],
-        & + input[type="radio"],
-        & + label {
-            margin-left: $margin-medium2;
-        }
-        & + span {
-            margin: 0 $margin-medium2;
+        .su-error-message {
+            margin-top: $margin-small - 6px;
         }
     }
     .su-radio-area.su-radio-column {
+        height: auto;
+
         label,
         .su-label-radio {
             display: block;
@@ -61,9 +39,55 @@ body {
             }
         }
     }
-    .su-radio-area {
-        .su-error-message {
-            margin-top: $margin-small - 6px;
+    .su-radio-area.su-error {
+        height: auto;
+    }
+
+    input[type="radio"],
+    .su-input-radio {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+
+        border-radius: 100%;
+        width: $height-input-radio;
+        height: $height-input-radio;
+        transition: 0.2s all linear;
+        outline: none;
+        margin-right: 5px;
+        position: relative;
+        top: $top-input-radio;
+        cursor: pointer;
+        background: $background-input-radio;
+        border: $border-input-radio;
+
+        &:checked {
+            border: $border-input-radio-checked;
+            background: $background-input-radio-checked;
+        }
+    }
+    .su-label-radio,
+    .su-radio-area label {
+        color: $color-label-radio;
+        font-size: $font-size-label-radio;
+        font-weight: $font-weight-label-radio;
+        height: $height-radio-area;
+        line-height: $line-height-label;
+        margin: 0;
+        display: inline-block;
+        overflow: hidden;
+        cursor: pointer;
+
+        & + input[type="radio"],
+        & + input[type="radio"],
+        & + label {
+            margin-left: $margin-medium2 - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
+        }
+        & + span {
+            display: inline-block;
+            overflow: hidden;
+            line-height: $line-height-label;
+            margin: 0 $margin-medium2 - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
         }
     }
 }

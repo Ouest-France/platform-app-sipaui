@@ -35,7 +35,7 @@ Taille | Mesure | Illustration
 <div class="do-dont">
  <div class="do">
 
-image |
+![spacing__ex__do](design/spacing__ex__do.png) |
 ------------ |
 **Do** <br/> Espacer suffisament les composants afin des les distinguer. |
 
@@ -43,7 +43,7 @@ image |
 
  <div class="dont">
 
-Image |
+![spacing__ex__dont](design/spacing__ex__dont.png) |
 ------------ |
 **Don’t** <br/> Dans un champ de texte, le label doit être plus proche du container lié. |
 
@@ -51,9 +51,12 @@ Image |
  </div>
 
 
+- Dans un formulaire, l'espace idéal entre 2 champs de texte est M : 20px.
+
 ### Hiérarchiser les éléments
 
 - Les éléments plus espacés ont tendance à être plus importants que les éléments moins espacés. Dans une page, un élément de haute importance aura de grandes marges afin d'attirer l'attention de l’utilisateur.
 
 ### Attirer l'attention
+
 - Plus il y a d'espaces autour d'un objet, plus l'utilisateur est focaliser sur celui-ci.

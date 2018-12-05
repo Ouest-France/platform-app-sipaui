@@ -4,7 +4,7 @@ Ce composant regroupe les champs texte standards (input text, input number… et
 
 <p class="alerte"><span class="su-icon-alert"></span> <em>SipaUI n’intégrant pas pour l’instant de JS, les comportements dynamiques seront à mettre en place par les équipes intégrant nos composant.</em></p>
 
-<a href="#liste-classes" target="_self" class="su-link">Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
 **Accessibilité**
 
@@ -29,17 +29,17 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 <label for="input1">Label</label>
 <input id="input1" name="input1" type="text" role="textbox" placeholder="Placeholder">
 ```
-<label for="input1">Label<span class="su-label-complement"> (facultatif)</span></label>
+<label for="input1">Label</label>
 <input id="input1" name="input1" type="text" role="textbox" placeholder="Placeholder">
 
 ### Facultatif
 Input facultatif. Pour le texte en complément dans le label, utiliser la classe `su-label-complement`.
 ```html
 <label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
-<input id="input2" name="input2" type="text" role="textbox" required value="Value">
+<input id="input2" name="input2" type="text" role="textbox" required placeholder="Placeholder">
 ```
 <label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
-<input id="input2" name="input2" type="text" role="textbox" required value="Value">
+<input id="input2" name="input2" type="text" role="textbox" required placeholder="Placeholder">
 
 ### Prérempli
 Input standard prérempli.
@@ -105,7 +105,7 @@ Classes à appliquer par défaut&nbsp;: `su-input-icon` sur l’input pour rése
 
 #### Interractivité à créer en JS
  
-##### 1. Affichage du boutton
+##### 1. Affichage du bouton
  
 Le JS doit ajouter la classe `su-js-button` sur le `<div>` parent de l’input (qui a déjà la classe `su-input-icon`). Déclencheur&nbsp;: focus sur l’input + au moins un caractère dedans -> la croix apparaît lors de la saisie dans un champ vide, mais aussi au clic dans un champ pré-rempli (qui n’est pas en readonly bien sûr).
 
