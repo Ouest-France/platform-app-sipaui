@@ -4,7 +4,7 @@ Ce composant regroupe les champs texte standards (input text, input number… et
 
 <p class="alerte"><span class="su-icon-alert"></span> <em>SipaUI n’intégrant pas pour l’instant de JS, les comportements dynamiques seront à mettre en place par les équipes intégrant nos composant.</em></p>
 
-<a href="#liste-classes" target="_self" class="su-link">Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
 **Accessibilité**
 
