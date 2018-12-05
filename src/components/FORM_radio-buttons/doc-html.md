@@ -6,7 +6,7 @@ Il y a 2 façons d’écrire un bouton radio en HTML&nbsp;:
 
 Toutefois, pour gérer l’affichage en colonne d’une suite de boutons-radio, ou le placement de texte entre les boutons-radio la seconde méthode s'impose. **Par conséquent, SipaUI ne permettra que la seconde méthode**.
 
-<a href="#liste-classes" target="_self" class="su-link">Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
 <!-- STORY -->
 

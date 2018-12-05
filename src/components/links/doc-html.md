@@ -4,31 +4,31 @@ SipaUI propose 2 types de liens&nbsp;: les **liens éditoriaux** et les **liens 
 
 Comme le prévoit le HTML, les liens ont 4 états&nbsp;: **normal** (/ ou *link*), **survolé** (*hover*), **cliqué** (*active*) et avec **focus** (*focus*). Toutefois, la charte Ouest-France assigne la même apparence aux états *survolé*, *cliqué*, et avec *focus*.
 
-<a href="#liste-classes" target="_self" class="su-link">Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
 <!-- STORY -->
 
-## Lien éditorial
+## Lien article
 
-Le lien éditorial s’intégrant dans du contenu textuel sa police, sa taille, sa graisse sont dépendants du texte dans lequel il est inclus.
+Le lien article s’intégrant dans du contenu textuel, sa police, sa taille, sa graisse sont dépendants du texte dans lequel il est inclus.
 
-Ce lien est le lien par défaut pour toute balise `<a>` dans un site utilisant SipaUI. Il peut être forcé en intégrant la classe `su-editorial` sur un bloc parent ou la classe `su-link` directement sur un lien.
+Ce lien est le lien par défaut pour toute balise `<a>` dans un site utilisant SipaUI. Si besoin, il peut être forcé en intégrant la classe `su-article` sur un bloc parent ou la classe `su-link` directement sur un lien dans le cas où l’on n'aurait pas accès à un bloc parent d’un lien.
 
-### Version avec la classe `su-editorial` sur un parent
+### Version avec la classe `su-article` sur un parent
 ```html
-<setion class="su-editorial">
-	<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien éditorial SipaUI</a> Tortor Cursus.</p>
+<setion class="su-article">
+	<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article SipaUI</a> Tortor Cursus.</p>
 </section>
 ```
-<section class="su-editorial">
-	<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien éditorial SipaUI</a> Tortor Cursus.</p>
+<section class="su-article">
+	<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article SipaUI</a> Tortor Cursus.</p>
 </section>
 
 ### Version avec la classe `su-link`
 ```html
-<a href="javascript:;" class="su-link">Lien éditorial SipaUI</a>
+<a href="javascript:;" class="su-link">Lien article SipaUI</a>
 ```
-<p>Etiam Venenatis Bibendum <a href="javascript:;" class="su-link">Lien éditorial SipaUI</a> Tortor Cursus. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor.</p>
+<a href="javascript:;" class="su-link">Lien article SipaUI</a>
 
 
 ## Lien bouton
@@ -50,7 +50,7 @@ Utiliser la classe `su-link-button`.
 <div id="liste-classes">
 
 ## Liste des classes disponibles
-- `su-editorial`
+- `su-article`
 - `su-link` (si besoin de surcharge)
 - `su-link-button`
 - `su-disabled` (dépendant du composant *helpers*)
