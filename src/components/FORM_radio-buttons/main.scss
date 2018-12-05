@@ -49,7 +49,7 @@ body {
            -moz-appearance: none;
                 appearance: none;
 
-        border-radius: 50%;
+        border-radius: 100%;
         width: $height-input-radio;
         height: $height-input-radio;
         transition: 0.2s all linear;
@@ -62,11 +62,10 @@ body {
         border: $border-input-radio;
 
         &:checked {
-            border: $border-input-radio-checked;;
+            border: $border-input-radio-checked;
             background: $background-input-radio-checked;
         }
     }
-    input[type="radio"] + label,
     .su-label-radio,
     .su-radio-area label {
         color: $color-label-radio;
@@ -91,6 +90,4 @@ body {
             margin: 0 $margin-medium2 - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
         }
     }
-
-
 }
