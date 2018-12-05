@@ -4,7 +4,7 @@ Il y a 2 façons d’écrire un bouton radio en HTML&nbsp;:
 - **Méthode 1&nbsp;:** `<input>` PUIS `<label>`
 - **Méthode 2&nbsp;:** `<input>` DANS `<label>`
 
-Toutefois, pour gérer l’affichage en colonne d’une suite de boutons-radio, ou le placement de texte entre les boutons-radio la seconde méthode s'impose. **Par conséquent, SipaUI ne permettra que la seconde méthode**.
+Toutefois, pour gérer l’affichage en colonne d’une suite de boutons-radio, ou le placement de texte entre ces boutons-radio la seconde méthode s'impose. **Par conséquent, SipaUI ne permettra que la seconde méthode**.
 
 <a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
@@ -12,7 +12,7 @@ Toutefois, pour gérer l’affichage en colonne d’une suite de boutons-radio, 
 
 ## Boutons-radio standards
 
-La classe `su-radio-area` est nécessaire pour encadrer la zone de boutons-radio. Dans un site utilisant SipaUI les balises `<input type="radio">` et `<label>` s'affichent comme attendu. Toutefois, il est possible de forcer l’affichage charté avec les classes `su-input-radio` sur l’input et `su-label-radio` sur le label.
+La classe `su-radio-area` est nécessaire pour encadrer la zone de boutons-radio. Dans un site utilisant SipaUI, les balises `<input type="radio">` et `<label>` s'affichent comme attendu. Toutefois, il est possible de forcer l’affichage charté avec les classes `su-input-radio` sur l’input et `su-label-radio` sur le label.
 
 
 ### Sur une ligne, basique

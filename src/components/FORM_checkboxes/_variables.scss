@@ -3,3 +3,14 @@
     ex:
     $border-button-premium: 3px !default;
 */
+
+// LABEL ------------------------------------------------------------------------------------------/
+$color-label-checkbox:         $color-main-7             !default;
+$font-size-label-checkbox:     $font-size-base          !default;
+$font-weight-label-checkbox:   $font-weight-medium         !default;
+
+// INPUT ------------------------------------------------------------------------------------------/
+$background-input-checkbox:            #fafafa                       !default;
+$border-input-checkbox:                1px solid $color-main-3       !default;
+$background-input-checkbox-checked:    $color-secondary-1            !default;
+$border-input-checkbox-checked:        1px solid $color-secondary-1  !default;
