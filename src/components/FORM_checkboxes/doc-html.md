@@ -27,8 +27,6 @@ La classe `su-checkbox-area` est nécessaire pour encadrer la zone des case à c
 
 ### Sur une ligne, avec du texte entre les cases à cocher
 
-Dans ce contexte (**méthode 2**), la classe `su-radio-area` est indispensable.
-
 ```html
 
 ```
