@@ -70,7 +70,7 @@ var of = {
     }
 };
 
-var on = function (event, elem, callback, capture) {
+document.on = function (event, elem, callback, capture) {
     if (typeof (elem) === 'function') {
         capture = callback;
         callback = elem;
@@ -80,6 +80,36 @@ var on = function (event, elem, callback, capture) {
     elem = typeof elem === 'string' ? document.querySelector(elem) : elem;
     if (!elem) return;
     elem.addEventListener(event, callback, capture);
+}
+
+document.ofScan = function(outerScan){
+    if(!this) { return; }
+
+    var $contexte = this;
+
+    of.scanSels.forEach(function(scanSel){
+
+        var $toScan = $contexte.querySelectorAll( scanSel.sel ),
+            nbElts;
+
+        if( outerScan ) { $toScan = $toScan.addBack( scanSel.sel ); }
+        
+        for (var i = 0; i < $toScan.length; i++) {
+            var $o = $toScan[i],
+                doneScans = $o.getAttribute('doneScans.of') || [];
+
+            if( false == doneScans.includes(scanSel.sel) ) {
+                scanSel.fn.call($o, $contexte); // en param, la callback aura le context de scan (this);
+                doneScans.push(scanSel.sel);
+                $o.setAttribute('doneScans.of', doneScans);
+            }
+        }
+
+    });
+    return this;
+}
+document.onScan = function(sel,fn) {
+    of.scanSels.push({sel:sel,fn:fn});
 }
 
 ;(function(of, undefined){
@@ -96,9 +126,13 @@ var on = function (event, elem, callback, capture) {
     // Initialisation du scan (fin du footer)
     of.asyncLoadOf = function() {
 
-        of.$doc.ofScan(); // first scan sur tout le doc
-
-        $('html').addClass('ofready').trigger('ofready');
+        of.doc.ofScan(); // first scan sur tout le doc
+        
+        var ofready = document.createEvent("Event");
+        ofready.initEvent("ofready", false, true);
+        var html = document.querySelector('html')
+        html.classList.add("ofready")
+        html.dispatchEvent(ofready);
     };
 
     var interOf = setInterval(function(){
