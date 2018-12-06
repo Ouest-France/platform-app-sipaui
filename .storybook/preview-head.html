@@ -9,7 +9,9 @@
         link.charset ="utf-8";
         link.href = 'css/main-sipaui'+ ((theme == 'of') ? '' : '-'+theme) +'.css';
         document.head.appendChild(link);
-
+        var script = document.createElement('script');
+        script.src = 'js/oueststrap.js';
+        document.head.appendChild(script);
         var selector = document.createElement('select');
         selector.id = 'theme_sipa_selector';
 
