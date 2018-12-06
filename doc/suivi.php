@@ -49,30 +49,30 @@
                     </li>
                     <li class="row">
                 	    <div class="cell"><span class="version">0.4.0 ß</span></div>
-                	    <div class="cell">Select simple, police d’icônes.</div>
+                	    <div class="cell">Select simple, police d’icônes, marges.</div>
+                    </li>
+                    <li class="row">
+                	    <div class="cell"><span class="version">0.5.0 ß</span></div>
+                	    <div class="cell">Éléments typographiques de base (à définir).</div>
                     </li>
                 	<li class="row">
                 	    <div class="cell"><span class="version">1.0.0</span></div>
-                	    <div class="cell">Grille, marges.</div>
-                    </li>
-                	<li class="row">
-                	    <div class="cell"><span class="version">1.1.0</span></div>
-                	    <div class="cell">Éléments typographiques de base (à définir).</div>
+                	    <div class="cell">Grille.</div>
                     </li>
                     <li class="row">
-                	    <div class="cell"><span class="version">1.3.0</span></div>
+                	    <div class="cell"><span class="version">1.1.0</span></div>
                 	    <div class="cell">Mot de passe.</div>
                     </li>
                 	<li class="row">
-                	    <div class="cell"><span class="version">1.3.0</span></div>
+                	    <div class="cell"><span class="version">1.2.0</span></div>
                 	    <div class="cell">Loader de page, loader de champ texte, loader de bouton.</div>
                     </li>
                     <li class="row">
-                	    <div class="cell"><span class="version">1.4.0</span></div>
+                	    <div class="cell"><span class="version">1.3.0</span></div>
                 	    <div class="cell">Pagination.</div>
                     </li>
                     <li class="row">
-                	    <div class="cell"><span class="version">1.5.0</span></div>
+                	    <div class="cell"><span class="version">1.4.0</span></div>
                 	    <div class="cell">Stepper.</div>
                     </li>
                 </ul>
