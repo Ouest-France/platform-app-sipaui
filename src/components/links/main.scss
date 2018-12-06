@@ -4,14 +4,14 @@
 */
 @import "variables";
 
-// LIEN ÉDITORIAL ------------------------------------------------------------------------------------------/
+
 body a {
     -webkit-text-decoration-skip: ink !important;
             text-decoration-skip: ink !important;
 }
 
+// LIEN ÉDITORIAL ------------------------------------------------------------------------------------------/
 body {
-    a,
     .su-article a,
     a.su-link {
         color: $color-link-article;

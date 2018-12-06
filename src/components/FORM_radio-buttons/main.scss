@@ -4,10 +4,10 @@
 */
 @import "variables";
 
-$height-input-radio:     20px;
-$top-input-radio:        4px;
-$height-radio-area: $height-input-radio + $top-input-radio;
-$line-height-label: 1.2;
+$height-input-radio:        20px;
+$height-radio-area:         34px;
+$line-height-label:         1.5;
+$padding-top-label:         6px;
 
 body {
     .su-radio-area {
@@ -21,17 +21,17 @@ body {
                 cursor: default;
             }
         }
-        .su-error-message {
-            margin-top: $margin-small - 6px;
-        }
     }
     .su-radio-area.su-radio-column {
         height: auto;
+        @include flexDisplay();
+        @include flexDirection(column, vertical);
+        @include flexAlign(flex-start);
 
         label,
         .su-label-radio {
             display: block;
-            margin-bottom: $margin-medium2 - 6px;
+            margin-bottom: $margin-small - 5px;
             margin-left: 0;
 
             &:last-child {
@@ -43,6 +43,35 @@ body {
         height: auto;
     }
 
+    .su-label-radio,
+    .su-radio-area label {
+        color: $color-label-radio;
+        font-size: $font-size-label-radio;
+        font-weight: $font-weight-label-radio;
+        height: auto;
+        min-height: $height-radio-area;
+        line-height: $line-height-label;
+        padding-top: $padding-top-label;
+        padding-left: $height-input-radio + 7px;
+        margin: 0;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        & + input[type="radio"],
+        & + label {
+            margin-left: $margin-medium2 - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
+        }
+        & + span {
+            display: inline-block;
+            overflow: auto; // utile pour mettre un contexte de block pour FireFox
+            line-height: $line-height-label;
+            margin: 0 $margin-medium2 - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
+            min-height: $height-radio-area;
+            padding-top: $padding-top-label;
+        }
+    }
     input[type="radio"],
     .su-input-radio {
         -webkit-appearance: none;
@@ -54,9 +83,9 @@ body {
         height: $height-input-radio;
         transition: 0.2s all linear;
         outline: none;
-        margin-right: 5px;
-        position: relative;
-        top: $top-input-radio;
+        position: absolute;
+        top: 7px;
+        left: 0;
         cursor: pointer;
         background: $background-input-radio;
         border: $border-input-radio;
@@ -64,30 +93,6 @@ body {
         &:checked {
             border: $border-input-radio-checked;
             background: $background-input-radio-checked;
-        }
-    }
-    .su-label-radio,
-    .su-radio-area label {
-        color: $color-label-radio;
-        font-size: $font-size-label-radio;
-        font-weight: $font-weight-label-radio;
-        height: $height-radio-area;
-        line-height: $line-height-label;
-        margin: 0;
-        display: inline-block;
-        overflow: hidden;
-        cursor: pointer;
-
-        & + input[type="radio"],
-        & + input[type="radio"],
-        & + label {
-            margin-left: $margin-medium2 - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
-        }
-        & + span {
-            display: inline-block;
-            overflow: hidden;
-            line-height: $line-height-label;
-            margin: 0 $margin-medium2 - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
         }
     }
 }

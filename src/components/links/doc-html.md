@@ -12,7 +12,7 @@ Comme le prévoit le HTML, les liens ont 4 états&nbsp;: **normal** (/ ou *link*
 
 Le lien article s’intégrant dans du contenu textuel, sa police, sa taille, sa graisse sont dépendants du texte dans lequel il est inclus.
 
-Ce lien est le lien par défaut pour toute balise `<a>` dans un site utilisant SipaUI. Si besoin, il peut être forcé en intégrant la classe `su-article` sur un bloc parent ou la classe `su-link` directement sur un lien dans le cas où l’on n'aurait pas accès à un bloc parent d’un lien.
+Ce lien est le lien à utiliser dans du contenu éditorial comme un article. On l’applique en ajoutant la classe `su-article` sur un bloc parent (par exemple&nbsp;: la balise `<article>`). On peut aussi le forcer ponctuellement (si besoin, comme l’absence d’accès à un bloc parent du `<a>`) en appliquant la classe `su-link` directement sur le lien.
 
 ### Version avec la classe `su-article` sur un parent
 ```html
