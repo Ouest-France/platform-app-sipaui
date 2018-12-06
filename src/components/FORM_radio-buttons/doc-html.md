@@ -68,12 +68,12 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 ```html
 <div class="su-radio-area su-radio-column">
 	<label for="radio7"><input type="radio" id="radio7" name="nom4" value="Valeur 1" checked>Valeur 1</label>
-	<label for="radio8"><input type="radio" id="radio8" name="nom4" value="Valeur 2">Valeur 2</label>
+	<label for="radio8"><input type="radio" id="radio8" name="nom4" value="Valeur 2">Valeur 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</label>
 </div>
 ```
 <div class="su-radio-area su-radio-column">
 	<label for="radio7"><input type="radio" id="radio7" name="nom4" value="Valeur 1" checked>Valeur 1</label>
-	<label for="radio8"><input type="radio" id="radio8" name="nom4" value="Valeur 2">Valeur 2</label>
+	<label for="radio8"><input type="radio" id="radio8" name="nom4" value="Valeur 2">Valeur 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</label>
 </div>
 
 ## Gestion des erreurs
