@@ -50,6 +50,17 @@ gulp.task('make-sass', ['clean'], function () {
 
 gulp.task("scripts", ["clean-js"], function() {
     return gulp.src([source + "/core/js/oueststrap.js"])
+        .pipe(include({
+            extensions: "js",
+            hardFail: true,
+            includePaths: [
+            __dirname + "/src/core/js"
+            ]
+        }))
+            .on('error', console.log)
+        /*.pipe(uglify()
+            .on('error', console.log))
+        .pipe(rename('oueststrap.js'))*/
         .pipe(gulp.dest(build + '/js/dev'));
 });
 

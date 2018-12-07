@@ -102,8 +102,8 @@ Le JS doit ajouter la classe `su-js-button` sur le `<div>` parent de l’input (
 
 ```html
 <label for="input5">Label</label>
-<div class="su-input-icon su-js-button">
-	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required required value="Lorem ipsum">
+<div class="su-input-icon">
+	<input id="input5" name="input5" type="text" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' role="textbox" placeholder="Placeholder" required required value="Lorem ipsum">
 	<button type="button" class="su-input-action">
 		<span class="su-icon-close"></span>
 	</button>
@@ -112,8 +112,8 @@ Le JS doit ajouter la classe `su-js-button` sur le `<div>` parent de l’input (
 
 <div><!-- échappement markdown -->
 <label for="input5">Label</label>
-<div class="su-input-icon su-js-button">
-	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required value="Lorem ipsum">
+<div class="su-input-icon">
+	<input id="input5" name="input5" type="text" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' role="textbox" placeholder="Placeholder" required value="Lorem ipsum">
 	<button type="button" class="su-input-action">
 		<span class="su-icon-close"></span>
 	</button>
