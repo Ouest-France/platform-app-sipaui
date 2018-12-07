@@ -119,7 +119,6 @@ document.onScan = function(sel,fn) {
 
     // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
     // PolyFills
-    //=require libs/polyfills/**/*.js
 
 
     // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
@@ -139,7 +138,7 @@ document.onScan = function(sel,fn) {
         if( undefined === window.of ) return; // plugin du framework, pas de header pas plugin.
         clearTimeout(interOf);
 
-       //=require libs/composants/oftoggleclass.js
+        //=require libs/components/oftoggleclass.js
 
         of.asyncLoadOf();
     }, 25);
