@@ -8,6 +8,7 @@ $height-input-radio:        20px;
 $height-radio-area:         34px;
 $line-height-label:         1.5;
 $padding-top-label:         6px;
+$padding-left-label: $height-input-radio + 7px;
 
 body {
     .su-radio-area {
@@ -52,7 +53,7 @@ body {
         min-height: $height-radio-area;
         line-height: $line-height-label;
         padding-top: $padding-top-label;
-        padding-left: $height-input-radio + 7px;
+        padding-left: $padding-left-label;
         margin: 0;
         display: inline-block;
         position: relative;

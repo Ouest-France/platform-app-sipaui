@@ -2,7 +2,7 @@
 
 Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés (par exemple&nbsp;: le mot de passe) sont développés spécifiquement.
 
-<p class="alerte"><span class="su-icon-alert"></span> <em>SipaUI n’intégrant pas pour l’instant de JS, les comportements dynamiques seront à mettre en place par les équipes intégrant nos composant.</em></p>
+<p class="alerte"><span class="su-icon-alert"></span> <em>SipaUI n’intégrant pas pour l’instant de JS, les comportements dynamiques seront à mettre en place par les équipes intégrant nos composants.</em></p>
 
 <a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
