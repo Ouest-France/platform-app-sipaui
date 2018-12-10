@@ -45,7 +45,7 @@
                     </li>
                     <li class="row">
                 	    <div class="cell"><span class="version">0.3.0 ß</span></div>
-                	    <div class="cell"><span class="fait">Bouton radio</span>, checkbox, <span class="fait">évolution liens article.</span></div>
+                	    <div class="cell"><span class="fait">Bouton radio, checkbox, évolution liens article.</span></div>
                     </li>
                     <li class="row">
                 	    <div class="cell"><span class="version">0.4.0 ß</span></div>
