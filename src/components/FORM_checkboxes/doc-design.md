@@ -57,8 +57,8 @@ La gestion des erreurs est identique au champ de texte.
  </div>
 
 
-- Lorsqu’il y a plusieurs cases à cocher, les présenter dans un ordre logique, par exemple&nbsp;: les plus susceptibles d’être sélectionnées en premier.
 - On ne peut mettre un lien dans un label de case à cocher. Il y aurait concurrence de clic entre ce lien et l’activation de la case sur le label.
+- Lorsqu’il y a plusieurs cases à cocher, les présenter dans un ordre logique, par exemple&nbsp;: les plus susceptibles d’être sélectionnées en premier.
 - Dans le cas de plus de deux case à cocher, elles sont disposées verticalement, une case à cocher par ligne.
 - Si les options s’excluent mutuellement, utilisez des radio boutons.
 - Lorsque l’utilisateur doit activer / désactiver une option ou pour exécuter une commande, un switch est recommandé.
