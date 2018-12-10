@@ -14,7 +14,7 @@ Les boutons radio affichent un ensemble d’options parmi lesquelles l’utilisa
 Desactivated / Hover | Actived / Focus | Disabled
 ------------ | ------------- | ------------- |
 ![button-radio__desactivated](design/button-radio__desactivated.png)|![button-radio__activated](design/button-radio__activated.png)|![button-radio__disabled](design/button-radio__disabled.png)
-Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 % et #D4D4D4 <br> Texte : 16px, regular, police du thème #333333 <br> Padding right : 6px | -  <br> Fond : #FFFFFF <br> Contour : épaisseur interne 7px, radius 100 % et #E2001A <br> - <br> - | Contour : épaisseur interne 7px, radius 100 % et #E2001A
+Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 % et #D4D4D4 <br> Texte : 16px, regular, police du thème #333333 <br> Margin right : 6px | -  <br> Fond : #FFFFFF <br> Contour : épaisseur interne 7px, radius 100 % et #E2001A <br> - <br> - | Opacité&nbsp;:&nbsp;40%
 
 - La zone de touch contient le radio bouton et le texte associé. Sa hauteur est de 34px.
 
@@ -50,7 +50,7 @@ Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 %
 
 ### Gestion des erreurs
 
-Lorsqu'aucun bouton radio est coché par défaut et qu'un choix est obligatoire, un message d'erreur s'affiche 20px sous le dernier radio bouton.
+Lorsqu’aucun bouton radio n’est coché par défaut et qu’un choix est obligatoire, un message d’erreur s’affiche 20px sous le dernier radio bouton.
 
 
 ![button-radio__ex__error](design/button-radio__ex__error.png)
@@ -58,16 +58,16 @@ Lorsqu'aucun bouton radio est coché par défaut et qu'un choix est obligatoire,
 
 ### Bonnes pratiques
 
-- La 1re lettre du texte est en majuscule, le reste est en minuscule.
-- N'utilisez pas de point à la fin du texte.
+- La 1<sup>re</sup> lettre du texte est en majuscule, le reste est en minuscule.
+- N’utilisez pas de point à la fin du texte.
 Le texte doit décrire le choix de manière claire et distincte.
-- Afficher les options dans un ordre logique, par ex : les plus susceptibles d’être sélectionnées en premier.
-- Lorsque l'espace est suffisant et que la lisibilité est optimale, les boutons radio sont disposés horizontalement. L'espacement entre chaque élément est constant.
+- Afficher les options dans un ordre logique, par ex&nbsp;: les plus susceptibles d’être sélectionnées en premier.
+- Lorsque l’espace est suffisant et que la lisibilité est optimale, les boutons radio sont disposés horizontalement. L’espacement entre chaque élément est constant.
 
 ![button-radio__ex__opposite](design/button-radio__ex__opposite.png)
-- Par défaut, les boutons radio peuvent être désactivés ou bien activés. Cependant, il est préférable d'activer une des options, la plus probable ou la première.
+- Par défaut, les boutons radio peuvent être désactivés ou bien activés. Cependant, il est préférable d’activer une des options, la plus probable ou la première.
 - Si un état non sélectionné est nécessaire, ajoutez simplement un bouton radio “Aucun”.
-- L'indicateur de groupe qui accompagne des boutons radio n’est pas obligatoire, ex : civilité.
+- L’indicateur de groupe qui accompagne des boutons radio n’est pas obligatoire, ex : civilité.
 
 ## Autres composants
 
