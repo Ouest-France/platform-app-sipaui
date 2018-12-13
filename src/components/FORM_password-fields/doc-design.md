@@ -41,8 +41,8 @@ Le champ mot de passe présente toutes les caractéristiques (intéraction, poli
 
 Niveau | Simple | Couleur
 ------------ | ------------- |------------ | ------------- |
-**1** | image | #D4D4D4
-**2** | image | #B40015
+**1** | ![password__security__level-0](design/password__security__level-0.png) à modifier | #D4D4D4
+**2** |  | #B40015
 **3** | image | #FFCC33
 **4** | image | #87A62C
 
