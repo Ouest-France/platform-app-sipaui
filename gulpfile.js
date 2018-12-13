@@ -49,7 +49,7 @@ gulp.task('make-sass', ['clean'], function () {
 });
 
 gulp.task("scripts", ["clean-js"], function() {
-    return gulp.src([source + "/core/js/oueststrap.js"])
+    return gulp.src([source + "/core/js/sipaui.js"])
         .pipe(include({
             extensions: "js",
             hardFail: true,
@@ -58,9 +58,6 @@ gulp.task("scripts", ["clean-js"], function() {
             ]
         }))
             .on('error', console.log)
-        /*.pipe(uglify()
-            .on('error', console.log))
-        .pipe(rename('oueststrap.js'))*/
         .pipe(gulp.dest(build + '/js/dev'));
 });
 
@@ -71,6 +68,9 @@ gulp.task("make-scripts-dev", ["scripts", "clean-js"], function() {
 
 gulp.task("make-scripts-prod", ["scripts", "clean-js"], function() {
     return gulp.src([build + '/js/dev/**/*'])
+        .pipe(uglify()
+            .on('error', console.log))
+            .pipe(rename('sipaui.min.js'))
         .pipe(gulp.dest(destination + '/js'));
 });
 
@@ -217,6 +217,7 @@ gulp.task("watch", function() {
     watch( [
             source+ '/core/scss/**/*.scss',
             source+ '/components/**/*.scss',
+            source+ '/core/**/*.js',
             doc+ '/scss/**/*.scss',
         ], function(){
         gulp.start('make-dev-assets');

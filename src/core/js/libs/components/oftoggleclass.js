@@ -5,12 +5,13 @@
 // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 ;(function(cn){
     function _doToggle(event, that) {
-        var that = that || this,
-            opt = that.getAttribute('data-'+cn);
+        that = that || this;
+        const opt = that.getAttribute('data-'+cn),
+            inputTypes = ['text', 'password', 'number', 'email', 'tel', 'url', 'search', 'date', 'datetime', 'datetime-local', 'time', 'month', 'week']
         ;
 
         (Array.isArray(opt) ? opt : [opt]).forEach(function(_data){
-            var f = {
+            const f = {
                 'sel': that,
                 'parent': null,
                 'klass': '',
@@ -18,17 +19,20 @@
                 'force': null
             };
             _data = JSON.parse(_data);
-            var d = {...f,..._data};
+            const d = {...f,..._data};
 
-            if(event.type) {
-                if('mouseover' == event.type || 'focusin' == event.type) {
-                    d.force = _data.force != undefined ? _data.force : (_data.inverted ? 0 : 1);
-                } else if('mouseout' == event.type || 'focusout' == event.type) {
-                    d.force = _data.force != undefined  ? _data.force : (_data.inverted ? 1 : 0);
-                }
+            if(['focusin', 'input'].indexOf(event.type) >= 0) {
+                d.force = _data.force != undefined ? _data.force : (_data.inverted ? false : true);
+            } else if('focusout' == event.type) {
+                d.force = _data.force != undefined ? _data.force : (_data.inverted ? true : false);
             }
+
+            if(that.tagName.toLowerCase() == 'input' && inputTypes.indexOf(that.getAttribute('type')) >= 0 && that.value == "" ) {
+                d.force = false;
+            }
+
             if(d.parent) {
-                var parent = that.closest(d.parent);
+                const parent = that.closest(d.parent);
                 parent.classList.toggle(d.klass, d.force === null ? null : !!d.force);
             } else {
                 d.sel.classList.toggle(d.klass, d.force === null ? null : !!d.force);
@@ -38,10 +42,11 @@
     }
     
     console.log('--- Composant en vie : '+cn+' ---');
-    of.doc.addEventListener('click', function(e) {
-        var elem = e.target.closest("[data-"+cn+"]");
+
+    ['focusin', 'focusout', 'input'].forEach(event => of.doc.addEventListener(event, function(e) {
+        const elem = e.target.closest("[data-"+cn+"]");
         if (!elem) return;
         _doToggle(e, elem);
-    });
+    }));
 
 })('oftoggleclass');
