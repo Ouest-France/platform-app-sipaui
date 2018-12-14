@@ -48,10 +48,37 @@ gulp.task('make-sass', ['clean'], function () {
     }));
 });
 
+gulp.task("scripts", ["clean"], function() {
+    return gulp.src([source + "/core/js/sipaui.js"])
+        .pipe(include({
+            extensions: "js",
+            hardFail: true,
+            includePaths: [
+            __dirname + "/src/core/js"
+            ]
+        }))
+            .on('error', console.log)
+        .pipe(gulp.dest(build + '/js/dev'));
+});
+
+gulp.task("make-scripts-dev", ["clean", "scripts"], function() {
+    return gulp.src([build + '/js/dev/**/*'])
+        .pipe(gulp.dest(destination + '/js'));
+});
+
+gulp.task("make-scripts-prod", ["clean", "scripts"], function() {
+    return gulp.src([build + '/js/dev/**/*'])
+        .pipe(uglify()
+            .on('error', console.log))
+            .pipe(rename('sipaui.min.js'))
+        .pipe(gulp.dest(destination + '/js'));
+});
+
 gulp.task("make-css-dev", ["make-sass"], function() {
     return gulp.src([build + '/css/dev/**/*'])
         .pipe(gulp.dest(destination + '/css'));
 });
+
 gulp.task("make-css-prod", ["make-sass"], function() {
     return gulp.src([build + '/css/min/**/*'])
         .pipe(gulp.dest(destination + '/css'));
@@ -190,13 +217,14 @@ gulp.task("watch", function() {
     watch( [
             source+ '/core/scss/**/*.scss',
             source+ '/components/**/*.scss',
+            source+ '/core/**/*.js',
             doc+ '/scss/**/*.scss',
         ], function(){
         gulp.start('make-dev-assets');
     });
 });
 
-gulp.task("make-dev-assets", ["clean", "make-assets", "make-sass", "make-css-dev", "loader-storybook"]);
-gulp.task("make-prod-assets", ["clean", "make-assets", "make-sass", "make-css-prod", "loader-storybook"]);
+gulp.task("make-dev-assets", ["clean", "make-assets", "make-sass", "make-css-dev", "scripts", "make-scripts-dev", "loader-storybook"]);
+gulp.task("make-prod-assets", ["clean", "make-assets", "make-sass", "make-css-prod", "scripts", "make-scripts-prod", "loader-storybook"]);
 gulp.task("default", ["clean", "make-dev-assets"]);
 gulp.task("html", ["clean", "generate-doc",  "generate-html"]);
