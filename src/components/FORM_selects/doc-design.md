@@ -1,4 +1,4 @@
-# Selects/Menu déroulant
+# Selects / Menu déroulant
 
 Les selects permettent à l’utilisateur de sélectionner une option dans une liste.
 
@@ -26,7 +26,8 @@ Type | Simple
 ### Label
 
 - Le label est identique à celui du champ de texte.
-- Il n'est pas necessairement obligatoire.
+- Il est facultatif.
+- En son absence, un placeholder est nécessaire.
 
 ### Container
 
@@ -50,9 +51,16 @@ Type | Simple
  </div>
 
 
+### Placeholder
+
+- Le placeholder comporte les caractéristiques du champ de texte.
+- Il n'est pas un attribut html. Cependant, il possible de la simuler.
+- Il est facultatif.
+- En son absence, un label est nécessaire.
+
 ### Icône
 
-- L'icône comporte les caractéristiques du champ de texte.
+- L'icône comporte également les caractéristiques du champ de texte.
 - La seule icône possible est un chevron. Il indique qu’une liste est disponible.
 
 
@@ -106,7 +114,7 @@ L'opacité d'un champ inactif est 40 %.
 - Si le nombre d’options est inférieur ou égale à 3, utiliser un bouton radio.
 - Eviter les très longues listes nécessitant un scroll car les utilisateurs ne peuvent voir tous les choix en un coup d'œil.
 - Pour une quantité, le choix d’une année, utiliser un text field standard plutôt qu’un select car la saisie est plus rapide.
-- Suite à la saisie d’un code postal, ne pas utiliser un sélect pour une liste de ville (lié à la fusion des communes).
+- Lors de la saisie d'une ville, ne pas utiliser un select. En France, la liste des communes évolue régulièrement et cette liste est difficilement mis à jour.
 - Il est fortement recommandé de ne pas styler les selects pour des raisons d'accessibilité.
 - Le select est pris en charge par un clavier.
 

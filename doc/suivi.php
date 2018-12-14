@@ -28,6 +28,7 @@
                 	<li>Liens articles</li>
                 	<li>Helpers (classes d’aide)</li>
                 	<li>Boutons radio</li>
+                	<li>Cases à cocher</li>
                 </ul>
             </article>
 

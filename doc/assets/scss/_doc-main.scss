@@ -10,7 +10,7 @@ header {
     z-index: 1000;
 
     .identite {
-        padding: $margin-small $margin-small $margin-small $margin-medium2;
+        padding: $margin-small $margin-small $margin-small $margin-medium;
 
         a {
             transition: text-shadow .3s ease;
@@ -85,8 +85,8 @@ main {
         padding-top: 19rem;
     }
     .conteneur {
-        padding-left: $margin-standard;
-        padding-right: $margin-standard;
+        padding-left: $margin-medium;
+        padding-right: $margin-medium;
     }
 }
 .trop-large-responsif {
@@ -113,7 +113,7 @@ main {
         text-align: center;
         margin-bottom: $margin-large;
         h1 {
-            margin-bottom: $margin-medium2;
+            margin-bottom: $margin-medium;
             font-size: $font-size-xxxtall;
             color: $couleur-principale-1;
         }
@@ -187,7 +187,7 @@ main {
 
 .plan-versions {
     .version {
-        margin: 0 $margin-medium1 $margin-small 0;
+        margin: 0 15px $margin-small 0;
     }
     .fait {
         color: $couleur-principale-5;

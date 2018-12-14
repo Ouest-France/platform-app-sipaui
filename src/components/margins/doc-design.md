@@ -5,7 +5,9 @@ Elles sont intentionnelles et étudiées, comme tout élément d’une interface
 
 ## Usage
 
-Les marges permettent le placement cohérent des éléments, des composants dans une interface.
+- Les marges permettent le placement cohérent des éléments, des composants dans une interface.
+
+- Les marges sont aussi bien externes (margin) que internes (padding) à un composant. À noter que chaque composant intégre son propre padding.
 
 ## Types de Marges
 
