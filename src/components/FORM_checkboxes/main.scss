@@ -69,13 +69,13 @@ body {
 
         & + input[type="checkbox"],
         & + label {
-            margin-left: $margin-medium2 - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
+            margin-left: $margin-medium - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
         }
         & + span {
             display: inline-block;
             overflow: auto; // utile pour mettre un contexte de block pour FireFox
             line-height: $line-height-label;
-            margin: 0 $margin-medium2 - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
+            margin: 0 $margin-medium - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
             min-height: $height-checkbox-area;
             padding-top: $padding-top-label;
         }
