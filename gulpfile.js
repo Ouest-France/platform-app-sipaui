@@ -48,7 +48,7 @@ gulp.task('make-sass', ['clean'], function () {
     }));
 });
 
-gulp.task("scripts", ["clean-js"], function() {
+gulp.task("scripts", ["clean"], function() {
     return gulp.src([source + "/core/js/sipaui.js"])
         .pipe(include({
             extensions: "js",
@@ -61,12 +61,12 @@ gulp.task("scripts", ["clean-js"], function() {
         .pipe(gulp.dest(build + '/js/dev'));
 });
 
-gulp.task("make-scripts-dev", ["scripts", "clean-js"], function() {
+gulp.task("make-scripts-dev", ["clean", "scripts"], function() {
     return gulp.src([build + '/js/dev/**/*'])
         .pipe(gulp.dest(destination + '/js'));
 });
 
-gulp.task("make-scripts-prod", ["scripts", "clean-js"], function() {
+gulp.task("make-scripts-prod", ["clean", "scripts"], function() {
     return gulp.src([build + '/js/dev/**/*'])
         .pipe(uglify()
             .on('error', console.log))
