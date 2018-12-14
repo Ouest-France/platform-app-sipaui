@@ -14,29 +14,20 @@ Une grille est constituée de colonnes, séparés par des gouttières permettant
 
 ### Colonnes
 
+- Les colonnes permettent de positionner les éléments à horizontalement.
+- La grille comprend 24 colonnes quelque soit la largeur de la page.
+- Elles peuvent être imbriquées.
+- La largeur des colonnes varie en fonction de la taille d'écran.
 
-## 3- Spécifications
+### Gouttières
 
-- specification 1
-- specification 2
-- specification 3
+- Les gouttières sont les espaces entre les colonnes.
+- Ces espaces vides segmentent l’information et permettent de faire respirer la page. La circulation des blancs permet de rythmer la page.
+- Leur largeur est fixe : 20px.
 
-#### Titre
+!!! 3 images !!! illustration M, T et D
 
-- specification 1
-- specification 2
-- specification 3
-
-
-## 4- Bonnes pratiques
-
-- specification 1
-- specification 2
-- specification 3
-
-
-## 5- Autres composants
-
-- specification 1
-- specification 2
-- specification 3
+### Autres composants
+- Marges
+- Points d'arrêt
+- Etc.
