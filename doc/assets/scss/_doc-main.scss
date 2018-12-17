@@ -31,7 +31,7 @@ header {
     }
     .titre {
         font-size: $font-size-tall;
-        margin-left: $margin-resp-small;
+        margin-left: 1rem;
         color: $couleur-principale-1;
     }
     .bandeau {
@@ -63,7 +63,7 @@ nav {
         opacity: .8;
         text-decoration: none;
         transition: opacity .3s ease;
-        margin-right: $margin-resp-standard;
+        margin-right: 2rem;
         border-bottom: 5px solid $bgColor-menu;
 
         &:hover,
@@ -144,12 +144,12 @@ main {
 
 .carte {
     width: 500px;
-    margin-bottom: $margin-resp-small;
+    margin-bottom: 1rem;
 }
 .integre {
     h2,
     h3 {
-        margin-bottom: $margin-resp-small;
+        margin-bottom: 1rem;
     }
 }
 .tableau-suivi {
@@ -162,7 +162,7 @@ main {
         }
     }
     h3 {
-        margin-bottom: $margin-resp-xsmall;
+        margin-bottom: .5rem;
         font-size: $font-size-medium1;
         line-height: $line-height-medium;
     }

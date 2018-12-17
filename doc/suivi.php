@@ -50,7 +50,7 @@
                     </li>
                     <li class="row">
                 	    <div class="cell"><span class="version">0.4.0 ß</span></div>
-                	    <div class="cell">Select simple, police d’icônes, marges.</div>
+                	    <div class="cell">Select simple, police d’icônes, <span class="fait">marges</span>.</div>
                     </li>
                     <li class="row">
                 	    <div class="cell"><span class="version">0.5.0 ß</span></div>

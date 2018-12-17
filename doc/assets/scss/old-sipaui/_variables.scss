@@ -109,8 +109,8 @@ $margin-resp-standard-large: $margin-resp-xlarge    !default;
 */
 
 // Marges spécifiques
-$margin-top-entre-blocs-petit: $margin-resp-standard          !default; // séparateur entre 2 blocs de texte (ie : p + p…)
-$margin-top-entre-blocs-grand: $margin-resp-standard-large    !default; // séparateur entre 2 blocs de texte majeurs (ie : article + article, p + h2…)
+$margin-top-entre-blocs-petit: 2rem          !default; // séparateur entre 2 blocs de texte (ie : p + p…)
+$margin-top-entre-blocs-grand: 4rem          !default; // séparateur entre 2 blocs de texte majeurs (ie : article + article, p + h2…)
 
 // OMBRES --------------------------------------------------------------------------------
 $ombre-1: 0 0 10px rgba(0,0,0, .5) !default;
@@ -157,7 +157,7 @@ $padding-tableau: $margin-xsmall                        !default;
 $caption-color-tableau: $color-main-5           !default;
 $caption-side-tableau: bottom                           !default;
 $caption-align-tableau: center                          !default;
-$caption-padding-tableau: $margin-resp-xsmall 0         !default;
+$caption-padding-tableau: .5rem 0         !default;
 
 $border-tableau-plus: 1px solid $color-main-4   !default;
 $background-tableau-plus-header: $color-main-3  !default;

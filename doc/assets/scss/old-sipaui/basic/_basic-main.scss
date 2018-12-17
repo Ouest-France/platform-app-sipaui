@@ -212,11 +212,11 @@ ol.su-old-list,
 }
 
 dt {
-    font-weight: $margin-resp-medium1;
+    font-weight: 1.5rem;
 }
 
 dd {
-    margin-bottom: $margin-resp-xsmall;
+    margin-bottom: .5rem;
     margin-left: 0; // Undo browser default
 }
 ul.su-old-horizontal {
@@ -270,8 +270,8 @@ address {
 // Ligne horizontale
 //
 hr {
-    margin-top: $margin-resp-xlarge;
-    margin-bottom: $margin-resp-xlarge;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     border: 0;
     border-top: .1rem solid $couleur-principale-4;
 }

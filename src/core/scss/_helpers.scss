@@ -3,20 +3,18 @@
 */
 
 /* -- MARGINS -------------------------------------------------------------------- */
-.su-margin-0 {
-    margin: 0 !important;
-}
+
 .su-margin-b-small {
-    margin-bottom: $margin-resp-small !important;                // 10px
+    margin-bottom: 1rem !important;                // 10px
 }
 .su-margin-b-medium {
-    margin-bottom: $margin-resp-medium1 !important;              // 15px
+    margin-bottom: 1.5rem !important;              // 15px
 }
 .su-margin-b-standard {
-    margin-bottom: $margin-resp-standard !important;             // 20px
+    margin-bottom: 2rem !important;             // 20px
 }
 .su-margin-b-large {
-    margin-bottom: $margin-resp-standard-large !important;       // 40px
+    margin-bottom: 4rem !important;       // 40px
 }
 
 /* -- PADDINGS  -------------------------------------------------------------------- */
@@ -24,16 +22,16 @@
     padding: 0 !important;
 }
 .su-padding-b-small {
-    padding-bottom: $margin-resp-small !important;                // 10px
+    padding-bottom: 1rem !important;                // 10px
 }
 .su-padding-b-medium {
-    padding-bottom: $margin-resp-medium1 !important;              // 15px
+    padding-bottom: 1.5rem !important;              // 15px
 }
 .su-padding-b-standard {
-    padding-bottom: $margin-resp-standard !important;             // 20px
+    padding-bottom: 2rem !important;             // 20px
 }
 .su-padding-b-large {
-    padding-bottom: $margin-resp-standard-large !important;       // 40px
+    padding-bottom: 4rem !important;       // 40px
 }
 
 /* -- LINE-HEIGHT -------------------------------------------------------------------- */
