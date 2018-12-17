@@ -1,6 +1,6 @@
 # Margins / Marges
 
-SipaUI fournit différents outils pour intégrer des marges. Il y a tout d’abord, bien sûr, *quelques* classes pour gérer les cas courants, mais il y a surtout les **variables SASS** pour vous permettre d’intégrer les tailles de marge directement dans vos propres fichiers SCSS quand vous en avez besoin.
+SipaUI fournit différents outils pour intégrer des marges **à l’extérieur** d’un composant. Il y a bien sûr, *quelques* classes pour gérer les cas courants, mais il y a surtout les **variables SASS** pour vous permettre d’intégrer les tailles de marge directement dans vos propres fichiers SCSS quand vous en avez besoin. En effet, dans la plupart des cas ce seront **les CSS du site (via les variables) qui devront gérer l’espacement entre les blocs et non l’utilisation des classes de marge**.
 
 <a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
@@ -8,19 +8,15 @@ SipaUI fournit différents outils pour intégrer des marges. Il y a tout d’abo
 
 ## Variables SASS
 
-Si vous avez besoin d’utiliser les 5 tailles de marge standard dans vos fichiers SCSS, voici les 5 variables&nbsp;:
-- `$margin-xsmall`
-- `$margin-small`
-- `$margin-medium`
-- `$margin-large`
-- `$margin-xlarge`
+Pour gérer l’espace entre les blocs, vous aurez besoin des 5 tailles de marge standard dans vos fichiers SCSS. Voici les 5 variables&nbsp;:
+- `$margin-xsmall` (par défaut = 5 px)
+- `$margin-small` (par défaut = 10 px)
+- `$margin-medium` (par défaut = 20 px)
+- `$margin-large` (par défaut = 30 px)
+- `$margin-xlarge` (par défaut = 40 px)
 
 ## Classes
-Pour bénéficier de marges directement sans faire de CSS, vous pouvez utiliser ces classes
-
-### Margin
-
-Les classes `su-margin-…` permettent de rajouter une marge **à l’extérieur** d’un composant. Le cas les plus courant sont les marges supérieures et inférieures, pour gérer l’espace entres les composants dans le flux de lecture vertical. Nous avons toutefois créé des classes pour les marges latérales ainsi qu'une classe pour la marge tournante. Chacune de ces classes existent dans les 5 tailles standards définies par le design. Le processus de nommage des classes de marge est sous la forme `su-margin-*position*-*taille*`. Ainsi on aura par exemple `su-margin-bottom-xsmall`.
+De façon **exceptionnelle**, vous pourriez avoir besoin de classes pour forcer des marges. Ces classes sont préfixées `su-margin-…`. Le cas les plus courant sont les marges supérieures et inférieures, pour gérer l’espace entres les composants dans le flux de lecture vertical. Nous avons toutefois créé des classes pour les marges latérales ainsi qu'une classe pour la marge tournante. Chacune de ces classes existent dans les 5 tailles standards définies par le design. Le processus de nommage des classes de marge est sous la forme `su-margin-*position*-*taille*`. Ainsi on aura par exemple `su-margin-bottom-xs`. En plus de ces classes de tailles, il existe une classe de **remise à zéro** de la marge tournante&nbsp;: `su-margin-0`.
 
 Liste des positions possibles&nbsp;:
 - `top`
@@ -30,46 +26,69 @@ Liste des positions possibles&nbsp;:
 - `*vide*` (quand la position n’est pas donnée, il s'agit d’une marge tournante)
 
 Liste des tailles possibles&nbsp;:
-- `xsmall` (5 px)
-- `small` (10 px)
-- `medium` (20 px)
-- `large` (30 px)
-- `xlarge` (40 px)
+- `xs` ("xsmall" = 5 px)
+- `s` ("small" = 10 px)
+- `m` ("medium" = 20 px)
+- `l` ("large" = 30 px)
+- `xl` ("xlarge" = 40 px)
 
-Il existe par conséquent 25 classes de marges (cf. la <a href="#liste-classes" target="_self" class="su-link">liste des classes</a>).
+Il existe par conséquent 25 classes de taille de marges (5X5) plus une classe de remise à zéro (cf. la <a href="#liste-classes" target="_self" class="su-link">liste des classes</a>).
+
+Voici *un* exemple d’utilisation de classe de marge avec la classe `su-margin-right-l`.
 
 ```html
-
+<div class="bloc-gris su-margin-right-l">Bloc 1</div>
+<div class="bloc-rouge">Bloc 2</div>
 ```
+<style>
+	.bloc-gris,
+	.bloc-rouge {
+		float: left;
+		color: #fff;
+		padding: 10px;
+	}
+	.bloc-gris {
+		background: #333;
+	}
+	.bloc-rouge {
+		background: #b40015;
+	}
+</style>
+<div class="su-clearfix">
+	<div class="bloc-gris su-margin-right-l">Bloc 1</div>
+	<div class="bloc-rouge">Bloc 2</div>
+</div>
+
 
 
 
 <div id="liste-classes">
 
 ## Liste des classes disponibles
-- `su-margin-xsmall`
-- `su-margin-small`
-- `su-margin-medium`
-- `su-margin-large`
-- `su-margin-xlarge`
-- `su-margin-top-xsmall`
-- `su-margin-top-small`
-- `su-margin-top-medium`
-- `su-margin-top-large`
-- `su-margin-top-xlarge`
-- `su-margin-right-xsmall`
-- `su-margin-right-small`
-- `su-margin-right-medium`
-- `su-margin-right-large`
-- `su-margin-right-xlarge`
-- `su-margin-bottom-xsmall`
-- `su-margin-bottom-small`
-- `su-margin-bottom-medium`
-- `su-margin-bottom-large`
-- `su-margin-bottom-xlarge`
-- `su-margin-left-xsmall`
-- `su-margin-left-small`
-- `su-margin-left-medium`
-- `su-margin-left-large`
-- `su-margin-left-xlarge`
+- `su-margin-0`
+- `su-margin-xs`
+- `su-margin-s`
+- `su-margin-m`
+- `su-margin-l`
+- `su-margin-xl`
+- `su-margin-top-xs`
+- `su-margin-top-s`
+- `su-margin-top-m`
+- `su-margin-top-l`
+- `su-margin-top-xl`
+- `su-margin-right-xs`
+- `su-margin-right-s`
+- `su-margin-right-m`
+- `su-margin-right-l`
+- `su-margin-right-xl`
+- `su-margin-bottom-xs`
+- `su-margin-bottom-s`
+- `su-margin-bottom-m`
+- `su-margin-bottom-l`
+- `su-margin-bottom-xl`
+- `su-margin-left-xs`
+- `su-margin-left-s`
+- `su-margin-left-m`
+- `su-margin-left-l`
+- `su-margin-left-xl`
 </div>
