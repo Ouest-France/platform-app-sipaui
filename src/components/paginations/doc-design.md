@@ -55,7 +55,7 @@ Type | Simple
     - la dernière page
 !!image!!illustration Pge 1 sur 508
 - L'espace entre 2 points de navigation est constant XXpx ???
-- La pagination est souvent centrée dans son parent.
+- La pagination est centrée horizontalement par rapport à la liste des éléments.
 - Le nombre d'élément dans une page est défini en fonction de la taille de la page, l'élément et de leur temps de chargement.
 
 
