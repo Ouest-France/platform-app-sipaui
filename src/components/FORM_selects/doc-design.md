@@ -71,7 +71,7 @@ Type | Simple
 - Chaque élément est normé :
   - La 1re lettre du texte est en majuscule, le reste est en minuscule.
   - Le contenu se limite à un seule ligne.
-  - L'ordre est établi de manière logique : dans un ordre croissant, selon la fréquence d'utilisation, etc.
+  - L'ordre est établi de manière logique : dans un ordre croissant ou selon la fréquence d'utilisation, etc.
 
 
   <div class="do-dont">
