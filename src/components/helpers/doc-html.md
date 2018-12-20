@@ -101,6 +101,6 @@ Classe permettant de rendre visuellement l’incapacité&nbsp;/ l’indisponibil
 - `su-block-center`
 - `su-fullwidth`
 - `su-fullwidth-mobile`
-- `su-disabled` (dépendant du composant *helpers*)
+- `su-disabled`
 
 </div>
