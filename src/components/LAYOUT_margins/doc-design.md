@@ -47,7 +47,7 @@ Taille | Mesure | Illustration
 
 ![spacing__ex__dont](design/spacing__ex__dont.png) |
 ------------ |
-**Don’t** <br/> Dans un champ de texte, le label doit être plus proche du container lié. |
+**Don’t** <br/> Dans un formulaire, le label doit être plus proche du container lié. |
 
  </div>
  </div>
@@ -61,4 +61,4 @@ Taille | Mesure | Illustration
 
 ### Attirer l'attention
 
-- Plus il y a d'espaces autour d'un objet, plus l'utilisateur est focaliser sur celui-ci.
+- Plus l'espace autour d'un élément est grand, plus l'utilisateur est focalisé sur celui-ci.

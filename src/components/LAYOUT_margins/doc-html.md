@@ -26,13 +26,14 @@ Liste des positions possibles&nbsp;:
 - `*vide*` (quand la position n’est pas donnée, il s'agit d’une marge tournante)
 
 Liste des tailles possibles&nbsp;:
+- `0`
 - `xs` ("xsmall" = 5 px)
 - `s` ("small" = 10 px)
 - `m` ("medium" = 20 px)
 - `l` ("large" = 30 px)
 - `xl` ("xlarge" = 40 px)
 
-Il existe par conséquent 25 classes de taille de marges (5X5) plus une classe de remise à zéro (cf. la <a href="#liste-classes" target="_self" class="su-link">liste des classes</a>).
+Il existe par conséquent 30 classes de taille de marges (5X6).
 
 Voici *un* exemple d’utilisation de classe de marge avec la classe `su-margin-right-l`.
 
@@ -71,21 +72,25 @@ Voici *un* exemple d’utilisation de classe de marge avec la classe `su-margin-
 - `su-margin-m`
 - `su-margin-l`
 - `su-margin-xl`
+- `su-margin-top-0`
 - `su-margin-top-xs`
 - `su-margin-top-s`
 - `su-margin-top-m`
 - `su-margin-top-l`
 - `su-margin-top-xl`
+- `su-margin-right-0`
 - `su-margin-right-xs`
 - `su-margin-right-s`
 - `su-margin-right-m`
 - `su-margin-right-l`
 - `su-margin-right-xl`
+- `su-margin-bottom-0`
 - `su-margin-bottom-xs`
 - `su-margin-bottom-s`
 - `su-margin-bottom-m`
 - `su-margin-bottom-l`
 - `su-margin-bottom-xl`
+- `su-margin-left-0`
 - `su-margin-left-xs`
 - `su-margin-left-s`
 - `su-margin-left-m`

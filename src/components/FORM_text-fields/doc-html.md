@@ -60,7 +60,7 @@ Input standard prérempli et en readonly. Attention, si le `readonly` suffit à 
 <input id="input2" name="input3" type="text" role="textbox" required readonly aria-readonly="true" value="Value">
 
 ### Erreur
-Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Cette classe, absente par défaut, sera positionnée par le développeur (soit dynamiquement, soit par réponse serveur). Le message d’erreur sera identifé par la classe `su-error-message`.
+Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Cette classe, absente par défaut, sera positionnée par le développeur (soit dynamiquement, soit par réponse serveur). Le message d’erreur sera identifié par la classe `su-error-message`.
 
 ```html
 <div class="su-error">
@@ -79,35 +79,13 @@ Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a 
 
 Il s'agit d’un input standard amélioré. L’utilisateur peut vider tout le champ d’un coup en cliquant sur un bouton «&nbsp;croix&nbsp;». Le bouton apparaît quand le champ est en focus ET qu'il a du contenu.
 
+#### CSS
 Classes à appliquer par défaut&nbsp;: `su-input-icon` sur l’input pour réserver la place à droite et `su-input-action` sur le bouton.
 
+#### JS
+Déclencheur à mettre sur l’input&nbsp;: `data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}'`
+
 *Attention&nbsp;! Ne pas oublier le `type="button"` sur le `<button>`, sans quoi le bouton soumettra le formulaire&nbsp;!*
-
-```html
-<label for="input5">Label</label>
-<div class="su-input-icon">
-	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required>
-	<button type="button" class="su-input-action">
-		<span class="su-icon-close"></span>
-	</button>
-</div>
-```
-
-<div><!-- échappement markdown -->
-<label for="input5">Label</label>
-<div class="su-input-icon">
-	<input id="input5" name="input5" type="text" role="textbox" placeholder="Placeholder" required>
-	<button type="button" class="su-input-action">
-		<span class="su-icon-close"></span>
-	</button>
-</div>
-</div>
-
-#### Interractivité à créer en JS
- 
-##### 1. Affichage du bouton
- 
-Le JS doit ajouter la classe `su-js-button` sur le `<div>` parent de l’input (qui a déjà la classe `su-input-icon`). Déclencheur&nbsp;: focus sur l’input + au moins un caractère dedans -> la croix apparaît lors de la saisie dans un champ vide, mais aussi au clic dans un champ pré-rempli (qui n’est pas en readonly bien sûr).
 
 ```html
 <label for="input5">Label</label>
@@ -129,7 +107,9 @@ Le JS doit ajouter la classe `su-js-button` sur le `<div>` parent de l’input (
 </div>
 </div>
 
-##### 2. Vider le champ
+#### Interractivité à créer en JS
+
+##### Vider le champ
 
 Cliquer sur la croix supprime l’attribut `value` de l’ìnput.
 
@@ -139,9 +119,9 @@ Cliquer sur la croix supprime l’attribut `value` de l’ìnput.
 ```html
 <div class="su-error">
 	<label for="input6">Label<span class="su-label-complement"> (facultatif)</span></label>
-	<div class="su-relative">
-		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" class="su-input-icon" required value="Value">
-		<button type="button" class="su-input-action" hidden>
+	<div class="su-relative su-input-icon">
+		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
+		<button type="button" class="su-input-action">
 			<span class="su-icon-close"></span>
 		</button>
 	</div>
@@ -151,9 +131,9 @@ Cliquer sur la croix supprime l’attribut `value` de l’ìnput.
 
 <div class="su-error">
 	<label for="input6">Label<span class="su-label-complement"> (facultatif)</span></label>
-	<div class="su-relative">
-		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" class="su-input-icon" required value="Value">
-		<button type="button" class="su-input-action" hidden>
+	<div class="su-relative su-input-icon">
+		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
+		<button type="button" class="su-input-action">
 			<span class="su-icon-close"></span>
 		</button>
 	</div>
