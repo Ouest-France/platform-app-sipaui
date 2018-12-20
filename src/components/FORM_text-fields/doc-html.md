@@ -60,7 +60,7 @@ Input standard prérempli et en readonly. Attention, si le `readonly` suffit à 
 <input id="input2" name="input3" type="text" role="textbox" required readonly aria-readonly="true" value="Value">
 
 ### Erreur
-Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Cette classe, absente par défaut, sera positionnée par le développeur (soit dynamiquement, soit par réponse serveur). Le message d’erreur sera identifé par la classe `su-error-message`.
+Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Cette classe, absente par défaut, sera positionnée par le développeur (soit dynamiquement, soit par réponse serveur). Le message d’erreur sera identifié par la classe `su-error-message`.
 
 ```html
 <div class="su-error">

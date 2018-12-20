@@ -14,7 +14,6 @@ body {
 
     input,
     textarea,
-    select,
     .su-input-text {
         font-size: $font-size-base;
 
@@ -114,7 +113,9 @@ body {
             display: block;
         }
 
-        #{$inputTextPlus} {
+        #{$inputTextPlus},
+        select,
+        su-select {
             border: $border-input-error;
         }
     }

@@ -4,3 +4,65 @@
 */
 @import "variables";
 
+body {
+    $size-button: 44px;
+    $padding-lateral-select: 10px;
+
+    select,
+    .su-select {
+        font-size: $font-size-base;
+        -webkit-appearance: none;
+        display: block;
+        width: 100%;
+        min-width: 140px;
+        height: $height-select;
+        border-radius:  $border-radius-select;
+        color: $color-select;
+        background: $background-select;
+        border: $border-select;
+        transition: all .3s ease-out;
+        padding: 0 $padding-lateral-select;
+
+        &:focus {
+            background: $background-select-focus;
+            border: $border-select-focus;
+        }
+
+        &[readonly] {
+            opacity: 0.4;
+            cursor: default;
+
+            &:focus {
+                background: $background-select;
+                border: $border-select;
+            }
+        }
+        &:invalid {
+            color: $color-select-placeholder;
+        }
+    }
+    .su-select-icon {
+        position: relative;
+
+        select,
+        .su-select {
+            padding-right: $size-button;
+        }
+    }
+    .su-select-open {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: $size-button;
+        width: $size-button;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: $color-main-5;
+        font-size: $font-size-medium1;
+
+        &:hover {
+            color: $color-main-7;
+        }
+    }
+}

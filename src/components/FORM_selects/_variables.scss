@@ -3,3 +3,20 @@
     ex:
     $border-button-premium: 3px !default;
 */
+
+
+// INPUT ------------------------------------------------------------------------------------------/
+$height-select:             $height-finger                !default;
+$border-radius-select:      0                             !default;
+$color-select:              $color-main-7                 !default;
+$color-select-placeholder:  $color-main-5                 !default;
+$background-select:         #fafafa                       !default;
+$border-select:             1px solid $color-main-3       !default;
+
+// FOCUS
+$background-select-focus: #fff                            !default;
+$border-select-focus:     1px solid $color-main-7         !default;
+
+// ERROR
+$border-select-error:     1px solid $color-error       !default;
+$font-size-error:        $font-size-small             !default;
