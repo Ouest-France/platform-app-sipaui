@@ -139,6 +139,7 @@ document.onScan = function(sel,fn) {
         clearTimeout(interOf);
 
         //=require libs/components/oftoggleclass.js
+        //=require libs/components/ofemptyinput.js
 
         of.asyncLoadOf();
     }, 25);
