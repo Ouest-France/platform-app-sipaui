@@ -2,8 +2,6 @@
 
 Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés (par exemple&nbsp;: le mot de passe) sont développés spécifiquement.
 
-<p class="alerte"><span class="su-icon-alert"></span> <em>SipaUI n’intégrant pas pour l’instant de JS, les comportements dynamiques seront à mettre en place par les équipes intégrant nos composants.</em></p>
-
 <a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
 **Accessibilité**
@@ -91,7 +89,7 @@ Déclencheur à mettre sur l’input&nbsp;: `data-oftoggleclass='{"parent":".su-
 <label for="input5">Label</label>
 <div class="su-input-icon">
 	<input id="input5" name="input5" type="text" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' role="textbox" placeholder="Placeholder" required required value="Lorem ipsum">
-	<button type="button" class="su-input-action">
+	<button type="button" class="su-input-action" data-ofemptyinput>
 		<span class="su-icon-close"></span>
 	</button>
 </div>
@@ -101,7 +99,7 @@ Déclencheur à mettre sur l’input&nbsp;: `data-oftoggleclass='{"parent":".su-
 <label for="input5">Label</label>
 <div class="su-input-icon">
 	<input id="input5" name="input5" type="text" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' role="textbox" placeholder="Placeholder" required value="Lorem ipsum">
-	<button type="button" class="su-input-action">
+	<button type="button" class="su-input-action" data-ofemptyinput>
 		<span class="su-icon-close"></span>
 	</button>
 </div>
@@ -121,7 +119,7 @@ Cliquer sur la croix supprime l’attribut `value` de l’ìnput.
 	<label for="input6">Label<span class="su-label-complement"> (facultatif)</span></label>
 	<div class="su-relative su-input-icon">
 		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
-		<button type="button" class="su-input-action">
+		<button type="button" class="su-input-action" data-ofemptyinput>
 			<span class="su-icon-close"></span>
 		</button>
 	</div>
@@ -133,7 +131,7 @@ Cliquer sur la croix supprime l’attribut `value` de l’ìnput.
 	<label for="input6">Label<span class="su-label-complement"> (facultatif)</span></label>
 	<div class="su-relative su-input-icon">
 		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
-		<button type="button" class="su-input-action">
+		<button type="button" class="su-input-action" data-ofemptyinput>
 			<span class="su-icon-close"></span>
 		</button>
 	</div>
