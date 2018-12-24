@@ -81,7 +81,12 @@ Il s'agit d’un input standard amélioré. L’utilisateur peut vider tout le c
 Classes à appliquer par défaut&nbsp;: `su-input-icon` sur l’input pour réserver la place à droite et `su-input-action` sur le bouton.
 
 #### JS
+
+##### Gestion de l’affichage du bouton
 Déclencheur à mettre sur l’input&nbsp;: `data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}'`
+
+##### Gestion du vidage du champ
+Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 
 *Attention&nbsp;! Ne pas oublier le `type="button"` sur le `<button>`, sans quoi le bouton soumettra le formulaire&nbsp;!*
 
@@ -104,12 +109,6 @@ Déclencheur à mettre sur l’input&nbsp;: `data-oftoggleclass='{"parent":".su-
 	</button>
 </div>
 </div>
-
-#### Interractivité à créer en JS
-
-##### Vider le champ
-
-Cliquer sur la croix supprime l’attribut `value` de l’ìnput.
 
 
 ### Exemple de champ complexe (complément de label, placeholder, RAZ et gestion d’erreur)
