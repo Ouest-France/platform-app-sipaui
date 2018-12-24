@@ -16,7 +16,11 @@ Pour gérer l’espace entre les blocs, vous aurez besoin des 5 tailles de marge
 - `$margin-xlarge` (par défaut = 40 px)
 
 ## Classes
-De façon **exceptionnelle**, vous pourriez avoir besoin de classes pour forcer des marges. Ces classes sont préfixées `su-margin-…`. Le cas les plus courant sont les marges supérieures et inférieures, pour gérer l’espace entres les composants dans le flux de lecture vertical. Nous avons toutefois créé des classes pour les marges latérales ainsi qu'une classe pour la marge tournante. Chacune de ces classes existent dans les 5 tailles standards définies par le design. Le processus de nommage des classes de marge est sous la forme `su-margin-*position*-*taille*`. Ainsi on aura par exemple `su-margin-bottom-xs`. En plus de ces classes de tailles, il existe une classe de **remise à zéro** de la marge tournante&nbsp;: `su-margin-0`.
+De façon **exceptionnelle**, vous pourriez avoir besoin de classes pour forcer des marges. Ces classes sont préfixées `su-margin-…`. Le cas les plus courant sont les marges supérieures et inférieures, pour gérer l’espace entres les composants dans le flux de lecture vertical. Nous avons toutefois créé des classes pour les marges latérales ainsi qu'une classe pour la marge tournante. Chacune de ces classes existent dans les 5 tailles standards définies par le design. Le processus de nommage des classes de marge est sous la forme `su-margin-*position*-*taille*`. Ainsi on aura par exemple `su-margin-bottom-xs`. En plus de ces classes de tailles, il existe des classes de **remise à zéro** de la marge&nbsp;: `su-margin-0`…
+
+<p class="alerte">
+Ces classes sont des outils. Leur utilisation est réservée pour des cas exceptionnels, où l’utilisation des variables SASS au sein de votre propre code n’est pas possible. <strong>C'est encore plus vrai pour les classes de marge nulle</strong> où leur utilisation démontre un problème dans le code CSS.
+</p>
 
 Liste des positions possibles&nbsp;:
 - `top`

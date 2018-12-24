@@ -29,6 +29,8 @@
                 	<li>Helpers (classes d’aide)</li>
                 	<li>Boutons radio</li>
                 	<li>Cases à cocher</li>
+                	<li>Select simple</li>
+                	<li>Marges</li>
                 </ul>
             </article>
 
@@ -36,25 +38,9 @@
                 <h1>Plan de versions prévisionnel</h1>
 
                 <ul class="su-old-not-list table">
-                	<li class="row">
-                	    <div class="cell"><span class="version">0.1.0 ß</span></div>
-                	    <div class="cell"><span class="fait">Boutons standards (primaire et secondaire), boutons Abonnement et Premium.</span></div>
-                    </li>
-                	<li class="row">
-                	    <div class="cell"><span class="version">0.2.0 ß</span></div>
-                	    <div class="cell"><span class="fait">Champs texte standards (input text, mail, tél… + textarea), liens article, helpers.</span></div>
-                    </li>
-                    <li class="row">
-                	    <div class="cell"><span class="version">0.3.0 ß</span></div>
-                	    <div class="cell"><span class="fait">Bouton radio, checkbox, évolution liens article.</span></div>
-                    </li>
-                    <li class="row">
-                	    <div class="cell"><span class="version">0.4.0 ß</span></div>
-                	    <div class="cell">Select simple, police d’icônes, <span class="fait">marges</span>.</div>
-                    </li>
                     <li class="row">
                 	    <div class="cell"><span class="version">0.5.0 ß</span></div>
-                	    <div class="cell">Éléments typographiques de base (à définir).</div>
+                	    <div class="cell">Éléments typographiques de base (à définir), suite d’icônes.</div>
                     </li>
                 	<li class="row">
                 	    <div class="cell"><span class="version">1.0.0</span></div>
@@ -66,7 +52,7 @@
                     </li>
                 	<li class="row">
                 	    <div class="cell"><span class="version">1.2.0</span></div>
-                	    <div class="cell">Loader de page, loader de champ texte, loader de bouton.</div>
+                	    <div class="cell">Loader de page, loader de champ texte.</div>
                     </li>
                     <li class="row">
                 	    <div class="cell"><span class="version">1.3.0</span></div>

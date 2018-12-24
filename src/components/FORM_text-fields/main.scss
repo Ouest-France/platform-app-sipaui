@@ -74,7 +74,7 @@ body {
         }
     }
     .su-input-action {
-        display: none;
+        opacity: 0;
         position: absolute;
         top: 0;
         right: 0;
@@ -94,7 +94,7 @@ body {
         }
     }
     .su-js-button .su-input-action {
-        display: block;
+        opacity: 1;
     }
     textarea,
     .su-textarea {

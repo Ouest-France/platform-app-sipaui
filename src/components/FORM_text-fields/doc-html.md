@@ -2,8 +2,6 @@
 
 Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés (par exemple&nbsp;: le mot de passe) sont développés spécifiquement.
 
-<p class="alerte"><span class="su-icon-alert"></span> <em>SipaUI n’intégrant pas pour l’instant de JS, les comportements dynamiques seront à mettre en place par les équipes intégrant nos composants.</em></p>
-
 <a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
 **Accessibilité**
@@ -83,7 +81,12 @@ Il s'agit d’un input standard amélioré. L’utilisateur peut vider tout le c
 Classes à appliquer par défaut&nbsp;: `su-input-icon` sur l’input pour réserver la place à droite et `su-input-action` sur le bouton.
 
 #### JS
+
+##### Gestion de l’affichage du bouton
 Déclencheur à mettre sur l’input&nbsp;: `data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}'`
+
+##### Gestion du vidage du champ
+Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 
 *Attention&nbsp;! Ne pas oublier le `type="button"` sur le `<button>`, sans quoi le bouton soumettra le formulaire&nbsp;!*
 
@@ -91,7 +94,7 @@ Déclencheur à mettre sur l’input&nbsp;: `data-oftoggleclass='{"parent":".su-
 <label for="input5">Label</label>
 <div class="su-input-icon">
 	<input id="input5" name="input5" type="text" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' role="textbox" placeholder="Placeholder" required required value="Lorem ipsum">
-	<button type="button" class="su-input-action">
+	<button type="button" class="su-input-action" data-ofemptyinput>
 		<span class="su-icon-close"></span>
 	</button>
 </div>
@@ -101,17 +104,11 @@ Déclencheur à mettre sur l’input&nbsp;: `data-oftoggleclass='{"parent":".su-
 <label for="input5">Label</label>
 <div class="su-input-icon">
 	<input id="input5" name="input5" type="text" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' role="textbox" placeholder="Placeholder" required value="Lorem ipsum">
-	<button type="button" class="su-input-action">
+	<button type="button" class="su-input-action" data-ofemptyinput>
 		<span class="su-icon-close"></span>
 	</button>
 </div>
 </div>
-
-#### Interractivité à créer en JS
-
-##### Vider le champ
-
-Cliquer sur la croix supprime l’attribut `value` de l’ìnput.
 
 
 ### Exemple de champ complexe (complément de label, placeholder, RAZ et gestion d’erreur)
@@ -121,7 +118,7 @@ Cliquer sur la croix supprime l’attribut `value` de l’ìnput.
 	<label for="input6">Label<span class="su-label-complement"> (facultatif)</span></label>
 	<div class="su-relative su-input-icon">
 		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
-		<button type="button" class="su-input-action">
+		<button type="button" class="su-input-action" data-ofemptyinput>
 			<span class="su-icon-close"></span>
 		</button>
 	</div>
@@ -133,7 +130,7 @@ Cliquer sur la croix supprime l’attribut `value` de l’ìnput.
 	<label for="input6">Label<span class="su-label-complement"> (facultatif)</span></label>
 	<div class="su-relative su-input-icon">
 		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
-		<button type="button" class="su-input-action">
+		<button type="button" class="su-input-action" data-ofemptyinput>
 			<span class="su-icon-close"></span>
 		</button>
 	</div>

@@ -1,4 +1,3 @@
-
 // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 // Composant oftoggleclass
 //
@@ -40,8 +39,6 @@
         });
         
     }
-    
-    console.log('--- Composant en vie : '+cn+' ---');
 
     ['focusin', 'focusout', 'input'].forEach(event => of.doc.addEventListener(event, function(e) {
         const elem = e.target.closest("[data-"+cn+"]");
