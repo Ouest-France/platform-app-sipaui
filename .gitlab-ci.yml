@@ -11,6 +11,7 @@ build:
   image: $NODE_IMAGE
   stage: build
   script:
+    - echo ${NPM_TOKEN}
     - yarn install
     - npx gulp html
     - npm run build-storybook
