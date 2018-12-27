@@ -6,6 +6,6 @@
         </svg>
         <span class="titre su-hidden-xs su-hidden-sm">SipaUI</span>
     </a>
-    &nbsp;<span class="version su-hidden-xs su-hidden-sm">0.4.3</span>
+    &nbsp;<span class="version su-hidden-xs su-hidden-sm"><?= $GLOBALS['sipaversion']; ?></span>
 </div>
 <p class="bandeau"><strong>ßeta</strong></p>
