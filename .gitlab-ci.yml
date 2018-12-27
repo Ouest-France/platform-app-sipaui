@@ -15,7 +15,6 @@ build:
     - yarn install
     - npx gulp html
     - npm run build-storybook
-    - npm run checknpublish
   artifacts:
     paths:
       - dist
