@@ -10,7 +10,6 @@ La pagination aident les utilisateurs à naviguer dans de grandes quantités de 
 
 ## Spécifications
 
-- Chaque page contient la même quantité d'éléments, à l'exception de la dernière page.
 - Les pages sont numérotées à l'aide d'éléments graphiques.
 
 ### Élément graphique
@@ -56,6 +55,7 @@ Type | Illustration
 !!image!!illustration Pge 1 sur 508
 - L'espace entre 2 points de navigation est constant XXpx ???
 - La pagination est centrée horizontalement par rapport à la liste des éléments.
+- Chaque page contient la même quantité d'éléments, à l'exception de la dernière page.
 - Le nombre d'élément dans une page est défini en fonction de la taille de la page, l'élément et de leur temps de chargement.
 
 
