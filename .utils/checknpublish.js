@@ -11,7 +11,7 @@ var child = exec('npm show sipa-ui version',
     else {
         var distant = stdout.trim();
         var local = JSON.parse(content).version;
-
+        console.log('check version', distant, local);
         if(distant != local) {
             exec('npm publish',
               function(err, stdout, stderr) {
