@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.su-icon-bottom:before {
+  content: "\e905";
+}
 .su-icon-show2:before {
   content: "\e904";
 }

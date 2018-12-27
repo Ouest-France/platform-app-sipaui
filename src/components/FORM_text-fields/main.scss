@@ -85,6 +85,7 @@ body {
         cursor: pointer;
         color: $color-main-5;
         font-size: $font-size-medium1;
+                                            padding-top: 6px; //compense le mauvais alignement vertical de la fonte picto.
 
         &:hover {
             color: $color-main-7;
@@ -107,6 +108,7 @@ body {
         display: none;
         font-size: $font-size-error;
         color: $color-error;
+        margin-top: 2px;
     }
     .su-error {
         .su-error-message {
@@ -114,8 +116,7 @@ body {
         }
 
         #{$inputTextPlus},
-        select,
-        su-select {
+        .su-select select {
             border: $border-input-error;
         }
     }
