@@ -85,6 +85,7 @@ body {
         cursor: pointer;
         color: $color-main-5;
         font-size: $font-size-medium1;
+                                            padding-top: 6px; //compense le mauvais alignement vertical de la fonte picto.
 
         &:hover {
             color: $color-main-7;
