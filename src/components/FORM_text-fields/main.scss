@@ -108,6 +108,7 @@ body {
         display: none;
         font-size: $font-size-error;
         color: $color-error;
+        margin-top: 2px;
     }
     .su-error {
         .su-error-message {
@@ -115,8 +116,7 @@ body {
         }
 
         #{$inputTextPlus},
-        select,
-        su-select {
+        .su-select select {
             border: $border-input-error;
         }
     }
