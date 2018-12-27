@@ -1,0 +1,17 @@
+dist
+doc
+build
+.storybook
+.utils
+.cache
+.editorconfig
+.gitlab-ci.yml
+.scss-lint.yml
+.stylelintrc
+Dockerfile
+gulpfile.js
+index.html
+src/components/*/design
+src/components/*/*.md
+src/components/*/*.sketch
+*.tgz
