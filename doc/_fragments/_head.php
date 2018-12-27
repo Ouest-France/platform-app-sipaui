@@ -1,4 +1,5 @@
 <head>
+    <?php $GLOBALS['sipaversion']=json_decode(file_get_contents(dirname(__FILE__).'/../../package.json'))->version; ?>
     <meta charset="UTF-8" />
     <title>SipaUI</title>
 

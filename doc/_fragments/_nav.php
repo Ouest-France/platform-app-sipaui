@@ -1,4 +1,4 @@
-<ul class="su-old-horizontal">
+<ul class="su-old-horizontal"><?php if(!isset($actif)) $actif = ''; ?>
     <li><a href="/doc/architecture-fonctionnelle.php" <?php if($actif=='archi') echo 'class="actif"' ?>>Architecture fonctionnelle</a></li>
     <li><a href="/doc/architecture-technique.php" <?php if($actif=='tech') echo 'class="actif"' ?>>Architecture technique</a></li>
     <li><a href="/doc/telechargement.php" <?php if($actif=='telechargement') echo 'class="actif"' ?>>Téléchargement</a></li>
