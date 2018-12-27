@@ -24,6 +24,16 @@ build:
   tags:
     - int
 
+checknpublish:
+  image: $NODE_IMAGE
+  stage: build
+  script:
+    - npm run checknpublish
+  only:
+    - master
+  tags:
+    - int
+
 package_review:
   image: $CDP_IMAGE
   stage: package
