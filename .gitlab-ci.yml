@@ -11,7 +11,6 @@ build:
   image: $NODE_IMAGE
   stage: build
   script:
-    - echo ${NPM_TOKEN}
     - yarn install
     - npx gulp html
     - npm run build-storybook
@@ -29,6 +28,7 @@ checknpublish:
   stage: build
   script:
     - echo ${NPM_TOKEN}
+    - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./npmrc
     - npm run checknpublish
   only:
     - master
