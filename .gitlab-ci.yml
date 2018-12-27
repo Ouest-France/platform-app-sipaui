@@ -28,6 +28,7 @@ checknpublish:
   image: $NODE_IMAGE
   stage: build
   script:
+    - echo ${NPM_TOKEN}
     - npm run checknpublish
   only:
     - master
