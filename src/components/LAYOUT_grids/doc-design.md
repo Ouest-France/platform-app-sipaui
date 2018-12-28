@@ -1,6 +1,6 @@
 # Grids / Grilles
 
-Une grille est une armature qui permet d'organiser une page et son contenu. Les éléments sont ainsi cadrés et les espaces négatifs sont harmonisés. L'expérience utilisateur est alors cohérente sur quelque soit la taille et l'orientation de l'écran.
+Une grille est une armature qui permet d'organiser une page et son contenu. Les éléments sont ainsi cadrés et les espaces négatifs sont harmonisés. L'expérience utilisateur est alors cohérente quelque soit la taille et l'orientation de l'écran.
 
 
 ## Usage
@@ -33,9 +33,9 @@ Une grille est constituée de colonnes, séparés par des gouttières permettant
 
 -> un tableau avec les breaks point, marges associées
 
-(Sur mobile, à un point d'arrêt de 360dp, cette grille de mise en forme utilise des marges de 16dp.)
+(Sur mobile, à un point d'arrêt de 360px, cette grille de mise en forme utilise des marges de 16px.)
 
-(Sur une petite tablette, à un point d'arrêt de 600dp, cette grille de mise en forme utilise des marges de 24dp.)
+(Sur une petite tablette, à un point d'arrêt de 600px, cette grille de mise en forme utilise des marges de 24px.)
 
 L'espacement minimal entre le bord gauche et le bord droit de la fenêtre est de 4%. Sur de très grands écrans, le contenu est centré. 
 

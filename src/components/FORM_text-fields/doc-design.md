@@ -112,9 +112,8 @@ Type | Illustration
 - Lorsque le champ est ko, un message d'erreur guide l’utilisateur sur la manière de résoudre le problème.
 - Il apparait sur une seule ligne.
 - Tant que l'erreur n'est pas corrigée, il reste affiché. Dans un formulaire, l'état d’erreur disparait suite à la validation de l’ensemble de la page.
-- Le message s'affiche sous la ligne de saisie : 10px
+- Le message s'affiche sous la ligne de saisie.
 - Taille de caractère : 14px
-- Line-height : 18px
 - Graisse de caractère : regular
 - Police du thème
 - Couleur : #B40015
