@@ -28,7 +28,7 @@ checknpublish:
   stage: build
   script:
     - echo ${NPM_TOKEN}
-    - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./npmrc
+    - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
     - npm run checknpublish
   only:
     - master
