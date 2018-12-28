@@ -118,6 +118,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 - `su-input-radio` (si besoin de surcharge)
 - `su-radio-column`
 - `su-disabled` (dépendant du composant *helpers*)
-- `su-error-message` (dépendant du composant *text-fields*)
+- `su-error` (dépendant du composant *FORM_text-fields*)
+- `su-error-message` (dépendant du composant *FORM_text-fields*)
 
 </div>
