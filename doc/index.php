@@ -17,7 +17,7 @@
         </header>
 
 
-        <main class="su-old-editorial su-padding-b-standard" role="main">
+        <main class="su-old-editorial" role="main">
             <article class="presentation su-margin-bottom-xl" role="article">
                 <div class="conteneur">
                     <div class="titre">

@@ -81,8 +81,10 @@ nav {
     }
 }
 main {
+    padding-bottom: 20px;
+
     > *:first-child {
-        padding-top: 19rem;
+        padding-top: 190px;
     }
     .conteneur {
         padding-left: $margin-medium;
