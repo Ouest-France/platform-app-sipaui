@@ -117,7 +117,7 @@ body {
 
         #{$inputTextPlus},
         .su-select select {
-            border: $border-input-error;
+            border: $border-input-error !important;
         }
     }
 }
