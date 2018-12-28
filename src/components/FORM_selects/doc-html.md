@@ -2,6 +2,7 @@
 
 Les listes déroulantes `<select>` proposent une liste d’options à l’utilisateur. Cette liste peut-être *mono* ou *multi-choix*. **Ce composant ne présente pour l’instant que la version mono-choix**.
 
+<a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
 <!-- STORY -->
 
@@ -173,4 +174,17 @@ Liste déroulant inactive. Attention, si le disabled suffit à rendre le select 
 		    <option value="option6">Option 6</option>
 		</select>
 	</div>
+</div>
+
+
+<div id="liste-classes">
+
+## Liste des classes disponibles
+- `su-label` (si besoin de surcharge, dépendant du composant *FORM_text-fields*)
+- `su-label-complement`(dépendant du composant *FORM_text-fields*)
+- `su-select`
+- `su-disabled` (dépendant du composant *helpers*)
+- `su-error` (dépendant du composant *FORM_text-fields*)
+- `su-error-message` (dépendant du composant *FORM_text-fields*)
+
 </div>
