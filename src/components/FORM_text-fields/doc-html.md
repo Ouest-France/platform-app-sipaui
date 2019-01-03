@@ -15,61 +15,71 @@ Règles minimales&nbsp;:
 Cerise&nbsp;:
 - Utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener" class="su-link">«&nbsp;Utiliser l'attribut aria-labelledby&nbsp;» chez MDN Web docs [moz://a]</a>).
 
+<div class="alerte su-margin-top-xl">
+	<h2>Dépendances</h2>
+	<p class="su-margin-0">Ce composant est dépendant des composants&nbsp;:</p>
+	<ul>
+		<li>helpers,</li>
+		<li>FORM_labels,</li>
+		<li>FORM_errors</li>
+	</ul>
+</div>
+
 <!-- STORY -->
 
 ## Input text
 
 
 ### Standard
-Input standard avec un placeholder. Le style est appliqué par défaut sur les inputs dans un site SipaUI. Il est possible de forcer cet affichage avec les classes `su-label` et `su-input-text`.
+Input standard avec un placeholder. Le style est appliqué par défaut sur les inputs dans un site SipaUI. Il est possible de forcer cet affichage avec la classe `su-input-text`. Pour les labels (obligatoires), prendre le composant *FORM_labels*.
 
 ```html
 <label for="input1">Label</label>
-<input id="input1" name="input1" type="text" role="textbox" placeholder="Placeholder">
+<input id="input1" name="input1" type="text" role="textbox" required placeholder="Placeholder">
 ```
 <label for="input1">Label</label>
-<input id="input1" name="input1" type="text" role="textbox" placeholder="Placeholder">
+<input id="input1" name="input1" type="text" role="textbox" required placeholder="Placeholder">
 
 ### Facultatif
-Input facultatif. Pour le texte en complément dans le label, utiliser la classe `su-label-complement`.
+Input facultatif. Pour le texte en complément dans le label, utiliser la classe `su-label-complement` du composant *FORM_labels*.
 ```html
 <label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
-<input id="input2" name="input2" type="text" role="textbox" required placeholder="Placeholder">
+<input id="input2" name="input2" type="text" role="textbox" placeholder="Placeholder">
 ```
 <label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
-<input id="input2" name="input2" type="text" role="textbox" required placeholder="Placeholder">
+<input id="input2" name="input2" type="text" role="textbox" placeholder="Placeholder">
 
 ### Prérempli
 Input standard prérempli.
 ```html
-<label for="input2">Label</label>
-<input id="input2" name="input2" type="text" role="textbox" required value="Value">
+<label for="input3">Label</label>
+<input id="input3" name="input2" type="text" role="textbox" required value="Value">
 ```
-<label for="input2">Label</label>
-<input id="input2" name="input2" type="text" role="textbox" required value="Value">
+<label for="input3">Label</label>
+<input id="input3" name="input2" type="text" role="textbox" required value="Value">
 
 ### Readonly
-Input standard prérempli et en readonly. Attention, si le `readonly` suffit à l’input pour changer son opacité, il faut une classe `su-disabled` sur le label pour le changer aussi.
+Input standard prérempli et en readonly. Attention, si le `readonly` suffit à l’input pour changer son opacité, il faut une classe `su-disabled` sur le label pour le changer aussi. Cette classe est dépendante du composant *helpers*.
 ```html
-<label for="input3" class="su-disabled">Label</label>
-<input id="input3" name="input3" type="text" role="textbox" required readonly aria-readonly="true" value="Value">
+<label for="input4" class="su-disabled">Label</label>
+<input id="input4" name="input3" type="text" role="textbox" required readonly aria-readonly="true" value="Value">
 ```
-<label for="input2" class="su-disabled">Label</label>
-<input id="input2" name="input3" type="text" role="textbox" required readonly aria-readonly="true" value="Value">
+<label for="input4" class="su-disabled">Label</label>
+<input id="input4" name="input3" type="text" role="textbox" required readonly aria-readonly="true" value="Value">
 
 ### Erreur
-Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Cette classe, absente par défaut, sera positionnée par le développeur (soit dynamiquement, soit par réponse serveur). Le message d’erreur sera identifié par la classe `su-error-message`.
+Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Cette classe, absente par défaut, sera positionnée par le développeur (soit par JS, soit par réponse serveur). Le message d’erreur sera identifié par la classe `su-error-message`. Ces 2 classes d’erreur sont issues du composant *FORM_errors*.
 
 ```html
 <div class="su-error">
-	<label for="input4">Label</label>
-	<input id="input4" name="input4" type="email" role="textbox" required value="Value">
+	<label for="input5">Label</label>
+	<input id="input5" name="input4" type="email" role="textbox" required value="Value">
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 ```
 <div class="su-error">
-	<label for="input4">Label</label>
-	<input id="input4" name="input4" type="email" role="textbox" required value="Value">
+	<label for="input5">Label</label>
+	<input id="input5" name="input4" type="email" role="textbox" required value="Value">
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 
@@ -91,9 +101,9 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 *Attention&nbsp;! Ne pas oublier le `type="button"` sur le `<button>`, sans quoi le bouton soumettra le formulaire&nbsp;!*
 
 ```html
-<label for="input5">Label</label>
+<label for="input6">Label</label>
 <div class="su-input-icon">
-	<input id="input5" name="input5" type="text" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' role="textbox" placeholder="Placeholder" required required value="Lorem ipsum">
+	<input id="input6" name="input5" type="text" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' role="textbox" placeholder="Placeholder" required required value="Lorem ipsum">
 	<button type="button" class="su-input-action" data-ofemptyinput>
 		<span class="su-icon-close"></span>
 	</button>
@@ -101,9 +111,9 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 ```
 
 <div><!-- échappement markdown -->
-<label for="input5">Label</label>
+<label for="input6">Label</label>
 <div class="su-input-icon">
-	<input id="input5" name="input5" type="text" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' role="textbox" placeholder="Placeholder" required value="Lorem ipsum">
+	<input id="input6" name="input5" type="text" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' role="textbox" placeholder="Placeholder" required value="Lorem ipsum">
 	<button type="button" class="su-input-action" data-ofemptyinput>
 		<span class="su-icon-close"></span>
 	</button>
@@ -115,9 +125,9 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 
 ```html
 <div class="su-error">
-	<label for="input6">Label<span class="su-label-complement"> (facultatif)</span></label>
+	<label for="input7">Label<span class="su-label-complement"> (facultatif)</span></label>
 	<div class="su-relative su-input-icon">
-		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
+		<input id="input7" name="input6" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
 		<button type="button" class="su-input-action" data-ofemptyinput>
 			<span class="su-icon-close"></span>
 		</button>
@@ -127,9 +137,9 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 ```
 
 <div class="su-error">
-	<label for="input6">Label<span class="su-label-complement"> (facultatif)</span></label>
+	<label for="input7">Label<span class="su-label-complement"> (facultatif)</span></label>
 	<div class="su-relative su-input-icon">
-		<input id="input6" name="input6" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
+		<input id="input7" name="input6" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
 		<button type="button" class="su-input-action" data-ofemptyinput>
 			<span class="su-icon-close"></span>
 		</button>
@@ -149,15 +159,17 @@ Textarea standard. Il est possible de forcer cet affichage avec la classe `su-te
 <div id="liste-classes">
 
 ## Liste des classes disponibles
-- `su-label` (si besoin de surcharge)
-- `su-label-complement`
 - `su-input-text` (si besoin de surcharge)
 - `su-input-icon`
 - `su-input-action`
 - `su-js-button` (positioné par le JS)
 - `su-textarea` (si besoin de surcharge)
+
+### Classes annexes
+- `su-label` (dépendant du composant *FORM_labels*, si besoin de surcharge)
+- `su-label-complement` (dépendant du composant *FORM_labels*)
+- `su-error` (dépendant du composant *FORM_errors*)
+- `su-error-message` (dépendant du composant *FORM_errors*)
 - `su-disabled` (dépendant du composant *helpers*)
-- `su-error`
-- `su-error-message`
 
 </div>

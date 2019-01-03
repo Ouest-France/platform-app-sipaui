@@ -1,0 +1,15 @@
+/*
+    Variables liés au composant [text-fields]
+    ex:
+    $subutton-br: 0 !default;
+*/
+
+
+// LABEL ------------------------------------------------------------------------------------------/
+$color-label:         $color-texte              !default;
+$font-size-label:     $font-size-small          !default;
+$font-weight-label:   $font-weight-bold         !default;
+$margin-bottom-label: 4px                       !default;
+
+$color-label-complement:        $color-main-6           !default;
+$font-size-label-complement:    12px                    !default;
