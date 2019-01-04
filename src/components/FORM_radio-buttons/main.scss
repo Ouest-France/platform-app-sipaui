@@ -12,7 +12,7 @@ $padding-left-label: $height-input-radio + 7px;
 
 body {
     .su-radio-area {
-        height: $height-radio-area;
+        @include flexDisplay();
 
         &.su-disabled {
             label,
@@ -22,26 +22,23 @@ body {
                 cursor: default;
             }
         }
+        + .su-error-message {
+            margin-top: $margin-xsmall;
+        }
     }
     .su-radio-area.su-radio-column {
-        height: auto;
-        @include flexDisplay();
         @include flexDirection(column, vertical);
         @include flexAlign(flex-start);
 
         label,
         .su-label-radio {
-            display: block;
-            margin-bottom: $margin-small - 5px;
+            margin-bottom: $margin-xsmall;
             margin-left: 0;
 
             &:last-child {
                 margin-bottom: 0;
             }
         }
-    }
-    .su-radio-area.su-error {
-        height: auto;
     }
 
     .su-label-radio,
@@ -55,20 +52,18 @@ body {
         padding-top: $padding-top-label;
         padding-left: $padding-left-label;
         margin: 0;
-        display: inline-block;
         position: relative;
         overflow: hidden;
         cursor: pointer;
 
-        & + input[type="radio"],
         & + label {
-            margin-left: $margin-medium - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
+            margin-left: $margin-medium;
         }
         & + span {
             display: inline-block;
             overflow: auto; // utile pour mettre un contexte de block pour FireFox
             line-height: $line-height-label;
-            margin: 0 $margin-medium - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
+            margin: 0 $margin-medium;
             min-height: $height-radio-area;
             padding-top: $padding-top-label;
         }

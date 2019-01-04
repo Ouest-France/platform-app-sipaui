@@ -92,31 +92,38 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 ### Sur une ligne, basique
 
 ```html
-<div class="su-checkbox-area su-error">
-	<label for="checkbox9"><input type="checkbox" id="checkbox9" name="nom5" value="Valeur 1">Valeur 1</label>
-	<label for="checkbox10"><input type="checkbox" id="checkbox10" name="nom5" value="Valeur 2">Valeur 2</label>
+<div class="su-error">
+	<div class="su-checkbox-area">
+		<label for="checkbox9"><input type="checkbox" id="checkbox9" name="nom5" value="Valeur 1">Valeur 1</label>
+		<label for="checkbox10"><input type="checkbox" id="checkbox10" name="nom5" value="Valeur 2">Valeur 2</label>
+	</div>
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 ```
-<div class="su-checkbox-area su-error">
-	<label for="checkbox9"><input type="checkbox" id="checkbox9" name="nom5" value="Valeur 1">Valeur 1</label>
-	<label for="checkbox10"><input type="checkbox" id="checkbox10" name="nom5" value="Valeur 2">Valeur 2</label>
+<div class="su-error">
+	<div class="su-checkbox-area">
+		<label for="checkbox9"><input type="checkbox" id="checkbox9" name="nom5" value="Valeur 1">Valeur 1</label>
+		<label for="checkbox10"><input type="checkbox" id="checkbox10" name="nom5" value="Valeur 2">Valeur 2</label>
+	</div>
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
-
 
 ### En colonne
 
 ```html
-<div class="su-checkbox-area su-checkbox-column su-error">
-	<label for="checkbox11"><input type="checkbox" id="checkbox11" name="nom6" value="Valeur 1">Valeur 1</label>
-	<label for="checkbox12"><input type="checkbox" id="checkbox12" name="nom6" value="Valeur 2">Valeur 2</label>
+<div class="su-error">
+	<div class="su-checkbox-area su-checkbox-column su-error">
+		<label for="checkbox11"><input type="checkbox" id="checkbox11" name="nom6" value="Valeur 1">Valeur 1</label>
+		<label for="checkbox12"><input type="checkbox" id="checkbox12" name="nom6" value="Valeur 2">Valeur 2</label>
+	</div>
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 ```
-<div class="su-checkbox-area su-checkbox-column su-error">
-	<label for="checkbox11"><input type="checkbox" id="checkbox11" name="nom6" value="Valeur 1">Valeur 1</label>
-	<label for="checkbox12"><input type="checkbox" id="checkbox12" name="nom6" value="Valeur 2">Valeur 2</label>
+<div class="su-error">
+	<div class="su-checkbox-area su-checkbox-column su-error">
+		<label for="checkbox11"><input type="checkbox" id="checkbox11" name="nom6" value="Valeur 1">Valeur 1</label>
+		<label for="checkbox12"><input type="checkbox" id="checkbox12" name="nom6" value="Valeur 2">Valeur 2</label>
+	</div>
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 
