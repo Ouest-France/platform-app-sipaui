@@ -62,7 +62,7 @@ Type | Illustration
  <div class="do-dont">
  <div class="dont">
 
-![Image_button_2 buttons_ko](design/Image_button_buttons_ko.png)  |
+? |
 ------------ |
 **Don’t** <br/> Ne placez pas la pagination sur un fond de couleur similaire.
 

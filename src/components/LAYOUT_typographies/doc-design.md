@@ -53,7 +53,7 @@ On peut considérer que ces autres balises indiquent un contenu de moindre impor
 #### Mobile
 
 Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- |
+------------ | ------------- | ------------- | ------------- | -------------
 h1 | Oswald | Normal | 30px | #333333
 h2 | Oswald | Normal | 24px | #333333
 h3 | Oswald | Normal | 18px | #333333
@@ -63,7 +63,7 @@ h3 | Oswald | Normal | 18px | #333333
 #### Desktop
 
 Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- |
+------------ | ------------- | ------------- | ------------- | -------------
 h1 | Oswald | Normal | 40px | #333333
 h2 | Oswald | Normal | 30px | #333333
 h3 | Oswald | Normal | 18px | #333333
@@ -73,7 +73,7 @@ h3 | Oswald | Normal | 18px | #333333
 #### Mobile
 
 Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- |
+------------ | ------------- | ------------- | ------------- | -------------
 h1 | Arial | Bold | 24px | #333333
 h2 | Oswald | Normal | 22px | #333333
 h3 | Oswald | Normal | 18px | #333333
@@ -86,7 +86,7 @@ h6 | Oswald | Normal | 12px | #333333
 #### Desktop
 
 Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- |
+------------ | ------------- | ------------- | ------------- | -------------
 h1 | Arial | Bold | 38px | #333333
 h2 | Oswald | Normal | 30px | #333333
 h3 | Oswald | Normal | 22px | #333333
