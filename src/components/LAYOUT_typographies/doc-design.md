@@ -24,7 +24,7 @@ La balise h1 est **l’élément typographique le plus visible de la page**.
 Elle correspond au titre éditorial de la page qui fait partie des « zones chaudes » en matière de référencement. En le lisant on doit pouvoir identifier le sujet de la page. Le titre h1 doit être le plus descriptif possible.
 
 - **Les mots clés de la page sont au début du h1.** Google leur accordera davantage de poids.
-- **Le titre doit être concis.** Plus le titre sera long, plus le mot clé sera dilué.
+- **Le titre doit être concis.** Plus le titre sera long, plus les mots clés seront dilués.
 - **La formulation en question et définition sont intéressantes pour le SEO.** En effet, Google se positionne comme un assistant personnel capable de répondre directement aux questions de chaque internaute.
 
 ### La balise h2
@@ -49,10 +49,31 @@ On peut considérer que ces autres balises indiquent un contenu de moindre impor
 ## Spécifications
 **Les balises H1 à H6 sont des balises de titre** (heading) qui indiquent aux lecteurs et aux moteurs de recherche quelle est l’importance relative de chaque titre. A ne pas confondre, avec la balise (title) qui n’apparaît pas aux yeux du lecteur mais joue elle aussi un rôle clé en matière de référencement naturel.
 
-### Mobile
+### Heading page
+#### Mobile
 
 Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- |
+------------ | ------------- | ------------- | ------------- | -------------
+h1 | Oswald | Normal | 30px | #333333
+h2 | Oswald | Normal | 24px | #333333
+h3 | Oswald | Normal | 18px | #333333
+
+
+### Heading page
+#### Desktop
+
+Balise | Police | Graisse | Taille | Couleur
+------------ | ------------- | ------------- | ------------- | -------------
+h1 | Oswald | Normal | 40px | #333333
+h2 | Oswald | Normal | 30px | #333333
+h3 | Oswald | Normal | 18px | #333333
+
+
+### Article
+#### Mobile
+
+Balise | Police | Graisse | Taille | Couleur
+------------ | ------------- | ------------- | ------------- | -------------
 h1 | Arial | Bold | 24px | #333333
 h2 | Oswald | Normal | 22px | #333333
 h3 | Oswald | Normal | 18px | #333333
@@ -61,10 +82,11 @@ h5 | Oswald | Normal | 14px | #333333
 h6 | Oswald | Normal | 12px | #333333
 
 
-### Desktop
+### Article
+#### Desktop
 
 Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- |
+------------ | ------------- | ------------- | ------------- | -------------
 h1 | Arial | Bold | 38px | #333333
 h2 | Oswald | Normal | 30px | #333333
 h3 | Oswald | Normal | 22px | #333333
@@ -73,18 +95,18 @@ h5 | Oswald | Normal | 18px | #333333
 h6 | Oswald | Normal | 16px | #333333
 
 
-
+###
 
 
 titre-rubrique
 
 titre-medium
 
-Texte courant <p>
+Texte courant <p> (actuellement 16px ou 14px)
 
 Textes spéciaux #878787
 
-Chapeau
+Chapeau (actuellement OF 18px mobile et 16px desktop)
 
 
 
@@ -93,7 +115,7 @@ Chapeau
 
 ## Hiérarchie
 
-- La cohérence dans la hiérarchie est importante. Cela signifie que tous les éléments de même importance dans la hiérarchie devraient avoir la même taille, la même couleur et la même police. Par exemple, tous les en-têtes h1 d'un article devraient être identiques. Cette cohérence offre aux utilisateurs un repère visuel et facilite l'organisation du contenu.  ?
+- La cohérence dans la hiérarchie est importante. Cela signifie que tous les éléments de même importance dans la hiérarchie devraient avoir la même taille, la même couleur et la même police. Par exemple, tous les en-têtes h1 d'un article devraient être identiques. Cette cohérence offre aux utilisateurs un repère visuel et facilite l'organisation du contenu.
 - N'utilisez jamais plus de deux polices de caractères sur votre mobile. Il n’y a tout simplement pas assez de place pour que les visiteurs puissent gérer visuellement autant de variations.
 
 ## Mise en page

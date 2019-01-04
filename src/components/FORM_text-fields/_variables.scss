@@ -5,27 +5,13 @@
 */
 
 
-// LABEL ------------------------------------------------------------------------------------------/
-$color-label:         $color-main-7             !default;
-$font-size-label:     $font-size-small          !default;
-$font-weight-label:   $font-weight-bold         !default;
-$margin-bottom-label: 4px                       !default;
-
-$color-label-complement:        $color-main-6           !default;
-$font-size-label-complement:    12px                    !default;
-
-
 // INPUT ------------------------------------------------------------------------------------------/
 $height-input:        $height-finger                !default;
 $border-radius-input: 0                             !default;
-$color-input:         $color-main-7                 !default;
+$color-input:         $color-texte                 !default;
 $background-input:    #fafafa                       !default;
 $border-input:        1px solid $color-main-3       !default;
 
 // FOCUS
 $background-input-focus: #fff                            !default;
 $border-input-focus:     1px solid $color-main-7         !default;
-
-// ERROR
-$border-input-error:     1px solid $color-error       !default;
-$font-size-error:        $font-size-small             !default;

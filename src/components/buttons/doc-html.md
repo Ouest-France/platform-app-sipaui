@@ -19,6 +19,15 @@ Règles minimales&nbsp;:
 Cerise&nbsp;:
 - utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener" class="su-link">pour en savoir plus</a>)
 
+<div class="alerte su-margin-top-xl">
+	<h2>Dépendances</h2>
+	<p class="su-margin-0">Ce composant est dépendant des composants&nbsp;:</p>
+	<ul>
+		<li>helpers</li>
+	</ul>
+</div>
+
+
 <!-- STORY -->
 
 ## Types de boutons
@@ -86,8 +95,9 @@ L’aspect inactif peut être porté par la classe `su-disabled` (issu des *help
 - `su-subscription`
 - `su-premium`
 - `su-small`
-- `su-fullwidth` (issu des *helpers*)
-- `su-fullwidth-mobile` (issu des *helpers*) 
-- `su-disabled` (dépendant du composant *helpers*) 
 
+### Classes annexes
+- `su-fullwidth` (dépendant du composant *helpers*)
+- `su-fullwidth-mobile` (dépendant du composant *helpers*) 
+- `su-disabled` (dépendant du composant *helpers*) 
 </div>

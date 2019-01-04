@@ -5,7 +5,7 @@ Les champs de texte permettent à l'utilisateur de saisir et de modifier du text
 
 ## États
 
-Type | Simple
+Type | Illustration
 ------------ | ------------- |
 **Enabled** | ![textfield__default](design/textfield__default.png)
 **With placeholder** | ![textfield__with-placeholder](design/textfield__with-placeholder.png)
@@ -18,46 +18,8 @@ Type | Simple
 ## Spécifications
 
 #### Label
-- Un label indique le type d’information demandée sous celui-ci.
-- La 1re lettre est en majuscule, le reste est en minuscule.
-
-
-  <div class="do-dont">
-  <div class="do">
-
-![textfield__ex__label__do](design/textfield__ex__label__do.png) |
-  ------------ |
-  **Do** <br/> Utiliser un texte court et précis. |
-
-   </div>
-
-   <div class="dont">
-
-![textfield__ex__label__dont](design/textfield__ex__label__dont.png) |
-  ------------ |
-  **Don’t** <br/> Ne pas rédiger un label sur plus d'une ligne. |
-
-   </div>
-   </div>
-
-
-- Taille de caractère : 14px
-- Line-height : 1,2
-- Graisse de caractère
-  - Texte standard : bold
-  - Texte d'aide ou «&nbsp;facultatif&nbsp;» : régular
-- Police du thème
-- Couleur : #333333
-- Margin bottom : 3px
-- Champs obligatoires/facultatifs
-  - Par défaut, tous les champs sont obligatoires.
-  - Le texte, par exemple «&nbsp;facultatif&nbsp;»
-    - Est précisé entre parenthèse suite au label
-    - Regular
-    - Color : #666666
-    - Taille de caractère : 12px
-
-![textfield__ex__champs-obligatoire-facultatif](design/textfield__ex__champs-obligatoire-facultatif.png)
+- Le composant "Label" indique le type d’information demandée sous celui-ci.
+- Ses spécifications sont disponibles dans son doc design.
 
 #### Container
 - Un container indique à l'utilisateur où saisir l'information.
@@ -83,6 +45,7 @@ Type | Simple
 
 #### Texte du placeholder
 - Le texte du placeholder est une description supplémentaire au label. En aucun cas, il ne le substitue. Il doit guider l’utilisateur sur le format de données attendu. On peut ainsi présenter un exemple («&nbsp;prenom.nom@domaine.fr&nbsp;») ou un pattern (date&nbsp;: «&nbsp;jj/mm/aaaa&nbsp;»).
+- Il est facultatif.
 - Il se trouve dans le container et n'est plus visible lors de la saisie.
 - Padding gauche et à droite : 10px du container (11px avec le filet)
 - Taille de caractère : 16px
@@ -106,15 +69,14 @@ Type | Simple
  - Elle est présente lorsque l’input est en focus et qu'un contenu est présent.
 
 ## Gestion des erreurs
-- Un champ est défini comme ko lorsque le texte n'est pas correct ou est absent.
+- Un champ obligatoire est défini comme ko lorsque le texte n'est pas correct ou est absent.
 
 #### Message d'erreur
 - Lorsque le champ est ko, un message d'erreur guide l’utilisateur sur la manière de résoudre le problème.
 - Il apparait sur une seule ligne.
 - Tant que l'erreur n'est pas corrigée, il reste affiché. Dans un formulaire, l'état d’erreur disparait suite à la validation de l’ensemble de la page.
-- Le message s'affiche sous la ligne de saisie : 10px
+- Le message s'affiche sous la ligne de saisie.
 - Taille de caractère : 14px
-- Line-height : 18px
 - Graisse de caractère : regular
 - Police du thème
 - Couleur : #B40015

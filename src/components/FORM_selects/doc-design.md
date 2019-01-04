@@ -12,7 +12,7 @@ Les selects permettent à l’utilisateur de sélectionner une option dans une l
 ## États
 
 
-Type | Simple
+Type | Illustration
 ------------ | ------------- |
 **Enabled** | ![select__enabled](design/select__enabled.png)
 **With default value** |![select__with-default-value](design/select__with-default-value.png)
@@ -25,7 +25,9 @@ Type | Simple
 
 ### Label
 
-- Le label est identique à celui du champ de texte.
+#### Label
+- Le composant "Label" indique le type d’information demandée sous celui-ci.
+- Ses spécifications sont disponibles dans son doc design.
 - Il est facultatif.
 - En son absence, un pseudo-placeholder est nécessaire.
 
@@ -37,8 +39,13 @@ Type | Simple
 
 - Le texte présente les caractéristiques du champ de texte.
 - Une option peut être mise par défaut si elle est quasiment sûre d'être choisie.
-- Un pseudo-placeholder peut être affiché, il permet de guider l’action de l’utilisateur.
 
+### Pseudo-placeholder
+- Le pseudo-placeholder permet de guider l’action de l’utilisateur.
+- Il a les caractéristiques du placeholder du champ texte.
+- Ce n'est pas un attribut HTML (d’où son qualificatif de «&nbsp;pseudo&nbsp;»). Cependant, il est possible de le simuler .
+- Il est facultatif.
+- En son absence, un label est nécessaire.
 
 <div class="do-dont">
 <div class="do">
@@ -50,13 +57,6 @@ Type | Simple
  </div>
  </div>
 
-
-### Pseudo-placeholder
-
-- Le pseudo-placeholder a les caractéristiques que le placeholder du champ texte.
-- Ce n'est pas un attribut HTML (d’où son qualificatif de «&nbsp;pseudo&nbsp;»). Cependant, il est possible de le simuler .
-- Il est facultatif.
-- En son absence, un label est nécessaire.
 
 ### Icône
 
@@ -113,7 +113,7 @@ L'opacité d'un champ inactif est 40 %.
 - Si le nombre d’options est inférieur ou égale à 3, utiliser un bouton radio.
 - Eviter les très longues listes nécessitant un scroll car les utilisateurs ne peuvent voir tous les choix en un coup d'œil.
 - Pour une quantité, le choix d’une année, utiliser un text field standard plutôt qu’un select car la saisie est plus rapide.
-- Lors de la saisie d'une ville, ne pas utiliser un select. En France, la liste des communes évolue régulièrement et cette liste est difficilement mis à jour.
+- Lors de la saisie d'une ville, ne pas utiliser un select. En France, la liste des communes évolue régulièrement et cette liste est difficilement mise à jour.
 - Il est fortement recommandé de ne pas styler la liste d’options des selects pour des raisons d'accessibilité.
 - Le select est pris en charge par un clavier.
 

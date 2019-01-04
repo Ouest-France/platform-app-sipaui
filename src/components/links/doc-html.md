@@ -6,6 +6,14 @@ Comme le prévoit le HTML, les liens ont 4 états&nbsp;: **normal** (/ ou *link*
 
 <a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
+<div class="alerte su-margin-top-xl">
+	<h2>Dépendances</h2>
+	<p class="su-margin-0">Ce composant est dépendant des composants&nbsp;:</p>
+	<ul>
+		<li>helpers</li>
+	</ul>
+</div>
+
 <!-- STORY -->
 
 ## Lien article
@@ -53,6 +61,8 @@ Utiliser la classe `su-link-button`.
 - `su-article`
 - `su-link` (si besoin de surcharge)
 - `su-link-button`
+
+### Classes annexes
 - `su-disabled` (dépendant du composant *helpers*)
 
 </div>
