@@ -12,7 +12,7 @@ Les selects permettent à l’utilisateur de sélectionner une option dans une l
 ## États
 
 
-Type | Simple
+Type | Illustration
 ------------ | ------------- |
 **Enabled** | ![select__enabled](design/select__enabled.png)
 **With default value** |![select__with-default-value](design/select__with-default-value.png)

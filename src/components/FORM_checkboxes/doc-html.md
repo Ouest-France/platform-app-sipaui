@@ -2,8 +2,6 @@
 
 <p class="alerte"><span class="su-icon-alert"></span> <em>Un point structurant d’architecture concernant la gestion des assets (polices, images) n’étant réglé, ce composant n’est pas stabilisé. En effet, la coche (✔) devant être une image en asset est temporairement gérée via une image en base 64 intégrée dans le CSS.</em></p>
 
-<p class="alerte"><span class="su-icon-alert"></span> <em>SipaUI n’intégrant pas pour l’instant de JS, les comportements dynamiques seront à mettre en place par les équipes intégrant nos composants.</em></p>
-
 Il y a 2 façons d’écrire une case à cocher en HTML&nbsp;:
 - **Méthode 1&nbsp;:** `<input>` PUIS `<label>`
 - **Méthode 2&nbsp;:** `<input>` DANS `<label>`
@@ -12,6 +10,14 @@ Toutefois, pour gérer l’affichage en colonne d’une suite de cases à cocher
 
 <a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
+<div class="alerte su-margin-top-xl">
+	<h2>Dépendances</h2>
+	<p class="su-margin-0">Ce composant est dépendant des composants&nbsp;:</p>
+	<ul>
+		<li>helpers,</li>
+		<li>FORM_errors</li>
+	</ul>
+</div>
 
 <!-- STORY -->
 
@@ -145,8 +151,10 @@ Pour la gestion des cases à cocher indéterminées en JS, cf. <a href="https://
 - `su-label-checkbox` (si besoin de surcharge)
 - `su-input-checkbox` (si besoin de surcharge)
 - `su-checkbox-column`
+
+### Classes annexes
+- `su-error` (dépendant du composant *FORM_errors*)
+- `su-error-message` (dépendant du composant *FORM_errors*)
 - `su-disabled` (dépendant du composant *helpers*)
-- `su-error` (dépendant du composant *FORM_text-fields*)
-- `su-error-message` (dépendant du composant *FORM_text-fields*)
 
 </div>

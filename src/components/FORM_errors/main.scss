@@ -1,0 +1,40 @@
+/*
+    Styles du text-fields de SipaUI
+    Utilise les variables à la fois globales et du composant
+*/
+@import "variables";
+
+
+
+body {
+    .su-error-message {
+        display: none;
+        font-size: $font-size-error;
+        color: $color-error;
+        margin-top: 2px;
+    }
+    .su-error {
+        .su-error-message {
+            display: block;
+        }
+
+        #{$inputTextPlus},
+        .su-select select {
+            border: $border-input-error !important;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

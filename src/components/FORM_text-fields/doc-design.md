@@ -5,7 +5,7 @@ Les champs de texte permettent à l'utilisateur de saisir et de modifier du text
 
 ## États
 
-Type | Simple
+Type | Illustration
 ------------ | ------------- |
 **Enabled** | ![textfield__default](design/textfield__default.png)
 **With placeholder** | ![textfield__with-placeholder](design/textfield__with-placeholder.png)

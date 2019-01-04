@@ -5,7 +5,7 @@ Les labels permettent à l’utilisateur de savoir à quel type d’information 
 
 ## États
 
-Type | Simple
+Type | Illustration
 ------------ | ------------- |
 **Standard** | ![label__default](design/label__default.png)
 **Facultatif** | ![label__with-placeholder](design/label__facultatif.png)

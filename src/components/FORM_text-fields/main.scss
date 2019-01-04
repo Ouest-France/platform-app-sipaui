@@ -84,24 +84,6 @@ body {
         padding: 10px 15px;
         min-height: 68px;
     }
-
-                                                                                // Erreurs
-                                                                                .su-error-message {
-                                                                                    display: none;
-                                                                                    font-size: $font-size-error;
-                                                                                    color: $color-error;
-                                                                                    margin-top: 2px;
-                                                                                }
-                                                                                .su-error {
-                                                                                    .su-error-message {
-                                                                                        display: block;
-                                                                                    }
-
-                                                                                    #{$inputTextPlus},
-                                                                                    .su-select select {
-                                                                                        border: $border-input-error !important;
-                                                                                    }
-                                                                                }
 }
 
 

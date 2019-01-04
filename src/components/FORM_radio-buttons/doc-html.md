@@ -8,6 +8,15 @@ Toutefois, pour gérer l’affichage en colonne d’une suite de boutons-radio, 
 
 <a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
+<div class="alerte su-margin-top-xl">
+	<h2>Dépendances</h2>
+	<p class="su-margin-0">Ce composant est dépendant des composants&nbsp;:</p>
+	<ul>
+		<li>helpers,</li>
+		<li>FORM_errors</li>
+	</ul>
+</div>
+
 <!-- STORY -->
 
 ## Boutons-radio standards
@@ -117,8 +126,10 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 - `su-label-radio` (si besoin de surcharge)
 - `su-input-radio` (si besoin de surcharge)
 - `su-radio-column`
+
+### Classes annexes
+- `su-error` (dépendant du composant *FORM_errors*)
+- `su-error-message` (dépendant du composant *FORM_errors*)
 - `su-disabled` (dépendant du composant *helpers*)
-- `su-error` (dépendant du composant *FORM_text-fields*)
-- `su-error-message` (dépendant du composant *FORM_text-fields*)
 
 </div>

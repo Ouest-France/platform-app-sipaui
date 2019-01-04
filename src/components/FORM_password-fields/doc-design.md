@@ -9,7 +9,7 @@ Les champs mot de passe sont des champs de texte où les caractères saisis sont
 
 ## Spécifications
 
-Type | Simple
+Type | Illustration
 ------------ | ------------- |------------ | ------------- |
 **Enabled** | ![password__enabled](design/password__enabled.png)
 **Focus** | ![password__focus](design/password__focus.png)
@@ -39,7 +39,7 @@ Le champ mot de passe présente toutes les caractéristiques (intéraction, poli
 - Elle se situe sous le champ mot de passe.
 - La sécurité évolue au et à mesure que l’utilisateur saisi les caractères. 5 niveaux sont représentés :
 
-Niveau | Simple | Couleur
+Niveau | Illustration | Couleur
 ------------ | ------------- |------------ | ------------- |
 **1** | ![password__security__level-0](design/password__security__level-0.png) à modifier | #D4D4D4
 **2** |  | #B40015
@@ -53,7 +53,7 @@ Niveau | Simple | Couleur
 - Elle s'affiche sous la barre de sécurité.
 - Chaque règle se valide lors de la saisi des caractères dans le champ mot de passe.
 
-Nature | Simple | Couleur
+Nature | Illustration | Couleur
 ------------ | ------------- |------------ |
 **Information** | image | #333333
 **Ok** | image | #87A62C

@@ -15,7 +15,7 @@ La pagination aident les utilisateurs à naviguer dans de grandes quantités de 
 
 ### Élément graphique
 
-Type | Simple
+Type | Illustration
 ------------ | ------------- |
 **Current** | image
 **Enabled** | image
