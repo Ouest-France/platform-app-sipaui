@@ -1,34 +1,27 @@
-import { unwatchFile } from "fs";
-
 // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 // Composant ofcheckboxes
 //
 // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 ;(function(cn){
+    const cIndeterminate = 'su-indeterminate',
+        cArea = 'su-checkbox-area';
 
-    function _checkAllStatus(e, that) {
+    function _checkStatus(that) {
         that = that || this;
         const l = that.closest("label"),
             g = l.nextElementSibling;
-        if (g == null || !g.classList.contains('su-checkbox-area')) {
-            _parentCheck(that, _isIndeterminate(that));
-        } else {
-            console.log('--- children way ---');
-            const d = g.querySelectorAll('input[type=checkbox]');
-            console.log('g');
-            console.log(g);
-            console.log('d');
-            console.log(d);
+        if (g !== null && g.classList.contains(cArea)) {
+            that.classList.remove(cIndeterminate);
+            _childrenCheck(that, g);
         }
-        
-        /*_checkAll(d, that.firstElementChild.checked);
-        if(!that.firstElementChild.checked) that.firstElementChild.classList.remove('su-indeterminate');*/
+        _parentCheck(that, _isIndeterminate(that));
     }
 
-    function _checkAll(checkboxes, status) {
-        for(let i = 0; i < checkboxes.length; i++) {
-            checkboxes[i].checked = status;
-            if(!status) checkboxes[i].classList.remove('su-indeterminate');
+    function _childrenCheck(elem, area) {
+        const c = area.querySelectorAll('input[type="checkbox"]');
+        for(let i = 0; i < c.length; i++) {
+            c[i].checked = elem.checked;
+            c[i].classList.remove(cIndeterminate);
         }
     }
 
@@ -41,11 +34,11 @@ import { unwatchFile } from "fs";
                 const parentCheckbox = p.querySelectorAll('input[type=checkbox]');
                 for(let i = 0; i < parentCheckbox.length; i++) {
                     
-                    if(indeterminate) {
-                        parentCheckbox[i].classList.add('su-indeterminate');
+                    if(indeterminate) { 
+                        parentCheckbox[i].classList.add(cIndeterminate);
                         parentCheckbox[i].checked = false;
                     } else {
-                        parentCheckbox[i].classList.remove('su-indeterminate');
+                        parentCheckbox[i].classList.remove(cIndeterminate);
                         parentCheckbox[i].checked = status;
                     }
                     
@@ -53,11 +46,10 @@ import { unwatchFile } from "fs";
             } 
 
             parent = parent.parentNode;
-            if(!(parent.classList.contains('su-checkbox-area') || parent.tagName.toLowerCase() == "label")) break;
+            if(!(parent.classList.contains(cArea) || parent.tagName.toLowerCase() == "label")) break;
         }
     }
 
-    /* Connaitre le statut des autres cases pour savoir si le groupe est indéterminé ou pas */
     function _isIndeterminate(elem) {
         const status = elem.checked,
             direction = ['previous','next'];
@@ -68,29 +60,21 @@ import { unwatchFile } from "fs";
                 if(w !== null && w.tagName.toLowerCase() == 'label')  {
                     let x = w.querySelectorAll('input[type=checkbox]');
                     for(let j = 0; j < x.length; j++) {
-                        if(x[j].checked != status) {
-                            console.log('Statut indéterminé !');
-                            return true; // statut indeterminé
+                        if(x[j].checked != status || x[j].classList.contains(cIndeterminate)) {
+                            return true;
                         }
                     }
                 }
                 parent = direction[i] == 'previous' ? parent.previousElementSibling : parent.nextElementSibling;
             }
         }
-        console.log('Pas de conflit !');
-        return false; // pas indeterminé
+        return false;
     }
 
-    /*of.doc.addEventListener('change', function(e) {
-        const elem = e.target.closest("[data-"+cn+"]");
-        if (!elem) return;
-        _checkAllStatus(e, elem);
-    });*/
-
     of.doc.addEventListener('change', function(e) {
-        const cont = e.target.closest(".su-checkbox-area");
+        const cont = e.target.closest("."+cArea);
         const input = e.target.closest("input[type=checkbox]");
         if (!cont && !input) return;
-        _checkAllStatus(e, input);
+        _checkStatus(input);
     });
 })('ofcheckboxes');
