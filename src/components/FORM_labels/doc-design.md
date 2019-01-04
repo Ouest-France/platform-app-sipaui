@@ -1,6 +1,6 @@
 # Labels / Labels
 
-Les labels permettent à l’utilisateur de savoir à quel type d’information attendue correspond le composant qui lui est associé (champ texte, liste déroulante…). Ils se trouvent généralement dans un formulaire.
+Les labels permettent à l’utilisateur de savoir le type d’information du composant associé (champ texte, liste déroulante…). Ils se trouvent généralement dans un formulaire.
 
 
 ## États
@@ -13,7 +13,6 @@ Type | Illustration
 
 ## Spécifications
 
-#### Label
 - Un label indique le type d’information demandée sous celui-ci.
 - La 1re lettre est en majuscule, le reste est en minuscule.
 
@@ -36,20 +35,22 @@ Type | Illustration
    </div>
    </div>
 
-
 - Taille de caractère : 14px
 - Line-height : 1,2
-- Graisse de caractère
-  - Texte standard : bold
-  - Texte d'aide ou «&nbsp;facultatif&nbsp;» : régular
+- Graisse de caractère : bold
 - Police du thème
 - Couleur : #333333
 - Margin bottom : 3px
 - Label pour champs obligatoires/facultatifs
   - Par défaut, tous les champs sont obligatoires.
-  - Le texte, par exemple «&nbsp;facultatif&nbsp;»
-    - Est précisé entre parenthèse suite au label
-    - Regular
+  - «&nbsp;facultatif&nbsp;» est un exemple de wording.
+    - Il est précisé entre parenthèse suite au label.
+    - Graisse de caractère : regular
     - Color : #666666
     - Taille de caractère : 12px
- - Label pour champs readonly/inactifs&nbsp;: opacité = 40 %
+
+![textfield__ex__champs-obligatoire-facultatif](design/textfield__ex__champs-obligatoire-facultatif.png)
+
+
+- Champ non modifiable (readonly)
+  - Opacité : 40 %

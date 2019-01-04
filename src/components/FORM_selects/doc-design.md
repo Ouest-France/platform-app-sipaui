@@ -25,7 +25,9 @@ Type | Illustration
 
 ### Label
 
-- Le label est identique à celui du champ de texte.
+#### Label
+- Le composant "Label" indique le type d’information demandée sous celui-ci.
+- Ses spécifications sont disponibles dans son doc design.
 - Il est facultatif.
 - En son absence, un pseudo-placeholder est nécessaire.
 
@@ -37,8 +39,13 @@ Type | Illustration
 
 - Le texte présente les caractéristiques du champ de texte.
 - Une option peut être mise par défaut si elle est quasiment sûre d'être choisie.
-- Un pseudo-placeholder peut être affiché, il permet de guider l’action de l’utilisateur.
 
+### Pseudo-placeholder
+- Le pseudo-placeholder permet de guider l’action de l’utilisateur.
+- Il a les caractéristiques du placeholder du champ texte.
+- Ce n'est pas un attribut HTML (d’où son qualificatif de «&nbsp;pseudo&nbsp;»). Cependant, il est possible de le simuler .
+- Il est facultatif.
+- En son absence, un label est nécessaire.
 
 <div class="do-dont">
 <div class="do">
@@ -50,13 +57,6 @@ Type | Illustration
  </div>
  </div>
 
-
-### Pseudo-placeholder
-
-- Le pseudo-placeholder a les caractéristiques du placeholder du champ texte.
-- Ce n'est pas un attribut HTML (d’où son qualificatif de «&nbsp;pseudo&nbsp;»). Cependant, il est possible de le simuler .
-- Il est facultatif.
-- En son absence, un label est nécessaire.
 
 ### Icône
 
