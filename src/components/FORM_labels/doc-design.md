@@ -30,7 +30,7 @@ Type | Illustration
 
 ![label__ex__label__dont](design/label__ex__label__dont.png) |
   ------------ |
-  **Don’t** <br/> Ne pas rédiger un label sur plus d'une ligne. |
+  **Don’t** <br/> Ne pas rédiger un label complexe. |
 
    </div>
    </div>
@@ -43,8 +43,7 @@ Type | Illustration
 - Margin bottom : 3px
 - Label pour champs obligatoires/facultatifs
   - Par défaut, tous les champs sont obligatoires.
-  - «&nbsp;facultatif&nbsp;» est un exemple de wording.
-    - Il est précisé entre parenthèse suite au label.
+  - «&nbsp;facultatif&nbsp;» est précisé entre parenthèse suite au label le cas échéant.
     - Graisse de caractère : regular
     - Color : #666666
     - Taille de caractère : 12px
