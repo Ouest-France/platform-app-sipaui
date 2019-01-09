@@ -1,7 +1,5 @@
 # Checkboxes / Case à cocher
 
-<p class="alerte"><span class="su-icon-alert"></span> <em>Un point structurant d’architecture concernant la gestion des assets (polices, images) n’étant réglé, ce composant n’est pas stabilisé. En effet, la coche (✔) devant être une image en asset est temporairement gérée via une image en base 64 intégrée dans le CSS.</em></p>
-
 Il y a 2 façons d’écrire une case à cocher en HTML&nbsp;:
 - **Méthode 1&nbsp;:** `<input>` PUIS `<label>`
 - **Méthode 2&nbsp;:** `<input>` DANS `<label>`
