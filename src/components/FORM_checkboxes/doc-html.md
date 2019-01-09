@@ -133,7 +133,18 @@ Les cases à cocher indéterminées servent à montrer un état semi-sélectionn
 Pour la gestion des cases à cocher indéterminées en JS, cf. <a href="https://css-tricks.com/indeterminate-checkboxes/" target="blank" class="su-link">css-tricks.com</a>.
 
 ```html
-
+<div class="su-checkbox-area su-checkbox-column">
+	<label for="checkbox13"><input type="checkbox" id="checkbox13" name="nom7" value="Valeur 1" class="su-indeterminate">Valeur 1</label>
+		<div class="su-checkbox-area su-checkbox-column">
+			<label for="checkbox13a"><input type="checkbox" id="checkbox13a" name="nom7" value="Valeur A" class="su-indeterminate">Valeur A</label>
+				<div class="su-checkbox-area su-checkbox-column">
+					<label for="checkbox13aa"><input type="checkbox" id="checkbox13aa" name="nom7" value="Valeur a" checked>Valeur a</label>
+					<label for="checkbox13ab"><input type="checkbox" id="checkbox13ab" name="nom7" value="Valeur b">Valeur b</label>
+				</div>
+			<label for="checkbox13b"><input type="checkbox" id="checkbox13b" name="nom7" value="Valeur B">Valeur B</label>
+		</div>
+	<label for="checkbox14"><input type="checkbox" id="checkbox14" name="nom7" value="Valeur 2">Valeur 2</label>
+</div>
 ```
 <div class="su-checkbox-area su-checkbox-column">
 	<label for="checkbox13"><input type="checkbox" id="checkbox13" name="nom7" value="Valeur 1" class="su-indeterminate">Valeur 1</label>
