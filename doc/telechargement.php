@@ -27,8 +27,8 @@
                 <h2>cdn</h2>
                 <p>La méthode la plus simple: inclure la librairie depuis le CDN:</p>
                 <p>
-                    <pre><code>&lt;link rel="stylesheet" href="https://sipaui.ouest-france.fr/cdn/sipaui-xxx.css"/></code></pre>
-                    <pre><code>&lt;script async src="https://sipaui.ouest-france.fr/cdn/sipaui-xxx.js">&lt;/script></code></pre>
+                    <pre><code>&lt;link rel="stylesheet" href="https://cdn.sipaof.fr/css/main-sipaui-xxx.css"/></code></pre>
+                    <pre><code>&lt;script async src="https://cdn.sipaof.fr/js/sipaui.js">&lt;/script></code></pre>
                 </p>
 
                 <h2>npmjs</h2>
