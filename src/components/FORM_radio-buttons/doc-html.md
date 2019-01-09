@@ -92,7 +92,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 ```html
 <div class="su-error">
 	<div class="su-radio-area">
-		<label for="radio9"><input type="radio" id="radio9" name="nom5" value="Valeur 1" checked>Valeur 1</label>
+		<label for="radio9"><input type="radio" id="radio9" name="nom5" value="Valeur 1">Valeur 1</label>
 		<label for="radio10"><input type="radio" id="radio10" name="nom5" value="Valeur 2">Valeur 2</label>
 	</div>
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
@@ -100,7 +100,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 ```
 <div class="su-error">
 	<div class="su-radio-area">
-		<label for="radio9"><input type="radio" id="radio9" name="nom5" value="Valeur 1" checked>Valeur 1</label>
+		<label for="radio9"><input type="radio" id="radio9" name="nom5" value="Valeur 1">Valeur 1</label>
 		<label for="radio10"><input type="radio" id="radio10" name="nom5" value="Valeur 2">Valeur 2</label>
 	</div>
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
@@ -112,7 +112,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 ```html
 <div class="su-error">
 	<div class="su-radio-area su-radio-column">
-		<label for="radio11"><input type="radio" id="radio11" name="nom6" value="Valeur 1" checked>Valeur 1</label>
+		<label for="radio11"><input type="radio" id="radio11" name="nom6" value="Valeur 1">Valeur 1</label>
 		<label for="radio12"><input type="radio" id="radio12" name="nom6" value="Valeur 2">Valeur 2</label>
 	</div>
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
@@ -120,7 +120,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 ```
 <div class="su-error">
 	<div class="su-radio-area su-radio-column">
-		<label for="radio11"><input type="radio" id="radio11" name="nom6" value="Valeur 1" checked>Valeur 1</label>
+		<label for="radio11"><input type="radio" id="radio11" name="nom6" value="Valeur 1">Valeur 1</label>
 		<label for="radio12"><input type="radio" id="radio12" name="nom6" value="Valeur 2">Valeur 2</label>
 	</div>
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
