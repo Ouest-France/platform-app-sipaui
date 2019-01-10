@@ -48,35 +48,42 @@ body {
             }
         }
     }
-    .su-input-icon {
+    .su-input-actions-1,
+    .su-input-actions-2 {
         position: relative;
-
+    }
+    .su-input-actions-1 {
         #{$inputTextBase} {
             padding-right: $size-button;
         }
     }
-    .su-input-action {
+    .su-input-actions-2 {
+        #{$inputTextBase} {
+            padding-right: $size-button * 2;
+        }
+    }
+    .su-input-actions-area {
         opacity: 0;
         position: absolute;
         top: 0;
         right: 0;
+        @include flexDisplay();
+    }
+    .su-input-action {
         height: $size-button;
         width: $size-button;
         border: none;
         background: none;
         cursor: pointer;
         color: $color-main-5;
-        font-size: $font-size-medium1;
-                                            padding-top: 6px; //compense le mauvais alignement vertical de la fonte picto.
+        font-size: $font-size-medium1 * 2;
+        -webkit-appearance: none;
 
         &:hover {
             color: $color-main-7;
         }
-        + .su-input-action {
-            transform: translateX(-$size-button);
-        }
     }
-    .su-js-button .su-input-action {
+    .su-js-show .su-input-actions-area {
         opacity: 1;
     }
     textarea,
