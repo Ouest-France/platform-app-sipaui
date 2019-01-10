@@ -34,14 +34,16 @@ Multiple désactivated / over | Multiple activated / focus | Multiple indetermin
 
 ### Gestion des erreurs
 
-La gestion des erreurs est identique au champ de texte.
+- La gestion des erreurs est identique au champ de texte.
 
 ![checkboxes__ex__error-with-message](design/checkboxes__ex__error-with-message.png)
+
+- Lors d'une sélection multiple, toutes les cases à cocher d'une sélection multiple ont un contour rouge.
 
 ### Bonnes pratiques
 
 - La 1<sup>re</sup> lettre du bouton est en majuscule, le reste est en minuscule.
-- Le texte du bouton devrait être limité à une ligne (attention sur mobile). 
+- Le texte du bouton devrait être limité à une ligne (attention sur mobile).
 - N’utilisez pas de point à la fin du texte.
 - Le texte doit être explicite, actif et positif.
 
