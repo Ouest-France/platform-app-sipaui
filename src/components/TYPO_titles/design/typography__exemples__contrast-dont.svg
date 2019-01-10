@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="184px" viewBox="0 0 320 184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>63813797-4779-4135-AB37-2E9EACD14E81</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Typography" transform="translate(-40.000000, -1108.000000)">
+            <g id="exemple-1" transform="translate(40.000000, 1067.000000)">
+                <g id="typography/exemples/typography__exemples__contrast-dont" transform="translate(0.000000, 41.000000)">
+                    <rect id="bg" fill="#00A0D7" fill-rule="nonzero" x="0" y="0" width="320" height="184"></rect>
+                    <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="24" fill="#FF68CB">
+                        <tspan x="20" y="34">Lorem ipsum dolor sit amet, </tspan>
+                        <tspan x="20" y="58">consectetur adipiscing elit. In efficitur </tspan>
+                        <tspan x="20" y="82">eros sollicitudin massa feugiat, eget </tspan>
+                        <tspan x="20" y="106">tincidunt metus sodales. Aliquam non </tspan>
+                        <tspan x="20" y="130">convallis augue. Nam elementum </tspan>
+                        <tspan x="20" y="154">convallis tristique. </tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
