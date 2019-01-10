@@ -5,8 +5,8 @@
 @font-face {
   font-family: 'su-icons';
   src:
-    url('#{$font-import-directory}/su-icons/su-icons.woff2?1jn1ms') format('woff2'),
-    url('#{$font-import-directory}/su-icons/su-icons.woff?1jn1ms') format('woff');
+    url('#{$font-import-directory}/su-icons/su-icons.woff2?onhjys') format('woff2'),
+    url('#{$font-import-directory}/su-icons/su-icons.woff?onhjys') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,21 +26,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.su-icon-arrow-up:before {
-  content: "\e900";
-}
-.su-icon-arrow-left:before {
-  content: "\e901";
-}
-.su-icon-arrow-right:before {
-  content: "\e902";
-}
-.su-icon-arrow-down:before {
-  content: "\e903";
-}
-.su-icon-calendar:before {
-  content: "\e904";
-}
 .su-icon-close:before {
   content: "\e905";
 }
@@ -49,4 +34,7 @@
 }
 .su-icon-alert:before {
   content: "\e907";
+}
+.su-icon-mini-alert:before {
+  content: "\e908";
 }
