@@ -9,7 +9,7 @@
         that = that || this;
         const opt = that.getAttribute('data-'+cn),
             f = {
-                'sel': that.parentElement.querySelector('input'),
+                'sel': that.closest('.su-input-actions-area').previousElementSibling,
             };
         if(opt != '') {
             (Array.isArray(opt) ? opt : [opt]).forEach(function(_data){
