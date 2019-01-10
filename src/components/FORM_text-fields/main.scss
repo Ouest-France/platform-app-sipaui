@@ -70,6 +70,7 @@ body {
         @include flexDisplay();
     }
     .su-input-action {
+        @include flexDisplay(); // sert à centrer verticalement l’icône;
         height: $size-button;
         width: $size-button;
         border: none;
