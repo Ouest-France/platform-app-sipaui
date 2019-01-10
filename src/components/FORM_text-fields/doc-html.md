@@ -102,22 +102,24 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 
 ```html
 <label for="input6">Label</label>
-<div class="su-input-icon">
-	<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' role="textbox" placeholder="Placeholder" required required value="Lorem ipsum">
-	<button type="button" class="su-input-action" data-ofemptyinput>
-		<span class="su-icon-close"></span>
-	</button>
+<div class="su-input-actions-1">
+	<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" placeholder="Placeholder" required required value="Lorem ipsum">
+	<div class="su-input-actions-area">
+		<button type="button" class="su-input-action" data-ofemptyinput>
+			<span class="su-icon-close"></span>
+		</button>
+	</div>
 </div>
 ```
 
-<div><!-- échappement markdown -->
 <label for="input6">Label</label>
-<div class="su-input-icon">
-	<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' role="textbox" placeholder="Placeholder" required value="Lorem ipsum">
-	<button type="button" class="su-input-action" data-ofemptyinput>
-		<span class="su-icon-close"></span>
-	</button>
-</div>
+<div class="su-input-actions-1">
+	<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" placeholder="Placeholder" required required value="Lorem ipsum">
+	<div class="su-input-actions-area">
+		<button type="button" class="su-input-action" data-ofemptyinput>
+			<span class="su-icon-close"></span>
+		</button>
+	</div>
 </div>
 
 
@@ -138,11 +140,13 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 
 <div class="su-error">
 	<label for="input7">Label<span class="su-label-complement"> (facultatif)</span></label>
-	<div class="su-relative su-input-icon">
-		<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
-		<button type="button" class="su-input-action" data-ofemptyinput>
-			<span class="su-icon-close"></span>
-		</button>
+	<div class="su-input-actions-1">
+		<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' required value="Value">
+		<div class="su-input-actions-area">
+			<button type="button" class="su-input-action" data-ofemptyinput>
+				<span class="su-icon-close"></span>
+			</button>
+		</div>
 	</div>
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
