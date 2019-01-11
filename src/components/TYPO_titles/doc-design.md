@@ -1,11 +1,10 @@
-# Typographies / Typographies
+  # Title / Titre
 
-La typographie est le principal moyen utilisé pour visualiser le contenu. Elle garantit que l'interface utilisateur soit optimisée pour être lisible et performante.
-
-Aussi, la typographie renforce l'identité de marque.
+Les titres sont des repères visuels. Ces éléments sont mis en avant par rapport au contenu qui le suit et qui le résume parfois. Aussi, ils renforce l'identité de marque.
 
 
 ## Usage
+Les titres sont le texte le plus grand de l’écran, il est court et important. Ils sont hiérarchisés afin de faciliter le parcours de lecture.
 
 ### Rôle des balises h
 
@@ -95,50 +94,7 @@ h5 | Oswald | Normal | 18px | #333333
 h6 | Oswald | Normal | 16px | #333333
 
 
-###
+## Bonnes pratiques
 
-
-titre-rubrique
-
-titre-medium
-
-Texte courant <p> (actuellement 16px ou 14px)
-
-Textes spéciaux #878787
-
-Chapeau (actuellement OF 18px mobile et 16px desktop)
-
-
-
-
-### Bonnes pratiques
-
-## Hiérarchie
-
-- La cohérence dans la hiérarchie est importante. Cela signifie que tous les éléments de même importance dans la hiérarchie devraient avoir la même taille, la même couleur et la même police. Par exemple, tous les en-têtes h1 d'un article devraient être identiques. Cette cohérence offre aux utilisateurs un repère visuel et facilite l'organisation du contenu.
-- N'utilisez jamais plus de deux polices de caractères sur votre mobile. Il n’y a tout simplement pas assez de place pour que les visiteurs puissent gérer visuellement autant de variations.
-
-## Mise en page
-
-- La typographie alignée à gauche fournit à l’œil un point de départ constant pour chaque ligne et facilite la lecture du texte.
-- La longueur optimale d'une ligne est comprise entre 45 et 90 caractères. Au delà, l’œil se fatigue. Le retour à la ligne rythme la lecture. Il opère des relances naturelles qui permettent de garder la concentration du lecteur.
-- Un pavé de texte composé en justification courte semble plus « digeste » que le même texte composé en justification longue.
-
-! image ! Les colonnes contribuent, en premier lieu à la lisibilité et au confort de lecture.
-
-## Accessibilité
-
-- Les petites tailles de police sont moins accessibles et fatiguent les yeux.
-- Les interlignes suffisantes facilitent la lecture.
-- Le contraste est un facteur essentiel pour un texte facile à lire. Le noir sur blanc est évidemment le contraste standard.
-
-
- <div class="do-dont">
- <div class="dont">
-
-![typography__exemples__contrast-dont](design/typography__exemples__contrast-dont.svg) |
------------- |
-**Don’t** <br/> La couleur du texte doit être compatible par rapport à l'arrière plan.
-
- </div>
- </div>
+- La cohérence dans la hiérarchie est importante. Cela signifie que tous les éléments de même importance dans la hiérarchie devraient avoir la même taille, la même couleur et la même police. Cette cohérence offre aux utilisateurs un repère visuel et facilite l'organisation du contenu.
+- N'utilisez pas plus de deux polices de caractères sur votre mobile. Il n’y a tout simplement pas assez de place pour que les visiteurs puissent gérer visuellement autant de variations.

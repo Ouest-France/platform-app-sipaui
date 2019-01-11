@@ -53,7 +53,7 @@ Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 %
 Lorsqu’aucun bouton radio n’est coché par défaut et qu’un choix est obligatoire, un message d’erreur s’affiche 20px sous le dernier radio bouton.
 
 
-![button-radio__ex__error](design/button-radio__ex__error.png)
+![button-radio__exemples__error](design/button-radio__exemples__error.png)
 
 
 ### Bonnes pratiques

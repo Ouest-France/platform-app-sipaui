@@ -15,7 +15,7 @@ Les loaders sont des animations en boucle qui indiquent à l’utilisateur qu'un
 - Couleur de l'indicateur : #E2001A
 - Couleur de la piste circulaire : #D4D4D4
 
-![loader__default](design/loader__default.svg)
+![loader__default](design/loader__default.png)
 
 ## Positionnements
 
