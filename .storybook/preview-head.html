@@ -147,7 +147,9 @@
     .do-dont > div:last-child {
         margin-right: 0;
     }
-    ul + .do-dont {
+    ul + .do-dont,
+    ul + .do-dont + .do-dont,
+    ul + .do-dont + .do-dont + .do-dont {
         margin-left: 32px;
     }
     .do table th,
@@ -179,6 +181,43 @@
         color: #DF3036 !important;
         font-size: 1.6rem !important;
     }
+
+    /* Icones ------------------------- */
+    .catalogue-icones {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.catalogue-icones .icone {
+		border: 1px solid #d4d4d4;
+		margin: -1px 0 0 -1px;
+		text-align: center;
+		min-width: 170px;
+		padding: 5px;
+	}
+	.catalogue-icones .icone h3 {
+		margin-top: 0 !important;
+	}
+	.catalogue-icones [class*="su-icon"] {
+    	font-size: 24px;
+	}
+	.catalogue-icones [class*="su-icon-mini"] {
+    	font-size: 14px;
+	}
+
+	/* Grille ------------------------- */
+    .demo-grille.su-grid-container {
+        background: #efefef;
+        min-height: 20px;
+    }
+    .demo-grille .su-row {
+        background: powderblue;
+        min-height: 20px;
+    }
+    .demo-grille [class*="su-col"] {
+        background: pink;
+        min-height: 20px;
+    }
+
 
     @media screen and (max-width: 376px) {
         .markdown-body pre {

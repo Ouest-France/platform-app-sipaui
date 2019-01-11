@@ -11,10 +11,10 @@ Les boutons radio affichent un ensemble d’options parmi lesquelles l’utilisa
 
 ## Spécifications
 
-Desactivated / Hover | Actived / Focus | Disabled
+Desactivated / Hover | Actived / Focus | Error | Disabled
 ------------ | ------------- | ------------- |
-![button-radio__desactivated](design/button-radio__desactivated.png)|![button-radio__activated](design/button-radio__activated.png)|![button-radio__disabled](design/button-radio__disabled.png)
-Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 % et #D4D4D4 <br> Texte : 16px, regular, police du thème #333333 <br> Margin right : 6px | -  <br> Fond : #FFFFFF <br> Contour : épaisseur interne 7px, radius 100 % et #E2001A <br> - <br> - | Opacité&nbsp;:&nbsp;40%
+![button-radio__desactivated](design/button-radio__desactivated.png)|![button-radio__activated](design/button-radio__activated.png)| ![button-radio__error](design/button-radio__error.png) | ![button-radio__disabled](design/button-radio__disabled.png)
+Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 % et #D4D4D4 <br> Texte : 16px, regular, police du thème #333333 <br> Margin right : 6px | -  <br> Fond : #FFFFFF <br> Contour : épaisseur interne 7px, radius 100 % et #E2001A <br> - <br> - | - <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 % et #B40015  <br> - <br> - | Opacité&nbsp;:&nbsp;40%
 
 - La zone de touch contient le radio bouton et le texte associé. Sa hauteur est de 34px.
 
@@ -53,7 +53,7 @@ Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 %
 Lorsqu’aucun bouton radio n’est coché par défaut et qu’un choix est obligatoire, un message d’erreur s’affiche 20px sous le dernier radio bouton.
 
 
-![button-radio__ex__error](design/button-radio__ex__error.png)
+![button-radio__exemples__error](design/button-radio__exemples__error.png)
 
 
 ### Bonnes pratiques

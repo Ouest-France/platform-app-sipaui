@@ -12,7 +12,7 @@ $padding-left-label: $height-input-checkbox + 7px;
 
 body {
     .su-checkbox-area {
-        height: $height-checkbox-area;
+        @include flexDisplay();
 
         &.su-disabled {
             label,
@@ -25,29 +25,22 @@ body {
         & .su-checkbox-area {
             padding-left: $padding-left-label;
         }
+        + .su-error-message {
+            margin-top: $margin-xsmall;
+        }
     }
     .su-checkbox-area.su-checkbox-column {
-        height: auto;
-        @include flexDisplay();
         @include flexDirection(column, vertical);
         @include flexAlign(flex-start);
 
         label,
         .su-label-checkbox {
-            display: block;
-            margin-bottom: $margin-small - 5px;
+            margin-bottom: $margin-xsmall;
             margin-left: 0;
 
             &:last-child {
                 margin-bottom: 0;
             }
-        }
-    }
-    .su-checkbox-area.su-error {
-        height: auto;
-        input[type="checkbox"],
-        .su-input-checkbox {
-            border-color: $color-error;
         }
     }
 
@@ -62,20 +55,18 @@ body {
         padding-top: $padding-top-label;
         padding-left: $padding-left-label;
         margin: 0;
-        display: inline-block;
         position: relative;
         overflow: hidden;
         cursor: pointer;
 
-        & + input[type="checkbox"],
         & + label {
-            margin-left: $margin-medium - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
+            margin-left: $margin-medium;
         }
         & + span {
             display: inline-block;
             overflow: auto; // utile pour mettre un contexte de block pour FireFox
             line-height: $line-height-label;
-            margin: 0 $margin-medium - 5px; // Les -5px sont pour compenser l’espace lié au saut de ligne dans le code
+            margin: 0 $margin-medium;
             min-height: $height-checkbox-area;
             padding-top: $padding-top-label;
         }

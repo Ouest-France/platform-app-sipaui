@@ -9,21 +9,32 @@ Les loaders sont des animations en boucle qui indiquent à l’utilisateur qu'un
 
 ## Spécifications
 
-- Un indicateur s’anime le long d'une piste circulaire invisible dans le sens des aiguilles d'une montre.
-- Il disparaît à la fin de l’activité en cours.
-- Taille : 48 ? material
-- Couleur : #B40015
+- Un indicateur s’anime le long d'une piste circulaire gris dans le sens des aiguilles d'une montre.
+- Le loader disparaît à la fin de l’activité en cours.
+- Taille : 44
+- Couleur de l'indicateur : #E2001A
+- Couleur de la piste circulaire : #D4D4D4
 
-!!!image!!! le loader pour le thème OF
+![loader__default](design/loader__default.png)
 
 ## Positionnements
 
 - Le loader est centré horizontalement dans son parent.
 - Lors du chargement de toute la page, il est centré sur l'écran.
 
-!!!image!!! Un loader centré sur l'écran indique que un processus est en cours de chargement.
 
-- Il permet d’attirer l'attention de l’utilisateur sur les nouveaux contenus en cours de chargement. Alors, il est placé au-dessous ou au-dessus du contenu existant.
+<div class="do-dont">
+<div class="do">
+
+![loader__exemples__loader-with-overflow](design/loader__exemples__loader-with-overflow.png) |
+------------ |
+**Do** <br/> Un loader centré sur l'écran indique que l'ensemble du processus est en cours de chargement.
+
+ </div>
+ </div>
+
+
+- Le loader permet d’attirer l'attention de l’utilisateur sur les nouveaux contenus en cours de chargement. Alors, il est placé au-dessous ou au-dessus du contenu existant.
 
 ## Bonnes pratiques
 

@@ -1,7 +1,5 @@
 # Checkboxes / Case à cocher
 
-<p class="alerte"><span class="su-icon-alert"></span> <em>Un point structurant d’architecture concernant la gestion des assets (polices, images) n’étant réglé, ce composant n’est pas stabilisé. En effet, la coche (✔) devant être une image en asset est temporairement gérée via une image en base 64 intégrée dans le CSS.</em></p>
-
 Il y a 2 façons d’écrire une case à cocher en HTML&nbsp;:
 - **Méthode 1&nbsp;:** `<input>` PUIS `<label>`
 - **Méthode 2&nbsp;:** `<input>` DANS `<label>`
@@ -92,31 +90,38 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 ### Sur une ligne, basique
 
 ```html
-<div class="su-checkbox-area su-error">
-	<label for="checkbox9"><input type="checkbox" id="checkbox9" name="nom5" value="Valeur 1">Valeur 1</label>
-	<label for="checkbox10"><input type="checkbox" id="checkbox10" name="nom5" value="Valeur 2">Valeur 2</label>
+<div class="su-error">
+	<div class="su-checkbox-area">
+		<label for="checkbox9"><input type="checkbox" id="checkbox9" name="nom5" value="Valeur 1">Valeur 1</label>
+		<label for="checkbox10"><input type="checkbox" id="checkbox10" name="nom5" value="Valeur 2">Valeur 2</label>
+	</div>
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 ```
-<div class="su-checkbox-area su-error">
-	<label for="checkbox9"><input type="checkbox" id="checkbox9" name="nom5" value="Valeur 1">Valeur 1</label>
-	<label for="checkbox10"><input type="checkbox" id="checkbox10" name="nom5" value="Valeur 2">Valeur 2</label>
+<div class="su-error">
+	<div class="su-checkbox-area">
+		<label for="checkbox9"><input type="checkbox" id="checkbox9" name="nom5" value="Valeur 1">Valeur 1</label>
+		<label for="checkbox10"><input type="checkbox" id="checkbox10" name="nom5" value="Valeur 2">Valeur 2</label>
+	</div>
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
-
 
 ### En colonne
 
 ```html
-<div class="su-checkbox-area su-checkbox-column su-error">
-	<label for="checkbox11"><input type="checkbox" id="checkbox11" name="nom6" value="Valeur 1">Valeur 1</label>
-	<label for="checkbox12"><input type="checkbox" id="checkbox12" name="nom6" value="Valeur 2">Valeur 2</label>
+<div class="su-error">
+	<div class="su-checkbox-area su-checkbox-column su-error">
+		<label for="checkbox11"><input type="checkbox" id="checkbox11" name="nom6" value="Valeur 1">Valeur 1</label>
+		<label for="checkbox12"><input type="checkbox" id="checkbox12" name="nom6" value="Valeur 2">Valeur 2</label>
+	</div>
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 ```
-<div class="su-checkbox-area su-checkbox-column su-error">
-	<label for="checkbox11"><input type="checkbox" id="checkbox11" name="nom6" value="Valeur 1">Valeur 1</label>
-	<label for="checkbox12"><input type="checkbox" id="checkbox12" name="nom6" value="Valeur 2">Valeur 2</label>
+<div class="su-error">
+	<div class="su-checkbox-area su-checkbox-column su-error">
+		<label for="checkbox11"><input type="checkbox" id="checkbox11" name="nom6" value="Valeur 1">Valeur 1</label>
+		<label for="checkbox12"><input type="checkbox" id="checkbox12" name="nom6" value="Valeur 2">Valeur 2</label>
+	</div>
 	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 
@@ -128,7 +133,18 @@ Les cases à cocher indéterminées servent à montrer un état semi-sélectionn
 Pour la gestion des cases à cocher indéterminées en JS, cf. <a href="https://css-tricks.com/indeterminate-checkboxes/" target="blank" class="su-link">css-tricks.com</a>.
 
 ```html
-
+<div class="su-checkbox-area su-checkbox-column">
+	<label for="checkbox13"><input type="checkbox" id="checkbox13" name="nom7" value="Valeur 1" class="su-indeterminate">Valeur 1</label>
+		<div class="su-checkbox-area su-checkbox-column">
+			<label for="checkbox13a"><input type="checkbox" id="checkbox13a" name="nom7" value="Valeur A" class="su-indeterminate">Valeur A</label>
+				<div class="su-checkbox-area su-checkbox-column">
+					<label for="checkbox13aa"><input type="checkbox" id="checkbox13aa" name="nom7" value="Valeur a" checked>Valeur a</label>
+					<label for="checkbox13ab"><input type="checkbox" id="checkbox13ab" name="nom7" value="Valeur b">Valeur b</label>
+				</div>
+			<label for="checkbox13b"><input type="checkbox" id="checkbox13b" name="nom7" value="Valeur B">Valeur B</label>
+		</div>
+	<label for="checkbox14"><input type="checkbox" id="checkbox14" name="nom7" value="Valeur 2">Valeur 2</label>
+</div>
 ```
 <div class="su-checkbox-area su-checkbox-column">
 	<label for="checkbox13"><input type="checkbox" id="checkbox13" name="nom7" value="Valeur 1" class="su-indeterminate">Valeur 1</label>

@@ -138,9 +138,9 @@ document.onScan = function(sel,fn) {
         if( undefined === window.of ) return; // plugin du framework, pas de header pas plugin.
         clearTimeout(interOf);
 
-        //=require libs/components/oftoggleclass.js
-        //=require libs/components/ofemptyinput.js
-        //=require libs/components/ofcheckboxes.js
+        //=require libs/components/sutoggleclass.js
+        //=require libs/components/suemptyinput.js
+        //=require libs/components/sucheckboxes.js
 
         of.asyncLoadOf();
     }, 25);
