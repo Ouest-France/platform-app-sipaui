@@ -23,12 +23,12 @@ $font-family-secondaire: 'Oswald', $font-family-base !default;
 
 
 // BREAKPOINTS ------------------------------------------------------------------------------------------------------------------
-$min-breakpoint-mobile-wide:    30em     !default;   /* 480px  */
+$min-breakpoint-mobile-wide:    22.5em   !default;   /* 360px  */
 $min-breakpoint-tablet:         48em     !default;   /* 768px  */
 $min-breakpoint-desktop:        61.25em  !default;   /* 980px  */
 $min-breakpoint-desktop-wide:   80em     !default;   /* 1280px */
 
-$max-breakpoint-mobile-narrow:  29.938em !default;   /* 479px  */
+$max-breakpoint-mobile-narrow:  22.438em !default;   /* 359px  */
 $max-breakpoint-mobile:         47.938em !default;   /* 767px  */
 $max-breakpoint-tablet:         61.188em !default;   /* 979px  */
 $max-breakpoint-desktop:        79.938em !default;   /* 1279px */
