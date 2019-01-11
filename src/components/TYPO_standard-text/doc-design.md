@@ -22,11 +22,10 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
   - La longueur optimale d'une ligne est comprise entre 45 et 90 caractères. Le retour à la ligne rythme la lecture. Il opère des relances naturelles qui permettent de garder la concentration du lecteur.
   - Un pavé de texte composé en justification courte semble plus « digeste » que le même texte composé en justification longue.
 
-
 <div class="do-dont">
-<div class="don't">
+<div class="dont">
 
-![typography__exemples__call-width-small-dont](design/typography__exemples__call-width-small-dont.png)
+![typography__exemples__call-width-small-dont](design/typography__exemples__call-width-small-dont.png)|
   ------------ |
 **Don’t** <br/>
 
@@ -37,7 +36,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 <div class="do-dont">
 <div class="do">
 
-![typography__exemples__col-width-medium-do](design/typography__exemples__col-width-medium-do.png)
+![typography__exemples__col-width-medium-do](design/typography__exemples__col-width-medium-do.png)|
 ------------ |
 **Do** <br/>
 
@@ -46,9 +45,9 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 
 
 <div class="do-dont">
-<div class="don't">
+<div class="dont">
 
-![typography__exemples__col-width-large-dont](design/typography__exemples__col-width-large-dont.png)
+![typography__exemples__col-width-large-dont](design/typography__exemples__col-width-large-dont.png)|
 ------------ |
 **Don’t** <br/>
 
@@ -66,7 +65,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
  <div class="do-dont">
  <div class="dont">
 
-![typography__exemples__contrast-dont](design/typography__exemples__contrast-dont.png)
+![typography__exemples__contrast-dont](design/typography__exemples__contrast-dont.png)|
 ------------ |
 **Don’t** <br/> La couleur du texte doit être compatible avec l'arrière plan.
 

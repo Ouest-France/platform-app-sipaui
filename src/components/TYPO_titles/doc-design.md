@@ -1,4 +1,4 @@
-  # Title / Titre
+  # Titles / Titres
 
 Les titres sont des repères visuels. Ces éléments sont mis en avant par rapport au contenu qui le suit et qui le résume parfois. Aussi, ils renforce l'identité de marque.
 
