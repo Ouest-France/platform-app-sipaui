@@ -15,7 +15,7 @@ Le bouton principal, sur fond de couleur, met en évidence une action importante
 Enabled | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
 ![button__primary__enabled](design/button__primary__enabled.png)| ![button__primary__hover](design/button__primary__hover.png)| ![button__primary__disabled](design/button__primary__disabled.png)
-Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px <br> Contour : angle 3px  <br> Couleur : #E2001A   <br>  Contour : angle 3px  <br> Texte : 16px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> - <br> - <br> Texte : #B40015 | Opacité : 40 %
+Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px <br> Contour : angle 3px  <br> Couleur : #E2001A  <br> Texte : 16px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> - <br> - <br> Texte : #B40015 | Opacité : 40 %
 
 
 #### Cas spécifiques
