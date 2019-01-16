@@ -79,6 +79,7 @@ body {
         color: $color-main-5;
         font-size: $font-size-medium1 * 2;
         -webkit-appearance: none;
+        cursor: text;
 
         &:hover {
             color: $color-main-7;
@@ -86,6 +87,10 @@ body {
     }
     .su-js-show .su-input-actions-area {
         opacity: 1;
+
+        .su-input-action {
+            cursor: pointer;
+        }
     }
     textarea,
     .su-textarea {
