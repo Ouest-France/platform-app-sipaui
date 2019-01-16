@@ -35,6 +35,16 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 
 ```html
 <label for="input1">Label</label>
+<input id="input1" name="input1" type="text" role="textbox" required>
+```
+<label for="input1">Label</label>
+<input id="input1" name="input1" type="text" role="textbox" required>
+
+### Placeholder
+Pour rappel du doc design, le texte du placeholder est une description supplémentaire au label, il ne le substitue pas. Il doit guider l’utilisateur sur le format de données attendu.
+
+```html
+<label for="input1">Label</label>
 <input id="input1" name="input1" type="text" role="textbox" required placeholder="Placeholder">
 ```
 <label for="input1">Label</label>
@@ -44,10 +54,10 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 Input facultatif. Pour le texte en complément dans le label, utiliser la classe `su-label-complement` du composant *FORM_labels*.
 ```html
 <label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
-<input id="input2" name="input2" type="text" role="textbox" placeholder="Placeholder">
+<input id="input2" name="input2" type="text" role="textbox">
 ```
 <label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
-<input id="input2" name="input2" type="text" role="textbox" placeholder="Placeholder">
+<input id="input2" name="input2" type="text" role="textbox">
 
 ### Prérempli
 Input standard prérempli.
@@ -103,7 +113,7 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 ```html
 <label for="input6">Label</label>
 <div class="su-input-actions-1">
-	<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" placeholder="Placeholder" required required value="Lorem ipsum">
+	<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" required required value="Lorem ipsum">
 	<div class="su-input-actions-area">
 		<button type="button" class="su-input-action" data-ofemptyinput>
 			<span class="su-icon-close"></span>
@@ -114,7 +124,7 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 
 <label for="input6">Label</label>
 <div class="su-input-actions-1">
-	<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" placeholder="Placeholder" required required value="Lorem ipsum">
+	<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" required required value="Lorem ipsum">
 	<div class="su-input-actions-area">
 		<button type="button" class="su-input-action" data-ofemptyinput>
 			<span class="su-icon-close"></span>

@@ -22,10 +22,10 @@ body {
         .su-select select {
             border: $border-input-error !important;
         }
-        input[type="checkbox"],
-        .su-input-checkbox,
-        input[type="radio"],
-        .su-input-radio {
+        input[type="checkbox"]:not(:checked),
+        .su-input-checkbox:not(:checked),
+        input[type="radio"]:not(:checked),
+        .su-input-radio:not(:checked) {
             border-color: $color-error;
         }
     }
