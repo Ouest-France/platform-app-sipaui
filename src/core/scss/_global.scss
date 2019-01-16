@@ -27,6 +27,7 @@ body {
     background: $background-body;
     min-height: 100vh;
     position: relative;
+    font-family: $font-family-base;
 }
 
 // Voir https://getbootstrap.com/getting-started/#support-ie10-width pour l'explication du hack.

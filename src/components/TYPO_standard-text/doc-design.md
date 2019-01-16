@@ -12,6 +12,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 - Graisse : Normal
 - Taille : 16px
 - Couleur : #333333
+- Marge supérieure de 20px pour un paragraphe qui suit un autre paragraphe ou une liste. 
 
 ## Bonnes pratiques
 
@@ -19,7 +20,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 
 - La typographie alignée à gauche fournit à l’œil un point de départ constant pour chaque ligne et facilite la lecture du texte.
 - Les colonnes contribuent, en premier lieu à la lisibilité et au confort de lecture.
-  - La longueur optimale d'une ligne est comprise entre 45 et 90 caractères. Le retour à la ligne rythme la lecture. Il opère des relances naturelles qui permettent de garder la concentration du lecteur.
+  - La longueur optimale d’une ligne est comprise entre 45 et 90 caractères. Le retour à la ligne rythme la lecture. Il opère des relances naturelles qui permettent de garder la concentration du lecteur.
   - Un pavé de texte composé en justification courte semble plus « digeste » que le même texte composé en justification longue.
 
 <div class="do-dont">
@@ -67,7 +68,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 
 ![typography__exemples__contrast-dont](design/typography__exemples__contrast-dont.png)|
 ------------ |
-**Don’t** <br/> La couleur du texte doit être compatible avec l'arrière plan.
+**Don’t** <br/> La couleur du texte doit être compatible avec l’arrière plan.
 
  </div>
  </div>
