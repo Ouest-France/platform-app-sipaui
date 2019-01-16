@@ -14,6 +14,15 @@ Ce formatage de texte accepte 2 variations en fonction de l’importance du text
 
 <a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
 
+
+<div class="alerte su-margin-top-xl">
+	<h2>Dépendances</h2>
+	<p class="su-margin-0">Ce composant est dépendant des composants&nbsp;:</p>
+	<ul>
+		<li>helpers</li>
+	</ul>
+</div>
+
 <!-- STORY -->
 
 ## Texte standard
@@ -109,8 +118,6 @@ Ce formatage de texte accepte 2 variations en fonction de l’importance du text
 
 
 
-
-
 ## Variation d’importance
 
 ### Importance moyenne
@@ -138,10 +145,78 @@ Ce formatage de texte accepte 2 variations en fonction de l’importance du text
 </article>
 
 
+
+
+
+
+
+
+## Variation de justification
+
+Par défaut, le texte standard est ferré (aligné) à gauche. Il s'agit de la justification à préférer. Toutefois, si necessaire, SipaUI intègre les classes nécessaires aux autres justifications, via le composant **helpers**.
+
+### Ferrage à gauche forcé
+ 
+```html
+<article>
+	<p class="su-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</article>
+```
+
+<article>
+	<p class="su-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</article>
+
+
+### Ferrage à droite
+ 
+```html
+<article>
+	<p class="su-text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</article>
+```
+
+<article>
+	<p class="su-text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</article>
+
+
+### Justification
+ 
+```html
+<article>
+	<p class="su-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</article>
+```
+
+<article>
+	<p class="su-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</article>
+
+
+### Centrage
+ 
+```html
+<article>
+	<p class="su-text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</article>
+```
+
+<article>
+	<p class="su-text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</article>
+
+
+
+
 <div id="liste-classes">
 
 ## Liste des classes disponibles
 - `su-article` (si besoin de surcharge)
 - `su-text-standard` (si besoin de surcharge)
+- `su-text-center` (dépendant du composant *helpers*)
+- `su-text-justify` (dépendant du composant *helpers*)
+- `su-text-left` (dépendant du composant *helpers*)
+- `su-text-right` (dépendant du composant *helpers*)
 
 </div>

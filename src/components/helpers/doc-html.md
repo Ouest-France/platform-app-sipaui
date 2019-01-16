@@ -43,9 +43,11 @@ Le framework offre 3 classes pour forcer une position&nbsp;:
 - `su-fixed`.
 
 ## Alignement
-Il y a 3 classes d’alignement&nbsp;; deux pour du texte et une pour un block&nbsp;:
+Il y a 5 classes d’alignement&nbsp;; 4 pour du texte et une pour un block&nbsp;:
 - `su-text-center`&nbsp;: centre le texte dans son parent,
 - `su-text-justify`&nbsp;: justifie le texte dans son parent,
+- `su-text-left`&nbsp;: fer (aligne) le texte à gauche dans son parent,
+- `su-text-right`&nbsp;: fer (aligne) le texte à droite dans son parent,
 - `su-block-center`&nbsp;: centre un bloc dans son parent. 
 
 ```html
@@ -57,6 +59,16 @@ Il y a 3 classes d’alignement&nbsp;; deux pour du texte et une pour un block&n
 <p class="su-text-justify">Paragraphe avec texte justifié. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 ```
 <p class="su-text-justify">Paragraphe avec texte justifié. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+```html
+<p class="su-text-left">Paragraphe avec texte féré à gauche. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+```
+<p class="su-text-left">Paragraphe avec texte féré à gauche. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+```html
+<p class="su-text-right">Paragraphe avec texte féré à gauche. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+```
+<p class="su-text-right">Paragraphe avec texte féré à gauche. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 
 ```html
 <p style="width: 60%;" class="su-block-center">Paragraphe à largeur fixée et centré. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
@@ -98,6 +110,8 @@ Classe permettant de rendre visuellement l’incapacité&nbsp;/ l’indisponibil
 - `su-fixed`
 - `su-text-center`
 - `su-text-justify`
+- `su-text-left`
+- `su-text-right`
 - `su-block-center`
 - `su-fullwidth`
 - `su-fullwidth-mobile`
