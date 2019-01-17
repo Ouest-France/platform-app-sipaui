@@ -12,7 +12,7 @@ Les boutons radio affichent un ensemble d’options parmi lesquelles l’utilisa
 ## Spécifications
 
 Desactivated / Hover | Actived / Focus | Error | Disabled
------------- | ------------- | ------------- |
+------------ | ------------- | ------------- | ------------- |
 ![button-radio__desactivated](design/button-radio__desactivated.png)|![button-radio__activated](design/button-radio__activated.png)| ![button-radio__error](design/button-radio__error.png) | ![button-radio__disabled](design/button-radio__disabled.png)
 Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 % et #D4D4D4 <br> Texte : 16px, regular, police du thème #333333 <br> Margin right : 6px | -  <br> Fond : #FFFFFF <br> Contour : épaisseur interne 7px, radius 100 % et #E2001A <br> - <br> - | - <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 % et #B40015  <br> - <br> - | Opacité&nbsp;:&nbsp;40%
 
@@ -22,29 +22,35 @@ Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 %
 ### Quantité
 
 <div class="do-dont">
- <div class="dont">
+<div class="dont">
 
-![button-radio__ex__dont-only-one](design/button-radio__ex__dont-only-one.png) |
+![button-radio__ex__dont-only-one](design/button-radio__ex__dont-only-one.png)  |
 ------------ |
-**Don't** <br/> N’utilisez jamais un seul bouton radio, une case à cocher est appropriée. |
+**Don’t** <br/> N’utilisez jamais un seul bouton radio, une case à cocher est appropriée.
 
- </div>
+</div>
+</div>
 
- <div class="dont">
+
+<div class="do-dont">
+<div class="dont">
 
 ![button-radio__ex__dont-multiple-activaton](design/button-radio__ex__dont-multiple-activaton.png) |
- ------------ |
- **Don't** <br/> Si plusieurs éléments peuvent être choisis en même temps, utiliser des cases à cocher. |
+------------ |
+**Don't** <br/> Si plusieurs éléments peuvent être choisis en même temps, utiliser des cases à cocher. |
 
-  </div>
+</div>
+</div>
 
-  <div class="dont">
+
+<div class="do-dont">
+<div class="dont">
 
 ![button-radio__ex__dont-greater-than-3](design/button-radio__ex__dont-greater-than-3.png) |
-  ------------ |
-  **Don't** <br/> Si le nombre d’option est supérieur ou égal à 4, utilisez un autre composant, par exemple un select. |
+------------ |
+**Don't** <br/> Si le nombre d’option est supérieur ou égal à 4, utilisez un autre composant, par exemple un select. |
 
-   </div>
+</div>
 </div>
 
 
