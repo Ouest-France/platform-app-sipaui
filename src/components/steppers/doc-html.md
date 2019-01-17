@@ -7,9 +7,9 @@ Catalogue des icônes disponibles dans la fonte *su-icons*.
 
 ## Exemple
 ```html
-<span class="su-icon-alert"></span>
+<span class="su-icon-mini-alert"></span>
 ```
-<span class="su-icon-alert"></span>
+<span class="su-icon-mini-alert"></span>
 
 ## Catalogue
 
@@ -42,10 +42,10 @@ Catalogue des icônes disponibles dans la fonte *su-icons*.
 	</div>
 	<div class="icone">
 		<h3>Alerte</h3>
-		<code>su-icon-alert</code>
-		<div style="font-size: 14px"><span class="su-icon-alert"></span></div>
-		<div style="font-size: 16px"><span class="su-icon-alert"></span></div>
-		<div style="font-size: 32px"><span class="su-icon-alert"></span></div>
+		<code>su-icon-mini-alert</code>
+		<div style="font-size: 14px"><span class="su-icon-mini-alert"></span></div>
+		<div style="font-size: 16px"><span class="su-icon-mini-alert"></span></div>
+		<div style="font-size: 32px"><span class="su-icon-mini-alert"></span></div>
 	</div>
 	<div class="icone">
 		<h3>Fermer</h3>

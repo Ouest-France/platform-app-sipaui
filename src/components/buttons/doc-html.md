@@ -6,7 +6,7 @@ Un bouton a besoin d’**au moins 2 classes**&nbsp;: `su-button` pour appliquer 
 
 Les *classes* de bouton peuvent être appliquées indifféremment sur des `<buttons>`, des `<input type="button">` ou des `<a>`.
 
-<a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
 
 **Accessibilité**
@@ -19,12 +19,12 @@ Règles minimales&nbsp;:
 Cerise&nbsp;:
 - utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener" class="su-link">pour en savoir plus</a>)
 
-<div class="alerte su-margin-top-xl">
-	<h2>Dépendances</h2>
-	<p class="su-margin-0">Ce composant est dépendant des composants&nbsp;:</p>
-	<ul>
-		<li>helpers</li>
-	</ul>
+<div class="alerte">
+
+## Dépendances
+- classe `sipaui` sur un parent (par exemple le `<body>`),
+- composant **helpers**,
+
 </div>
 
 
@@ -36,25 +36,33 @@ Cerise&nbsp;:
 ```html
 <button class="su-button su-primary">Bouton primaire</button>
 ```
-<button class="su-button su-primary">Bouton primaire</button>
+<div class="sipaui">
+	<button class="su-button su-primary">Bouton primaire</button>
+</div>
 
 ### Bouton secondaire
 ```html
 <button class="su-button su-secondary">Bouton secondaire</button>
 ```
-<button class="su-button su-secondary">Bouton secondaire</button>
+<div class="sipaui">
+	<button class="su-button su-secondary">Bouton secondaire</button>
+</div>
 
 ### Bouton abonnement
 ```html
 <button class="su-button su-subscription">Bouton abonnement</button>
 ```
-<button class="su-button su-subscription">Bouton abonnement</button>
+<div class="sipaui">
+	<button class="su-button su-subscription">Bouton abonnement</button>
+</div>
 
 ### Bouton Premium
 ```html
 <button class="su-button su-premium">Bouton premium</button>
 ```
-<button class="su-button su-premium">Bouton premium</button>
+<div class="sipaui">
+	<button class="su-button su-premium">Bouton premium</button>
+</div>
 
 ## Contextes particuliers
 
@@ -65,26 +73,34 @@ L’aspect inactif peut être porté par la classe `su-disabled` (issu des *help
 <button class="su-button su-secondary su-disabled">Bouton secondaire inactif</button>
 <button class="su-button su-subscription su-disabled">Bouton abonnement inactif</button>
 ```
-<button class="su-button su-primary su-" disabled="disabled">Bouton primaire</button> <button class="su-button su-secondary su-disabled">Bouton secondaire inactif</button> <button class="su-button su-subscription su-disabled">Bouton abonnement inactif</button>
+<div class="sipaui">
+	<button class="su-button su-primary su-" disabled="disabled">Bouton primaire</button> <button class="su-button su-secondary su-disabled">Bouton secondaire inactif</button> <button class="su-button su-subscription su-disabled">Bouton abonnement inactif</button>
+</div>
 
 ### Petits boutons
 ```html
 <button class="su-button su-primary su-small">Bouton petit</button>
 <button class="su-button su-secondary su-small">Bouton petit</button>
 ```
-<button class="su-button su-primary su-small">Bouton petit</button> <button class="su-button su-secondary su-small">Bouton petit</button>
+<div class="sipaui">
+	<button class="su-button su-primary su-small">Bouton petit</button> <button class="su-button su-secondary su-small">Bouton petit</button>
+</div>
 
 ### Bouton pleine largeur
 ```html
 <button class="su-button su-primary su-fullwidth">Bouton pleine largeur</button>
 ```
-<button class="su-button su-primary su-fullwidth">Bouton pleine largeur</button>
+<div class="sipaui">
+	<button class="su-button su-primary su-fullwidth">Bouton pleine largeur</button>
+</div>
 
 ### Bouton pleine largeur sur mobile
 ```html
 <button class="su-button su-primary su-fullwidth-mobile">Bouton pleine largeur mobile</button>
 ```
-<button class="su-button su-primary su-fullwidth-mobile">Bouton pleine largeur mobile</button>
+<div class="sipaui">
+	<button class="su-button su-primary su-fullwidth-mobile">Bouton pleine largeur mobile</button>
+</div>
 
 <div id="liste-classes">
 

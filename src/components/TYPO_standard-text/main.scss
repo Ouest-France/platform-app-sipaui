@@ -5,22 +5,24 @@
 @import "variables";
 
 
-// TEXTE STANDARD------------------------------------------------------------------------------------------/
-body {
-    article,
+// TEXTE EDITORIAL STANDARD------------------------------------------------------------------------------------------/
+.sipaui {
+    .su-text-standard {
+        font-family: $font-family-base;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #333;
+        margin: 0;
+    }
+    .su-text-standard + .su-text-standard {
+        margin-top: 20px;
+    }
     .su-article {
-        p,
-        .su-text-standard {
-            font-family: $font-family-base;
-            font-size: 1.6rem;
-            line-height: 1.5;
-            color: #333;
-            margin: 0;
+        p {
+            @extend .su-text-standard
         }
         p + p,
-        ul + p,
-        .su-text-standard + .su-text-standard,
-        ul + .su-text-standard {
+        ul + p {
             margin-top: 20px;
         }
     }

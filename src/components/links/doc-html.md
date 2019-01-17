@@ -4,14 +4,14 @@ SipaUI propose 2 types de liens&nbsp;: les **liens éditoriaux** et les **liens 
 
 Comme le prévoit le HTML, les liens ont 4 états&nbsp;: **normal** (/ ou *link*), **survolé** (*hover*), **cliqué** (*active*) et avec **focus** (*focus*). Toutefois, la charte Ouest-France assigne la même apparence aux états *survolé*, *cliqué*, et avec *focus*.
 
-<a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
-<div class="alerte su-margin-top-xl">
-	<h2>Dépendances</h2>
-	<p class="su-margin-0">Ce composant est dépendant des composants&nbsp;:</p>
-	<ul>
-		<li>helpers</li>
-	</ul>
+<div class="alerte">
+
+## Dépendances
+- classe `sipaui` sur un parent (par exemple le `<body>`),
+- composant **helpers**,
+
 </div>
 
 <!-- STORY -->
@@ -28,15 +28,19 @@ Ce lien est le lien à utiliser dans du contenu éditorial comme un article. On 
 	<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article SipaUI</a> Tortor Cursus.</p>
 </section>
 ```
-<section class="su-article">
-	<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article SipaUI</a> Tortor Cursus.</p>
-</section>
+<div class="sipaui">
+	<section class="su-article">
+		<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article SipaUI</a> Tortor Cursus.</p>
+	</section>
+</div>
 
 ### Version avec la classe `su-link`
 ```html
 <a href="javascript:;" class="su-link">Lien article SipaUI</a>
 ```
-<a href="javascript:;" class="su-link">Lien article SipaUI</a>
+<div class="sipaui">
+	<a href="javascript:;" class="su-link">Lien article SipaUI</a>
+</div>
 
 
 ## Lien bouton
@@ -47,13 +51,17 @@ Utiliser la classe `su-link-button`.
 ```html
 <a href="javascript:;" class="su-link-button">Lien bouton SipaUI</a>
 ```
-<a href="javascript:;" class="su-link-button">Lien bouton SipaUI</a>
+<div class="sipaui">
+	<a href="javascript:;" class="su-link-button">Lien bouton SipaUI</a>
+</div>
 
 ### Version inactive
 ```html
 <a href="javascript:;" class="su-link-button su-disabled">Lien bouton SipaUI</a>
 ```
-<a href="javascript:;" class="su-link-button su-disabled">Lien bouton SipaUI</a>
+<div class="sipaui">
+	<a href="javascript:;" class="su-link-button su-disabled">Lien bouton SipaUI</a>
+</div>
 
 <div id="liste-classes">
 

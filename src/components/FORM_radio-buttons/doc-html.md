@@ -6,15 +6,15 @@ Il y a 2 façons d’écrire un bouton radio en HTML&nbsp;:
 
 Toutefois, pour gérer l’affichage en colonne d’une suite de boutons-radio, ou le placement de texte entre ces boutons-radio la seconde méthode s'impose. **Par conséquent, SipaUI ne permettra que la seconde méthode**.
 
-<a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
-<div class="alerte su-margin-top-xl">
-	<h2>Dépendances</h2>
-	<p class="su-margin-0">Ce composant est dépendant des composants&nbsp;:</p>
-	<ul>
-		<li>helpers,</li>
-		<li>FORM_errors</li>
-	</ul>
+<div class="alerte">
+
+## Dépendances
+- classe `sipaui` sur un parent (par exemple le `<body>`),
+- composant **helpers**,
+- composant **FORM_errors**
+
 </div>
 
 <!-- STORY -->
@@ -32,9 +32,11 @@ La classe `su-radio-area` est nécessaire pour encadrer la zone de boutons-radio
 	<label for="radio2"><input type="radio" id="radio2" name="nom1" value="Valeur 2">Valeur 2</label>
 </div>
 ```
-<div class="su-radio-area">
-	<label for="radio1"><input type="radio" id="radio1" name="nom1" value="Valeur 1" checked>Valeur 1</label>
-	<label for="radio2"><input type="radio" id="radio2" name="nom1" value="Valeur 2">Valeur 2</label>
+<div class="sipaui">
+	<div class="su-radio-area">
+		<label for="radio1"><input type="radio" id="radio1" name="nom1" value="Valeur 1" checked>Valeur 1</label>
+		<label for="radio2"><input type="radio" id="radio2" name="nom1" value="Valeur 2">Valeur 2</label>
+	</div>
 </div>
 
 ### Sur une ligne, avec du texte entre les boutons-radio
@@ -46,11 +48,12 @@ La classe `su-radio-area` est nécessaire pour encadrer la zone de boutons-radio
 	<label for="radio4"><input type="radio" id="radio4" name="nom2" value="Valeur 2">Valeur 2</label>
 </div>
 ```
-
-<div class="su-radio-area">
-	<label for="radio3"><input type="radio" id="radio3" name="nom2" value="Valeur 1" checked>Valeur 1</label>
-	<span>ou</span>
-	<label for="radio4"><input type="radio" id="radio4" name="nom2" value="Valeur 2">Valeur 2</label>
+<div class="sipaui">
+	<div class="su-radio-area">
+		<label for="radio3"><input type="radio" id="radio3" name="nom2" value="Valeur 1" checked>Valeur 1</label>
+		<span>ou</span>
+		<label for="radio4"><input type="radio" id="radio4" name="nom2" value="Valeur 2">Valeur 2</label>
+	</div>
 </div>
 
 ### Sur une ligne, inactif
@@ -64,11 +67,14 @@ Mettre la classe `su-disabled` sur `su-radio-area` et la valeur `disabled` sur l
 	<label for="radio6"><input type="radio" id="radio6" name="nom3" value="Valeur 2" disabled>Valeur 2</label>
 </div>
 ```
-<div class="su-radio-area su-disabled">
-	<label for="radio5"><input type="radio" id="radio5" name="nom3" value="Valeur 1" checked disabled>Valeur 1</label>
-	<span>ou</span>
-	<label for="radio6"><input type="radio" id="radio6" name="nom3" value="Valeur 2" disabled>Valeur 2</label>
+<div class="sipaui">
+	<div class="su-radio-area su-disabled">
+		<label for="radio5"><input type="radio" id="radio5" name="nom3" value="Valeur 1" checked disabled>Valeur 1</label>
+		<span>ou</span>
+		<label for="radio6"><input type="radio" id="radio6" name="nom3" value="Valeur 2" disabled>Valeur 2</label>
+	</div>
 </div>
+
 
 ### En colonne
 
@@ -80,9 +86,11 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 	<label for="radio8"><input type="radio" id="radio8" name="nom4" value="Valeur 2">Valeur 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</label>
 </div>
 ```
-<div class="su-radio-area su-radio-column">
-	<label for="radio7"><input type="radio" id="radio7" name="nom4" value="Valeur 1" checked>Valeur 1</label>
-	<label for="radio8"><input type="radio" id="radio8" name="nom4" value="Valeur 2">Valeur 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</label>
+<div class="sipaui">
+	<div class="su-radio-area su-radio-column">
+		<label for="radio7"><input type="radio" id="radio7" name="nom4" value="Valeur 1" checked>Valeur 1</label>
+		<label for="radio8"><input type="radio" id="radio8" name="nom4" value="Valeur 2">Valeur 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</label>
+	</div>
 </div>
 
 ## Gestion des erreurs
@@ -95,15 +103,17 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 		<label for="radio9"><input type="radio" id="radio9" name="nom5" value="Valeur 1">Valeur 1</label>
 		<label for="radio10"><input type="radio" id="radio10" name="nom5" value="Valeur 2">Valeur 2</label>
 	</div>
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
 </div>
 ```
-<div class="su-error">
-	<div class="su-radio-area">
-		<label for="radio9"><input type="radio" id="radio9" name="nom5" value="Valeur 1">Valeur 1</label>
-		<label for="radio10"><input type="radio" id="radio10" name="nom5" value="Valeur 2">Valeur 2</label>
+<div class="sipaui">
+	<div class="su-error">
+		<div class="su-radio-area">
+			<label for="radio9"><input type="radio" id="radio9" name="nom5" value="Valeur 1">Valeur 1</label>
+			<label for="radio10"><input type="radio" id="radio10" name="nom5" value="Valeur 2">Valeur 2</label>
+		</div>
+		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
 	</div>
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 
 
@@ -115,15 +125,17 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 		<label for="radio11"><input type="radio" id="radio11" name="nom6" value="Valeur 1">Valeur 1</label>
 		<label for="radio12"><input type="radio" id="radio12" name="nom6" value="Valeur 2">Valeur 2</label>
 	</div>
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
 </div>
 ```
-<div class="su-error">
-	<div class="su-radio-area su-radio-column">
-		<label for="radio11"><input type="radio" id="radio11" name="nom6" value="Valeur 1">Valeur 1</label>
-		<label for="radio12"><input type="radio" id="radio12" name="nom6" value="Valeur 2">Valeur 2</label>
+<div class="sipaui">
+	<div class="su-error">
+		<div class="su-radio-area su-radio-column">
+			<label for="radio11"><input type="radio" id="radio11" name="nom6" value="Valeur 1">Valeur 1</label>
+			<label for="radio12"><input type="radio" id="radio12" name="nom6" value="Valeur 2">Valeur 2</label>
+		</div>
+		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
 	</div>
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 
 

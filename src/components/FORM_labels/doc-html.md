@@ -2,14 +2,14 @@
 
 Ce composant regroupe les labels précédant les éléments de formulaire (champs texte, listes déroulantes…). Ce composant seul n’a pas d’intérêt, il est une dépendance de la plupart des composants de formulaire.
 
-<a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
-<div class="alerte su-margin-top-xl">
-	<h2>Dépendances</h2>
-	<p class="su-margin-0">Ce composant est dépendant des composants&nbsp;:</p>
-	<ul>
-		<li>helpers</li>
-	</ul>
+<div class="alerte">
+
+## Dépendances
+- classe `sipaui` sur un parent (par exemple le `<body>`),
+- composant **helpers**
+
 </div>
 
 <!-- STORY -->
@@ -20,7 +20,9 @@ Label standard pour un composant de formulaire requis (`required`). Le style est
 ```html
 <label for="input1">Label</label>
 ```
-<label for="input1">Label</label>
+<div class="sipaui">
+	<label for="input1">Label</label>
+</div>
 
 ## Facultatif
 Label standard pour un composant de formulaire facultatif. Utiliser la classe `su-label-complement` sur le texte «&nbsp;facultatif&nbsp;».
@@ -28,7 +30,9 @@ Label standard pour un composant de formulaire facultatif. Utiliser la classe `s
 ```html
 <label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
 ```
-<label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
+<div class="sipaui">
+	<label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
+</div>
 
 ## Readonly ou inactif
 Label standard d’un composant en readonly ou inactif. Classe `su-disabled` sur le label. Cette classe est dépendante du composant *helpers*.
@@ -36,7 +40,9 @@ Label standard d’un composant en readonly ou inactif. Classe `su-disabled` sur
 ```html
 <label for="input3" class="su-disabled">Label</label>
 ```
-<label for="input3" class="su-disabled">Label</label>
+<div class="sipaui">
+	<label for="input3" class="su-disabled">Label</label>
+</div>
 
 <div id="liste-classes">
 

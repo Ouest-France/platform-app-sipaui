@@ -2,7 +2,7 @@
 
 Ci-dessous, le catalogue des icônes disponibles dans la fonte *su-icons*. Ces icônes sont prévues pour un **affichage optimal à partir de 24px**. Toutefois, dans quelques cas spécifiques, **certaines de ces icônes sont déclinées en 14px** pour éviter d’avoir un aspect dégradé en affichage inférieur à 24px.
 
-<div class="alerte su-margin-top-xl">
+<div class="alerte">
 	<p>La police d’icônes n’est pas un composant en tant que tel, elle fait partie du «&nbsp;core&nbsp;», c'est à dire des éléments obligatoires.</p>
 </div>
 

@@ -2,7 +2,15 @@
 
 Ce composant est une dépendance pour plusieurs composants (champs de texte, menus déroulants, cases-à-cocher)…
 
-<a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
+
+<div class="alerte">
+
+## Dépendances
+- classe `sipaui` sur un parent (par exemple le `<body>`),
+- composant **icons**
+
+</div>
 
 <!-- STORY -->
 
@@ -15,22 +23,26 @@ Le positionnement de ce message dépend du composant auquel il est associé.
 
 ```html
 <div>
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
 </div>
 ```
-<div>
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
+<div class="sipaui">
+	<div>
+		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	</div>
 </div>
 
 ### Erreur affichée
 
 ```html
 <div class="su-error">
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
 </div>
 ```
-<div class="su-error">
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
+<div class="sipaui">
+	<div class="su-error">
+		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	</div>
 </div>
 
 ### Exemple de message d’erreur appliqué à un champ texte
@@ -39,13 +51,15 @@ Le positionnement de ce message dépend du composant auquel il est associé.
 <div class="su-error">
 	<label for="input1">Label</label>
 	<input id="input1" name="input1" type="email" role="textbox" required value="Value">
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
 </div>
 ```
-<div class="su-error">
-	<label for="input1">Label</label>
-	<input id="input1" name="input1" type="email" role="textbox" required value="Value">
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
+<div class="sipaui">
+	<div class="su-error">
+		<label for="input1">Label</label>
+		<input id="input1" name="input1" type="email" role="textbox" required value="Value">
+		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	</div>
 </div>
 
 
@@ -54,5 +68,8 @@ Le positionnement de ce message dépend du composant auquel il est associé.
 ## Liste des classes disponibles
 - `su-error`
 - `su-error-message`
+
+### Classes annexes
+- `su-icon-mini-alert` (dépendant du composant *icons*)
 
 </div>
