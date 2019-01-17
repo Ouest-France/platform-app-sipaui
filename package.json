@@ -19,7 +19,8 @@
   "author": "Ouest-France",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.1.6",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "@storybook/addon-knobs": "^4.0.6",
     "@storybook/addon-options": "^4.0.6",
     "@storybook/addon-viewport": "^4.0.6",
@@ -35,6 +36,7 @@
     "file-system": "^2.2.2",
     "fs": "^0.0.1-security",
     "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-image-resize": "^0.13.0",
     "gulp-include": "^2.3.1",
@@ -58,6 +60,9 @@
     "webpack": "^4.20.2"
   },
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-vue": "^2.0.2",
     "file-loader": "^2.0.0",
     "fs-extra": "^7.0.1",

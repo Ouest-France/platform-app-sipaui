@@ -13,7 +13,8 @@ var gulp            = require("gulp"),
     es              = require('event-stream'),
     through2        = require('through2'),
     runner          = require('child_process'),
-    fs              = require('fs')
+    fs              = require('fs'),
+    babel           = require('gulp-babel')
     ;
 
 // Variables de chemins
@@ -21,7 +22,6 @@ var source = './src'; // dossier de travail
 var doc = './doc/assets'; // dossier de travail
 var destination = './dist'; // dossier à livrer
 var build = './build'; // dossier de ocmpilation
-
 
 gulp.task('make-sass', ['clean'], function () {
     var scssList = [];
@@ -49,7 +49,28 @@ gulp.task('make-sass', ['clean'], function () {
 });
 
 gulp.task("scripts", ["clean"], function() {
-    return gulp.src([source + "/core/js/sipaui.js"])
+    return gulp.src([
+        'node_modules/babel-polyfill/dist/polyfill.js',
+        source + "/core/js/sipaui.js"])
+        .pipe(
+            babel(
+                {
+                    presets: [
+                        [
+                            "@babel/preset-env",
+                            {
+                                "useBuiltIns": "entry",
+                                "targets": {
+                                    "firefox": "48",
+                                    "chrome": "53",
+                                    "ie": "10"
+                                }
+                            }
+                        ]
+                    ]
+                }
+            )
+        )
         .pipe(include({
             extensions: "js",
             hardFail: true,
