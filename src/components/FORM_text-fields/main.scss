@@ -8,7 +8,7 @@ $inputTextBase: 'input[type="text"], input[type="password"], input[type="email"]
 $inputTextPlus: $inputTextBase + ', input[type="date"]' ;
 
 
-body {
+.sipaui {
     $size-button: 44px;
     $padding-lateral-input: 10px;
 

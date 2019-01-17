@@ -2,16 +2,16 @@
 
 Les listes déroulantes `<select>` proposent une liste d’options à l’utilisateur. Cette liste peut-être *mono* ou *multi-choix*. **Ce composant ne présente pour l’instant que la version mono-choix**.
 
-<a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
-<div class="alerte su-margin-top-xl">
-	<h2>Dépendances</h2>
-	<p class="su-margin-0">Ce composant est dépendant des composants&nbsp;:</p>
-	<ul>
-		<li>helpers,</li>
-		<li>FORM_labels,</li>
-		<li>FORM_errors</li>
-	</ul>
+<div class="alerte">
+
+## Dépendances
+- classe `sipaui` sur un parent (par exemple le `<body>`),
+- composant **helpers**,
+- composant **FORM_labels**,
+- composant **FORM_errors**
+
 </div>
 
 <!-- STORY -->
@@ -36,7 +36,7 @@ NB si l’on veut que la liste déroulante soit vide au départ, la première op
 	</select>
 </div>
 ```
-<div><!-- échappement markdown -->
+<div class="sipaui">
 	<label for="select1">Label</label>
 	<div class="su-select">
 		<select id="select1" name="select1" required>
@@ -66,7 +66,7 @@ NB si l’on veut que la liste déroulante soit vide au départ, la première op
 	</select>
 </div>
 ```
-<div><!-- échappement markdown -->
+<div class="sipaui">
 	<label for="select2">Label</label>
 	<div class="su-select">
 		<select id="select2" name="select2" required>
@@ -99,7 +99,7 @@ Le pseudo-placeholder (qui simule le placeholder d’un champ texte) se fait en 
 	</select>
 </div>
 ```
-<div><!-- échappement markdown -->
+<div class="sipaui">
 	<label for="select3">Label</label>
 	<div class="su-select">
 		<select id="select3" name="select3" required>
@@ -132,10 +132,10 @@ Select standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a
 		    <option value="option6">Option 6</option>
 		</select>
 	</div>
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
 </div>
 ```
-<div><!-- échappement markdown -->
+<div class="sipaui">
 	<div class="su-error">
 		<label for="select4">Label</label>
 		<div class="su-select">
@@ -149,7 +149,7 @@ Select standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a
 			    <option value="option6">Option 6</option>
 			</select>
 		</div>
-		<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
+		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
 	</div>
 </div>
 
@@ -171,7 +171,7 @@ Liste déroulant inactive. Attention, si le disabled suffit à rendre le select 
 	</select>
 </div>
 ```
-<div><!-- échappement markdown -->
+<div class="sipaui">
 	<label for="select5" class="su-disabled">Label</label>
 	<div class="su-select">
 		<select id="select5" name="select5" disabled class="su-disabled">

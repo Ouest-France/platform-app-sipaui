@@ -10,7 +10,7 @@ $line-height-label:         1.5;
 $padding-top-label:         6px;
 $padding-left-label: $height-input-checkbox + 7px;
 
-body {
+.sipaui {
     .su-checkbox-area {
         @include flexDisplay();
 

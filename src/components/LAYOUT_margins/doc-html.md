@@ -2,7 +2,14 @@
 
 SipaUI fournit différents outils pour intégrer des marges **à l’extérieur** d’un composant. Il y a bien sûr, *quelques* classes pour gérer les cas courants, mais il y a surtout les **variables SASS** pour vous permettre d’intégrer les tailles de marge directement dans vos propres fichiers SCSS quand vous en avez besoin. En effet, dans la plupart des cas ce seront **les CSS du site (via les variables) qui devront gérer l’espacement entre les blocs et non l’utilisation des classes de marge**.
 
-<a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
+
+<div class="alerte">
+
+## Dépendances
+- classe `sipaui` sur un parent (par exemple le `<body>`)
+
+</div>
 
 <!-- STORY -->
 
@@ -46,9 +53,11 @@ Voici *un* exemple d’utilisation de classe de marge avec la classe `su-margin-
 <div class="bloc-rouge">Bloc 2</div>
 ```
 <style>
+	.flex {
+		display: flex;
+	}
 	.bloc-gris,
 	.bloc-rouge {
-		float: left;
 		color: #fff;
 		padding: 10px;
 	}
@@ -59,7 +68,7 @@ Voici *un* exemple d’utilisation de classe de marge avec la classe `su-margin-
 		background: #b40015;
 	}
 </style>
-<div class="su-clearfix">
+<div class="sipaui flex">
 	<div class="bloc-gris su-margin-right-l">Bloc 1</div>
 	<div class="bloc-rouge">Bloc 2</div>
 </div>

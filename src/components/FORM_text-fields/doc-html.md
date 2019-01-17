@@ -2,7 +2,7 @@
 
 Ce composant regroupe les champs texte standards (input text, input number… et le text area). Les composants plus avancés (par exemple&nbsp;: le mot de passe) sont développés spécifiquement.
 
-<a href="#liste-classes" target="_self" class="su-link-button">Liste des classes disponibles</a>
+<a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
 **Accessibilité**
 
@@ -15,14 +15,14 @@ Règles minimales&nbsp;:
 Cerise&nbsp;:
 - Utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener" class="su-link">«&nbsp;Utiliser l'attribut aria-labelledby&nbsp;» chez MDN Web docs [moz://a]</a>).
 
-<div class="alerte su-margin-top-xl">
-	<h2>Dépendances</h2>
-	<p class="su-margin-0">Ce composant est dépendant des composants&nbsp;:</p>
-	<ul>
-		<li>helpers,</li>
-		<li>FORM_labels,</li>
-		<li>FORM_errors</li>
-	</ul>
+<div class="alerte">
+
+## Dépendances
+- classe `sipaui` sur un parent (par exemple le `<body>`),
+- composant **helpers**,
+- composant **FORM_labels**,
+- composant **FORM_errors**
+
 </div>
 
 <!-- STORY -->
@@ -37,8 +37,10 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 <label for="input1">Label</label>
 <input id="input1" name="input1" type="text" role="textbox" required>
 ```
-<label for="input1">Label</label>
-<input id="input1" name="input1" type="text" role="textbox" required>
+<div class="sipaui">
+	<label for="input1">Label</label>
+	<input id="input1" name="input1" type="text" role="textbox" required>
+</div>
 
 ### Placeholder
 Pour rappel du doc design, le texte du placeholder est une description supplémentaire au label, il ne le substitue pas. Il doit guider l’utilisateur sur le format de données attendu.
@@ -47,8 +49,10 @@ Pour rappel du doc design, le texte du placeholder est une description suppléme
 <label for="input1">Label</label>
 <input id="input1" name="input1" type="text" role="textbox" required placeholder="Placeholder">
 ```
-<label for="input1">Label</label>
-<input id="input1" name="input1" type="text" role="textbox" required placeholder="Placeholder">
+<div class="sipaui">
+	<label for="input1">Label</label>
+	<input id="input1" name="input1" type="text" role="textbox" required placeholder="Placeholder">
+</div>
 
 ### Facultatif
 Input facultatif. Pour le texte en complément dans le label, utiliser la classe `su-label-complement` du composant *FORM_labels*.
@@ -56,8 +60,10 @@ Input facultatif. Pour le texte en complément dans le label, utiliser la classe
 <label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
 <input id="input2" name="input2" type="text" role="textbox">
 ```
-<label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
-<input id="input2" name="input2" type="text" role="textbox">
+<div class="sipaui">
+	<label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
+	<input id="input2" name="input2" type="text" role="textbox">
+</div>
 
 ### Prérempli
 Input standard prérempli.
@@ -65,8 +71,10 @@ Input standard prérempli.
 <label for="input3">Label</label>
 <input id="input3" name="input3" type="text" role="textbox" required value="Value">
 ```
-<label for="input3">Label</label>
-<input id="input3" name="input3" type="text" role="textbox" required value="Value">
+<div class="sipaui">
+	<label for="input3">Label</label>
+	<input id="input3" name="input3" type="text" role="textbox" required value="Value">
+</div>
 
 ### Readonly
 Input standard prérempli et en readonly. Attention, si le `readonly` suffit à l’input pour changer son opacité, il faut une classe `su-disabled` sur le label pour le changer aussi. Cette classe est dépendante du composant *helpers*.
@@ -74,8 +82,10 @@ Input standard prérempli et en readonly. Attention, si le `readonly` suffit à 
 <label for="input4" class="su-disabled">Label</label>
 <input id="input4" name="input4" type="text" role="textbox" required readonly aria-readonly="true" value="Value">
 ```
-<label for="input4" class="su-disabled">Label</label>
-<input id="input4" name="input4" type="text" role="textbox" required readonly aria-readonly="true" value="Value">
+<div class="sipaui">
+	<label for="input4" class="su-disabled">Label</label>
+	<input id="input4" name="input4" type="text" role="textbox" required readonly aria-readonly="true" value="Value">
+</div>
 
 ### Erreur
 Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Cette classe, absente par défaut, sera positionnée par le développeur (soit par JS, soit par réponse serveur). Le message d’erreur sera identifié par la classe `su-error-message`. Ces 2 classes d’erreur sont issues du composant *FORM_errors*.
@@ -84,13 +94,15 @@ Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a 
 <div class="su-error">
 	<label for="input5">Label</label>
 	<input id="input5" name="input5" type="email" role="textbox" required value="Value">
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
 </div>
 ```
-<div class="su-error">
-	<label for="input5">Label</label>
-	<input id="input5" name="input5" type="email" role="textbox" required value="Value">
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
+<div class="sipaui">
+	<div class="su-error">
+		<label for="input5">Label</label>
+		<input id="input5" name="input5" type="email" role="textbox" required value="Value">
+		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	</div>
 </div>
 
 ### RAZ (remise à zéro)
@@ -122,13 +134,15 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 </div>
 ```
 
-<label for="input6">Label</label>
-<div class="su-input-actions-1">
-	<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" required required value="Lorem ipsum">
-	<div class="su-input-actions-area">
-		<button type="button" class="su-input-action" data-ofemptyinput>
-			<span class="su-icon-close"></span>
-		</button>
+<div class="sipaui">
+	<label for="input6">Label</label>
+	<div class="su-input-actions-1">
+		<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" required required value="Lorem ipsum">
+		<div class="su-input-actions-area">
+			<button type="button" class="su-input-action" data-ofemptyinput>
+				<span class="su-icon-close"></span>
+			</button>
+		</div>
 	</div>
 </div>
 
@@ -144,21 +158,22 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 			<span class="su-icon-close"></span>
 		</button>
 	</div>
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
 </div>
 ```
-
-<div class="su-error">
-	<label for="input7">Label<span class="su-label-complement"> (facultatif)</span></label>
-	<div class="su-input-actions-1">
-		<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' required value="Value">
-		<div class="su-input-actions-area">
-			<button type="button" class="su-input-action" data-ofemptyinput>
-				<span class="su-icon-close"></span>
-			</button>
+<div class="sipaui">
+	<div class="su-error">
+		<label for="input7">Label<span class="su-label-complement"> (facultatif)</span></label>
+		<div class="su-input-actions-1">
+			<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' required value="Value">
+			<div class="su-input-actions-area">
+				<button type="button" class="su-input-action" data-ofemptyinput>
+					<span class="su-icon-close"></span>
+				</button>
+			</div>
 		</div>
+		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
 	</div>
-	<div class="su-error-message"><span class="su-icon-alert"></span> Message d’erreur</div>
 </div>
 
 ## Textarea
@@ -167,8 +182,10 @@ Textarea standard. Il est possible de forcer cet affichage avec la classe `su-te
 <label for="textarea">Label</label>
 <textarea id="textarea" name="textarea" role="textbox" aria-multiline="true" required></textarea>
 ```
-<label for="textarea">Label</label>
-<textarea id="textarea" required></textarea>
+<div class="sipaui">
+	<label for="textarea">Label</label>
+	<textarea id="textarea" required></textarea>
+</div>
 
 <div id="liste-classes">
 
