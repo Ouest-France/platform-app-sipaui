@@ -11,7 +11,7 @@ Les loaders sont des animations en boucle qui indiquent à l’utilisateur qu'un
 
 - Un indicateur s’anime le long d'une piste circulaire gris dans le sens des aiguilles d'une montre.
 - Le loader disparaît à la fin de l’activité en cours.
-- Taille : 44
+- Taille : 44px
 - Couleur de l'indicateur : #E2001A
 - Couleur de la piste circulaire : #D4D4D4
 

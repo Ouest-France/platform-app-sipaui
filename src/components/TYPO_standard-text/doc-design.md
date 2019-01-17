@@ -12,7 +12,8 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 - Graisse : Normal
 - Taille : 16px
 - Couleur : #333333
-- Marge supérieure de 20px pour un paragraphe qui suit un autre paragraphe ou une liste. 
+- Marge supérieure d'un paragraphe sous un autre paragraphe ou d'une liste : 20px
+
 
 ## Bonnes pratiques
 

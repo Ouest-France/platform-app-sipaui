@@ -46,9 +46,10 @@ Peu de pages web ont une longueur ou une complexité telles qu’elles justifien
 On peut considérer que ces autres balises indiquent un contenu de moindre importance.
 
 ## Spécifications
-**Les balises H1 à H6 sont des balises de titre** (heading) qui indiquent aux lecteurs et aux moteurs de recherche quelle est l’importance relative de chaque titre. A ne pas confondre, avec la balise (title) qui n’apparaît pas aux yeux du lecteur mais joue elle aussi un rôle clé en matière de référencement naturel.
 
 ### Heading page
+**Les balises H1 à H6 sont des balises de titre (heading)** qui indiquent aux lecteurs et aux moteurs de recherche quelle est l’importance relative de chaque titre. A ne pas confondre, avec la balise (title) qui n’apparaît pas aux yeux du lecteur mais joue elle aussi un rôle clé en matière de référencement naturel.
+
 #### Mobile
 
 Balise | Police | Graisse | Taille | Couleur
@@ -58,7 +59,6 @@ h2 | Oswald | Normal | 24px | #333333
 h3 | Oswald | Normal | 18px | #333333
 
 
-### Heading page
 #### Desktop
 
 Balise | Police | Graisse | Taille | Couleur
@@ -69,6 +69,7 @@ h3 | Oswald | Normal | 18px | #333333
 
 
 ### Article
+**Le contenu de chaque article** a des caractèristiques spécifiques. Des balises de titre (heading) peuvent être présentes sur une page article.
 #### Mobile
 
 Balise | Police | Graisse | Taille | Couleur
@@ -81,7 +82,6 @@ h5 | Oswald | Normal | 14px | #333333
 h6 | Oswald | Normal | 12px | #333333
 
 
-### Article
 #### Desktop
 
 Balise | Police | Graisse | Taille | Couleur

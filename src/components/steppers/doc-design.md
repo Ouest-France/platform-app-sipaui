@@ -24,25 +24,25 @@ Les indicateurs de progression représentent visuellement l'avancement d’un pa
 
 Enabled | Hover / Focus / Pressed | Check | Inactif
 ------------ | ------------- | ------------- |
-xcvbn| htr | rthr | In
+![stepper__bubbles__active](design/stepper__bubbles__active.png)| htr | ![stepper__bubbles__check](design/stepper__bubbles__check.png) | ![stepper__bubbles__disabled](design/stepper__bubbles__disabled.png)
 Taille : 44px ?  <br> Contour : 1px  <br> Couleur : #E2001A <br> Texte : 16px, regular ?, police du thème, #333333 | - <br> - <br> - <br> - <br> - <br> Texte : #B40015 | ? | Opacité : 40 %
 
 ### Sous-thème Abonnement
 
 #### Mobile
 
-**Etape 1** | a
+**Etape 1** | ![without-label__step__1](design/without-label__step__1.png)
 ------------ | -------------
-**Etape 2** | a
-**Etape 3** | a
+**Etape 2** | ![without-label__step__2](design/without-label__step__2.png)
+**Etape 3** | ![without-label__step__3](design/without-label__step__3.png)
 
 
 #### Dektop
 
-**Etape 1** | a
+**Etape 1** | ![default__step__1](design/default__step__1.png)
 ------------ | -------------
-**Etape 2** | a
-**Etape 3** | a
+**Etape 2** | ![default__step__2](design/default__step__2.png)
+**Etape 3** | ![default__step__3](design/default__step__3.png)
 
 
 ## 4- Bonnes pratiques
