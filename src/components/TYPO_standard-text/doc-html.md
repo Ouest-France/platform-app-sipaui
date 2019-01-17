@@ -1,6 +1,6 @@
 # Standard text / Texte standard
 
-Ce texte standard est réservé à du contenu éditorial. Il est donc lié à la classe `su-article` qui englobe les zones de contenu éditorial. Son utilisation peut être forcée ponctuellement par la classe `su-text-standard`.
+Le texte standard est réservé au contenu éditorial. Il est donc lié à la classe `su-article` qui englobe les zones de contenu éditorial. Son utilisation peut être forcée ponctuellement par la classe `su-text-standard`.
 
 <br />
 
@@ -23,7 +23,7 @@ Ce formatage de texte accepte 2 variations en fonction de l’importance du text
 
 ## Texte standard
 
-### Avec classe su-article
+### Avec la classe su-article
  
 ```html
 <article class="su-article">
@@ -44,7 +44,9 @@ Ce formatage de texte accepte 2 variations en fonction de l’importance du text
 
 
 
-### Avec classe su-text-standard
+### Avec la classe su-text-standard
+
+Dans l’exemple ci-dessous, les 2 paragraphes sont stylés par des CSS de la page. La classe `su-text-standard` permet de forcer l’apparence standard sur le second paragraphe.
  
 ```html
 <article>
