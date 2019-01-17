@@ -71,29 +71,33 @@ Ce formatage de texte accepte 2 variations en fonction de l’importance du text
 ## Variation d’importance
 
 ### Importance moyenne
+
+Utilisation de la balise `<em>`.
  
 ```html
-<article class="su-article">
+<article>
 	<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</em>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </article>
 ```
 
 <div class="sipaui">
-	<article class="su-article">
+	<article>
 		<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</em>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</article>
 </div>
 
 ### Importance forte
- 
+
+Utilisation de la balise `<strong>`.
+
 ```html
-<article class="su-article">
+<article>
 	<p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </article>
 ```
 
 <div class="sipaui">
-	<article class="su-article">
+	<article>
 		<p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</article>
 </div>
@@ -111,59 +115,69 @@ Par défaut, le texte standard est ferré (aligné) à gauche. Il s'agit de la j
 
 ### Ferrage à gauche forcé
  
+Utilisation de la classe `su-text-left`.
+
 ```html
-<article class="su-article">
+<article>
 	<p class="su-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </article>
 ```
 
 <div class="sipaui">
-	<article class="su-article">
+	<article>
 		<p class="su-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</article>
 </div>
 
 
 ### Ferrage à droite
+
+Utilisation de la classe `su-text-right`.
+
  
 ```html
-<article class="su-article">
+<article>
 	<p class="su-text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </article>
 ```
 
 <div class="sipaui">
-	<article class="su-article">
+	<article>
 		<p class="su-text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</article>
 </div>
 
 
 ### Justification
- 
+
+Utilisation de la classe `su-text-justify`.
+
 ```html
-<article class="su-article">
+<article>
 	<p class="su-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </article>
 ```
 
 <div class="sipaui">
-	<article class="su-article">
+	<article>
 		<p class="su-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</article>
 </div>
 
 
 ### Centrage
+
+Utilisation de la classe `su-text-center`.
+
  
 ```html
-<article class="su-article">
+<article>
 	<p class="su-text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </article>
 ```
 
 <div class="sipaui">
-	<article class="su-article">
+	<article>
 		<p class="su-text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</article>
 </div>
@@ -175,6 +189,8 @@ Par défaut, le texte standard est ferré (aligné) à gauche. Il s'agit de la j
 ## Liste des classes disponibles
 - `su-article` (si besoin de surcharge)
 - `su-text-standard` (si besoin de surcharge)
+
+### Classes annexes
 - `su-text-center` (dépendant du composant *helpers*)
 - `su-text-justify` (dépendant du composant *helpers*)
 - `su-text-left` (dépendant du composant *helpers*)

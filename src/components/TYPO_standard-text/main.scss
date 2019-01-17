@@ -9,13 +9,13 @@
 .sipaui {
     .su-text-standard {
         font-family: $font-family-base;
-        font-size: 1.6rem;
-        line-height: 1.5;
-        color: #333;
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+        color: $color-texte;
         margin: 0;
     }
     .su-text-standard + .su-text-standard {
-        margin-top: 20px;
+        margin-top: $margin-medium;
     }
     .su-article {
         p {
@@ -23,7 +23,7 @@
         }
         p + p,
         ul + p {
-            margin-top: 20px;
+            margin-top: $margin-medium;
         }
     }
 }
