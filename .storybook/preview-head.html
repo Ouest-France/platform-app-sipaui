@@ -9,8 +9,6 @@
         link.charset ="utf-8";
         link.href = 'css/main-sipaui'+ ((theme == 'of') ? '' : '-'+theme) +'.css';
         document.head.appendChild(link);
-        var polyfill = document.createElement('script');
-        polyfill.src = 'js/polyfill.js';
         var script = document.createElement('script');
         script.src = 'js/sipaui.js';
         document.head.appendChild(script);
