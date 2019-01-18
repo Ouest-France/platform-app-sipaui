@@ -63,8 +63,8 @@ gulp.task("scripts", ["clean"], function() {
                             {
                                 "useBuiltIns": "entry",
                                 "targets": {
-                                    "firefox": "48",
-                                    "chrome": "53",
+                                    "firefox": "51",
+                                    "chrome": "56",
                                     "ie": "10"
                                 }
                             }
