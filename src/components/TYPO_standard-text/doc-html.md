@@ -113,7 +113,9 @@ Utilisation de la balise `<strong>`.
 
 ## Variation de justification
 
-Par défaut, le texte standard est ferré (aligné) à gauche. Il s'agit de la justification à préférer. Toutefois, si necessaire, SipaUI intègre les classes nécessaires aux autres justifications, via le composant **helpers**.
+Par défaut, le texte standard est ferré (aligné) à gauche.
+
+D'autres justifications sont possibles. SipaUI intègre les classes nécessaires, via le composant **helpers**.
 
 ### Ferrage à gauche forcé
  
