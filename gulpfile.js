@@ -14,7 +14,8 @@ var gulp            = require("gulp"),
     through2        = require('through2'),
     runner          = require('child_process'),
     fs              = require('fs'),
-    babel           = require('gulp-babel')
+    babel           = require('gulp-babel'),
+    concat           = require('gulp-concat')
     ;
 
 // Variables de chemins
@@ -52,6 +53,7 @@ gulp.task("scripts", ["clean"], function() {
     return gulp.src([
         'node_modules/babel-polyfill/dist/polyfill.js',
         source + "/core/js/sipaui.js"])
+        .pipe(concat('sipaui.js'))
         .pipe(
             babel(
                 {
