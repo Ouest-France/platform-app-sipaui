@@ -53,7 +53,7 @@ gulp.task("scripts", ["clean"], function() {
     return gulp.src([
         'node_modules/babel-polyfill/dist/polyfill.js',
         source + "/core/js/sipaui.js"])
-        .pipe(concat('sipaui.js'))
+        .pipe(concat('sipaui.js', {newLine: ';'}))
         .pipe(
             babel(
                 {
