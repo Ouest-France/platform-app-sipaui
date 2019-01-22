@@ -1,12 +1,13 @@
 # Breakpoints / Points de rupture
 
-Les points de ruptures sont des points d'arrêts dans la mise en page.
-Ces largeurs clés permettent garantir la lisibilité du site. Dans une page, l'interface est organisée de manière claire et logique en fonction de la largeur d'écran disponible. Il ne s'agit pas nécessairement de la taille physique de l'écran, particulièrement sur desktop.
+Les points de ruptures sont des **points d'arrêts** dans la mise en page.
+**Ces largeurs clés permettent de garantir la lisibilité du site.**
+Dans une page, l'interface est organisée de manière claire et logique en fonction de la largeur d'écran disponible. Il ne s'agit pas nécessairement de la taille physique de l'écran, particulièrement sur desktop.
 
 
 ## Usage
 
-- Les points de ruptures sont utilisés pour les sites responsives. Ils s'inscrivent dans une conception Mobile first.
+- Les points de ruptures sont utilisés pour les **sites responsives**. Ils s'inscrivent dans une conception Mobile first.
 
 
 ### Thème Ouest-France

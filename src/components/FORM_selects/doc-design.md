@@ -5,7 +5,7 @@ Les selects permettent à l’utilisateur de sélectionner une option dans une l
 
 ## Usage
 
-- Un select permet d’afficher un nombre illimité d'options dans une liste déroulante. L’utilisateur peut choisir une seule des options parmi cette liste.
+- Un select permet d’**afficher un nombre illimité d'options dans une liste déroulante**. L’utilisateur peut **choisir une seule des options** parmi cette liste.
 - Il empêche les utilisateurs de saisir des données erronées et il permet d'économiser quelques frappes.
 - On le trouve généralement dans un formulaire.
 
