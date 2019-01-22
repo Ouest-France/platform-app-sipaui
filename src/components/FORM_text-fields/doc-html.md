@@ -94,14 +94,14 @@ Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a 
 <div class="su-error">
 	<label for="input5">Label</label>
 	<input id="input5" name="input5" type="email" role="textbox" required value="Value">
-	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
 	<div class="su-error">
 		<label for="input5">Label</label>
 		<input id="input5" name="input5" type="email" role="textbox" required value="Value">
-		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 	</div>
 </div>
 
@@ -128,7 +128,7 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 	<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" required required value="Lorem ipsum">
 	<div class="su-input-actions-area">
 		<button type="button" class="su-input-action" data-ofemptyinput>
-			<span class="su-icon-close"></span>
+			<i class="su-icon">fermer</i>
 		</button>
 	</div>
 </div>
@@ -140,7 +140,7 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 		<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" required required value="Lorem ipsum">
 		<div class="su-input-actions-area">
 			<button type="button" class="su-input-action" data-ofemptyinput>
-				<span class="su-icon-close"></span>
+				<i class="su-icon">fermer</i>
 			</button>
 		</div>
 	</div>
@@ -155,10 +155,10 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 	<div class="su-relative su-input-icon">
 		<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
 		<button type="button" class="su-input-action" data-ofemptyinput>
-			<span class="su-icon-close"></span>
+			<i class="su-icon">fermer</i>
 		</button>
 	</div>
-	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
@@ -168,11 +168,11 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 			<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' required value="Value">
 			<div class="su-input-actions-area">
 				<button type="button" class="su-input-action" data-ofemptyinput>
-					<span class="su-icon-close"></span>
+					<i class="su-icon">fermer</i>
 				</button>
 			</div>
 		</div>
-		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 	</div>
 </div>
 

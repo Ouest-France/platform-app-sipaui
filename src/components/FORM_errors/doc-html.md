@@ -23,12 +23,12 @@ Le positionnement de ce message dépend du composant auquel il est associé.
 
 ```html
 <div>
-	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
 	<div>
-		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 	</div>
 </div>
 
@@ -36,12 +36,12 @@ Le positionnement de ce message dépend du composant auquel il est associé.
 
 ```html
 <div class="su-error">
-	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
 	<div class="su-error">
-		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 	</div>
 </div>
 
@@ -51,14 +51,14 @@ Le positionnement de ce message dépend du composant auquel il est associé.
 <div class="su-error">
 	<label for="input1">Label</label>
 	<input id="input1" name="input1" type="email" role="textbox" required value="Value">
-	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
 	<div class="su-error">
 		<label for="input1">Label</label>
 		<input id="input1" name="input1" type="email" role="textbox" required value="Value">
-		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 	</div>
 </div>
 
