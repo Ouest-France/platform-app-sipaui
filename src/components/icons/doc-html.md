@@ -29,44 +29,57 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 ### Pictos standards (24px)
 
 <div class="catalogue-icones">
-	<div class="icone">
-		<h3>Alerte</h3>
-		<pre><code>&lt;i class="su-icon">
-    alerte
-&lt;/i></code></pre>
-		<div><i class="su-icon">alerte</i></div>
-	</div>
-	<div class="icone">
+	<div class="icone"><!------------------------------------------------- Fermer-->
 		<h3>Fermer</h3>
 		<pre><code>&lt;i class="su-icon">
     fermer
 &lt;/i></code></pre>
+		<div>Glyphe&nbsp;: <code>\e900</code></div>
 		<div><i class="su-icon">fermer</i></div>
 	</div>
-	<div class="icone">
-		<h3>Montrer</h3>
-		<pre><code>&lt;i class="su-icon">
-    montrer
-&lt;/i></code></pre>
-		<div><i class="su-icon">montrer</i></div>
-	</div>
-	<div class="icone">
+	<div class="icone"><!------------------------------------------------- Flèche bas-->
 		<h3>Flèche bas</h3>
 		<pre><code>&lt;i class="su-icon">
     fleche_bas
 &lt;/i></code></pre>
+		<div>Glyphe&nbsp;: <code>\e901</code></div>
 		<div><i class="su-icon">fleche_bas</i></div>
+	</div>
+	<div class="icone"><!------------------------------------------------- Vider-->
+		<h3>Vider</h3>
+		<pre><code>&lt;i class="su-icon">
+    vider
+&lt;/i></code></pre>
+		<div>Glyphe&nbsp;: <code>\e902</code></div>
+		<div><i class="su-icon">vider</i></div>
+	</div>
+	<div class="icone"><!------------------------------------------------- Montrer-->
+		<h3>Montrer</h3>
+		<pre><code>&lt;i class="su-icon">
+    montrer
+&lt;/i></code></pre>
+		<div>Glyphe&nbsp;: <code>\e903</code></div>
+		<div><i class="su-icon">montrer</i></div>
+	</div>
+	<div class="icone"><!------------------------------------------------- Alerte-->
+		<h3>Alerte</h3>
+		<pre><code>&lt;i class="su-icon">
+    alerte
+&lt;/i></code></pre>
+		<div>Glyphe&nbsp;: <code>\e904</code></div>
+		<div><i class="su-icon">alerte</i></div>
 	</div>
 </div>
 
 ### Pictos mini (14px)
 
 <div class="catalogue-icones">
-	<div class="icone">
-		<h3>Alerte</h3>
+	<div class="icone"><!------------------------------------------------- Alerte mini-->
+		<h3>Alerte mini</h3>
 		<pre><code>&lt;i class="su-icon-mini">
     alerte-mini
 &lt;/i></code></pre>
+		<div>Glyphe&nbsp;: <code>\e1004</code></div>
 		<div><i class="su-icon-mini">alerte-mini</i></div>
 	</div>
 </div>
