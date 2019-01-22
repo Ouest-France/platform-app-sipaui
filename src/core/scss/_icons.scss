@@ -5,13 +5,13 @@
 @font-face {
   font-family: 'su-icons';
   src:
-    url('#{$font-import-directory}/su-icons/su-icons.woff2?onhjys') format('woff2'),
-    url('#{$font-import-directory}/su-icons/su-icons.woff?onhjys') format('woff');
+    url('#{$font-import-directory}/su-icons/su-icons.woff2?3uxq3c') format('woff2'),
+    url('#{$font-import-directory}/su-icons/su-icons.woff?3uxq3c') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="su-icon-"], [class*=" su-icon-"] {
+[class^="su-icon"], [class*=" su-icon"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'su-icons' !important;
   speak: none;
@@ -21,20 +21,26 @@
   text-transform: none;
   line-height: 1;
 
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.su-icon-close:before {
-  content: "\e905";
+/* Gestion de la taille par defaut */
+[class*="su-icon"] {
+    font-size: 2.4rem;
 }
-.su-icon-show:before {
-  content: "\e906";
-}
-.su-icon-alert:before {
-  content: "\e907";
-}
-.su-icon-mini-alert:before {
-  content: "\e908";
+/* Gestion de la taille par defaut */
+[class*="su-icon-mini"] {
+    font-size: 1.4rem;
 }

@@ -103,7 +103,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 		<label for="checkbox9"><input type="checkbox" id="checkbox9" name="nom5" value="Valeur 1">Valeur 1</label>
 		<label for="checkbox10"><input type="checkbox" id="checkbox10" name="nom5" value="Valeur 2">Valeur 2</label>
 	</div>
-	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
@@ -112,7 +112,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 			<label for="checkbox9"><input type="checkbox" id="checkbox9" name="nom5" value="Valeur 1">Valeur 1</label>
 			<label for="checkbox10"><input type="checkbox" id="checkbox10" name="nom5" value="Valeur 2">Valeur 2</label>
 		</div>
-		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 	</div>
 </div>
 
@@ -124,7 +124,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 		<label for="checkbox11"><input type="checkbox" id="checkbox11" name="nom6" value="Valeur 1">Valeur 1</label>
 		<label for="checkbox12"><input type="checkbox" id="checkbox12" name="nom6" value="Valeur 2">Valeur 2</label>
 	</div>
-	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
@@ -133,7 +133,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 			<label for="checkbox11"><input type="checkbox" id="checkbox11" name="nom6" value="Valeur 1">Valeur 1</label>
 			<label for="checkbox12"><input type="checkbox" id="checkbox12" name="nom6" value="Valeur 2">Valeur 2</label>
 		</div>
-		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 	</div>
 </div>
 
@@ -142,7 +142,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 
 Les cases à cocher indéterminées servent à montrer un état semi-sélectionné pour une case regroupant plusieurs autres cases dans un sous-niveau dont seulement certaines de ces cases sont sélectionnées. 
 
-Pour la gestion des cases à cocher indéterminées en JS, cf. <a href="https://css-tricks.com/indeterminate-checkboxes/" target="blank" class="su-link">css-tricks.com</a>.
+Pour la gestion des cases à cocher indéterminées en JS, cf. <a href="https://css-tricks.com/indeterminate-checkboxes/" target="_blank" rel="noopener">css-tricks.com</a>.
 
 ```html
 <div class="su-checkbox-area su-checkbox-column">

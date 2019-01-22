@@ -103,7 +103,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 		<label for="radio9"><input type="radio" id="radio9" name="nom5" value="Valeur 1">Valeur 1</label>
 		<label for="radio10"><input type="radio" id="radio10" name="nom5" value="Valeur 2">Valeur 2</label>
 	</div>
-	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
@@ -112,7 +112,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 			<label for="radio9"><input type="radio" id="radio9" name="nom5" value="Valeur 1">Valeur 1</label>
 			<label for="radio10"><input type="radio" id="radio10" name="nom5" value="Valeur 2">Valeur 2</label>
 		</div>
-		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 	</div>
 </div>
 
@@ -125,7 +125,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 		<label for="radio11"><input type="radio" id="radio11" name="nom6" value="Valeur 1">Valeur 1</label>
 		<label for="radio12"><input type="radio" id="radio12" name="nom6" value="Valeur 2">Valeur 2</label>
 	</div>
-	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
@@ -134,7 +134,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 			<label for="radio11"><input type="radio" id="radio11" name="nom6" value="Valeur 1">Valeur 1</label>
 			<label for="radio12"><input type="radio" id="radio12" name="nom6" value="Valeur 2">Valeur 2</label>
 		</div>
-		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 	</div>
 </div>
 

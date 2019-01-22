@@ -25,12 +25,15 @@
                 <ul>
                 	<li>Boutons</li>
                 	<li>Champs texte (input texte, textarea)
-                	<li>Liens articles</li>
+                	<li>Liens</li>
                 	<li>Helpers (classes d’aide)</li>
                 	<li>Boutons radio</li>
                 	<li>Cases à cocher</li>
                 	<li>Select simple</li>
                 	<li>Marges</li>
+                	<li>Texte standard</li>
+                	<li>Titres</li>
+                	<li>Police d’icônes</li>
                 </ul>
             </article>
 
@@ -38,29 +41,29 @@
                 <h1>Plan de versions prévisionnel</h1>
 
                 <ul class="su-old-not-list table">
+                	<li class="row">
+                	    <div class="cell"><span class="version">1.0</span></div>
+                	    <div class="cell">Points de rupture et grille.</div>
+                    </li>
                     <li class="row">
-                	    <div class="cell"><span class="version">0.5.0 ß</span></div>
-                	    <div class="cell">Éléments typographiques de base (à définir), suite d’icônes.</div>
+                	    <div class="cell"><span class="version">1.1</span></div>
+                	    <div class="cell">Loader de page et listes.</div>
                     </li>
                 	<li class="row">
-                	    <div class="cell"><span class="version">1.0.0</span></div>
-                	    <div class="cell">Grille.</div>
+                	    <div class="cell"><span class="version">1.2</span></div>
+                	    <div class="cell">Stepper.</div>
                     </li>
                     <li class="row">
-                	    <div class="cell"><span class="version">1.1.0</span></div>
+                	    <div class="cell"><span class="version">1.?</span></div>
                 	    <div class="cell">Mot de passe.</div>
                     </li>
-                	<li class="row">
-                	    <div class="cell"><span class="version">1.2.0</span></div>
-                	    <div class="cell">Loader de page, loader de champ texte.</div>
-                    </li>
                     <li class="row">
-                	    <div class="cell"><span class="version">1.3.0</span></div>
+                	    <div class="cell"><span class="version">1.?</span></div>
                 	    <div class="cell">Pagination.</div>
                     </li>
                     <li class="row">
-                	    <div class="cell"><span class="version">1.4.0</span></div>
-                	    <div class="cell">Stepper.</div>
+                	    <div class="cell"><span class="version">1.?</span></div>
+                	    <div class="cell">Popin.</div>
                     </li>
                 </ul>
             </article>

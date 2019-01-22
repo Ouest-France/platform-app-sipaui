@@ -10,46 +10,76 @@ Ci-dessous, le catalogue des icônes disponibles dans la fonte *su-icons*. Ces i
 
 ## Exemples
 
+L’intégration d’une icône peut se faire via la balise HTML neutre et inline `<span>` ou **mieux, via la balise de <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/i"  target="_blank" rel="noopener">texte différenciant</a>** `<i>`. On lui applique alors la classe `su-icon` ou `su-icon-mini` **si le picto est disponible en petit**. On écrit alors en contenu de la balise, le texte de référence de l’icône souhaitée.
+
 ### Icône standard (en 24px) 
 ```html
-<span class="su-icon-alert" style="font-size: 24px"></span>
+<i class="su-icon">alerte</i>
 ```
-<span class="su-icon-alert" style="font-size: 24px"></span>
+<i class="su-icon">alerte</i>
 
 ### Icône mini (en 14px) 
 ```html
-<span class="su-icon-mini-alert" style="font-size: 14px"></span>
+<i class="su-icon-mini">alerte-mini</i>
 ```
-<span class="su-icon-mini-alert" style="font-size: 14px"></span>
+<i class="su-icon-mini">alerte-mini</i>
 
 ## Catalogue
 
 ### Pictos standards (24px)
 
 <div class="catalogue-icones">
-	<div class="icone">
-		<h3>Alerte</h3>
-		<code>su-icon-alert</code>
-		<div><span class="su-icon-alert"></span></div>
-	</div>
-	<div class="icone">
+	<div class="icone"><!------------------------------------------------- Fermer-->
 		<h3>Fermer</h3>
-		<code>su-icon-close</code>
-		<div><span class="su-icon-close"></span></div>
+		<pre><code>&lt;i class="su-icon">
+    fermer
+&lt;/i></code></pre>
+		<div>Glyphe&nbsp;: <code>\e900</code></div>
+		<div><i class="su-icon">fermer</i></div>
 	</div>
-	<div class="icone">
+	<div class="icone"><!------------------------------------------------- Flèche bas-->
+		<h3>Flèche bas</h3>
+		<pre><code>&lt;i class="su-icon">
+    fleche_bas
+&lt;/i></code></pre>
+		<div>Glyphe&nbsp;: <code>\e901</code></div>
+		<div><i class="su-icon">fleche_bas</i></div>
+	</div>
+	<div class="icone"><!------------------------------------------------- Vider-->
+		<h3>Vider</h3>
+		<pre><code>&lt;i class="su-icon">
+    vider
+&lt;/i></code></pre>
+		<div>Glyphe&nbsp;: <code>\e902</code></div>
+		<div><i class="su-icon">vider</i></div>
+	</div>
+	<div class="icone"><!------------------------------------------------- Montrer-->
 		<h3>Montrer</h3>
-		<code>su-icon-show</code>
-		<div><span class="su-icon-show"></span></div>
+		<pre><code>&lt;i class="su-icon">
+    montrer
+&lt;/i></code></pre>
+		<div>Glyphe&nbsp;: <code>\e903</code></div>
+		<div><i class="su-icon">montrer</i></div>
+	</div>
+	<div class="icone"><!------------------------------------------------- Alerte-->
+		<h3>Alerte</h3>
+		<pre><code>&lt;i class="su-icon">
+    alerte
+&lt;/i></code></pre>
+		<div>Glyphe&nbsp;: <code>\e904</code></div>
+		<div><i class="su-icon">alerte</i></div>
 	</div>
 </div>
 
 ### Pictos mini (14px)
 
 <div class="catalogue-icones">
-	<div class="icone">
-		<h3>Alerte</h3>
-		<code>su-icon-mini-alert</code>
-		<div><span class="su-icon-mini-alert"></span></div>
+	<div class="icone"><!------------------------------------------------- Alerte mini-->
+		<h3>Alerte mini</h3>
+		<pre><code>&lt;i class="su-icon-mini">
+    alerte-mini
+&lt;/i></code></pre>
+		<div>Glyphe&nbsp;: <code>\e1004</code></div>
+		<div><i class="su-icon-mini">alerte-mini</i></div>
 	</div>
 </div>

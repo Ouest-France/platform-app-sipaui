@@ -132,7 +132,7 @@ Select standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a
 		    <option value="option6">Option 6</option>
 		</select>
 	</div>
-	<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
@@ -149,7 +149,7 @@ Select standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a
 			    <option value="option6">Option 6</option>
 			</select>
 		</div>
-		<div class="su-error-message"><span class="su-icon-mini-alert"></span> Message d’erreur</div>
+		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
 	</div>
 </div>
 

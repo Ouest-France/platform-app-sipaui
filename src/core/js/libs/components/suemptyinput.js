@@ -20,10 +20,13 @@
                     d.sel = that.parentElement.querySelector(d.sel);
                 }
                 d.sel.value = '';
+                d.sel.focus();
             });
         } else {
             f.sel.value = '';
+            f.sel.focus();
         }
+
         
     }
 

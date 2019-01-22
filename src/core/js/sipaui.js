@@ -93,7 +93,7 @@ document.ofScan = function(outerScan){
             nbElts;
 
         if( outerScan ) { $toScan = $toScan.addBack( scanSel.sel ); }
-        
+
         for (var i = 0; i < $toScan.length; i++) {
             var $o = $toScan[i],
                 doneScans = $o.getAttribute('doneScans.of') || [];
@@ -126,7 +126,7 @@ document.onScan = function(sel,fn) {
     of.asyncLoadOf = function() {
 
         of.doc.ofScan(); // first scan sur tout le doc
-        
+
         var ofready = document.createEvent("Event");
         ofready.initEvent("ofready", false, true);
         var html = document.querySelector('html')
@@ -136,7 +136,7 @@ document.onScan = function(sel,fn) {
 
     var interOf = setInterval(function(){
         if( undefined === window.of ) return; // plugin du framework, pas de header pas plugin.
-        clearTimeout(interOf);
+        clearTimeout(interOf); //
 
         //=require libs/components/sutoggleclass.js
         //=require libs/components/suemptyinput.js
