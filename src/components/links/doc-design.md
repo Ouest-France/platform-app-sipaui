@@ -8,7 +8,7 @@ Les liens rendent les actions visibles et permettent aux utilisateurs d'effectue
 
 ## Types de liens
 ### Lien article
-Un «&nbsp;lien article&nbsp;» se trouve **parmi un bloc de texte** (article…). Il apporte une information supplémentaire.
+Un lien article se trouve **parmi un bloc de texte** (article…). Il apporte une information supplémentaire.
 
 
 Enabled | Hover / Focus / Pressed
@@ -18,7 +18,7 @@ Hauteur du texte  <br> Largeur du texte <br> Couleur : #E878787 <br> Taille de c
 
 
 ### Lien bouton
-Un «&nbsp;lien bouton&nbsp;» **se positionne comme un bouton** mais a l’apparence d’un lien. Son action est mineure par rapport aux boutons primaires et secondaires. Un tel lien ne peut donc pas être inclus dans du texte.
+Un lien bouton **se positionne comme un bouton** mais a l’apparence d’un lien. Son action est mineure par rapport aux boutons primaires et secondaires. Un tel lien ne peut donc pas être inclus dans du texte.
 
 Enabled | Hover / Focus / Pressed | Disabled
 ------------ | ------------- | ------------- |

@@ -16,18 +16,22 @@ Les indicateurs de progression représentent visuellement l'avancement d’un pa
 - Les indicateurs de progression affichent l'avancée d'une séquence en la divisant en **plusieurs étapes numérotées**.
 - Les étapes sont affichées dans un ordre logique de gauche à droite.
 - La **mise en avant de l'étape en cours** aide l'utilisateur à savoir où il se situe dans le tunnel et quelles étapes suivent.
-- Sur desktop, des libellés accompagnent l'indicateur de progression. Elles définissent des attentes claires pour l'utilisateur.
+- Sur desktop, des libellés accompagnent l'indicateur de progression. Ils définissent des attentes claires pour l'utilisateur.
 - Sur mobile, les libellés ne sont pas présents.
-- Les couleurs des indicateurs de progressions sont celles sur thème ou du sous-thème s'il existe.
+- Les couleurs des indicateurs de progressions sont d'abord celles du sous-thème s'il existe puis celles sur thème.
 
-### Thème Ouest-France
+### Indicateurs isolés
+Thème Ouest-France
 
 Enabled | Hover / Focus / Pressed | Check | Inactif
 ------------ | ------------- | ------------- |
 ![stepper__bubbles__active](design/stepper__bubbles__active.png)| htr | ![stepper__bubbles__check](design/stepper__bubbles__check.png) | ![stepper__bubbles__disabled](design/stepper__bubbles__disabled.png)
-Taille : 44px ?  <br> Contour : 1px  <br> Couleur : #E2001A <br> Texte : 16px, regular ?, police du thème, #333333 | - <br> - <br> - <br> - <br> - <br> Texte : #B40015 | ? | Opacité : 40 %
+Taille : 30px <br> Couleur : #E2001A <br> Texte : 16px, Arial bold, #FFFFFF | Taille : 30px  <br> Couleur : #B40015 <br> Texte : 16px, Arial bold, #FFFFFF | Taille : 30px <br> Couleur : #E2001A <br> Couleur du symbole : #FFFFFF | Taille : 30px <br> Couleur : #D4 trop claire ? <br> Texte : 16px, Arial bold, #FFFFFF
 
-### Sous-thème Abonnement
+
+Contour : 1px
+### Stepper
+Sous-thème Abonnement
 
 #### Mobile
 
@@ -47,7 +51,7 @@ Taille : 44px ?  <br> Contour : 1px  <br> Couleur : #E2001A <br> Texte : 16px, r
 
 ## 4- Bonnes pratiques
 
-- Chaque étape présente des actions de la part de l'utilisateur. Une simple information ne nécessite pas d'étape dédiée notamment en fin de formulaire.
+- Chaque étape présente minimum une action de la part de l'utilisateur. Une information ne nécessite pas d'étape dédiée notamment en fin de formulaire.
 - Les étiquettes qui accompagnent l'indicateur de progression sont claires, concises et courtes (2-3 mots maximum).
 - Utilisez 3 étapes minimums. Un stepper n'est pas nécessaire pour 1 ou 2 étapes.
 - Utilisez 5 étapes maximums. Au-delà de ce nombre, le parcours utilisateur mérite d'être optimisé.

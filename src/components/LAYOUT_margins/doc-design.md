@@ -23,13 +23,13 @@ Taille | Mesure | Illustration
 
 ### Améliorer la compréhension
 
-- Les marges permettent d'optimiser la lisibilité d’une page et de facilité la lecture de l'information par l’utilisateur.
+- Les marges permettent d'**optimiser la lisibilité** d’une page et de **facilité la lecture** de l'information par l’utilisateur.
 - Lors de la lecture, plus l'espacement est grand, plus la compréhension est optimisée. Cependant, de grandes marges diminuent la vitesse de lecture et peuvent déstructurer une page.
 
 ### Clarifier les relations
 
-- Les espaces blancs sont des repères visuels.
-- Les différents types de marges créent des relations entre les éléments tels que des boutons, titres, articles, etc.
+- Les espaces blancs sont des **repères visuels**.
+- Les différents types de marges **créent des relations entre les éléments** tels que des boutons, titres, articles, etc.
 - Les petites marges entre les éléments provoquent une association étroite. Les éléments sont alors liés et forment une unité. Cela crée des sections de contenu sur la page sans avoir à utiliser de lignes ou d’autres éléments graphiques.
 - Inversement, les éléments qui ont une grande distance sont dissociés.
 
@@ -42,7 +42,10 @@ Taille | Mesure | Illustration
 **Do** <br/> Espacer suffisament les composants afin des les distinguer. |
 
  </div>
+</div>
 
+
+<div class="do-dont">
  <div class="dont">
 
 ![spacing__ex__dont](design/spacing__ex__dont.png) |
@@ -50,7 +53,7 @@ Taille | Mesure | Illustration
 **Don’t** <br/> Dans un formulaire, le label doit être plus proche du container lié. |
 
  </div>
- </div>
+</div>
 
 
 - Dans un formulaire, l'espace idéal entre 2 champs de texte est M : 20px.

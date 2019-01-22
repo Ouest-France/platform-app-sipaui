@@ -4,15 +4,15 @@ Les checkboxes permettent à l’utilisateur de sélectionner ou désélectionne
 
 ## Usage
 
-- Une case à cocher, quand elle est unique, permet un choix binaire. Par exemple, accepter ou non des conditions générales.
+- Une case à cocher, quand elle est unique, permet un **choix binaire**. Par exemple, accepter ou non des conditions générales.
 - Elle est considérée comme « activée » lorsqu’elle est cochée et « désactivée » lorsqu’elle est vide.
 
 
 ## Spécifications
 
-- Aucune, une ou plusieurs options peuvent être choisies.
-- Les cases à cocher sont indépendantes les unes des autres.
-- La zone de touch contient la case à cocher et le texte associé. Sa hauteur est de 34px.
+- **Aucune, une ou plusieurs options peuvent être choisies.**
+- Les cases à cocher sont **indépendantes les unes des autres**.
+- La **zone de touch contient la case à cocher et le texte associé**. Sa hauteur est de 34px.
 
 Desactivated / Hover | Activated / Focus | Error | Disabled
 ------------ | ------------- | ------------- | ------------- |
@@ -23,9 +23,9 @@ Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, border radiu
 
 #### Variation
 
-- Lorsque les options peuvent être regroupées, une case à cocher parent permet de rassembler l’ensemble de ces cases à cocher.
+- Lorsque les options peuvent être regroupées, une **case à cocher parent** permet de rassembler l’ensemble de ces cases à cocher.
 - La case à cocher parent est utilisée pour activer et désactiver toutes les cases à cocher enfants.
-- Lorsque les enfants ne sont pas tous dans le même état, elle affiche un état «&nbsp;indéterminé&nbsp;» (représenté par un tiret).
+- Lorsque les enfants ne sont pas tous dans le même état, elle affiche un **état «&nbsp;indéterminé&nbsp;»** (représenté par un tiret).
 
 Multiple désactivated / over | Multiple activated / focus | Multiple indeterminate
 ------------ | ------------- | ------------- |
@@ -38,13 +38,13 @@ Multiple désactivated / over | Multiple activated / focus | Multiple indetermin
 
 ![checkboxes__ex__error-with-message](design/checkboxes__ex__error-with-message.png)
 
-- Lors d'une sélection multiple, toutes les cases à cocher d'une sélection multiple ont un contour rouge.
+- Lors d'une **sélection multiple**, toutes les cases à cocher parents et enfants ont un contour rouge.
 
 ### Bonnes pratiques
 
 - La 1<sup>re</sup> lettre du bouton est en majuscule, le reste est en minuscule.
 - Le texte du bouton devrait être limité à une ligne (attention sur mobile).
-- N’utilisez pas de point à la fin du texte.
+- Evitez de mettre un point à la fin du texte.
 - Le texte doit être explicite, actif et positif.
 
 
@@ -65,8 +65,3 @@ Multiple désactivated / over | Multiple activated / focus | Multiple indetermin
 - Si les options s’excluent mutuellement, utilisez des radio boutons.
 - Lorsque l’utilisateur doit activer / désactiver une option ou pour exécuter une commande, un switch est recommandé.
 - Suite à un clic sur une case à cocher inactive, un message explique les raisons de cet état.
-
-## Autres composants
-
-- Checkboxes imbriquées
-- Etc.

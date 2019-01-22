@@ -4,8 +4,8 @@ Les boutons radio affichent un ensemble d’options parmi lesquelles l’utilisa
 
 ## Usage
 
-- Les boutons radio permettent de choisir entre deux à cinq options, par exemple une civilité.
-- L’utilisateur peut sélectionner une seule des options.
+- Les boutons radio permettent de **choisir entre deux à cinq options**, par exemple une civilité.
+- L’utilisateur peut **sélectionner une seule des options**.
 - La sélection des boutons radio s’exclut mutuellement. Dans une liste, si l’un des boutons radio est activé, tous les autres sont désactivés.
 
 
@@ -66,14 +66,14 @@ Lorsqu’aucun bouton radio n’est coché par défaut et qu’un choix est obli
 
 - La 1<sup>re</sup> lettre du texte est en majuscule, le reste est en minuscule.
 - N’utilisez pas de point à la fin du texte.
-Le texte doit décrire le choix de manière claire et distincte.
+- Le texte doit décrire le choix de manière claire et distincte.
 - Afficher les options dans un ordre logique, par ex&nbsp;: les plus susceptibles d’être sélectionnées en premier.
 - Lorsque l’espace est suffisant et que la lisibilité est optimale, les boutons radio sont disposés horizontalement. L’espacement entre chaque élément est constant.
 
 ![button-radio__ex__opposite](design/button-radio__ex__opposite.png)
 - Par défaut, les boutons radio peuvent être désactivés ou bien activés. Cependant, il est préférable d’activer une des options, la plus probable ou la première.
 - Si un état non sélectionné est nécessaire, ajoutez simplement un bouton radio “Aucun”.
-- L’indicateur de groupe qui accompagne des boutons radio n’est pas obligatoire, ex : civilité.
+- L’indicateur de groupe (composant Label) qui accompagne des boutons radio n’est pas obligatoire, ex : civilité.
 
 ## Autres composants
 

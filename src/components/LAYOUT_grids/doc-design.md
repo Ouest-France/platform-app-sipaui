@@ -5,7 +5,7 @@ Une grille est une armature qui permet d'organiser une page et son contenu. Les 
 
 ## Usage
 
-La grille est une aide autant pour le concepteur que pour l'utilisateur. Cela permet d'atteindre un équilibre harmonieux pour l'espacement vertical entre les différents blocs. On obtient alors des pages plus lisibles et variés tout en assurant une cohérence générale.
+La grille est une aide autant pour le concepteur que pour l'utilisateur. Cela permet d'atteindre un équilibre harmonieux de l'espacement vertical entre les différents blocs. On obtient alors des pages plus lisibles et variés tout en assurant une cohérence générale.
 
 ## Anatomie
 
@@ -15,10 +15,11 @@ Une grille est constituée de colonnes, séparées par des gouttières permettan
 ### Colonnes
 
 - Les colonnes permettent de positionner les éléments horizontalement.
-- Sur mobile, la grille comporte **6 colonnes.**
-- **A partir 768px, la grille contient 24 colonnes.**
-- Elles peuvent être imbriquées.
+- **Sur mobile**, la grille comporte **6 colonnes.**
+- **A partir 768px**, la grille contient **24 colonnes.**
 - La largeur des colonnes varie en fonction de la taille d'écran.
+- Elles peuvent être imbriquées les unes dans les autres.
+
 
 ### Gouttières
 
@@ -40,49 +41,20 @@ Gouttières | 20px | 20px | 20px | 20px | 20px
 <div class="do-dont">
 <div class="do">
 
-![grid__320](design/grid__320.png) |
------------- |
-**Do** <br/> Écran mobile de 320px
-
-</div>
-</div>
+![grid__320](design/grid__320.png)
+<br/> Écran mobile de 320px
 
 
-<div class="do-dont">
-<div class="do">
-
-![grid__360](design/grid__360.png) |
- ------------ |
-**Do** <br/> Écran mobile de 360px
-
-</div>
-</div>
+![grid__360](design/grid__360.png)
+<br/> Écran mobile de 360px
 
 
-
-<div class="do-dont">
-<div class="do">
-
-![grid__940](design/grid__940.png) |
------------- |
-**Do** <br/> Écran tablette de 940px
-
- </div>
- </div>
+![grid__940](design/grid__940.png)
+<br/> Écran tablette de 940px
 
 
- <div class="do-dont">
- <div class="do">
-
-![grid__1260](design/grid__1260.png) |
- ------------ |
- **Do** <br/> Écran desktop de 1260px
-
-  </div>
-  </div>
-
-
-
+![grid__1260](design/grid__1260.png)
+<br/> Écran desktop de 1260px
 
 ### Autres composants
 - Marges

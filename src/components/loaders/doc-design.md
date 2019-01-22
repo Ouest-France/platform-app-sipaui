@@ -30,7 +30,7 @@ Les loaders sont des animations en boucle qui indiquent à l’utilisateur qu'un
 ------------ |
 **Do** <br/> Un loader centré sur l'écran indique que l'ensemble du processus est en cours de chargement.
 
- </div>
+</div>
  </div>
 
 
