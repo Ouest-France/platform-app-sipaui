@@ -25,7 +25,7 @@ Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, border radiu
 
 - Lorsque les options peuvent être regroupées, une **case à cocher parent** permet de rassembler l’ensemble de ces cases à cocher.
 - La case à cocher parent est utilisée pour activer et désactiver toutes les cases à cocher enfants.
-- Lorsque les enfants ne sont pas tous dans le même état, elle affiche un **état «&nbsp;indéterminé&nbsp;»** (représenté par un tiret).
+- Lorsque les enfants ne sont pas tous dans le même état, elle affiche un **état «&nbsp;indéterminé&nbsp;»** représenté par un tiret.
 
 Multiple désactivated / over | Multiple activated / focus | Multiple indeterminate
 ------------ | ------------- | ------------- |

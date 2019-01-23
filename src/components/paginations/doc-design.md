@@ -1,6 +1,6 @@
 # Paginations / Paginations
 
-La pagination aident les utilisateurs à naviguer dans de grandes quantités de données.
+La pagination aident les utilisateurs à naviguer dans de grandes quantités de données. Une ligne de boutons est présntée avec des numéros cliquables.
 
 ## Usage
 
@@ -68,3 +68,6 @@ Type | Illustration
 
  </div>
  </div>
+
+
+ - Cette technique nécessite plus d’actions qu'un scroll infini pour l’utilisateur et elle est moins agréable et fluide à utiliser.

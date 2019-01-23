@@ -7,7 +7,7 @@ Elles sont intentionnelles et étudiées, comme tout élément d’une interface
 
 - Les marges permettent le placement cohérent des éléments, des composants dans une interface.
 
-- Les marges sont uniquement externes. Les paddings sont intégré dans chaque composant.
+- Les marges sont uniquement externes. Les paddings sont intégrés dans chaque composant.
 
 ## Types de Marges
 

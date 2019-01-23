@@ -25,11 +25,11 @@ Le champ mot de passe présente toutes les caractéristiques (intéraction, poli
 - La visibilité du mot de passe permet de réduire les erreurs.
 - La saisie du mot de passe est masquée par défaut. Des ellipses ou des astérisques, selon le système d'exploitation sont affichées pour représenter chaque caractère du mot de passe saisi : •••••••.
 - Suite à la validation du formulaire, l'état de visibilité reste identique.
-### Icônes “œil”
-- L'icône “œil” permet d'afficher les caractères saisis. Elle apparait dès la saisi du 1er caractère.
-- L'icône “œil” barré” permet de masquer les caractères saisis.
-- Les icônes “oeil” et “oeil barré” ont les caractéristiques d’une icône d’un composant text field.
-- Lorsque l’input est en focus, l’icône œil se situe à 5???px à gauche de l’icône “ croix “.
+### Icônes “voir”
+- Cet icône permet d'afficher les caractères saisis. Elle apparait dès la saisi du 1er caractère.
+- L'icône “œil” barré” permet de masquer les caractères saisis. **?**
+- Les icônes “voir” et “oeil barré” ont les caractéristiques d’une icône d’un composant text field.
+- Lorsque l’input est en focus **?**, l’icône “voir” est collé à gauche de l’icône “ croix “. 
 !!! image d’illustration !!! X puis oeil
 
 ### Barre de sécurité

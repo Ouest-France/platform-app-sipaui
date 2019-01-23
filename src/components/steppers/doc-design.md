@@ -24,7 +24,7 @@ Les indicateurs de progression représentent visuellement l'avancement d’un pa
 Thème Ouest-France
 
 Enabled | Hover / Focus / Pressed | Check | Inactif
------------- | ------------- | ------------- |
+------------ | ------------- | ------------- | ------------- |
 ![stepper__bubbles__active](design/stepper__bubbles__active.png)| htr | ![stepper__bubbles__check](design/stepper__bubbles__check.png) | ![stepper__bubbles__disabled](design/stepper__bubbles__disabled.png)
 Taille : 30px <br> Couleur : #E2001A <br> Texte : 16px, Arial bold, #FFFFFF | Taille : 30px  <br> Couleur : #B40015 <br> Texte : 16px, Arial bold, #FFFFFF | Taille : 30px <br> Couleur : #E2001A <br> Couleur du symbole : #FFFFFF | Taille : 30px <br> Couleur : #D4 trop claire ? <br> Texte : 16px, Arial bold, #FFFFFF
 
@@ -52,7 +52,7 @@ Sous-thème Abonnement
 ## 4- Bonnes pratiques
 
 - Chaque étape présente minimum une action de la part de l'utilisateur. Une information ne nécessite pas d'étape dédiée notamment en fin de formulaire.
-- Les étiquettes qui accompagnent l'indicateur de progression sont claires, concises et courtes (2-3 mots maximum).
+- Les étiquettes qui accompagnent l'indicateur de progression sont claires, concises et courtes (2-3 mots maximums).
 - Utilisez 3 étapes minimums. Un stepper n'est pas nécessaire pour 1 ou 2 étapes.
 - Utilisez 5 étapes maximums. Au-delà de ce nombre, le parcours utilisateur mérite d'être optimisé.
 - Évitez d'utiliser plusieurs steppers sur une même page.

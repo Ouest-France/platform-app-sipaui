@@ -33,9 +33,9 @@ Une grille est constituée de colonnes, séparées par des gouttières permettan
 
 Taille de l'écran | 320 à 359px | 360 à 767px | 768 à 979px | 980 à 1279px | À partir de 1280px
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
-Nombre de colonnes | 6 | 6 | 24 | 24 | 24
-Taille de la marge externe | 20px | 30px | 49px **!** et plus | 10px et plus | 10px et plus
-Largeur du container  | variable  |  variable | 670px **?**  | 960px  | 1260px
+Nombre de colonnes | 6 | 6 | 6 | 24 | 24
+Taille de la marge externe | 20px | 30px | 50px | 10px et plus | 10px et plus
+Largeur du container  | variable  |  variable | variable | 960px  | 1260px
 Gouttières | 20px | 20px | 20px | 20px | 20px
 
 <div class="do-dont">
