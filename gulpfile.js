@@ -143,7 +143,11 @@ gulp.task("loader-storybook", ["clean", "build-stories"], function() {
 
     var imports = components.map(component =>
         ['design', 'html', 'vuejs']
-            .map(type => 'import doc_' + type + '_' + component.replace('-', '_') + ' from \'../../../dist/components/' + component + '/doc-' + type + '.md\';')
+            .map(type => {
+                if(fs.existsSync('./dist/components/' + component + '/doc-' + type + '.md'))
+                    return 'import doc_' + type + '_' + component.replace('-', '_') + ' from \'../../../dist/components/' + component + '/doc-' + type + '.md\';';
+                else return '';
+            })
             .join(`
 `)
         )
@@ -155,7 +159,11 @@ gulp.task("loader-storybook", ["clean", "build-stories"], function() {
         return `storiesOf(\'`+component+`\', module)
     .addDecorator(withKnobs)
     ` + ['design', 'html', 'vuejs']
-            .map(type => '.add(\'' + type + '\', doc(doc_' + type + '_' + component.replace('-', '_') + '))')
+            .map(type => {
+                if(fs.existsSync('./dist/components/' + component + '/doc-' + type + '.md'))
+                    return '.add(\'' + type + '\', doc(doc_' + type + '_' + component.replace('-', '_') + '))';
+                else return '';
+            })
             .join(`
     `) + `
 ;
