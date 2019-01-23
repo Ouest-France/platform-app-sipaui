@@ -128,7 +128,7 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 	<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" required required value="Lorem ipsum">
 	<div class="su-input-actions-area">
 		<button type="button" class="su-input-action" data-ofemptyinput>
-			<i class="su-icon">fermer</i>
+			<i class="su-icon">vider</i>
 		</button>
 	</div>
 </div>
@@ -140,7 +140,7 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 		<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" required required value="Lorem ipsum">
 		<div class="su-input-actions-area">
 			<button type="button" class="su-input-action" data-ofemptyinput>
-				<i class="su-icon">fermer</i>
+				<i class="su-icon">vider</i>
 			</button>
 		</div>
 	</div>
@@ -155,7 +155,7 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 	<div class="su-relative su-input-icon">
 		<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
 		<button type="button" class="su-input-action" data-ofemptyinput>
-			<i class="su-icon">fermer</i>
+			<i class="su-icon">vider</i>
 		</button>
 	</div>
 	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
@@ -168,7 +168,7 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 			<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' required value="Value">
 			<div class="su-input-actions-area">
 				<button type="button" class="su-input-action" data-ofemptyinput>
-					<i class="su-icon">fermer</i>
+					<i class="su-icon">vider</i>
 				</button>
 			</div>
 		</div>
