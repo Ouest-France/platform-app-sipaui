@@ -10,7 +10,7 @@ Ci-dessous, le catalogue des icônes disponibles dans la fonte *su-icons*. Ces i
 
 ## Exemples
 
-L’intégration d’une icône peut se faire via la balise HTML neutre et inline `<span>` ou **mieux, via la balise de <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/i"  target="_blank" rel="noopener">texte différenciant</a>** `<i>`. On lui applique alors la classe `su-icon` ou `su-icon-mini` **si le picto est disponible en petit**. On écrit alors en contenu de la balise, le texte de référence de l’icône souhaitée.
+L’intégration d’une icône peut se faire via la balise HTML neutre et inline `<span>`, ou **mieux, via la balise de <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/i"  target="_blank" rel="noopener">texte différenciant</a>** `<i>`. On lui applique la classe `su-icon`, ou `su-icon-mini` **si le picto est disponible en petit**. On écrit alors en contenu de la balise, le texte de référence de l’icône souhaitée.
 
 ### Icône standard (en 24px) 
 ```html
@@ -31,42 +31,42 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 <div class="catalogue-icones">
 	<div class="icone"><!------------------------------------------------- Fermer-->
 		<h3>Fermer</h3>
-		<pre><code>&lt;i class="su-icon">
+		<pre class="language-html"><code>&lt;i class="su-icon">
     fermer
 &lt;/i></code></pre>
-		<div>Glyphe&nbsp;: <code>\e900</code></div>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e900</code></div>
 		<div><i class="su-icon">fermer</i></div>
 	</div>
 	<div class="icone"><!------------------------------------------------- Flèche bas-->
 		<h3>Flèche bas</h3>
-		<pre><code>&lt;i class="su-icon">
+		<pre class="language-html"><code>&lt;i class="su-icon">
     fleche_bas
 &lt;/i></code></pre>
-		<div>Glyphe&nbsp;: <code>\e901</code></div>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e901</code></div>
 		<div><i class="su-icon">fleche_bas</i></div>
 	</div>
 	<div class="icone"><!------------------------------------------------- Vider-->
 		<h3>Vider</h3>
-		<pre><code>&lt;i class="su-icon">
+		<pre class="language-html"><code>&lt;i class="su-icon">
     vider
 &lt;/i></code></pre>
-		<div>Glyphe&nbsp;: <code>\e902</code></div>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e902</code></div>
 		<div><i class="su-icon">vider</i></div>
 	</div>
 	<div class="icone"><!------------------------------------------------- Montrer-->
 		<h3>Montrer</h3>
-		<pre><code>&lt;i class="su-icon">
+		<pre class="language-html"><code>&lt;i class="su-icon">
     montrer
 &lt;/i></code></pre>
-		<div>Glyphe&nbsp;: <code>\e903</code></div>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e903</code></div>
 		<div><i class="su-icon">montrer</i></div>
 	</div>
 	<div class="icone"><!------------------------------------------------- Alerte-->
 		<h3>Alerte</h3>
-		<pre><code>&lt;i class="su-icon">
+		<pre class="language-html"><code>&lt;i class="su-icon">
     alerte
 &lt;/i></code></pre>
-		<div>Glyphe&nbsp;: <code>\e904</code></div>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e904</code></div>
 		<div><i class="su-icon">alerte</i></div>
 	</div>
 </div>
@@ -76,10 +76,10 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 <div class="catalogue-icones">
 	<div class="icone"><!------------------------------------------------- Alerte mini-->
 		<h3>Alerte mini</h3>
-		<pre><code>&lt;i class="su-icon-mini">
+		<pre class="language-html"><code>&lt;i class="su-icon-mini">
     alerte-mini
 &lt;/i></code></pre>
-		<div>Glyphe&nbsp;: <code>\e1004</code></div>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e1004</code></div>
 		<div><i class="su-icon-mini">alerte-mini</i></div>
 	</div>
 </div>
