@@ -74,7 +74,7 @@ L’aspect inactif peut être porté par la classe `su-disabled` (issu des *help
 <button class="su-button su-subscription su-disabled">Bouton abonnement inactif</button>
 ```
 <div class="sipaui">
-	<button class="su-button su-primary su-" disabled="disabled">Bouton primaire</button> <button class="su-button su-secondary su-disabled">Bouton secondaire inactif</button> <button class="su-button su-subscription su-disabled">Bouton abonnement inactif</button>
+	<button class="su-button su-primary" disabled="disabled">Bouton primaire</button> <button class="su-button su-secondary su-disabled">Bouton secondaire inactif</button> <button class="su-button su-subscription su-disabled">Bouton abonnement inactif</button>
 </div>
 
 ### Petits boutons
