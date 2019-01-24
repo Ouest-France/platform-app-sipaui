@@ -71,14 +71,14 @@ $inputTextPlus: $inputTextBase + ', input[type="date"]' ;
     }
     .su-input-action {
         @include flexDisplay(); // sert à centrer verticalement l’icône;
-        @include flexJustify(center, center)
+        @include flexJustify(center, center);
+        @include flexAlign(center);
         height: $size-button;
         width: $size-button;
         border: none;
         background: none;
         cursor: pointer;
         color: $color-main-5;
-        font-size: $font-size-medium1 * 2;
         -webkit-appearance: none;
         cursor: text;
 
