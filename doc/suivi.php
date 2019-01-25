@@ -32,6 +32,7 @@
                 	<li>Select simple</li>
                 	<li>Marges</li>
                 	<li>Texte standard</li>
+                	<li>Titres</li>
                 	<li>Police d’icônes</li>
                 </ul>
             </article>
@@ -41,10 +42,6 @@
 
                 <ul class="su-old-not-list table">
                 	<li class="row">
-                	    <div class="cell"><span class="version">0.6</span></div>
-                	    <div class="cell">Titres.</div>
-                    </li>
-                    <li class="row">
                 	    <div class="cell"><span class="version">1.0</span></div>
                 	    <div class="cell">Points de rupture et grille.</div>
                     </li>
