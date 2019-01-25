@@ -29,7 +29,7 @@ Le champ mot de passe présente toutes les caractéristiques (intéraction, poli
 - Cet icône permet d'afficher les caractères saisis. Elle apparait dès la saisi du 1er caractère.
 - L'icône “œil” barré” permet de masquer les caractères saisis. **?**
 - Les icônes “voir” et “oeil barré” ont les caractéristiques d’une icône d’un composant text field.
-- Lorsque l’input est en focus **?**, l’icône “voir” est collé à gauche de l’icône “ croix “. 
+- Lorsque l’input est en focus **?**, l’icône “voir” est collé à gauche de l’icône “ croix “.
 !!! image d’illustration !!! X puis oeil
 
 ### Barre de sécurité
@@ -40,7 +40,7 @@ Le champ mot de passe présente toutes les caractéristiques (intéraction, poli
 - La sécurité évolue au et à mesure que l’utilisateur saisi les caractères. 5 niveaux sont représentés :
 
 Niveau | Illustration | Couleur
------------- | ------------- |------------ | ------------- |
+------------ | ------------- |------------ |
 **1** | ![password__security__level-0](design/password__security__level-0.png) à modifier | #D4D4D4
 **2** |  | #B40015
 **3** | image | #FFCC33
