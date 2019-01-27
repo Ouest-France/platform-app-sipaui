@@ -48,79 +48,85 @@
         width: 150px;
         padding: 5px;
     }
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    div {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        color: #000;
-        font-weight: 300 !important;
+
+    body #root > div > div[style*="border-top"] {
         border: none !important;
-    }
-    h1 {
-        font-size: 4rem !important;
-        border: none !important;
-    }
-    h2 {
-        font-size: 3.4rem !important;
-        margin: 100px 0 20px !important;
-        padding: 0 !important;
-    }
-    h3 {
-        font-size: 2.8rem !important;
-        margin: 50px 0 10px !important;
-    }
-    h4 {
-        font-size: 2.4rem !important;
-        margin: 30px 0 5px !important;
-    }
-    h5 {
-        font-size: 1.9rem !important;
-        margin: 25px 0 5px !important;
-    }
-    h2 + h3,
-    h3 + h4,
-    h4 + h5 {
-        margin-top: 0 !important;
-    }
-    p,
-    div,
-    td {
-        color: #555;
-    }
-    .markdown-body .highlight pre,
-    .markdown-body pre,
-    .markdown-body code {
-        background:  #eee!important;
     }
 
-    a,
-    .link-button {
-        color: #e2001a !important;
-        text-decoration: none !important;
+    body .markdown-body p,
+    body .markdown-body h1,
+    body .markdown-body h2,
+    body .markdown-body h3,
+    body .markdown-body h4,
+    body .markdown-body h5,
+    body .markdown-body div {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body .markdown-body h1,
+    body .markdown-body h2,
+    body .markdown-body h3,
+    body .markdown-body h4,
+    body .markdown-body h5 {
+        color: #000;
+        font-weight: 300;
+        border: none;
+    }
+    body .markdown-body h1,
+    body #root div[style] > h1 {
+        font-size: 4rem;
+        border: none;
+    }
+    body .markdown-body h2 {
+        font-size: 3.4rem;
+        margin: 100px 0 20px;
+        padding: 0;
+    }
+    body .markdown-body h3 {
+        font-size: 2.8rem;
+        margin: 50px 0 10px;
+    }
+    body .markdown-body h4 {
+        font-size: 2.4rem;
+        margin: 30px 0 5px;
+    }
+    body .markdown-body h5 {
+        font-size: 1.9rem;
+        margin: 25px 0 5px;
+    }
+    body .markdown-body h2 + h3,
+    body .markdown-body h3 + h4,
+    body .markdown-body h4 + h5 {
+        margin-top: 0;
+    }
+    body .markdown-body p,
+    body .markdown-body div,
+    body .markdown-body td {
+        color: #555;
+    }
+    body .markdown-body .highlight pre,
+    body .markdown-body pre,
+    body .markdown-body code {
+        background:  #eee;
+    }
+
+    body .markdown-body a,
+    body .markdown-body .link-button {
+        color: #e2001a;
+        text-decoration: none;
         border-bottom: 0;
     }
-    .link-button {
+    body .markdown-body .link-button {
         font-weight: 800;
         display: inline-block;
         height: 44px;
         line-height: 44px;
     }
-    .a:hover,
-    .a:focus,
-    .a:active
-    .link-button:hover,
-    .link-button:focus,
-    .link-button:active {
+    body .markdown-body .a:hover,
+    body .markdown-body .a:focus,
+    body .markdown-body .a:active
+    body .markdown-body .link-button:hover,
+    body .markdown-body .link-button:focus,
+    body .markdown-body .link-button:active {
             color: #b40015;
             text-decoration: underline;
         }
