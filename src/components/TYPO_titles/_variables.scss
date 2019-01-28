@@ -5,6 +5,66 @@
 */
 
 
-// TEXTE STANDARD
+// TITRES NON-ÉDITORIAUX
 
-// $color-link-article:                 $color-main-5             !default;
+$font-family-titles:                $font-family-secondaire             !default;
+$font-weight-titles:                $font-weight-medium                 !default;
+
+$color-titles:                      $color-main-7                       !default;
+$color-h1:                          null                                !default;
+$color-h2:                          null                                !default;
+$color-h3:                          null                                !default;
+
+$text-transform-titles:             null                                !default;
+$text-transform-h1:                 null                                !default;
+$text-transform-h2:                 null                                !default;
+$text-transform-h3:                 null                                !default;
+
+$font-size-h1:                3rem               !default;
+$font-size-h2:                2.4rem             !default;
+$font-size-h3:                1.8rem             !default;
+$font-size-h1-desktop:        4rem               !default;
+$font-size-h2-desktop:        3rem               !default;
+$font-size-h3-desktop:        1.8rem             !default;
+
+
+// TITRES ÉDITORIAUX
+
+$font-family-titles-edito:                $font-family-titles                 !default;
+$font-family-h1-edito:                    $font-family-base                   !default;
+$font-weight-titles-edito:                $font-weight-titles                 !default;
+$font-weight-h1-edito:                    $font-weight-bold                   !default;
+$font-weight-h2-edito:                    null                                !default;
+$font-weight-h3-edito:                    null                                !default;
+$font-weight-h4-edito:                    null                                !default;
+$font-weight-h5-edito:                    null                                !default;
+$font-weight-h6-edito:                    null                                !default;
+
+$color-titles-edito:                      $color-titles                       !default;
+$color-h1-edito:                          null                                !default;
+$color-h2-edito:                          null                                !default;
+$color-h3-edito:                          null                                !default;
+$color-h4-edito:                          null                                !default;
+$color-h5-edito:                          null                                !default;
+$color-h6-edito:                          null                                !default;
+
+$text-transform-titles-edito:             null                                !default;
+$text-transform-h1-edito:                 null                                !default;
+$text-transform-h2-edito:                 null                                !default;
+$text-transform-h3-edito:                 null                                !default;
+$text-transform-h4-edito:                 null                                !default;
+$text-transform-h5-edito:                 null                                !default;
+$text-transform-h6-edito:                 null                                !default;
+
+$font-size-h1-edito:                2.4rem             !default;
+$font-size-h2-edito:                2.2rem             !default;
+$font-size-h3-edito:                1.8rem             !default;
+$font-size-h4-edito:                1.6rem             !default;
+$font-size-h5-edito:                1.4rem             !default;
+$font-size-h6-edito:                1.2rem             !default;
+$font-size-h1-edito-desktop:        3.8rem             !default;
+$font-size-h2-edito-desktop:        3rem               !default;
+$font-size-h3-edito-desktop:        2.2rem             !default;
+$font-size-h4-edito-desktop:        2rem               !default;
+$font-size-h5-edito-desktop:        1.8rem             !default;
+$font-size-h6-edito-desktop:        1.6rem             !default;
