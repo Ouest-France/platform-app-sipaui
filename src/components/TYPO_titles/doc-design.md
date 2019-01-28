@@ -14,7 +14,7 @@ Les titres sont les textes les plus grands, ils sont courts et importants. Ils s
 
 ### La balise h1
 
-- La balise h1 est **l’élément typographique le plus visible de la page**. Elle correspond au titre éditorial qui fait partie des « zones chaudes » en matière de référencement. En le lisant on doit pouvoir identifier le sujet de la page.
+- La balise h1 est **l’élément typographique le plus visible de la page**. Elle correspond au titre éditorial qui fait partie des « zones chaudes » en matière de référencement. En le lisant, on doit pouvoir identifier le sujet de la page.
 
 - **Les mots clés de la page sont au début du h1.** Google leur accordera davantage de poids.
 - **Le titre doit être concis.** Plus le titre sera long, plus les mots clés seront dilués.

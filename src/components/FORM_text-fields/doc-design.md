@@ -44,7 +44,7 @@ Type | Illustration
   - Couleur : #333333
 
 #### Texte du placeholder
-- Le texte du placeholder est une description supplémentaire au label. En aucun cas, il ne le substitue. Il doit guider l’utilisateur sur le format de données attendu. On peut ainsi présenter un exemple («&nbsp;prenom.nom@domaine.fr&nbsp;») ou un pattern (date&nbsp;: «&nbsp;jj/mm/aaaa&nbsp;»).
+- Le texte du placeholder est une description supplémentaire au label. En aucun cas, il ne le substitue. Il doit guider l’utilisateur sur le format de données attendu. On peut ainsi présenter un exemple (&nbsp;prenom.nom@domaine.fr&nbsp;) ou un pattern (date&nbsp;: &nbsp;jj/mm/aaaa&nbsp;).
 - Il est facultatif.
 - Il se trouve dans le container et n'est plus visible lors de la saisie.
 - Padding gauche et à droite : 10px du container (11px avec le filet)

@@ -21,7 +21,7 @@ Afin d’offrir un lot de pictogrammes SipaUI intègre une police d’icônes. C
 - La taille de base est **24px**.
 - Une plus petite taille est utilisée pour des besoins particuliers&nbsp;: **14px**, par exemple pour l'icône correspondant à l'heure de publication d'un article.
 
-## Bonne pratique
+## Bonnes pratiques
 
 - Les icônes sont particulièrement **épurées**.
-- Les icônes doivent de préférence apparaître à gauche ou à droite du texte associé. Elles sont centrés horizontalement.
+- Les icônes doivent de préférence apparaître à gauche ou à droite du texte associé. Elles sont centrées horizontalement.

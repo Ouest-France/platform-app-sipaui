@@ -7,13 +7,13 @@ Dans une page, l'interface est organisée de manière claire et logique en fonct
 
 ## Usage
 
-- Les points de ruptures sont utilisés pour les **sites responsives**. Ils s'inscrivent dans une conception Mobile first.
+Les points de ruptures sont utilisés pour les **sites responsives**. Ils s'inscrivent dans une conception Mobile first.
 
 
-### Thème Ouest-France
+##
 
 Nom | XS | SM | MD | LG | XL
------------- | ------------- | ------------- | ------------- |
+------------ | ------------- | ------------- | ------------- | ------------- |
 Taille | 320 à 359px | 360 à 767px | 768 à 979px | 980 à 1279px | À partir de 1280px
 Type* | Mobile | Mobile | Tablette portrait | Tablette paysage | Desktop
 

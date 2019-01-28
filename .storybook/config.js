@@ -1,34 +1,44 @@
-import { configure } from '@storybook/vue';
-import { setOptions } from '@storybook/addon-options';
+import { addDecorator, configure } from '@storybook/vue';
 import { configureViewport } from '@storybook/addon-viewport';
 import { themes } from '@storybook/components';
 
 import Vue from 'vue';
 import Vuex from 'vuex'; // Vue plugins
 
+import { withOptions } from '@storybook/addon-options';
+
 // Install Vue plugins.
 Vue.use(Vuex);
 
 var theme_sipaui = themes.dark;
 //theme_sipaui.mainBackground= 'radial-gradient(circle at 80% 0, #333, #000)';
-theme_sipaui.mainBackground= '#333';
-theme_sipaui.mainFill= 'rgba(255,255,255, .2)'; // coll de droite + Filter à gauche
-theme_sipaui.mainBorder= 'none';
-theme_sipaui.mainBorderRadius= '1';
-theme_sipaui.barFill= 'rgba(0,0,0, 1)'; // onglets coll de droite
-theme_sipaui.mainTextFace='Arial, Helvetica, sans-serif';
-theme_sipaui.mainTextSize='16';
-theme_sipaui.inputFill= 'transparent';
-theme_sipaui.barSelectedColor= '#fff'; // onglets coll de droite
-theme_sipaui.mainTextColor= '#fff';
-theme_sipaui.dimmedTextColor= 'rgba(255,255,255, .7)';
-theme_sipaui.highlightColor= '#000';
+theme_sipaui.mainBackground= '#333';        //applied to root `background`
+theme_sipaui.mainBorder= 'none';            //applied to panels `border`
+//theme_sipaui.mainBorderColor= 'rgba(0,0,0,0.1)'; //applied for most borders
+theme_sipaui.mainBorderRadius= '1'; //applied to panels, buttons, inputs
+theme_sipaui.mainFill= 'rgba(255,255,255, .2)'; // colonne de droite + Filter à gauche
+theme_sipaui.barFill= 'rgba(0,0,0, 1)';     // onglets colonne de droite
+theme_sipaui.inputFill= 'transparent';      //applied to Input `background`
+theme_sipaui.mainTextFace='Arial, Helvetica, sans-serif'; //applied to root `font-family`
+theme_sipaui.mainTextColor= '#fff';         //applied to root & buttons & input `color`
+theme_sipaui.mainTextSize='16';             //applied to root
+theme_sipaui.dimmedTextColor= 'rgba(255,255,255, .7)'; //applied in less important text
+theme_sipaui.highlightColor= '#000';        //applied to indicate selection
+//theme_sipaui.successColor= '#0edf62';     //applied to indicate positive
+//theme_sipaui.failColor= '#ff3f3f';        //applied to indicate negative
+//theme_sipaui.warnColor= 'orange';         //applied to indicate ow-ow
+//theme_sipaui.monoTextFace= '';            //applied to pre
+theme_sipaui.layoutMargin= '0';      //applied to space panels
+//theme_sipaui.overlayBackground= 'linear-gradient(to bottom right, rgba(233, 233, 233, 0.6), rgba(255, 255, 255, 0.8))';         //applied to overlay `background`
+theme_sipaui.barSelectedColor= '#fff';      // onglets colonne de droite
 theme_sipaui.brand= {
     background: 'radial-gradient(circle at 100% 100%, #be0030, #6e0030)'
 };
 
+
 // Option defaults:
-setOptions({
+addDecorator(
+  withOptions({
     /**
      * name to display in the top left corner
      * @type {String}
@@ -53,7 +63,7 @@ setOptions({
      * display panel that shows addon configurations
      * @type {Boolean}
      */
-    showAddonPanel: true,
+    showAddonPanel: false,
     /**
      * display floating search box to search through stories
      * @type {Boolean}
@@ -78,7 +88,7 @@ setOptions({
      *   /\/|\./ - split by `/` or `.`
      * @type {Regex}
      */
-    hierarchySeparator: null,
+    hierarchySeparator: /\_/,
     /**
      * regex for finding the hierarchy root separator
      * @example:
@@ -103,6 +113,7 @@ setOptions({
      */
     enableShortcuts: false, // true by default
     theme: themes.dark,
-});
+  })
+);
 
 configure(() => require('../build/storybook/stories'), module);
