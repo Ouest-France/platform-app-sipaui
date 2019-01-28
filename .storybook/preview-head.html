@@ -3,7 +3,7 @@
     (function(){
         var theme = sessionStorage.getItem('theme') || 'of';
         var link = document.createElement('link');
-        link.id = 'theme_sipa';
+        link.id = 'theme_sipaui';
         link.rel = 'stylesheet';
         link.media ="screen";
         link.charset ="utf-8";
@@ -13,7 +13,7 @@
         script.src = 'js/sipaui.js';
         document.head.appendChild(script);
         var selector = document.createElement('select');
-        selector.id = 'theme_sipa_selector';
+        selector.id = 'theme_sipaui_selector';
 
         document.addEventListener('DOMContentLoaded', function(){
             document.body.appendChild(selector);
@@ -36,7 +36,7 @@
         margin: 0 10%;
     }
 
-    #theme_sipa_selector {
+    #theme_sipaui_selector {
         position: fixed;
         top: 20px;
         right: 20px;
