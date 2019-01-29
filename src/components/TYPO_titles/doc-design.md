@@ -44,6 +44,7 @@ Les balises H2 sont prises en compte pour le SEO.
 
 ### Contenu non éditorial
 **Les balises h1 à h6 sont des balises de titre (heading)** qui indiquent aux lecteurs et aux moteurs de recherche quelle est l’importance relative de chaque titre. Toutefois, comme cela a été expliqué dans <a href="#usage">l’usage</a>, il pourra être préférable de privilégier l’utilisation des classes à celle des balises. C’est le SEO qui doit guider le choix.
+Des balises H1 à H3 les composent.
 
 #### Mobile
 
