@@ -1,8 +1,8 @@
 # Titles / Titres
 
-Les titres sont normalement définis par leur balise HTML (`h1`à `h6`). Toutefois, certaines contraintes (notamment SEO) peuvent interdire l’utilisation de ces balises. Pour cela, des classes simulant l’apparence de ces balises ont été crées. Ainsi, il est possible de créer un texte qui aura l’apparence d’un titre de niveau 1 soit avec `<h1>Titre</h1`, soit avec la classe `su-h1`.
+Les titres sont normalement définis par leur balise HTML (`<h1>` à `<h6>`). Toutefois, certaines contraintes (notamment SEO) peuvent interdire l’utilisation de ces balises. Pour cela, des classes simulant l’apparence de ces balises ont été crées. Ainsi, il est possible de créer un texte qui aura l’apparence d’un titre de niveau 1 soit avec `<h1>Titre</h1>`, soit avec la classe `su-h1`.
 
-Par ailleurs, la charte graphique impose 2 déclinaisons de titres, en fonction de leur "univrers" d’affichage&nbsp;: les titres sur une page de contenu éditorial (les pages d’article) et les titres sur les autres pages (essentiellement les pages de listes d’articles comme la une, les locales, les pages tag…).
+Dans SipaUI, il existe 2 déclinaisons de titres, en fonction de leur "univers" d’affichage&nbsp;: les titres à l’intérieur d’un article complet (les pages d’article) et tous les autres (essentiellement de contenu non éditorial&nbsp;: rubriques, titres de listes d’articles, blocs partenaires…).
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
@@ -15,9 +15,9 @@ Par ailleurs, la charte graphique impose 2 déclinaisons de titres, en fonction 
 </div>
 
 
-## Pages non-éditoriales
+## Titres de contenu non éditorial
 
-Le style des titres des pages non éditoriales est le style de titre par défaut. Il n’y a que 3 niveaux de titres gérés (`<h1>`à `<h3>`).
+Le style des titres de contenu non éditorial est le style de titre par défaut. Il n’y a que 3 niveaux de titres gérés (`h1`à `h3`). Afin de ne pas donner de poids SEO à ces titres, il faudra en général préférer utiliser les classes `su-h1`…
 
 ```html
 <article>
@@ -71,9 +71,9 @@ Le style des titres des pages non éditoriales est le style de titre par défaut
 <!------------------–------------------–------------------–------------------–------------------–------------------–------------------–------------------–------------------– -->
 
 
-## Pages éditoriales
+## Titres dans les articles complet
 
-Le style des titres des pages éditoriales est lié à la présence de la classe `su-article` sur un parent. Les 6 niveaux de titre sont gérés.
+Le style des titres dans les articles est lié à la présence de la classe `su-article` sur un parent. Les 6 niveaux de titre sont gérés. Pour le SEO, il est très important d’utiliser ici les balises HTML `<h1>`&nbsp;->&nbsp;`<h6>`.
 
 ```html
 <article class="su-article">

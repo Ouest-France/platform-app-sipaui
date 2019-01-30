@@ -19,6 +19,7 @@
         color: $color-titles;
         text-transform: $text-transform-titles;
         margin: 0;
+        padding: 0;
     }
     h1,
     .su-h1 {
@@ -60,6 +61,7 @@
             line-height: $line-height-medium;
             color: $color-titles-edito;
             text-transform: $text-transform-titles-edito;
+            padding: 0;
         }
         h1,
         .su-h1 {

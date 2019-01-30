@@ -1,30 +1,26 @@
 ## Trouver un composant
 
 ### Arborescence
-La colonne de gauche liste les composants de **SipaUI** sous leur nom anglais. Certains sont regroupés par domaine («&nbsp;FORM&nbsp;» pour les éléments de formulaires, «&nbsp;LAYOUT&nbsp;» pour les éléments de mise en page…).
+Chaque composant de **SipaUI** est listé en anglais dans la colonne de gauche.
+- Les éléments de formulaires sont regroupés dans le domaine «&nbsp;FORM&nbsp;».
+- Les compsants liés à la mise en page sont présents dans «&nbsp;LAYOUT&nbsp;».
+- Les éléments typographiques sont affichés dans «&nbsp;TYPO&nbsp;».
 
 ### Filtre
-Le champ «&nbsp;Filter&nbsp;» en haut de la colonne permet de retrouver facilement un composant via un filtre sur le nom (anglais) du composant.
+Le champ «&nbsp;Filter&nbsp;» en haut de la colonne permet de retrouver facilement un composant suite à la saisi d'au moins 2 caratères. Cette recherche se réalise uniquement via le nom du composant en anglais.
 
-
-## Contenu de chaque composant
+## Comprendre chaque composant
 
 ### Design
-
-Correspond à la vision **design** fonctionnelle du composant.
-Comment s'en servir, dans quelles conditions, ce qu'il ne faut pas faire etc…
-
+La vision **design** expose les usages, les spécifications et les bonnes pratiques de chaque composant.
 
 ### HTML
-
-Correspond à la partie framework **HTML / CSS / JS** classique.
-
+La partie framework **HTML / CSS / JS** est décrite pour tous les composants.
 
 ### VueJS
+Certains composants ont un équivalent **Vue.js**.
 
-Correspond à son équivalent **Vue.js**
+## Décliner certains comopsants
+### Thème
 
-
-## Thèmes
-
-La liste déroulante «&nbsp;Thèmes&nbsp;» dans le coin supérieur droit permet de tester le composant dans 2 déclinaisons&nbsp;: standard (Ouest-France) et Voiles & Voiliers. 
+La liste déroulante «&nbsp;**Thème**&nbsp;» dans le coin supérieur droit permet de tester le composant sous 2 déclinaisons&nbsp;: standard (Ouest-France) et Voiles & Voiliers. Certains composants sont identiques quelque soit le thème.

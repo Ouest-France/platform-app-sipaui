@@ -1,6 +1,6 @@
 # Paginations / Paginations
 
-La pagination aident les utilisateurs à naviguer dans de grandes quantités de données. Une ligne de boutons est présntée avec des numéros cliquables.
+La pagination aident les utilisateurs à naviguer dans de grandes quantités de données.
 
 ## Usage
 
@@ -10,64 +10,61 @@ La pagination aident les utilisateurs à naviguer dans de grandes quantités de 
 
 ## Spécifications
 
-- Les pages sont numérotées à l'aide d'éléments graphiques.
+- Chaque page contient la même quantité d'éléments, à l'exception de la dernière page.
+- L'espace entre 2 points de navigation est constant XXpx ?
+- Les pages sont numérotées à l'aide d'éléments graphiques.
 
 ### Élément graphique
 
-Type | Illustration
------------- | ------------- |
-**Current** | image
-**Enabled** | image
-**Focus** | image
-**Disabled** | image
+Enabled | Hover / Focus / Pressed | Disabled
+------------ | ------------- | ------------- |
+image La page suivante seule Enabled | image La page suivante seule Hover / Focus / Pressed | La page suivante seule Disabled si 40 %
+Hauteur : 44px ??  <br> Largeur minimum 44px et padding 12px ?? <br> Couleur : #E2001A ??  <br> Contour : angle 3px <br> Taille de caractère : 16px ? <br> Graisse : bold ? <br> Police du thème | - <br> - <br> Couleur : #B40015  <br> - <br> - <br> - <br> | Opacité : 40 %
 
-### La page courante
+### Exemple
 
-- en plein #E2001A (La position en cours est mise en évidence par (couleur, épaisseur de trait ou un fort contraste.) ???
+#### La page courante
 
-### Enabled
+- La position actuelle est toujours mise en évidence afin que l'utilisateur puissent se repérer dans l'ensemble de la pagination.
 
-- Hauteur : 44px (30px actuellement) ???
-- Largeur : minimum 44px et padding 12px (30px actuellement) ???
-- Couleur : #333333 (iso bouton secondaire)???
-- Contour : angle 3px
-- Texte : 16px (14px actuellement), line-height ?, regular, police du thème
+#### La liste des pages
 
-### Hover / Focus / Pressed
+- Suite à un tape sur le chevron, une liste de page s'ouvre :
+  - Toutes les unités de la dizaine en cours s'affiche.
+  - La page courante est affichée mais inactive.
+  - Les dizaines, centaines et millièmes suivantes est listées le cas échéant.
 
-- Couleur : #B40015
+#### La page suivante
 
-### Disabled
+- L'accès à la page suivante est absent lorsque la page courante est la dernière.
 
-- Opacité : 40 %
+#### La dernière page
+
+- L'accès à la dernière page est absent lorsque la page courante est la dernière.
+- quid avant dernière ?
+
+#### La page précédente
+
+- L'accès à la page précédente est absent lorsque la page courante est la première.
+
+#### La première page
+
+- L'accès à la première page est absent lorsque la page courante est la dernière.
+- quid avant dernière ?
 
 ## Bonnes pratiques
 
-- L'ensemble de la pagination indique au minimum (sauf pour la page courante) :
-  - la page suivante
-  - la page précédente
-- D'autres pages optimisent le référencement et leur accès (certaines pages peuvent être affichées via un select)
-    - la page courante
-    - 5 pages précédent la page courante (sauf en début de pagination)
-    - 5 pages suivant la page courante (sauf fin de pagination)
-    - toutes les dizaines, centaines et les milliers disponibles au delà de la 5ème page suivante
-    - la dernière page
-!!image!!illustration Pge 1 sur 508
-- L'espace entre 2 points de navigation est constant XXpx ???
-- La pagination est centrée horizontalement par rapport à la liste des éléments.
-- Chaque page contient la même quantité d'éléments, à l'exception de la dernière page.
+- L'ensemble de la pagination se trouve après les données.
+- La pagination est centrée dans son parent.
 - Le nombre d'élément dans une page est défini en fonction de la taille de la page, l'élément et de leur temps de chargement.
 
 
  <div class="do-dont">
  <div class="dont">
 
-? |
+image |
 ------------ |
 **Don’t** <br/> Ne placez pas la pagination sur un fond de couleur similaire.
 
  </div>
  </div>
-
-
- - Cette technique nécessite plus d’actions qu'un scroll infini pour l’utilisateur et elle est moins agréable et fluide à utiliser.
