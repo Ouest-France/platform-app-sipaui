@@ -56,7 +56,8 @@ Type | Illustration
   - Opacité : 40 %
 
 ### Icône
-- Une icône est un bouton intégré dans le container qui permet une action spécifique.
+- En cas de besoin, une icône peut être intégerée directement dans le champ de texte.
+- Celle-ci permet une action spécifique.
 - Elle est située à droite dans le container.
 - Taille maximale : 34x34px
 - Zone de tap : 44x44px
@@ -65,7 +66,7 @@ Type | Illustration
   - Par défaut : #878787
   - En hover, focus et pressed : #333333
 - Cas particulier : la croix
- - Une croix permet la suppression totale et directe d'un champ.
+ - Une croix permet la suppression totale et directe du champ.
  - Elle est présente lorsque l’input est en focus et qu'un contenu est présent.
 
 ## Gestion des erreurs
