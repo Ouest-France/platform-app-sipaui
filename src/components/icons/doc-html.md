@@ -6,6 +6,13 @@ Ci-dessous, le catalogue des icônes disponibles dans la fonte *su-icons*. Ces i
 	<p>La police d’icônes n’est pas un composant en tant que tel, elle fait partie du «&nbsp;core&nbsp;», c'est à dire des éléments obligatoires.</p>
 </div>
 
+<div class="alerte">
+																							
+## Dépendances
+- classe `sipaui` sur un parent (par exemple le `<body>`),
+
+</div>
+
 <!-- STORY -->
 
 ## Exemples
