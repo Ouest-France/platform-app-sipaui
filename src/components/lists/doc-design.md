@@ -12,11 +12,11 @@ Les listes sont utilisées pour afficher un nombre d'éléments reliés de faço
 
 ### Liste non ordonnée
 
-- Dans une liste non-ordonnées, **l'ordre des éléments n'importe pas**.
+- Dans une liste non-ordonnée, **l'ordre des éléments n'importe pas**.
 - Un puce de taille constante est présente devant chaque ligne.
 - Par exemple, l'ordre d'une liste de courses n'a pas grande importance.
 
-!image 1
+![unordered-list](design/unordered-list.png)
 <br/> Les puces sont des repères visuels.
 
 
@@ -27,7 +27,7 @@ Les listes sont utilisées pour afficher un nombre d'éléments reliés de faço
 - Afin de facilité la lecture, les points sont alignés verticalement et les chiffres sont ferrés à droite.
 - Concrètement, ces listes sont utilisées pour décrire des processus pas-à-pas tels qu'une recette de cuisine.
 
-!image 2
+![ordered-list](design/ordered-list.png)
 <br/> Les numéros rythment et organisent les éléments.
 
 ### Les listes imbriquées
@@ -35,10 +35,10 @@ Les listes sont utilisées pour afficher un nombre d'éléments reliés de faço
 - L'imbrication des listes permet une présentation claire et détaillée grâce à un niveau supplémentaire aux listes non ordonnées et ordonnées.
 - Les listes imbriquées sont utilisés pour des listes de liens hiérarchisées tels que un plan de site ou menu déroulant.
 
-!image 3
+![unordered-nested-list](design/unordered-nested-list.png)
 <br/> Un cercle matérialise les listes non ordonnées imbriquées.
 
-!image 4
+![nested-ordered-list](design/nested-ordered-list.png)
 <br/> Des lettres en minuscule permettent de classer les listes ordonnées imbriquées.
 
 ## Bonnes pratiques
