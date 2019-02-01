@@ -128,7 +128,8 @@ main {
         padding: 1.4rem 2rem;
         border-radius:  10px;
     }
-    p {
+    .intro p,
+    p.baseline {
         color: $couleur-principale-1;
     }
 }
