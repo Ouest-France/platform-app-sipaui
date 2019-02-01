@@ -58,7 +58,7 @@ Voici *un* exemple d’utilisation de classe de marge avec la classe `su-margin-
 	}
 	.bloc-gris,
 	.bloc-rouge {
-		color: #fff;
+		color: #fff !important;
 		padding: 10px;
 	}
 	.bloc-gris {
