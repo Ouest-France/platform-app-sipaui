@@ -71,7 +71,7 @@ Le style des titres de contenu non éditorial est le style de titre par défaut.
 <!------------------–------------------–------------------–------------------–------------------–------------------–------------------–------------------–------------------– -->
 
 
-## Titres dans les articles complet
+## Titres dans les articles complets
 
 Le style des titres dans les articles est lié à la présence de la classe `su-article` sur un parent. Les 6 niveaux de titre sont gérés. Pour le SEO, il est très important d’utiliser ici les balises HTML `<h1>`&nbsp;->&nbsp;`<h6>`.
 
