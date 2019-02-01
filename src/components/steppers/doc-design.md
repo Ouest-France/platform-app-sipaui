@@ -1,7 +1,8 @@
 # Steppers / Indicateurs de progression
 
 
-Les indicateurs de progression représentent visuellement l'avancement d’un parcours utilisateur en plusieurs étapes. Ils guident l'utilisateur à travers un certain nombre de paliers afin de mener à bien un processus spécifié. L'objectif de ce composant est de réduire le taux d’abandon des tunnels.
+Les indicateurs de progression représentent visuellement l'avancement d’un parcours utilisateur en plusieurs étapes. Ils guident l'utilisateur à travers un certain nombre de paliers afin de mener à bien un processus spécifié.
+L'utilisateur est informé sur le sujet et la densité globale du parcours. Les différentes étapes le rendre plus digeste. L'objectif de ce composant est de réduire le taux d’abandon des tunnels.
 
 
 ## Usage
@@ -9,7 +10,6 @@ Les indicateurs de progression représentent visuellement l'avancement d’un pa
 - **L'utilisateur est guidé** lors de l'exécution d'une tâche spécifique. Par exemple, un processus d'abonnement est divisé en différentes étapes. L'exhaustivité augmente à mesure que chaque étape est terminée.
 - Dans certains formulaires, l'utilisateur est autorisé à revenir aux étapes précédentes pour modifier ses données renseignées.
 - Cependant, il ne peut pas accéder aux étapes suivantes.
-
 
 ## Spécifications
 
@@ -23,13 +23,15 @@ Les indicateurs de progression représentent visuellement l'avancement d’un pa
 ### Indicateurs isolés
 Thème Ouest-France
 
-Enabled | Hover / Focus / Pressed | Check | Inactif
+Enabled | Hover / Pressed | Check | Inactif
 ------------ | ------------- | ------------- |
 ![stepper__bubbles__active](design/stepper__bubbles__active.png)| htr | ![stepper__bubbles__check](design/stepper__bubbles__check.png) | ![stepper__bubbles__disabled](design/stepper__bubbles__disabled.png)
 Taille : 30px <br> Couleur : #E2001A <br> Texte : 16px, Arial bold, #FFFFFF | Taille : 30px  <br> Couleur : #B40015 <br> Texte : 16px, Arial bold, #FFFFFF | Taille : 30px <br> Couleur : #E2001A <br> Couleur du symbole : #FFFFFF | Taille : 30px <br> Couleur : #D4 trop claire ? <br> Texte : 16px, Arial bold, #FFFFFF
 
 
 Contour : 1px
+
+
 ### Stepper
 Sous-thème Abonnement
 !image
@@ -49,6 +51,7 @@ Sous-thème Abonnement
 **Etape 2** | ![default__step__2](design/default__step__2.png)
 **Etape 3** | ![default__step__3](design/default__step__3.png)
 
+Les états du label enabled, hover et pressed sont identiques. Seul l'état disabled se distingue #D4D4D4. ?
 
 ## 4- Bonnes pratiques
 

@@ -18,12 +18,12 @@
         </header>
 
 
-        <main class="su-old-editorial" role="main">
+        <main class="su-article su-old-editorial" role="main">
 
             <article class="conteneur" role="article">
                 <h1>Architecture Technique</h2>
 
-                <h2>Contenu de SipaUi</h2>
+                <h2>Contenu de SipaUI</h2>
                 <p>Légende:
                 <ul>
                     <li>les fichiers présent dans le <i class="livrable">livrable</i></li>
