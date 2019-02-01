@@ -17,7 +17,7 @@
         </header>
 
 
-        <main class="su-old-editorial" role="main">
+        <main class="su-article su-old-editorial" role="main">
             <article class="presentation su-margin-bottom-xl" role="article">
                 <div class="conteneur">
                     <div class="titre">
@@ -34,10 +34,10 @@
                     </section>
                 </div>
             </article>
-            <article class="conteneur">
-                <h1>SipaUI sur Github&nbsp;!</h1>
+            <section class="conteneur">
+                <h2>SipaUI sur Github&nbsp;!</h2>
                 <p>Vous pouvez trouver le repository GIT de SipaUI à cette adresse&nbsp;: <a href="https://github.com/Ouest-France/platform-app-sipaui" target="_blank" class="su-old-blank">github.com/Ouest-France/platform-app-sipaui</a>.</p>
-            </article>
+            </section>
         </main>
     </body>
 </html>

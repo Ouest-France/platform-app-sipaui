@@ -18,7 +18,7 @@
         </header>
 
 
-        <main class="su-old-editorial" role="main">
+        <main class="su-article su-old-editorial" role="main">
 
             <article class="conteneur" role="article">
                 <h1>Téléchargement</h2>
