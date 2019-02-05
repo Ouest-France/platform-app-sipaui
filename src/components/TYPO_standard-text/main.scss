@@ -18,8 +18,13 @@
         margin-top: $margin-medium;
     }
     .su-article {
-        p {
-            @extend .su-text-standard
+        p,
+        li {
+            font-family: $font-family-base;
+            font-size: $font-size-base;
+            line-height: $line-height-tall;
+            color: $color-texte;
+            margin: 0;
         }
         p + p,
         ul + p {
