@@ -13,7 +13,7 @@ Les points de ruptures sont utilisés pour les **sites responsives**. Ils s'insc
 ##
 
 Nom | XS | SM | MD | LG | XL
------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+------------ | ------------- | ------------- | ------------- | ------------- | ------------- |
 Taille | 320 à 359px | 360 à 767px | 768 à 979px | 980 à 1279px | À partir de 1280px
 Type* | Mobile | Mobile | Tablette portrait | Tablette paysage | Desktop
 

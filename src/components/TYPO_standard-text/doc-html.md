@@ -83,7 +83,7 @@ Utilisation de la balise `<em>`.
 ```
 
 <div class="sipaui">
-	<article>
+	<article class="su-article">
 		<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</em>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</article>
 </div>
@@ -99,7 +99,7 @@ Utilisation de la balise `<strong>`.
 ```
 
 <div class="sipaui">
-	<article>
+	<article class="su-article">
 		<p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</article>
 </div>
@@ -128,7 +128,7 @@ Utilisation de la classe `su-text-left`.
 ```
 
 <div class="sipaui">
-	<article>
+	<article class="su-article">
 		<p class="su-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</article>
 </div>
@@ -146,7 +146,7 @@ Utilisation de la classe `su-text-right`.
 ```
 
 <div class="sipaui">
-	<article>
+	<article class="su-article">
 		<p class="su-text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</article>
 </div>
@@ -163,7 +163,7 @@ Utilisation de la classe `su-text-justify`.
 ```
 
 <div class="sipaui">
-	<article>
+	<article class="su-article">
 		<p class="su-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</article>
 </div>
@@ -181,7 +181,7 @@ Utilisation de la classe `su-text-center`.
 ```
 
 <div class="sipaui">
-	<article>
+	<article class="su-article">
 		<p class="su-text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</article>
 </div>

@@ -23,7 +23,7 @@ Taille | Mesure | Illustration
 
 ### Améliorer la compréhension
 
-- Les marges permettent d'**optimiser la lisibilité** d’une page et de **facilité la lecture** de l'information par l’utilisateur.
+- Les marges permettent d'**optimiser la lisibilité d’une page et de facilité la lecture de l'information** par l’utilisateur.
 - Lors de la lecture, plus l'espacement est grand, plus la compréhension est optimisée. Cependant, de grandes marges diminuent la vitesse de lecture et peuvent déstructurer une page.
 
 ### Clarifier les relations
