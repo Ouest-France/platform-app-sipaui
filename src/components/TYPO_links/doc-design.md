@@ -4,7 +4,7 @@ Les liens permettent à l'utilisateur d'atteindre un autre endroit de la page, u
 
 ## Usage
 
-Les liens rendent les actions visibles et permettent aux utilisateurs d'effectuer une action. Par exemple dans un article, un lien permet d'ouvrir un autre article.
+**Les liens rendent les actions visibles** et permettent aux utilisateurs d'effectuer une action. Par exemple dans un article, un lien permet d'ouvrir un autre article.
 
 ## Types de liens
 ### Lien article
