@@ -115,19 +115,19 @@ Classes à appliquer par défaut&nbsp;: `su-input-icon` sur l’input pour rése
 #### JS
 
 ##### Gestion de l’affichage du bouton
-Déclencheur à mettre sur l’input&nbsp;: `data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}'`
+Déclencheur à mettre sur l’input&nbsp;: `data-sutoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}'`
 
 ##### Gestion du vidage du champ
-Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
+Déclencheur à mettre sur le bouton&nbsp;: `data-suemptyinput`
 
 *Attention&nbsp;! Ne pas oublier le `type="button"` sur le `<button>`, sans quoi le bouton soumettra le formulaire&nbsp;!*
 
 ```html
 <label for="input6">Label</label>
 <div class="su-input-actions-1">
-	<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" required required value="Lorem ipsum">
+	<input id="input6" name="input6" type="text" data-sutoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" required required value="Lorem ipsum">
 	<div class="su-input-actions-area">
-		<button type="button" class="su-input-action" data-ofemptyinput>
+		<button type="button" class="su-input-action" data-suemptyinput>
 			<i class="su-icon">vider</i>
 		</button>
 	</div>
@@ -137,9 +137,9 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 <div class="sipaui">
 	<label for="input6">Label</label>
 	<div class="su-input-actions-1">
-		<input id="input6" name="input6" type="text" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" required required value="Lorem ipsum">
+		<input id="input6" name="input6" type="text" data-sutoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' role="textbox" required required value="Lorem ipsum">
 		<div class="su-input-actions-area">
-			<button type="button" class="su-input-action" data-ofemptyinput>
+			<button type="button" class="su-input-action" data-suemptyinput>
 				<i class="su-icon">vider</i>
 			</button>
 		</div>
@@ -153,8 +153,8 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 <div class="su-error">
 	<label for="input7">Label<span class="su-label-complement"> (facultatif)</span></label>
 	<div class="su-relative su-input-icon">
-		<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
-		<button type="button" class="su-input-action" data-ofemptyinput>
+		<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-sutoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
+		<button type="button" class="su-input-action" data-suemptyinput>
 			<i class="su-icon">vider</i>
 		</button>
 	</div>
@@ -165,9 +165,9 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-ofemptyinput`
 	<div class="su-error">
 		<label for="input7">Label<span class="su-label-complement"> (facultatif)</span></label>
 		<div class="su-input-actions-1">
-			<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-oftoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' required value="Value">
+			<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-sutoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' required value="Value">
 			<div class="su-input-actions-area">
-				<button type="button" class="su-input-action" data-ofemptyinput>
+				<button type="button" class="su-input-action" data-suemptyinput>
 					<i class="su-icon">vider</i>
 				</button>
 			</div>
