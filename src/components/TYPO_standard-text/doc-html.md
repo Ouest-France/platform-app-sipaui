@@ -8,8 +8,11 @@ Ce formatage de texte accepte 2 variations en fonction de l’importance du text
 - importance moyenne&nbsp;= italique (via la balise `<em>`),
 - importance forte&nbsp;= gras (via la balise `<strong>`).
 
-<a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
+<div class="alerte">
+	<p>Le texte standard n’est pas un composant en tant que tel, il fait partie du «&nbsp;core&nbsp;», c'est à dire des éléments obligatoires.</p>
+</div>
 
+<a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
 <div class="alerte">
 
