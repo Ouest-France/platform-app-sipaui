@@ -1,5 +1,5 @@
 // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
-// Composant oftoggleclass
+// Composant sutoggleclass
 //
 // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 ;(function(cn){
@@ -40,10 +40,10 @@
         
     }
 
-    ['focusin', 'focusout', 'input'].forEach(event => of.doc.addEventListener(event, function(e) {
+    ['focusin', 'focusout', 'input'].forEach(event => su.doc.addEventListener(event, function(e) {
         const elem = e.target.closest("[data-"+cn+"]");
         if (!elem) return;
         _doToggle(e, elem);
     }));
 
-})('oftoggleclass');
+})('sutoggleclass');
