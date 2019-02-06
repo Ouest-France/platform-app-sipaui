@@ -15,7 +15,7 @@ Règles minimales&nbsp;:
 Cerise&nbsp;:
 - Utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener">«&nbsp;Utiliser l'attribut aria-labelledby&nbsp;» chez MDN Web docs [moz://a]</a>).
 
-<div class="alerte">
+<div class="dependances">
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),

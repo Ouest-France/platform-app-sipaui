@@ -7,10 +7,10 @@ Dans SipaUI, il existe 2 déclinaisons de titres, en fonction de leur "univers" 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
 
-<div class="alerte">
+<div class="dependances">
 																							
 ## Dépendances
-- classe `sipaui` sur un parent (par exemple le `<body>`),
+- classe `sipaui` sur un parent (par exemple le `<body>`)
 
 </div>
 

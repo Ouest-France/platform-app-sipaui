@@ -19,11 +19,11 @@ Règles minimales&nbsp;:
 Cerise&nbsp;:
 - utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener">pour en savoir plus</a>)
 
-<div class="alerte">
+<div class="dependances">
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **helpers**,
+- composant **helpers**
 
 </div>
 

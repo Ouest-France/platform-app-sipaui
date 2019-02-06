@@ -4,7 +4,7 @@ Ce composant regroupe les labels précédant les éléments de formulaire (champ
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
-<div class="alerte">
+<div class="dependances">
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),

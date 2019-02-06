@@ -6,11 +6,11 @@ Comme le prévoit le HTML, les liens ont 4 états&nbsp;: **normal** (/ ou *link*
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
-<div class="alerte">
+<div class="dependances">
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **helpers**,
+- composant **helpers**
 
 </div>
 

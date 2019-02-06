@@ -1,3 +1,5 @@
+# Catalogue SipaUI
+
 ## Trouver un composant
 
 ### Arborescence

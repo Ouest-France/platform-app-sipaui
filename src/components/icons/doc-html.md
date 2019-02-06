@@ -6,10 +6,10 @@ Ci-dessous, le catalogue des icônes disponibles dans la fonte *su-icons*. Ces i
 	<p>La police d’icônes n’est pas un composant en tant que tel, elle fait partie du «&nbsp;core&nbsp;», c'est à dire des éléments obligatoires.</p>
 </div>
 
-<div class="alerte">
+<div class="dependances">
 																							
 ## Dépendances
-- classe `sipaui` sur un parent (par exemple le `<body>`),
+- classe `sipaui` sur un parent (par exemple le `<body>`)
 
 </div>
 
@@ -23,13 +23,17 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 ```html
 <i class="su-icon">alerte</i>
 ```
-<i class="su-icon">alerte</i>
+<div class="sipaui">
+	<i class="su-icon">alerte</i>
+</div>
 
 ### Icône mini (en 14px) 
 ```html
 <i class="su-icon-mini">alerte-mini</i>
 ```
-<i class="su-icon-mini">alerte-mini</i>
+<div class="sipaui">
+	<i class="su-icon-mini">alerte-mini</i>
+</div>
 
 ## Catalogue
 

@@ -34,6 +34,7 @@
 <style type="text/css">
     body.sb-show-main {
         margin: 0 10%;
+        overflow-x: hidden;
     }
 
     #theme_sipaui_selector {
@@ -42,11 +43,15 @@
         right: 20px;
         background: #fff;
         border: 1px solid #ccc;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Trebuchet MS", Geneva, sans-serif;
         font-size: 14px;
         height: 30px;
         width: 150px;
         padding: 5px;
+    }
+
+    body #root > div > div[style*=" border: 1px dashed"] {
+        display: none
     }
 
     body #root > div > div[style*="border-top"] {
@@ -60,7 +65,7 @@
     body .markdown-body h4,
     body .markdown-body h5,
     body .markdown-body div {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Trebuchet MS", Geneva, sans-serif;
     }
     body .markdown-body h1,
     body .markdown-body h2,
@@ -73,8 +78,9 @@
     }
     body .markdown-body h1,
     body #root div[style] > h1 {
-        font-size: 4rem;
+        font-size: 6rem;
         border: none;
+        font-weight: bold;
     }
     body .markdown-body h2 {
         font-size: 3.4rem;
@@ -102,12 +108,16 @@
     body .markdown-body li,
     body .markdown-body div,
     body .markdown-body td {
-        color: #555;
+        color: #444;
     }
     body .markdown-body .highlight pre,
     body .markdown-body pre,
     body .markdown-body code {
-        background:  #eee;
+        background:  #e4e4e4;
+    }
+    body .markdown-body .highlight pre,
+    body .markdown-body pre {
+        border-radius: 0;
     }
 
     body .markdown-body a,
@@ -128,30 +138,66 @@
     body .markdown-body .link-button:hover,
     body .markdown-body .link-button:focus,
     body .markdown-body .link-button:active {
-            color: #b40015;
-            text-decoration: underline;
-        }
+        color: #b40015;
+        text-decoration: underline;
+    }
 
 
     .alerte {
-        padding: 10px;
-        background: #fdd;
-        border-radius:  10px;
+        padding: 20px 10px;
+        background: #fff3f2;
         margin: 20px 0;
+        border-left: 1px solid red;
     }
-    .alerte h2 {
+    .alerte h2,
+    .dependances h2 {
         margin-top: 0 !important;
     }
-    .alerte > :last-child {
+    .alerte > :last-child,
+    .dependances > :last-child {
         margin-bottom: 0 !important;
     }
 
+    .dependances,
     #liste-classes {
-        padding: 10px;
-        background: #ddd;
-        border-radius:  10px;
-        margin-top: 60px;
+        position: relative;
+        margin: 50px 0;
+        padding: 20px 0;
     }
+    #liste-classes {
+        margin: 50px 0 0;
+    }
+    .dependances:before,
+    #liste-classes:before {
+        content: "";
+        display: block;
+        background: #f5f5f5;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        right: -100%;
+    }
+
+    .sipaui {
+        padding: 30px 20px 20px;
+        margin: 20px 0;
+        border: 1px solid #ddd;
+        position: relative;
+    }
+    .sipaui:before {
+        content: "rendu";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #ddd;
+        font-size: 1.1rem;
+        color: #333;
+        border-radius:  0 0 10px 0;
+        padding: 1px 10px;
+    }
+
     #liste-classes h2 {
         margin-top: 0 !important;
     }
@@ -256,10 +302,35 @@
         min-height: 20px;
     }
 
+    @media screen and (max-width: 1023px) {
+        body .markdown-body h1,
+        body #root div[style] > h1 {
+            font-size: 5rem;
+        }
+        body .markdown-body h2 {
+            font-size: 3rem;
+        }
+        body .markdown-body h3 {
+            font-size: 2.4rem;
+        }
+        body .markdown-body h4 {
+            font-size: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 979px) {
+        body #root {
+            padding-top: 50px;
+        }
+    }
 
     @media screen and (max-width: 376px) {
         .markdown-body pre {
             width: 270px;
+        }
+        body .markdown-body h1,
+        body #root div[style] > h1 {
+            font-size: 4rem;
         }
     }
 
