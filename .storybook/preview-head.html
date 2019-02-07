@@ -12,22 +12,59 @@
         var script = document.createElement('script');
         script.src = 'js/sipaui.js';
         document.head.appendChild(script);
-        var selector = document.createElement('select');
-        selector.id = 'theme_sipaui_selector';
 
+        // Check si l'URL contient "html"
+        var storyDetection = function() {
+            var url = new URL(window.location.href),
+                selectedStory = url.searchParams.get("selectedStory");
+
+            if(selectedStory == "html") {
+                addThemeSwitcher();
+            } else {
+                removeThemeSwitcher();
+            }
+        };
+
+        // Ajoute le theme switcher
+        var addThemeSwitcher = function() {
+            var switcher = document.getElementById('theme_sipaui_selector');
+            if(!switcher) {
+                var selector = document.createElement('select');
+                selector.id = 'theme_sipaui_selector';
+                document.body.appendChild(selector);
+                selector.innerHTML = `
+                    <select>
+                        <option value="" disabled selected>Thème</option>
+                        <option value="of">Ouest-France</option>
+                        <option value="vv">Voiles-et-Voiliers</option>
+                    </select>
+                `;
+                selector.addEventListener('change', function(){
+                    sessionStorage.setItem('theme', this.value||'of');
+                    window.location.href = window.location.href;
+                });
+            }
+        };
+
+        // Enleve le theme switcher
+        var removeThemeSwitcher = function() {
+            var switcher = document.getElementById('theme_sipaui_selector');
+            if(switcher) {
+                switcher.parentNode.removeChild(switcher);
+            }
+        }
+
+        // Mutation Observer pour surveiller les changements de DOM dans l'iframe pendant la navigation
+        var config = { attributes: true, childList: true, subtree: true };
+        var mutationCallback = function(mutationsList, observer) {
+            storyDetection();
+        };
+        var observer = new MutationObserver(mutationCallback);
+
+        // On fait un premier check au chargement du DOM (si F5 par exemple)
         document.addEventListener('DOMContentLoaded', function(){
-            document.body.appendChild(selector);
-            selector.innerHTML = `
-                <select>
-                    <option value="" disabled selected>Thème</option>
-                    <option value="of">Ouest-France</option>
-                    <option value="vv">Voiles-et-Voiliers</option>
-                </select>
-            `;
-            selector.addEventListener('change', function(){
-                sessionStorage.setItem('theme', this.value||'of');
-                window.location.href = window.location.href;
-            });
+            storyDetection();
+            observer.observe(document.body, config);
         });
     })();
 </script>
