@@ -1,0 +1,59 @@
+/*
+    Styles du composant Selects de SipaUI
+*/
+@import "variables";
+
+.sipaui {
+    .su-select {
+        position: relative;
+
+        select {
+            font-size: $font-size-base;
+            -webkit-appearance: none;
+            display: block;
+            width: 100%;
+            min-width: 140px;
+            height: $height-select;
+            border-radius:  $border-radius-select;
+            color: $color-select;
+            background: $background-select;
+            border: $border-select;
+            transition: all .3s ease-out;
+            padding: 0 44px 0 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            &:focus {
+                background: $background-select-focus;
+                border: $border-select-focus;
+            }
+
+            &[readonly] {
+                opacity: 0.4;
+                cursor: default;
+
+                &:focus {
+                    background: $background-select;
+                    border: $border-select;
+                }
+            }
+            &:invalid {
+                color: $color-select-placeholder;
+            }
+        }
+        &::before {
+            content: "\e901";
+            font-family: 'su-icons';
+            color: $color-main-5;
+            top: 0.4rem;
+            right: 1rem;
+            position: absolute;
+            font-size: 2.4rem;
+            pointer-events: none;
+        }
+        &:hover::before {
+            color: $color-main-7;
+        }
+    }
+}

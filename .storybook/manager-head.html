@@ -20,6 +20,7 @@
         display: none !important;
     }
 
+    /* COL GAUCHE ---------------------------------------------------------------------------------------- */
 	.css-ypfoxr { /* col gauche -> zone marque */
 	    text-transform: none !important;
 	}
@@ -41,7 +42,10 @@
 	}
 	.css-79elbk [role="menuitem"] { /*col gauche -> liste des éléments */
     	padding: 3px 5px !important;
-        border-bottom: 1px solid #444;
+        border-bottom: 1px solid rgba(255,255,255, .15);
+	}
+    .css-vq3qyb li:last-child [role="menuitem"] { /*col gauche -> liste des éléments */
+        border-bottom: none;
 	}
 	.css-vq3qyb .css-vq3qyb { /*col gauche -> liste des sous-éléments */
     	padding: 10px 10px 10px 15px !important;
@@ -74,6 +78,7 @@
 	    color: inherit !important;
 	}
 
+    /* COL DROITE ---------------------------------------------------------------------------------------- */
     .css-mq6fg3 { /* col droite sélecteur de device */
         height: 30px;
     }
