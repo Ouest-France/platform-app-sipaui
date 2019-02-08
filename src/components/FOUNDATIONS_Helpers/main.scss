@@ -86,7 +86,7 @@ body:hover .su-visually-hidden {
 /* -- MOBILE ONLY ---------------------------------------------------------------------------------------------------------------------------------- */
 //
 
-@media only screen and (max-width: $max-breakpoint-mobile) {
+@media only screen and (max-width: $max-breakpoint-sm) {
     .su-fullwidth-mobile {
         width: 100% !important;
     }
