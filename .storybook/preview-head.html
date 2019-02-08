@@ -91,10 +91,7 @@
         display: none
     }
 
-    body #root > div > div[style*="border-top"] {
-        border: none !important;
-    }
-
+    /*  Typo ------------------------------------------------------------------*/
     body .markdown-body p,
     body .markdown-body h1,
     body .markdown-body h2,
@@ -179,7 +176,35 @@
         text-decoration: underline;
     }
 
+    /*  Générique ------------------------------------------------------------------*/
+    table tr,
+    table th,
+    table td {
+        border-color: #d4d4d4 !important;
+    }
 
+    .markdown-body img {
+        background-color: transparent !important;
+    }
+
+    /*  Accueil ------------------------------------------------------------------*/
+    body #root > div > div[style*="border-top"] {
+        border: none !important;
+    }
+    .logo-accueil,
+    .titre-accueil {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .logo-accueil svg {
+        margin: 0 40px 0 0;
+        fill: #878787;
+    }
+    .titre-accueil {
+        width: 200px;
+    }
+
+    /*  Spécifique ------------------------------------------------------------------*/
     .alerte {
         padding: 20px 10px;
         background: #fff3f2;
@@ -222,6 +247,8 @@
         margin: 20px 0;
         border: 1px solid #ddd;
         position: relative;
+        box-shadow: 0 0 15px rgba(0,0,0, .1);
+        background: #fff
     }
     .sipaui:before {
         content: "rendu";
@@ -238,16 +265,6 @@
     #liste-classes h2 {
         margin-top: 0 !important;
     }
-    table tr,
-    table th,
-    table td {
-        border-color: #d4d4d4 !important;
-    }
-
-    .markdown-body img {
-        background-color: transparent !important;
-    }
-
 
     .do-dont {
         display: flex;

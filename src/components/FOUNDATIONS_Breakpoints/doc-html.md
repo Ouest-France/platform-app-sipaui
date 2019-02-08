@@ -1,71 +1,95 @@
-# Icons / Icônes
+# Breakpoints / Points de rupture
 
-Catalogue des icônes disponibles dans la fonte *su-icons*.
+Ci-dessous vous trouverez la liste des variables SCSS de points de rupture à utiliser dans vos media querries.
 
 
 <!-- STORY -->
 
-## Exemple
-```html
-<span class="su-icon-alert"></span>
+## Tableau de correspondances
+
+### Minima
+Taille en *px* | Taille en *em* | Variable SCSS 
+------------ | ------------- | ------------- |
+**360px** | 22.5em | `$min-breakpoint-sm`
+**768px** | 48em   | `$min-breakpoint-md`
+**980px** | 61.25em |`$min-breakpoint-lg`
+**1280px** | 80em   | `$min-breakpoint-xl`
+
+### Maxima
+Taille en *px* | Taille en *em* | Variable SCSS 
+------------ | ------------- | ------------- |
+**359px** | 22.438em | `$max-breakpoint-xs`
+**767px** | 47.938em | `$max-breakpoint-sm`
+**979px** | 61.188em | `$max-breakpoint-md`
+**1279px** | 79.938em  | `$max-breakpoint-lg`
+
+
+### Exemple
+
+```css
+@media screen and (max-width: $max-breakpoint-xs) {
+	.sipaui .exemple {
+		background: #EB7D5B;
+	}
+}
+@media screen and (min-width: $min-breakpoint-sm) and (max-width: $max-breakpoint-sm) {
+	.sipaui .exemple {
+		background: #FED23F;
+	}
+}
+@media screen and (min-width: $min-breakpoint-md) and (max-width: $max-breakpoint-md) {
+	.sipaui .exemple {
+		background: #B5D33D;
+	}
+}
+@media screen and (min-width: $min-breakpoint-lg) and (max-width: $max-breakpoint-lg) {
+	.sipaui .exemple {
+		background: #6CA2EA;
+	}
+}
+@media screen and (min-width: $min-breakpoint-xl) {
+	.sipaui .exemple {
+		background: #603ba3;
+		color: #fff;
+	}
+}
 ```
-<span class="su-icon-alert"></span>
+<style>
+.sipaui .exemple {
+    	width: 100px;
+    	height: 100px;
+    	line-height: 100px;
+    	margin: auto;
+    	text-align: center;
+    }
 
-## Catalogue
-
-<style type="text/css">
-	.catalogue-icones {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.icone {
-		border: 1px solid #d4d4d4;
-		margin: -1px 0 0 -1px;
-		text-align: center;
-		min-width: 150px;
-		padding: 5px;
-	}
-	.icone h3 {
-		margin-top: 0 !important;
-	}
+    @media screen and (max-width: 22.438em) {
+    	.sipaui .exemple {
+    		background: #EB7D5B;
+    	}
+    }
+    @media screen and (min-width: 22.5em) and (max-width: 47.938em) {
+    	.sipaui .exemple {
+    		background: #FED23F;
+    	}
+    }
+    @media screen and (min-width: 48em) and (max-width: 61.188em) {
+    	.sipaui .exemple {
+    		background: #B5D33D;
+    	}
+    }
+    @media screen and (min-width: 61.25em) and (max-width: 79.938em) {
+    	.sipaui .exemple {
+    		background: #6CA2EA;
+    	}
+    }
+    @media screen and (min-width: 80em) {
+    	.sipaui .exemple {
+    		background: #603ba3;
+    		color: #fff;
+    	}
+    }
 </style>
-
-### Pictos sur 16px
-
-<div class="catalogue-icones">
-	<div class="icone">
-		<h3>Nom</h3>
-		<code>classe</code>
-		<div style="font-size: 14px">Taille 14</div>
-		<div style="font-size: 16px">Taille 16</div>
-		<div style="font-size: 32px">Taille 32</div>
-	</div>
-	<div class="icone">
-		<h3>Alerte</h3>
-		<code>su-icon-alert</code>
-		<div style="font-size: 14px"><span class="su-icon-alert"></span></div>
-		<div style="font-size: 16px"><span class="su-icon-alert"></span></div>
-		<div style="font-size: 32px"><span class="su-icon-alert"></span></div>
-	</div>
-	<div class="icone">
-		<h3>Fermer</h3>
-		<code>su-icon-close</code>
-		<div style="font-size: 14px"><span class="su-icon-close"></span></div>
-		<div style="font-size: 16px"><span class="su-icon-close"></span></div>
-		<div style="font-size: 32px"><span class="su-icon-close"></span></div>
-	</div>
-	<div class="icone">
-		<h3>Montrer</h3>
-		<code>su-icon-show</code>
-		<div style="font-size: 14px"><span class="su-icon-show"></span></div>
-		<div style="font-size: 16px"><span class="su-icon-show"></span></div>
-		<div style="font-size: 32px"><span class="su-icon-show"></span></div>
-	</div>
-	<div class="icone">
-		<h3>Calendrier</h3>
-		<code>su-icon-calendar</code>
-		<div style="font-size: 14px"><span class="su-icon-calendar"></span></div>
-		<div style="font-size: 16px"><span class="su-icon-calendar"></span></div>
-		<div style="font-size: 32px"><span class="su-icon-calendar"></span></div>
-	</div>
+<div class="sipaui">
+	<div class="exemple">Exemple</div>
 </div>
