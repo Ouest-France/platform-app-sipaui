@@ -1,6 +1,6 @@
 {
   "name": "sipa-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Framework frontend de composants graphiques et de styles éditoriaux pour les sites du Groupe SIPA Ouest‑France.",
   "main": "index.js",
   "scripts": {
