@@ -2,6 +2,9 @@
 
 Ci-dessous vous trouverez la liste des variables SCSS de points de rupture à utiliser dans vos media querries.
 
+<div class="alerte">
+	<p>Les points de rupture ne sont pas un composant en tant que tel, ils font partie du «&nbsp;core&nbsp;», c'est à dire des éléments obligatoires.</p>
+</div>
 
 <!-- STORY -->
 
