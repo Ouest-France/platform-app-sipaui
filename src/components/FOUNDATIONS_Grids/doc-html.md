@@ -1,6 +1,6 @@
 # Grids / Grilles
 
-
+SipaUI utilise une grille fluide et responsive de 24 colonnes sur desktop (768px et plus) et une grille fixe de 6 colonnes sur mobile. 
 
 <!-- STORY -->
 

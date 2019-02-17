@@ -31,30 +31,35 @@ Une grille est constituée de colonnes, séparées par des gouttières permettan
 - La grille dispose de marges latérales entre le contenu et les bords gauche et droit de l'écran. L'objectif est que l'œil puisse bénéficier d'un confort de lecture en ne "tapant" pas contre les bords de la fenêtre du navigateur.
 - Le contenu est centré entre les marges.
 
-Taille de l'écran | 320 à 359px | 360 à 767px | 768 à 979px | 980 à 1279px | À partir de 1280px
------------- | ------------- | ------------- | ------------- | ------------- | -------------
-Nombre de colonnes | 6 | 6 | 6 | 24 | 24
-Taille de la marge externe | 20px | 30px | 50px | 10px et plus | 10px et plus
-Largeur du container  | variable  |  variable | variable | 960px  | 1260px
-Gouttières | 20px | 20px | 20px | 20px | 20px
+<div class="tableau-grille">
+
+Taille de l'écran | xs&nbsp;: 320 à 359px | sm&nbsp;: 360 à 767px | md&nbsp;: 768 à 979px | md&nbsp;: 768 à 979px | lg&nbsp;: 980 à 1279px | xl&nbsp;: À partir de 1280px
+------------ | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
+Nombre de colonnes | 6 | 6 | 6 | 24 | 24 | 24
+Largeur des colonnes | *30 à ±41px* | *±33 à ±101px* | *±95 à 130px* | 12px | ±21px | ±33px
+Gouttières | 20px | 20px | 20px | 20px | 20px | 20px
+Largeur du container  | *280 à 349px*  |  *300 à 707px* | *668 à 879px* | 748px | 960px  | 1260px
+Taille de la marge externe | 20px | 30px | 50px | *10px et plus* | *10px et plus* | *10px et plus*
+
+</div>
 
 <div class="do-dont">
 <div class="do">
 
 ![grid__320](design/grid__320.png)
-<br/> Écran mobile de 320px
+<br/> Écran mobile xs (320px)
 
 
 ![grid__360](design/grid__360.png)
-<br/> Écran mobile de 360px
+<br/> Écran mobile sm (360px)
 
 
-![grid__940](design/grid__940.png)
-<br/> Écran tablette de 940px
+![grid__960](design/grid__960.png)
+<br/> !! Écran tablette ?? (960px)
 
 
-![grid__1260](design/grid__1260.png)
-<br/> Écran desktop de 1260px
+![grid__1280](design/grid__1280.png)
+<br/> Écran desktop xl (1280px)
 
 ### Autres composants
 - Marges
