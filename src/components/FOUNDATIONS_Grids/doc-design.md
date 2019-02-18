@@ -1,11 +1,11 @@
 # Grids / Grilles
 
-Une grille est une armature qui permet d'organiser une page et son contenu. Les éléments sont ainsi cadrés et les espaces négatifs sont harmonisés. L'expérience utilisateur est alors cohérente quelque soit la taille et l'orientation de l'écran.
+Une grille est une armature qui permet d'**organiser une page et son contenu**. Les éléments sont ainsi cadrés et les espaces négatifs sont harmonisés. L'expérience utilisateur est alors cohérente sur différentes tailles et orientations de l'écran.
 
 
 ## Usage
 
-La grille est une aide autant pour le concepteur que pour l'utilisateur. Cela permet d'atteindre un équilibre harmonieux de l'espacement vertical entre les différents blocs. On obtient alors des pages plus lisibles et variés tout en assurant une cohérence générale.
+La grille est une aide autant pour le concepteur que pour l'utilisateur. Cela permet d'atteindre un équilibre harmonieux de l'espacement vertical entre les différents blocs. On obtient alors des pages plus lisibles et variées tout en assurant une cohérence générale.
 
 ## Anatomie
 
