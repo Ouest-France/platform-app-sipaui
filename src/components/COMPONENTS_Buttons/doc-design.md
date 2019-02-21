@@ -15,7 +15,7 @@ Le bouton principal, sur fond de couleur, met en évidence une action importante
 Enabled | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
 ![button__primary__enabled](design/button__primary__enabled.png)| ![button__primary__hover](design/button__primary__hover.png)| ![button__primary__disabled](design/button__primary__disabled.png)
-Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px <br> Contour : angle 3px  <br> Couleur : #E2001A  <br> Texte : 16px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> - <br> - <br> Texte : #B40015 | Opacité : 40 %
+Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px <br> Contour : angle 3px  <br> Couleur : #E2001A  <br> Texte : 16px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> - <br> Couleur : #B40015 <br> - | Opacité : 40 %
 
 
 #### Cas spécifiques
@@ -34,7 +34,7 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
   Enabled | Hover / Focus / Pressed | Inactif
   ------------ | ------------- | ------------- |
   ![button__primary__small__enabled](design/button__primary__small__enabled.png)|![button__primary__small__hover](design/button__primary__small__hover.png)| ![button__primary__small__disabled](design/button__primary__small__disabled.png)
-  Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : angle 3px <br> Couleur : #E2001A <br> Texte : 14px, regular, police du thème, #FFFFFF | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
+  Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : angle 3px <br> Couleur : #E2001A <br> Texte : 14px, regular, police du thème, #FFFFFF | - <br> - <br> - <br> Couleur : #B40015 <br> - | Opacité : 40 %
 
 ##### Bouton primaire, contexte Abonnement
 
