@@ -1,4 +1,4 @@
-# Text field / Champs de texte
+# Text fields / Champs de texte
 
 Les champs de texte permettent à l'utilisateur de saisir et de modifier du texte. Ils se trouvent généralement dans un formulaire. Ce composant regroupe les champs texte standards (input text, input number… et le text area).
 
