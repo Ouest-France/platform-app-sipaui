@@ -1,4 +1,4 @@
-# Selects / Menus déroulants
+# Selects / Listes déroulantes
 
 Les selects permettent à l’utilisateur de sélectionner une option dans une liste.
 
