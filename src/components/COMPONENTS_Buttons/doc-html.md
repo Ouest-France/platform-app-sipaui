@@ -4,7 +4,14 @@ Comme le prévoit le HTML, chaque bouton a 4 états&nbsp;: **normal** (/ ou *lin
 
 Un bouton a besoin d’**au moins 2 classes**&nbsp;: `su-button` pour appliquer le design commun aux boutons et une seconde pour le design lié à sa fonction (comme `su-primary`).
 
-Les *classes* de bouton peuvent être appliquées indifféremment sur des `<buttons>`, des `<input type="button">` ou des `<a>`.
+Les *classes* de bouton peuvent être appliquées indifféremment sur des `<button>`, des `<input type="button">` ou des `<a>`.
+
+<div class="alerte">
+
+Un composant `<button>` est de type `submit` par défaut. Par conséquent, sur une page contenant un formulaire, si ce bouton ne doit pas le soumettre, il faut lui préciser `type="button"`.
+
+</div>
+
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 

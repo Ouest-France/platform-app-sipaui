@@ -1,4 +1,4 @@
-# Standard text / Texte standard
+# Standard texts / Textes standards
 
 Les textes standards sont le principal moyen utilisé pour visualiser le contenu. Ils garantissent que l’interface utilisateur soit optimisée pour être lisible et performante.
 

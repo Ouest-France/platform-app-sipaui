@@ -8,7 +8,6 @@ Ce composant est une dépendance pour plusieurs composants (champs de texte, men
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **icons**
 
 </div>
 
@@ -23,12 +22,12 @@ Le positionnement de ce message dépend du composant auquel il est associé.
 
 ```html
 <div>
-	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+	<div class="su-error-message">Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
 	<div>
-		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+		<div class="su-error-message">Message d’erreur</div>
 	</div>
 </div>
 
@@ -36,12 +35,12 @@ Le positionnement de ce message dépend du composant auquel il est associé.
 
 ```html
 <div class="su-error">
-	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+	<div class="su-error-message">Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
 	<div class="su-error">
-		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+		<div class="su-error-message">Message d’erreur</div>
 	</div>
 </div>
 
@@ -51,14 +50,14 @@ Le positionnement de ce message dépend du composant auquel il est associé.
 <div class="su-error">
 	<label for="input1">Label</label>
 	<input id="input1" name="input1" type="email" role="textbox" required value="Value">
-	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+	<div class="su-error-message">Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
 	<div class="su-error">
 		<label for="input1">Label</label>
 		<input id="input1" name="input1" type="email" role="textbox" required value="Value">
-		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+		<div class="su-error-message">Message d’erreur</div>
 	</div>
 </div>
 
@@ -68,8 +67,5 @@ Le positionnement de ce message dépend du composant auquel il est associé.
 ## Liste des classes disponibles
 - `su-error`
 - `su-error-message`
-
-### Classes annexes
-- `su-icon-mini-alert` (dépendant du composant *icons*)
 
 </div>

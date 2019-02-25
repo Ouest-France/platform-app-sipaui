@@ -17,7 +17,7 @@ Ci-dessous, le catalogue des icônes disponibles dans la fonte *su-icons*. Ces i
 
 ## Exemples
 
-L’intégration d’une icône peut se faire via la balise HTML neutre et inline `<span>`, ou **mieux, via la balise de <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/i"  target="_blank" rel="noopener">texte différenciant</a>** `<i>`. On lui applique la classe `su-icon`, ou `su-icon-mini` **si le picto est disponible en petit**. On écrit alors en contenu de la balise, le texte de référence de l’icône souhaitée.
+L’intégration d’une icône peut se faire via la balise HTML neutre et inline `<span>`, ou **mieux, via la balise de <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/i"  target="_blank" rel="noopener">texte différenciant</a>** `<i>`. On lui applique la classe `su-icon`<!--, ou `su-icon-mini` **si le picto est disponible en petit**. On--> et on écrit alors en contenu de la balise, le texte de référence de l’icône souhaitée (par exemple «&nbsp;alerte&nbsp;» pour afficher l’icône d’alerte).
 
 ### Icône standard (en 24px) 
 ```html
@@ -27,6 +27,7 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 	<i class="su-icon">alerte</i>
 </div>
 
+<!-- Désactivation de l’icône mini tant qu'elle est inutile
 ### Icône mini (en 14px) 
 ```html
 <i class="su-icon-mini">alerte-mini</i>
@@ -34,6 +35,7 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 <div class="sipaui">
 	<i class="su-icon-mini">alerte-mini</i>
 </div>
+-->
 
 ## Catalogue
 
@@ -82,10 +84,11 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 	</div>
 </div>
 
+<!-- Désactivation de l’icône mini tant qu'elle est inutile
 ### Pictos mini (14px)
 
 <div class="catalogue-icones">
-	<div class="icone"><!------------------------------------------------- Alerte mini-->
+	<div class="icone">
 		<h3>Alerte mini</h3>
 		<pre class="language-html"><code>&lt;i class="su-icon-mini">
     alerte-mini
@@ -94,4 +97,4 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 		<div><i class="su-icon-mini">alerte-mini</i></div>
 	</div>
 </div>
-
+-->

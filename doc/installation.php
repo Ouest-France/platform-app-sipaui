@@ -11,7 +11,7 @@
 
             <nav role="navigation">
                 <?php
-                $actif='telechargement';
+                $actif='installation';
                 include(__DIR__."/_fragments/_nav.php");
                 ?>
             </nav>
@@ -21,7 +21,7 @@
         <main class="su-article su-old-editorial" role="main">
 
             <article class="conteneur" role="article">
-                <h1>Téléchargement</h2>
+                <h1>Installation</h2>
 
 
                 <h2>cdn</h2>

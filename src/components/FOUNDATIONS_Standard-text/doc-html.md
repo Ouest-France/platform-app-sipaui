@@ -1,4 +1,4 @@
-# Standard text / Texte standard
+# Standard texts / Textes standards
 
 Le texte standard est réservé au contenu éditorial. Il est donc lié à la classe `su-article` qui englobe les zones de contenu éditorial. Son utilisation peut être forcée ponctuellement par la classe `su-text-standard`.
 

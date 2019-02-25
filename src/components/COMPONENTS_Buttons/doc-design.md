@@ -15,7 +15,7 @@ Le bouton principal, sur fond de couleur, met en évidence une action importante
 Enabled | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
 ![button__primary__enabled](design/button__primary__enabled.png)| ![button__primary__hover](design/button__primary__hover.png)| ![button__primary__disabled](design/button__primary__disabled.png)
-Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px <br> Contour : angle 3px  <br> Couleur : #E2001A  <br> Texte : 16px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> - <br> - <br> Texte : #B40015 | Opacité : 40 %
+Hauteur : 44px  <br> Largeur : minimum 140px et padding 20px <br> Contour : angle 3px  <br> Couleur : #E2001A  <br> Texte : 16px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> - <br> Couleur : #B40015 <br> - | Opacité : 40 %
 
 
 #### Cas spécifiques
@@ -34,22 +34,11 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
   Enabled | Hover / Focus / Pressed | Inactif
   ------------ | ------------- | ------------- |
   ![button__primary__small__enabled](design/button__primary__small__enabled.png)|![button__primary__small__hover](design/button__primary__small__hover.png)| ![button__primary__small__disabled](design/button__primary__small__disabled.png)
-  Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : angle 3px <br> Couleur : #E2001A <br> Texte : 14px, regular, police du thème, #FFFFFF | - <br> - <br> - <br> Couleur : transparent <br> Texte : #B40015 | Opacité : 40 %
-
+  Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : angle 3px <br> Couleur : #E2001A <br> Texte : 14px, regular, police du thème, #FFFFFF | - <br> - <br> - <br> Couleur : #B40015 <br> - | Opacité : 40 %
 
 ##### Bouton primaire, contexte Abonnement
 
-Dans un contexte Abonnment, la couleur de fond du bouton primaire devient #FFCC33 et celle du texte #333333.
-
-  Enabled | Hover / Focus / Pressed
-  ------------ | -------------
-![button__primary__subscription__enabled](design/button__primary__subscription__enabled.png)|   ![button__primary__subscription__hover](design/button__primary__subscription__hover.png)
-Couleur : #FFCC33 |  Couleur : #E7AF07
-
-
-##### Bouton primaire, contexte Premium
-
-Dans un contexte Premium, la couleur de fond du bouton primaire devient #DBA504.
+Dans un contexte d'abonnement, la couleur de fond du bouton primaire devient #DBA504.
 
   Enabled | Hover / Focus / Pressed
   ------------ | -------------
@@ -88,7 +77,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 <div class="do-dont">
  <div class="do">
 
-![Image_button_texte minimum_ok](design/Image_button_texte_minimum_ok.png)  |
+![Image_button_texte minimum_ok](design/Image_button_texte_minimum_ok.png) Image à modifier |
 ------------ |
 **Do** <br/> Utiliser un texte simple |
 
@@ -96,7 +85,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
  <div class="dont">
 
-![Image_button_texte minimum_ko](design/Image_button_texte_minimum_ko.png)  |
+![Image_button_texte minimum_ko](design/Image_button_texte_minimum_ko.png) Image à modifier |
 ------------ |
 **Don’t** <br/> Ne pas surcharger le texte |
 
