@@ -103,7 +103,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 		<label for="checkbox9"><input type="checkbox" id="checkbox9" name="nom5" value="Valeur 1">Valeur 1</label>
 		<label for="checkbox10"><input type="checkbox" id="checkbox10" name="nom5" value="Valeur 2">Valeur 2</label>
 	</div>
-	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+	<div class="su-error-message">Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
@@ -112,7 +112,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 			<label for="checkbox9"><input type="checkbox" id="checkbox9" name="nom5" value="Valeur 1">Valeur 1</label>
 			<label for="checkbox10"><input type="checkbox" id="checkbox10" name="nom5" value="Valeur 2">Valeur 2</label>
 		</div>
-		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+		<div class="su-error-message">Message d’erreur</div>
 	</div>
 </div>
 
@@ -124,7 +124,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 		<label for="checkbox11"><input type="checkbox" id="checkbox11" name="nom6" value="Valeur 1">Valeur 1</label>
 		<label for="checkbox12"><input type="checkbox" id="checkbox12" name="nom6" value="Valeur 2">Valeur 2</label>
 	</div>
-	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+	<div class="su-error-message">Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
@@ -133,7 +133,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 			<label for="checkbox11"><input type="checkbox" id="checkbox11" name="nom6" value="Valeur 1">Valeur 1</label>
 			<label for="checkbox12"><input type="checkbox" id="checkbox12" name="nom6" value="Valeur 2">Valeur 2</label>
 		</div>
-		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+		<div class="su-error-message">Message d’erreur</div>
 	</div>
 </div>
 

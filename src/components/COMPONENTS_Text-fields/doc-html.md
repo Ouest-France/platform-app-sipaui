@@ -94,14 +94,14 @@ Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a 
 <div class="su-error">
 	<label for="input5">Label</label>
 	<input id="input5" name="input5" type="email" role="textbox" required value="Value">
-	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+	<div class="su-error-message">Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
 	<div class="su-error">
 		<label for="input5">Label</label>
 		<input id="input5" name="input5" type="email" role="textbox" required value="Value">
-		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+		<div class="su-error-message">Message d’erreur</div>
 	</div>
 </div>
 
@@ -158,7 +158,7 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-suemptyinput`
 			<i class="su-icon">vider</i>
 		</button>
 	</div>
-	<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+	<div class="su-error-message">Message d’erreur</div>
 </div>
 ```
 <div class="sipaui">
@@ -172,7 +172,7 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-suemptyinput`
 				</button>
 			</div>
 		</div>
-		<div class="su-error-message"><i class="su-icon-mini">alerte-mini</i> Message d’erreur</div>
+		<div class="su-error-message">Message d’erreur</div>
 	</div>
 </div>
 
