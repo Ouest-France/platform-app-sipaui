@@ -30,14 +30,14 @@
                     <li>Appeler des composants de SipaUI via npmjs.</li>
                 </ul>
 
-                <h2>cdn</h2>
+                <h2 id="cdn">CDN</h2>
                 <p>La méthode la plus simple: inclure la librairie depuis le CDN:</p>
                 <p>
                     <pre><code>&lt;link rel="stylesheet" href="https://cdn.sipaof.fr/css/main-sipaui-xxx.css"/></code></pre>
                     <pre><code>&lt;script async src="https://cdn.sipaof.fr/js/sipaui.js">&lt;/script></code></pre>
                 </p>
 
-                <h2>npmjs</h2>
+                <h2 id="npmjs">npmjs</h2>
                 <p>Il est aussi possible de customiser selon vos besoins en passant par npm:</p>
                 <p>
                     <pre><code>npm install sipaui</code></pre>
