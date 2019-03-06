@@ -36,7 +36,7 @@ Multiple désactivated / over | Multiple activated / focus | Multiple indetermin
 
 - La gestion des erreurs est identique au champ de texte.
 
-![checkboxes__ex__error-with-message](design/checkboxes__ex__error-with-message.png)
+![checkboxes__exemples__error-with-message](design/checkboxes__exemples__error-with-message.png)
 
 - Lors d'une **sélection multiple**, toutes les cases à cocher parents et enfants ont un contour rouge.
 
