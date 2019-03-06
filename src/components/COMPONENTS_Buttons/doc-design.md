@@ -36,14 +36,14 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
   ![button__primary__small__enabled](design/button__primary__small__enabled.png)|![button__primary__small__hover](design/button__primary__small__hover.png)| ![button__primary__small__disabled](design/button__primary__small__disabled.png)
   Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : angle 3px <br> Couleur : #E2001A <br> Texte : 14px, regular, police du thème, #FFFFFF | - <br> - <br> - <br> Couleur : #B40015 <br> - | Opacité : 40 %
 
-##### Bouton primaire, contexte Abonnement
+##### Bouton primaire Abonnement
 
 Dans un contexte d'abonnement, la couleur de fond du bouton primaire devient #DBA504.
 
   Enabled | Hover / Focus / Pressed
   ------------ | -------------
 ![sbutton__primary__premium__enabled](design/button__primary__premium__enabled.png)|   ![button__primary__premium__hover](design/button__primary__premium__hover.png)
-Couleur : #DBA504 |  Couleur : #C2940C
+Couleur : #DBA504 <br> Texte : #FFFFFF |  Couleur : #C2940C <br> -
 
 
 ### Bouton secondaire

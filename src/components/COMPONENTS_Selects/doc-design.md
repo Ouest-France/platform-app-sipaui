@@ -99,7 +99,7 @@ L'opacité d'un champ inactif est 40 %.
   <div class="do-dont">
   <div class="do">
 
-  ![select__ex__error](design/select__ex__error.png) |
+  ![select__exemples__error](design/select__exemples__error.png) |
   ------------ |
   **Do** <br/> Dans le cas d'un select obligatoire, le message d'erreur demande de renseigner le champ.
 

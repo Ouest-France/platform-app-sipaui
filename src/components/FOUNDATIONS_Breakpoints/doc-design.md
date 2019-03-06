@@ -15,6 +15,8 @@ Les points de ruptures sont utilisés pour les **sites responsifs**. Ils s'inscr
 
 ## Spécifications
 
+![layout](design/layout.png)
+
 Nom | XS | SM | MD | LG | XL
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- |
 Taille | 320 à 359px | 360 à 767px | 768 à 979px | 980 à 1279px | À partir de 1280px

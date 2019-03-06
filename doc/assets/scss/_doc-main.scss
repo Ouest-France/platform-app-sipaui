@@ -84,7 +84,7 @@ main {
     padding-bottom: 20px;
 
     > *:first-child {
-        padding-top: 190px;
+        margin-top: 190px;
     }
     .conteneur {
         padding-left: $margin-medium;
@@ -108,29 +108,42 @@ main {
 .presentation {
     font-size: $font-size-medium2;
     background: radial-gradient(circle at 35% 10%, $couleur-secondaire-1, $couleur-secondaire-3);
-    padding-bottom: 10rem;
+    padding: 4rem 0;
 
     .titre {
-        text-align: center;
-        margin-bottom: $margin-large;
+        margin-bottom: $margin-xlarge;
+        display: flex;
+        //justify-content: center;
+
+        .logoSipaUi {
+            margin-right: $margin-medium;
+            width: 105px;
+        }
         h1 {
-            margin-bottom: $margin-medium;
+            margin-bottom: -2px;
             font-size: $font-size-xxxtall;
             color: $couleur-principale-1;
         }
     }
-    .baseline {
-        font-size: $font-size-tall;
-        text-align: center;
-    }
     .intro {
-        background: rgba(0,0,0, .2);
-        padding: 1.4rem 2rem;
+        display: flex;
+        flex-direction: column;
+        //background: rgba(0,0,0, .2);
+        //padding: 1.4rem 2rem;
         border-radius:  10px;
+
+        div:last-child {
+            margin-top: $margin-large
+        }
     }
     .intro p,
     p.baseline {
         color: $couleur-principale-1;
+    }
+    p.baseline {
+        font-size: $font-size-xtall;
+        font-weight: 700;
+        line-height: 1.1;
     }
 }
 
@@ -181,8 +194,24 @@ main {
     }
 }
 
+.accueil .identite {
+    display: none;
+}
+.accueil main {
+    > *:first-child {
+        margin-top: 100px;
+    }
+}
 .accueil .illustration {
     width: 150px;
+}
+.accueil .github {
+    display: flex;
+    justify-content: flex-end;
+}
+.accueil .logo-github {
+    width: 40px;
+    margin-left: 10px
 }
 
 .titre-doc {
@@ -216,4 +245,28 @@ pre code {
     padding: 5px;
     line-height: 15px;
     display: block;
+}
+
+@media screen and (max-width: 359px) {
+    html {
+        font-size: 55%;
+    }
+    .accueil main {
+        > *:first-child {
+            margin-top: 120px;
+        }
+        .presentation .logoSipaUi {
+            width: 85px;
+            margin-right: $margin-small
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .accueil .intro {
+        flex-direction: row;
+        div:last-child {
+            margin: 0 0 $margin-medium
+        }
+    }
 }
