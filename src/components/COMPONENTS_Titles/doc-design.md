@@ -14,8 +14,8 @@ C’est pourquoi SipaUI style à la fois les titres au sens HTML (h1…) et les 
 
 ### Rôle des balises h
 
-**Les balises h1 à h6 encadrent chaque titre** d’une page web et servent à&nbsp;:
-- **Hiérarchiser un contenu** et aider à sa compréhension en facilitant la lecture. Elles représentent donc six niveaux de titres, h1 étant le plus important et h6 le moins. Un élément de titre décrit brièvement le sujet de la section qu’il introduit.
+**Les balises h1 à h3 encadrent chaque titre** d’une page web et servent à&nbsp;:
+- **Hiérarchiser un contenu** et aider à sa compréhension en facilitant la lecture. Elles représentent donc trois niveaux de titres, h1 étant le plus important et h3 le moins. Un élément de titre décrit brièvement le sujet de la section qu’il introduit.
 - **Indiquer l’importance relative des différents éléments**, tant aux lecteurs qu’aux moteurs de recherche. Pour choisir une des balises, il faut penser **sémantique et structure**. Ce n’est pas la taille ou la forme de la typo d’une balise qui importe, mais sa place dans la hiérarchie.
 
 ### La balise h1
@@ -36,14 +36,10 @@ Les balises H2 sont prises en compte pour le SEO.
 
 - Les balises h3 permettent de **faire ressortir la profondeur d’un contenu**.
 
-### Les balises h4 et suivantes
-
-- Peu de pages ont une longueur ou une complexité telles qu’elles justifient l’usage ces niveaux. En conséquence, **ces balises sont peu utilisées.**
-
 ## Spécifications
 
 ### Contenu non éditorial
-**Les balises h1 à h6 sont des balises de titre (heading)** qui indiquent aux lecteurs et aux moteurs de recherche quelle est l’importance relative de chaque titre. Toutefois, comme cela a été expliqué dans <a href="#usage">l’usage</a>, il pourra être préférable de privilégier l’utilisation des classes à celle des balises. C’est le SEO qui doit guider le choix.
+**Les balises h1 à h3 sont des balises de titre (heading)** qui indiquent aux lecteurs et aux moteurs de recherche quelle est l’importance relative de chaque titre. Toutefois, comme cela a été expliqué dans <a href="#usage">l’usage</a>, il pourra être préférable de privilégier l’utilisation des classes à celle des balises. C’est le SEO qui doit guider le choix.
 Des balises H1 à H3 les composent.
 
 #### Mobile
@@ -69,25 +65,19 @@ h3 | Oswald | Normal | 18px | #333333
 #### Mobile
 
 Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- | -------------
+------------ | ------------- | -------------
 h1 | Arial | Bold | 24px | #333333
 h2 | Oswald | Normal | 22px | #333333
 h3 | Oswald | Normal | 18px | #333333
-h4 | Oswald | Normal | 16px | #333333
-h5 | Oswald | Normal | 14px | #333333
-h6 | Oswald | Normal | 12px | #333333
 
 
 #### Desktop
 
 Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- | -------------
+------------ | ------------- | -------------
 h1 | Arial | Bold | 38px | #333333
 h2 | Oswald | Normal | 30px | #333333
 h3 | Oswald | Normal | 22px | #333333
-h4 | Oswald | Normal | 20px | #333333
-h5 | Oswald | Normal | 18px | #333333
-h6 | Oswald | Normal | 16px | #333333
 
 
 ## Bonnes pratiques
