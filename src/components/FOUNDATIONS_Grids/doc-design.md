@@ -34,13 +34,13 @@ Une grille est constituée de colonnes, séparées par des gouttières permettan
 
 <div class="tableau-grille">
 
-Taille de l'écran | xs&nbsp;: 320 à 359px | sm&nbsp;: 360 à 767px | md&nbsp;: 768 à 979px | md&nbsp;: 768 à 979px | lg&nbsp;: 980 à 1279px | xl&nbsp;: À partir de 1280px
------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
-Nombre de colonnes | 6 | 6 | 6 | 24 | 24 | 24
-Largeur des colonnes | *30 à ±41px* | *±33 à ±101px* | *±95 à 130px* | 12px | ±21px | ±33px
-Gouttières | 20px | 20px | 20px | 20px | 20px | 20px
-Largeur du container  | *280 à 349px*  |  *300 à 707px* | *668 à 879px* | 748px | 960px  | 1260px
-Taille de la marge externe | 20px | 30px | 50px | *10px et plus* | *10px et plus* | *10px et plus*
+Taille de l'écran | xs&nbsp;: 320 à 359px | sm&nbsp;: 360 à 767px | md&nbsp;: 768 à 979px | lg&nbsp;: 980 à 1279px | xl&nbsp;: À partir de 1280px
+------------ | ------------- | ------------- | ------------- | ------------- | -------------
+Nombre de colonnes | 6 | 6 | 6 | 24 | 24
+Largeur des colonnes | *30 à ±36px* | *±33 à ±101px* | ±101px | 20px | ±33px
+Gouttières | 20px | 20px | 20px | 20px | 20px
+Largeur du container  | *280 à 319px*  |  *300 à 707px*  | 708px | 940px  | 1240px
+Taille de la marge externe | 20px | 30px | *30px plus fond perdu* | *10px plus fond perdu* | *10px plus fond perdu*
 
 </div>
 
@@ -54,9 +54,12 @@ Taille de la marge externe | 20px | 30px | 50px | *10px et plus* | *10px et plus
 ![grid__360](design/grid__360.png)
 <br/> Écran mobile sm (360px)
 
+![grid__360](design/grid__768.png)
+<br/> Écran tablette portrait md (768px)
+
 
 ![grid__960](design/grid__960.png)
-<br/> !! Écran tablette ?? (960px)
+<br/>Écran tablette paysage lg (960px)
 
 
 ![grid__1280](design/grid__1280.png)
