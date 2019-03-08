@@ -1,7 +1,6 @@
 # Breakpoints / Points de rupture
 
 Les points de ruptures sont des **points d'arrêts** dans la mise en page permettant l’adaptation de l’affichage aux diverses tailles d’écran.
-
 <br />
 **Ces largeurs clés permettent de garantir la lisibilité du site.**
 <br />
@@ -15,13 +14,13 @@ Les points de ruptures sont utilisés pour les **sites responsifs**. Ils s'inscr
 
 ## Spécifications
 
-![layout](design/layout.png)
-
 Nom | XS | SM | MD | LG | XL
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- |
 Taille | 320 à 359px | 360 à 767px | 768 à 979px | 980 à 1279px | À partir de 1280px
 Type* | Mobile | Mobile | Tablette portrait | Tablette paysage | Desktop
 
 Chaque point d'arrêt a des gouttières, des colonnes et des marges spécifiques. Celles-ci sont définis dans le doc design de la grille.
+
+![layout](design/layout.png)
 
 *tendance de l'appareil
