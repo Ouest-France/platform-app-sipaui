@@ -48,13 +48,7 @@
         h2,
         .su-h2,
         h3,
-        .su-h3,
-        h4,
-        .su-h4,
-        h5,
-        .su-h5,
-        h6,
-        .su-h6 {
+        .su-h3 {
             font-family: $font-family-titles-edito;
             font-weight: $font-weight-titles-edito;
             line-height: $line-height-medium;
@@ -87,41 +81,10 @@
             text-transform: $text-transform-h3-edito;
             margin: 3rem 0 1.3rem;
         }
-        h4,
-        .su-h4 {
-            font-size: $font-size-h4-edito;
-            font-weight: $font-weight-h4-edito;
-            color: $color-h4-edito;
-            text-transform: $text-transform-h4-edito;
-            margin: 2rem 0 .8rem;
-        }
-        h5,
-        .su-h5 {
-            font-size: $font-size-h5-edito;
-            font-weight: $font-weight-h5-edito;
-            color: $color-h5-edito;
-            text-transform: $text-transform-h5-edito;
-            margin: 1.5rem 0 .5rem;
-        }
-        h6,
-        .su-h6 {
-            font-size: $font-size-h6-edito;
-            font-weight: $font-weight-h6-edito;
-            color: $color-h6-edito;
-            text-transform: $text-transform-h6-edito;
-            margin: 1rem 0 0;
-        }
-
         h1 + h2,
         .su-h1 + .su-h2,
         h2 + h3,
-        .su-h2 + .su-h3,
-        h3 + h4,
-        .su-h3 + .su-h4,
-        h4 + h5,
-        .su-h4 + .su-h5,
-        h5 + h6,
-        .su-h5 + .su-h6 {
+        .su-h2 + .su-h3 {
             margin-top: 0;
         }
     }
@@ -168,23 +131,6 @@
                 font-size: $font-size-h3-edito-desktop;
                 margin: 3.5rem 0 1.5rem;
 
-            }
-            h4,
-            .su-h4 {
-                font-size: $font-size-h4-edito-desktop;
-                margin: 2.5rem 0 1rem;
-
-            }
-            h5,
-            .su-h5 {
-                font-size: $font-size-h5-edito-desktop;
-                margin: 1.5rem 0 .5rem;
-
-            }
-            h6,
-            .su-h6 {
-                font-size: $font-size-h6-edito-desktop;
-                margin: 1rem 0 0;
             }
         }
     }
