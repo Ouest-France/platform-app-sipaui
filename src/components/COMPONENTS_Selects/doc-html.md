@@ -86,7 +86,6 @@ Le pseudo-placeholder (qui simule le placeholder d’un champ texte) se fait en 
 
 ```html
 <label for="select3">Label</label>
-<label for="select3">Label</label>
 <div class="su-select">
 	<select id="select3" name="select3" required>
 	    <option value="" disabled selected hidden>Placeholder</option>
