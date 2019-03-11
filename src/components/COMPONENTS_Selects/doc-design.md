@@ -77,7 +77,7 @@ Type | Illustration
   <div class="do-dont">
   <div class="do">
 
-  ![select__ex__focus-ios](design/select__ex__focus-ios.png) |
+  ![select__exemples__focus-ios](design/select__exemples__focus-ios.png) |
   ------------ |
   **Do** <br/> L'ordre alphabétique est souvent le plus approprié.
 
