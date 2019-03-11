@@ -24,15 +24,19 @@
                 <h1>Architecture Fonctionnelle</h2>
 
                 <h2>SipaUI intégré dans un site</h2>
-                <p>SipaUI porte tout le CSS et le JS nécessaire à l’affichage des composants graphiques prévus par la charte. Un site l’utilisant ne devrait donc pas avoir besoin de CSS supplémentaire pour afficher ces composants, d’autant plus que SipaUI intègre un système de «&nbsp;templating&nbsp;» poussé qui devrait lui permettre de répondre à ses besoins de personnalisation. SipaUI intègrera aussi une grille sur 24 colonnes, des classes de marges, ainsi que des classes éditoriales qui permetteront de mettre en page le contenu de façon basique. Toutefois, ce site aura besoin de CSS propres pour gérer la mise en page et la gestion des blocs plus finement, ainsi que tous les cas non prévus dans SipaUI. Par conséquent, il faudra <strong>concaténer les CSS du site avec ceux de SipaUI suivant la même logique</strong> (même découpage en fonction des media-querries) afin d’optimiser les performances en évitant d’appeler plusieurs fichiers CSS.</p>
+                <p>SipaUI porte tout le CSS et le JS nécessaire à l’affichage des composants graphiques prévus par la charte. Un site l’utilisant ne devrait donc pas avoir besoin de CSS supplémentaire pour afficher ces composants. D’autant plus que SipaUI intègre un système de «&nbsp;templating&nbsp;» poussé qui devrait lui permettre de répondre à ses besoins de personnalisation. SipaUI intègre aussi une grille, des classes de marges, ainsi que des classes éditoriales qui permettent de mettre en page le contenu. Toutefois, ce site aura besoin de CSS propres pour gérer tous les cas et éléments non prévus dans SipaUI. Par conséquent, il faudra <strong>concaténer les CSS du site avec ceux de SipaUI suivant la même logique</strong> (même découpage en fonction des media-querries) afin d’optimiser les performances en évitant d’appeler plusieurs fichiers CSS.</p>
 
-                <h2>SipaUI et les Blocks Providers</h2>
-                <p>Un bloc ne devrait pas avoir de CSS propres. Dans quasiment tous les cas, les composants graphiques de SipaUI devraient suffirent à gérer l’affichage du contenu d’un bloc. Dans le cas contraire, le créateur du bloc devra passer la validation de l'équipe Plateforme. Il y aura alors 2 possibilités&nbsp;:</p>
+                <h2>SipaUI et les Blocks Providers (blocs s’intégrant dans un site du groupe)</h2>
+                <p>Un bloc ne devrait pas avoir de CSS propres. Dans quasiment tous les cas, les composants graphiques de SipaUI devraient suffirent à gérer l’affichage du contenu d’un bloc. Dans le cas contraire, il y aura 2 possibilités&nbsp;:</p>
                 <ul>
-                    <li>Il y a des manques dans le framework et l’équipe accepte les évolutions nécessaires via les pull-requests sur Github.</li>
-                    <li>Il s'agit de besoins spécifiques à un BP très particulier (ie un bloc météo) et dans ce cas le bloc pourra porter ses propres CSS. Il serait alors possible que ces CSS soient appelées dans le body (au lieu d’être concaténées avec les CSS du site) pour éviter de ralentir le site, mais attention à l’effet <a href="https://fr.wikipedia.org/wiki/FOUC" target="_blank" class="su-old-blank">FOUC</a></li>
+                    <li>Il y a des manques dans le framework. Il faut alors, soit demander les évolutions nécessaires (cf. ci-dessous), soit les développer vous même et faire une merge-request.</li>
+                    <li>Il s'agit de besoins spécifiques à un BP très particulier (ie un bloc météo) et dans ce cas le bloc pourra porter ses propres CSS. Il serait alors possible que ces CSS soient appelées dans le bloc (au lieu d’être concaténées avec les CSS du site) pour éviter de ralentir le site, mais attention à l’effet <a href="https://fr.wikipedia.org/wiki/FOUC" target="_blank" class="su-old-blank">FOUC</a>.</li>
                 </ul>
-                <p>Dans tous les cas (mais surtout le second), l’équipe Plateforme veillera à ce que cela soit une exception plutôt que la norme (l'ajout de ressources JS/CSS a un impact direct sur les performances frontend de la page).</p>
+                <p>Dans tous les cas (mais surtout le second), <strong>le créateur du bloc devra passer la validation de l’équipe Plateforme</strong>. Le second cas devra rester une exception plutôt que la norme (l’ajout de ressources JS/CSS a un impact direct sur les performances frontend de la page).</p>
+
+                <h2>Demandes d’évolutions, questions…</h2>
+                <p>Les demandes d’évolution peuvent se faire via les <em>issues</em> sur <a href="https://github.com/Ouest-France/platform-app-sipaui" target="_blank" class="su-old-blank">Github</a>.</p>
+                <p>Si vous faites partie du groupe, vous pouvez nous contacter via la <a href="https://groupe-sipa.slack.com/messages/C9K7MA21Z/" target="_blank" class="su-old-blank">chaîne Slack SipaUI</a>.</li>
 
 
                 <!--h2>Matriochka de SCSS</h2>
