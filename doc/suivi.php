@@ -68,23 +68,15 @@
                     <ul class="su-old-not-list table">
                         <li class="row">
                     	    <div class="cell"><span class="version">1.1</span></div>
-                    	    <div class="cell">Listes et loader de page.</div>
+                    	    <div class="cell">Listes, loader de page et mutualisation des "jaunes" Abonnement et Premium.</div>
                         </li>
                     	<li class="row">
                     	    <div class="cell"><span class="version">1.2</span></div>
                     	    <div class="cell">Stepper.</div>
                         </li>
                         <li class="row">
-                    	    <div class="cell"><span class="version">1.?</span></div>
+                    	    <div class="cell"><span class="version">1.3</span></div>
                     	    <div class="cell">Mot de passe.</div>
-                        </li>
-                        <li class="row">
-                    	    <div class="cell"><span class="version">1.?</span></div>
-                    	    <div class="cell">Pagination.</div>
-                        </li>
-                        <li class="row">
-                    	    <div class="cell"><span class="version">1.?</span></div>
-                    	    <div class="cell">Popin.</div>
                         </li>
                     </ul>
                 </section>

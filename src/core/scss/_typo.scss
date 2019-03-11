@@ -25,7 +25,8 @@
             margin: 0;
         }
         p + p,
-        ul + p {
+        ul + p,
+        ol + p {
             margin-top: $margin-medium;
         }
     }

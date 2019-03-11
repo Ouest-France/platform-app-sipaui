@@ -77,7 +77,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 <div class="do-dont">
  <div class="do">
 
-![Image_button_texte minimum_ok](design/Image_button_texte_minimum_ok.png) Image à modifier |
+![button__exemples__text__do](design/button__exemples__text__do.png)|
 ------------ |
 **Do** <br/> Utiliser un texte simple |
 
@@ -85,7 +85,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
  <div class="dont">
 
-![Image_button_texte minimum_ko](design/Image_button_texte_minimum_ko.png) Image à modifier |
+![button__exemples__text__dont](design/button__exemples__text__dont.png) |
 ------------ |
 **Don’t** <br/> Ne pas surcharger le texte |
 
@@ -97,7 +97,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 <div class="do-dont">
 <div class="do">
 
-![Image_button_sequentiel](design/Image_button_sequentiel.png)  |
+|
 ------------ |
 **Do** <br/> Mettre le bouton «&nbsp;Retour&nbsp;» à gauche
 
