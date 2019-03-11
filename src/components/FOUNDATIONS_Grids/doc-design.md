@@ -48,22 +48,19 @@ Taille de la marge externe | 20px | 30px | *30px plus fond perdu* | *10px plus f
 <div class="do">
 
 ![grid__320](design/grid__320.png)
-<br/> Écran mobile xs (320px)
-
+<br/> Écran mobile xs : 320px
 
 ![grid__360](design/grid__360.png)
-<br/> Écran mobile sm (360px)
+<br/> Écran mobile sm :360px
 
-![grid__360](design/grid__768.png)
-<br/> Écran tablette portrait md (768px)
+![grid__768](design/grid__768.png)
+<br/> Écran tablette portrait md : 768px
 
+![grid__940](design/grid__940.png)
+<br/>Écran tablette paysage lg : 940px
 
-![grid__960](design/grid__960.png)
-<br/>Écran tablette paysage lg (960px)
-
-
-![grid__1280](design/grid__1280.png)
-<br/> Écran desktop xl (1280px)
+![grid__1260](design/grid__1260.png)
+<br/> Écran desktop xl : 1260px
 
 ### Autres composants
 - Marges
