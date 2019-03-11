@@ -19,7 +19,6 @@
             };
             _data = JSON.parse(_data);
             const d = {...f,..._data};
-
             if(['focusin', 'input'].indexOf(event.type) >= 0) {
                 d.force = _data.force != undefined ? _data.force : (_data.inverted ? false : true);
             } else if('focusout' == event.type) {
@@ -34,6 +33,7 @@
                 const parent = that.closest(d.parent);
                 parent.classList.toggle(d.klass, d.force === null ? null : !!d.force);
             } else {
+                d.sel = that.closest(d.sel);
                 d.sel.classList.toggle(d.klass, d.force === null ? null : !!d.force);
             }
         });
