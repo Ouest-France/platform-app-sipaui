@@ -73,17 +73,7 @@ Type | Illustration
 - Un champ obligatoire est défini comme ko lorsque le texte n'est pas correct ou est absent.
 
 #### Message d'erreur
-- Lorsque le champ est ko, un message d'erreur guide l’utilisateur sur la manière de résoudre le problème.
-- Il apparait sur une seule ligne.
-- Tant que l'erreur n'est pas corrigée, il reste affiché. Dans un formulaire, l'état d’erreur disparait suite à la validation de l’ensemble de la page.
-- Le message s'affiche sous la ligne de saisie.
-- Taille de caractère : 14px
-- Graisse de caractère : regular
-- Police du thème
-- Couleur : #B40015
-- Une icône d'erreur précède le message d'erreur
-  - Couleur : #B40015
-  - Title : error
+- Les spécifications sont disponibles dans le doc deisgn du composant Error.
 
 #### Contour du container
   - Épaisseur : 1px
