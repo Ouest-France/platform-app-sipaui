@@ -13,12 +13,15 @@
             const f = {
                 'sel': that,
                 'parent': null,
-                'klass': '',
+                'klass': null,
                 'delais': 0,
                 'force': null
             };
             _data = JSON.parse(_data);
             const d = {...f,..._data};
+
+            if(!d.klass) return; // parametre obligatoire
+
             if(['focusin', 'input'].indexOf(event.type) >= 0) {
                 d.force = _data.force != undefined ? _data.force : (_data.inverted ? false : true);
             } else if('focusout' == event.type) {
@@ -33,17 +36,28 @@
                 const parent = that.closest(d.parent);
                 parent.classList.toggle(d.klass, d.force === null ? null : !!d.force);
             } else {
-                d.sel = that.closest(d.sel);
+                d.sel = typeof d.sel == 'string' ? su.doc.querySelector(d.sel) : d.sel; // Le parametre sel est soit un selecteur CSS, soit c'est l emement lui meme
                 d.sel.classList.toggle(d.klass, d.force === null ? null : !!d.force);
             }
         });
-        
+
     }
 
+    const focusables = ['input', 'textarea', 'select'];
+
     ['focusin', 'focusout', 'input'].forEach(event => su.doc.addEventListener(event, function(e) {
-        const elem = e.target.closest("[data-"+cn+"]");
+        const elem = e.target.closest(focusables.map(el => el + '[data-'+cn+']').join(', '));
         if (!elem) return;
         _doToggle(e, elem);
     }));
+
+    su.doc.addEventListener('click', function(e) {
+        const element = e.target.closest(
+            '[data-'+cn+']'+focusables.map(el => ':not('+el+')').join('')
+        );
+
+        if (!element) return;
+        _doToggle(e, element);
+    });
 
 })('sutoggleclass');
