@@ -5,7 +5,7 @@
 ;(function(cn){
     function _doToggle(event, that) {
         that = that || this;
-        const opt = that.getAttribute('data-'+cn),
+        const opt = JSON.parse(that.getAttribute('data-'+cn)),
             inputTypes = ['text', 'password', 'number', 'email', 'tel', 'url', 'search', 'date', 'datetime', 'datetime-local', 'time', 'month', 'week']
         ;
 
@@ -17,7 +17,6 @@
                 'delais': 0,
                 'force': null
             };
-            _data = JSON.parse(_data);
             const d = {...f,..._data};
 
             if(!d.klass) return; // parametre obligatoire
@@ -32,12 +31,17 @@
                 d.force = false;
             }
 
+            var sel;
             if(d.parent) {
-                const parent = that.closest(d.parent);
-                parent.classList.toggle(d.klass, d.force === null ? null : !!d.force);
+                sel = that.closest(d.parent);
             } else {
-                d.sel = typeof d.sel == 'string' ? su.doc.querySelector(d.sel) : d.sel; // Le parametre sel est soit un selecteur CSS, soit c'est l emement lui meme
-                d.sel.classList.toggle(d.klass, d.force === null ? null : !!d.force);
+                sel = typeof d.sel == 'string' ? su.doc.querySelector(d.sel) : d.sel; // Le parametre sel est soit un selecteur CSS, soit c'est l emement lui meme
+            }
+
+            if(d.force === null) {
+                sel.classList.toggle(d.klass);
+            } else {
+                sel.classList.toggle(d.klass, !!d.force);
             }
         });
 
