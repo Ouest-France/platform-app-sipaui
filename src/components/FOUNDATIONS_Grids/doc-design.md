@@ -57,10 +57,10 @@ Taille de la marge externe | 20px | 30px | *30px plus fond perdu* | *10px plus f
 <br/> Écran tablette portrait md : 768px
 
 ![grid__940](design/grid__940.png)
-<br/>Écran tablette paysage lg : 940px
+<br/>Écran tablette paysage lg : 980px
 
 ![grid__1260](design/grid__1260.png)
-<br/> Écran desktop xl : 1260px
+<br/> Écran desktop xl : 1280px
 
 ### Autres composants
 - Marges
