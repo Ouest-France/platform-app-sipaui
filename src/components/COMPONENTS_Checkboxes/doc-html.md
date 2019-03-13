@@ -12,8 +12,8 @@ Toutefois, pour gérer l’affichage en colonne d’une suite de cases à cocher
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **helpers**</li>,
-- composant **FORM_errors**</li>
+- composant **helpers**,
+- composant **FORM_errors**
 
 </div>
 
