@@ -32,15 +32,20 @@ Une grille est constituée de colonnes, séparées par des gouttières permettan
 - La grille dispose de marges latérales entre le contenu et les bords gauche et droit de l'écran. L'objectif est que l'œil puisse bénéficier d'un confort de lecture en ne "tapant" pas contre les bords de la fenêtre du navigateur.
 - Le contenu est centré entre les marges.
 
+### Référentiel
+
 <div class="tableau-grille">
 
-Taille de l'écran | xs&nbsp;: 320 à 359px | sm&nbsp;: 360 à 767px | md&nbsp;: 768 à 979px | lg&nbsp;: 980 à 1279px | xl&nbsp;: À partir de 1280px
+Taille de l'écran | 320 à 359px | 360 à 767px | 768 à 979px | 980 à 1279px | À partir de 1280px
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
+Référence de taille | xs | sm | md | lg | xl
 Nombre de colonnes | 6 | 6 | 6 | 24 | 24
 Largeur des colonnes | *30 à ±36px* | *±33 à ±101px* | ±101px | 20px | ±33px
 Gouttières | 20px | 20px | 20px | 20px | 20px
 Largeur du container  | *280 à 319px*  |  *300 à 707px*  | 708px | 940px  | 1240px
 Taille de la marge externe | 20px | 30px | *30px plus fond perdu* | *10px plus fond perdu* | *10px plus fond perdu*
+
+<p class="legende">En gris et italique&nbsp;: valeurs fluides</p>
 
 </div>
 
@@ -48,19 +53,19 @@ Taille de la marge externe | 20px | 30px | *30px plus fond perdu* | *10px plus f
 <div class="do">
 
 ![grid__320](design/grid__320.png)
-<br/> Écran mobile xs : 320px
+<p class="legende">Écran mobile&nbsp;: 320px</p>
 
 ![grid__360](design/grid__360.png)
-<br/> Écran mobile sm :360px
+<p class="legende">Écran mobile&nbsp;: 360px</p>
 
 ![grid__768](design/grid__768.png)
-<br/> Écran tablette portrait md : 768px
+<p class="legende">Écran tablette portrait&nbsp;: 768px</p>
 
 ![grid__940](design/grid__940.png)
-<br/>Écran tablette paysage lg : 980px
+<p class="legende">Écran tablette paysage&nbsp;: 980px</p>
 
 ![grid__1260](design/grid__1260.png)
-<br/> Écran desktop xl : 1280px
+<p class="legende">Écran desktop&nbsp;: 1280px</p>
 
 ### Autres composants
 - Marges
