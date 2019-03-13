@@ -264,7 +264,11 @@
     #liste-classes:before {
         background: #f5f5f5;
     }
-
+    .legende {
+        font-style: italic;
+        font-size: 1.4rem;
+        margin: -10px 0 40px !important;
+    }
     .sipaui {
         padding: 30px 20px 20px;
         margin: 20px 0;
@@ -334,9 +338,6 @@
         color: #DF3036 !important;
         font-size: 1.6rem !important;
     }
-    .tableau-grille table {
-        margin-bottom: 40px !important;
-    }
 
     .tableau-grille em {
         color: #878787
@@ -373,13 +374,23 @@
 	}
 
 	/* Grille ------------------------- */
-    .demo-grille.su-grid-container {
-        background: #efefef;
-        min-height: 20px;
+	.sipaui.demo-conteneur {
+	    position: relative;
+        left: calc(-10vw - 16px);
+        padding-left: 0;
+        padding-right: 0;
+        width: 100vw;
     }
-    .demo-grille .su-row {
-        background: powderblue;
-        min-height: 20px;
+    .demo-grille.page,
+    .demo-grille .contenu {
+        background: #efefef;
+    }
+    .demo-grille .contenu {
+        height: 100%;
+    }
+    .demo-grille .su-page-container {
+        background: #8da886;
+        height: 200px;
     }
     .demo-grille [class*="su-col"] {
         background: pink;
@@ -423,6 +434,9 @@
         .zone-titre-accueil {
             margin: 40px 0;
             padding: 10px 0;
+        }
+        .sipaui.demo-conteneur {
+            left: -36px;
         }
     }
 

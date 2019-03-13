@@ -25,7 +25,6 @@ Type | Illustration
 
 ### Label
 
-#### Label
 - Le composant "Label" indique le type d’information demandée sous celui-ci.
 - Ses spécifications sont disponibles dans son doc design.
 - Il est facultatif.

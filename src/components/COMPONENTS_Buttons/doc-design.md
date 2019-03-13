@@ -97,7 +97,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 <div class="do-dont">
 <div class="do">
 
-|
+![Image_button_sequentiel](design/Image_button_sequentiel.png)|
 ------------ |
 **Do** <br/> Mettre le bouton «&nbsp;Retour&nbsp;» à gauche
 

@@ -3,3 +3,46 @@
 */
 @import "variables";
 
+// CONTENEUR------------------------------------------------------------------------------------------/
+.sipaui {
+    .su-page-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media screen and (min-width: $min-breakpoint-sm) {
+    .sipaui {
+        .su-page-container {
+            padding: 0 30px;
+        }
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-md) {
+    .sipaui {
+        .su-page-container {
+            max-width: $min-breakpoint-md;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-lg) {
+    .sipaui {
+        .su-page-container {
+            max-width: 940px;
+            padding: 0 10px;
+        }
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-xl) {
+    .sipaui {
+        .su-page-container {
+            max-width: 1240px;
+        }
+    }
+}
