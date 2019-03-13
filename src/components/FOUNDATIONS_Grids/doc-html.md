@@ -9,7 +9,7 @@ D’un point de vue technique, la grille s'appuie sur le modèle *Flexbox*, la t
 
 <!-- STORY -->
 
-## Le conteneur
+## Le conteneur de page
 
 Le conteneur ne fait pas partie à proprement parler de la grille. Il sert à déterminer la largeur que prend la grille principale de la page (celle de premier niveau). **Si vous avez besoin d’insérer une grille dans un sous-niveau, il n’y aura plus besoin de conteneur**. Exemple de grille multi-niveau&nbsp;: Page / conteneur / grille n1 / grille n2…
 
@@ -42,18 +42,9 @@ Il utilise la classe `su-page-container`.
 </div>
 
 
-<div id="liste-classes">
+## La grille standard
 
-## Liste des classes disponibles
-- `su-page-container`
-
-</div>
-
-
-## La grille
-
-
-
+(conteneur)
 
 <div class="sipaui">
 	<div class="demo-grille page">
@@ -66,4 +57,27 @@ Il utilise la classe `su-page-container`.
 			</div>
 		</div>
 	</div>
+</div>
+
+### Décalage de colonnes
+
+## La grille dans le conteneur de page
+
+## Grille spécifique 
+
+### Grille sans gouttière
+
+### Grille automatique
+
+### Grille imbriquée
+(pas de conteneur)
+
+
+
+
+<div id="liste-classes">
+
+## Liste des classes disponibles
+- `su-page-container`
+
 </div>
