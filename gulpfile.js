@@ -252,6 +252,6 @@ gulp.task("watch", function() {
 });
 
 gulp.task("make-dev-assets", ["clean", "make-assets", "make-sass", "make-css-dev", "scripts", "make-scripts-dev", "loader-storybook"]);
-gulp.task("make-prod-assets", ["clean", "make-assets", "make-sass", "make-css-prod", "scripts", "make-scripts-dev", "loader-storybook"]);
+gulp.task("make-prod-assets", ["clean", "make-assets", "make-sass", "make-css-prod", "scripts", "make-scripts-prod", "loader-storybook"]);
 gulp.task("default", ["clean", "make-dev-assets"]);
 gulp.task("html", ["clean", "generate-doc",  "generate-html"]);
