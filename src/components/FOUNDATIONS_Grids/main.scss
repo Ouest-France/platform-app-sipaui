@@ -46,3 +46,62 @@
         }
     }
 }
+
+// GRILLE------------------------------------------------------------------------------------------/
+.sipaui {
+    .su-grid-flex {
+        &.su-row {
+            @include flexDisplay();
+        }
+        &.su-row.su-no-gutter {
+            [class*="su-col"] {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        &.su-grid-auto.su-row {
+            @include flexJustifyContent(space-between);
+
+            .su-col {
+                @include flexFlexValue(1 0 0);
+            }
+        }
+        // Gouttière ------------------------------------/
+        [class*="su-col"] {
+            margin-left: $grid-gutter / 2;
+            margin-right: $grid-gutter / 2;
+
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: $min-breakpoint-sm) {
+    .sipaui {
+
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-md) {
+    .sipaui {
+
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-lg) {
+    .sipaui {
+
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-xl) {
+    .sipaui {
+
+    }
+}
