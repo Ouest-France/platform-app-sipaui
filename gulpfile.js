@@ -51,33 +51,29 @@ gulp.task('make-sass', ['clean'], function () {
 
 gulp.task("scripts", ["clean"], function() {
     return gulp.src([
-        'node_modules/babel-polyfill/dist/polyfill.js',
-        source + "/core/js/sipaui.js"])
+            source + "/core/js/sipaui.js"
+        ])
         .pipe(concat('sipaui.js', {newLine: ';'}))
-        .pipe(
-            babel(
-                {
-                    presets: [
-                        [
-                            "@babel/preset-env",
-                            {
-                                "useBuiltIns": "entry",
-                                "targets": {
-                                    "firefox": "51",
-                                    "chrome": "56",
-                                    "ie": "10"
-                                }
-                            }
-                        ]
-                    ]
-                }
-            )
-        )
         .pipe(include({
             extensions: "js",
             hardFail: true,
             includePaths: [
             __dirname + "/src/core/js"
+            ]
+        }))
+
+        .pipe(babel({
+            "presets": [
+                [
+                    "@babel/preset-env",
+                    {
+                        "targets": {
+                            "firefox": "51",
+                            "chrome": "56",
+                            "ie": "10"
+                        }
+                    }
+                ]
             ]
         }))
             .on('error', console.log)
