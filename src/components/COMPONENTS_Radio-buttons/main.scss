@@ -26,8 +26,8 @@ $padding-left-label: $height-input-radio + 7px;
         }
     }
     .su-radio-area.su-radio-column {
-        @include flexDirection(column, vertical);
-        @include flexAlign(flex-start);
+        @include flexDirection(column);
+        @include flexAlignItems(flex-start);
 
         label,
         .su-label-radio {

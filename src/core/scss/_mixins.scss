@@ -267,52 +267,68 @@
 }
 
 // FLEXBOX MODEL ————————————————————————————————————————————————————————————————————————————————————————————————
+// Flex container ----
 @mixin flexDisplay() {
-    display: -webkit-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
 }
 
-@mixin flexDirection($flexDirection, $flexDirectionOld) {
-    -webkit-box-orient: $flexDirectionOld; // horizontal, vertical
-    -webkit-flex-direction: $flexDirection; // row, column
+@mixin flexDirection($flexDirection) { // row, column, row-reverse, column-reverse
+                        -ms-flex-direction: $flexDirection;
+    -webkit-flex-direction: $flexDirection;
     flex-direction: $flexDirection;
 }
-
-@mixin flexAlign($flexAlign) {
-    -webkit-box-align: $flexAlign; //flex-start, flex-end, center, baseline, stretch
-    -webkit-align-items: $flexAlign;
-    align-items: $flexAlign;
+@mixin flexWrap($flexWrap) { // no-wrap, wrap, wrap-reverse
+    -ms-flex-wrap: $flexWrap;
+    -webkit-flex-wrap: $flexWrap;
+    flex-wrap: $flexWrap;
+}
+@mixin flexFlow($flexFlow) { // row, column, row-reverse, column-reverse \ no-wrap, wrap, wrap-reverse
+    -webkit-flex-flow: $flexFlow;
+    flex-flow: $flexFlow;
 }
 
-@mixin flexJustify($flexJustify, $flexJustifyOld) {
-    -webkit-box-pack: $flexJustifyOld; //start, end, center, justify
-    -webkit-justify-content: $flexJustify; //flex-start, flex-end, center, space-between, space-around
+@mixin flexJustifyContent($flexJustify) { //flex-start, flex-end, center, space-between, space-around, space-evenly
+                        -ms-justify-content: $flexJustify;
+    -webkit-justify-content: $flexJustify;
     justify-content: $flexJustify;
 }
 
-@mixin flexWrap($flexWrap) { // not possible with the 2009 model for android pre 4.4
-    -webkit-flex-wrap: $flexWrap; // no-wrap, wrap, wrap-reverse
-    flex-wrap: $flexWrap;
+@mixin flexAlignItems($flexAlignItems) { //flex-start, flex-end, center, stretch, baseline
+                        -ms-align-items: $flexAlignItems;
+    -webkit-align-items: $flexAlignItems;
+    align-items: $flexAlignItems;
 }
 
-@mixin flexOrder($flexOrder) {
-    -webkit-box-ordinal-group: $flexOrder;
+@mixin flexAlignContent($flexAlignContent) { //flex-start, flex-end, center, stretch, space-between, space-around
+                        -ms-align-items: $flexAlignContent;
+    -webkit-align-items: $flexAlignContent;
+    align-items: $flexAlignContent;
+}
+
+// Flex items ----
+
+@mixin flexOrder($flexOrder) { //
+                        -ms-order: $flexOrder;
     -webkit-order: $flexOrder;
     order: $flexOrder;
 }
 
-@mixin flexAlignSelf($flexAlignSelf) {
-    -webkit-align-self: $flexAlignSelf; //for flex's childs : flex-start, flex-end, center, baseline, stretch
-    align-self: $flexAlignSelf;
-}
-
-@mixin flexFlexValue($flexFlexValue) {
-    -webkit-box-flex: $flexFlexValue; //for flex's childs : 0 = not sized, integer (1) = sized to fill the space
+@mixin flexFlexValue($flexFlexValue) { // 0 = pas de taille, integer (1) = taille pour remplir l’espace
+                        -ms-flex: $flexFlexValue;
     -webkit-flex: $flexFlexValue;
     flex: $flexFlexValue;
 }
 
+@mixin flexAlignSelf($flexAlignSelf) { // flex-start, flex-end, center, baseline, stretch
+                        -ms-align-self: $flexAlignSelf;
+    -webkit-align-self: $flexAlignSelf;
+    align-self: $flexAlignSelf;
+}
+
+
+// IMPORT DES FONTES ————————————————————————————————————————————————————————————————————————————————————————————————
 @mixin importFonts() {
     @if $font-import-use-local == null {
         @import url($font-import-url);
