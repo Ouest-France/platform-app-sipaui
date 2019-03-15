@@ -268,63 +268,66 @@
 
 // FLEXBOX MODEL ————————————————————————————————————————————————————————————————————————————————————————————————
 // Flex container ----
-@mixin flexDisplay() {
+@mixin displayFlex() {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
 }
 
-@mixin flexDirection($flexDirection) { // row, column, row-reverse, column-reverse
-                        -ms-flex-direction: $flexDirection;
-    -webkit-flex-direction: $flexDirection;
-    flex-direction: $flexDirection;
+@mixin flexDirection($direction) { // row, column, row-reverse, column-reverse
+        -ms-flex-direction: $direction;
+    -webkit-flex-direction: $direction;
+            flex-direction: $direction;
 }
-@mixin flexWrap($flexWrap) { // no-wrap, wrap, wrap-reverse
-    -ms-flex-wrap: $flexWrap;
-    -webkit-flex-wrap: $flexWrap;
-    flex-wrap: $flexWrap;
+@mixin flexWrap($wrap) { // no-wrap, wrap, wrap-reverse
+        -ms-flex-wrap: $wrap;
+    -webkit-flex-wrap: $wrap;
+            flex-wrap: $wrap;
 }
-@mixin flexFlow($flexFlow) { // row, column, row-reverse, column-reverse \ no-wrap, wrap, wrap-reverse
-    -webkit-flex-flow: $flexFlow;
-    flex-flow: $flexFlow;
-}
-
-@mixin flexJustifyContent($flexJustify) { //flex-start, flex-end, center, space-between, space-around, space-evenly
-                        -ms-justify-content: $flexJustify;
-    -webkit-justify-content: $flexJustify;
-    justify-content: $flexJustify;
+@mixin flexFlow($flow) { // row, column, row-reverse, column-reverse \ no-wrap, wrap, wrap-reverse
+        -ms-flex-flow: $flow;
+    -webkit-flex-flow: $flow;
+            flex-flow: $flow;
 }
 
-@mixin flexAlignItems($flexAlignItems) { //flex-start, flex-end, center, stretch, baseline
-                        -ms-align-items: $flexAlignItems;
-    -webkit-align-items: $flexAlignItems;
-    align-items: $flexAlignItems;
+//@mixin justifyContent($justify, $justifyOld:null) {
+@mixin justifyContent($justify, $justifyOld) { //flex-start, flex-end, center, space-between, space-around, space-evenly
+              -ms-flex-pack: $justifyOld; // start, end, center, justify, distribute
+        -ms-justify-content: $justify;
+    -webkit-justify-content: $justify;
+            justify-content: $justify;
 }
 
-@mixin flexAlignContent($flexAlignContent) { //flex-start, flex-end, center, stretch, space-between, space-around
-                        -ms-align-items: $flexAlignContent;
-    -webkit-align-items: $flexAlignContent;
-    align-items: $flexAlignContent;
+@mixin alignItems($alignItems) { //flex-start, flex-end, center, stretch, baseline
+        -ms-align-items: $alignItems;
+    -webkit-align-items: $alignItems;
+            align-items: $alignItems;
+}
+
+@mixin alignContent($alignContent) { //flex-start, flex-end, center, stretch, space-between, space-around
+        -ms-align-content: $alignContent;
+    -webkit-align-content: $alignContent;
+            align-content: $alignContent;
 }
 
 // Flex items ----
 
-@mixin flexOrder($flexOrder) { //
-                        -ms-order: $flexOrder;
-    -webkit-order: $flexOrder;
-    order: $flexOrder;
+@mixin order($order) { //
+        -ms-order: $order;
+    -webkit-order: $order;
+            order: $order;
 }
 
-@mixin flexFlexValue($flexFlexValue) { // 0 = pas de taille, integer (1) = taille pour remplir l’espace
-                        -ms-flex: $flexFlexValue;
-    -webkit-flex: $flexFlexValue;
-    flex: $flexFlexValue;
+@mixin flex($flex) { // 0 = pas de taille, integer (1) = taille pour remplir l’espace
+        -ms-flex: $flex;
+    -webkit-flex: $flex;
+            flex: $flex;
 }
 
-@mixin flexAlignSelf($flexAlignSelf) { // flex-start, flex-end, center, baseline, stretch
-                        -ms-align-self: $flexAlignSelf;
-    -webkit-align-self: $flexAlignSelf;
-    align-self: $flexAlignSelf;
+@mixin alignSelf($alignSelf) { // flex-start, flex-end, center, baseline, stretch
+        -ms-align-self: $alignSelf;
+    -webkit-align-self: $alignSelf;
+            align-self: $alignSelf;
 }
 
 
