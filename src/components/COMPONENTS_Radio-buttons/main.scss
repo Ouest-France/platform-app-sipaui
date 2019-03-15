@@ -11,7 +11,7 @@ $padding-left-label: $height-input-radio + 7px;
 
 .sipaui {
     .su-radio-area {
-        @include flexDisplay();
+        @include displayFlex();
 
         &.su-disabled {
             label,
@@ -27,7 +27,7 @@ $padding-left-label: $height-input-radio + 7px;
     }
     .su-radio-area.su-radio-column {
         @include flexDirection(column);
-        @include flexAlignItems(flex-start);
+        @include alignItems(flex-start);
 
         label,
         .su-label-radio {
