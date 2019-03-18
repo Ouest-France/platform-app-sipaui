@@ -75,6 +75,17 @@
                 @include flex(1 0 0);
             }
         }
+
+        // Alignement vertical
+        &.su-vertical-start {
+            @include alignItems(flex-start);
+        }
+        &.su-vertical-center {
+            @include alignItems(center);
+        }
+        &.su-vertical-end {
+            @include alignItems(flex-end);
+        }
     }
 }
 

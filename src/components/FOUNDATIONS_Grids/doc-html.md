@@ -100,30 +100,30 @@ Aussi&nbsp;:
 			Page
 		</div>
 		<div class="su-row">
-			<div class="su-col-xs-1 su-col-lg-1"><p class="contenu">1</p></div>
-			<div class="su-col-xs-1 su-col-lg-1"><p class="contenu">2</p></div>
-			<div class="su-col-xs-1 su-col-lg-1"><p class="contenu">3</p></div>
-			<div class="su-col-xs-1 su-col-lg-1"><p class="contenu">4</p></div>
-			<div class="su-col-xs-1 su-col-lg-1"><p class="contenu">5</p></div>
-			<div class="su-col-xs-1 su-col-lg-1"><p class="contenu">6</p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">7</p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">8</p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">9</p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">10<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">11<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">12<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">13<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">14<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">15<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">16<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">17<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">18<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">19<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">20<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">21<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">22<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">23<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p class="contenu">24<p></div>
+			<div class="su-col-xs-1 su-col-lg-1"><p>1</p></div>
+			<div class="su-col-xs-1 su-col-lg-1"><p>2</p></div>
+			<div class="su-col-xs-1 su-col-lg-1"><p>3</p></div>
+			<div class="su-col-xs-1 su-col-lg-1"><p>4</p></div>
+			<div class="su-col-xs-1 su-col-lg-1"><p>5</p></div>
+			<div class="su-col-xs-1 su-col-lg-1"><p>6</p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>7</p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>8</p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>9</p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>10<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>11<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>12<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>13<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>14<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>15<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>16<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>17<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>18<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>19<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>20<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>21<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>22<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>23<p></div>
+			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>24<p></div>
 		</div>
 	</div>
 </div>
@@ -178,25 +178,25 @@ En combinant les diverses classes de colonnes possibles, ainsi que les classes d
 		<div class="su-page-container">
 			<div class="su-row">
 				<div class="su-hidden-sm su-col-md-3 su-col-lg-2">
-					<p class="contenu">
+					<p>
 						1.<br />
 						su-hidden-sm su-col-md-3 su-col-lg-2
 					</p>
 				</div>
 				<div class="su-col-md-3 su-col-lg-12 su-col-xl-10">
-					<p class="contenu">
+					<p>
 						2.<br />
 						su-col-md-3 su-col-lg-12 su-col-xl-10
 					</p>
 				</div>
 				<div class="su-col-md-3 su-col-lg-3 su-col-xl-4">
-					<p class="contenu">
+					<p>
 						3.<br />
 						su-col-md-3 su-col-lg-3 su-col-xl-4
 					</p>
 				</div>
 				<div class="su-col-md-3 su-col-lg-7 su-col-xl-8">
-					<p class="contenu">
+					<p>
 						4.<br />
 						su-col-md-3 su-col-lg-7 su-col-xl-8
 					</p>
@@ -210,7 +210,195 @@ En combinant les diverses classes de colonnes possibles, ainsi que les classes d
 
 ### Alignement vertical
 
-Avec SipaUI il est possible de gérer l’alignement ou l’étirement vertical des colonnes dans le rang `su-row`.
+Avec SipaUI il est possible de gérer l’alignement ou l’étirement **vertical** des colonnes dans le rang avec les classes `su-vertical-…` à positionner avec la classe `su-row`.
+
+#### Colonnes étirées
+
+L’étirement des colonnes étant l’alignement par défaut, il n’a pas de classe spécifique.
+
+```html
+<div class="sipaui">
+	<div>
+		<div>
+			Page
+		</div>
+		<div class="su-row">
+			<div class="su-col-xs-2">
+				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+			</div>
+		</div>
+	</div>
+</div>
+```
+
+<div class="sipaui">
+	<div class="demo-grille page">
+		<div>
+			Page
+		</div>
+		<div class="su-row">
+			<div class="su-col-xs-2">
+				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+#### Alignement haut
+
+```html
+<div class="sipaui">
+	<div>
+		<div>
+			Page
+		</div>
+		<div class="su-row su-vertical-start">
+			<div class="su-col-xs-2">
+				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+			</div>
+		</div>
+	</div>
+</div>
+```
+
+<div class="sipaui">
+	<div class="demo-grille page">
+		<div>
+			Page
+		</div>
+		<div class="su-row su-vertical-start">
+			<div class="su-col-xs-2">
+				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+#### Alignement centré
+
+```html
+<div class="sipaui">
+	<div>
+		<div>
+			Page
+		</div>
+		<div class="su-row su-vertical-center">
+			<div class="su-col-xs-2">
+				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+			</div>
+		</div>
+	</div>
+</div>
+```
+
+<div class="sipaui">
+	<div class="demo-grille page">
+		<div>
+			Page
+		</div>
+		<div class="su-row su-vertical-center">
+			<div class="su-col-xs-2">
+				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+#### Alignement bas
+
+```html
+<div class="sipaui">
+	<div>
+		<div>
+			Page
+		</div>
+		<div class="su-row su-vertical-end">
+			<div class="su-col-xs-2">
+				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+			</div>
+		</div>
+	</div>
+</div>
+```
+
+<div class="sipaui">
+	<div class="demo-grille page">
+		<div>
+			Page
+		</div>
+		<div class="su-row su-vertical-end">
+			<div class="su-col-xs-2">
+				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+			</div>
+			<div class="su-col-xs-2">
+				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
 
 ## Grille libre automatique
 
@@ -224,10 +412,10 @@ Il faut toutefois noter que ce système de colonage automatique est un outil pou
 		Page
 	</div>
 	<div class="su-grid-auto su-row">
-		<div class="su-col"><div class="contenu"></div></div>
-		<div class="su-col"><div class="contenu"></div></div>
-		<div class="su-col"><div class="contenu"></div></div>
-		<div class="su-col"><div class="contenu"></div></div>
+		<div class="su-col"><div></div></div>
+		<div class="su-col"><div></div></div>
+		<div class="su-col"><div></div></div>
+		<div class="su-col"><div></div></div>
 	</div>
 </div>
 ```
@@ -238,10 +426,10 @@ Il faut toutefois noter que ce système de colonage automatique est un outil pou
 			Page
 		</div>
 		<div class="su-grid-auto su-row">
-			<div class="su-col"><div class="contenu"></div></div>
-			<div class="su-col"><div class="contenu"></div></div>
-			<div class="su-col"><div class="contenu"></div></div>
-			<div class="su-col"><div class="contenu"></div></div>
+			<div class="su-col"><div></div></div>
+			<div class="su-col"><div></div></div>
+			<div class="su-col"><div></div></div>
+			<div class="su-col"><div></div></div>
 		</div>
 	</div>
 </div>
