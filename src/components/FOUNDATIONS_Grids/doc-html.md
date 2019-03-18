@@ -6,6 +6,14 @@ D’un point de vue technique, la grille s'appuie sur le modèle *Flexbox*, la t
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
+<div class="dependances">
+
+## Dépendances
+- classe `sipaui` sur un parent (par exemple le `<body>`),
+- composant **helpers**,
+
+</div>
+
 
 <!-- STORY -->
 
@@ -44,7 +52,13 @@ Il utilise la classe `su-page-container`.
 
 ## La grille standard
 
-Exemple de la grille standard de 6 colonnes sur petits écrans et 24 sur grand (les colonnes supérieures à 6 sont masquées sur les petits écrans). 
+Exemple de la grille standard de 6 colonnes sur petits écrans et 24 sur grand (les colonnes supérieures à 6 sont masquées sur les petits écrans).
+
+Pour construire cette grille il faut d’abord un rang avec la classe `su-row`. Ce rang contient les blocs devant s'afficher en colonne. **Chaque bloc prend par défaut toute la largeur du rang**. Pour en faire des colonnes et leur donner une largeur spécifique il faut leur donner des classes indiquant **à partir de quel point de rupture** ils deviennent une colonne et **quelle largeur doit faire cette colonne**. Les points de rupture sont bien sûr déclarés en `xs`, `sm`… et les largeurs en nombre de colonnes de la grille. La construction de la classe se fait donc ainsi&nbsp;: `su-col-`+`point de rupture`+`nombre de colonnes` (exemple&nbsp;: `su-col-md-3`).
+
+Aussi&nbsp;:
+- `su-col-md-3` signifie que le bloc, à partir de la taille d’écran `md` **et au-dessus**, fera la moitié de la largeur du rang (3 colonnes sur les 6 utilisées sur petit écran).
+- `su-col-lg-18` signifie que le bloc, à partir de la taille d’écran `lg` **et au-dessus**, fera les 3/4 de la largeur du rang (18 colonnes sur les 24 utilisées sur grand écran).
 
 ```html
 <div>
@@ -115,6 +129,8 @@ Exemple de la grille standard de 6 colonnes sur petits écrans et 24 sur grand (
 </div>
 
 ### Situation réelle (dans le conteneur de page)
+
+En combinant les diverses classes de colonnes possibles, ainsi que les classes de visibilité dépendantes des points de rupture (composant *Helpers*) il est donc possible de faire une mise en page complexe.
 
 **Rappel&nbsp;**: si vous intégrer une grille dans une page complète, elle doit être intégrée dans un conteneur `su-page-container` afin de gérer son positionnement horizontal dans la page.
 
@@ -194,6 +210,7 @@ Exemple de la grille standard de 6 colonnes sur petits écrans et 24 sur grand (
 
 ### Alignement vertical
 
+Avec SipaUI il est possible de gérer l’alignement ou l’étirement vertical des colonnes dans le rang `su-row`.
 
 ## Grille libre automatique
 
@@ -242,10 +259,19 @@ Il faut toutefois noter que ce système de colonage automatique est un outil pou
 
 <div id="liste-classes">
 
-## Liste des classes disponibles
+## Liste des classes disponibles (grille standard)
+- `su-page-container`
+- `su-row`
+- `su-col-xs-1`…
+- `su-visible-xs`… (dépendant du composant *Helpers*)
+- `su-hidden-xs`… (dépendant du composant *Helpers*)
+
+## Liste des classes disponibles (grille libre)
 - `su-page-container`
 - `su-row`
 - `su-col`
 - `su-no-gutter`
+- `su-visible-xs`… (dépendant du composant *Helpers*)
+- `su-hidden-xs`… (dépendant du composant *Helpers*)
 
 </div>
