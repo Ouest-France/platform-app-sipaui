@@ -33,7 +33,7 @@
 @media screen and (min-width: $min-breakpoint-lg) {
     .sipaui {
         .su-page-container {
-            max-width: 940px;
+            max-width: 960px;
             padding: 0 10px;
         }
     }
@@ -42,40 +42,49 @@
 @media screen and (min-width: $min-breakpoint-xl) {
     .sipaui {
         .su-page-container {
-            max-width: 1240px;
+            max-width: 1280px;
         }
     }
 }
 
+
+                                                            @mixin colDefinition($breakpoint, $max-col) {
+                                                                @for $i from 1 through $max-col {
+                                                                    .su-col-#{$breakpoint}-#{$i} {
+                                                                        $calc: ($i / $max-col) * 100;
+                                                                        $colWidth: $calc + %;
+                                                                        $gutter: round(20px - (20 * $calc / 100));
+                                                                        max-width: calc(#{$colWidth} - #{$gutter});
+                                                                        flex: 0 0 $colWidth;
+                                                                    }
+                                                                }
+                                                            }
+
 // GRILLE------------------------------------------------------------------------------------------/
 .sipaui {
-    .su-grid-flex {
-        &.su-row {
-            @include flexDisplay();
+    .su-row {
+        @include displayFlex();
+        @include justifyContent(space-between, distribute);
+        @include flexWrap(wrap);
+
+        @include colDefinition(xs, $grid-small-max-col);
+
+        [class*="su-col-"] {
+            width: 100%;
         }
-        &.su-row.su-no-gutter {
-            [class*="su-col"] {
-                margin-left: 0;
-                margin-right: 0;
+
+        &.su-no-gutter {
+            .su-col,
+            [class*="su-col-"] {
+                padding-left: 0;
+                padding-right: 0;
             }
         }
-        &.su-grid-auto.su-row {
-            @include flexJustifyContent(space-between);
+        &.su-grid-auto {
+            //@include justifyContent(space-between, distribute);
 
             .su-col {
-                @include flexFlexValue(1 0 0);
-            }
-        }
-        // Gouttière ------------------------------------/
-        [class*="su-col"] {
-            margin-left: $grid-gutter / 2;
-            margin-right: $grid-gutter / 2;
-
-            &:first-child {
-                margin-left: 0;
-            }
-            &:last-child {
-                margin-right: 0;
+                @include flex(1 0 0);
             }
         }
     }
@@ -83,25 +92,25 @@
 
 
 @media screen and (min-width: $min-breakpoint-sm) {
-    .sipaui {
-
+    .sipaui .su-row {
+        @include colDefinition(sm, $grid-small-max-col);
     }
 }
 
 @media screen and (min-width: $min-breakpoint-md) {
-    .sipaui {
-
+    .sipaui .su-row {
+        @include colDefinition(md, $grid-small-max-col);
     }
 }
 
 @media screen and (min-width: $min-breakpoint-lg) {
-    .sipaui {
-
+    .sipaui .su-row {
+        @include colDefinition(lg, $grid-large-max-col);
     }
 }
 
 @media screen and (min-width: $min-breakpoint-xl) {
-    .sipaui {
-
+    .sipaui .su-row {
+        @include colDefinition(xl, $grid-large-max-col);
     }
 }
