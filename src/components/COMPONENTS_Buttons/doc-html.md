@@ -30,7 +30,7 @@ Cerise&nbsp;:
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **helpers**
+- composant **Helpers**
 
 </div>
 
@@ -74,7 +74,7 @@ Cerise&nbsp;:
 ## Contextes particuliers
 
 ### Boutons inactifs
-L’aspect inactif peut être porté par la classe `su-disabled` (issu des *helpers*) ou par l’attribut `disabled`.
+L’aspect inactif peut être porté par la classe `su-disabled` (issu des *Helpers*) ou par l’attribut `disabled`.
 ```html
 <button class="su-button su-primary" disabled="disabled">Bouton primaire inactif</button>
 <button class="su-button su-secondary su-disabled">Bouton secondaire inactif</button>
@@ -120,7 +120,7 @@ L’aspect inactif peut être porté par la classe `su-disabled` (issu des *help
 - `su-small`
 
 ### Classes annexes
-- `su-fullwidth` (dépendant du composant *helpers*)
-- `su-fullwidth-mobile` (dépendant du composant *helpers*) 
-- `su-disabled` (dépendant du composant *helpers*) 
+- `su-fullwidth` (dépendant du composant *Helpers*)
+- `su-fullwidth-mobile` (dépendant du composant *Helpers*) 
+- `su-disabled` (dépendant du composant *Helpers*) 
 </div>

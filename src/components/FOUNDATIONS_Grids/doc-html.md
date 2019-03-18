@@ -10,7 +10,7 @@ D’un point de vue technique, la grille s'appuie sur le modèle *Flexbox*, la t
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **helpers**,
+- composant **Helpers**,
 
 </div>
 

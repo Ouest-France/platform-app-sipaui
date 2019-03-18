@@ -18,7 +18,7 @@ Ce formatage de texte accepte 2 variations en fonction de l’importance du text
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **helpers**</li>
+- composant **Helpers**</li>
 
 </div>
 
@@ -118,7 +118,7 @@ Utilisation de la balise `<strong>`.
 
 Par défaut, le texte standard est ferré (aligné) à gauche.
 
-D'autres justifications sont possibles. SipaUI intègre les classes nécessaires, via le composant **helpers**.
+D'autres justifications sont possibles. SipaUI intègre les classes nécessaires, via le composant **Helpers**.
 
 ### Ferrage à gauche forcé
  
@@ -198,9 +198,9 @@ Utilisation de la classe `su-text-center`.
 - `su-text-standard` (si besoin de surcharge)
 
 ### Classes annexes
-- `su-text-center` (dépendant du composant *helpers*)
-- `su-text-justify` (dépendant du composant *helpers*)
-- `su-text-left` (dépendant du composant *helpers*)
-- `su-text-right` (dépendant du composant *helpers*)
+- `su-text-center` (dépendant du composant *Helpers*)
+- `su-text-justify` (dépendant du composant *Helpers*)
+- `su-text-left` (dépendant du composant *Helpers*)
+- `su-text-right` (dépendant du composant *Helpers*)
 
 </div>

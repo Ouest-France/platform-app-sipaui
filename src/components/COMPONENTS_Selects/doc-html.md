@@ -8,9 +8,9 @@ Les listes déroulantes `<select>` proposent une liste d’options à l’utilis
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **helpers**,
-- composant **FORM_labels**,
-- composant **FORM_errors**
+- composant **Helpers**,
+- composant **Labels**,
+- composant **Errors**
 
 </div>
 
@@ -18,7 +18,7 @@ Les listes déroulantes `<select>` proposent une liste d’options à l’utilis
 
 ## Standard
 
-Liste déroulante standard avec la classes `su-select`. Pour les labels (obligatoires), prendre le composant *FORM_labels*.
+Liste déroulante standard avec la classes `su-select`. Pour les labels (obligatoires), prendre le composant *Labels*.
 
 NB si l’on veut que la liste déroulante soit vide au départ, la première option doit être vide, ainsi que sa `value`. Il faut aussi lui mettre les attributs `disabled`, `selected` et `hidden` pour empêcher la sélection de cette option par l’utilisateur.
 
@@ -115,7 +115,7 @@ Le pseudo-placeholder (qui simule le placeholder d’un champ texte) se fait en 
 
 ## Erreur
 
-Select standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Cette classe, absente par défaut, sera positionnée par le développeur (soit en JS, soit par réponse serveur). Le message d’erreur sera identifié par la classe `su-error-message`. Ces 2 classes d’erreur sont issues du composant *FORM_errors*.
+Select standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Cette classe, absente par défaut, sera positionnée par le développeur (soit en JS, soit par réponse serveur). Le message d’erreur sera identifié par la classe `su-error-message`. Ces 2 classes d’erreur sont issues du composant *Errors*.
 
 ```html
 <div class="su-error">
@@ -154,7 +154,7 @@ Select standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a
 
 ## Inactif
 
-Liste déroulant inactive. Attention, si le disabled suffit à rendre le select inopérant, il faut une classe `su-disabled` **sur le label et sur le select** pour changer son apparence. Cette classe est dépendante du composant *helpers*.
+Liste déroulant inactive. Attention, si le disabled suffit à rendre le select inopérant, il faut une classe `su-disabled` **sur le label et sur le select** pour changer son apparence. Cette classe est dépendante du composant *Helpers*.
 
 ```html
 <label for="select5" class="su-disabled">Label</label>
@@ -192,10 +192,10 @@ Liste déroulant inactive. Attention, si le disabled suffit à rendre le select 
 - `su-select`
 
 ### Classes annexes
-- `su-label` (dépendant du composant *FORM_labels*, si besoin de surcharge)
-- `su-label-complement` (dépendant du composant *FORM_labels*)
-- `su-error` (dépendant du composant *FORM_errors*)
-- `su-error-message` (dépendant du composant *FORM_errors*)
-- `su-disabled` (dépendant du composant *helpers*)
+- `su-label` (dépendant du composant *Labels*, si besoin de surcharge)
+- `su-label-complement` (dépendant du composant *Labels*)
+- `su-error` (dépendant du composant *Errors*)
+- `su-error-message` (dépendant du composant *Errors*)
+- `su-disabled` (dépendant du composant *Helpers*)
 
 </div>
