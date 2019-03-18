@@ -167,14 +167,17 @@
 
 
 // pour les hide et show selon les breakpoints
-@mixin responsive-visibility($parent) {
-  #{$parent} {
-    display: block !important;
-  }
-  table#{$parent}  { display: table !important; }
-  tr#{$parent}     { display: table-row !important; }
-  th#{$parent},
-  td#{$parent}     { display: table-cell !important; }
+@mixin responsive-visibility($parent, $type:null) {
+    @if ($type) {
+        #{$parent} {
+            display: $type !important;
+        }
+    }
+    @else {
+        #{$parent} {
+            display: block !important;
+        }
+    }
 }
 
 // [converter] $parent hack
