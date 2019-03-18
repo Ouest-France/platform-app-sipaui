@@ -402,7 +402,7 @@ L’étirement des colonnes étant l’alignement par défaut, il n’a pas de c
 
 ## Grille libre automatique
 
-SipaUI propose une grille de colonnes automatiques en flex. Il suffit d’ajouter la classe `su-grid-auto` au système de grille (`su-row`). Avec ce système, il est possible de générer une suite de colonnes en nombre variable qui se répartiront automatiquement dans l’espace accordé par le parent. Pour cela, il suffit de créer autant de colonnes que souhaité avec la classe `su-col`. **Elles seront flexibles mais pas responsives** (le nombre colonne sera toujours le même, quel que soit la taille de l’écran).  Ces colonnes intègrent automatiquement la gouttière standard que l’on peut bien sûr supprimer avec la classe `su-no-gutter`.
+SipaUI propose une grille de colonnes automatiques en flex. Il suffit d’ajouter la classe `su-grid-auto` au système de grille (`su-row`). Avec ce système, il est possible de générer une suite de colonnes en nombre variable qui se répartiront automatiquement dans l’espace accordé par le parent. Pour cela, il suffit de créer autant de colonnes que souhaité avec la classe `su-col`. **Elles seront flexibles mais pas responsives** (le nombre colonne sera toujours le même, quel que soit la taille de l’écran).
 
 Il faut toutefois noter que ce système de colonage automatique est un outil pour des cas particuliers, mais **il ne doit en aucun cas remplacer la grille standard pour la mise en page générale d’un site**.
 
@@ -412,10 +412,10 @@ Il faut toutefois noter que ce système de colonage automatique est un outil pou
 		Page
 	</div>
 	<div class="su-grid-auto su-row">
-		<div class="su-col"><div></div></div>
-		<div class="su-col"><div></div></div>
-		<div class="su-col"><div></div></div>
-		<div class="su-col"><div></div></div>
+		<div class="su-col"><p>Contenu</p></div>
+		<div class="su-col"><p>Contenu</p></div>
+		<div class="su-col"><p>Contenu</p></div>
+		<div class="su-col"><p>Contenu</p></div>
 	</div>
 </div>
 ```
@@ -426,10 +426,10 @@ Il faut toutefois noter que ce système de colonage automatique est un outil pou
 			Page
 		</div>
 		<div class="su-grid-auto su-row">
-			<div class="su-col"><div></div></div>
-			<div class="su-col"><div></div></div>
-			<div class="su-col"><div></div></div>
-			<div class="su-col"><div></div></div>
+			<div class="su-col"><p>Contenu</p></div>
+			<div class="su-col"><p>Contenu</p></div>
+			<div class="su-col"><p>Contenu</p></div>
+			<div class="su-col"><p>Contenu</p></div>
 		</div>
 	</div>
 </div>

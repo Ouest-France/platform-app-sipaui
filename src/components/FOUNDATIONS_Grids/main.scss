@@ -69,8 +69,6 @@
             }
         }
         &.su-grid-auto {
-            //@include justifyContent(space-between, distribute);
-
             .su-col {
                 @include flex(1 0 0);
             }
