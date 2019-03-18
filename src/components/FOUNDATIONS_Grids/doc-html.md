@@ -54,7 +54,7 @@ Il utilise la classe `su-page-container`.
 
 Exemple de la grille standard de 6 colonnes sur petits écrans et 24 sur grand (les colonnes supérieures à 6 sont masquées sur les petits écrans).
 
-Pour construire cette grille il faut d’abord un rang avec la classe `su-row`. Ce rang contient les blocs devant s'afficher en colonne. **Chaque bloc prend par défaut toute la largeur du rang**. Pour en faire des colonnes et leur donner une largeur spécifique il faut leur donner des classes indiquant **à partir de quel point de rupture** ils deviennent une colonne et **quelle largeur doit faire cette colonne**. Les points de rupture sont bien sûr déclarés en `xs`, `sm`… et les largeurs en nombre de colonnes de la grille. La construction de la classe se fait donc ainsi&nbsp;: `su-col-`+`point de rupture`+`nombre de colonnes` (exemple&nbsp;: `su-col-md-3`).
+Pour construire cette grille, il faut d’abord un rang avec la classe `su-row`. Ce rang contient les blocs devant s'afficher en colonne. **Chaque bloc prend par défaut toute la largeur du rang**. Pour en faire des colonnes et leur donner une largeur spécifique, il faut leur donner des classes indiquant **à partir de quel point de rupture** ils deviennent une colonne et **quelle largeur doit faire cette colonne**. Les points de rupture sont bien sûr déclarés en `xs`, `sm`… et les largeurs en nombre de colonnes de la grille. La construction de la classe se fait donc ainsi&nbsp;: `su-col-`+`point de rupture`+`nombre de colonnes` (exemple&nbsp;: `su-col-md-3`).
 
 Aussi&nbsp;:
 - `su-col-md-3` signifie que le bloc, à partir de la taille d’écran `md` **et au-dessus**, fera la moitié de la largeur du rang (3 colonnes sur les 6 utilisées sur petit écran).
@@ -132,7 +132,7 @@ Aussi&nbsp;:
 
 En combinant les diverses classes de colonnes possibles, ainsi que les classes de visibilité dépendantes des points de rupture (composant *Helpers*) il est donc possible de faire une mise en page complexe.
 
-**Rappel&nbsp;**: si vous intégrer une grille dans une page complète, elle doit être intégrée dans un conteneur `su-page-container` afin de gérer son positionnement horizontal dans la page.
+**Rappel&nbsp;**: si vous intégrez une grille dans une page complète, elle doit être intégrée dans un conteneur `su-page-container` afin de gérer son positionnement horizontal dans la page.
 
 ```html
 <div>
@@ -402,7 +402,7 @@ L’étirement des colonnes étant l’alignement par défaut, il n’a pas de c
 
 ## Grille libre automatique
 
-SipaUI propose une grille de colonnes automatiques en flex. Il suffit d’ajouter la classe `su-grid-auto` au système de grille (`su-row`). Avec ce système, il est possible de générer une suite de colonnes en nombre variable qui se répartiront automatiquement dans l’espace accordé par le parent. Pour cela, il suffit de créer autant de colonnes que souhaité avec la classe `su-col`. **Elles seront flexibles mais pas responsives** (le nombre colonne sera toujours le même, quel que soit la taille de l’écran).
+SipaUI propose une grille de colonnes automatiques en flex. Il suffit d’ajouter la classe `su-grid-auto` au système de grille (`su-row`). Avec ce système, il est possible de générer une suite de colonnes en nombre variable qui se répartiront automatiquement dans l’espace accordé par le parent. Pour cela, il suffit de créer autant de colonnes que souhaité avec la classe `su-col`. **Elles seront flexibles, mais pas responsives** (le nombre colonne sera toujours le même, quel que soit la taille de l’écran).
 
 Il faut toutefois noter que ce système de colonage automatique est un outil pour des cas particuliers, mais **il ne doit en aucun cas remplacer la grille standard pour la mise en page générale d’un site**.
 
