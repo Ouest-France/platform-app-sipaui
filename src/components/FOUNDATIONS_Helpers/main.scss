@@ -33,6 +33,66 @@ body:hover .su-visually-hidden {
     }
 }
 
+// Gestion de la visibilité en fonction des breakpoints
+@media (max-width: $max-breakpoint-xs) {
+    @include responsive-invisibility('.su-hidden-xs');
+}
+@media (min-width: $min-breakpoint-sm) and (max-width: $max-breakpoint-sm) {
+    @include responsive-invisibility('.su-hidden-sm');
+}
+
+@media (min-width: $min-breakpoint-md) and (max-width: $max-breakpoint-md) {
+    @include responsive-invisibility('.su-hidden-md');
+}
+
+@media (min-width: $min-breakpoint-lg) and (max-width: $max-breakpoint-lg) {
+    @include responsive-invisibility('.su-hidden-lg');
+}
+@media (min-width: $min-breakpoint-xl) {
+    @include responsive-invisibility('.su-hidden-xl');
+
+}
+
+@include responsive-invisibility('.su-visible-xs');
+@include responsive-invisibility('.su-visible-sm');
+@include responsive-invisibility('.su-visible-md');
+@include responsive-invisibility('.su-visible-lg');
+@include responsive-invisibility('.su-visible-xl');
+
+@include responsive-invisibility('.su-visible-inline-block-xs');
+@include responsive-invisibility('.su-visible-inline-block-sm');
+@include responsive-invisibility('.su-visible-inline-block-md');
+@include responsive-invisibility('.su-visible-inline-block-lg');
+@include responsive-invisibility('.su-visible-inline-block-xl');
+
+@media (max-width: $max-breakpoint-xs) {
+    @include responsive-visibility('.su-visible-xs');
+    @include responsive-visibility('.su-visible-inline-block-xs', inline-block);
+    @include responsive-visibility('.su-visible-table-cell-xs', table-cell);
+}
+@media (min-width: $min-breakpoint-sm) and (max-width: $max-breakpoint-sm) {
+    @include responsive-visibility('.su-visible-sm');
+    @include responsive-visibility('.su-visible-inline-block-sm', inline-block);
+    @include responsive-visibility('.su-visible-table-cell-sm', table-cell);
+}
+@media (min-width: $min-breakpoint-md) and (max-width: $max-breakpoint-md) {
+    @include responsive-visibility('.su-visible-md');
+    @include responsive-visibility('.su-visible-inline-block-md', inline-block);
+    @include responsive-visibility('.su-visible-table-cell-md', table-cell);
+}
+@media (min-width: $min-breakpoint-lg) and (max-width: $max-breakpoint-lg) {
+    @include responsive-visibility('.su-visible-lg');
+    @include responsive-visibility('.su-visible-inline-block-lg', inline-block);
+    @include responsive-visibility('.su-visible-table-cell-lg', table-cell);
+}
+@media (min-width: $min-breakpoint-xl) {
+    @include responsive-visibility('.su-visible-xl');
+    @include responsive-visibility('.su-visible-inline-block-xl', inline-block);
+    @include responsive-visibility('.su-visible-table-cell-xl', table-cell);
+}
+
+
+
 /* -- DISPLAY -------------------------------------------------------------------- */
 .su-block {
     display: block !important;

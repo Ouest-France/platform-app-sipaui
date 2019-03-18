@@ -19,9 +19,9 @@ Cerise&nbsp;:
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **helpers**,
-- composant **FORM_labels**,
-- composant **FORM_errors**
+- composant **Helpers**,
+- composant **Labels**,
+- composant **Errors**
 
 </div>
 
@@ -31,7 +31,7 @@ Cerise&nbsp;:
 
 
 ### Standard
-Input standard avec un placeholder. Le style est appliqué par défaut sur les inputs dans un site SipaUI. Il est possible de forcer cet affichage avec la classe `su-input-text`. Pour les labels (obligatoires), prendre le composant *FORM_labels*.
+Input standard avec un placeholder. Le style est appliqué par défaut sur les inputs dans un site SipaUI. Il est possible de forcer cet affichage avec la classe `su-input-text`. Pour les labels (obligatoires), prendre le composant *Labels*.
 
 ```html
 <label for="input1">Label</label>
@@ -55,7 +55,7 @@ Pour rappel du doc design, le texte du placeholder est une description suppléme
 </div>
 
 ### Facultatif
-Input facultatif. Pour le texte en complément dans le label, utiliser la classe `su-label-complement` du composant *FORM_labels*.
+Input facultatif. Pour le texte en complément dans le label, utiliser la classe `su-label-complement` du composant *Labels*.
 ```html
 <label for="input2">Label<span class="su-label-complement"> (facultatif)</span></label>
 <input id="input2" name="input2" type="text" role="textbox">
@@ -77,7 +77,7 @@ Input standard prérempli.
 </div>
 
 ### Readonly
-Input standard prérempli et en readonly. Attention, si le `readonly` suffit à l’input pour changer son opacité, il faut une classe `su-disabled` sur le label pour le changer aussi. Cette classe est dépendante du composant *helpers*.
+Input standard prérempli et en readonly. Attention, si le `readonly` suffit à l’input pour changer son opacité, il faut une classe `su-disabled` sur le label pour le changer aussi. Cette classe est dépendante du composant *Helpers*.
 ```html
 <label for="input4" class="su-disabled">Label</label>
 <input id="input4" name="input4" type="text" role="textbox" required readonly aria-readonly="true" value="Value">
@@ -88,7 +88,7 @@ Input standard prérempli et en readonly. Attention, si le `readonly` suffit à 
 </div>
 
 ### Erreur
-Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Cette classe, absente par défaut, sera positionnée par le développeur (soit par JS, soit par réponse serveur). Le message d’erreur sera identifié par la classe `su-error-message`. Ces 2 classes d’erreur sont issues du composant *FORM_errors*.
+Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a besoin d’être inclus dans un parent qui portera la classe `su-error` si nécessaire**. Cette classe, absente par défaut, sera positionnée par le développeur (soit par JS, soit par réponse serveur). Le message d’erreur sera identifié par la classe `su-error-message`. Ces 2 classes d’erreur sont issues du composant *Errors*.
 
 ```html
 <div class="su-error">
@@ -197,10 +197,10 @@ Textarea standard. Il est possible de forcer cet affichage avec la classe `su-te
 - `su-textarea` (si besoin de surcharge)
 
 ### Classes annexes
-- `su-label` (dépendant du composant *FORM_labels*, si besoin de surcharge)
-- `su-label-complement` (dépendant du composant *FORM_labels*)
-- `su-error` (dépendant du composant *FORM_errors*)
-- `su-error-message` (dépendant du composant *FORM_errors*)
-- `su-disabled` (dépendant du composant *helpers*)
+- `su-label` (dépendant du composant *Labels*, si besoin de surcharge)
+- `su-label-complement` (dépendant du composant *Labels*)
+- `su-error` (dépendant du composant *Errors*)
+- `su-error-message` (dépendant du composant *Errors*)
+- `su-disabled` (dépendant du composant *Helpers*)
 
 </div>

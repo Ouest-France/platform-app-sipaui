@@ -8,7 +8,7 @@ Ce composant regroupe les labels précédant les éléments de formulaire (champ
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **helpers**
+- composant **Helpers**
 
 </div>
 
@@ -35,7 +35,7 @@ Label standard pour un composant de formulaire facultatif. Utiliser la classe `s
 </div>
 
 ## Readonly ou inactif
-Label standard d’un composant en readonly ou inactif. Classe `su-disabled` sur le label. Cette classe est dépendante du composant *helpers*.
+Label standard d’un composant en readonly ou inactif. Classe `su-disabled` sur le label. Cette classe est dépendante du composant *Helpers*.
 
 ```html
 <label for="input3" class="su-disabled">Label</label>
@@ -51,6 +51,6 @@ Label standard d’un composant en readonly ou inactif. Classe `su-disabled` sur
 - `su-label-complement`
 
 ### Classes annexes
-- `su-disabled` (dépendant du composant *helpers*)
+- `su-disabled` (dépendant du composant *Helpers*)
 
 </div>

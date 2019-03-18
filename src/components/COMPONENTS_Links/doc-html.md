@@ -10,7 +10,7 @@ Comme le prévoit le HTML, les liens ont 4 états&nbsp;: **normal** (/ ou *link*
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **helpers**
+- composant **Helpers**
 
 </div>
 
@@ -71,6 +71,6 @@ Utiliser la classe `su-link-button`.
 - `su-link-button`
 
 ### Classes annexes
-- `su-disabled` (dépendant du composant *helpers*)
+- `su-disabled` (dépendant du composant *Helpers*)
 
 </div>

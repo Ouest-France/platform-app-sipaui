@@ -12,8 +12,8 @@ Toutefois, pour gérer l’affichage en colonne d’une suite de cases à cocher
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **helpers**,
-- composant **FORM_errors**
+- composant **Helpers**,
+- composant **Errors**
 
 </div>
 
@@ -183,8 +183,8 @@ Pour la gestion des cases à cocher indéterminées en JS, cf. <a href="https://
 - `su-checkbox-column`
 
 ### Classes annexes
-- `su-error` (dépendant du composant *FORM_errors*)
-- `su-error-message` (dépendant du composant *FORM_errors*)
-- `su-disabled` (dépendant du composant *helpers*)
+- `su-error` (dépendant du composant *Errors*)
+- `su-error-message` (dépendant du composant *Errors*)
+- `su-disabled` (dépendant du composant *Helpers*)
 
 </div>

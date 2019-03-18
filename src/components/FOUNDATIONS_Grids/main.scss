@@ -33,7 +33,7 @@
 @media screen and (min-width: $min-breakpoint-lg) {
     .sipaui {
         .su-page-container {
-            max-width: 940px;
+            max-width: 960px;
             padding: 0 10px;
         }
     }
@@ -42,7 +42,72 @@
 @media screen and (min-width: $min-breakpoint-xl) {
     .sipaui {
         .su-page-container {
-            max-width: 1240px;
+            max-width: 1280px;
         }
+    }
+}
+
+
+// GRILLE------------------------------------------------------------------------------------------/
+.sipaui {
+    .su-row {
+        @include displayFlex();
+        @include justifyContent(space-between, distribute);
+        @include flexWrap(wrap);
+
+        @include colDefinition(xs, $grid-small-max-col);
+
+        [class*="su-col-"] {
+            width: 100%;
+        }
+
+        &.su-no-gutter {
+            .su-col,
+            [class*="su-col-"] {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        &.su-grid-auto {
+            .su-col {
+                @include flex(1 0 0);
+            }
+        }
+
+        // Alignement vertical
+        &.su-vertical-start {
+            @include alignItems(flex-start);
+        }
+        &.su-vertical-center {
+            @include alignItems(center);
+        }
+        &.su-vertical-end {
+            @include alignItems(flex-end);
+        }
+    }
+}
+
+
+@media screen and (min-width: $min-breakpoint-sm) {
+    .sipaui .su-row {
+        @include colDefinition(sm, $grid-small-max-col);
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-md) {
+    .sipaui .su-row {
+        @include colDefinition(md, $grid-small-max-col);
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-lg) {
+    .sipaui .su-row {
+        @include colDefinition(lg, $grid-large-max-col);
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-xl) {
+    .sipaui .su-row {
+        @include colDefinition(xl, $grid-large-max-col);
     }
 }
