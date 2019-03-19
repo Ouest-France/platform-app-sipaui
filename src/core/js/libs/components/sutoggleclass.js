@@ -38,6 +38,8 @@
                 sel = typeof d.sel == 'string' ? su.doc.querySelector(d.sel) : d.sel; // Le parametre sel est soit un selecteur CSS, soit c'est l emement lui meme
             }
 
+            if(!sel) return;
+
             if(d.force === null) {
                 sel.classList.toggle(d.klass);
             } else {
