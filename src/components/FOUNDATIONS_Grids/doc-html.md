@@ -261,6 +261,8 @@ L’étirement des colonnes étant l’alignement par défaut, il n’a pas de c
 
 #### Alignement haut
 
+Utilisation de la classe `su-vertical-start`.
+
 ```html
 <div class="sipaui">
 	<div>
@@ -306,6 +308,8 @@ L’étirement des colonnes étant l’alignement par défaut, il n’a pas de c
 
 #### Alignement centré
 
+Utilisation de la classe `su-vertical-center`.
+
 ```html
 <div class="sipaui">
 	<div>
@@ -349,6 +353,8 @@ L’étirement des colonnes étant l’alignement par défaut, il n’a pas de c
 </div>
 
 #### Alignement bas
+
+Utilisation de la classe `su-vertical-end`.
 
 ```html
 <div class="sipaui">
@@ -447,19 +453,25 @@ Il faut toutefois noter que ce système de colonage automatique est un outil pou
 
 <div id="liste-classes">
 
-## Liste des classes disponibles (grille standard)
+## Grille standard&nbsp;; liste des classes disponibles
 - `su-page-container`
 - `su-row`
 - `su-col-xs-1`…
 - `su-visible-xs`… (dépendant du composant *Helpers*)
 - `su-hidden-xs`… (dépendant du composant *Helpers*)
+- `su-vertical-start`
+- `su-vertical-center`
+- `su-vertical-end`
 
-## Liste des classes disponibles (grille libre)
+## Grille libre&nbsp;: liste des classes disponibles
 - `su-page-container`
 - `su-row`
 - `su-col`
 - `su-no-gutter`
 - `su-visible-xs`… (dépendant du composant *Helpers*)
 - `su-hidden-xs`… (dépendant du composant *Helpers*)
+- `su-vertical-start`
+- `su-vertical-center`
+- `su-vertical-end`
 
 </div>
