@@ -64,6 +64,17 @@
             .su-col {
                 @include flex(1 0 0);
             }
+            &.su-has-gutter {
+                .su-col {
+                    margin: 0 $grid-gutter / 2;
+                }
+                .su-col:first-child {
+                    margin-left: 0;
+                }
+                .su-col:last-child {
+                    margin-right: 0;
+                }
+            }
         }
 
         // Alignement vertical
