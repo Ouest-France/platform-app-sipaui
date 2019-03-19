@@ -60,17 +60,20 @@
         [class*="su-col-"] {
             width: 100%;
         }
-
-        &.su-no-gutter {
-            .su-col,
-            [class*="su-col-"] {
-                padding-left: 0;
-                padding-right: 0;
-            }
-        }
         &.su-grid-auto {
             .su-col {
                 @include flex(1 0 0);
+            }
+            &.su-has-gutter {
+                .su-col {
+                    margin: 0 $grid-gutter / 2;
+                }
+                .su-col:first-child {
+                    margin-left: 0;
+                }
+                .su-col:last-child {
+                    margin-right: 0;
+                }
             }
         }
 

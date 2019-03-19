@@ -208,6 +208,8 @@ En combinant les diverses classes de colonnes possibles, ainsi que les classes d
 
 ### Décalage de colonnes
 
+<p style="color: red">A venir</p>
+
 ### Alignement vertical
 
 Avec SipaUI il est possible de gérer l’alignement ou l’étirement **vertical** des colonnes dans le rang avec les classes `su-vertical-…` à positionner avec la classe `su-row`.
@@ -261,6 +263,8 @@ L’étirement des colonnes étant l’alignement par défaut, il n’a pas de c
 
 #### Alignement haut
 
+Utilisation de la classe `su-vertical-start`.
+
 ```html
 <div class="sipaui">
 	<div>
@@ -306,6 +310,8 @@ L’étirement des colonnes étant l’alignement par défaut, il n’a pas de c
 
 #### Alignement centré
 
+Utilisation de la classe `su-vertical-center`.
+
 ```html
 <div class="sipaui">
 	<div>
@@ -349,6 +355,8 @@ L’étirement des colonnes étant l’alignement par défaut, il n’a pas de c
 </div>
 
 #### Alignement bas
+
+Utilisation de la classe `su-vertical-end`.
 
 ```html
 <div class="sipaui">
@@ -434,11 +442,47 @@ Il faut toutefois noter que ce système de colonage automatique est un outil pou
 	</div>
 </div>
 
+
 ### Avec gouttière
+
+Vous pouvez rajouter les gouttières standards de 20px avec la classe `su-has-gutter` sur le rang.
+
+```html
+<div class="demo-grille page">
+	<div>
+		Page
+	</div>
+	<div class="su-grid-auto su-row su-has-gutter">
+		<div class="su-col"><p>Contenu</p></div>
+		<div class="su-col"><p>Contenu</p></div>
+		<div class="su-col"><p>Contenu</p></div>
+		<div class="su-col"><p>Contenu</p></div>
+	</div>
+</div>
+```
+
+<div class="sipaui">
+	<div class="demo-grille page">
+		<div>
+			Page
+		</div>
+		<div class="su-grid-auto su-row su-has-gutter">
+			<div class="su-col"><p>Contenu</p></div>
+			<div class="su-col"><p>Contenu</p></div>
+			<div class="su-col"><p>Contenu</p></div>
+			<div class="su-col"><p>Contenu</p></div>
+		</div>
+	</div>
+</div>
 
 ### Wrap
 
+<p style="color: red">A venir</p>
+
 ### Grille imbriquée
+
+<p style="color: red">A venir</p>
+
 (pas de conteneur)
 
 
@@ -447,19 +491,25 @@ Il faut toutefois noter que ce système de colonage automatique est un outil pou
 
 <div id="liste-classes">
 
-## Liste des classes disponibles (grille standard)
+## Grille standard&nbsp;; liste des classes disponibles
 - `su-page-container`
 - `su-row`
 - `su-col-xs-1`…
 - `su-visible-xs`… (dépendant du composant *Helpers*)
 - `su-hidden-xs`… (dépendant du composant *Helpers*)
+- `su-vertical-start`
+- `su-vertical-center`
+- `su-vertical-end`
 
-## Liste des classes disponibles (grille libre)
+## Grille libre&nbsp;: liste des classes disponibles
 - `su-page-container`
 - `su-row`
 - `su-col`
-- `su-no-gutter`
+- `su-has-gutter`
 - `su-visible-xs`… (dépendant du composant *Helpers*)
 - `su-hidden-xs`… (dépendant du composant *Helpers*)
+- `su-vertical-start`
+- `su-vertical-center`
+- `su-vertical-end`
 
 </div>
