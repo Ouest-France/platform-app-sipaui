@@ -54,11 +54,13 @@ Il utilise la classe `su-page-container`.
 
 Exemple de la grille standard de 6 colonnes sur petits écrans et 24 sur grand (les colonnes supérieures à 6 sont masquées sur les petits écrans).
 
-Pour construire cette grille, il faut d’abord un rang avec la classe `su-row`. Ce rang contient les blocs devant s'afficher en colonne. **Chaque bloc prend par défaut toute la largeur du rang**. Pour en faire des colonnes et leur donner une largeur spécifique, il faut leur donner des classes indiquant **à partir de quel point de rupture** ils deviennent une colonne et **quelle largeur doit faire cette colonne**. Les points de rupture sont bien sûr déclarés en `xs`, `sm`… et les largeurs en nombre de colonnes de la grille. La construction de la classe se fait donc ainsi&nbsp;: `su-col-`+`point de rupture`+`nombre de colonnes` (exemple&nbsp;: `su-col-md-3`).
+Pour construire cette grille, il faut d’abord un rang avec la classe `su-row`. Ce rang contient les blocs devant s'afficher en colonne. **Chaque bloc prend par défaut toute la largeur du rang**. Pour en faire des colonnes et leur donner une largeur spécifique, il faut leur donner des classes indiquant **à partir de quel point de rupture** ils deviennent une colonne et **quelle largeur doit faire cette colonne**. Les points de rupture sont bien sûr déclarés en `xs`, `sm`… et les largeurs en nombre de colonnes de la grille. La construction de la classe se fait donc ainsi&nbsp;: `su-col`+`-point de rupture`+`-nombre de colonnes` (exemple&nbsp;: `su-col-md-3`).
 
 Aussi&nbsp;:
 - `su-col-md-3` signifie que le bloc, à partir de la taille d’écran `md` **et au-dessus**, fera la moitié de la largeur du rang (3 colonnes sur les 6 utilisées sur petit écran).
 - `su-col-lg-18` signifie que le bloc, à partir de la taille d’écran `lg` **et au-dessus**, fera les 3/4 de la largeur du rang (18 colonnes sur les 24 utilisées sur grand écran).
+
+**NB&nbsp;: Il est important que la somme des** `-nombre de colonnes` **sur un rang soit égal à 6 sur petit écran (xs, sm et md) et 24 sur grand (lg et xl).**
 
 ```html
 <div>
@@ -247,14 +249,14 @@ L’étirement des colonnes étant l’alignement par défaut, il n’a pas de c
 		</div>
 		<div class="su-row">
 			<div class="su-col-xs-2">
-				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+				<p class="contenu">Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
 			</div>
 			<div class="su-col-xs-2">
-				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+				<p class="contenu">Tellus Magna Vestibulum Lorem Bibendum</p>
 			</div>
 			<div class="su-col-xs-2">
 				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
-				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+				<p class="contenu">Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
 			</div>
 		</div>
 	</div>
@@ -294,14 +296,14 @@ Utilisation de la classe `su-vertical-start`.
 		</div>
 		<div class="su-row su-vertical-start">
 			<div class="su-col-xs-2">
-				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+				<p class="contenu">Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
 			</div>
 			<div class="su-col-xs-2">
-				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+				<p class="contenu">Tellus Magna Vestibulum Lorem Bibendum</p>
 			</div>
 			<div class="su-col-xs-2">
 				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
-				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+				<p class="contenu">Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
 			</div>
 		</div>
 	</div>
@@ -341,14 +343,14 @@ Utilisation de la classe `su-vertical-center`.
 		</div>
 		<div class="su-row su-vertical-center">
 			<div class="su-col-xs-2">
-				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+				<p class="contenu">Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
 			</div>
 			<div class="su-col-xs-2">
-				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+				<p class="contenu">Tellus Magna Vestibulum Lorem Bibendum</p>
 			</div>
 			<div class="su-col-xs-2">
 				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
-				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+				<p class="contenu">Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
 			</div>
 		</div>
 	</div>
@@ -387,14 +389,14 @@ Utilisation de la classe `su-vertical-end`.
 		</div>
 		<div class="su-row su-vertical-end">
 			<div class="su-col-xs-2">
-				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+				<p class="contenu">Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
 			</div>
 			<div class="su-col-xs-2">
-				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+				<p class="contenu">Tellus Magna Vestibulum Lorem Bibendum</p>
 			</div>
 			<div class="su-col-xs-2">
 				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
-				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+				<p class="contenu">Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
 			</div>
 		</div>
 	</div>
@@ -477,21 +479,80 @@ Vous pouvez rajouter les gouttières standards de 20px avec la classe `su-has-gu
 
 ### Wrap
 
-<p style="color: red">A venir</p>
-
-### Grille imbriquée
-
-<p style="color: red">A venir</p>
-
-(pas de conteneur)
+Par défaut, les colonnes de la grille automatique restent sur une ligne et s'adaptent en largeur, même quand ils sont trop larges pour tenir sur cette largeur. Vous pouvez mettre en place un retour à la ligne automatique avec la classe `su-wrap` sur le rang.
 
 
+### Grilles imbriquées
+
+Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La seule contrainte est de **n'utiliser le conteneur que sur la première grille**.
+
+```html
+<div class="demo-grille page">
+	<p>
+		Page
+	</p>
+	<div class="su-page-container">
+		<div class="su-row">
+			<div class="su-col-md-3 su-col-lg-16">
+				<div class="su-grid-auto su-row su-has-gutter">
+					<div class="su-col">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+					<div class="su-col">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="su-col-md-3 su-col-lg-8">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+```
+
+<div class="sipaui demo-conteneur">
+	<div class="demo-grille page">
+		<p>
+			Page
+		</p>
+		<div class="su-page-container">
+			<div class="su-row">
+				<div class="su-col-md-3 su-col-lg-16">
+					<div class="su-grid-auto su-row su-has-gutter">
+						<div class="su-col">
+							<p class="contenu">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+						<div class="su-col">
+							<p class="contenu">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="su-col-md-3 su-col-lg-8">
+					<p class="contenu">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
 <div id="liste-classes">
 
-## Grille standard&nbsp;; liste des classes disponibles
+## Grille standard&nbsp;: liste des classes disponibles
 - `su-page-container`
 - `su-row`
 - `su-col-xs-1`…
@@ -511,5 +572,6 @@ Vous pouvez rajouter les gouttières standards de 20px avec la classe `su-has-gu
 - `su-vertical-start`
 - `su-vertical-center`
 - `su-vertical-end`
+- `su-wrap`
 
 </div>
