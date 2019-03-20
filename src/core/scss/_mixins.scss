@@ -340,8 +340,8 @@
             $calc: ($i / $max-col) * 100;
             $colWidth: $calc + %;
             $gutter: round(20px - (20 * $calc / 100));
-            max-width: calc(#{$colWidth} - #{$gutter});
-            flex: 0 0 $colWidth;
+            // max-width: calc(#{$colWidth} - #{$gutter});
+            flex: 0 0 calc(#{$colWidth} - #{$gutter});
         }
     }
 }

@@ -57,10 +57,12 @@
 
         @include colDefinition(xs, $grid-small-max-col);
 
-        [class*="su-col-"] {
-            width: 100%;
-        }
         &.su-grid-auto {
+            @include flexWrap(nowrap);
+
+            &.su-wrap {
+                @include flexWrap(wrap);
+            }
             .su-col {
                 @include flex(1 0 0);
             }
@@ -87,6 +89,9 @@
         &.su-vertical-end {
             @include alignItems(flex-end);
         }
+    }
+    [class*="su-col-"] {
+        @include flex(1 1 100%);
     }
 }
 
