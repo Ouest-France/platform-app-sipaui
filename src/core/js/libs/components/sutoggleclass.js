@@ -35,16 +35,18 @@
             if(d.parent) {
                 sel = that.closest(d.parent);
             } else {
-                sel = typeof d.sel == 'string' ? su.doc.querySelector(d.sel) : d.sel; // Le parametre sel est soit un selecteur CSS, soit c'est l emement lui meme
+                sel = typeof d.sel == 'string' ? su.doc.querySelectorAll(d.sel) : d.sel; // Le parametre sel est soit un selecteur CSS, soit c'est l emement lui meme
             }
 
             if(!sel) return;
 
-            if(d.force === null) {
-                sel.classList.toggle(d.klass);
-            } else {
-                sel.classList.toggle(d.klass, !!d.force);
-            }
+            (sel.forEach ? sel : [sel]).forEach(function(el) {
+                if(d.force === null) {
+                    el.classList.toggle(d.klass);
+                } else {
+                    el.classList.toggle(d.klass, !!d.force);
+                }
+            });
         });
 
     }
