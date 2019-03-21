@@ -57,10 +57,14 @@
 
         @include colDefinition(xs, $grid-small-max-col);
 
-        [class*="su-col-"] {
-            width: 100%;
-        }
+        @include offsetDefinition(xs, $grid-small-max-col);
+
         &.su-grid-auto {
+            @include flexWrap(nowrap);
+
+            &.su-wrap {
+                @include flexWrap(wrap);
+            }
             .su-col {
                 @include flex(1 0 0);
             }
@@ -88,29 +92,36 @@
             @include alignItems(flex-end);
         }
     }
+    [class*="su-col-"] {
+        @include flex(1 1 100%);
+    }
 }
 
 
 @media screen and (min-width: $min-breakpoint-sm) {
     .sipaui .su-row {
         @include colDefinition(sm, $grid-small-max-col);
+        @include offsetDefinition(sm, $grid-small-max-col);
     }
 }
 
 @media screen and (min-width: $min-breakpoint-md) {
     .sipaui .su-row {
         @include colDefinition(md, $grid-small-max-col);
+        @include offsetDefinition(md, $grid-small-max-col);
     }
 }
 
 @media screen and (min-width: $min-breakpoint-lg) {
     .sipaui .su-row {
         @include colDefinition(lg, $grid-large-max-col);
+        @include offsetDefinition(lg, $grid-large-max-col);
     }
 }
 
 @media screen and (min-width: $min-breakpoint-xl) {
     .sipaui .su-row {
         @include colDefinition(xl, $grid-large-max-col);
+        @include offsetDefinition(xl, $grid-large-max-col);
     }
 }
