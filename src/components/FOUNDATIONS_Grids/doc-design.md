@@ -1,12 +1,12 @@
 # Grids / Grilles
 
-Les grilles sont des armatures qui permettent d'**organiser des pages et leur contenu**. Les éléments sont ainsi cadrés et les espaces négatifs sont harmonisés. L'expérience utilisateur est alors cohérente quelque soit la taille et l'orientation de l'écran.
+Les grilles sont des armatures qui permettent d’**organiser des pages et leur contenu**. Les éléments sont ainsi cadrés et les espaces négatifs sont harmonisés. L’expérience utilisateur est alors cohérente, quelles que soient la taille et l’orientation de l’écran.
 
 
 
 ## Usage
 
-La grille est une aide autant pour le concepteur que pour l'utilisateur. Cela permet d'atteindre un équilibre harmonieux de l'espacement vertical entre les différents blocs. On obtient alors des pages plus lisibles et variées tout en assurant une cohérence générale.
+La grille est une aide autant pour le concepteur que pour l’utilisateur. Cela permet d’atteindre un équilibre harmonieux de l’espacement vertical entre les différents blocs. On obtient alors des pages plus lisibles et variées tout en assurant une cohérence générale.
 
 ## Anatomie
 
@@ -18,7 +18,7 @@ Une grille est constituée de colonnes, séparées par des gouttières permettan
 - Les colonnes permettent de positionner les éléments horizontalement.
 - **Sur mobile**, la grille comporte **6 colonnes.**
 - **A partir 768px**, la grille contient **24 colonnes.**
-- La largeur des colonnes varie en fonction de la taille d'écran.
+- La largeur des colonnes varie en fonction de la taille d’écran.
 - Elles peuvent être imbriquées les unes dans les autres.
 
 
@@ -29,14 +29,14 @@ Une grille est constituée de colonnes, séparées par des gouttières permettan
 - Leur largeur est fixe : **20px**.
 
 ### Marges
-- La grille dispose de marges latérales entre le contenu et les bords gauche et droit de l'écran. L'objectif est que l'œil puisse bénéficier d'un confort de lecture en ne "tapant" pas contre les bords de la fenêtre du navigateur.
+- La grille dispose de marges latérales entre le contenu et les bords gauche et droit de l’écran. L’objectif est que l’œil puisse bénéficier d’un confort de lecture en ne "tapant" pas contre les bords de la fenêtre du navigateur.
 - Le contenu est centré entre les marges.
 
 ### Référentiel
 
 <div class="tableau-grille">
 
-Taille de l'écran | 320 à 359px | 360 à 767px | 768 à 979px | 980 à 1279px | À partir de 1280px
+Taille de l’écran | 320 à 359px | 360 à 767px | 768 à 979px | 980 à 1279px | À partir de 1280px
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
 Référence de taille | xs | sm | md | lg | xl
 Nombre de colonnes | 6 | 6 | 6 | 24 | 24
@@ -69,5 +69,5 @@ Taille de la marge externe | 20px | 30px | *30px plus fond perdu* | *10px plus f
 
 ### Autres composants
 - Marges
-- Points d'arrêt
+- Points d’arrêt
 - Etc.

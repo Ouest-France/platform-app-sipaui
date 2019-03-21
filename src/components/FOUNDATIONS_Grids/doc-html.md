@@ -126,6 +126,8 @@ En combinant les diverses classes de colonnes possibles, ainsi que les classes d
 
 **Rappel&nbsp;**: si vous intégrez une grille dans une page complète, elle doit être intégrée dans un conteneur `su-page-container` afin de gérer son positionnement horizontal dans la page.
 
+Dans l’exemple ci-dessous, la 1ère colonne est invisible en mobile.
+
 ```html
 <div class="su-page-container">
 	<div class="su-row">
