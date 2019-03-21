@@ -57,6 +57,8 @@
 
         @include colDefinition(xs, $grid-small-max-col);
 
+        @include offsetDefinition(xs, $grid-small-max-col);
+
         &.su-grid-auto {
             @include flexWrap(nowrap);
 
@@ -99,23 +101,27 @@
 @media screen and (min-width: $min-breakpoint-sm) {
     .sipaui .su-row {
         @include colDefinition(sm, $grid-small-max-col);
+        @include offsetDefinition(sm, $grid-small-max-col);
     }
 }
 
 @media screen and (min-width: $min-breakpoint-md) {
     .sipaui .su-row {
         @include colDefinition(md, $grid-small-max-col);
+        @include offsetDefinition(md, $grid-small-max-col);
     }
 }
 
 @media screen and (min-width: $min-breakpoint-lg) {
     .sipaui .su-row {
         @include colDefinition(lg, $grid-large-max-col);
+        @include offsetDefinition(lg, $grid-large-max-col);
     }
 }
 
 @media screen and (min-width: $min-breakpoint-xl) {
     .sipaui .su-row {
         @include colDefinition(xl, $grid-large-max-col);
+        @include offsetDefinition(xl, $grid-large-max-col);
     }
 }

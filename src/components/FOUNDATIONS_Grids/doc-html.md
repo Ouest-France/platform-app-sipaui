@@ -24,15 +24,10 @@ Le conteneur ne fait pas partie à proprement parler de la grille. Il sert à d�
 Il utilise la classe `su-page-container`.
 
 ```html
-<div>
+<div class="su-page-container">
 	<p>
-		Page
+		Contenu
 	</p>
-	<div class="su-page-container">
-		<p>
-			Contenu
-		</p>
-	</div>
 </div>
 ```
 
@@ -63,36 +58,31 @@ Aussi&nbsp;:
 **NB&nbsp;: Il est important que la somme des** `-nombre de colonnes` **sur un rang soit égal à 6 sur petit écran (xs, sm et md) et 24 sur grand (lg et xl).**
 
 ```html
-<div>
-	<div>
-		Page
-	</div>
-	<div class="su-row">
-		<div class="su-col-xs-1 su-col-lg-1"><p>1</p></div>
-		<div class="su-col-xs-1 su-col-lg-1"><p>2</p></div>
-		<div class="su-col-xs-1 su-col-lg-1"><p>3</p></div>
-		<div class="su-col-xs-1 su-col-lg-1"><p>4</p></div>
-		<div class="su-col-xs-1 su-col-lg-1"><p>5</p></div>
-		<div class="su-col-xs-1 su-col-lg-1"><p>6</p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>7</p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>8</p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>9</p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>10<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>11<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>12<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>13<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>14<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>15<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>16<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>17<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>18<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>19<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>20<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>21<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>22<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>23<p></div>
-		<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>24<p></div>
-	</div>
+<div class="su-row">
+	<div class="su-col-xs-1 su-col-lg-1"><p>1</p></div>
+	<div class="su-col-xs-1 su-col-lg-1"><p>2</p></div>
+	<div class="su-col-xs-1 su-col-lg-1"><p>3</p></div>
+	<div class="su-col-xs-1 su-col-lg-1"><p>4</p></div>
+	<div class="su-col-xs-1 su-col-lg-1"><p>5</p></div>
+	<div class="su-col-xs-1 su-col-lg-1"><p>6</p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>7</p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>8</p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>9</p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>10<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>11<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>12<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>13<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>14<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>15<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>16<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>17<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>18<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>19<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>20<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>21<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>22<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>23<p></div>
+	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>24<p></div>
 </div>
 ```
 
@@ -137,36 +127,31 @@ En combinant les diverses classes de colonnes possibles, ainsi que les classes d
 **Rappel&nbsp;**: si vous intégrez une grille dans une page complète, elle doit être intégrée dans un conteneur `su-page-container` afin de gérer son positionnement horizontal dans la page.
 
 ```html
-<div>
-	<p>
-		Page
-	</p>
-	<div class="su-page-container">
-		<div class="su-row">
-			<div class="su-hidden-sm su-col-md-3 su-col-lg-2">
-				<p>
-					1.<br />
-					su-hidden-sm su-col-md-3 su-col-lg-2
-				</p>
-			</div>
-			<div class="su-col-md-3 su-col-lg-12 su-col-xl-10">
-				<p>
-					2.<br />
-					su-col-md-3 su-col-lg-12 su-col-xl-10
-				</p>
-			</div>
-			<div class="su-col-md-3 su-col-lg-3 su-col-xl-4">
-				<p>
-					3.<br />
-					su-col-md-3 su-col-lg-3 su-col-xl-4
-				</p>
-			</div>
-			<div class="su-col-md-3 su-col-lg-7 su-col-xl-8">
-				<p>
-					4.<br />
-					su-col-md-3 su-col-lg-7 su-col-xl-8
-				</p>
-			</div>
+<div class="su-page-container">
+	<div class="su-row">
+		<div class="su-hidden-sm su-col-md-3 su-col-lg-2">
+			<p>
+				1.<br />
+				su-hidden-sm su-col-md-3 su-col-lg-2
+			</p>
+		</div>
+		<div class="su-col-md-3 su-col-lg-12 su-col-xl-10">
+			<p>
+				2.<br />
+				su-col-md-3 su-col-lg-12 su-col-xl-10
+			</p>
+		</div>
+		<div class="su-col-md-3 su-col-lg-3 su-col-xl-4">
+			<p>
+				3.<br />
+				su-col-md-3 su-col-lg-3 su-col-xl-4
+			</p>
+		</div>
+		<div class="su-col-md-3 su-col-lg-7 su-col-xl-8">
+			<p>
+				4.<br />
+				su-col-md-3 su-col-lg-7 su-col-xl-8
+			</p>
 		</div>
 	</div>
 </div>
@@ -210,7 +195,64 @@ En combinant les diverses classes de colonnes possibles, ainsi que les classes d
 
 ### Décalage de colonnes
 
-<p style="color: red">A venir</p>
+Vous pouvez décaler une colonne vers la droite en utilisant les classes `su-offset`+`-point de rupture`+`-nombre de colonnes`. Ces classes augmentent la marge de gauche d’une colonne de `-nombre de colonnes`. Par exemple, `su-offset-md-2` déplace la colonne de 2 colonnes vers la droite.
+
+**NB&nbsp;: Si vous utilisez un offset, sa valeur de colonne rentre dans le calcul du nombre total de colonne dans le rang.**
+
+```html
+<div class="su-page-container">
+	<div class="su-row">
+		<div class="su-col-lg-4 su-offset-lg-10">
+			<p>
+				1.<br />
+				su-col-lg-4 su-offset-lg-10
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</div>
+		<div class="su-col-lg-10">
+			<p>
+				2.<br />
+				su-col-lg-10
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+	</div>
+</div>
+```
+
+<div class="sipaui demo-conteneur">
+	<div class="demo-grille page">
+		<p>
+			Page
+		</p>
+		<div class="su-page-container">
+			<div class="su-row">
+				<div class="su-col-lg-4 su-offset-lg-10">
+					<p>
+						1.<br />
+						su-col-lg-4 su-offset-lg-10
+					</p>
+					<p class="contenu">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+				</div>
+				<div class="su-col-lg-10">
+					<p>
+						2.<br />
+						su-col-lg-10
+					</p>
+					<p class="contenu">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 ### Alignement vertical
 
@@ -221,23 +263,16 @@ Avec SipaUI il est possible de gérer l’alignement ou l’étirement **vertica
 L’étirement des colonnes étant l’alignement par défaut, il n’a pas de classe spécifique.
 
 ```html
-<div class="sipaui">
-	<div>
-		<div>
-			Page
-		</div>
-		<div class="su-row">
-			<div class="su-col-xs-2">
-				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
-			</div>
-			<div class="su-col-xs-2">
-				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
-			</div>
-			<div class="su-col-xs-2">
-				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
-				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
-			</div>
-		</div>
+<div class="su-row">
+	<div class="su-col-xs-2">
+		<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+	</div>
+	<div class="su-col-xs-2">
+		<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+	</div>
+	<div class="su-col-xs-2">
+		<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+		<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
 	</div>
 </div>
 ```
@@ -268,23 +303,16 @@ L’étirement des colonnes étant l’alignement par défaut, il n’a pas de c
 Utilisation de la classe `su-vertical-start`.
 
 ```html
-<div class="sipaui">
-	<div>
-		<div>
-			Page
-		</div>
-		<div class="su-row su-vertical-start">
-			<div class="su-col-xs-2">
-				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
-			</div>
-			<div class="su-col-xs-2">
-				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
-			</div>
-			<div class="su-col-xs-2">
-				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
-				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
-			</div>
-		</div>
+<div class="su-row su-vertical-start">
+	<div class="su-col-xs-2">
+		<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+	</div>
+	<div class="su-col-xs-2">
+		<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+	</div>
+	<div class="su-col-xs-2">
+		<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+		<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
 	</div>
 </div>
 ```
@@ -315,23 +343,16 @@ Utilisation de la classe `su-vertical-start`.
 Utilisation de la classe `su-vertical-center`.
 
 ```html
-<div class="sipaui">
-	<div>
-		<div>
-			Page
-		</div>
-		<div class="su-row su-vertical-center">
-			<div class="su-col-xs-2">
-				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
-			</div>
-			<div class="su-col-xs-2">
-				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
-			</div>
-			<div class="su-col-xs-2">
-				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
-				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
-			</div>
-		</div>
+<div class="su-row su-vertical-center">
+	<div class="su-col-xs-2">
+		<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+	</div>
+	<div class="su-col-xs-2">
+		<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+	</div>
+	<div class="su-col-xs-2">
+		<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+		<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
 	</div>
 </div>
 ```
@@ -361,23 +382,16 @@ Utilisation de la classe `su-vertical-center`.
 Utilisation de la classe `su-vertical-end`.
 
 ```html
-<div class="sipaui">
-	<div>
-		<div>
-			Page
-		</div>
-		<div class="su-row su-vertical-end">
-			<div class="su-col-xs-2">
-				<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
-			</div>
-			<div class="su-col-xs-2">
-				<p>Tellus Magna Vestibulum Lorem Bibendum</p>
-			</div>
-			<div class="su-col-xs-2">
-				<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
-				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
-			</div>
-		</div>
+<div class="su-row su-vertical-end">
+	<div class="su-col-xs-2">
+		<p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+	</div>
+	<div class="su-col-xs-2">
+		<p>Tellus Magna Vestibulum Lorem Bibendum</p>
+	</div>
+	<div class="su-col-xs-2">
+		<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+		<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
 	</div>
 </div>
 ```
@@ -417,16 +431,11 @@ SipaUI propose une grille de colonnes automatiques en flex. Il suffit d’ajoute
 Il faut toutefois noter que ce système de colonage automatique est un outil pour des cas particuliers, mais **il ne doit en aucun cas remplacer la grille standard pour la mise en page générale d’un site**.
 
 ```html
-<div class="demo-grille page">
-	<div>
-		Page
-	</div>
-	<div class="su-grid-auto su-row">
-		<div class="su-col"><p>Contenu</p></div>
-		<div class="su-col"><p>Contenu</p></div>
-		<div class="su-col"><p>Contenu</p></div>
-		<div class="su-col"><p>Contenu</p></div>
-	</div>
+<div class="su-grid-auto su-row">
+	<div class="su-col"><p>Contenu</p></div>
+	<div class="su-col"><p>Contenu</p></div>
+	<div class="su-col"><p>Contenu</p></div>
+	<div class="su-col"><p>Contenu</p></div>
 </div>
 ```
 
@@ -450,16 +459,11 @@ Il faut toutefois noter que ce système de colonage automatique est un outil pou
 Vous pouvez rajouter les gouttières standards de 20px avec la classe `su-has-gutter` sur le rang.
 
 ```html
-<div class="demo-grille page">
-	<div>
-		Page
-	</div>
-	<div class="su-grid-auto su-row su-has-gutter">
-		<div class="su-col"><p>Contenu</p></div>
-		<div class="su-col"><p>Contenu</p></div>
-		<div class="su-col"><p>Contenu</p></div>
-		<div class="su-col"><p>Contenu</p></div>
-	</div>
+<div class="su-grid-auto su-row su-has-gutter">
+	<div class="su-col"><p>Contenu</p></div>
+	<div class="su-col"><p>Contenu</p></div>
+	<div class="su-col"><p>Contenu</p></div>
+	<div class="su-col"><p>Contenu</p></div>
 </div>
 ```
 
@@ -487,33 +491,27 @@ Par défaut, les colonnes de la grille automatique restent sur une ligne et s'ad
 Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La seule contrainte est de **n'utiliser le conteneur que sur la première grille**.
 
 ```html
-<div class="demo-grille page">
-	<p>
-		Page
-	</p>
-	<div class="su-page-container">
-		<div class="su-row">
-			<div class="su-col-md-3 su-col-lg-16">
-				<div class="su-grid-auto su-row su-has-gutter">
-					<div class="su-col">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-					</div>
-					<div class="su-col">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-					</div>
-				</div>
+<div class="su-row">
+	<div class="su-col-md-3 su-col-lg-16">
+		<div class="su-grid-auto su-row su-has-gutter">
+			<div class="su-col">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
 			</div>
-			<div class="su-col-md-3 su-col-lg-8">
+			<div class="su-col">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
 			</div>
 		</div>
 	</div>
+	<div class="su-col-md-3 su-col-lg-8">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+</div>
 </div>
 ```
 
@@ -558,6 +556,7 @@ Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La 
 - `su-col-xs-1`…
 - `su-visible-xs`… (dépendant du composant *Helpers*)
 - `su-hidden-xs`… (dépendant du composant *Helpers*)
+- `su-offset-xs-1`…
 - `su-vertical-start`
 - `su-vertical-center`
 - `su-vertical-end`
