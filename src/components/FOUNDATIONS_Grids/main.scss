@@ -5,7 +5,7 @@
 
 // CONTENEUR------------------------------------------------------------------------------------------/
 .sipaui {
-    .su-page-container {
+    .su-container {
         width: 100%;
         padding: 0 20px;
     }
@@ -14,7 +14,7 @@
 
 @media screen and (min-width: $min-breakpoint-sm) {
     .sipaui {
-        .su-page-container {
+        .su-container {
             padding: 0 30px;
         }
     }
@@ -22,7 +22,7 @@
 
 @media screen and (min-width: $min-breakpoint-md) {
     .sipaui {
-        .su-page-container {
+        .su-container {
             max-width: $min-breakpoint-md;
             margin: 0 auto;
             padding: 0 30px;
@@ -32,7 +32,7 @@
 
 @media screen and (min-width: $min-breakpoint-lg) {
     .sipaui {
-        .su-page-container {
+        .su-container {
             max-width: 960px;
             padding: 0 10px;
         }
@@ -41,7 +41,7 @@
 
 @media screen and (min-width: $min-breakpoint-xl) {
     .sipaui {
-        .su-page-container {
+        .su-container {
             max-width: 1280px;
         }
     }
