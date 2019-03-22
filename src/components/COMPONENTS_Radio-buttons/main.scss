@@ -1,0 +1,93 @@
+/*
+    Styles du composant radio-buttons de SipaUI
+*/
+@import "variables";
+
+$height-input-radio:        20px;
+$height-radio-area:         34px;
+$line-height-label:         $line-height-base;
+$padding-top-label:         6px;
+$padding-left-label: $height-input-radio + 7px;
+
+.sipaui {
+    .su-radio-area {
+        @include displayFlex();
+
+        &.su-disabled {
+            label,
+            su-label,
+            input,
+            .su-input-radio {
+                cursor: default;
+            }
+        }
+        + .su-error-message {
+            margin-top: $margin-xsmall;
+        }
+    }
+    .su-radio-area.su-radio-column {
+        @include flexDirection(column);
+        @include alignItems(flex-start);
+
+        label,
+        .su-label-radio {
+            margin-bottom: $margin-xsmall;
+            margin-left: 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .su-label-radio,
+    .su-radio-area label {
+        color: $color-label-radio;
+        font-size: $font-size-label-radio;
+        font-weight: $font-weight-label-radio;
+        height: auto;
+        min-height: $height-radio-area;
+        line-height: $line-height-label;
+        padding-top: $padding-top-label;
+        padding-left: $padding-left-label;
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        & + label {
+            margin-left: $margin-medium;
+        }
+        & + span {
+            display: inline-block;
+            overflow: auto; // utile pour mettre un contexte de block pour FireFox
+            line-height: $line-height-label;
+            margin: 0 $margin-medium;
+            min-height: $height-radio-area;
+            padding-top: $padding-top-label;
+        }
+    }
+    input[type="radio"],
+    .su-input-radio {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+
+        border-radius: 100%;
+        width: $height-input-radio;
+        height: $height-input-radio;
+        transition: 0.2s all linear;
+        outline: none;
+        position: absolute;
+        top: 7px;
+        left: 0;
+        cursor: pointer;
+        background: $background-input-radio;
+        border: $border-input-radio;
+
+        &:checked {
+            border: $border-input-radio-checked;
+            background: $background-input-radio-checked;
+        }
+    }
+}

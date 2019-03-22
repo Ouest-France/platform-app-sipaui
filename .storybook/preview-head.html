@@ -12,28 +12,66 @@
         var script = document.createElement('script');
         script.src = 'js/sipaui.js';
         document.head.appendChild(script);
-        var selector = document.createElement('select');
-        selector.id = 'theme_sipaui_selector';
 
+        // Check si l'URL contient "html"
+        var storyDetection = function() {
+            var url = new URL(window.location.href),
+                selectedStory = url.searchParams.get("selectedStory");
+
+            if(selectedStory == "html") {
+                addThemeSwitcher();
+            } else {
+                removeThemeSwitcher();
+            }
+        };
+
+        // Ajoute le theme switcher
+        var addThemeSwitcher = function() {
+            var switcher = document.getElementById('theme_sipaui_selector');
+            if(!switcher) {
+                var selector = document.createElement('select');
+                selector.id = 'theme_sipaui_selector';
+                document.body.appendChild(selector);
+                selector.innerHTML = `
+                    <select>
+                        <option value="" disabled selected>Thème</option>
+                        <option value="of">Ouest-France</option>
+                        <option value="vv">Voiles-et-Voiliers</option>
+                    </select>
+                `;
+                selector.addEventListener('change', function(){
+                    sessionStorage.setItem('theme', this.value||'of');
+                    window.location.href = window.location.href;
+                });
+            }
+        };
+
+        // Enleve le theme switcher
+        var removeThemeSwitcher = function() {
+            var switcher = document.getElementById('theme_sipaui_selector');
+            if(switcher) {
+                switcher.parentNode.removeChild(switcher);
+            }
+        }
+
+        // Mutation Observer pour surveiller les changements de DOM dans l'iframe pendant la navigation
+        var config = { attributes: true, childList: true, subtree: true };
+        var mutationCallback = function(mutationsList, observer) {
+            storyDetection();
+        };
+        var observer = new MutationObserver(mutationCallback);
+
+        // On fait un premier check au chargement du DOM (si F5 par exemple)
         document.addEventListener('DOMContentLoaded', function(){
-            document.body.appendChild(selector);
-            selector.innerHTML = `
-                <select>
-                    <option value="" disabled selected>Thème</option>
-                    <option value="of">Ouest-France</option>
-                    <option value="vv">Voiles-et-Voiliers</option>
-                </select>
-            `;
-            selector.addEventListener('change', function(){
-                sessionStorage.setItem('theme', this.value||'of');
-                window.location.href = window.location.href;
-            });
+            storyDetection();
+            observer.observe(document.body, config);
         });
     })();
 </script>
 <style type="text/css">
     body.sb-show-main {
         margin: 0 10%;
+        overflow-x: hidden;
     }
 
     #theme_sipaui_selector {
@@ -42,17 +80,18 @@
         right: 20px;
         background: #fff;
         border: 1px solid #ccc;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Trebuchet MS", Geneva, sans-serif;
         font-size: 14px;
         height: 30px;
         width: 150px;
         padding: 5px;
     }
 
-    body #root > div > div[style*="border-top"] {
-        border: none !important;
+    body #root > div > div[style*=" border: 1px dashed"] {
+        display: none
     }
 
+    /*  Typo ------------------------------------------------------------------*/
     body .markdown-body p,
     body .markdown-body h1,
     body .markdown-body h2,
@@ -60,7 +99,7 @@
     body .markdown-body h4,
     body .markdown-body h5,
     body .markdown-body div {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Trebuchet MS", Geneva, sans-serif;
     }
     body .markdown-body h1,
     body .markdown-body h2,
@@ -73,8 +112,9 @@
     }
     body .markdown-body h1,
     body #root div[style] > h1 {
-        font-size: 4rem;
+        font-size: 6rem;
         border: none;
+        font-weight: bold;
     }
     body .markdown-body h2 {
         font-size: 3.4rem;
@@ -86,11 +126,11 @@
         margin: 50px 0 10px;
     }
     body .markdown-body h4 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         margin: 30px 0 5px;
     }
     body .markdown-body h5 {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
         margin: 25px 0 5px;
     }
     body .markdown-body h2 + h3,
@@ -99,14 +139,19 @@
         margin-top: 0;
     }
     body .markdown-body p,
+    body .markdown-body li,
     body .markdown-body div,
     body .markdown-body td {
-        color: #555;
+        color: #444;
     }
     body .markdown-body .highlight pre,
     body .markdown-body pre,
     body .markdown-body code {
-        background:  #eee;
+        background:  #e4e4e4;
+    }
+    body .markdown-body .highlight pre,
+    body .markdown-body pre {
+        border-radius: 0;
     }
 
     body .markdown-body a,
@@ -127,33 +172,11 @@
     body .markdown-body .link-button:hover,
     body .markdown-body .link-button:focus,
     body .markdown-body .link-button:active {
-            color: #b40015;
-            text-decoration: underline;
-        }
-
-
-    .alerte {
-        padding: 10px;
-        background: #fdd;
-        border-radius:  10px;
-        margin: 20px 0;
-    }
-    .alerte h2 {
-        margin-top: 0 !important;
-    }
-    .alerte > :last-child {
-        margin-bottom: 0 !important;
+        color: #b40015;
+        text-decoration: underline;
     }
 
-    #liste-classes {
-        padding: 10px;
-        background: #ddd;
-        border-radius:  10px;
-        margin-top: 60px;
-    }
-    #liste-classes h2 {
-        margin-top: 0 !important;
-    }
+    /*  Générique ------------------------------------------------------------------*/
     table tr,
     table th,
     table td {
@@ -164,6 +187,111 @@
         background-color: transparent !important;
     }
 
+    /*  Accueil ------------------------------------------------------------------*/
+    body #root > div > div[style*="border-top"] {
+        border: none !important;
+    }
+    .zone-titre-accueil:before {
+        background: radial-gradient(circle at 100% 100%,#be0030,#6e0030);
+    }
+    .logo-accueil,
+    .titre-accueil {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .logo-accueil svg {
+        margin: 0 40px 0 0;
+        fill: #fff;
+        height: 140px;
+        width: 140px;
+    }
+    body h1.titre-accueil {
+        width: 200px;
+        color: #fff;
+    }
+    .zone-titre-accueil:before,
+    .dependances:before,
+    #liste-classes:before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        right: -100%;
+    }
+    /*.zone-titre-accueil:after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: #891a33;
+        z-index: -10;
+        height: 30px;
+        width: 30px;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg)
+    }*/
+
+    /*  Spécifique ------------------------------------------------------------------*/
+    .alerte {
+        padding: 20px 10px;
+        background: #fff3f2;
+        margin: 20px 0;
+        border-left: 1px solid red;
+    }
+    .alerte h2,
+    .dependances h2 {
+        margin-top: 0 !important;
+    }
+    .alerte > :last-child,
+    .dependances > :last-child {
+        margin-bottom: 0 !important;
+    }
+
+    .zone-titre-accueil,
+    .dependances,
+    #liste-classes {
+        position: relative;
+        margin: 50px 0;
+        padding: 20px 0;
+    }
+    #liste-classes {
+        margin-bottom: 0;
+    }
+    .dependances:before,
+    #liste-classes:before {
+        background: #f5f5f5;
+    }
+    .legende {
+        font-style: italic;
+        font-size: 1.4rem;
+        margin: -10px 0 40px !important;
+    }
+    .sipaui {
+        padding: 30px 20px 20px;
+        margin: 20px 0;
+        border: 1px solid #ddd;
+        position: relative;
+        box-shadow: 0 0 15px rgba(0,0,0, .1);
+        background: #fff
+    }
+    .sipaui:before {
+        content: "rendu";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #ddd;
+        font-size: 1.1rem;
+        color: #333;
+        border-radius:  0 0 10px 0;
+        padding: 1px 10px;
+    }
+
+    #liste-classes h2 {
+        margin-top: 0 !important;
+    }
 
     .do-dont {
         display: flex;
@@ -211,6 +339,10 @@
         font-size: 1.6rem !important;
     }
 
+    .tableau-grille em {
+        color: #878787
+    }
+
     /* Texte ------------------------- */
     .surcharge-paragraphe p {
         color: #aaa;
@@ -242,23 +374,95 @@
 	}
 
 	/* Grille ------------------------- */
-    .demo-grille.su-grid-container {
-        background: #efefef;
-        min-height: 20px;
+	.sipaui.demo-conteneur {
+	    position: relative;
+        left: calc(-10vw - 16px);
+        padding-left: 0;
+        padding-right: 0;
+        width: 100vw;
     }
+    .demo-grille.page,
     .demo-grille .su-row {
-        background: powderblue;
-        min-height: 20px;
+        background: #efefef;
     }
-    .demo-grille [class*="su-col"] {
-        background: pink;
-        min-height: 20px;
+    .demo-grille .contenu {
+        min-height: 100px;
+    }
+    .demo-grille .su-page-container {
+        background: #8da886;
+    }
+    .demo-grille [class*="su-col"],
+    .demo-grille .contenu {
+        background: #edaeac;
+    }
+    .demo-grille p.contenu {
+        margin-bottom: 0;
+    }
+    .demo-grille .su-no-gutter [class*="su-col"] {
+        border-left: 1px solid #da345d;
     }
 
+    @media screen and (max-width: 1023px) {
+        body .markdown-body h1,
+        body #root div[style] > h1 {
+            font-size: 5rem;
+        }
+        body .markdown-body h2 {
+            font-size: 3rem;
+        }
+        body .markdown-body h3 {
+            font-size: 2.4rem;
+        }
+        body .markdown-body h4 {
+            font-size: 2rem;
+        }
+        body h1.titre-accueil {
+            font-size: 6rem;
+        }
+    }
+
+    @media screen and (max-width: 979px) {
+        body #root {
+            padding-top: 50px;
+        }
+        body.sb-show-main {
+            margin: 0 20px;
+        }
+        .logo-accueil svg {
+            height: 90px;
+            width: 90px;
+            margin: 0 20px 0 0;
+        }
+        body h1.titre-accueil {
+            font-size: 4rem;
+        }
+        .zone-titre-accueil {
+            margin: 40px 0;
+            padding: 10px 0;
+        }
+        .sipaui.demo-conteneur {
+            left: -36px;
+        }
+    }
 
     @media screen and (max-width: 376px) {
         .markdown-body pre {
             width: 270px;
+        }
+        body .markdown-body h1,
+        body #root div[style] > h1 {
+            font-size: 4rem;
+        }
+        .logo-accueil svg {
+            height: 80px;
+            width: 80px;
+            margin: 0 15px 0 0;
+        }
+        body h1.titre-accueil {
+            font-size: 3.5rem;
+        }
+        .zone-titre-accueil {
+            margin: 20px 0;
         }
     }
 

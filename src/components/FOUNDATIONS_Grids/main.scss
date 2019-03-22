@@ -1,0 +1,127 @@
+/*
+    Styles du composant icons de SipaUI
+*/
+@import "variables";
+
+// CONTENEUR------------------------------------------------------------------------------------------/
+.sipaui {
+    .su-page-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media screen and (min-width: $min-breakpoint-sm) {
+    .sipaui {
+        .su-page-container {
+            padding: 0 30px;
+        }
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-md) {
+    .sipaui {
+        .su-page-container {
+            max-width: $min-breakpoint-md;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-lg) {
+    .sipaui {
+        .su-page-container {
+            max-width: 960px;
+            padding: 0 10px;
+        }
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-xl) {
+    .sipaui {
+        .su-page-container {
+            max-width: 1280px;
+        }
+    }
+}
+
+
+// GRILLE------------------------------------------------------------------------------------------/
+.sipaui {
+    .su-row {
+        @include displayFlex();
+        @include justifyContent(space-between, distribute);
+        @include flexWrap(wrap);
+
+        @include colDefinition(xs, $grid-small-max-col);
+
+        @include offsetDefinition(xs, $grid-small-max-col);
+
+        &.su-grid-auto {
+            @include flexWrap(nowrap);
+
+            &.su-wrap {
+                @include flexWrap(wrap);
+            }
+            .su-col {
+                @include flex(1 0 0);
+            }
+            &.su-has-gutter {
+                .su-col {
+                    margin: 0 $grid-gutter / 2;
+                }
+                .su-col:first-child {
+                    margin-left: 0;
+                }
+                .su-col:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        // Alignement vertical
+        &.su-vertical-start {
+            @include alignItems(flex-start);
+        }
+        &.su-vertical-center {
+            @include alignItems(center);
+        }
+        &.su-vertical-end {
+            @include alignItems(flex-end);
+        }
+    }
+    [class*="su-col-"] {
+        @include flex(1 1 100%);
+    }
+}
+
+
+@media screen and (min-width: $min-breakpoint-sm) {
+    .sipaui .su-row {
+        @include colDefinition(sm, $grid-small-max-col);
+        @include offsetDefinition(sm, $grid-small-max-col);
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-md) {
+    .sipaui .su-row {
+        @include colDefinition(md, $grid-small-max-col);
+        @include offsetDefinition(md, $grid-small-max-col);
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-lg) {
+    .sipaui .su-row {
+        @include colDefinition(lg, $grid-large-max-col);
+        @include offsetDefinition(lg, $grid-large-max-col);
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-xl) {
+    .sipaui .su-row {
+        @include colDefinition(xl, $grid-large-max-col);
+        @include offsetDefinition(xl, $grid-large-max-col);
+    }
+}

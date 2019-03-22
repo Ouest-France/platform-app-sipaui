@@ -1,6 +1,6 @@
 
 // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
-// Composant ofemptyinput
+// Composant suemptyinput
 //
 // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 ;(function(cn){
@@ -30,10 +30,10 @@
         
     }
 
-    of.doc.addEventListener('click', function(e) {
+    su.doc.addEventListener('click', function(e) {
         const elem = e.target.closest("[data-"+cn+"]");
         if (!elem) return;
         _emptyInput(e, elem);
     });
 
-})('ofemptyinput');
+})('suemptyinput');

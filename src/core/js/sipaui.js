@@ -8,10 +8,10 @@
 // OuestStrap - start
 // Framework JavaScript
 // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
-var of = {
+var su = {
     // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
     /**
-     * tableau des selecteurs de la fonction ofScan (ajouté par onScan)
+     * tableau des selecteurs de la fonction suScan (ajouté par onScan)
      */
     'scanSels': [],
     // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
@@ -21,25 +21,25 @@ var of = {
     _actions: {},
     // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
     /**
-     * Ajoute une callback pour une clé au tableau {@link of._actions}
+     * Ajoute une callback pour une clé au tableau {@link su._actions}
      *
      * @param {string} key le nom de l'action
      * @param {string} fn la fonction a appelé lors de l'activation de l'action
      */
     addAction: function(key,fn) {
-        if( undefined === of._actions[key] ) {
-            of._actions[key] = [fn];
+        if( undefined === su._actions[key] ) {
+            su._actions[key] = [fn];
         } else {
-            of._actions[key].push(fn);
+            su._actions[key].push(fn);
         }
-        return of; // pour pouvoir enchaîner les addAction
+        return su; // pour pouvoir enchaîner les addAction
     },
     // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
     /**
      * Appel les fonctions callback d'une action
      */
     doAction: function (key) {
-        var ret = null, args, acts = of._actions[key];
+        var ret = null, args, acts = su._actions[key];
 
         if( acts ) {
             // Transform "arguments" in a true javascript Array
@@ -54,16 +54,16 @@ var of = {
     },
     // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
     /**
-     * Enlève une callback pour une clé au tableau {@link of._actions}.
+     * Enlève une callback pour une clé au tableau {@link su._actions}.
      * Si plus de callback pour la clé, remove l'entrée.
      */
     removeAction: function (key, fn) {
-        if( undefined !== of._actions[key] ) {
-            var i = $.inArray(fn, of._actions[key]);
+        if( undefined !== su._actions[key] ) {
+            var i = $.inArray(fn, su._actions[key]);
             if( -1 < i ) {
-                of._actions[key].splice(i,1);
-                if( 0 === of._actions[key].length ) {
-                    delete of._actions[key];
+                su._actions[key].splice(i,1);
+                if( 0 === su._actions[key].length ) {
+                    delete su._actions[key];
                 }
             }
         }
@@ -82,12 +82,12 @@ document.on = function (event, elem, callback, capture) {
     elem.addEventListener(event, callback, capture);
 }
 
-document.ofScan = function(outerScan){
+document.suScan = function(outerScan){
     if(!this) { return; }
 
     var $contexte = this;
 
-    of.scanSels.forEach(function(scanSel){
+    su.scanSels.forEach(function(scanSel){
 
         var $toScan = $contexte.querySelectorAll( scanSel.sel ),
             nbElts;
@@ -96,12 +96,12 @@ document.ofScan = function(outerScan){
 
         for (var i = 0; i < $toScan.length; i++) {
             var $o = $toScan[i],
-                doneScans = $o.getAttribute('doneScans.of') || [];
+                doneScans = $o.getAttribute('doneScans.su') || [];
 
             if( false == doneScans.includes(scanSel.sel) ) {
                 scanSel.fn.call($o, $contexte); // en param, la callback aura le context de scan (this);
                 doneScans.push(scanSel.sel);
-                $o.setAttribute('doneScans.of', doneScans);
+                $o.setAttribute('doneScans.su', doneScans);
             }
         }
 
@@ -109,13 +109,13 @@ document.ofScan = function(outerScan){
     return this;
 }
 document.onScan = function(sel,fn) {
-    of.scanSels.push({sel:sel,fn:fn});
+    su.scanSels.push({sel:sel,fn:fn});
 }
 
-;(function(of, undefined){
-    if( undefined === of ) return;
+;(function(su, undefined){
+    if( undefined === su ) return;
 
-    of.doc = document || window.document;
+    su.doc = document || window.document;
 
     // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
     // PolyFills
@@ -123,26 +123,26 @@ document.onScan = function(sel,fn) {
 
     // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
     // Initialisation du scan (fin du footer)
-    of.asyncLoadOf = function() {
+    su.asyncLoadSu = function() {
 
-        of.doc.ofScan(); // first scan sur tout le doc
+        su.doc.suScan(); // first scan sur tout le doc
 
-        var ofready = document.createEvent("Event");
-        ofready.initEvent("ofready", false, true);
+        var suready = document.createEvent("Event");
+        suready.initEvent("suready", false, true);
         var html = document.querySelector('html')
-        html.classList.add("ofready")
-        html.dispatchEvent(ofready);
+        html.classList.add("suready")
+        html.dispatchEvent(suready);
     };
 
-    var interOf = setInterval(function(){
-        if( undefined === window.of ) return; // plugin du framework, pas de header pas plugin.
-        clearTimeout(interOf); //
+    var interSu = setInterval(function(){
+        if( undefined === window.su ) return; // plugin du framework, pas de header pas plugin.
+        clearTimeout(interSu); //
 
         //=require libs/components/sutoggleclass.js
         //=require libs/components/suemptyinput.js
         //=require libs/components/sucheckboxes.js
 
-        of.asyncLoadOf();
+        su.asyncLoadSu();
     }, 25);
 
-})(window.of);
+})(window.su);

@@ -1,5 +1,5 @@
 // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
-// Composant ofcheckboxes
+// Composant sucheckboxes
 //
 // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 ;(function(cn){
@@ -71,10 +71,10 @@
         return false;
     }
 
-    of.doc.addEventListener('change', function(e) {
+    su.doc.addEventListener('change', function(e) {
         const cont = e.target.closest("."+cArea);
         const input = e.target.closest("input[type=checkbox]");
         if (!cont && !input) return;
         _checkStatus(input);
     });
-})('ofcheckboxes');
+})('sucheckboxes');

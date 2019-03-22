@@ -12,15 +12,26 @@ nav {
 }
 
 main {
-    .conteneur {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
     > *:first-child {
-        padding-top: 15rem;
+        margin-top: 15rem;
+    }
+    .conteneur {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+.accueil main {
+    > *:first-child {
+        margin-top: 70px;
     }
 }
 
 .accueil .illustration {
     width: 250px;
+}
+.accueil .intro {
+    div:last-child {
+        margin: 0 0 $margin-large
+    }
 }

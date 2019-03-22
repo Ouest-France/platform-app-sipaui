@@ -167,14 +167,17 @@
 
 
 // pour les hide et show selon les breakpoints
-@mixin responsive-visibility($parent) {
-  #{$parent} {
-    display: block !important;
-  }
-  table#{$parent}  { display: table !important; }
-  tr#{$parent}     { display: table-row !important; }
-  th#{$parent},
-  td#{$parent}     { display: table-cell !important; }
+@mixin responsive-visibility($parent, $type:null) {
+    @if ($type) {
+        #{$parent} {
+            display: $type !important;
+        }
+    }
+    @else {
+        #{$parent} {
+            display: block !important;
+        }
+    }
 }
 
 // [converter] $parent hack
@@ -267,52 +270,98 @@
 }
 
 // FLEXBOX MODEL ————————————————————————————————————————————————————————————————————————————————————————————————
-@mixin flexDisplay() {
-    display: -webkit-box;
+// Flex container ----
+@mixin displayFlex() {
+    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
 }
 
-@mixin flexDirection($flexDirection, $flexDirectionOld) {
-    -webkit-box-orient: $flexDirectionOld; // horizontal, vertical
-    -webkit-flex-direction: $flexDirection; // row, column
-    flex-direction: $flexDirection;
+@mixin flexDirection($direction) { // row, column, row-reverse, column-reverse
+        -ms-flex-direction: $direction;
+    -webkit-flex-direction: $direction;
+            flex-direction: $direction;
+}
+@mixin flexWrap($wrap) { // no-wrap, wrap, wrap-reverse
+        -ms-flex-wrap: $wrap;
+    -webkit-flex-wrap: $wrap;
+            flex-wrap: $wrap;
+}
+@mixin flexFlow($flow) { // row, column, row-reverse, column-reverse \ no-wrap, wrap, wrap-reverse
+        -ms-flex-flow: $flow;
+    -webkit-flex-flow: $flow;
+            flex-flow: $flow;
 }
 
-@mixin flexAlign($flexAlign) {
-    -webkit-box-align: $flexAlign; //flex-start, flex-end, center, baseline, stretch
-    -webkit-align-items: $flexAlign;
-    align-items: $flexAlign;
+//@mixin justifyContent($justify, $justifyOld:null) {
+@mixin justifyContent($justify, $justifyOld) { //flex-start, flex-end, center, space-between, space-around, space-evenly
+              -ms-flex-pack: $justifyOld; // start, end, center, justify, distribute
+        -ms-justify-content: $justify;
+    -webkit-justify-content: $justify;
+            justify-content: $justify;
 }
 
-@mixin flexJustify($flexJustify, $flexJustifyOld) {
-    -webkit-box-pack: $flexJustifyOld; //start, end, center, justify
-    -webkit-justify-content: $flexJustify; //flex-start, flex-end, center, space-between, space-around
-    justify-content: $flexJustify;
+@mixin alignItems($alignItems) { //flex-start, flex-end, center, stretch, baseline
+        -ms-align-items: $alignItems;
+    -webkit-align-items: $alignItems;
+            align-items: $alignItems;
 }
 
-@mixin flexWrap($flexWrap) { // not possible with the 2009 model for android pre 4.4
-    -webkit-flex-wrap: $flexWrap; // no-wrap, wrap, wrap-reverse
-    flex-wrap: $flexWrap;
+@mixin alignContent($alignContent) { //flex-start, flex-end, center, stretch, space-between, space-around
+        -ms-align-content: $alignContent;
+    -webkit-align-content: $alignContent;
+            align-content: $alignContent;
 }
 
-@mixin flexOrder($flexOrder) {
-    -webkit-box-ordinal-group: $flexOrder;
-    -webkit-order: $flexOrder;
-    order: $flexOrder;
+// Flex items ----
+
+@mixin order($order) { //
+        -ms-order: $order;
+    -webkit-order: $order;
+            order: $order;
 }
 
-@mixin flexAlignSelf($flexAlignSelf) {
-    -webkit-align-self: $flexAlignSelf; //for flex's childs : flex-start, flex-end, center, baseline, stretch
-    align-self: $flexAlignSelf;
+@mixin flex($flex) { // 0 = pas de taille, integer (1) = taille pour remplir l’espace
+        -ms-flex: $flex;
+    -webkit-flex: $flex;
+            flex: $flex;
 }
 
-@mixin flexFlexValue($flexFlexValue) {
-    -webkit-box-flex: $flexFlexValue; //for flex's childs : 0 = not sized, integer (1) = sized to fill the space
-    -webkit-flex: $flexFlexValue;
-    flex: $flexFlexValue;
+@mixin alignSelf($alignSelf) { // flex-start, flex-end, center, baseline, stretch
+        -ms-align-self: $alignSelf;
+    -webkit-align-self: $alignSelf;
+            align-self: $alignSelf;
 }
 
+// GRILLE ————————————————————————————————————————————————————————————————————————————————————————————————
+@function calculBase($i, $max-col) {
+    @return ($i / $max-col) * 100;
+}
+@function colWidthBase($i, $max-col) {
+    @return calculBase($i, $max-col) + %;
+}
+@function gutterWidth($i, $max-col) {
+    @return round(20px - (20 * calculBase($i, $max-col) / 100));
+}
+
+@mixin colDefinition($breakpoint, $max-col) {
+    @for $i from 1 through $max-col {
+        .su-col-#{$breakpoint}-#{$i} {
+            flex: 0 0 calc(#{colWidthBase($i, $max-col)} - #{gutterWidth($i, $max-col)});
+            max-width: calc(#{colWidthBase($i, $max-col)} - #{gutterWidth($i, $max-col)});
+        }
+    }
+}
+
+@mixin offsetDefinition($breakpoint, $max-col) {
+    @for $i from 1 through $max-col {
+        .su-offset-#{$breakpoint}-#{$i} {
+            margin-left: calc(#{colWidthBase($i, $max-col)} - #{gutterWidth($i, $max-col)} + 20px);
+        }
+    }
+}
+
+// IMPORT DES FONTES ————————————————————————————————————————————————————————————————————————————————————————————————
 @mixin importFonts() {
     @if $font-import-use-local == null {
         @import url($font-import-url);

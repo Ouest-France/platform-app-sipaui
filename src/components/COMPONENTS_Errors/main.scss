@@ -1,0 +1,45 @@
+/*
+    Styles du composant Errors de SipaUI
+*/
+@import "variables";
+
+
+
+.sipaui {
+    .su-error-message {
+        display: none;
+        font-size: $font-size-error;
+        color: $color-error;
+        margin-top: 2px;
+    }
+    .su-error {
+        .su-error-message {
+            display: block;
+        }
+
+        #{$inputTextPlus},
+        .su-select select {
+            border: $border-input-error !important;
+        }
+        input[type="checkbox"]:not(:checked),
+        .su-input-checkbox:not(:checked),
+        input[type="radio"]:not(:checked),
+        .su-input-radio:not(:checked) {
+            border-color: $color-error;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

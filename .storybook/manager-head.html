@@ -7,6 +7,7 @@
 <style type="text/css" media="screen">
 	html * {
     	box-sizing: content-box;
+    	font-family: "Trebuchet MS", Geneva, sans-serif;
 	}
 	.css-1e1vreg, /* Colonne centrale contenant la preview */
 	.css-1929wko { /* Colonne droite contenant les actions */
@@ -19,7 +20,12 @@
     .Resizer.disabled {
         display: none !important;
     }
+    .css-1sjft4t, /* indicateur de taille de l’iframe dans le coin inférieur droit */
+    .css-1sjft4t * {
+        color: #878787 !important;
+    }
 
+    /* COL GAUCHE ---------------------------------------------------------------------------------------- */
 	.css-ypfoxr { /* col gauche -> zone marque */
 	    text-transform: none !important;
 	}
@@ -41,39 +47,42 @@
 	}
 	.css-79elbk [role="menuitem"] { /*col gauche -> liste des éléments */
     	padding: 3px 5px !important;
-        border-bottom: 1px solid #444;
+        border-bottom: 1px solid rgba(255,255,255, .15);
+	}
+    .css-vq3qyb li:last-child [role="menuitem"] { /*col gauche -> liste des éléments */
+        border-bottom: none;
 	}
 	.css-vq3qyb .css-vq3qyb { /*col gauche -> liste des sous-éléments */
     	padding: 10px 10px 10px 15px !important;
     	background: #252525;
 	}
 	.css-1si3szf .css-h8sbw5 {
-    	color: #ddd !important;
+    	color: #bbb !important;
 	}
 	[style*="transform: rotateZ(90deg);"] + .css-1si3szf .css-h8sbw5 {
     	color: #fff !important;
-    	font-weight: 700;
 	}
 	.css-79elbk .css-79elbk .css-79elbk { /*col gauche -> sous-éléments */
     	padding: 3px 0 !important;
 	}
 	a.e1s7lmdh0 { /*col gauche -> sous-éléments */
     	border-bottom: 0;
+    	color: #bbb;
 	}
 	a.e1s7lmdh0:hover { /*col gauche -> sous-éléments */
     	color: #fff;
 	}
+	.css-avavux {
+    	padding: 2px 5px 2px !important;
+	}
 	.css-tg6jhz { /*col gauche -> élément sélectionné */
-    	background-color: rgba(255,255,255, .2) !important;
+    	background-color: rgba(255,255,255, .25) !important;
     	padding: 2px 5px 2px !important;
     	border-radius: 3px;
-	}
-	.css-tg6jhz:hover,
-	.css-tg6jhz:active,
-	.css-tg6jhz:focus { /* col gauche -> élément sélectionné */
-	    color: inherit !important;
+    	color: #fff !important;
 	}
 
+    /* COL DROITE ---------------------------------------------------------------------------------------- */
     .css-mq6fg3 { /* col droite sélecteur de device */
         height: 30px;
     }

@@ -1,0 +1,114 @@
+/*
+    Styles du Text-fields de SipaUI
+*/
+@import "variables";
+
+$inputTextBase: 'input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"], textarea, .su-input-text, .su-textarea';
+$inputTextPlus: $inputTextBase + ', input[type="date"]' ;
+
+
+.sipaui {
+    $size-button: 44px;
+    $padding-lateral-input: 10px;
+
+    input,
+    textarea,
+    .su-input-text {
+        font-size: $font-size-base;
+
+    }
+    #{$inputTextBase} {
+        -webkit-appearance: none;
+    }
+    #{$inputTextPlus} {
+        display: block;
+        width: 100%;
+        min-width: 140px;
+        height: $height-input;
+        border-radius:  $border-radius-input;
+        color: $color-input;
+        background: $background-input;
+        border: $border-input;
+        transition: all .3s ease-out;
+        padding: 0 $padding-lateral-input;
+
+        &:focus {
+            background: $background-input-focus;
+            border: $border-input-focus;
+        }
+
+        &[readonly] {
+            opacity: 0.4;
+            cursor: default;
+
+            &:focus {
+                background: $background-input;
+                border: $border-input;
+            }
+        }
+    }
+    .su-input-actions-1,
+    .su-input-actions-2 {
+        position: relative;
+    }
+    .su-input-actions-1 {
+        #{$inputTextBase} {
+            padding-right: $size-button;
+        }
+    }
+    .su-input-actions-2 {
+        #{$inputTextBase} {
+            padding-right: $size-button * 2;
+        }
+    }
+    .su-input-actions-area {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include displayFlex();
+    }
+    .su-input-action {
+        @include displayFlex(); // sert à centrer verticalement l’icône;
+        @include justifyContent(center, center);
+        @include alignItems(center);
+        height: $size-button;
+        width: $size-button;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: $color-main-5;
+        -webkit-appearance: none;
+        cursor: text;
+
+        &:hover {
+            color: $color-main-7;
+        }
+    }
+    .su-js-show .su-input-actions-area {
+        opacity: 1;
+
+        .su-input-action {
+            cursor: pointer;
+        }
+    }
+    textarea,
+    .su-textarea {
+        padding: 10px 15px;
+        min-height: 68px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
