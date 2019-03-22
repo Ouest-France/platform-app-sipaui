@@ -86,10 +86,6 @@ main {
     > *:first-child {
         margin-top: 190px;
     }
-    .conteneur {
-        padding-left: $margin-medium;
-        padding-right: $margin-medium;
-    }
 }
 .trop-large-responsif {
     overflow-x: scroll;
@@ -113,7 +109,6 @@ main {
     .titre {
         margin-bottom: $margin-xlarge;
         display: flex;
-        //justify-content: center;
 
         .logoSipaUi {
             margin-right: $margin-medium;
