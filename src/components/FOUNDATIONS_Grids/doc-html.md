@@ -21,10 +21,10 @@ D’un point de vue technique, la grille s'appuie sur le modèle *Flexbox*, la t
 
 Le conteneur ne fait pas partie à proprement parler de la grille. Il sert à déterminer la largeur que prend la grille principale de la page (celle de premier niveau). **Si vous avez besoin d’insérer une grille dans un sous-niveau, il n’y aura plus besoin de conteneur**. Exemple de grille multi-niveau&nbsp;: Page / conteneur / grille n1 / grille n2…
 
-Il utilise la classe `su-page-container`.
+Il utilise la classe `su-container`.
 
 ```html
-<div class="su-page-container">
+<div class="su-container">
 	<p>
 		Contenu
 	</p>
@@ -36,7 +36,7 @@ Il utilise la classe `su-page-container`.
 		<p>
 			Page
 		</p>
-		<div class="su-page-container">
+		<div class="su-container">
 			<p class="contenu">
 				Contenu
 			</p>
@@ -124,12 +124,12 @@ Aussi&nbsp;:
 
 En combinant les diverses classes de colonnes possibles, ainsi que les classes de visibilité dépendantes des points de rupture (composant *Helpers*) il est donc possible de faire une mise en page complexe.
 
-**Rappel&nbsp;**: si vous intégrez une grille dans une page complète, elle doit être intégrée dans un conteneur `su-page-container` afin de gérer son positionnement horizontal dans la page.
+**Rappel&nbsp;**: si vous intégrez une grille dans une page complète, elle doit être intégrée dans un conteneur `su-container` afin de gérer son positionnement horizontal dans la page.
 
 Dans l’exemple ci-dessous, la 1ère colonne est invisible en mobile.
 
 ```html
-<div class="su-page-container">
+<div class="su-container">
 	<div class="su-row">
 		<div class="su-hidden-sm su-col-md-3 su-col-lg-2">
 			<p>
@@ -164,7 +164,7 @@ Dans l’exemple ci-dessous, la 1ère colonne est invisible en mobile.
 		<p>
 			Page
 		</p>
-		<div class="su-page-container">
+		<div class="su-container">
 			<div class="su-row">
 				<div class="su-hidden-sm su-col-md-3 su-col-lg-2">
 					<p>
@@ -202,7 +202,7 @@ Vous pouvez décaler une colonne vers la droite en utilisant les classes `su-off
 **NB&nbsp;: Si vous utilisez un offset, sa valeur de colonne rentre dans le calcul du nombre total de colonne dans le rang.**
 
 ```html
-<div class="su-page-container">
+<div class="su-container">
 	<div class="su-row">
 		<div class="su-col-lg-4 su-offset-lg-10">
 			<p>
@@ -231,7 +231,7 @@ Vous pouvez décaler une colonne vers la droite en utilisant les classes `su-off
 		<p>
 			Page
 		</p>
-		<div class="su-page-container">
+		<div class="su-container">
 			<div class="su-row">
 				<div class="su-col-lg-4 su-offset-lg-10">
 					<p>
@@ -522,7 +522,7 @@ Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La 
 		<p>
 			Page
 		</p>
-		<div class="su-page-container">
+		<div class="su-container">
 			<div class="su-row">
 				<div class="su-col-md-3 su-col-lg-16">
 					<div class="su-grid-auto su-row su-has-gutter">
@@ -553,7 +553,7 @@ Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La 
 <div id="liste-classes">
 
 ## Grille standard&nbsp;: liste des classes disponibles
-- `su-page-container`
+- `su-container`
 - `su-row`
 - `su-col-xs-1`…
 - `su-visible-xs`… (dépendant du composant *Helpers*)
@@ -564,7 +564,7 @@ Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La 
 - `su-vertical-end`
 
 ## Grille libre&nbsp;: liste des classes disponibles
-- `su-page-container`
+- `su-container`
 - `su-row`
 - `su-col`
 - `su-has-gutter`
