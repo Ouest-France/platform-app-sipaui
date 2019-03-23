@@ -20,7 +20,7 @@
 
         <main class="su-article su-old-editorial" role="main">
 
-            <article class="conteneur" role="article">
+            <article class="su-container" role="article">
                 <h1>Architecture Fonctionnelle</h2>
 
                 <h2>SipaUI intégré dans un site</h2>

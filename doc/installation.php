@@ -20,7 +20,7 @@
 
         <main class="su-article su-old-editorial" role="main">
 
-            <article class="conteneur" role="article">
+            <article class="su-container" role="article">
                 <h1>Installation</h1>
 
                 <p>Il existe deux méthodes pour intégrer SipaUI à votre projet&nbsp;:</p>

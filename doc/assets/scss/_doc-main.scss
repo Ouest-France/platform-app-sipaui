@@ -80,7 +80,7 @@ nav {
         }
     }
 }
-main {
+.su-article {
     padding-bottom: 20px;
 
     > *:first-child {
@@ -121,12 +121,6 @@ main {
         }
     }
     .intro {
-        display: flex;
-        flex-direction: column;
-        //background: rgba(0,0,0, .2);
-        //padding: 1.4rem 2rem;
-        border-radius:  10px;
-
         div:last-child {
             margin-top: $margin-large
         }
@@ -259,7 +253,6 @@ pre code {
 
 @media screen and (min-width: 768px) {
     .accueil .intro {
-        flex-direction: row;
         div:last-child {
             margin: 0 0 $margin-medium
         }

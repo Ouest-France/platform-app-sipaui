@@ -20,7 +20,7 @@
 
         <main class="su-article su-old-editorial" role="main">
 
-            <article class="conteneur" role="article">
+            <article class="su-container" role="article">
                 <h1>Architecture Technique</h2>
 
                 <h2>Contenu de SipaUI</h2>
