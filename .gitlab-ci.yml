@@ -27,8 +27,6 @@ checknpublish:
   image: $NODE_IMAGE
   stage: build
   before_script:
-    - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-    - chmod 644 ~/.ssh/known_hosts
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
     - mkdir -p ~/.ssh
@@ -36,6 +34,8 @@ checknpublish:
     - echo "Host *.upload.akamai.com" > ~/.ssh/config
     - echo "HostKeyAlgorithms +ssh-dss" >> ~/.ssh/config
     - echo "PubkeyAcceptedKeyTypes +ssh-dss" >> ~/.ssh/config
+    - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
   script:
     - echo ${NPM_TOKEN}
     - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
