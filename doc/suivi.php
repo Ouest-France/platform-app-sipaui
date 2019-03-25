@@ -23,18 +23,20 @@
                 <h1>Suivi de la création des composants</h1>
 
                 <div class="su-row">
-                    <section class="su-col-md-3 integre" role="article">
+                    <section class="su-col-md-3 su-col-lg-8 integre" role="article">
                         <h2>Liste des composants intégrés</h2>
 
                         <h3>Composants</h3>
                         <ul>
-                        	<li>Boutons</li>
                         	<li>Titres</li>
                         	<li>Liens</li>
+                        	<li>Listes</li>
+                        	<li>Boutons</li>
                         	<li>Champs texte (input texte, textarea)</li>
                         	<li>Boutons radio</li>
                         	<li>Cases à cocher</li>
                         	<li>Select simple</li>
+                        	<li>Loader de page</li>
                         </ul>
 
                         <h3>Fondations</h3>
@@ -48,41 +50,50 @@
                         </ul>
                     </section>
 
-                    <section class="su-col-md-3 plan-versions" role="article">
-                        <h2>Journal des modifications</h2>
+                    <section class="su-col-md-3 su-col-lg-8 plan-versions" role="article">
+                        <h2>Journal des modifications&nbsp;/ changelog</h2>
 
                         <ul class="su-old-not-list table">
-                        	<li class="row">
-                        	    <div class="cell"><span class="version">1.0</span></div>
-                        	    <ul class="cell">
-                            	    <li>Nouveaux composants&nbsp;: points de rupture et grille.</li>
-                            	    <li>Réorganisation des composants dans le catalogue.</li>
+                            <li class="row">
+                                <div class="cell"><span class="version">1.0</span></div>
+                                <ul class="cell">
+                                    <li>Nouveaux composants&nbsp;: points de rupture et grille.</li>
+                                    <li>Réorganisation des composants dans le catalogue.</li>
                                     <li>Améliorations graphiques et ergonomiques du catalogue.</li>
                                     <li>Quelques corrections de composants.</li>
                                 </ul>
+                            </li>
+                            <li class="row">
+                                <div class="cell"><span class="version">1.1</span></div>
+                                <ul class="cell">
+                                    <li>Listes.</li>
+                                    <li>Loader de page.</li>
+                                    <li>Mutualisation des "jaunes" Abonnement et Premium.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="su-col-md-6 su-col-lg-8 plan-versions" role="article">
+                        <h2>Feuille de route&nbsp;/ roadmap </h2>
+
+                        <ul class="su-old-not-list table">
+                            <li class="row">
+                                <div class="cell"><span class="version">1.2</span></div>
+                                <div class="cell">Stepper.</div>
+                            </li>
+                            <li class="row">
+                                <div class="cell"><span class="version">1.3</span></div>
+                                <div class="cell">Mot de passe.</div>
+                            </li>
+                            <li class="row">
+                                <div class="cell"><span class="version">1.4</span></div>
+                                <div class="cell">Popin.</div>
                             </li>
                         </ul>
                     </section>
                 </div>
 
-                <section class="plan-versions" role="article">
-                    <h2>Plan de versions prévisionnel</h2>
-
-                    <ul class="su-old-not-list table">
-                        <li class="row">
-                    	    <div class="cell"><span class="version">1.1</span></div>
-                    	    <div class="cell">Listes, loader de page et mutualisation des "jaunes" Abonnement et Premium.</div>
-                        </li>
-                    	<li class="row">
-                    	    <div class="cell"><span class="version">1.2</span></div>
-                    	    <div class="cell">Stepper.</div>
-                        </li>
-                        <li class="row">
-                    	    <div class="cell"><span class="version">1.3</span></div>
-                    	    <div class="cell">Mot de passe.</div>
-                        </li>
-                    </ul>
-                </section>
             </article>
 
         </main>
