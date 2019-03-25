@@ -15,7 +15,7 @@ var child = exec('npm show sipa-ui version',
         // if(distant != local) {
         if(true) {
             [
-                'npm publish',
+                // 'npm publish',
                 'rsync -avz dist/js sshacs@static-of.scp.upload.akamai.com:/487320/sipaui/latest',
                 'rsync -avz dist/css sshacs@static-of.scp.upload.akamai.com:/487320/sipaui/latest',
                 'rsync -avz dist/fonts sshacs@static-of.scp.upload.akamai.com:/487320/sipaui/latest',
