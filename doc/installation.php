@@ -31,10 +31,20 @@
 
                 <!-- ---------------–---------------–---------------–---------------–---------------–---------------–---------------–---------------– -->
                 <h2 id="cdn">1. CDN</h2>
-                <p>La méthode <strong>la plus simple</strong> (il n’y a rien à installer)&nbsp;: appeler la librairie dans vos pages depuis le <em>CDN (Content Delivery Network)</em> du groupe SIPA. Toutefois, cette
+                <p>La méthode <strong>la plus simple</strong> (il n’y a rien à installer)&nbsp;: appeler la librairie dans vos pages depuis le <em>CDN (Content Delivery Network)</em> du groupe SIPA. Toutefois, cette méthode ne vous permet pas de choisir vos composants ni de leurs appliquer un thème.
+
+                <h3>Import de la dernière version</h3>
+                <p>Permet d’être toujours à jour, au risque de recevoir une version majeur avec de <strong>potentiels changements non rétro-compatibles</strong>…</p>
                 <p>
-                    <pre><code>&lt;link rel="stylesheet" href="https://cdn.sipaof.fr/css/main-sipaui.css" type="text/css" media="screen"/></code></pre>
-                    <pre><code>&lt;script async src="https://cdn.sipaof.fr/js/sipaui.js">&lt;/script></code></pre>
+                    <pre><code>&lt;link rel="stylesheet" href="https://cdn.sipaof.fr/sipaui/latest/css/main-sipaui.css" type="text/css" media="screen"/></code></pre>
+                    <pre><code>&lt;script async src="https://cdn.sipaof.fr/sipaui/latest/js/sipaui.js">&lt;/script></code></pre>
+                </p>
+
+                <h3>Import d'une version figée</h3>
+                <p>Oblige à faire les changements de version à la main.</p>
+                <p>
+                    <pre><code>&lt;link rel="stylesheet" href="https://cdn.sipaof.fr/sipaui/<?= $GLOBALS['sipaversion']; ?>/css/main-sipaui.css" type="text/css" media="screen"/></code></pre>
+                    <pre><code>&lt;script async src="https://cdn.sipaof.fr/sipaui/<?= $GLOBALS['sipaversion']; ?>/js/sipaui.js">&lt;/script></code></pre>
                 </p>
 
                 <!-- ---------------–---------------–---------------–---------------–---------------–---------------–---------------–---------------– -->
