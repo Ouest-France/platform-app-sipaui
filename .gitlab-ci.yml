@@ -45,7 +45,7 @@ checknpublish:
     - npx gulp make-prod-assets
     - npm run checknpublish
   only:
-    - branches
+    - master
   tags:
     - int
 
