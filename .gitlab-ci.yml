@@ -34,7 +34,7 @@ checknpublish:
     - echo "Host *.upload.akamai.com" > ~/.ssh/config
     - echo "HostKeyAlgorithms +ssh-dss" >> ~/.ssh/config
     - echo "PubkeyAcceptedKeyTypes +ssh-dss" >> ~/.ssh/config
-    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" >> ~/.ssh/config'
     - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
   script:
