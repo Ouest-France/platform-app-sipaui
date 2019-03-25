@@ -37,9 +37,12 @@ checknpublish:
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" >> ~/.ssh/config'
     - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
-  script:
     - echo ${NPM_TOKEN}
     - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
+  script:
+    - yarn install
+    - npx gulp clean
+    - npx gulp make-prod-assets
     - npm run checknpublish
   only:
     - branches
