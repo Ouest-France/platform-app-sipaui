@@ -3,7 +3,7 @@
     <?php
     include(__DIR__."/_fragments/_head.php");
     ?>
-    <body class="sipaui">
+    <body class="sipaui suivi">
         <header role="banner">
             <?php
             include(__DIR__."/_fragments/_identite.php");
