@@ -38,3 +38,9 @@ RUN curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - \
 
 # Install Gulp globally
 RUN npm install -g gulp-cli
+
+# Install rsync
+RUN apt-get update \
+	&& apt-get install -y \
+		openssh-client \
+		rsync
