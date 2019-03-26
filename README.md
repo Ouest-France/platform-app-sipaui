@@ -49,8 +49,8 @@ Legend :
 - files for the documentation
 - usefull files to generate the catalog
 
-```
-src /
+
+src 
     components /
         [component-name]
             doc-design.md
@@ -75,4 +75,4 @@ src /
 storybook /
     config.js
     head.html
-```
+
