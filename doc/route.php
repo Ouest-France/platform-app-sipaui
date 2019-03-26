@@ -22,30 +22,30 @@
             <article class="su-container plan-versions" role="article">
                 <h1>Feuille de route&nbsp;/ roadmap</h1>
 
-                <ul class="su-old-not-list table">
-                    <li class="row">
-                        <div class="cell"><span class="version">1.2</span></div>
-                        <div class="cell">Stepper.</div>
+                <ul class="su-old-not-list">
+                    <li class="table-row">
+                        <div class="table-cell"><span class="version">1.2</span></div>
+                        <div class="table-cell">Stepper.</div>
                     </li>
-                    <li class="row">
-                        <div class="cell"><span class="version">1.3</span></div>
-                        <div class="cell">Mot de passe.</div>
+                    <li class="table-row">
+                        <div class="table-cell"><span class="version">1.3</span></div>
+                        <div class="table-cell">Mot de passe.</div>
                     </li>
-                    <li class="row">
-                        <div class="cell"><span class="version">1.4</span></div>
-                        <div class="cell">Popin.</div>
+                    <li class="table-row">
+                        <div class="table-cell"><span class="version">1.4</span></div>
+                        <div class="table-cell">Popin.</div>
                     </li>
-                    <li class="row">
-                        <div class="cell"><span class="version">1.5</span></div>
-                        <div class="cell">Pagination.</div>
+                    <li class="table-row">
+                        <div class="table-cell"><span class="version">1.5</span></div>
+                        <div class="table-cell">Pagination.</div>
                     </li>
-                    <li class="row">
-                        <div class="cell"><span class="version">1.6</span></div>
-                        <div class="cell">Réseaux sociaux.</div>
+                    <li class="table-row">
+                        <div class="table-cell"><span class="version">1.6</span></div>
+                        <div class="table-cell">Réseaux sociaux.</div>
                     </li>
-                    <li class="row">
-                        <div class="cell"><span class="version">1.7</span></div>
-                        <div class="cell">Tags.</div>
+                    <li class="table-row">
+                        <div class="table-cell"><span class="version">1.7</span></div>
+                        <div class="table-cell">Tags.</div>
                     </li>
                 </ul>
 

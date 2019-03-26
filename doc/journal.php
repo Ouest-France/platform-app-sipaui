@@ -22,10 +22,10 @@
             <article class="su-container plan-versions" role="article">
                 <h1>Journal des modifications&nbsp;/ changelog</h1>
 
-                <ul class="su-old-not-list table">
-                    <li class="row">
-                        <div class="cell"><span class="version">1.0</span></div>
-                        <ul class="cell">
+                <ul class="su-old-not-list su-grid-auto su-wrap su-row su-has-gutter">
+                    <li class="su-col table-row">
+                        <div class="table-cell"><span class="version">1.0</span></div>
+                        <ul class="table-cell">
                             <li>Composants&nbsp;:
                                 <ul>
                                     <li>Points de rupture</li>
@@ -47,9 +47,28 @@
                             </li>
                             <li>Documentation&nbsp;:
                                 <ul>
-                                    <li>Réorganisation des composants dans le catalogue.</li>
-                                    <li>Mise en avant de l’installation.</li>
-                                    <li>Mise à jour de l’installation et de l’archi fonctionnelle.</li>
+                                    <li>Réorganisation des composants dans le catalogue</li>
+                                    <li>Mise en avant de l’installation</li>
+                                    <li>Mise à jour de l’installation et de l’archi fonctionnelle</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="su-col table-row">
+                        <div class="table-cell"><span class="version">1.1</span></div>
+                        <ul class="table-cell">
+                            <li>Composants&nbsp;:
+                                <ul>
+                                    <li>Listes</li>
+                                    <li>Page loader</li>
+                                    <li>Regroupement Abonnement et Premium</li>
+                                </ul>
+                            </li>
+                            <li>Documentation&nbsp;:
+                                <ul>
+                                    <li>Réorganisation de ce site</li>
+                                    <li>CDN par versions</li>
                                 </ul>
                             </li>
                         </ul>
