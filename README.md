@@ -48,6 +48,8 @@ Legend :
 - **files in the deliverables**
 - <span style="color: green">files for the documentation</span>
 - <span style="color: red">files usefull to generate the catalog</span>
+
+
 **<span style="color: green">src /</span>
     components /
         [component-name]
