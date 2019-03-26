@@ -44,19 +44,13 @@ Then, relaunch Storybook in build or dev mode.
 
 SipaUI's content
 
-Legend :
-- all files are in the deliverables
-- files for the documentation
-- usefull files to generate the catalog
-
-
 ```
 src /
     components /
         [component-name]
-            doc-design.md
-            doc-html.md
-            doc-vuejs.md
+            doc-design.md (files for the documentation)
+            doc-html.md (files for the documentation)
+            doc-vuejs.md (files for the documentation)
             main-[theme-name].scss
             main.scss
             index.vue.js  
@@ -68,13 +62,11 @@ dist /
 
     css / sipaui-xxx.css
     js  / sipaui-xxx.js
-doc /
-    index
+doc / (directory for the website)
+    index.php
     [page-name].php
-src /
-    plugins /
-        [plugin-name].js
-storybook /
+    ...
+storybook / (usefull directory to generate the catalog)
     config.js
     head.html
 ```
