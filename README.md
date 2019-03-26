@@ -50,7 +50,7 @@ Legend :
 - <span style="color: red">files usefull to generate the catalog</span>
 
 
-**src /
+src /
     components /
         [component-name]
             doc-design.md
@@ -74,4 +74,4 @@ src /
         [plugin-name].js
 storybook /
     config.js
-    head.html**
+    head.html
