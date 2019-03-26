@@ -50,32 +50,20 @@ Legend :
 - usefull files to generate the catalog
 
 
+```
 src /
-
     components /
-    
         [component-name]
-        
             doc-design.md
-            
             doc-html.md
-            
             doc-vuejs.md
-            
             main-[theme-name].scss
-            
             main.scss
-            
-            index.vue.js
-            
+            index.vue.js  
     core /
-    
         _variables-[theme-name].scss
-        
         _variables.scss
-        
-        _core.scss
-        
+        _core.scss  
 dist /
 
     css / sipaui-xxx.css
@@ -89,4 +77,4 @@ src /
 storybook /
     config.js
     head.html
-
+```
