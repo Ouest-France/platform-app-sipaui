@@ -50,12 +50,12 @@ Legend :
 - <span style="color: red">files usefull to generate the catalog</span>
 
 
-**<span style="color: green">src /</span>
+**src /
     components /
         [component-name]
-            <span style="color: green">doc-design.md
+            doc-design.md
             doc-html.md
-            doc-vuejs.md</span>
+            doc-vuejs.md
             main-[theme-name].scss ?> suivant resultat du poc Stephane
             main.scss
             index.vue.js
@@ -66,12 +66,12 @@ Legend :
 dist /
     css / sipaui-xxx.css
     js  / sipaui-xxx.js
-<span style="color: green">doc /
+doc /
     index
     [page-name].php
-src /</span>
+src /
     plugins /
         [plugin-name].js
-<span style="color: red">storybook /
+storybook /
     config.js
-    head.html**</span>
+    head.html**
