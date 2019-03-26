@@ -57,13 +57,14 @@ src /
             doc-design.md (files for the documentation)
             doc-html.md (files for the documentation)
             doc-vuejs.md (files for the documentation)
-            main-[theme-name].scss
             main.scss
+            _variables.scss
+            _theme-[name].scss
             index.vue.js  
     core /
-        _variables-[theme-name].scss
-        _variables.scss
-        _core.scss  
+        fonts /
+        js /
+        scss / 
 .storybook / (usefull directory to generate the catalog)
     config.js
     head.html
