@@ -45,6 +45,12 @@ Then, relaunch Storybook in build or dev mode.
 SipaUI's content
 
 ```
+build / (usefull directory to generate the dist)
+dist / (compilated files)
+doc / (directory for the website)
+    index.php
+    [page-name].php
+    ...
 src /
     components /
         [component-name]
@@ -58,15 +64,7 @@ src /
         _variables-[theme-name].scss
         _variables.scss
         _core.scss  
-dist /
-
-    css / sipaui-xxx.css
-    js  / sipaui-xxx.js
-doc / (directory for the website)
-    index.php
-    [page-name].php
-    ...
-storybook / (usefull directory to generate the catalog)
+.storybook / (usefull directory to generate the catalog)
     config.js
     head.html
 ```
