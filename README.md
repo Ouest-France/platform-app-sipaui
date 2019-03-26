@@ -45,9 +45,9 @@ Then, relaunch Storybook in build or dev mode.
 SipaUI's content
 
 Legend :
-- **files in the deliverables**
-- <span style="color: green">files for the documentation</span>
-- <span style="color: red">files usefull to generate the catalog</span>
+- all files are in the deliverables
+- files for the documentation
+- usefull files to generate the catalog
 
 ```
 src /
