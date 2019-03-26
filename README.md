@@ -49,14 +49,14 @@ Legend :
 - <span style="color: green">files for the documentation</span>
 - <span style="color: red">files usefull to generate the catalog</span>
 
-
+```
 src /
     components /
         [component-name]
             doc-design.md
             doc-html.md
             doc-vuejs.md
-            main-[theme-name].scss ?> suivant resultat du poc Stephane
+            main-[theme-name].scss
             main.scss
             index.vue.js
     core /
@@ -75,3 +75,4 @@ src /
 storybook /
     config.js
     head.html
+```
