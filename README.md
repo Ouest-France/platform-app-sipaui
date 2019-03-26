@@ -55,17 +55,29 @@ src /
     components /
     
         [component-name]
+        
             doc-design.md
+            
             doc-html.md
+            
             doc-vuejs.md
+            
             main-[theme-name].scss
+            
             main.scss
+            
             index.vue.js
+            
     core /
+    
         _variables-[theme-name].scss
+        
         _variables.scss
+        
         _core.scss
+        
 dist /
+
     css / sipaui-xxx.css
     js  / sipaui-xxx.js
 doc /
