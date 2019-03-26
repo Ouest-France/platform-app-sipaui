@@ -50,8 +50,10 @@ Legend :
 - usefull files to generate the catalog
 
 
-src 
+src /
+
     components /
+    
         [component-name]
             doc-design.md
             doc-html.md
