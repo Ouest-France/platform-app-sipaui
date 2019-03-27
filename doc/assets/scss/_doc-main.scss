@@ -80,15 +80,11 @@ nav {
         }
     }
 }
-main {
+.su-article {
     padding-bottom: 20px;
 
     > *:first-child {
         margin-top: 190px;
-    }
-    .conteneur {
-        padding-left: $margin-medium;
-        padding-right: $margin-medium;
     }
 }
 .trop-large-responsif {
@@ -113,7 +109,6 @@ main {
     .titre {
         margin-bottom: $margin-xlarge;
         display: flex;
-        //justify-content: center;
 
         .logoSipaUi {
             margin-right: $margin-medium;
@@ -126,12 +121,6 @@ main {
         }
     }
     .intro {
-        display: flex;
-        flex-direction: column;
-        //background: rgba(0,0,0, .2);
-        //padding: 1.4rem 2rem;
-        border-radius:  10px;
-
         div:last-child {
             margin-top: $margin-large
         }
@@ -150,10 +139,10 @@ main {
 .table {
     display: table;
 }
-.row {
+.table-row {
     display: table-row;
 }
-.cell {
+.table-cell {
     display: table-cell;
 }
 .bas {
@@ -223,11 +212,15 @@ main {
     .version {
         margin: 0 15px $margin-small 0;
     }
-    .fait {
-        color: $couleur-principale-5;
+    .cell {
+        padding-bottom: $margin-medium;
     }
 }
 
+.archi-fonctionnelle .logo-github,
+.archi-fonctionnelle .logo-slack {
+    width: 15px;
+}
 .documentation {
     color: #40a42b;
 }
@@ -264,7 +257,6 @@ pre code {
 
 @media screen and (min-width: 768px) {
     .accueil .intro {
-        flex-direction: row;
         div:last-child {
             margin: 0 0 $margin-medium
         }
