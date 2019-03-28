@@ -20,7 +20,9 @@
         <main class="su-article su-old-editorial" role="main">
 
             <article class="su-container plan-versions" role="article">
-                <h1>Journal des modifications&nbsp;/ changelog</h1>
+                <h1>Journal</h1>
+
+                <h2>Changelog</h2>
 
                 <ul class="su-old-not-list su-grid-auto su-wrap su-row su-has-gutter">
                     <li class="su-col table-row">
@@ -72,6 +74,35 @@
                                 </ul>
                             </li>
                         </ul>
+                    </li>
+                </ul>
+
+                <h2>Roadmap</h2>
+
+                <ul class="su-old-not-list">
+                    <li class="table-row">
+                        <div class="table-cell"><span class="version">1.2</span></div>
+                        <div class="table-cell">Stepper.</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="table-cell"><span class="version">1.3</span></div>
+                        <div class="table-cell">Mot de passe.</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="table-cell"><span class="version">1.4</span></div>
+                        <div class="table-cell">Popin.</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="table-cell"><span class="version">1.5</span></div>
+                        <div class="table-cell">Pagination.</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="table-cell"><span class="version">1.6</span></div>
+                        <div class="table-cell">Réseaux sociaux.</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="table-cell"><span class="version">1.7</span></div>
+                        <div class="table-cell">Tags.</div>
                     </li>
                 </ul>
 
