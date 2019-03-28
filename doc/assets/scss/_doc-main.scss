@@ -2,32 +2,28 @@
 // CSS par défaut spécifiques au projet
 //
 
-header {
+.header {
     position: fixed;
     width: 100%;
     top: 0;
-    background: radial-gradient(circle at 100% 100%, $couleur-secondaire-1, $couleur-secondaire-3);
+    background: radial-gradient(circle at 100% 100%, $couleur-secondaire-3, $couleur-secondaire-1);
     z-index: 1000;
 
     .identite {
-        padding: $margin-small $margin-small $margin-small $margin-medium;
+        padding-top: $margin-small;
+        padding-bottom: $margin-small;
 
         a {
-            transition: text-shadow .3s ease;
             text-decoration: none;
-
-            &:hover,
-            &:focus,
-            &:active {
-                color: inherit;
-                text-shadow: 0 0 2px $couleur-principale-1;
-            }
         }
         svg,
         .titre,
         .version {
             vertical-align: middle;
         }
+    }
+    .logoSipaUi {
+        width: 40px;
     }
     .titre {
         font-size: $font-size-tall;
@@ -48,14 +44,13 @@ header {
     }
 }
 nav {
-    $bgColor-menu: $couleur-principale-8;
+    $bgColor-menu: $couleur-principale-7;
     $bgColor-sousMenu: $couleur-principale-6;
+    $heightNav: 34px;
     box-shadow: 0 2px 3px  1px rgba(0,0,0, .5);
+    background: $bgColor-menu;
+    min-height: $heightNav;
 
-    ul {
-        background: $bgColor-menu;
-        padding: 5px 20px 0;
-    }
     a {
         $couleur: $couleur-principale-1;
         display: inline-block;
@@ -65,6 +60,8 @@ nav {
         transition: opacity .3s ease;
         margin-right: 2rem;
         border-bottom: 5px solid $bgColor-menu;
+        height: $heightNav;
+        line-height: $heightNav;
 
         &:hover,
         &.actif {
@@ -80,16 +77,17 @@ nav {
         }
     }
 }
-.su-article {
-    padding-bottom: 20px;
 
-    > *:first-child {
-        margin-top: 190px;
-    }
+header + main {
+    padding-top: 160px;
+    padding-bottom: 20px;
 }
+
+/*
 .trop-large-responsif {
     overflow-x: scroll;
 }
+*/
 
 
 .version {
@@ -104,7 +102,7 @@ nav {
 .presentation {
     font-size: $font-size-medium2;
     background: radial-gradient(circle at 35% 10%, $couleur-secondaire-1, $couleur-secondaire-3);
-    padding: 4rem 0;
+    padding: $margin-large 0;
 
     .titre {
         margin-bottom: $margin-xlarge;
@@ -118,11 +116,6 @@ nav {
             margin-bottom: -2px;
             font-size: $font-size-xxxtall;
             color: $couleur-principale-1;
-        }
-    }
-    .intro {
-        div:last-child {
-            margin-top: $margin-large
         }
     }
     .intro p,
@@ -183,17 +176,12 @@ nav {
     }
 }
 
-.accueil .identite {
-    display: none;
-}
-.accueil main {
-    > *:first-child {
-        margin-top: 100px;
-    }
-}
 .accueil .illustration {
-    width: 150px;
+    display: block;
+    width: 50%;
+    margin: 50px auto 0;
 }
+
 .accueil .github {
     display: flex;
     justify-content: flex-end;
@@ -240,14 +228,11 @@ pre code {
     display: block;
 }
 
-@media screen and (max-width: 359px) {
+@media screen and (max-width: $max-breakpoint-xs) {
     html {
         font-size: 55%;
     }
-    .accueil main {
-        > *:first-child {
-            margin-top: 120px;
-        }
+    .accueil {
         .presentation .logoSipaUi {
             width: 85px;
             margin-right: $margin-small
@@ -255,10 +240,9 @@ pre code {
     }
 }
 
-@media screen and (min-width: 768px) {
-    .accueil .intro {
-        div:last-child {
-            margin: 0 0 $margin-medium
-        }
+@media screen and (min-width: $min-breakpoint-md) {
+    .accueil .illustration {
+        width: 80%;
+        margin: 0;
     }
 }

@@ -4,7 +4,7 @@
     include(__DIR__."/_fragments/_head.php");
     ?>
     <body class="sipaui journal">
-        <header role="banner">
+         <header role="banner" class="header">
             <?php
             include(__DIR__."/_fragments/_identite.php");
             ?>

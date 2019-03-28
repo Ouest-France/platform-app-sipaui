@@ -11,23 +11,6 @@ nav {
     }
 }
 
-main {
-    > *:first-child {
-        margin-top: 15rem;
-    }
-}
-
-.accueil main {
-    > *:first-child {
-        margin-top: 70px;
-    }
-}
-
 .accueil .illustration {
-    width: 250px;
-}
-.accueil .intro {
-    div:last-child {
-        margin: 0 0 $margin-large
-    }
+    width: 100%;
 }
