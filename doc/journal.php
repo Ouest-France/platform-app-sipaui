@@ -24,7 +24,7 @@
 
                 <ul class="su-old-not-list su-grid-auto su-wrap su-row su-has-gutter">
                     <li class="su-col table-row">
-                        <div class="table-cell"><span class="version">1.0</span></div>
+                        <div class="table-cell"><span class="version">1.0.11</span></div>
                         <ul class="table-cell">
                             <li>Composants&nbsp;:
                                 <ul>
@@ -56,7 +56,7 @@
                     </li>
 
                     <li class="su-col table-row">
-                        <div class="table-cell"><span class="version">1.1</span></div>
+                        <div class="table-cell"><span class="version">1.1.x</span></div>
                         <ul class="table-cell">
                             <li>Composants&nbsp;:
                                 <ul>
