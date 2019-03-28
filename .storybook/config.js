@@ -32,7 +32,7 @@ theme_sipaui.layoutMargin= '0';      //applied to space panels
 //theme_sipaui.overlayBackground= 'linear-gradient(to bottom right, rgba(233, 233, 233, 0.6), rgba(255, 255, 255, 0.8))';         //applied to overlay `background`
 theme_sipaui.barSelectedColor= '#fff';      // onglets colonne de droite
 theme_sipaui.brand= {
-    background: 'radial-gradient(circle at 100% 100%, #be0030, #6e0030)'
+    background: '#be0030'
 };
 
 
