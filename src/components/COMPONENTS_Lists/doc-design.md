@@ -16,6 +16,10 @@ Les listes sont utilisées pour afficher un nombre d'éléments reliés de faço
 - Une puce de taille constante est présente devant chaque ligne.
 - Par exemple, l'ordre d'une liste de courses n'a pas grande importance.
 
+
+
+
+
 ![unordered-list](design/unordered-list.png)
 <br/> Les puces sont des repères visuels.
 
