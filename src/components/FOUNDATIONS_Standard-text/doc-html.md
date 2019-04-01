@@ -80,7 +80,7 @@ Dans l’exemple ci-dessous, les 2 paragraphes sont stylés par des CSS de la pa
 Utilisation de la balise `<em>`.
  
 ```html
-<article>
+<article class="su-article">
 	<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</em>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </article>
 ```
@@ -96,7 +96,7 @@ Utilisation de la balise `<em>`.
 Utilisation de la balise `<strong>`.
 
 ```html
-<article>
+<article class="su-article">
 	<p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </article>
 ```
@@ -125,7 +125,7 @@ D'autres justifications sont possibles. SipaUI intègre les classes nécessaires
 Utilisation de la classe `su-text-left`.
 
 ```html
-<article>
+<article class="su-article">
 	<p class="su-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </article>
 ```
@@ -143,7 +143,7 @@ Utilisation de la classe `su-text-right`.
 
  
 ```html
-<article>
+<article class="su-article">
 	<p class="su-text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </article>
 ```
@@ -160,7 +160,7 @@ Utilisation de la classe `su-text-right`.
 Utilisation de la classe `su-text-justify`.
 
 ```html
-<article>
+<article class="su-article">
 	<p class="su-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </article>
 ```
@@ -178,7 +178,7 @@ Utilisation de la classe `su-text-center`.
 
  
 ```html
-<article>
+<article class="su-article">
 	<p class="su-text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </article>
 ```

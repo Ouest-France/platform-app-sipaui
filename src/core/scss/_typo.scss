@@ -2,9 +2,13 @@
     Typographie
 */
 
+$margin-paragraphe: $margin-medium;
 
 // TEXTE EDITORIAL STANDARD--------------------------------------------------------------------------------------------------------------------------------------------------------------------------/
 .sipaui {
+    font-family: $font-family-base;
+    color: $color-texte;
+
     .su-text-standard {
         font-family: $font-family-base;
         font-size: $font-size-base;
@@ -13,7 +17,7 @@
         margin: 0;
     }
     .su-text-standard + .su-text-standard {
-        margin-top: $margin-medium;
+        margin-top: $margin-paragraphe;
     }
     .su-article {
         p,
@@ -27,7 +31,7 @@
         p + p,
         ul + p,
         ol + p {
-            margin-top: $margin-medium;
+            margin-top: $margin-paragraphe;
         }
     }
 }
