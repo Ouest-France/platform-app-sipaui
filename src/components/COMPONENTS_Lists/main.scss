@@ -1,0 +1,27 @@
+/*
+    Styles du composant Titres de SipaUI
+*/
+@import "variables";
+
+
+// ZONE NON-ÉDITORIALE------------------------------------------------------------------------------------------/
+.sipaui {
+    ul, ol {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+// ZONE ÉDITORIALE------------------------------------------------------------------------------------------/
+.sipaui {
+    .su-article {
+        ul:not(.su-not-list) {
+            padding-left: 20px;
+
+            li {
+                padding-bottom: 4px;
+            }
+        }
+    }
+}

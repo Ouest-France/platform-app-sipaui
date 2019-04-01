@@ -92,65 +92,65 @@
     }
 
     /*  Typo ------------------------------------------------------------------*/
-    body .markdown-body p,
-    body .markdown-body h1,
-    body .markdown-body h2,
-    body .markdown-body h3,
-    body .markdown-body h4,
-    body .markdown-body h5,
-    body .markdown-body div {
+    body .markdown-body > p,
+    body .markdown-body > h1,
+    body .markdown-body > h2,
+    body .markdown-body > h3,
+    body .markdown-body > h4,
+    body .markdown-body > h5,
+    body .markdown-body > div {
         font-family: "Trebuchet MS", Geneva, sans-serif;
     }
-    body .markdown-body h1,
-    body .markdown-body h2,
-    body .markdown-body h3,
-    body .markdown-body h4,
-    body .markdown-body h5 {
+    body .markdown-body > h1,
+    body .markdown-body > h2,
+    body .markdown-body > h3,
+    body .markdown-body > h4,
+    body .markdown-body > h5 {
         color: #000;
         font-weight: 300;
         border: none;
     }
-    body .markdown-body h1,
+    body .markdown-body > h1,
     body #root div[style] > h1 {
         font-size: 6rem;
         border: none;
         font-weight: bold;
     }
-    body .markdown-body h2 {
+    body .markdown-body > h2 {
         font-size: 3.4rem;
         margin: 100px 0 20px;
         padding: 0;
     }
-    body .markdown-body h3 {
+    body .markdown-body > h3 {
         font-size: 2.8rem;
         margin: 50px 0 10px;
     }
-    body .markdown-body h4 {
+    body .markdown-body > h4 {
         font-size: 2.2rem;
         margin: 30px 0 5px;
     }
-    body .markdown-body h5 {
+    body .markdown-body > h5 {
         font-size: 1.8rem;
         margin: 25px 0 5px;
     }
-    body .markdown-body h2 + h3,
-    body .markdown-body h3 + h4,
-    body .markdown-body h4 + h5 {
+    body .markdown-body > h2 + h3,
+    body .markdown-body > h3 + h4,
+    body .markdown-body > h4 + h5 {
         margin-top: 0;
     }
-    body .markdown-body p,
-    body .markdown-body li,
-    body .markdown-body div,
-    body .markdown-body td {
+    body .markdown-body > p,
+    body .markdown-body > ul li,
+    body .markdown-body > div:not(.sipaui),
+    body .markdown-body > td {
         color: #444;
     }
-    body .markdown-body .highlight pre,
-    body .markdown-body pre,
-    body .markdown-body code {
+    body .markdown-body > .highlight pre,
+    body .markdown-body > pre,
+    body .markdown-body > code {
         background:  #e4e4e4;
     }
-    body .markdown-body .highlight pre,
-    body .markdown-body pre {
+    body .markdown-body > .highlight pre,
+    body .markdown-body > pre {
         border-radius: 0;
     }
 
@@ -175,6 +175,17 @@
         color: #b40015;
         text-decoration: underline;
     }
+
+    /* Surcharge pour surclasser les styles de storybook. -> empêche les personalisations de SUI */
+    .markdown-body .sipaui > ul,
+    .markdown-body .sipaui > ol {
+        margin: 0;
+        padding: 0;
+    }
+    .markdown-body .sipaui li+li {
+        margin: 0;
+    }
+    /* /Surcharge */
 
     /*  Générique ------------------------------------------------------------------*/
     table tr,
