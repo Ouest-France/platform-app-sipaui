@@ -177,15 +177,16 @@
     }
 
     /* Surcharge pour surclasser les styles de storybook. -> empêche les personalisations de SUI */
-    .markdown-body .sipaui > ul,
-    .markdown-body .sipaui > ol {
+    .markdown-body .sipaui ul.surcharge-storybook,
+    .markdown-body .sipaui ol.surcharge-storybook {
         margin: 0;
         padding: 0;
+        list-style: none;
     }
+    /* /Surcharge */
     .markdown-body .sipaui li+li {
         margin: 0;
     }
-    /* /Surcharge */
 
     /*  Générique ------------------------------------------------------------------*/
     table tr,

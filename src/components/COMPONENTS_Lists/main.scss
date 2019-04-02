@@ -3,25 +3,81 @@
 */
 @import "variables";
 
+$taille-puce: 10px;
+$taille-espace-puce: 10px;
+$taille-retrait-ul: $taille-puce + $taille-espace-puce;
+$marge-sous-li: 10px;
 
-// ZONE NON-ÉDITORIALE------------------------------------------------------------------------------------------/
+
 .sipaui {
     ul, ol {
         margin: 0;
         padding: 0;
         list-style-type: none;
     }
-}
 
-// ZONE ÉDITORIALE------------------------------------------------------------------------------------------/
-.sipaui {
-    .su-article {
-        ul:not(.su-not-list) {
-            padding-left: 20px;
+    // LISTE A PUCE ------------------------------------------------------------------------------------------/
+    .su-article ul:not(.su-not-list),
+    ul.su-list {
+        padding-left: $taille-retrait-ul;
 
-            li {
-                padding-bottom: 4px;
+        > li {
+            padding-bottom: $marge-sous-li;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                background: $color-main-7;
+                width: $taille-puce;
+                height: $taille-puce;
+                border-radius: 100%;
+                margin-left: - $taille-retrait-ul;
+                margin-right: $taille-espace-puce;
+            }
+            > ul:not(.su-not-list),
+            > ul.su-list {
+                padding-left: $taille-retrait-ul * 2;
+                margin-top: $marge-sous-li;
+
+                > li::before {
+                    background: transparent;
+                    border: 1px solid $color-main-7;
+                }
             }
         }
     }
+
+    // LISTE ORDONNÉÉ ------------------------------------------------------------------------------------------/
+/*
+    .su-article ul:not(.su-not-list),
+    ul.su-list {
+        padding-left: $taille-retrait-ul;
+
+        > li {
+            padding-bottom: $marge-sous-li;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                background: $color-main-7;
+                width: $taille-puce;
+                height: $taille-puce;
+                border-radius: 100%;
+                margin-left: - $taille-retrait-ul;
+                margin-right: $taille-espace-puce;
+            }
+            > ul:not(.su-not-list),
+            > ul.su-list {
+                padding-left: $taille-retrait-ul * 2;
+                margin-top: $marge-sous-li;
+
+                > li::before {
+                    background: transparent;
+                    border: 1px solid $color-main-7;
+                }
+            }
+        }
+    }
+*/
 }
+

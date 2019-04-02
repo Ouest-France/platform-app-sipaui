@@ -6,6 +6,8 @@ Par défaut, si elles sont incluses dans un bloc défini avec la classe `sipaui`
 
 À l’inverse, ces mêmes balises HTML **généreront bien une liste texte si elles sont dans une zone éditoriale** (avec la classe `su-article`). On peut alors utiliser avec la classe `su-not-list` sur les balises de liste dans le cas où l’on voudrait contourner ce comportement.
 
+SipaUI gère 2 niveaux d’imbrication de liste.
+
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
 
@@ -23,16 +25,28 @@ En dehors d’un article utilisant la classe `su-article`.
 ```html
 <ul>
 	<li>Item 1</li>
-	<li>Item 2</li>
+	<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 	<li>Item 3</li>
+	<li>Item 4
+		<ul>
+			<li>Item 4.1</li>
+			<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+		</ul>
+	</li>
 </ul>
 ```
 
 <div class="sipaui">
-	<ul>
+	<ul class="surcharge-storybook">
 		<li>Item 1</li>
-		<li>Item 2</li>
+		<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 		<li>Item 3</li>
+		<li>Item 4
+			<ul class="surcharge-storybook">
+				<li>Item 4.1</li>
+				<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+			</ul>
+		</li>
 	</ul>
 </div>
 
@@ -40,34 +54,58 @@ En dehors d’un article utilisant la classe `su-article`.
 ```html
 <ol>
 	<li>Item 1</li>
-	<li>Item 2</li>
+	<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 	<li>Item 3</li>
+	<li>Item 4
+		<ol>
+			<li>Item 4.1</li>
+			<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+		</ol>
+	</li>
 </ol>
 ```
 <div class="sipaui">
-	<ol>
+	<ol class="surcharge-storybook">
 		<li>Item 1</li>
-		<li>Item 2</li>
+		<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 		<li>Item 3</li>
+		<li>Item 4
+			<ol class="surcharge-storybook">
+				<li>Item 4.1</li>
+				<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+			</ol>
+		</li>
 	</ol>
 </div>
 
-### Liste non ordonnée avec une apparence de liste texte
+### Liste non ordonnée avec une apparence de liste à puces
 Utiliser la classe `su-list` sur la liste.
 
 ```html
 <ul class="su-list">
 	<li>Item 1</li>
-	<li>Item 2</li>
+	<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 	<li>Item 3</li>
+	<li>Item 4
+		<ul class="su-list">
+			<li>Item 4.1</li>
+			<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+		</ul>
+	</li>
 </ul>
 ```
 
 <div class="sipaui">
 	<ul class="su-list">
 		<li>Item 1</li>
-		<li>Item 2</li>
+		<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 		<li>Item 3</li>
+		<li>Item 4
+			<ul class="su-list">
+				<li>Item 4.1</li>
+				<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+			</ul>
+		</li>
 	</ul>
 </div>
 
@@ -77,16 +115,28 @@ Utiliser la classe `su-list` sur la liste.
 ```html
 <ol class="su-list">
 	<li>Item 1</li>
-	<li>Item 2</li>
+	<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 	<li>Item 3</li>
+	<li>Item 4
+		<ol>
+			<li>Item 4.1</li>
+			<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+		</ol>
+	</li>
 </ol>
 ```
 
 <div class="sipaui">
 	<ol class="su-list">
 		<li>Item 1</li>
-		<li>Item 2</li>
+		<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 		<li>Item 3</li>
+		<li>Item 4
+			<ol>
+				<li>Item 4.1</li>
+				<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+			</ol>
+		</li>
 	</ol>
 </div>
 
@@ -101,8 +151,14 @@ Dans un article avec la classe `su-article`.
 <div class="su-article">
 	<ul>
 		<li>Item 1</li>
-		<li>Item 2</li>
+		<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 		<li>Item 3</li>
+		<li>Item 4
+			<ul>
+				<li>Item 4.1</li>
+				<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+			</ul>
+		</li>
 	</ul>
 </div>
 ```
@@ -111,8 +167,14 @@ Dans un article avec la classe `su-article`.
 	<div class="su-article">
 		<ul>
 			<li>Item 1</li>
-			<li>Item 2</li>
+			<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 			<li>Item 3</li>
+			<li>Item 4
+				<ul>
+					<li>Item 4.1</li>
+					<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 </div>
@@ -123,8 +185,14 @@ Dans un article avec la classe `su-article`.
 <div class="su-article">
 	<ol>
 		<li>Item 1</li>
-		<li>Item 2</li>
+		<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 		<li>Item 3</li>
+		<li>Item 4
+			<ol>
+				<li>Item 4.1</li>
+				<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+			</ol>
+		</li>
 	</ol>
 </div>
 ```
@@ -133,21 +201,33 @@ Dans un article avec la classe `su-article`.
 	<div class="su-article">
 		<ol>
 			<li>Item 1</li>
-			<li>Item 2</li>
+			<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 			<li>Item 3</li>
+			<li>Item 4
+				<ol>
+					<li>Item 4.1</li>
+					<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				</ol>
+			</li>
 		</ol>
 	</div>
 </div>
 
-### Liste non ordonnée sans affichage en liste texte.
+### Liste non ordonnée sans affichage en liste à puces.
 Utiliser la classe `su-not-list` sur la liste.
 
 ```html
 <div class="su-article">
 	<ul class="su-not-list">
 		<li>Item 1</li>
-		<li>Item 2</li>
+		<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 		<li>Item 3</li>
+		<li>Item 4
+			<ul>
+				<li>Item 4.1</li>
+				<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+			</ul>
+		</li>
 	</ul>
 </div>
 ```
@@ -156,8 +236,14 @@ Utiliser la classe `su-not-list` sur la liste.
 	<div class="su-article">
 		<ul class="su-not-list">
 			<li>Item 1</li>
-			<li>Item 2</li>
+			<li>Item 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 			<li>Item 3</li>
+			<li>Item 4
+				<ul>
+					<li>Item 4.1</li>
+					<li>Item 4.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 </div>
