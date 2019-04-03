@@ -21,6 +21,9 @@ var child = exec('npm show sipa-ui version',
                 'rsync -avz dist/js sshacs@static-of.scp.upload.akamai.com:/487320/sipaui/' + local,
                 'rsync -avz dist/css sshacs@static-of.scp.upload.akamai.com:/487320/sipaui/' + local,
                 'rsync -avz dist/fonts sshacs@static-of.scp.upload.akamai.com:/487320/sipaui/' + local,
+                'rsync -avz dist/js sshacs@static-of.scp.upload.akamai.com:/487320/sipaui/' + local.slice(0, local.indexOf('.')),
+                'rsync -avz dist/css sshacs@static-of.scp.upload.akamai.com:/487320/sipaui/' + local.slice(0, local.indexOf('.')),
+                'rsync -avz dist/fonts sshacs@static-of.scp.upload.akamai.com:/487320/sipaui/' + local.slice(0, local.indexOf('.')),
             ].forEach(cmd => {
                 exec(cmd,
                   function(err, stdout, stderr) {
