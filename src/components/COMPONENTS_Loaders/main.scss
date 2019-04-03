@@ -28,10 +28,10 @@ $thickness-loader-big: 5px;
         height: $size-loader-big;
         @include animation (0, .8s, linear, infinite, rotation);
     }
-    // LOADER DE PAGE
+    // LOADER DE BLOC ET DE PAGE
+    .su-bloc-loader,
     .su-page-loader {
         background: rgba(255,255,255, .9);
-        position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
@@ -40,6 +40,12 @@ $thickness-loader-big: 5px;
         @include displayFlex();
         @include justifyContent(center, center);
         @include alignItems(center);
+    }
+    .su-bloc-loader {
+        position: absolute;
+    }
+    .su-page-loader {
+        position: fixed;
     }
 }
 
