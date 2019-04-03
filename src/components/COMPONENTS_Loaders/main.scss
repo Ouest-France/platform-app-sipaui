@@ -4,92 +4,43 @@
 */
 @import "variables";
 
-/* -- CLEARFIX -------------------------------------------------------------------- */
-.su-clearfix,
-.su-cf {
-    @include clearfix();
-}
+$size-loader-big: 44px;
+$thickness-loader-big: 5px;
 
-/* -- HIDE -------------------------------------------------------------------- */
-.su-hidden {
-    display: none !important;
-    visibility: hidden; // Les lecteurs d'écrans parfois ne prennent pas en compte le display none
-}
-
-// Pour cacher quelque-chose qui doit rester accessible aux lecteurs d'écrans
-.su-visually-hidden { // https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
-    position: absolute !important;
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-}
-body:hover .su-visually-hidden {
-    a,
-    input,
-    button {
-        display: none !important;
+@include keyframes(rotation) {
+    0% {
+        @include rotate(0);
+    }
+    100% {
+        @include rotate(360);
     }
 }
 
-/* -- DISPLAY -------------------------------------------------------------------- */
-.su-block {
-    display: block !important;
-}
-.su-inline-block {
-    display: inline-block !important;
-}
+.sipaui {
 
-/* -- POSITIONS -------------------------------------------------------------------- */
-.su-relative {
-	position: relative !important;
-}
-.su-absolute {
-	position: absolute !important;
-}
-.su-fixed {
-	position: fixed !important;
-}
-
-/* -- ALIGNMENT -------------------------------------------------------------------- */
-.su-block-center {
-    display: block !important; //utile pour forcer le centrage d’un objet non block comme les SVG
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-.su-text-center {
-    text-align: center !important;
-}
-.su-text-justify {
-    text-align: justify !important;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens:    auto;
-    -ms-hyphens:     auto;
-    hyphens:         auto;
-}
-
-/* -- FULL WIDTH -------------------------------------------------------------------- */
-.su-fullwidth {
-    width: 100% !important;
-}
-
-
-//
-/* -- MOBILE ONLY ---------------------------------------------------------------------------------------------------------------------------------- */
-//
-
-@media only screen and (max-width: $max-breakpoint-mobile) {
-    .su-fullwidth-mobile {
-        width: 100% !important;
+    // LOADER BASE
+    .su-loader {
+        display: inline-block;
+        border: $thickness-loader-big solid $color-main-loader-big;
+        border-left-color: $color-secondary-loader-big;
+        border-radius: 50%;
+        width: $size-loader-big;
+        height: $size-loader-big;
+        @include animation (0, .8s, linear, infinite, rotation);
+    }
+    // LOADER DE PAGE
+    .su-page-loader {
+        background: rgba(255,255,255, .9);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10000;
+        @include displayFlex();
+        @include justifyContent(center, center);
+        @include alignItems(center);
     }
 }
 
-/* -- DISABLED -------------------------------------------------------------------- */
-[disabled="disabled"],
-.su-disabled {
-    opacity: $opacity-disabled;
-    cursor: default !important;
-}
+
