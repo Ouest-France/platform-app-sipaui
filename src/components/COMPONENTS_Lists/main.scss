@@ -3,10 +3,8 @@
 */
 @import "variables";
 
-$taille-puce: 10px;
-$taille-espace-puce: 10px;
-$taille-retrait-ul: $taille-puce + $taille-espace-puce;
-$marge-sous-li: 10px;
+$size-withdrawal-ul: $size-bullet + $margin-bullet;
+$padding-bottom-li: 10px;
 
 
 .sipaui {
@@ -19,29 +17,29 @@ $marge-sous-li: 10px;
     // LISTE A PUCE ------------------------------------------------------------------------------------------/
     .su-article ul:not(.su-not-list),
     ul.su-list {
-        padding-left: $taille-retrait-ul;
+        padding-left: $size-withdrawal-ul;
 
         > li {
-            padding-bottom: $marge-sous-li;
+            padding-bottom: $padding-bottom-li;
 
             &::before {
                 content: "";
                 display: inline-block;
-                background: $color-main-7;
-                width: $taille-puce;
-                height: $taille-puce;
+                background: $color-bullet;
+                width: $size-bullet;
+                height: $size-bullet;
                 border-radius: 100%;
-                margin-left: - $taille-retrait-ul;
-                margin-right: $taille-espace-puce;
+                margin-left: - $size-withdrawal-ul;
+                margin-right: $margin-bullet;
             }
             > ul:not(.su-not-list),
             > ul.su-list {
-                padding-left: $taille-retrait-ul * 2;
-                margin-top: $marge-sous-li;
+                padding-left: $size-withdrawal-ul * 2;
+                margin-top: $padding-bottom-li;
 
                 > li::before {
                     background: transparent;
-                    border: 1px solid $color-main-7;
+                    border: 1px solid $color-bullet;
                 }
             }
         }
@@ -63,17 +61,18 @@ $marge-sous-li: 10px;
                 display: table-cell;
                 padding-right: 1rem;
                 text-align: right;
-                padding-bottom: .4rem;
+                padding-bottom: $padding-bottom-li;
                 font-weight: $font-weight-bold;
             }
-            > ul:not(.su-not-list),
-            > ul.su-list {
-                padding-left: $taille-retrait-ul * 2;
-                margin-top: $marge-sous-li;
+            > ol:not(.su-not-list),
+            > ol.su-list {
+                padding-left: $size-withdrawal-ul * 2;
+                margin-top: $padding-bottom-li;
 
-                > li::before {
-                    background: transparent;
-                    border: 1px solid $color-main-7;
+                > li {
+                    &::before {
+                        content: counter(liste);
+                    }
                 }
             }
         }
