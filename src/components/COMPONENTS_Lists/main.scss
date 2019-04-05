@@ -38,8 +38,8 @@ $padding-bottom-li: 10px;
                 margin-top: $padding-bottom-li;
 
                 > li::before {
-                    background: transparent;
-                    border: 1px solid $color-bullet;
+                    width: $size-bullet-small;
+                    height: $size-bullet-small;
                 }
             }
         }
@@ -51,6 +51,7 @@ $padding-bottom-li: 10px;
     ol.su-list {
         display: table;
         counter-reset: liste;
+        padding-left: 0;
 
         > li {
             display: table-row;
@@ -66,12 +67,19 @@ $padding-bottom-li: 10px;
             }
             > ol:not(.su-not-list),
             > ol.su-list {
+                display: block;
+                list-style-type: lower-alpha;
                 padding-left: $size-withdrawal-ul * 2;
                 margin-top: $padding-bottom-li;
 
                 > li {
+                    display: list-item;
+                    padding-bottom: $padding-bottom-li;
+
                     &::before {
-                        content: counter(liste);
+                        content: '';
+                        padding: 0;
+                        display: none;
                     }
                 }
             }
