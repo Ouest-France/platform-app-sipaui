@@ -17,95 +17,112 @@
             </nav>
         </header>
 
-        <main class="su-article su-old-editorial" role="main">
+        <main class="su-article" role="main">
 
             <article class="su-container plan-versions" role="article">
                 <h1>Journal</h1>
 
-                <h2>Changelog</h2>
+                <div class="su-row">
+                    <section class="su-col-lg-18">
+                        <h2>Changelog</h2>
 
-                <ul class="su-old-not-list su-grid-auto su-wrap su-row su-has-gutter">
-                    <li class="su-col table-row">
-                        <div class="table-cell"><span class="version">1.0.11</span></div>
-                        <ul class="table-cell">
-                            <li>Composants&nbsp;:
-                                <ul>
-                                    <li>Points de rupture</li>
-                                    <li>Grille (standard et libre)</li>
-                                    <li>Classes d’aide (clearfix, masquage, display…)</li>
-                                    <li>Icônes</li>
-                                    <li>Marges</li>
-                                    <li>Texte standard</li>
-                                    <li>Titre</li>
-                                    <li>Liens</li>
-                                    <li>Boutons</li>
-                                    <li>Labels</li>
-                                    <li>Cases à cocher</li>
-                                    <li>Boutons radio</li>
-                                    <li>Champs texte</li>
-                                    <li>Listes déroulantes</li>
-                                    <li>Erreurs</li>
+                        <ul class="su-not-list">
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">1.1.x</span></div>
+                                <ul class="table-cell">
+                                    <li>Composants&nbsp;:
+                                        <ul>
+                                            <li>Listes</li>
+                                            <li>Page loader</li>
+                                            <li>Regroupement Abonnement et Premium</li>
+                                        </ul>
+                                    </li>
+                                    <li>Documentation&nbsp;:
+                                        <ul>
+                                            <li>Réorganisation de ce site</li>
+                                            <li>CDN par versions</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
-                            <li>Documentation&nbsp;:
-                                <ul>
-                                    <li>Réorganisation des composants dans le catalogue</li>
-                                    <li>Mise en avant de l’installation</li>
-                                    <li>Mise à jour de l’installation et de l’archi fonctionnelle</li>
+
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">1.0.12</span></div>
+                                <ul class="table-cell">
+                                    <li>Composants&nbsp;:
+                                        <ul>
+                                            <li>Fix&nbsp;: passage des mixins en kebab-case pour les rendre compatibles avec OuestStrap</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">1.0.11</span></div>
+                                <ul class="table-cell">
+                                    <li>Composants&nbsp;:
+                                        <ul>
+                                            <li>Points de rupture</li>
+                                            <li>Grille (standard et libre)</li>
+                                            <li>Classes d’aide (clearfix, masquage, display…)</li>
+                                            <li>Icônes</li>
+                                            <li>Marges</li>
+                                            <li>Texte standard</li>
+                                            <li>Titre</li>
+                                            <li>Liens</li>
+                                            <li>Boutons</li>
+                                            <li>Labels</li>
+                                            <li>Cases à cocher</li>
+                                            <li>Boutons radio</li>
+                                            <li>Champs texte</li>
+                                            <li>Listes déroulantes</li>
+                                            <li>Erreurs</li>
+                                        </ul>
+                                    </li>
+                                    <li>Documentation&nbsp;:
+                                        <ul>
+                                            <li>Réorganisation des composants dans le catalogue</li>
+                                            <li>Mise en avant de l’installation</li>
+                                            <li>Mise à jour de l’installation et de l’archi fonctionnelle</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
-                    </li>
+                    </section>
 
-                    <li class="su-col table-row">
-                        <div class="table-cell"><span class="version">1.1.x</span></div>
-                        <ul class="table-cell">
-                            <li>Composants&nbsp;:
-                                <ul>
-                                    <li>Listes</li>
-                                    <li>Page loader</li>
-                                    <li>Regroupement Abonnement et Premium</li>
-                                </ul>
+                    <section class="su-col-lg-6">
+                        <h2>Roadmap</h2>
+
+                        <ul class="su-not-list">
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">1.2</span></div>
+                                <div class="table-cell">Stepper.</div>
                             </li>
-                            <li>Documentation&nbsp;:
-                                <ul>
-                                    <li>Réorganisation de ce site</li>
-                                    <li>CDN par versions</li>
-                                </ul>
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">1.3</span></div>
+                                <div class="table-cell">Mot de passe.</div>
+                            </li>
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">1.4</span></div>
+                                <div class="table-cell">Popin.</div>
+                            </li>
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">1.5</span></div>
+                                <div class="table-cell">Pagination.</div>
+                            </li>
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">1.6</span></div>
+                                <div class="table-cell">Réseaux sociaux.</div>
+                            </li>
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">1.7</span></div>
+                                <div class="table-cell">Tags.</div>
                             </li>
                         </ul>
-                    </li>
-                </ul>
+                    </section>
 
-                <h2>Roadmap</h2>
-
-                <ul class="su-old-not-list">
-                    <li class="table-row">
-                        <div class="table-cell"><span class="version">1.2</span></div>
-                        <div class="table-cell">Stepper.</div>
-                    </li>
-                    <li class="table-row">
-                        <div class="table-cell"><span class="version">1.3</span></div>
-                        <div class="table-cell">Mot de passe.</div>
-                    </li>
-                    <li class="table-row">
-                        <div class="table-cell"><span class="version">1.4</span></div>
-                        <div class="table-cell">Popin.</div>
-                    </li>
-                    <li class="table-row">
-                        <div class="table-cell"><span class="version">1.5</span></div>
-                        <div class="table-cell">Pagination.</div>
-                    </li>
-                    <li class="table-row">
-                        <div class="table-cell"><span class="version">1.6</span></div>
-                        <div class="table-cell">Réseaux sociaux.</div>
-                    </li>
-                    <li class="table-row">
-                        <div class="table-cell"><span class="version">1.7</span></div>
-                        <div class="table-cell">Tags.</div>
-                    </li>
-                </ul>
-
+                </div>
             </article>
 
         </main>

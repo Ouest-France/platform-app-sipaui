@@ -18,7 +18,7 @@
         </header>
 
 
-        <main class="su-article su-old-editorial" role="main">
+        <main class="su-article" role="main">
 
             <article class="su-container" role="article">
                 <h1>Installation</h1>
