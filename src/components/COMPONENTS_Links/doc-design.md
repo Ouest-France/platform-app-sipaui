@@ -14,7 +14,7 @@ Un lien article se trouve **parmi un bloc de texte** (article…). Il apporte un
 Enabled | Hover / Focus / Pressed
 ------------ | ------------- |
 ![article-link__enabled](design/article-link__enabled.png)| ![article-link__hover](design/article-link__hover.png)
-Hauteur du texte  <br> Largeur du texte <br> Couleur : #E878787 <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
+Hauteur du texte  <br> Largeur du texte <br> Couleur : #878787 <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
 
 
 ### Lien bouton
