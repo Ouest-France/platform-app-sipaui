@@ -38,7 +38,7 @@ Les listes sont utilisées pour afficher un nombre d’éléments reliés de fa�
 - Dans une liste ordonnée et imbriquée, le nombre d’éléments est limité à 26&nbsp;: de «&nbsp;a&nbsp;» à «&nbsp;z&nbsp;».
 
 ![unordered-nested-list](design/unordered-nested-list.png)
-<br/> Un **cercle** matérialise les listes non ordonnées imbriquées.
+<br/> Un **petit disque** matérialise les listes non ordonnées imbriquées.
 
 ![nested-ordered-list](design/nested-ordered-list.png)
 <br/> Des **lettres en minuscule** permettent de classer les listes ordonnées imbriquées.
