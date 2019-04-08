@@ -17,6 +17,8 @@ Les loaders sont des animations en boucle qui indiquent à l’utilisateur qu'**
 
 ![loader__default](design/loader__default.png)
 
+- Lorsque le loader est sur une page, un voile blanc couvre l'ensemble de cette page. Le loader se possitionne dessus.
+
 ## Positionnements
 
 - Le loader est centré horizontalement dans son parent.
