@@ -53,7 +53,7 @@ gulp.task("scripts", ["clean"], function() {
     return gulp.src([
             source + "/core/js/sipaui.js"
         ])
-        .pipe(concat('sipaui.js', {newLine: ';'}))
+        .pipe(concat('sipaui.min.js', {newLine: ';'}))
         .pipe(include({
             extensions: "js",
             hardFail: true,
