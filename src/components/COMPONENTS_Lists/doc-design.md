@@ -35,7 +35,7 @@ Les listes sont utilisées pour afficher un nombre d’éléments reliés de fa�
 
 - L’imbrication des listes permet une présentation claire et détaillée grâce à **un deuxième niveau** aux listes non ordonnées et ordonnées.
 - Les listes imbriquées sont utilisées pour des listes de liens hiérarchisés tels qu’un plan de site ou menu déroulant.
-- Dans une liste ordonnée et imbriquée, le nombre d’éléments est limité à 26&nbsp;: de «&nbsp;a&nbsp;» " à «&nbsp;z&nbsp;».
+- Dans une liste ordonnée et imbriquée, le nombre d’éléments est limité à 26&nbsp;: de «&nbsp;a&nbsp;» à «&nbsp;z&nbsp;».
 
 ![unordered-nested-list](design/unordered-nested-list.png)
 <br/> Un **cercle** matérialise les listes non ordonnées imbriquées.
