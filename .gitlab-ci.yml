@@ -4,6 +4,7 @@ variables:
 
 stages:
   - build
+  - check
   - package
   - deploy
 
@@ -25,7 +26,7 @@ build:
 
 checknpublish:
   image: $NODE_IMAGE
-  stage: build
+  stage: check
   before_script:
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
