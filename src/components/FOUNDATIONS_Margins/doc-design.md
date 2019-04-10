@@ -56,7 +56,7 @@ Taille | Mesure | Illustration
 </div>
 
 
-- Dans un formulaire, l'espace idéal entre 2 champs de texte est M : 20px.
+- **L'espace entre 2 éléments de formulaire est M : 20px.**
 
 ### Hiérarchiser les éléments
 
