@@ -338,7 +338,7 @@
     @return ($i / $max-col) * 100;
 }
 @function grid-col-base-width($i, $max-col) {
-    @return grid-base-calc($i, $max-col) + %;
+    @return grid-base-calc($i, $max-col) + '%';
 }
 @function grid-gutter-width($i, $max-col) {
     @return round(20px - (20 * grid-base-calc($i, $max-col) / 100));
