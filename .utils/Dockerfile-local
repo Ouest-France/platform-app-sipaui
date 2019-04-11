@@ -1,0 +1,14 @@
+FROM matthieupresse/php7-node10:latest
+
+RUN apt-get install nginx  -y
+
+RUN apt-get install vim -y
+
+RUN mkdir /sipaui
+RUN mkdir /sipaui/dist
+VOLUME /sipaui
+WORKDIR /sipaui
+
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+RUN sed -i 's/root \/var\/www\/html;/root \/sipaui\/dist;/g' /etc/nginx/sites-enabled/default
+CMD service nginx start

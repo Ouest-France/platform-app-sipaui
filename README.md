@@ -69,3 +69,34 @@ src /
     config.js
     head.html
 ```
+
+## Docker
+
+```
+docker build -t sipa-ui . -f .utils/Dockerfile-local
+docker run -v `pwd`:/sipaui -v /sipaui/node_modules/ -d -p 8789:80 --name sipa-ui_1 sipa-ui 
+docker exec -it sipa-ui_1 bash
+
+yarn install
+yarn build
+```
+
+Stop
+
+```
+docker stop sipa-ui_1
+```
+
+Start
+
+```
+docker start sipa-ui_1
+docker exec -it sipa-ui_1 bash
+```
+
+URL
+
+```
+http://IP_MACHINE_DOCKER:8789/
+http://192.168.99.100:8789/storybook/catalogue/
+```

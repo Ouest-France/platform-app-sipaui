@@ -5,7 +5,7 @@
 ;(function(cn){
     function _doToggle(event, that) {
         that = that || this;
-        const opt = JSON.parse(that.getAttribute('data-'+cn)),
+        const opt = JSON.parse(that.getAttribute('data-'+cn) || '{}'),
             inputTypes = ['text', 'password', 'number', 'email', 'tel', 'url', 'search', 'date', 'datetime', 'datetime-local', 'time', 'month', 'week']
         ;
 
@@ -51,12 +51,13 @@
 
     }
 
-    const focusables = ['input', 'textarea', 'select'];
-
+    // Pas tous les input, les checkbox / radio c'est l event click qu il faut capter
+    const focusables = ['[type="text"]', '[type="password"]', '[type="email"]', '[type="tel"]', '[type="date"]', '[type="number"]', 'textarea', 'select'];
+    
     ['focusin', 'focusout', 'input'].forEach(event => su.doc.addEventListener(event, function(e) {
-        const elem = e.target.closest(focusables.map(el => el + '[data-'+cn+']').join(', '));
-        if (!elem) return;
-        _doToggle(e, elem);
+        const element = e.target.closest(focusables.map(el => el + '[data-'+cn+']').join(', '));
+        if (!element) return;
+        _doToggle(e, element);
     }));
 
     su.doc.addEventListener('click', function(e) {
