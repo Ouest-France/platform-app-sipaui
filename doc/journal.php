@@ -28,7 +28,7 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">1.1.4</span></div>
+                                <div class="table-cell"><span class="version">1.1.5</span></div>
                                 <ul class="table-cell">
                                     <li>Composants&nbsp;:
                                         <ul>
