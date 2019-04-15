@@ -12,7 +12,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 - Graisse&nbsp;: Normal
 - Taille&nbsp;: 16px
 - Couleur&nbsp;: #333333
-- Marge supérieure d’un paragraphe sous un autre paragraphe ou d’une liste&nbsp;: 20px
+- Marge supérieure d’un paragraphe sous un autre paragraphe ou d’une liste&nbsp;: 20px (uniquement dans une zone éditoriale)
 
 
 ## Bonnes pratiques
@@ -73,3 +73,14 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 
  </div>
  </div>
+ 
+## Petit texte
+ 
+Une variante du texte standard permet d’afficher un texte légèrement plus petit. Cette variation est utile pour du texte mineur comme un texte d’aide sur un écran de connexion par exemple…
+ 
+### Spécifications
+
+- Police&nbsp;: idem texte standard
+- Graisse&nbsp;: idem texte standard
+- Taille&nbsp;: 14px
+- Couleur&nbsp;: idem texte standard

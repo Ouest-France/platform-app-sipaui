@@ -1,6 +1,6 @@
 # Standard texts / Textes standards
 
-Le texte standard est réservé au contenu éditorial. Il est donc lié à la classe `su-article` qui englobe les zones de contenu éditorial. Son utilisation peut être forcée ponctuellement par la classe `su-text-standard`.
+Le texte standard est réservé au contenu éditorial. Il est donc lié à la classe `su-article` qui englobe ces zones. Son utilisation peut être forcée en-dehors de ces zones éditoriales avec la classe `su-text-standard`.
 
 <br />
 
@@ -69,10 +69,6 @@ Dans l’exemple ci-dessous, les 2 paragraphes sont stylés par des CSS de la pa
 
 
 
-
-
-
-
 ## Variation d’importance
 
 ### Importance moyenne
@@ -109,8 +105,17 @@ Utilisation de la balise `<strong>`.
 
 
 
+## Variation de taille
+### Petit texte
 
+Pour afficher un texte légèrement plus petit que le texte standard, vous pouvez utilisez la classe `su-text-small`. Cette classe n’est pas liée aux zones éditoriales (`su-article`).
 
+```html
+<p class="su-text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+```
+<div class="sipaui">
+	<p class="su-text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
 
 
@@ -196,6 +201,7 @@ Utilisation de la classe `su-text-center`.
 ## Liste des classes disponibles
 - `su-article` (si besoin de surcharge)
 - `su-text-standard` (si besoin de surcharge)
+- `su-text-small`
 
 ### Classes annexes
 - `su-text-center` (dépendant du composant *Helpers*)
