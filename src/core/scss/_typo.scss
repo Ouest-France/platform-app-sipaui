@@ -10,13 +10,13 @@ $margin-paragraphe: $margin-medium;
     font-family: $font-family-base;
     font-size: $font-size-base;
     line-height: $line-height-base;
-    color: $color-texte;
+    color: $font-color-standard;
 
     .su-text-standard {
         font-family: $font-family-base;
         font-size: $font-size-base;
         line-height: $line-height-tall;
-        color: $color-texte;
+        color: $font-color-standard;
         margin: 0;
     }
     .su-text-standard + .su-text-standard {
@@ -28,7 +28,7 @@ $margin-paragraphe: $margin-medium;
             font-family: $font-family-base;
             font-size: $font-size-base;
             line-height: $line-height-tall;
-            color: $color-texte;
+            color: $font-color-standard;
             margin: 0;
         }
         p + p,

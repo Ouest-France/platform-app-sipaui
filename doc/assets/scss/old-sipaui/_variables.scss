@@ -125,15 +125,15 @@ $color-lien:         $color-main-5  !default;
 $color-lien-hover:   $color-secondary-2  !default;
 $color-lien-active:  $color-lien-hover      !default;
 $color-lien-focus:   $color-lien-hover      !default;
-$color-lien-visited: $color-texte           !default;
+$color-lien-visited: $font-color-standard   !default;
 $text-decoration-link: null                !default;
 
 // LIENS NEUTRES
-$color-lien-neutre:         $color-texte                !default;
+$color-lien-neutre:         $font-color-standard        !default;
 $color-lien-neutre-hover:   $color-lien-hover           !default;
 $color-lien-neutre-active:  $color-lien-neutre-hover    !default;
 $color-lien-neutre-focus:   $color-lien-neutre-hover    !default;
-$color-lien-neutre-visited: $color-texte                !default;
+$color-lien-neutre-visited: $font-color-standard        !default;
 
 // LIENS VOYANTS
 $color-lien-voyant:         $color-secondary-1       !default;
