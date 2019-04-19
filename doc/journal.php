@@ -71,7 +71,7 @@
                             </li>
 
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">1.0.11</span></div>
+                                <div class="table-cell"><span class="version breaking">1.0.11</span></div>
                                 <ul class="table-cell">
                                     <li>Composants&nbsp;:
                                         <ul>
