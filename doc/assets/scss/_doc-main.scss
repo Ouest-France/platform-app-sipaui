@@ -97,6 +97,10 @@ header + main {
     font-size: 1.5rem;
     display: inline-block;
     color: $couleur-principale-1;
+
+    &.breaking {
+        background: rgba($couleur-secondaire-1, .4);
+    }
 }
 
 .presentation {
@@ -212,12 +216,8 @@ header + main {
 .documentation {
     color: #40a42b;
 }
-.catalogue {
+.important {
     color: $couleur-secondaire-1;
-}
-.livrable {
-    color: #000;
-    font-weight: 700;
 }
 pre code {
     font-size: 12px;

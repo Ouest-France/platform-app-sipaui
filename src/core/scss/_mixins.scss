@@ -52,7 +52,7 @@
   }
 }
 
-//animatuion
+//animation
 @mixin animation ($delay, $duration, $timing, $iteration, $animation) {
     -webkit-animation-delay: $delay;
     -webkit-animation-duration: $duration;

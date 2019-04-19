@@ -28,7 +28,20 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">1.1.5</span></div>
+                                <div class="table-cell"><span class="version">1.2.1</span></div>
+                                <ul class="table-cell">
+                                    <li>Composants&nbsp;:
+                                        <ul>
+                                            <li>Petit texte</li>
+                                            <li>Boutons&nbsp;: largeur min de 120px au lieu de 140</li>
+                                            <li>Stepper</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">1.1.6</span></div>
                                 <ul class="table-cell">
                                     <li>Composants&nbsp;:
                                         <ul>
@@ -96,27 +109,27 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">1.2</span></div>
-                                <div class="table-cell">Stepper.</div>
+                                <div class="table-cell"><span class="version breaking">2.0</span></div>
+                                <div class="table-cell">La grille «&nbsp;md&nbsp;» passe de 6 à 24 colonnes.</div>
                             </li>
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">1.3</span></div>
+                                <div class="table-cell"><span class="version">2.1</span></div>
                                 <div class="table-cell">Mot de passe.</div>
                             </li>
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">1.4</span></div>
+                                <div class="table-cell"><span class="version">2.2</span></div>
                                 <div class="table-cell">Popin.</div>
                             </li>
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">1.5</span></div>
+                                <div class="table-cell"><span class="version">2.3</span></div>
                                 <div class="table-cell">Pagination.</div>
                             </li>
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">1.6</span></div>
+                                <div class="table-cell"><span class="version">2.4</span></div>
                                 <div class="table-cell">Réseaux sociaux.</div>
                             </li>
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">1.7</span></div>
+                                <div class="table-cell"><span class="version">2.5</span></div>
                                 <div class="table-cell">Tags.</div>
                             </li>
                         </ul>
