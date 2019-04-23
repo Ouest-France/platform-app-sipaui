@@ -73,7 +73,7 @@ Type | Illustration
 - Un champ obligatoire est défini comme ko lorsque le texte n'est pas correct ou est absent.
 
 #### Message d'erreur
-- Les spécifications sont disponibles dans le doc deisgn du composant Error.
+- Les spécifications sont disponibles dans le doc design du composant Error.
 
 #### Contour du container
   - Épaisseur : 1px
