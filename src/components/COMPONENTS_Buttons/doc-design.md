@@ -78,6 +78,8 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ## Bonnes pratiques
 
+### Spécifications
+- Sur mobile, les boutons en pleine largeur sont recommendés car ils sont plus accessibles.
 - La 1re lettre du bouton est en majuscule, le reste est en minuscule.
 - Le texte du bouton est limité à une ligne.
 - Le texte du bouton doit être explicite et décrire l'action de celui-ci.
@@ -100,7 +102,16 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
  </div>
  </div>
 
-- Lorsque vous utilisez un bouton primaire et un bouton secondaire, le bouton primaire doit être placé à gauche. **Une exception s'applique dans le cas d'écran séquentiel**, le bouton primaire est à droite.
+
+### Boutons d'un même sujet
+
+- Les boutons liés à un même sujet ont la même largeur.
+- La distance entre ces boutons est constante.
+- Un seul bouton primaire est présent.
+- Deux boutons secondaires maximum sont présents. De plus, ils sont positionnés de manière proche.
+- Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte.
+- Sur mobile, le bouton primaire se trouve au-dessus des boutons secondaires.
+- Sur desktop, lorsque vous utilisez un bouton primaire et un bouton secondaire, le bouton primaire doit être placé à gauche. **Une exception s'applique dans le cas d'écran séquentiel**, le bouton primaire est à droite.
 
 <div class="do-dont">
 <div class="do">
@@ -112,11 +123,6 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
  </div>
  </div>
 
-- Sur un mobile lorsqu’il y a un seul bouton, le mettre en pleine largeur.
-
-
-- Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte.
-
 
  <div class="do-dont">
  <div class="dont">
@@ -127,7 +133,6 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
  </div>
  </div>
-
 
 
 - La couleur d'arrière-plan ne doit pas être similaire à celle du bouton afin de mettre en avant l'action. Par exemple, le fond noir est à proscrire sous un bouton rouge.
