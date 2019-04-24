@@ -20,7 +20,7 @@ Un indicateur de progression est en fait une simple liste ordonnée (`<ol>`) red
 
 ```html
 <ol class="su-stepper surcharge-storybook">
-	<li class="su-stepper-step su-done">
+	<li class="su-stepper-step">
 		<span>Étape 1</span>
 	</li>
 	<li class="su-stepper-step su-enabled">
@@ -35,7 +35,7 @@ Un indicateur de progression est en fait une simple liste ordonnée (`<ol>`) red
 
 <div class="sipaui">
 	<ol class="su-stepper surcharge-storybook">
-		<li class="su-stepper-step su-done">
+		<li class="su-stepper-step">
 			<span>Étape 1</span>
 		</li>
 		<li class="su-stepper-step su-enabled">
@@ -52,7 +52,7 @@ Un indicateur de progression est en fait une simple liste ordonnée (`<ol>`) red
 
 ```html
 <ol class="su-stepper surcharge-storybook">
-	<li class="su-stepper-step su-done">
+	<li class="su-stepper-step">
 		<span>Étape 1</span>
 	</li>
 	<li class="su-stepper-step su-enabled">
@@ -73,7 +73,7 @@ Un indicateur de progression est en fait une simple liste ordonnée (`<ol>`) red
 
 <div class="sipaui">
 	<ol class="su-stepper surcharge-storybook">
-		<li class="su-stepper-step su-done">
+		<li class="su-stepper-step">
 			<span>Étape 1</span>
 		</li>
 		<li class="su-stepper-step su-enabled">
