@@ -40,5 +40,5 @@ $color-step-label-done:                 $font-color-standard             !defaul
 // Tailles
 $size-step-bullet:               30px                             !default;
 $radius-step-bullet:             100%                             !default;
-$margin-bottom-step-bullet:      10px                             !default;
+$margin-bottom-step-bullet:      $margin-xsmall                   !default;
 $height-line-steps:              1px                              !default;
