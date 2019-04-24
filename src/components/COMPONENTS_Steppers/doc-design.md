@@ -59,7 +59,7 @@ Taille : 30 x 30px <br> Couleur : #E2001A <br> Texte : 16px, Arial bold, #FFFFFF
 **Etape 2** | ![default__step__2](design/default__step__2.png)
 **Etape 3** | ![default__step__3](design/default__step__3.png)
 
-Présent uniquement desktop, les libellés ont une taille de caractères de 14px et leur couleur est #333333. Lorsqu'ils sont inactifs, ils sont #D4D4D4.
+Présents uniquement desktop, les libellés ont une taille de caractères de 14px et leur couleur est #333333. Lorsqu'ils sont inactifs, ils sont #D4D4D4.
 ## 4- Bonnes pratiques
 
 - Chaque étape présente au minimum une action de la part de l'utilisateur. Une simple information ne nécessite pas d'étape dédiée notamment en fin de formulaire.

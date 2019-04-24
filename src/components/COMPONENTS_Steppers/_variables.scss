@@ -1,0 +1,26 @@
+/*
+    Variables liés au composant [text-fields]
+    ex:
+    $subutton-br: 0 !default;
+*/
+
+
+// STEPPER ------------------------------------------------------------------------------------------/
+
+$font-weight-step:              $font-weight-bold                !default;
+
+$backgroundcolor-step-undone:   #fff                             !default;
+$color-step-undone:             $color-main-3                    !default;
+
+$backgroundcolor-step-hover:    #fff                             !default;
+$color-step-hover:              $color-secondary-2               !default;
+
+$backgroundcolor-step-enabled:  $color-secondary-1               !default;
+$color-step-enabled:            #fff                             !default;
+
+$backgroundcolor-step-done:     #fff                             !default;
+$color-step-done:               $color-secondary-1               !default;
+
+
+$size-step:                     30px                             !default;
+$radius-step:                   100%                             !default;
