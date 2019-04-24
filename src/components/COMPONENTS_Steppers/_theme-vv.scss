@@ -4,5 +4,38 @@
     $subutton-br: 5px;
 */
 
-// INPUT ------------------------------------------------------------------------------------------/
 
+// STEPPER ------------------------------------------------------------------------------------------/
+
+// Couleurs
+//Pas fait
+/*
+$background-step-bullet-undone:         #fff;
+$border-step-bullet-undone:             1px solid $color-main-3;
+$color-step-bullet-undone:              $color-main-3;
+$background-step-line-undone:           $color-main-3;
+$color-step-label-undone:               $color-main-3;
+*/
+
+//Hover
+$background-step-bullet-hover:          #fff;
+$border-step-bullet-hover:              1px solid $color-secondary-3;
+$color-step-bullet-hover:               $color-secondary-3;
+$color-step-label-hover:                $font-color-standard;
+
+//Actif
+$background-step-bullet-enabled:        $color-secondary-2;
+$border-step-bullet-enabled:            1px solid $color-secondary-2;
+$color-step-bullet-enabled:             #fff;
+$color-step-label-enabled:              $font-color-standard;
+
+//Fait
+$background-step-bullet-done:           #fff;
+$border-step-bullet-done:               1px solid $color-secondary-2;
+$color-step-bullet-done:                $color-secondary-2;
+$background-step-line-done:             $color-secondary-2;
+$color-step-label-done:                 $font-color-standard;
+
+
+// Tailles
+$height-line-steps:              2px                              !default;
