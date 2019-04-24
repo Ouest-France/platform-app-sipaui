@@ -15,7 +15,7 @@
         li {
             @include display-flex();
             @include flex-direction(column);
-            @include align-items(flex-end);
+            @include align-steps(flex-end);
             position: relative;
 
             &:nth-child(n+2) {
@@ -36,7 +36,7 @@
                 &::after {
                     background: $backgroundcolor-step-enabled;
                 }
-                .su-stepper-item::before {
+                .su-stepper-step::before {
                     background-color: $backgroundcolor-step-enabled;
                     border: 1px solid $backgroundcolor-step-enabled;
                     color: $color-step-enabled;
@@ -49,7 +49,7 @@
                 &::after {
                     background: $color-step-done;
                 }
-                .su-stepper-item::before {
+                .su-stepper-step::before {
                     background-color: $backgroundcolor-step-done;
                     border: 1px solid $color-step-done;
                     color: $color-step-done;
@@ -60,7 +60,7 @@
             }
         }
 
-        .su-stepper-item {
+        .su-stepper-step {
             position: relative;
             z-index: 1;
 

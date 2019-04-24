@@ -26,17 +26,17 @@ Un indicateur de progression est en fait une simple liste ordonnée (`<ol>`) red
 <div class="sipaui">
 	<ol class="su-stepper surcharge-storybook">
 		<li class="su-done">
-			<div class="su-stepper-item">
+			<div class="su-stepper-step">
 				<span>hceiuz fhuezqif zi hfezo</span>
 			</div>
 		</li>
 		<li class="su-enabled">
-			<div class="su-stepper-item">
+			<div class="su-stepper-step">
 				<span>jvidso fjqiodf voif hiodwjf</span>
 			</div>
 		</li>
 		<li>
-			<div class="su-stepper-item">
+			<div class="su-stepper-step">
 				<span>Étape 3</span>
 			</div>
 		</li>
@@ -57,6 +57,6 @@ Un stepper peut s'adapter à un sous-thème. Voici un exemple avec l’abonnemen
 
 ## Liste des classes disponibles
 - `su-stepper`
-- `su-stepper-item`
+- `su-stepper-step`
 
 </div>
