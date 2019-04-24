@@ -12,8 +12,14 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 - Graisse&nbsp;: Normal
 - Taille&nbsp;: 16px
 - Couleur&nbsp;: #333333
-- Marge supérieure d’un paragraphe sous un autre paragraphe ou d’une liste&nbsp;: 20px (uniquement dans une zone éditoriale)
 
+## Cas spécifique
+
+### Petit texte
+
+- Cette variation permet d'afficher un texte de moindre importance.
+- Sa taille est 14px.
+- Ses autres spécifications sont identiques au texte standard.
 
 ## Bonnes pratiques
 
@@ -60,7 +66,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 ### Accessibilité
 
 - Les petites tailles de police sont moins accessibles et fatiguent les yeux.
-- Les interlignes assez grands facilitent la lecture.
+- Les interlignes assez grandes facilitent la lecture.
 - Le contraste est un facteur essentiel pour un texte facile à lire. Le noir sur blanc est évidemment le contraste standard.
 
 
@@ -73,14 +79,3 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 
  </div>
  </div>
- 
-## Petit texte
- 
-Une variante du texte standard permet d’afficher un texte légèrement plus petit. Cette variation est utile pour du texte mineur comme un texte d’aide sur un écran de connexion par exemple…
- 
-### Spécifications
-
-- Police&nbsp;: idem texte standard
-- Graisse&nbsp;: idem texte standard
-- Taille&nbsp;: 14px
-- Couleur&nbsp;: idem texte standard
