@@ -3,99 +3,96 @@
 */
 @import "variables";
 
-
 .sipaui {
     .su-stepper {
-        counter-reset: etape;
+        counter-reset: steps;
         @include display-flex();
-        @include flex-wrap(nowrap);
-        @include justify-content(space-between, justify);
-                                            border: 1px dotted lightgrey;
-
-        li {
-            @include display-flex();
-            @include flex-direction(column);
-            @include align-steps(flex-end);
-            position: relative;
-
-            &:nth-child(n+2) {
-                @include flex(1);
-
-                &::after {
-                    content: "";
-                    display: block;
-                        background: $color-step-undone;
-                    height: 1px;
-                    width: 100%;
-                    position: absolute;
-                    left: 0;
-                    top: $size-step / 2;
-                }
-            }
-            &.su-enabled {
-                &::after {
-                    background: $backgroundcolor-step-enabled;
-                }
-                .su-stepper-step::before {
-                    background-color: $backgroundcolor-step-enabled;
-                    border: 1px solid $backgroundcolor-step-enabled;
-                    color: $color-step-enabled;
-                }
-                span {
-                    color: $font-color-standard;
-                }
-            }
-            &.su-done {
-                &::after {
-                    background: $color-step-done;
-                }
-                .su-stepper-step::before {
-                    background-color: $backgroundcolor-step-done;
-                    border: 1px solid $color-step-done;
-                    color: $color-step-done;
-                }
-                span {
-                    color: $font-color-standard;
-                }
-            }
-        }
 
         .su-stepper-step {
+            counter-increment: steps;
+            @include flex(1 0 0);
             position: relative;
             z-index: 1;
 
-            &::before {
-                content: counter(etape);
-                counter-increment: etape;
-                text-align: center;
-                display: block;
-                    background-color: $backgroundcolor-step-undone;
-                    border: 1px solid $color-step-undone;
-                    color: $color-step-undone;
-                font-size: 16px;
-                font-weight: $font-weight-step;
-                height: $size-step;
-                width: $size-step;
-                line-height: $size-step;
-                text-align: center;
-                border-radius: $radius-step;
-            }
             span {
                 display: block;
                 white-space: nowrap;
-                position: absolute;
-                bottom: -23px;
-                left: 50%;
-                transform: translateX(-50%);
                 font-size: $font-size-small;
-                color: $color-step-undone;
+                color: $color-step-label-done;
+                font-weight: $font-weight-step;
+                text-align: center;
+            }
+            &::before {
+                content: counter(steps);
+                @include display-flex();
+                @include justify-content(center, center);
+                @include align-items(center);
+                margin: 0 auto $margin-bottom-step-bullet;
+                height: $size-step-bullet;
+                width: $size-step-bullet;
+                border-radius: $radius-step-bullet;
+                border: $border-step-bullet-done;
+                background: $background-step-bullet-done;
+                color: $color-step-bullet-done;
+                transition: border .5s, background .5s, color .5s;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: $height-line-steps;
+                background: $background-step-line-done;
+                top: $size-step-bullet / 2;
+                left: 50%;
+                z-index: -1;
+            }
+            &:last-child::after {
+                display: none;
+            }
+            &.su-enabled {
+                span {
+                    color: $color-step-label-enabled;
+                }
+                &::before {
+                    color: $color-step-bullet-enabled;
+                    border: $border-step-bullet-enabled;
+                    background: $background-step-bullet-enabled;
+                }
+                &::after {
+                    background: $background-step-line-undone;
+                }
+            }
+            &.su-enabled ~ .su-stepper-step {
+                span {
+                    color: $color-step-label-undone;
+                }
+                &::before {
+                    border: $border-step-bullet-undone;
+                    background: $background-step-bullet-undone;
+                    color: $color-step-bullet-undone;
+                }
+                &::after {
+                    background: $background-step-line-undone;
+                }
             }
         }
     }
-    .su-article ol.su-stepper {
-        display: block;
+}
+
+@media (max-width: $max-breakpoint-sm) {
+    .sipaui .su-stepper .su-stepper-step span {
+        display: none;
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 

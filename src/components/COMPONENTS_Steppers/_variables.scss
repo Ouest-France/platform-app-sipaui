@@ -7,22 +7,38 @@
 
 // STEPPER ------------------------------------------------------------------------------------------/
 
+$font-weight-step:              $font-weight-thin                !default;
+
 // Couleurs
-$font-weight-step:              $font-weight-bold                !default;
+//Pas fait
+$background-step-bullet-undone:         #fff                            !default;
+$border-step-bullet-undone:             1px solid $color-main-3         !default;
+$color-step-bullet-undone:              $color-main-3                   !default;
+$background-step-line-undone:           $color-main-3                   !default;
+$color-step-label-undone:               $color-main-3                   !default;
 
-$backgroundcolor-step-undone:   #fff                             !default;
-$color-step-undone:             $color-main-3                    !default;
+//Hover
+$background-step-bullet-hover:          #fff                            !default;
+$border-step-bullet-hover:              1px solid $color-secondary-2    !default;
+$color-step-bullet-hover:               $color-secondary-2              !default;
+$color-step-label-hover:                $font-color-standard            !default;
 
-$backgroundcolor-step-hover:    #fff                             !default;
-$color-step-hover:              $color-secondary-2               !default;
+//Actif
+$background-step-bullet-enabled:        $color-secondary-1              !default;
+$border-step-bullet-enabled:            1px solid $color-secondary-1    !default;
+$color-step-bullet-enabled:             #fff                            !default;
+$color-step-label-enabled:              $font-color-standard            !default;
 
-$backgroundcolor-step-enabled:  $color-secondary-1               !default;
-$color-step-enabled:            #fff                             !default;
-
-$backgroundcolor-step-done:     #fff                             !default;
-$color-step-done:               $color-secondary-1               !default;
+//Fait
+$background-step-bullet-done:           #fff                             !default;
+$border-step-bullet-done:               1px solid $color-secondary-1     !default;
+$color-step-bullet-done:                $color-secondary-1               !default;
+$background-step-line-done:             $color-secondary-1               !default;
+$color-step-label-done:                 $font-color-standard             !default;
 
 
 // Tailles
-$size-step:                     30px                             !default;
-$radius-step:                   100%                             !default;
+$size-step-bullet:               30px                             !default;
+$radius-step-bullet:             100%                             !default;
+$margin-bottom-step-bullet:      10px                             !default;
+$height-line-steps:              1px                              !default;

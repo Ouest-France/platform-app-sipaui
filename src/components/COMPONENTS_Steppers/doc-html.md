@@ -19,31 +19,77 @@ Un indicateur de progression est en fait une simple liste ordonnée (`<ol>`) red
 ### À 3 étapes
 
 ```html
-
+<ol class="su-stepper surcharge-storybook">
+	<li class="su-stepper-step su-done">
+		<span>Étape 1</span>
+	</li>
+	<li class="su-stepper-step su-enabled">
+		<span>Étape 2</span>
+	</li>
+	<li class="su-stepper-step">
+		<span>Étape 3</span>
+	</li>
+</ol>
 ```
 
 
 <div class="sipaui">
 	<ol class="su-stepper surcharge-storybook">
-		<li class="su-done">
-			<div class="su-stepper-step">
-				<span>hceiuz fhuezqif zi hfezo</span>
-			</div>
+		<li class="su-stepper-step su-done">
+			<span>Étape 1</span>
 		</li>
-		<li class="su-enabled">
-			<div class="su-stepper-step">
-				<span>jvidso fjqiodf voif hiodwjf</span>
-			</div>
+		<li class="su-stepper-step su-enabled">
+			<span>Étape 2</span>
 		</li>
-		<li>
-			<div class="su-stepper-step">
-				<span>Étape 3</span>
-			</div>
+		<li class="su-stepper-step">
+			<span>Étape 3</span>
 		</li>
 	</ol>
 </div>
 
 ### À 5 étapes
+
+
+```html
+<ol class="su-stepper surcharge-storybook">
+	<li class="su-stepper-step su-done">
+		<span>Étape 1</span>
+	</li>
+	<li class="su-stepper-step su-enabled">
+		<span>Étape 2</span>
+	</li>
+	<li class="su-stepper-step">
+		<span>Étape 3</span>
+	</li>
+	<li class="su-stepper-step">
+		<span>Étape 4</span>
+	</li>
+	<li class="su-stepper-step">
+		<span>Étape 5</span>
+	</li>
+</ol>
+```
+
+
+<div class="sipaui">
+	<ol class="su-stepper surcharge-storybook">
+		<li class="su-stepper-step su-done">
+			<span>Étape 1</span>
+		</li>
+		<li class="su-stepper-step su-enabled">
+			<span>Étape 2</span>
+		</li>
+		<li class="su-stepper-step">
+			<span>Étape 3</span>
+		</li>
+		<li class="su-stepper-step">
+			<span>Étape 4</span>
+		</li>
+		<li class="su-stepper-step">
+			<span>Étape 5</span>
+		</li>
+	</ol>
+</div>
 
 ### Dans un sous-thème
 
@@ -51,7 +97,7 @@ Un stepper peut s'adapter à un sous-thème. Voici un exemple avec l’abonnemen
 
 ### Variation avec une coche finale
 
-## Indicateur de progression avec contenu lié
+## Indicateur de progression cliquable avec contenu lié
 
 <div id="liste-classes">
 
