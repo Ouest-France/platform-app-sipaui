@@ -113,31 +113,5 @@
                 box-shadow: $shadow-button-subscription-active;
             }
         }
-
-        // PREMIUM ------------------------------------------------------------------------------------------/
-        &.su-premium {
-            background: $background-button-premium;
-            color: $color-button-premium;
-            text-transform: $text-transform-button-premium;
-            border: $border-button-premium;
-            font-weight: $font-weight-button-premium;
-            border-radius: $radius-button-premium;
-            box-shadow: $shadow-button-premium;
-
-            &:hover:not(.su-disabled):not([disabled]),
-            &:focus:not(.su-disabled):not([disabled]) {
-                background: $background-button-premium-hover;
-                color: $color-button-premium-hover;
-                border: $border-button-premium-hover;
-                box-shadow: $shadow-button-premium-hover;
-            }
-
-            &:active:not(.su-disabled):not([disabled]) {
-                background:$background-button-premium-active;
-                color: $color-button-premium-active;
-                border: $border-button-premium-active;
-                box-shadow: $shadow-button-premium-active;
-            }
-        }
     }
 }

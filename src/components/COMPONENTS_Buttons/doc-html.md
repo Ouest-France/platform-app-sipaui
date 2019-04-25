@@ -63,14 +63,6 @@ Cerise&nbsp;:
 	<button class="su-button su-subscription">Bouton abonnement</button>
 </div>
 
-### Bouton Premium
-```html
-<button class="su-button su-premium">Bouton premium</button>
-```
-<div class="sipaui">
-	<button class="su-button su-premium">Bouton premium</button>
-</div>
-
 ## Contextes particuliers
 
 ### Boutons inactifs
