@@ -42,17 +42,9 @@ Dans un contexte d'abonnement, la couleur de fond du bouton primaire devient #DB
 
   Enabled | Hover / Focus / Pressed
   ------------ | -------------
-![button__primary__subscription__enabled](design/button__primary__subscription__enabled.png)|   ![button__primary__subscription__hover](design/button__primary__subscription__hover.png)
-Couleur : #FFCC33 <br> Texte : #000000 |  Couleur : #E7AF07 <br> -
-
-##### Bouton primaire Premium
-
-Dans un contexte Premium, la couleur de fond du bouton primaire devient #DBA504.
-
- Enabled | Hover / Focus / Pressed
-  ------------ | -------------
 ![sbutton__primary__premium__enabled](design/button__primary__premium__enabled.png)|   ![button__primary__premium__hover](design/button__primary__premium__hover.png)
-Couleur : #DBA504  <br> Texte : #FFFFFF |  Couleur : #C2940C <br> -
+Couleur : #DBA504 <br> Texte : #FFFFFF |  Couleur : #C2940C <br> -
+
 
 ### Bouton secondaire
 
@@ -101,7 +93,6 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
  </div>
  </div>
-
 
 ### Boutons d'un même sujet
 
