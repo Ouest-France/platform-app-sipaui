@@ -98,9 +98,9 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 - Les boutons liés à un même sujet ont la même largeur.
 - La distance entre ces boutons est constante.
+- Des boutons placés de manière verticales sont espacés de 20px.
 - Un seul bouton primaire est présent.
 - Deux boutons secondaires maximum sont présents. De plus, ils sont positionnés de manière proche.
-- Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte.
 - Sur mobile, le bouton primaire se trouve au-dessus des boutons secondaires.
 - Sur desktop, lorsque vous utilisez un bouton primaire et un bouton secondaire, le bouton primaire doit être placé à gauche. **Une exception s'applique dans le cas d'écran séquentiel**, le bouton primaire est à droite.
 
@@ -120,7 +120,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ![Image_button_2 buttons_ko](design/Image_button_buttons_ko.png)  |
 ------------ |
-**Don’t** <br/> Ne placez pas ces boutons les uns en dessous de l'autre.
+**Don’t** <br/> Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte.
 
  </div>
  </div>
