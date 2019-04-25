@@ -28,13 +28,13 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">1.2.2</span></div>
+                                <div class="table-cell"><span class="version">1.2.1</span></div>
                                 <ul class="table-cell">
                                     <li>Composants&nbsp;:
                                         <ul>
                                             <li>Petit texte</li>
                                             <li>Mutualisation des sous-thèmes «&nbsp;abonnement&nbsp;» et «&nbsp;premium&nbsp;»</li>
-                                            <li>Stepper</li>
+                                            <!--li>Stepper</li-->
                                         </ul>
                                     </li>
                                 </ul>
