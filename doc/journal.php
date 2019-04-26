@@ -49,7 +49,7 @@
                                         <ul>
                                             <li>Petit texte</li>
                                             <li>Mutualisation des sous-thèmes «&nbsp;abonnement&nbsp;» et «&nbsp;premium&nbsp;»</li>
-                                            <!--li>Stepper</li-->
+                                            <li>Stepper</li>
                                         </ul>
                                     </li>
                                 </ul>
