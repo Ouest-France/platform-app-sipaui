@@ -5,7 +5,7 @@
 */
 
 
-// STEPPER ------------------------------------------------------------------------------------------/
+// STEPPER BASE------------------------------------------------------------------------------------------/
 
 $font-weight-step:              $font-weight-thin                !default;
 
@@ -38,7 +38,38 @@ $color-step-label-done:                 $font-color-standard             !defaul
 
 
 // Tailles
-$size-step-bullet:               30px                             !default;
-$radius-step-bullet:             100%                             !default;
-$margin-bottom-step-bullet:      $margin-xsmall                   !default;
-$height-line-steps:              1px                              !default;
+$size-step-bullet:                      30px                             !default;
+$radius-step-bullet:                    100%                             !default;
+$margin-bottom-step-bullet:             $margin-xsmall                   !default;
+$height-line-steps:                     1px                              !default;
+
+// STEPPER ABONNEMENT------------------------------------------------------------------------------------------/
+
+// Couleurs
+//Pas fait
+/*
+$background-step-bullet-undone-subscription:                    !default;
+$border-step-bullet-undone-subscription:                        !default;
+$color-step-bullet-undone-subscription:                         !default;
+$background-step-line-undone-subscription:                      !default;
+$color-step-label-undone-subscription:                          !default;
+*/
+
+//Hover
+//$background-step-bullet-hover-subscription:                                           !default;
+$border-step-bullet-hover-subscription:              1px solid $color-subscription-2    !default;
+$color-step-bullet-hover-subscription:               $color-subscription-2              !default;
+//$color-step-label-hover-subscription:                                                 !default;
+
+//Actif
+$background-step-bullet-enabled-subscription:        $color-subscription-1              !default;
+$border-step-bullet-enabled-subscription:            1px solid $color-subscription-1    !default;
+$color-step-bullet-enabled-subscription:             #fff                               !default;
+//$color-step-label-enabled-subscription:                                               !default;
+
+//Fait
+//$background-step-bullet-done-subscription:                                             !default;
+$border-step-bullet-done-subscription:               1px solid $color-subscription-1     !default;
+$color-step-bullet-done-subscription:                $color-subscription-1               !default;
+$background-step-line-done-subscription:             $color-subscription-1               !default;
+//$color-step-label-done-subscription:                                                   !default;
