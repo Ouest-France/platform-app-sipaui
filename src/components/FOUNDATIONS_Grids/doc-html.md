@@ -514,7 +514,6 @@ Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La 
 		</p>
 	</div>
 </div>
-</div>
 ```
 
 <div class="sipaui demo-conteneur">
