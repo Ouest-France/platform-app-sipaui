@@ -92,6 +92,14 @@
     }
 
     /*  Typo ------------------------------------------------------------------*/
+    body .markdown-body h1,
+    body .markdown-body h2,
+    body .markdown-body h3,
+    body .markdown-body h4,
+    body .markdown-body h5 {
+        border: none !important;
+    }
+
     body .markdown-body > p,
     body .markdown-body > h1,
     body .markdown-body > h2,
@@ -105,7 +113,12 @@
     body .markdown-body > h2,
     body .markdown-body > h3,
     body .markdown-body > h4,
-    body .markdown-body > h5 {
+    body .markdown-body > h5,
+    body .markdown-body div:not(.sipaui) h1,
+    body .markdown-body div:not(.sipaui) h2,
+    body .markdown-body div:not(.sipaui) h3,
+    body .markdown-body div:not(.sipaui) h4,
+    body .markdown-body div:not(.sipaui) h5 {
         color: #000;
         font-weight: 300;
         border: none;
@@ -113,15 +126,16 @@
     body .markdown-body > h1,
     body #root div[style] > h1 {
         font-size: 6rem;
-        border: none;
         font-weight: bold;
     }
-    body .markdown-body > h2 {
+    body .markdown-body > h2,
+    body .markdown-body div:not(.sipaui) h2 {
         font-size: 3.4rem;
         margin: 100px 0 20px;
         padding: 0;
     }
-    body .markdown-body > h3 {
+    body .markdown-body > h3,
+    body .markdown-body div:not(.sipaui) h3 {
         font-size: 2.8rem;
         margin: 50px 0 10px;
     }
@@ -219,8 +233,7 @@
     }
     body h1.titre-accueil {
         width: 200px;
-        color: #fff;
-        border: none;
+        color: #fff !important;
         padding: 0;
     }
     .zone-titre-accueil:before,
