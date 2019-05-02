@@ -28,14 +28,14 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version breaking">2.0.0</span></div>
+                                <div class="table-cell"><span class="version breaking">2.0.1</span></div>
                                 <div class="table-cell">
                                     <p><strong>Breaking change&nbsp;!</strong></p>
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li>Évol&nbsp;: la grille «&nbsp;md&nbsp;» passe de 6 à 24 colonnes.</li>
-                                                <!--li>Stepper</li-->
+                                                <li>Stepper</li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -123,10 +123,6 @@
                         <h2>Roadmap</h2>
 
                         <ul class="su-not-list">
-                            <li class="table-row">
-                                <div class="table-cell"><span class="version">2.0</span></div>
-                                <div class="table-cell">Stepper.</div>
-                            </li>
                             <li class="table-row">
                                 <div class="table-cell"><span class="version">2.1</span></div>
                                 <div class="table-cell">Petit select.</div>
