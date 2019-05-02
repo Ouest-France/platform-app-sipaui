@@ -107,8 +107,8 @@
 
 @media screen and (min-width: $min-breakpoint-md) {
     .sipaui .su-row {
-        @include grid-col-definition(md, $grid-small-max-col);
-        @include grid-offset-definition(md, $grid-small-max-col);
+        @include grid-col-definition(md, $grid-large-max-col);
+        @include grid-offset-definition(md, $grid-large-max-col);
     }
 }
 

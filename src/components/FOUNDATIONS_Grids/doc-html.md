@@ -52,37 +52,37 @@ Exemple de la grille standard de 6 colonnes sur petits écrans et 24 sur grand (
 Pour construire cette grille, il faut d’abord un rang avec la classe `su-row`. Ce rang contient les blocs devant s'afficher en colonne. **Chaque bloc prend par défaut toute la largeur du rang**. Pour en faire des colonnes et leur donner une largeur spécifique, il faut leur donner des classes indiquant **à partir de quel point de rupture** ils deviennent une colonne et **quelle largeur doit faire cette colonne**. Les points de rupture sont bien sûr déclarés en `xs`, `sm`… et les largeurs en nombre de colonnes de la grille. La construction de la classe se fait donc ainsi&nbsp;: `su-col`+`-point de rupture`+`-nombre de colonnes` (exemple&nbsp;: `su-col-md-3`).
 
 Aussi&nbsp;:
-- `su-col-md-3` signifie que le bloc, à partir de la taille d’écran `md` **et au-dessus**, fera la moitié de la largeur du rang (3 colonnes sur les 6 utilisées sur petit écran).
-- `su-col-lg-18` signifie que le bloc, à partir de la taille d’écran `lg` **et au-dessus**, fera les 3/4 de la largeur du rang (18 colonnes sur les 24 utilisées sur grand écran).
+- `su-col-xs-3` signifie que le bloc, à partir de la taille d’écran `xs` **et au-dessus**, fera la moitié de la largeur du rang (3 colonnes sur les 6 utilisées sur petit écran).
+- `su-col-md-18` signifie que le bloc, à partir de la taille d’écran `md` **et au-dessus**, fera les 3/4 de la largeur du rang (18 colonnes sur les 24 utilisées sur grand écran).
 
-**NB&nbsp;: Il est important que la somme des** `-nombre de colonnes` **sur un rang soit égal à 6 sur petit écran (xs, sm et md) et 24 sur grand (lg et xl).**
+**NB&nbsp;: Il est important que la somme des** `-nombre de colonnes` **sur un rang soit égal à 6 sur petit écran (xs et sm) et 24 sur grand (md, lg et xl).**
 
 ```html
 <div class="su-row">
-	<div class="su-col-xs-1 su-col-lg-1"><p>1</p></div>
-	<div class="su-col-xs-1 su-col-lg-1"><p>2</p></div>
-	<div class="su-col-xs-1 su-col-lg-1"><p>3</p></div>
-	<div class="su-col-xs-1 su-col-lg-1"><p>4</p></div>
-	<div class="su-col-xs-1 su-col-lg-1"><p>5</p></div>
-	<div class="su-col-xs-1 su-col-lg-1"><p>6</p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>7</p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>8</p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>9</p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>10<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>11<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>12<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>13<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>14<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>15<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>16<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>17<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>18<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>19<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>20<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>21<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>22<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>23<p></div>
-	<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>24<p></div>
+	<div class="su-col-xs-1 su-col-md-1"><p>1</p></div>
+	<div class="su-col-xs-1 su-col-md-1"><p>2</p></div>
+	<div class="su-col-xs-1 su-col-md-1"><p>3</p></div>
+	<div class="su-col-xs-1 su-col-md-1"><p>4</p></div>
+	<div class="su-col-xs-1 su-col-md-1"><p>5</p></div>
+	<div class="su-col-xs-1 su-col-md-1"><p>6</p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>7</p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>8</p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>9</p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>10<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>11<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>12<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>13<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>14<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>15<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>16<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>17<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>18<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>19<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>20<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>21<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>22<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>23<p></div>
+	<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>24<p></div>
 </div>
 ```
 
@@ -92,30 +92,30 @@ Aussi&nbsp;:
 			Page
 		</div>
 		<div class="su-row">
-			<div class="su-col-xs-1 su-col-lg-1"><p>1</p></div>
-			<div class="su-col-xs-1 su-col-lg-1"><p>2</p></div>
-			<div class="su-col-xs-1 su-col-lg-1"><p>3</p></div>
-			<div class="su-col-xs-1 su-col-lg-1"><p>4</p></div>
-			<div class="su-col-xs-1 su-col-lg-1"><p>5</p></div>
-			<div class="su-col-xs-1 su-col-lg-1"><p>6</p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>7</p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>8</p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>9</p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>10<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>11<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>12<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>13<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>14<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>15<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>16<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>17<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>18<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>19<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>20<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>21<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>22<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>23<p></div>
-			<div class="su-col-xs-1 su-col-lg-1 su-visible-lg su-visible-xl"><p>24<p></div>
+			<div class="su-col-xs-1 su-col-md-1"><p>1</p></div>
+			<div class="su-col-xs-1 su-col-md-1"><p>2</p></div>
+			<div class="su-col-xs-1 su-col-md-1"><p>3</p></div>
+			<div class="su-col-xs-1 su-col-md-1"><p>4</p></div>
+			<div class="su-col-xs-1 su-col-md-1"><p>5</p></div>
+			<div class="su-col-xs-1 su-col-md-1"><p>6</p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>7</p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>8</p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>9</p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>10<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>11<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>12<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>13<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>14<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>15<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>16<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>17<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>18<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>19<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>20<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>21<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>22<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>23<p></div>
+			<div class="su-col-xs-1 su-col-md-1 su-hidden-xs su-hidden-sm"><p>24<p></div>
 		</div>
 	</div>
 </div>
@@ -131,28 +131,28 @@ Dans l’exemple ci-dessous, la 1ère colonne est invisible en mobile.
 ```html
 <div class="su-container">
 	<div class="su-row">
-		<div class="su-hidden-sm su-col-md-3 su-col-lg-2">
+		<div class="su-hidden-sm su-col-md-12 su-col-lg-2">
 			<p>
 				1.<br />
-				su-hidden-sm su-col-md-3 su-col-lg-2
+				su-hidden-sm su-col-md-12 su-col-lg-2
 			</p>
 		</div>
-		<div class="su-col-md-3 su-col-lg-12 su-col-xl-10">
+		<div class="su-col-md-12 su-col-lg-12 su-col-xl-10">
 			<p>
 				2.<br />
-				su-col-md-3 su-col-lg-12 su-col-xl-10
+				su-col-md-12 su-col-lg-12 su-col-xl-10
 			</p>
 		</div>
-		<div class="su-col-md-3 su-col-lg-3 su-col-xl-4">
+		<div class="su-col-md-12 su-col-lg-3 su-col-xl-4">
 			<p>
 				3.<br />
-				su-col-md-3 su-col-lg-3 su-col-xl-4
+				su-col-md-12 su-col-lg-3 su-col-xl-4
 			</p>
 		</div>
-		<div class="su-col-md-3 su-col-lg-7 su-col-xl-8">
+		<div class="su-col-md-12 su-col-lg-7 su-col-xl-8">
 			<p>
 				4.<br />
-				su-col-md-3 su-col-lg-7 su-col-xl-8
+				su-col-md-12 su-col-lg-7 su-col-xl-8
 			</p>
 		</div>
 	</div>
@@ -166,28 +166,28 @@ Dans l’exemple ci-dessous, la 1ère colonne est invisible en mobile.
 		</p>
 		<div class="su-container">
 			<div class="su-row">
-				<div class="su-hidden-sm su-col-md-3 su-col-lg-2">
+				<div class="su-hidden-sm su-col-md-12 su-col-lg-2">
 					<p>
 						1.<br />
-						su-hidden-sm su-col-md-3 su-col-lg-2
+						su-hidden-sm su-col-md-12 su-col-lg-2
 					</p>
 				</div>
-				<div class="su-col-md-3 su-col-lg-12 su-col-xl-10">
+				<div class="su-col-md-12 su-col-lg-12 su-col-xl-10">
 					<p>
 						2.<br />
-						su-col-md-3 su-col-lg-12 su-col-xl-10
+						su-col-md-12 su-col-lg-12 su-col-xl-10
 					</p>
 				</div>
-				<div class="su-col-md-3 su-col-lg-3 su-col-xl-4">
+				<div class="su-col-md-12 su-col-lg-3 su-col-xl-4">
 					<p>
 						3.<br />
-						su-col-md-3 su-col-lg-3 su-col-xl-4
+						su-col-md-12 su-col-lg-3 su-col-xl-4
 					</p>
 				</div>
-				<div class="su-col-md-3 su-col-lg-7 su-col-xl-8">
+				<div class="su-col-md-12 su-col-lg-7 su-col-xl-8">
 					<p>
 						4.<br />
-						su-col-md-3 su-col-lg-7 su-col-xl-8
+						su-col-md-12 su-col-lg-7 su-col-xl-8
 					</p>
 				</div>
 			</div>
@@ -494,7 +494,7 @@ Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La 
 
 ```html
 <div class="su-row">
-	<div class="su-col-md-3 su-col-lg-16">
+	<div class="su-col-md-12 su-col-lg-16">
 		<div class="su-grid-auto su-row su-has-gutter">
 			<div class="su-col">
 				<p>
@@ -508,7 +508,7 @@ Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La 
 			</div>
 		</div>
 	</div>
-	<div class="su-col-md-3 su-col-lg-8">
+	<div class="su-col-md-12 su-col-lg-8">
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
@@ -524,7 +524,7 @@ Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La 
 		</p>
 		<div class="su-container">
 			<div class="su-row">
-				<div class="su-col-md-3 su-col-lg-16">
+				<div class="su-col-md-12 su-col-lg-16">
 					<div class="su-grid-auto su-row su-has-gutter">
 						<div class="su-col">
 							<p class="contenu">
@@ -538,7 +538,7 @@ Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La 
 						</div>
 					</div>
 				</div>
-				<div class="su-col-md-3 su-col-lg-8">
+				<div class="su-col-md-12 su-col-lg-8">
 					<p class="contenu">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
