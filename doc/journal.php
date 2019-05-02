@@ -28,6 +28,21 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
+                                <div class="table-cell"><span class="version breaking">2.0.0</span></div>
+                                <div class="table-cell">
+                                    <p><strong>Breaking change&nbsp;!</strong></p>
+                                    <ul>
+                                        <li>Composants&nbsp;:
+                                            <ul>
+                                                <li>Évol&nbsp;: la grille «&nbsp;md&nbsp;» passe de 6 à 24 colonnes.</li>
+                                                <!--li>Stepper</li-->
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="table-row">
                                 <div class="table-cell"><span class="version">1.2.1</span></div>
                                 <ul class="table-cell">
                                     <li>Composants&nbsp;:
@@ -109,28 +124,24 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version breaking">2.0</span></div>
-                                <div class="table-cell">La grille «&nbsp;md&nbsp;» passe de 6 à 24 colonnes.</div>
+                                <div class="table-cell"><span class="version">2.0</span></div>
+                                <div class="table-cell">Stepper.</div>
                             </li>
                             <li class="table-row">
                                 <div class="table-cell"><span class="version">2.1</span></div>
-                                <div class="table-cell">Mot de passe.</div>
+                                <div class="table-cell">Petit select.</div>
                             </li>
                             <li class="table-row">
                                 <div class="table-cell"><span class="version">2.2</span></div>
-                                <div class="table-cell">Popin.</div>
+                                <div class="table-cell">Mot de passe.</div>
                             </li>
                             <li class="table-row">
                                 <div class="table-cell"><span class="version">2.3</span></div>
-                                <div class="table-cell">Pagination.</div>
+                                <div class="table-cell">Popin.</div>
                             </li>
                             <li class="table-row">
                                 <div class="table-cell"><span class="version">2.4</span></div>
-                                <div class="table-cell">Réseaux sociaux.</div>
-                            </li>
-                            <li class="table-row">
-                                <div class="table-cell"><span class="version">2.5</span></div>
-                                <div class="table-cell">Tags.</div>
+                                <div class="table-cell">Pagination.</div>
                             </li>
                         </ul>
                     </section>
