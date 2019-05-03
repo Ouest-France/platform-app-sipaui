@@ -205,6 +205,29 @@ Il faut ajouter à l’indicateur de progression la classe `su-stepper-nav` pour
 Là aussi il faut lui ajouter la classe `su-stepper-nav` pour activer le «&nbsp;hover&nbsp;», ainsi qu'un élément de navigation portant la classe `su-step-back`. Seulement, cette fois, cet élément de navigation doit être un lien (`<a href="">`).
 NB De part le principe même du changement d’URL il est indémontrable ici.
 
+```html
+<ol class="su-stepper su-stepper-nav">
+	<li class="su-stepper-step">
+		<a href="url/de/etape1" class="su-step-back">Retour à --nom de l’étape 1--</a>
+		<span>Étape 1</span>
+	</li>
+	<li class="su-stepper-step">
+		<a href="url/de/etape2" class="su-step-back">Retour à --nom de l’étape 2--</a>
+		<span>Étape 2</span>
+	</li>
+	<li class="su-stepper-step su-enabled">
+		<span>Étape 3</span>
+	</li>
+	<li class="su-stepper-step">
+		<span>Étape 4</span>
+	</li>
+</ol>
+<div>
+	<h2>Etape 3</h2>
+	<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+</div>
+```
+
 <div class="sipaui">
 	<ol class="su-stepper su-stepper-nav surcharge-storybook">
 		<li class="su-stepper-step">
