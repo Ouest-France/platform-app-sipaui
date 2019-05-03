@@ -166,13 +166,12 @@ Il s'agit ici de la version complète avec retour possible aux étapes précéde
 </ul>
 
 ### Version dynamique via affichage de contenu masqué
+Il faut ajouter à l’indicateur de progression la classe `su-stepper-nav` pour activer le changement d’apparence en «&nbsp;hover&nbsp;».
 
 <div class="sipaui">
 	<ol class="su-stepper surcharge-storybook">
 		<li class="su-stepper-step">
-			<a href>
-				<span>Étape 1</span>
-			</a>
+			<span>Étape 1</span>
 		</li>
 		<li class="su-stepper-step">
 			<span>Étape 2</span>
@@ -203,16 +202,17 @@ Il s'agit ici de la version complète avec retour possible aux étapes précéde
 </div>
 
 ### Version statique via changement d’URL
-(de part le principe même du changement d’URL il est indémontrable ici).
+Là aussi il faut lui ajouter la classe `su-stepper-nav` pour activer le «&nbsp;hover&nbsp;», ainsi qu'un élément de navigation portant la classe `su-step-back`. Seulement, cette fois, cet élément de navigation doit être un lien (`<a href="">`).
+NB De part le principe même du changement d’URL il est indémontrable ici.
 
 <div class="sipaui">
-	<ol class="su-stepper surcharge-storybook">
+	<ol class="su-stepper su-stepper-nav surcharge-storybook">
 		<li class="su-stepper-step">
-			<a href>
-				<span>Étape 1</span>
-			</a>
+			<a href="url/de/etape1" class="su-step-back">Retour à --nom de l’étape 1--</a>
+			<span>Étape 1</span>
 		</li>
 		<li class="su-stepper-step">
+			<a href="url/de/etape2" class="su-step-back">Retour à --nom de l’étape 2--</a>
 			<span>Étape 2</span>
 		</li>
 		<li class="su-stepper-step su-enabled">
@@ -222,21 +222,9 @@ Il s'agit ici de la version complète avec retour possible aux étapes précéde
 			<span>Étape 4</span>
 		</li>
 	</ol>
-	<div class="su-visually-hidden">
-		<h2>Etape 1</h2>
-		<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis.</p>
-	</div>
-	<div class="su-visually-hidden">
-		<h2>Etape 2</h2>
-		<p>Vestibulum id ligula porta felis euismod semper.</p>
-	</div>
 	<div>
 		<h2>Etape 3</h2>
 		<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-	</div>
-	<div class="su-visually-hidden">
-		<h2>Etape 4</h2>
-		<p>Purus Ridiculus Vulputate Quam.</p>
 	</div>
 </div>
 
@@ -251,5 +239,7 @@ Il s'agit ici de la version complète avec retour possible aux étapes précéde
 - `su-stepper-step`
 - `su-subscription`
 - `su-check`
+- `su-stepper-nav`
+- `su-step-back`
 
 </div>

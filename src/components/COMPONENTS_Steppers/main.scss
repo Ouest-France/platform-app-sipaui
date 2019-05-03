@@ -61,19 +61,39 @@
                     background: $background-step-line-undone !important; //!important pour surcharger les sous-thèmes comme Abonnement
                 }
             }
-            &.su-enabled ~ .su-stepper-step {
+            &.su-enabled ~ .su-stepper-step,
+            &.su-enabled ~ .su-stepper-step:hover {
                 span {
                     color: $color-step-label-undone;
                 }
                 &::before {
-                    border: $border-step-bullet-undone;
-                    background: $background-step-bullet-undone;
-                    color: $color-step-bullet-undone;
+                    border: $border-step-bullet-undone !important;
+                    background: $background-step-bullet-undone !important;
+                    color: $color-step-bullet-undone !important;
                 }
                 &::after {
                     background: $background-step-line-undone;
                 }
             }
+        }
+        // VERSION NAVIGABLE ---------------------------------/
+        &.su-stepper-nav {
+            .su-stepper-step:not(.su-enabled):hover::before {
+                border: $border-step-bullet-hover;
+                background: $background-step-bullet-hover;
+                color: $color-step-bullet-hover;
+            }
+        }
+        .su-step-back {
+            display:block;
+            text-indent: -1000px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: 70%;
+            min-width: $size-step-bullet;
         }
 
         // COCHE FINALE ---------------------------------/
