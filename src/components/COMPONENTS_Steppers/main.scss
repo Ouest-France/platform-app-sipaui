@@ -14,33 +14,41 @@
             position: relative;
             z-index: 1;
 
+            > div {
+                text-align: center;
+
+                &::before {
+                    content: counter(steps);
+                    @include display-flex();
+                    @include flex-direction(column);
+                    @include justify-content(center, center);
+                    margin: 0 auto;
+                    text-align: center;
+                    vertical-align: middle;
+                    height: $size-step-bullet;
+                    width: $size-step-bullet;
+                    border-radius: $radius-step-bullet;
+                    border: $border-step-bullet-done;
+                    background-color: $background-step-bullet-done;
+                    color: $color-step-bullet-done;
+                    font-weight: $font-weight-step-bullet;
+                    transition: border .5s, background-color .5s, color .5s;
+                }
+            }
             span {
-                display: block;
                 font-size: $font-size-small;
                 color: $color-step-label-done;
                 font-weight: $font-weight-step;
-                text-align: center;
-            }
-            &::before {
-                content: counter(steps);
-                @include display-flex();
-                @include justify-content(center, center);
-                @include align-items(center);
-                margin: 0 auto $margin-bottom-step-bullet;
-                height: $size-step-bullet;
-                width: $size-step-bullet;
-                border-radius: $radius-step-bullet;
-                border: $border-step-bullet-done;
-                background: $background-step-bullet-done;
-                color: $color-step-bullet-done;
-                transition: border .5s, background .5s, color .5s;
+                position: relative;
+                padding-top: calc(#{$size-step-bullet} + #{$margin-bottom-step-bullet});
+                transition: color .5s;
             }
             &::after {
                 content: '';
                 position: absolute;
                 width: 100%;
                 height: $height-line-steps;
-                background: $background-step-line-done;
+                background-color: $background-step-line-done;
                 top: $size-step-bullet / 2;
                 left: 50%;
                 z-index: -1;
@@ -52,58 +60,70 @@
                 span {
                     color: $color-step-label-enabled;
                 }
-                &::before {
+                &> div::before {
                     color: $color-step-bullet-enabled;
                     border: $border-step-bullet-enabled;
-                    background: $background-step-bullet-enabled;
+                    background-color: $background-step-bullet-enabled;
                 }
                 &::after {
-                    background: $background-step-line-undone !important; //!important pour surcharger les sous-thèmes comme Abonnement
+                    background-color: $background-step-line-undone !important; //!important pour surcharger les sous-thèmes comme Abonnement
+                }
+                .su-step-back {
+                    display: none;
                 }
             }
             &.su-enabled ~ .su-stepper-step,
             &.su-enabled ~ .su-stepper-step:hover {
                 span {
-                    color: $color-step-label-undone;
+                    color: $color-step-label-undone !important;
                 }
-                &::before {
+                &> div::before {
                     border: $border-step-bullet-undone !important;
-                    background: $background-step-bullet-undone !important;
+                    background-color: $background-step-bullet-undone !important;
                     color: $color-step-bullet-undone !important;
                 }
                 &::after {
-                    background: $background-step-line-undone;
+                    background-color: $background-step-line-undone;
+                }
+                .su-step-back {
+                    display: none;
                 }
             }
         }
         // VERSION NAVIGABLE ---------------------------------/
         &.su-stepper-nav {
-            .su-stepper-step:not(.su-enabled):hover::before {
-                border: $border-step-bullet-hover;
-                background: $background-step-bullet-hover;
-                color: $color-step-bullet-hover;
+            .su-stepper-step:not(.su-enabled) {
+                > div:hover::before {
+                    border: $border-step-bullet-hover;
+                    background-color: $background-step-bullet-hover;
+                    color: $color-step-bullet-hover;
+                }
+                span:hover {
+                    color: $color-step-bullet-hover;
+                }
             }
         }
         .su-step-back {
             display:block;
             text-indent: -1000px;
+            overflow: hidden;
             position: absolute;
             top: 0;
-            left: 50%;
-            transform: translateX(-50%);
             height: 100%;
-            width: 70%;
-            min-width: $size-step-bullet;
+            width: 100%;
+            background: none; //pour les buttons
+            border: none; //pour les buttons
         }
 
         // COCHE FINALE ---------------------------------/
         &.su-check {
-             .su-stepper-step {
+             .su-stepper-step:last-child {
                   &.su-enabled {
-                    &::before {
+                    &> div::before {
                         content: '';
-                        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FscXVlXzEiIGRhdGEtbmFtZT0iQ2FscXVlIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDIyLjk0IDI1LjA2Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPnZhbGlkZXI8L3RpdGxlPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxMS45NyAyNS4wNSAwIDEzLjA4IDIuMTIgMTAuOTYgMTEuMDUgMTkuODkgMjAuMjIgMCAyMi45NCAxLjI2IDExLjk3IDI1LjA1Ii8+PC9zdmc+) center no-repeat, $background-step-bullet-enabled;
+                        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FscXVlXzEiIGRhdGEtbmFtZT0iQ2FscXVlIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDIyLjk0IDI1LjA2Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPnZhbGlkZXI8L3RpdGxlPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxMS45NyAyNS4wNSAwIDEzLjA4IDIuMTIgMTAuOTYgMTEuMDUgMTkuODkgMjAuMjIgMCAyMi45NCAxLjI2IDExLjk3IDI1LjA1Ii8+PC9zdmc+) center no-repeat;
                         background-size: 50%;
+                        background-color: $background-step-bullet-enabled;
                     }
                 }
             }
@@ -115,19 +135,31 @@
                 span {
                     //color: $color-step-label-done-subscription;
                 }
-                &::before {
+                &> div::before {
                     border: $border-step-bullet-done-subscription;
-                    //background: $background-step-bullet-done-subscription;
+                    //background-color: $background-step-bullet-done-subscription;
                     color: $color-step-bullet-done-subscription;
                 }
                 &::after {
                     background: $background-step-line-done-subscription;
                 }
                 &.su-enabled {
-                    &::before {
+                    &> div::before {
                         color: $color-step-bullet-enabled-subscription;
                         border: $border-step-bullet-enabled-subscription;
-                        background: $background-step-bullet-enabled-subscription;
+                        background-color: $background-step-bullet-enabled-subscription !important;
+                    }
+                }
+            }
+            &.su-stepper-nav {
+                .su-stepper-step:not(.su-enabled) {
+                    > div:hover::before {
+                        border: $border-step-bullet-hover-subscription;
+                        background-color: $background-step-bullet-hover-subscription;
+                        color: $color-step-bullet-hover-subscription;
+                    }
+                    span:hover {
+                        color: $color-step-bullet-hover-subscription;
                     }
                 }
             }

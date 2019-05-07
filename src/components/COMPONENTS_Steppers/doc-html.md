@@ -22,28 +22,39 @@ En principe, cet indicateur de progression est **cliquable sur les étapes déj�
 ```html
 <ol class="su-stepper">
 	<li class="su-stepper-step">
-		<span>Étape 1</span>
-	</li>
-	<li class="su-stepper-step su-enabled">
-		<span>Étape 2</span>
+		<div>
+			<span>Étape 1</span>
+		</div>
 	</li>
 	<li class="su-stepper-step">
-		<span>Étape 3</span>
+		<div>
+			<span>Étape 2</span>
+		</div>
+	</li>
+	<li class="su-stepper-step su-enabled">
+		<div>
+			<span>Étape 3</span>
+		</div>
 	</li>
 </ol>
 ```
 
-
 <div class="sipaui">
 	<ol class="su-stepper surcharge-storybook">
 		<li class="su-stepper-step">
-			<span>Étape 1</span>
-		</li>
-		<li class="su-stepper-step su-enabled">
-			<span>Étape 2</span>
+			<div>
+				<span>Étape 1</span>
+			</div>
 		</li>
 		<li class="su-stepper-step">
-			<span>Étape 3</span>
+			<div>
+				<span>Étape 2</span>
+			</div>
+		</li>
+		<li class="su-stepper-step su-enabled">
+			<div>
+				<span>Étape 3</span>
+			</div>
 		</li>
 	</ol>
 </div>
@@ -54,40 +65,59 @@ En principe, cet indicateur de progression est **cliquable sur les étapes déj�
 ```html
 <ol class="su-stepper">
 	<li class="su-stepper-step">
-		<span>Étape 1</span>
+		<div>
+			<span>Étape 1</span>
+		</div>
+	</li>
+	<li class="su-stepper-step">
+		<div>
+			<span>Étape 2</span>
+		</div>
 	</li>
 	<li class="su-stepper-step su-enabled">
-		<span>Étape 2</span>
+		<div>
+			<span>Étape 3</span>
+		</div>
 	</li>
 	<li class="su-stepper-step">
-		<span>Étape 3</span>
+		<div>
+			<span>Étape 4</span>
+		</div>
 	</li>
 	<li class="su-stepper-step">
-		<span>Étape 4</span>
-	</li>
-	<li class="su-stepper-step">
-		<span>Étape 5</span>
+		<div>
+			<span>Étape 5</span>
+		</div>
 	</li>
 </ol>
 ```
 
-
 <div class="sipaui">
 	<ol class="su-stepper surcharge-storybook">
 		<li class="su-stepper-step">
-			<span>Étape 1</span>
+			<div>
+				<span>Étape 1</span>
+			</div>
+		</li>
+		<li class="su-stepper-step">
+			<div>
+				<span>Étape 2</span>
+			</div>
 		</li>
 		<li class="su-stepper-step su-enabled">
-			<span>Étape 2</span>
+			<div>
+				<span>Étape 3</span>
+			</div>
 		</li>
 		<li class="su-stepper-step">
-			<span>Étape 3</span>
+			<div>
+				<span>Étape 4</span>
+			</div>
 		</li>
 		<li class="su-stepper-step">
-			<span>Étape 4</span>
-		</li>
-		<li class="su-stepper-step">
-			<span>Étape 5</span>
+			<div>
+				<span>Étape 5</span>
+			</div>
 		</li>
 	</ol>
 </div>
@@ -98,13 +128,19 @@ Un stepper peut s'adapter à un sous-thème. À ce jour seul le sous-thème *Abo
 ```html
 <ol class="su-stepper su-subscription">
 	<li class="su-stepper-step">
-		<span>Étape 1</span>
-	</li>
-	<li class="su-stepper-step su-enabled">
-		<span>Étape 2</span>
+		<div>
+			<span>Étape 1</span>
+		</div>
 	</li>
 	<li class="su-stepper-step">
-		<span>Étape 3</span>
+		<div>
+			<span>Étape 2</span>
+		</div>
+	</li>
+	<li class="su-stepper-step su-enabled">
+		<div>
+			<span>Étape 3</span>
+		</div>
 	</li>
 </ol>
 ```
@@ -112,13 +148,19 @@ Un stepper peut s'adapter à un sous-thème. À ce jour seul le sous-thème *Abo
 <div class="sipaui">
 	<ol class="su-stepper su-subscription surcharge-storybook">
 		<li class="su-stepper-step">
-			<span>Étape 1</span>
-		</li>
-		<li class="su-stepper-step su-enabled">
-			<span>Étape 2</span>
+			<div>
+				<span>Étape 1</span>
+			</div>
 		</li>
 		<li class="su-stepper-step">
-			<span>Étape 3</span>
+			<div>
+				<span>Étape 2</span>
+			</div>
+		</li>
+		<li class="su-stepper-step su-enabled">
+			<div>
+				<span>Étape 3</span>
+			</div>
 		</li>
 	</ol>
 </div>
@@ -129,13 +171,19 @@ Par défaut, la dernière étape, une fois active, se comporte comme les autres&
 ```html
 <ol class="su-stepper su-check">
 	<li class="su-stepper-step">
-		<span>Étape 1</span>
+		<div>
+			<span>Étape 1</span>
+		</div>
 	</li>
 	<li class="su-stepper-step">
-		<span>Étape 2</span>
+		<div>
+			<span>Étape 2</span>
+		</div>
 	</li>
 	<li class="su-stepper-step su-enabled">
-		<span>Étape 3</span>
+		<div>
+			<span>Étape 3</span>
+		</div>
 	</li>
 </ol>
 ```
@@ -143,13 +191,19 @@ Par défaut, la dernière étape, une fois active, se comporte comme les autres&
 <div class="sipaui">
 	<ol class="su-stepper su-check surcharge-storybook">
 		<li class="su-stepper-step">
-			<span>Étape 1</span>
+			<div>
+				<span>Étape 1</span>
+			</div>
 		</li>
 		<li class="su-stepper-step">
-			<span>Étape 2</span>
+			<div>
+				<span>Étape 2</span>
+			</div>
 		</li>
 		<li class="su-stepper-step su-enabled">
-			<span>Étape 3</span>
+			<div>
+				<span>Étape 3</span>
+			</div>
 		</li>
 	</ol>
 </div>
@@ -169,18 +223,38 @@ Il s'agit ici de la version complète avec retour possible aux étapes précéde
 Il faut ajouter à l’indicateur de progression la classe `su-stepper-nav` pour activer le changement d’apparence en «&nbsp;hover&nbsp;».
 
 <div class="sipaui">
-	<ol class="su-stepper surcharge-storybook">
+	<ol class="su-stepper su-stepper-nav surcharge-storybook">
 		<li class="su-stepper-step">
-			<span>Étape 1</span>
+			<div>
+				<span>
+					<button class="su-step-back" data-sutoggleclass='{"parent":".su-stepper-step","klass":"su-enabled"}'>Retour à --nom de l’étape 1--</button>
+					Étape 1
+				</span>
+			</div>
 		</li>
 		<li class="su-stepper-step">
-			<span>Étape 2</span>
+			<div>
+				<span>
+					<button class="su-step-back" data-sutoggleclass='{"parent":".su-stepper-step","klass":"su-enabled"}'>Retour à --nom de l’étape 2--</button>
+					Étape 2
+				</span>
+			</div>
 		</li>
 		<li class="su-stepper-step su-enabled">
-			<span>Étape 3</span>
+			<div>
+				<span>
+					<button class="su-step-back" data-sutoggleclass='{"parent":".su-stepper-step","klass":"su-enabled"}'>Retour à --nom de l’étape 3--</button>
+					Étape 3
+				</span>
+			</div>
 		</li>
 		<li class="su-stepper-step">
-			<span>Étape 4</span>
+			<div>
+				<span>
+					<button class="su-step-back" data-sutoggleclass='{"parent":".su-stepper-step","klass":"su-enabled"}'>Retour à --nom de l’étape 4--</button>
+					Étape 4
+				</span>
+			</div>
 		</li>
 	</ol>
 	<div class="su-visually-hidden">
@@ -202,24 +276,43 @@ Il faut ajouter à l’indicateur de progression la classe `su-stepper-nav` pour
 </div>
 
 ### Version statique via changement d’URL
-Là aussi il faut lui ajouter la classe `su-stepper-nav` pour activer le «&nbsp;hover&nbsp;», ainsi qu'un élément de navigation portant la classe `su-step-back`. Seulement, cette fois, cet élément de navigation doit être un lien (`<a href="">`).
-NB De part le principe même du changement d’URL il est indémontrable ici.
+Là aussi il faut lui ajouter la classe `su-stepper-nav` pour activer le «&nbsp;hover&nbsp;», ainsi qu'un élément de navigation portant la classe `su-step-back`. Seulement, cette fois, cet élément de navigation doit être un lien (`<a href="">`). Il faudra bien sûr déplacer la classe `su-enabled` d’étape en étape sur chaque pages.
+
+NB De part le principe même du changement d’URL l’interactivité n’est pas indémontrable ici.
 
 ```html
 <ol class="su-stepper su-stepper-nav">
 	<li class="su-stepper-step">
-		<a href="url/de/etape1" class="su-step-back">Retour à --nom de l’étape 1--</a>
-		<span>Étape 1</span>
+		<div>
+			<span>
+				<a href="url/de/etape1" class="su-step-back">Retour à --nom de l’étape 1--</a>
+				Étape 1
+			</span>
+		</div>
 	</li>
 	<li class="su-stepper-step">
-		<a href="url/de/etape2" class="su-step-back">Retour à --nom de l’étape 2--</a>
-		<span>Étape 2</span>
+		<div>
+			<span>
+				<a href="url/de/etape2" class="su-step-back">Retour à --nom de l’étape 2--</a>
+				Étape 2
+			</span>
+		</div>
 	</li>
 	<li class="su-stepper-step su-enabled">
-		<span>Étape 3</span>
+		<div>
+			<span>
+				<a href="url/de/etape3" class="su-step-back">Retour à --nom de l’étape 3--</a>
+				Étape 3
+			</span>
+		</div>
 	</li>
 	<li class="su-stepper-step">
-		<span>Étape 4</span>
+		<div>
+			<span>
+				<a href="url/de/etape4" class="su-step-back">Retour à --nom de l’étape 4--</a>
+				Étape 4
+			</span>
+		</div>
 	</li>
 </ol>
 <div>
@@ -231,18 +324,36 @@ NB De part le principe même du changement d’URL il est indémontrable ici.
 <div class="sipaui">
 	<ol class="su-stepper su-stepper-nav surcharge-storybook">
 		<li class="su-stepper-step">
-			<a href="url/de/etape1" class="su-step-back">Retour à --nom de l’étape 1--</a>
-			<span>Étape 1</span>
+			<div>
+				<span>
+					<a href="url/de/etape1" class="su-step-back">Retour à --nom de l’étape 1--</a>
+					Étape 1
+				</span>
+			</div>
 		</li>
 		<li class="su-stepper-step">
-			<a href="url/de/etape2" class="su-step-back">Retour à --nom de l’étape 2--</a>
-			<span>Étape 2</span>
+			<div>
+				<span>
+					<a href="url/de/etape2" class="su-step-back">Retour à --nom de l’étape 2--</a>
+					Étape 2
+				</span>
+			</div>
 		</li>
 		<li class="su-stepper-step su-enabled">
-			<span>Étape 3</span>
+			<div>
+				<span>
+					<a href="url/de/etape3" class="su-step-back">Retour à --nom de l’étape 3--</a>
+					Étape 3
+				</span>
+			</div>
 		</li>
 		<li class="su-stepper-step">
-			<span>Étape 4</span>
+			<div>
+				<span>
+					<a href="url/de/etape4" class="su-step-back">Retour à --nom de l’étape 4--</a>
+					Étape 4
+				</span>
+			</div>
 		</li>
 	</ol>
 	<div>

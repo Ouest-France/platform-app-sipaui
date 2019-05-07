@@ -8,6 +8,7 @@
 // STEPPER BASE------------------------------------------------------------------------------------------/
 
 $font-weight-step:              $font-weight-thin                !default;
+$font-weight-step-bullet:       $font-weight-bold                !default;
 
 // Couleurs
 //Pas fait
@@ -56,7 +57,7 @@ $color-step-label-undone-subscription:                          !default;
 */
 
 //Hover
-//$background-step-bullet-hover-subscription:                                           !default;
+$background-step-bullet-hover-subscription:          #fff                               !default;
 $border-step-bullet-hover-subscription:              1px solid $color-subscription-2    !default;
 $color-step-bullet-hover-subscription:               $color-subscription-2              !default;
 //$color-step-label-hover-subscription:                                                 !default;
