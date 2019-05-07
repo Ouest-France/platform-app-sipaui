@@ -10,7 +10,8 @@
     "add-component": "node ./.utils/add-component.js",
     "storybook": "start-storybook -p 9001 -s ./dist -c .storybook",
     "checknpublish": "node .utils/checknpublish.js",
-    "build-storybook": "rm -rf ./dist/storybook/catalogue && build-storybook -c .storybook -s ./dist -o ./build/catalogue && mv ./build/catalogue ./dist/storybook"
+    "build-storybook": "rm -rf ./dist/storybook/catalogue && build-storybook -c .storybook -s ./dist -o ./build/catalogue && mv ./build/catalogue ./dist/storybook",
+    "publish": "lerna run build && lerna run publish"
   },
   "repository": {
     "type": "git",
@@ -49,6 +50,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "gulp-watch": "^5.0.1",
+    "lerna": "^3.13.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "sass-loader": "^7.1.0",
