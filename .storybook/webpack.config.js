@@ -1,8 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-// Export a function. Accept the base config as the only param.
-module.exports = (storybookBaseConfig, configType) => {
+module.exports = ({ config: storybookBaseConfig, mode: configType }) => {
     // configType has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
     // 'PRODUCTION' is used when building the static version of storybook.
@@ -34,10 +33,5 @@ module.exports = (storybookBaseConfig, configType) => {
         ],
     });
 
-    console.log('##########################');
-    // console.log(storybookBaseConfig);
-    console.log(storybookBaseConfig.module.rules);
-    console.log('##########################');
-    // Return the altered config
     return storybookBaseConfig;
 };
