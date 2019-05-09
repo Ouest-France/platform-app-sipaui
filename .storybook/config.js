@@ -1,6 +1,6 @@
 import { addDecorator, configure } from '@storybook/vue';
 import { configureViewport } from '@storybook/addon-viewport';
-import { themes } from '@storybook/components';
+import { themes } from '@storybook/theming';
 
 import Vue from 'vue';
 import Vuex from 'vuex'; // Vue plugins
@@ -117,3 +117,7 @@ addDecorator(
 );
 
 configure(() => require('../build/storybook/stories'), module);
+// configure(() => {
+//   const r = require.context('../src', true, /.stories.(js|ts)$/);
+//   r.keys().forEach(filename => r(filename));
+// }, module);
