@@ -5,101 +5,32 @@
 <link rel="stylesheet" href="css/default-demo.css" type="text/css" media="screen" charset="utf-8">
 <link rel="stylesheet" media="screen and (min-width: 64em)" href="css/large-demo.css" type="text/css" media="screen" charset="utf-8">
 <style type="text/css" media="screen">
-	html * {
-    	box-sizing: content-box;
-    	font-family: "Trebuchet MS", Geneva, sans-serif;
-	}
-	.css-1e1vreg, /* Colonne centrale contenant la preview */
-	.css-1929wko { /* Colonne droite contenant les actions */
-    	padding: 0 !important;
-	}
-
-    .Resizer.vertical::after {
-        border-color: rgba(255,255,255, .5) !important;
+    .css-sqdry3 { /* Bordure autour du contenu */
+        //top: 0 !important;
     }
-    .Resizer.disabled {
-        display: none !important;
+    /* COL GAUCHE ----------------------------------------------------------------------------------- */
+    .css-1h0mv0d a { /* Zone logo */
+        opacity: 1 !important;
     }
-    .css-1sjft4t, /* indicateur de taille de l’iframe dans le coin inférieur droit */
-    .css-1sjft4t * {
-        color: #878787 !important;
+    .css-y7phwm a { /* Tous les liens */
+        border-bottom: none !important;
     }
-
-    /* COL GAUCHE ---------------------------------------------------------------------------------------- */
-	.css-ypfoxr { /* col gauche -> zone marque */
-	    text-transform: none !important;
-	}
-	.css-ypfoxr:hover { /* col gauche -> zone marque */
-	    color: inherit !important;
-	}
-	.css-gk3wea { /* Champ de recherche */
-    	height: 30px !important;
-    	background: rgba(255,255,255, .6) !important;
-    	border-color: #333 !important;
-	}
-	input::-webkit-input-placeholder,
-	input::placeholder { /* Champ de recherche */
-	    color: #333 !important;
-	}
-	.css-gk3wea:focus { /* Champ de recherche */
-	    background: rgba(255,255,255, .9) !important;
-    	border-color: #fff !important;
-	}
-	.css-79elbk [role="menuitem"] { /*col gauche -> liste des éléments */
-    	padding: 3px 5px !important;
-        border-bottom: 1px solid rgba(255,255,255, .15);
-	}
-    .css-vq3qyb li:last-child [role="menuitem"] { /*col gauche -> liste des éléments */
-        border-bottom: none;
-	}
-	.css-vq3qyb .css-vq3qyb { /*col gauche -> liste des sous-éléments */
-    	padding: 10px 10px 10px 15px !important;
-    	background: #252525;
-	}
-	.css-1si3szf .css-h8sbw5 {
-    	color: #bbb !important;
-	}
-	[style*="transform: rotateZ(90deg);"] + .css-1si3szf .css-h8sbw5 {
-    	color: #fff !important;
-	}
-	.css-79elbk .css-79elbk .css-79elbk { /*col gauche -> sous-éléments */
-    	padding: 3px 0 !important;
-	}
-	a.e1s7lmdh0 { /*col gauche -> sous-éléments */
-    	border-bottom: 0;
-    	color: #bbb;
-	}
-	a.e1s7lmdh0:hover { /*col gauche -> sous-éléments */
-    	color: #fff;
-	}
-	.css-avavux {
-    	padding: 2px 5px 2px !important;
-	}
-	.css-tg6jhz { /*col gauche -> élément sélectionné */
-    	background-color: rgba(255,255,255, .25) !important;
-    	padding: 2px 5px 2px !important;
-    	border-radius: 3px;
-    	color: #fff !important;
-	}
-
-    /* COL DROITE ---------------------------------------------------------------------------------------- */
-    .css-mq6fg3 { /* col droite sélecteur de device */
-        height: 30px;
+    nav a {
+        margin-right: 0;
     }
-	.css-o46hsw { /* col droite -> élément sélectionné */
-    	padding: 10px !important;
-    	background: none !important;
-	}
-	.css-1fw2m0f { /* col droite -> boutons en bas à droite */
-    	border: 1px solid #ddd !important;
-    	border-radius: 3px !important;
-    	color: #ddd !important;
-    	transition: all ease-out .2s;
-    	cursor: pointer !important;
-	}
-	.css-1fw2m0f:hover { /* col droite -> boutons en bas à droite */
-    	background: #000 !important;
-    	color: #fff !important;
-    	border-color: #fff !important;
-	}
+    .css-uz5kid { /* Flèche devant stories */
+        border-left: 4px solid #fff !important;
+    }
+    .css-19bal3c svg { /* SVG déco en devant stories */
+        fill: #fff !important;
+        color: #fff !important;
+    }
+    .css-uz5kid::after { /* Fond niveau 1 ouvert */
+        content:'';
+        display: block;
+        background: red;
+    }
+    .css-y7phwm .css-0 > .css-1uwvbks { /* Sous-niveau */
+        background: #252525 !important;
+    }
 </style>
