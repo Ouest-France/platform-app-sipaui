@@ -225,7 +225,7 @@ Aujourd'hui seule la seconde version est proposée par SipaUI.
 ### Version statique via changement d’URL
 Il faut ajouter la classe `su-stepper-nav` avec `su-stepper` pour activer le «&nbsp;hover&nbsp;», ainsi qu'un lien (`<a href="">`) portant la classe `su-step-back`. Il faudra bien sûr déplacer la classe `su-enabled` d’étape en étape sur chaque pages.
 
-NB De part le principe même du changement d’URL l’interactivité n’est pas indémontrable ici.
+NB De part le principe même du fonctionnement du composant (changement de page au clic), l’interactivité n’est pas démontrable ici.
 
 ```html
 <ol class="su-stepper su-stepper-nav">
