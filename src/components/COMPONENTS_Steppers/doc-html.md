@@ -213,70 +213,17 @@ Par défaut, la dernière étape, une fois active, se comporte comme les autres&
 <div id="stepper-full">
 
 ## Indicateur de progression complet (cliquable)
-Il s'agit ici de la version complète avec retour possible aux étapes précédentes dans le tunnel d’actions. Il en existe 2 versions, en fonction des contraintes techniques&nbsp;:
+Il s'agit ici de la version complète avec retour possible aux étapes précédentes dans le tunnel d’actions. Il en existe 2 façons de faire ce genre de composant en fonction des contraintes techniques&nbsp;:
 <ul>
 	<li>Soit on a toutes les étapes présentes dans la page et le composant se contente d’afficher/masquer le contenu idoine</li>
 	<li>Soit on a les étapes sur des URL différents et le composant permet de changer de page quand on veut revenir en arrière.</li>
 </ul>
 
-### Version dynamique via affichage de contenu masqué
-Il faut ajouter à l’indicateur de progression la classe `su-stepper-nav` pour activer le changement d’apparence en «&nbsp;hover&nbsp;».
+Aujourd'hui seule la seconde version est proposée par SipaUI.
 
-<div class="sipaui">
-	<ol class="su-stepper su-stepper-nav surcharge-storybook">
-		<li class="su-stepper-step">
-			<div>
-				<span>
-					<button class="su-step-back" data-sutoggleclass='{"parent":".su-stepper-step","klass":"su-enabled"}'>Retour à --nom de l’étape 1--</button>
-					Étape 1
-				</span>
-			</div>
-		</li>
-		<li class="su-stepper-step">
-			<div>
-				<span>
-					<button class="su-step-back" data-sutoggleclass='{"parent":".su-stepper-step","klass":"su-enabled"}'>Retour à --nom de l’étape 2--</button>
-					Étape 2
-				</span>
-			</div>
-		</li>
-		<li class="su-stepper-step su-enabled">
-			<div>
-				<span>
-					<button class="su-step-back" data-sutoggleclass='{"parent":".su-stepper-step","klass":"su-enabled"}'>Retour à --nom de l’étape 3--</button>
-					Étape 3
-				</span>
-			</div>
-		</li>
-		<li class="su-stepper-step">
-			<div>
-				<span>
-					<button class="su-step-back" data-sutoggleclass='{"parent":".su-stepper-step","klass":"su-enabled"}'>Retour à --nom de l’étape 4--</button>
-					Étape 4
-				</span>
-			</div>
-		</li>
-	</ol>
-	<div class="su-visually-hidden">
-		<h2>Etape 1</h2>
-		<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis.</p>
-	</div>
-	<div class="su-visually-hidden">
-		<h2>Etape 2</h2>
-		<p>Vestibulum id ligula porta felis euismod semper.</p>
-	</div>
-	<div>
-		<h2>Etape 3</h2>
-		<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-	</div>
-	<div class="su-visually-hidden">
-		<h2>Etape 4</h2>
-		<p>Purus Ridiculus Vulputate Quam.</p>
-	</div>
-</div>
 
 ### Version statique via changement d’URL
-Là aussi il faut lui ajouter la classe `su-stepper-nav` pour activer le «&nbsp;hover&nbsp;», ainsi qu'un élément de navigation portant la classe `su-step-back`. Seulement, cette fois, cet élément de navigation doit être un lien (`<a href="">`). Il faudra bien sûr déplacer la classe `su-enabled` d’étape en étape sur chaque pages.
+Il faut ajouter la classe `su-stepper-nav` avec `su-stepper` pour activer le «&nbsp;hover&nbsp;», ainsi qu'un lien (`<a href="">`) portant la classe `su-step-back`. Il faudra bien sûr déplacer la classe `su-enabled` d’étape en étape sur chaque pages.
 
 NB De part le principe même du changement d’URL l’interactivité n’est pas indémontrable ici.
 
