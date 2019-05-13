@@ -8,6 +8,8 @@ yarn install
 npx gulp
 ```
 
+NodeJS version >= 10.10.0 is required
+
 ### build doc
 
 Publish directory `dist/`
