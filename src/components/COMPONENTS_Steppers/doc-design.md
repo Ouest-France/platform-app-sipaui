@@ -10,18 +10,18 @@ L'objectif de ce composant est de réduire le taux d’abandon des tunnels.
 ## Usage
 
 - **L'utilisateur est guidé** lors de l'exécution d'une tâche spécifique. L'exhaustivité augmente à mesure que chaque étape est terminée.
-- Dans certains formulaires, l'utilisateur est autorisé à revenir aux étapes précédentes pour modifier ses données renseignées.
-- Cependant, il ne peut pas accéder aux étapes suivantes.
+- Dans certains formulaires, l'utilisateur est autorisé à revenir aux étapes précédentes pour verifier ou modifier les données renseignées. Ensuite, il doit valider chaque étape pré-remplie ou modifiée.
+- Cependant, l'utilisateur ne peut pas accéder aux étapes suivantes sans avoir valider l'étape en cours.
 
 ## Spécifications
 
 - Les indicateurs de progression affichent l'avancée d'une séquence en la divisant en **plusieurs étapes numérotées**.
 - Les étapes sont affichées dans un ordre logique de gauche à droite.
 - La **mise en avant de l'étape en cours** aide l'utilisateur à savoir où il se situe dans le tunnel.
+- La dernière étape de stepper est symbolisée par le numéro de l'étape. Le concepteur peut le remplacer par un check.
 - Sur mobile, il n'y a pas de libellés.
 - Sur desktop, des libellés accompagnent l'indicateur de progression. Ils définissent des attentes claires pour l'utilisateur.
-- **La dernière étape de stepper est symbolisé par le numéro de l'étape ou un check** selon le choix des concepteurs.
-- Les couleurs des indicateurs de progressions sont d'abord celles du sous-thème s'ils existent puis celles sur thème.
+- Les couleurs des indicateurs de progressions sont d'abord celles du sous-thème s'il existe puis celles sur thème.
 
 ## Spécifications
 
@@ -60,7 +60,7 @@ Taille : 30 x 30px <br> Couleur : #E2001A <br> Texte : 16px, Arial bold, #FFFFFF
 **Etape 3** | ![default__step__3](design/default__step__3.png)
 
 Présents uniquement desktop, les libellés ont une taille de caractères de 14px et leur couleur est #333333. Lorsqu'ils sont inactifs, ils sont #D4D4D4.
-## 4- Bonnes pratiques
+## Bonnes pratiques
 
 - Chaque étape présente au minimum une action de la part de l'utilisateur. Une simple information ne nécessite pas d'étape dédiée notamment en fin de formulaire.
 - Les étiquettes qui accompagnent l'indicateur de progression sont claires, concises et courtes (2-3 mots maximums).
