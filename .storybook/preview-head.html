@@ -16,9 +16,9 @@
         // Check si l'URL contient "html"
         var storyDetection = function() {
             var url = new URL(window.location.href),
-                selectedStory = url.searchParams.get("selectedStory");
+                selectedStory = url.searchParams.get("id");
 
-            if(selectedStory == "html") {
+            if(selectedStory.indexOf("html") !== -1 ) {
                 addThemeSwitcher();
             } else {
                 removeThemeSwitcher();
