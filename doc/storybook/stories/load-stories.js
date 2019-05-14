@@ -13,7 +13,7 @@ import introDocs from '../INTRO.md';
 withDocs.addFooterDocs(CommonFooterDocs);
 
 // Collection
-storiesOf('intro', module)
+storiesOf('Intro', module)
     .addDecorator(withKnobs)
     .addDecorator(withDocs(introDocs))
     .add('Documentation', () => ({

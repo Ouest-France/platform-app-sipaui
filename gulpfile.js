@@ -152,7 +152,10 @@ gulp.task("loader-storybook", ["clean", "build-stories"], function() {
     ;
 
     var stories = components.map(component => {
-        return `storiesOf(\'`+component+`\', module)
+        var cat = component.split('_')[0];
+        var name = component.split('_')[1];
+
+        return `storiesOf(\'`+cat.charAt(0) + cat.slice(1).toLowerCase() + '/' + name +`\', module)
     .addDecorator(withKnobs)
     ` + ['design', 'html', 'vuejs']
             .map(type => {
