@@ -7,8 +7,9 @@
 
 // INPUT ------------------------------------------------------------------------------------------/
 $height-select:             $height-finger                !default;
+$height-select-small:       $height-small                 !default;
 $border-radius-select:      0                             !default;
-$color-select:              $font-color-standard                  !default;
+$color-select:              $font-color-standard          !default;
 $color-select-placeholder:  $color-main-5                 !default;
 $background-select:         #fafafa                       !default;
 $border-select:             1px solid $color-main-3       !default;
