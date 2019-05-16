@@ -53,7 +53,7 @@ NB si l’on veut que la liste déroulante soit vide au départ, la première op
 
 ## Petit
 
-Comme pour les boutons, il existe une version moins haute. Pour afficher cette version, de la même façon que pour les boutons, il faut ajouter la classe `su-small` à la classe de base `su-select`.
+Comme pour les boutons, il existe une version moins haute (34px). Pour afficher cette version, de la même façon que pour les boutons, il faut ajouter la classe `su-small` à la classe de base `su-select`.
 
 
 ```html
