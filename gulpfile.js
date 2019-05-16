@@ -133,15 +133,34 @@ gulp.task("build-stories", ["clean", "copy-storybook", "copy-stories"], function
 });
 
 gulp.task("loader-storybook", ["clean", "build-stories"], function() {
-    var components = fs.readdirSync('src/components/', {withFileTypes: true})
-        .filter(dirent => dirent.isDirectory())
-        .map(dirent => dirent.name)
+    var components = [];
+    function _liste(dirPath, name) {
+        var liste = fs.readdirSync(dirPath, {withFileTypes: true})
+            .filter(dirent => dirent.isDirectory())
+            .forEach(dirent => {
+                if(
+                    fs.readdirSync(dirPath + dirent.name, {withFileTypes: true})
+                        .filter(dirent => dirent.isFile())
+                        .filter(dirent => dirent.name.indexOf('doc-') !== -1).length > 1
+                    ) {
+                    components.push({
+                        path: dirPath + dirent.name,
+                        fullname: name + dirent.name,
+                        name: dirent.name
+                    });
+                } else {
+                    _liste(dirPath + dirent.name + '/',  name + dirent.name + '/');
+                }
+            })
+    }
+    _liste('src/components/', '');
+    console.log(components);
 
     var imports = components.map(component =>
         ['design', 'html', 'vuejs']
             .map(type => {
-                if(fs.existsSync('./dist/components/' + component + '/doc-' + type + '.md'))
-                    return 'import doc_' + type + '_' + component.replace('-', '_') + ' from \'../../../dist/components/' + component + '/doc-' + type + '.md\';';
+                if(fs.existsSync('./dist/components/' + component.fullname + '/doc-' + type + '.md'))
+                    return 'import doc_' + type + '_' + component.name.replace('-', '_') + ' from \'../../../dist/components/' + component.fullname + '/doc-' + type + '.md\';';
                 else return '';
             })
             .join(`
@@ -152,15 +171,13 @@ gulp.task("loader-storybook", ["clean", "build-stories"], function() {
     ;
 
     var stories = components.map(component => {
-        var cat = component.split('_')[0];
-        var name = component.split('_')[1];
 
-        return `storiesOf(\'`+cat.charAt(0) + cat.slice(1).toLowerCase() + '/' + name +`\', module)
+        return `storiesOf(\'`+ component.fullname +`\', module)
     .addDecorator(withKnobs)
     ` + ['design', 'html', 'vuejs']
             .map(type => {
-                if(fs.existsSync('./dist/components/' + component + '/doc-' + type + '.md'))
-                    return '.add(\'' + type + '\', doc(doc_' + type + '_' + component.replace('-', '_') + '))';
+                if(fs.existsSync('./dist/components/' + component.fullname + '/doc-' + type + '.md'))
+                    return '.add(\'' + type + '\', doc(doc_' + type + '_' + component.name.replace('-', '_') + '))';
                 else return '';
             })
             .join(`
