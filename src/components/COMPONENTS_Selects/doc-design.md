@@ -5,8 +5,8 @@ Les selects permettent à l’utilisateur de sélectionner une option dans une l
 
 ## Usage
 
-- Un select permet d’**afficher un nombre illimité d’options dans une liste déroulante**. L’utilisateur peut **choisir une seule des options** parmi cette liste.
-- Il empêche les utilisateurs de saisir des données erronées et il permet d’économiser quelques frappes.
+- Un select permet d’**afficher un nombre illimité d'options dans une liste déroulante**. L’utilisateur peut **choisir une seule des options** parmi cette liste.
+- Il empêche les utilisateurs de saisir des données erronées et il permet d'économiser quelques frappes.
 - On le trouve généralement dans un formulaire.
 
 ## États
@@ -37,12 +37,12 @@ Type | Illustration
 ### Texte
 
 - Le texte présente les caractéristiques du champ de texte.
-- Une option peut être mise par défaut si elle est quasiment sûre d’être choisie.
+- Une option peut être mise par défaut si elle est quasiment sûre d'être choisie.
 
 ### Pseudo-placeholder
 - Le pseudo-placeholder permet de guider l’action de l’utilisateur.
 - Il a les caractéristiques du placeholder du champ texte.
-- Ce n’est pas un attribut HTML (d’où son qualificatif de «&nbsp;pseudo&nbsp;»). Cependant, il est possible de le simuler .
+- Ce n'est pas un attribut HTML (d’où son qualificatif de «&nbsp;pseudo&nbsp;»). Cependant, il est possible de le simuler .
 - Il est facultatif.
 - En son absence, un label est nécessaire.
 
@@ -51,7 +51,7 @@ Type | Illustration
 
 ![select__ex__default](design/select__ex__default.png) |
 ------------ |
-**Do** <br/> Par exemple, "Choisissez" insite l’utilisateur à ouvrir le champ.
+**Do** <br/> Par exemple, "Choisissez" insite l'utilisateur à ouvrir le champ.
 
  </div>
  </div>
@@ -59,18 +59,18 @@ Type | Illustration
 
 ### Icône
 
-- L’icône comporte également les caractéristiques du champ de texte.
+- L'icône comporte également les caractéristiques du champ de texte.
 - La seule icône possible est un chevron. Il indique qu’une liste est disponible.
 
 
 ### Liste
 
 - La liste permet de présenter différentes options.
-- Elle s’affiche de manière native selon chaque navigateur (hauteur, selection, scroll, etc).
+- Elle s'affiche de manière native selon chaque navigateur (hauteur, selection, scroll, etc).
 - Chaque élément est normé :
   - La 1re lettre du texte est en majuscule, le reste est en minuscule.
   - Le contenu se limite à un seule ligne.
-  - L’ordre est établi de manière logique : dans un ordre croissant ou selon la fréquence d’utilisation, etc.
+  - L'ordre est établi de manière logique : dans un ordre croissant ou selon la fréquence d'utilisation, etc.
 
 
   <div class="do-dont">
@@ -78,19 +78,19 @@ Type | Illustration
 
   ![select__exemples__focus-ios](design/select__exemples__focus-ios.png) |
   ------------ |
-  **Do** <br/> L’ordre alphabétique est souvent le plus approprié.
+  **Do** <br/> L'ordre alphabétique est souvent le plus approprié.
 
    </div>
    </div>
 
 
-- L’élément sélectionné remplace la value par défaut.
+- L'élément sélectionné remplace la value par défaut.
 
 ## Cas spécifique
 
 ### Select, hauteur 34px
 
-- Par défaut, la hauteur d’un select est celle du text field : 44px. Cependant, un select de **34px** de haut peut être utilisé dans des cas spécifiques et principalement sur **Desktop**.
+- Par défaut, la hauteur d'un select est celle du text field : 44px. Cependant, un select de **34px** de haut peut utilisé dans des cas spécifiques et principalement sur **Desktop**.
 - La value et le placeholder sont de **14px**.
 
 
@@ -114,7 +114,7 @@ Type | Illustration
 
   ![select__exemples__error](design/select__exemples__error.png) |
   ------------ |
-  **Do** <br/> Dans le cas d’un select obligatoire, le message d’erreur demande de renseigner le champ.
+  **Do** <br/> Dans le cas d'un select obligatoire, le message d'erreur demande de renseigner le champ.
 
    </div>
    </div>
@@ -122,10 +122,10 @@ Type | Illustration
 ## Bonnes pratiques
 
 - Si le nombre d’options est inférieur ou égale à 3, utiliser un bouton radio.
-- Eviter les très longues listes nécessitant un scroll car les utilisateurs ne peuvent voir tous les choix en un coup d’œil.
+- Eviter les très longues listes nécessitant un scroll car les utilisateurs ne peuvent voir tous les choix en un coup d'œil.
 - Pour une quantité, le choix d’une année, utiliser un text field standard plutôt qu’un select car la saisie est plus rapide.
-- Lors de la saisie d’une ville, ne pas utiliser un select. En France, la liste des communes évolue régulièrement et cette liste est difficilement mise à jour.
-- Il est fortement recommandé de ne pas styler la liste d’options des selects pour des raisons d’accessibilité.
+- Lors de la saisie d'une ville, ne pas utiliser un select. En France, la liste des communes évolue régulièrement et cette liste est difficilement mise à jour.
+- Il est fortement recommandé de ne pas styler la liste d’options des selects pour des raisons d'accessibilité.
 - Le select est pris en charge par un clavier.
 
 
