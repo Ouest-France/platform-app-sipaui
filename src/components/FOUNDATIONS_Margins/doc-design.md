@@ -56,7 +56,7 @@ Taille | Mesure | Illustration
 </div>
 
 
-- **L'espace entre 2 éléments de formulaire est M : 20px.**
+- **L'espace entre 2 éléments de formulaire (bouton, champ de texte, etc.) est M : 20px.**
 
 ### Hiérarchiser les éléments
 
