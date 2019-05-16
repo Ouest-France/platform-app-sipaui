@@ -14,7 +14,7 @@ $height-button:         $height-finger              !default;
 
 $font-size-button-small:      $font-size-small            !default;
 $side-padding-button-small:   15px                        !default;
-$height-button-small:         34px                        !default;
+$height-button-small:         $height-small               !default;
 
 
 // PRIMARY -------------------------------------------------------------------------------------------/
