@@ -86,8 +86,22 @@ Type | Illustration
 
 - L'élément sélectionné remplace la value par défaut.
 
-### Inactif
-L'opacité d'un champ inactif est 40 %.
+## Cas spécifique
+
+### Select, hauteur 34px
+
+- Par défaut, la hauteur d'un select est celle du text field : 44px. Cependant, un select de **34px** de haut peut utilisé dans des cas spécifiques et principalement sur **Desktop**.
+- La value et le placeholder sont de **14px**.
+
+
+Type | Illustration
+------------ | ------------- |
+**Enabled** |![select__small__enabled](design/select__small__enabled.png)
+**With default value** |![select__small__with-default-value](design/select__small__with-default-value.png)
+**With placeholder** |![select__small__with-placeholder](design/select__small__with-placeholder.png)
+**Focus** |![select__small__focus](design/select__small__focus.png)
+**Error** |![select__small__error](design/select__small__error.png)
+**Disabled** |![select__small__disabled](design/select__small__disabled.png)
 
 ## Gestion des erreurs
 
@@ -105,9 +119,7 @@ L'opacité d'un champ inactif est 40 %.
    </div>
    </div>
 
-
-
-## 4- Bonnes pratiques
+## Bonnes pratiques
 
 - Si le nombre d’options est inférieur ou égale à 3, utiliser un bouton radio.
 - Eviter les très longues listes nécessitant un scroll car les utilisateurs ne peuvent voir tous les choix en un coup d'œil.
@@ -117,7 +129,7 @@ L'opacité d'un champ inactif est 40 %.
 - Le select est pris en charge par un clavier.
 
 
-## 5- Autres composants
+## Autres composants
 
 - Select avec une sélection multiple
 - Select avec un champ de recherche
