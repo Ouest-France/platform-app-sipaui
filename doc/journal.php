@@ -28,7 +28,7 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">2.1.0</span></div>
+                                <div class="table-cell"><span class="version">2.1.1</span></div>
                                 <div class="table-cell">
                                     <ul>
                                         <li>Composants&nbsp;:
@@ -41,7 +41,7 @@
                             </li>
 
                             <li class="table-row">
-                                <div class="table-cell"><span class="version breaking">2.0.1</span></div>
+                                <div class="table-cell"><span class="version breaking">2.0.4</span></div>
                                 <div class="table-cell">
                                     <p><strong>Breaking change&nbsp;!</strong></p>
                                     <ul>
