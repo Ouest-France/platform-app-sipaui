@@ -154,3 +154,9 @@ $margin-xlarge:     40px    !default;
 
 // disabled
 $opacity-disabled: .4 !default;
+
+
+
+// Sélecteurs
+$inputTextBase: 'input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"], textarea, .su-input-text, .su-textarea';
+$inputTextPlus: $inputTextBase + ', input[type="date"]' ;

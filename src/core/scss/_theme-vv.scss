@@ -37,20 +37,32 @@ $color-link-standard: $color-secondary-3;
 @import "mixins";
 @import "variables";
 
-@import "../../components/FOUNDATIONS/Helpers/theme-vv";
-@import "../../components/FOUNDATIONS/Margins/theme-vv";
-@import "../../components/FOUNDATIONS/Standard-text/theme-vv";
-@import "../../components/FOUNDATIONS/Grids/theme-vv";
-@import "../../components/COMPONENTS/Titles/theme-vv";
-@import "../../components/COMPONENTS/Lists/theme-vv";
-@import "../../components/COMPONENTS/Links/theme-vv";
-@import "../../components/COMPONENTS/Buttons/theme-vv";
-@import "../../components/COMPONENTS/Labels/theme-vv";
-@import "../../components/COMPONENTS/Text-fields/theme-vv";
-@import "../../components/COMPONENTS/Radio-buttons/theme-vv";
-@import "../../components/COMPONENTS/Checkboxes/theme-vv";
-@import "../../components/COMPONENTS/Selects/theme-vv";
-@import "../../components/COMPONENTS/Errors/theme-vv";
-@import "../../components/COMPONENTS/Loaders/theme-vv";
-@import "../../components/COMPONENTS/Steppers/theme-vv";
+// Atoms ---------------------------------------------------------
+@import "../../components/1-ATOMS/Buttons/theme-vv";
 
+@import "../../components/1-ATOMS/Form/Checkboxes/theme-vv";
+@import "../../components/1-ATOMS/Form/Errors/theme-vv";
+@import "../../components/1-ATOMS/Form/Labels/theme-vv";
+@import "../../components/1-ATOMS/Form/Radio-buttons/theme-vv";
+@import "../../components/1-ATOMS/Form/Selects/theme-vv";
+@import "../../components/1-ATOMS/Form/Text-fields/theme-vv";
+
+@import "../../components/1-ATOMS/Loaders/theme-vv";
+
+@import "../../components/1-ATOMS/Text/Links/theme-vv";
+@import "../../components/1-ATOMS/Text/Lists/theme-vv";
+@import "../../components/1-ATOMS/Text/Standard-text/theme-vv";
+@import "../../components/1-ATOMS/Text/Titles/theme-vv";
+
+
+// Molecules ---------------------------------------------------------
+@import "../../components/2-MOLECULES/Steppers/theme-vv";
+
+
+// Layouts ---------------------------------------------------------
+@import "../../components/3-LAYOUTS/Grids/theme-vv";
+@import "../../components/3-LAYOUTS/Margins/theme-vv";
+
+
+// Helpers ---------------------------------------------------------
+@import "../../components/4-HELPERS/Helpers/theme-vv";
