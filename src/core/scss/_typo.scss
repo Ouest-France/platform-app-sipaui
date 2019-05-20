@@ -41,3 +41,18 @@ $margin-paragraphe: $margin-medium;
         font-size: $font-size-small;
     }
 }
+
+// LIEN STANDARD ------------------------------------------------------------------------------------------/
+.sipaui {
+    a {
+        color: $color-link-standard;
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-link-standard-hover;
+            text-decoration: none;
+        }
+    }
+}
