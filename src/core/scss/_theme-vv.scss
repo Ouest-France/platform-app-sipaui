@@ -40,19 +40,19 @@ $color-link-standard: $color-secondary-3;
 // Atoms ---------------------------------------------------------
 @import "../../components/1-ATOMS/Buttons/theme-vv";
 
-@import "../../components/1-ATOMS/Form/Checkboxes/theme-vv";
-@import "../../components/1-ATOMS/Form/Errors/theme-vv";
-@import "../../components/1-ATOMS/Form/Labels/theme-vv";
-@import "../../components/1-ATOMS/Form/Radio-buttons/theme-vv";
-@import "../../components/1-ATOMS/Form/Selects/theme-vv";
-@import "../../components/1-ATOMS/Form/Text-fields/theme-vv";
+@import "../../components/1-ATOMS/FORM/Checkboxes/theme-vv";
+@import "../../components/1-ATOMS/FORM/Errors/theme-vv";
+@import "../../components/1-ATOMS/FORM/Labels/theme-vv";
+@import "../../components/1-ATOMS/FORM/Radio-buttons/theme-vv";
+@import "../../components/1-ATOMS/FORM/Selects/theme-vv";
+@import "../../components/1-ATOMS/FORM/Text-fields/theme-vv";
 
 @import "../../components/1-ATOMS/Loaders/theme-vv";
 
-@import "../../components/1-ATOMS/Text/Links/theme-vv";
-@import "../../components/1-ATOMS/Text/Lists/theme-vv";
-@import "../../components/1-ATOMS/Text/Standard-text/theme-vv";
-@import "../../components/1-ATOMS/Text/Titles/theme-vv";
+@import "../../components/1-ATOMS/TEXT/Links/theme-vv";
+@import "../../components/1-ATOMS/TEXT/Lists/theme-vv";
+@import "../../components/1-ATOMS/TEXT/Standard-text/theme-vv";
+@import "../../components/1-ATOMS/TEXT/Titles/theme-vv";
 
 
 // Molecules ---------------------------------------------------------

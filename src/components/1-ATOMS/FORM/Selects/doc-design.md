@@ -14,12 +14,12 @@ Les selects permettent à l’utilisateur de sélectionner une option dans une l
 
 Type | Illustration
 ------------ | ------------- |
-**Enabled** | ![select__enabled](design/select__enabled.png)
-**With default value** |![select__with-default-value](design/select__with-default-value.png)
-**With placeholder** |![select__with-placeholder](design/select__with-placeholder.png)
-**Focus** |![select__focus](design/select__focus.png)
-**Error** |![select__error](design/select__error.png)
-**Disabled** |![select__disabled](design/select__disabled.png)
+**Enabled** | ![select__enabled](components/1-ATOMS/FORM/Selects/design/select__enabled.png)
+**With default value** |![select__with-default-value](components/1-ATOMS/FORM/Selects/design/select__with-default-value.png)
+**With placeholder** |![select__with-placeholder](components/1-ATOMS/FORM/Selects/design/select__with-placeholder.png)
+**Focus** |![select__focus](components/1-ATOMS/FORM/Selects/design/select__focus.png)
+**Error** |![select__error](components/1-ATOMS/FORM/Selects/design/select__error.png)
+**Disabled** |![select__disabled](components/1-ATOMS/FORM/Selects/design/select__disabled.png)
 
 ## Spécifications
 
@@ -49,7 +49,7 @@ Type | Illustration
 <div class="do-dont">
 <div class="do">
 
-![select__ex__default](design/select__ex__default.png) |
+![select__ex__default](components/1-ATOMS/FORM/Selects/design/select__ex__default.png) |
 ------------ |
 **Do** <br/> Par exemple, "Choisissez" insite l’utilisateur à ouvrir le champ.
 
@@ -76,7 +76,7 @@ Type | Illustration
   <div class="do-dont">
   <div class="do">
 
-  ![select__exemples__focus-ios](design/select__exemples__focus-ios.png) |
+  ![select__exemples__focus-ios](components/1-ATOMS/FORM/Selects/design/select__exemples__focus-ios.png) |
   ------------ |
   **Do** <br/> L’ordre alphabétique est souvent le plus approprié.
 
@@ -96,12 +96,12 @@ Type | Illustration
 
 Type | Illustration
 ------------ | ------------- |
-**Enabled** |![select__small__enabled](design/select__small__enabled.png)
-**With default value** |![select__small__with-default-value](design/select__small__with-default-value.png)
-**With placeholder** |![select__small__with-placeholder](design/select__small__with-placeholder.png)
-**Focus** |![select__small__focus](design/select__small__focus.png)
-**Error** |![select__small__error](design/select__small__error.png)
-**Disabled** |![select__small__disabled](design/select__small__disabled.png)
+**Enabled** |![select__small__enabled](components/1-ATOMS/FORM/Selects/design/select__small__enabled.png)
+**With default value** |![select__small__with-default-value](components/1-ATOMS/FORM/Selects/design/select__small__with-default-value.png)
+**With placeholder** |![select__small__with-placeholder](components/1-ATOMS/FORM/Selects/design/select__small__with-placeholder.png)
+**Focus** |![select__small__focus](components/1-ATOMS/FORM/Selects/design/select__small__focus.png)
+**Error** |![select__small__error](components/1-ATOMS/FORM/Selects/design/select__small__error.png)
+**Disabled** |![select__small__disabled](components/1-ATOMS/FORM/Selects/design/select__small__disabled.png)
 
 ## Gestion des erreurs
 
@@ -112,7 +112,7 @@ Type | Illustration
   <div class="do-dont">
   <div class="do">
 
-  ![select__exemples__error](design/select__exemples__error.png) |
+  ![select__exemples__error](components/1-ATOMS/FORM/Selects/design/select__exemples__error.png) |
   ------------ |
   **Do** <br/> Dans le cas d’un select obligatoire, le message d’erreur demande de renseigner le champ.
 

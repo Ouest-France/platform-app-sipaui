@@ -7,8 +7,8 @@ Ce composant détermine l’affichage des messages d’erreurs générées par l
 
 Type | Illustration
 ------------ | ------------- |
-**Pas d’erreur** | ![label__with-placeholder](design/error__no.png)<br />(absence de message, aucune place réservée.)
-**Erreur** | ![label__disabled](design/error__yes.png)
+**Pas d’erreur** | ![label__with-placeholder](components/1-ATOMS/FORM/Errors/design/error__no.png)<br />(absence de message, aucune place réservée.)
+**Erreur** | ![label__disabled](components/1-ATOMS/FORM/Errors/design/error__yes.png)
 
 ## Spécifications
 

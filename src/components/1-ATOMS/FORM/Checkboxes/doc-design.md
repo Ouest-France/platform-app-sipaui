@@ -16,7 +16,7 @@ Les checkboxes permettent à l’utilisateur de sélectionner ou désélectionne
 
 Desactivated / Hover | Activated / Focus | Error | Disabled
 ------------ | ------------- | ------------- | ------------- |
-![checkboxes__desactivated](design/checkboxes__desactivated.png)|![checkboxes__activated](design/checkboxes__activated.png)|![checkboxes__error](design/checkboxes__error.png)|![checkboxes__desactivated__disabled](design/checkboxes__desactivated__disabled.png)
+![checkboxes__desactivated](components/1-ATOMS/FORM/Checkboxes/design/checkboxes__desactivated.png)|![checkboxes__activated](components/1-ATOMS/FORM/Checkboxes/design/checkboxes__activated.png)|![checkboxes__error](components/1-ATOMS/FORM/Checkboxes/design/checkboxes__error.png)|![checkboxes__desactivated__disabled](components/1-ATOMS/FORM/Checkboxes/design/checkboxes__desactivated__disabled.png)
 Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, border radius 3px et #D4D4D4 <br> Icône : absent  <br> Texte : 16px, regular, police du thème #333333 <br> Margin right : 6px | -  <br> Fond : #E2001A <br> Contour : épaisseur 1px, border radius 3px et #E2001A <br> Icône : épaisseur 1px, #FFFFFF <br> - <br> - | - <br> -  <br>  Contour : épaisseur 1px, border radius 3px et #B40015 <br> - <br> -  | Opacité&nbsp;:&nbsp;40 %
 
 
@@ -29,14 +29,14 @@ Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, border radiu
 
 Multiple désactivated / over | Multiple activated / focus | Multiple indeterminate
 ------------ | ------------- | ------------- |
-![checkboxes__multiple__desactived](design/checkboxes__multiple__desactived.png)|![checkboxes__multiple__activated](design/checkboxes__multiple__activated.png)|![checkboxes__multiple__partial](design/checkboxes__multiple__partial.png)
+![checkboxes__multiple__desactived](components/1-ATOMS/FORM/Checkboxes/design/checkboxes__multiple__desactived.png)|![checkboxes__multiple__activated](components/1-ATOMS/FORM/Checkboxes/design/checkboxes__multiple__activated.png)|![checkboxes__multiple__partial](components/1-ATOMS/FORM/Checkboxes/design/checkboxes__multiple__partial.png)
 
 
 ### Gestion des erreurs
 
 - La gestion des erreurs est identique au champ de texte.
 
-![checkboxes__exemples__error-with-message](design/checkboxes__exemples__error-with-message.png)
+![checkboxes__exemples__error-with-message](components/1-ATOMS/FORM/Checkboxes/design/checkboxes__exemples__error-with-message.png)
 
 - Lors d'une **sélection multiple**, toutes les cases à cocher parents et enfants ont un contour rouge.
 
@@ -51,7 +51,7 @@ Multiple désactivated / over | Multiple activated / focus | Multiple indetermin
  <div class="do-dont">
  <div class="dont">
 
-![checkboxes__ex__dont](design/checkboxes__ex__dont.png)|
+![checkboxes__ex__dont](components/1-ATOMS/FORM/Checkboxes/design/checkboxes__ex__dont.png)|
 ------------ |
 **Don’t** <br/> Eviter le terme négatif. Ici, l’utilisateur devrait cocher la case pour que quelque chose ne se produise pas.
 

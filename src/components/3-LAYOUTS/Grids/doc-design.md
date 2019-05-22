@@ -52,19 +52,19 @@ Taille de la marge externe | 20px | 30px | *30px plus fond perdu* | *10px plus f
 <div class="do-dont">
 <div class="do">
 
-![grid__320](design/grid__320.png)
+![grid__320](components/3-LAYOUTS/Grids/design/grid__320.png)
 <p class="legende">Écran mobile&nbsp;: 320px</p>
 
-![grid__360](design/grid__360.png)
+![grid__360](components/3-LAYOUTS/Grids/design/grid__360.png)
 <p class="legende">Écran mobile&nbsp;: 360px</p>
 
-![grid__768](design/grid__768.png)
+![grid__768](components/3-LAYOUTS/Grids/design/grid__768.png)
 <p class="legende">Écran tablette portrait&nbsp;: 768px</p>
 
-![grid__940](design/grid__940.png)
+![grid__940](components/3-LAYOUTS/Grids/design/grid__940.png)
 <p class="legende">Écran tablette paysage&nbsp;: 980px</p>
 
-![grid__1260](design/grid__1260.png)
+![grid__1260](components/3-LAYOUTS/Grids/design/grid__1260.png)
 <p class="legende">Écran desktop&nbsp;: 1280px</p>
 
 ### Autres composants

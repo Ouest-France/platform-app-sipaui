@@ -7,13 +7,13 @@ Les champs de texte permettent à l'utilisateur de saisir et de modifier du text
 
 Type | Illustration
 ------------ | ------------- |
-**Enabled** | ![textfield__default](design/textfield__default.png)
-**With placeholder** | ![textfield__with-placeholder](design/textfield__with-placeholder.png)
-**With default value** |  ![textfield__with-default-value](design/textfield__with-default-value.png)  
-**Focus** |![textfield__focus](design/textfield__focus.png)
-**Error** | ![textfield__error](design/textfield__error.png)
-**Disabled** | ![textfield__disabled](design/textfield__disabled.png)
-**With icon** | ![textfield__with-icon-right](design/textfield__with-icon-right.png)
+**Enabled** | ![textfield__default](components/1-ATOMS/FORM/Text-fields/design/textfield__default.png)
+**With placeholder** | ![textfield__with-placeholder](components/1-ATOMS/FORM/Text-fields/design/textfield__with-placeholder.png)
+**With default value** |  ![textfield__with-default-value](components/1-ATOMS/FORM/Text-fields/design/textfield__with-default-value.png)
+**Focus** |![textfield__focus](components/1-ATOMS/FORM/Text-fields/design/textfield__focus.png)
+**Error** | ![textfield__error](components/1-ATOMS/FORM/Text-fields/design/textfield__error.png)
+**Disabled** | ![textfield__disabled](components/1-ATOMS/FORM/Text-fields/design/textfield__disabled.png)
+**With icon** | ![textfield__with-icon-right](components/1-ATOMS/FORM/Text-fields/design/textfield__with-icon-right.png)
 
 ## Spécifications
 

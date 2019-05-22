@@ -15,7 +15,7 @@ Les loaders sont des animations en boucle qui indiquent à l’utilisateur qu'**
 - Couleur de l'indicateur : #E2001A
 - Couleur de la piste circulaire : #D4D4D4
 
-![loader__default](design/loader__default.png)
+![loader__default](components/1-ATOMS/Loaders/design/loader__default.png)
 
 - Lorsque le loader est sur une page, un voile blanc couvre l'ensemble de cette page. Le loader se possitionne dessus.
 
@@ -28,7 +28,7 @@ Les loaders sont des animations en boucle qui indiquent à l’utilisateur qu'**
 <div class="do-dont">
 <div class="do">
 
-![loader__exemples__loader-with-overflow](design/loader__exemples__loader-with-overflow.png) |
+![loader__exemples__loader-with-overflow](components/1-ATOMS/Loaders/design/loader__exemples__loader-with-overflow.png) |
 ------------ |
 **Do** <br/> Un loader centré sur l'écran indique <br /> que l'ensemble du processus est en cours <br /> de chargement.
 

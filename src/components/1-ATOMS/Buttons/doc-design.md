@@ -14,7 +14,7 @@ Le bouton principal, sur fond de couleur, met en évidence une action importante
 
 Enabled | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
-![button__primary__enabled](design/button__primary__enabled.png)| ![button__primary__hover](design/button__primary__hover.png)| ![button__primary__disabled](design/button__primary__disabled.png)
+![button__primary__enabled](components/1-ATOMS/Buttons/design/button__primary__enabled.png)| ![button__primary__hover](components/1-ATOMS/Buttons/design/button__primary__hover.png)| ![button__primary__disabled](components/1-ATOMS/Buttons/design/button__primary__disabled.png)
 Hauteur : 44px  <br> Largeur : minimum 120px et padding 20px <br> Contour : angle 3px  <br> Couleur : #E2001A  <br> Texte : 16px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> - <br> Couleur : #B40015 <br> - | Opacité : 40 %
 
 
@@ -24,7 +24,7 @@ Hauteur : 44px  <br> Largeur : minimum 120px et padding 20px <br> Contour : angl
 
 Le bouton pleine largeur s'adapte à la largeur du container (Mobile et Desktop).
 
-![button__primary__full-width](design/button__primary__full-width.png)
+![button__primary__full-width](components/1-ATOMS/Buttons/design/button__primary__full-width.png)
 
 
 ##### Bouton primaire, hauteur 34px
@@ -33,7 +33,7 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
 
   Enabled | Hover / Focus / Pressed | Inactif
   ------------ | ------------- | ------------- |
-  ![button__primary__small__enabled](design/button__primary__small__enabled.png)|![button__primary__small__hover](design/button__primary__small__hover.png)| ![button__primary__small__disabled](design/button__primary__small__disabled.png)
+  ![button__primary__small__enabled](components/1-ATOMS/Buttons/design/button__primary__small__enabled.png)|![button__primary__small__hover](components/1-ATOMS/Buttons/design/button__primary__small__hover.png)| ![button__primary__small__disabled](components/1-ATOMS/Buttons/design/button__primary__small__disabled.png)
   Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : angle 3px <br> Couleur : #E2001A <br> Texte : 14px, regular, police du thème, #FFFFFF | - <br> - <br> - <br> Couleur : #B40015 <br> - | Opacité : 40 %
 
 ##### Bouton primaire Abonnement
@@ -42,7 +42,7 @@ Dans un contexte d'abonnement, la couleur de fond du bouton primaire devient #DB
 
   Enabled | Hover / Focus / Pressed
   ------------ | -------------
-![sbutton__primary__premium__enabled](design/button__primary__premium__enabled.png)|   ![button__primary__premium__hover](design/button__primary__premium__hover.png)
+![sbutton__primary__premium__enabled](components/1-ATOMS/Buttons/design/button__primary__premium__enabled.png)|   ![button__primary__premium__hover](components/1-ATOMS/Buttons/design/button__primary__premium__hover.png)
 Couleur : #DBA504 <br> Texte : #FFFFFF |  Couleur : #C2940C <br> -
 
 
@@ -53,7 +53,7 @@ Le bouton secondaire transparent avec un cadre fin est utilisé pour des actions
 
 Enabled | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
-![button__secondary__enabled](design/button__secondary__enabled.png)| ![button__secondary__hover](design/button__secondary__hover.png)| ![button__secondary__disabled](design/button__secondary__disabled.png)
+![button__secondary__enabled](components/1-ATOMS/Buttons/design/button__secondary__enabled.png)| ![button__secondary__hover](components/1-ATOMS/Buttons/design/button__secondary__hover.png)| ![button__secondary__disabled](components/1-ATOMS/Buttons/design/button__secondary__disabled.png)
 Hauteur : 44px  <br> Largeur : minimum 120px et padding 20px  <br> Contour : angle 3px <br> Couleur : #333333 et transparent  <br> Texte : 16px, regular, police du thème, #333333 | - <br> - <br> - <br> Couleur : #B40015 <br> Texte : #B40015 | Opacité : 40 %
 
 
@@ -65,7 +65,7 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
 
 Enabled | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
-![button__secondary__small__enabled](design/button__secondary__small__enabled.png)| ![button__secondary__small__hover](design/button__secondary__small__hover.png)| ![button__secondary__small__disabled](design/button__secondary__small__disabled.png)
+![button__secondary__small__enabled](components/1-ATOMS/Buttons/design/button__secondary__small__enabled.png)| ![button__secondary__small__hover](components/1-ATOMS/Buttons/design/button__secondary__small__hover.png)| ![button__secondary__small__disabled](components/1-ATOMS/Buttons/design/button__secondary__small__disabled.png)
 Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : épaisseur 1px, angle 3px <br> Couleur : #333333 et transparent <br> Texte : 14px, regular, police du thème, #333333 | - <br> - <br> - <br> Couleur : #B40015 <br> Texte : #B40015 | Opacité : 40 %
 
 ## Bonnes pratiques
@@ -79,7 +79,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 <div class="do-dont">
  <div class="do">
 
-![button__exemples__text__do](design/button__exemples__text__do.png)|
+![button__exemples__text__do](components/1-ATOMS/Buttons/design/button__exemples__text__do.png)|
 ------------ |
 **Do** <br/> Utiliser un texte simple |
 
@@ -87,7 +87,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
  <div class="dont">
 
-![button__exemples__text__dont](design/button__exemples__text__dont.png) |
+![button__exemples__text__dont](components/1-ATOMS/Buttons/design/button__exemples__text__dont.png) |
 ------------ |
 **Don’t** <br/> Ne pas surcharger le texte |
 
@@ -107,7 +107,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 <div class="do-dont">
 <div class="do">
 
-![Image_button_sequentiel](design/Image_button_sequentiel.png)|
+![Image_button_sequentiel](components/1-ATOMS/Buttons/design/Image_button_sequentiel.png)|
 ------------ |
 **Do** <br/> Mettre le bouton «&nbsp;Retour&nbsp;» à gauche
 
@@ -118,7 +118,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
  <div class="do-dont">
  <div class="dont">
 
-![Image_button_2 buttons_ko](design/Image_button_buttons_ko.png)  |
+![Image_button_2 buttons_ko](components/1-ATOMS/Buttons/design/Image_button_buttons_ko.png)  |
 ------------ |
 **Don’t** <br/> Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte.
 
