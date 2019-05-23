@@ -1,29 +1,29 @@
-#Choisir le mode de rangement des composants dans la colonne de gauche du StoryBook
+# Choisir le mode de rangement des composants dans la colonne de gauche du StoryBook
 
-##Statut
+## Statut
 
 Proposition
 
 
-##Contexte
+## Contexte
 
 StoryBook propose un menu pour accéder à tous les composants dans la colonne de gauche. Ces composants peuvent y être rangés selon la logique que l’on souhaite. Il faut donc déterminer quelle logique est la plus pertinente.
 
 
-##Propositions
+## Propositions
 
-###Premier niveau
+### Premier niveau
 1. Pas de classement, tous les composants sont à la racine.
 2. Classement en 2 groupes : **Fondations** (grille, breakpoints, helpers, marges…)  et **Components** (boutons, labels, liens, titres, cases-à-cocher…). Il s’agit du classement actuellement utilisé.
 3. Classement suivant la logique atomic-design : **Atoms**, **Molecules**, **Organisms**. Classement utilisé par exemple par [Saagie](https://7-design-system.public.prod.saagie.io/v/latest/)
 
-###Second niveau
+### Second niveau
 Quel que soit le premier niveau choisi, il est possible de regrouper **certains** composants dans un second niveau par type (par exemple : **Form**, **Text**…)
 
 
-##Arguments
+## Arguments
 
-###Premier niveau
+### Premier niveau
 NB StoryBook propose un moteur de filtre en haut de la colonne (moyennement fonctionnel malheureusement).
 
 1. **Pas de classement**
@@ -52,9 +52,9 @@ NB StoryBook propose un moteur de filtre en haut de la colonne (moyennement fonc
    
    (-) Ces 3 ensembles ne suffisent pas, certains composants ne rentrent dans aucun d’eux. Par exemple, [Saagie](https://7-design-system.public.prod.saagie.io/v/latest/) a dû ajouter les niveaux *Grid*, *Layouts*, *Helpers*…
 
-##Positions
+## Positions
 
 *Chaque personne interrogée peut ici donner son avis.*
 
 
-##Décision
+## Décision
