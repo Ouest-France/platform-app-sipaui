@@ -17,13 +17,29 @@
     }
     nav a {
         margin-right: 0;
+        opacity: 1;
     }
-    .css-uz5kid { /* Flèche devant stories */
+    .css-17cy12s { /* Flèche devant stories pliée */
+        border-top: 4px solid transparent !important;
+        border-bottom: 4px solid transparent !important;
+        border-left: 4px solid rgba(255,255,255,0.45) !important;
+    }
+    .css-uz5kid { /* Flèche devant stories dépliée */
+        border-top: 4px solid transparent !important;
+        border-bottom: 4px solid transparent  !important;
         border-left: 4px solid #fff !important;
     }
     .css-19bal3c svg { /* SVG déco en devant stories */
-        fill: #fff !important;
+        /*fill: #fff !important;
+        color: #fff !important;*/
+        display: none;
+    }
+    .css-7d9ni3 { /* Texte de premier niveaux */
+        color: #d4d4d4 !important;
+    }
+    .css-uz5kid ~ span { /* Texte des niveaux ouverts */
         color: #fff !important;
+        font-weight: 800;
     }
     .css-uz5kid::after { /* Fond niveau 1 ouvert */
         content:'';
