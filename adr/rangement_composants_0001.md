@@ -11,6 +11,7 @@ StoryBook propose un menu pour accéder à tous les composants dans la colonne d
 
 
 ##Propositions
+
 ###Premier niveau
 1. Pas de classement, tous les composants sont à la racine.
 2. Classement en 2 groupes : **Fondations** (grille, breakpoints, helpers, marges…)  et **Components** (boutons, labels, liens, titres, cases-à-cocher…). Il s’agit du classement actuellement utilisé.
@@ -19,7 +20,9 @@ StoryBook propose un menu pour accéder à tous les composants dans la colonne d
 ###Second niveau
 Quel que soit le premier niveau choisi, il est possible de regrouper **certains** composants dans un second niveau par type (par exemple : **Form**, **Text**…)
 
+
 ##Arguments
+
 ###Premier niveau
 NB StoryBook propose un moteur de filtre en haut de la colonne (moyennement fonctionnel malheureusement).
 
