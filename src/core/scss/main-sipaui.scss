@@ -3,32 +3,22 @@
 */
 @import "main";
 
-// Atoms ---------------------------------------------------------
-@import "../../components/1-ATOMS/Buttons/main";
+// Les fondations
+@import "../../components/FOUNDATIONS/Helpers/main";
+@import "../../components/FOUNDATIONS/Margins/main";
+@import "../../components/FOUNDATIONS/Standard-text/main";
+@import "../../components/FOUNDATIONS/Grids/main";
 
-@import "../../components/1-ATOMS/FORM/Checkboxes/main";
-@import "../../components/1-ATOMS/FORM/Errors/main";
-@import "../../components/1-ATOMS/FORM/Labels/main";
-@import "../../components/1-ATOMS/FORM/Radio-buttons/main";
-@import "../../components/1-ATOMS/FORM/Selects/main";
-@import "../../components/1-ATOMS/FORM/Text-fields/main";
-
-@import "../../components/1-ATOMS/Loaders/main";
-@import "../../components/1-ATOMS/Steppers/main";
-
-@import "../../components/1-ATOMS/TEXT/Links/main";
-@import "../../components/1-ATOMS/TEXT/Lists/main";
-@import "../../components/1-ATOMS/TEXT/Standard-text/main";
-@import "../../components/1-ATOMS/TEXT/Titles/main";
-
-
-// Molecules ---------------------------------------------------------
-
-
-// Layouts ---------------------------------------------------------
-@import "../../components/3-LAYOUTS/Grids/main";
-@import "../../components/3-LAYOUTS/Margins/main";
-
-
-// Helpers ---------------------------------------------------------
-@import "../../components/4-HELPERS/Helpers/main";
+// Les composants
+@import "../../components/COMPONENTS/Titles/main";
+@import "../../components/COMPONENTS/Lists/main";
+@import "../../components/COMPONENTS/Links/main";
+@import "../../components/COMPONENTS/Buttons/main";
+@import "../../components/COMPONENTS/Labels/main";
+@import "../../components/COMPONENTS/Text-fields/main";
+@import "../../components/COMPONENTS/Radio-buttons/main";
+@import "../../components/COMPONENTS/Checkboxes/main";
+@import "../../components/COMPONENTS/Selects/main";
+@import "../../components/COMPONENTS/Errors/main";
+@import "../../components/COMPONENTS/Loaders/main";
+@import "../../components/COMPONENTS/Steppers/main";
