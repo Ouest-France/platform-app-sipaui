@@ -34,8 +34,15 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li>Petit select.</li>
+                                                <li>Liens&nbsp;: prise en compte de &lt;a&gt; sans classe.</li>
+                                                <li>Champs texte&nbsp;: prise en charge basique d’input search.</li>
                                             </ul>
                                         </li>
+                                        <li>Documentation&nbsp;:
+                                        <ul>
+                                            <li>Passage à StoryBook 5 pour le catalogue de composants</li>
+                                        </ul>
+                                    </li>
                                     </ul>
                                 </div>
                             </li>
