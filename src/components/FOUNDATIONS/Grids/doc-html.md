@@ -428,9 +428,13 @@ Utilisation de la classe `su-vertical-end`.
 
 ## Grille libre automatique
 
-SipaUI propose une grille de colonnes automatiques en flex. Il suffit d’ajouter la classe `su-grid-auto` au système de grille (`su-row`). Avec ce système, il est possible de générer une suite de colonnes en nombre variable qui se répartiront automatiquement dans l’espace accordé par le parent. Pour cela, il suffit de créer autant de colonnes que souhaité avec la classe `su-col`. **Elles seront flexibles, mais pas responsives** (le nombre colonne sera toujours le même, quel que soit la taille de l’écran).
+SipaUI propose une grille de colonnes automatiques en flex. Il suffit d’ajouter la classe `su-grid-auto` au système de grille (`su-row`). Avec ce système, il est possible de générer une suite de colonnes en nombre variable qui se répartiront automatiquement dans l’espace accordé par le parent. Pour cela, il suffit de créer autant de colonnes que souhaité avec la classe `su-col`.
 
-Il faut toutefois noter que ce système de colonage automatique est un outil pour des cas particuliers, mais **il ne doit en aucun cas remplacer la grille standard pour la mise en page générale d’un site**.
+Ces colonnes seront **flexibles, mais pas responsives** (le nombre de colonnes sur une ligne sera toujours le même, quel que soit la taille de l’écran). Par conséquent, **il vous faudra gérer la *responsivité* dans vos propres CSS** ou en utilisant des **classes de visibilité / invisibilté responsive** des *helpers* SipaUI comme `su-hidden-sm`, `su-visible-xl`…
+
+Par ailleurs, ces colonnes auront **toutes la même largeur**. Pour changer leur largeur, il faudra passer par les attributs `flex`, `flex-grow`, `width` ou `max-width` dans vos CSS.
+
+Il faut toutefois noter que ce système de colonage automatique est un outil pour des cas particuliers, mais **il ne doit en aucun cas remplacer la grille standard pour la mise en page générale d’un site éditorial**.
 
 ```html
 <div class="su-grid-auto su-row">
@@ -485,17 +489,253 @@ Vous pouvez rajouter les gouttières standards de 20px avec la classe `su-has-gu
 
 ### Wrap
 
-Par défaut, les colonnes de la grille automatique restent sur une ligne et s'adaptent en largeur, même quand ils sont trop larges pour tenir sur cette largeur. Vous pouvez mettre en place un retour à la ligne automatique avec la classe `su-wrap` sur le rang.
+Par défaut, **les colonnes de la grille automatique restent sur une ligne** et s'adaptent en largeur à leur contenu. **Quand elles sont trop larges pour tenir sur cette largeur elles sortent du conteneur**. Pour corriger ce problème vous pouvez gérer localement la largeur de vos colonnes (comme expliqué plus haut) pour qu'elles tiennent sur la ligne ou mettre en place un retour à la ligne automatique. 
+
+Pour mettre en place le retour automatique utilisez la classe `su-wrap` sur le rang. Dans ce cas, la dernière colonne d’une ligne laissera un espace à sa droite (cf. ci-dessous). **À vous de régler la largeur de vos colonnes** (avec les attributs `flex`, `flex-grow`, `width` ou `max-width` dans vos CSS). Vous pouvez d’ailleurs gérer ces tailles en fonction de media-queries…
+
+#### Exemple de base
+
+```html
+<div class="demo-grille page">
+	<div>
+		Page
+	</div>
+	<div class="su-grid-auto su-row su-wrap">
+		<div class="su-col">
+			<p>Contenu 1</p>
+			<p>Lorem ipsum dolor sit amet, consectetur.</p>
+		</div>
+		<div class="su-col">
+			<p>Contenu 2</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="su-col">
+			<p>Contenu 3</p>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+		<div class="su-col">
+			<p>Contenu 4</p>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+		<div class="su-col">
+			<p>Contenu 5</p>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+		<div class="su-col">
+			<p>Contenu 6</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		<div class="su-col">
+			<p>Contenu 7</p>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+	</div>
+</div>
+```
+
+<div class="sipaui">
+	<div class="demo-grille page">
+		<div>
+			Page
+		</div>
+		<div class="su-grid-auto su-row su-wrap">
+			<div class="su-col">
+				<p>Contenu 1</p>
+				<p>Lorem ipsum dolor sit amet, consectetur.</p>
+			</div>
+			<div class="su-col">
+				<p>Contenu 2</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="su-col">
+				<p>Contenu 3</p>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="su-col">
+				<p>Contenu 4</p>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="su-col">
+				<p>Contenu 5</p>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="su-col">
+				<p>Contenu 6</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="su-col">
+				<p>Contenu 7</p>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+#### Exemple avec gouttières
+
+```html
+<div class="demo-grille page">
+	<div>
+		Page
+	</div>
+	<div class="su-grid-auto su-row su-wrap su-has-gutter">
+		<div class="su-col">
+			<p>Contenu 1</p>
+			<p>Lorem ipsum dolor sit amet, consectetur.</p>
+		</div>
+		<div class="su-col">
+			<p>Contenu 2</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="su-col">
+			<p>Contenu 3</p>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+		<div class="su-col">
+			<p>Contenu 4</p>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+		<div class="su-col">
+			<p>Contenu 5</p>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+		<div class="su-col">
+			<p>Contenu 6</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		<div class="su-col">
+			<p>Contenu 7</p>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+	</div>
+</div>
+```
+
+<div class="sipaui">
+	<div class="demo-grille page">
+		<div>
+			Page
+		</div>
+		<div class="su-grid-auto su-row su-wrap su-has-gutter">
+			<div class="su-col">
+				<p>Contenu 1</p>
+				<p>Lorem ipsum dolor sit amet, consectetur.</p>
+			</div>
+			<div class="su-col">
+				<p>Contenu 2</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="su-col">
+				<p>Contenu 3</p>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="su-col">
+				<p>Contenu 4</p>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="su-col">
+				<p>Contenu 5</p>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="su-col">
+				<p>Contenu 6</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="su-col">
+				<p>Contenu 7</p>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+#### Exemple avec gestion locale de la taille
+
+```html
+<style>
+    .quart {width: calc(25% - 15px); margin-top: 10px}
+    .quart:nth-child(4n) {margin-right: 0 !important}
+</style>
+<div class="demo-grille page">
+	<div>
+		Page
+	</div>
+	<div class="su-grid-auto su-row su-wrap su-has-gutter">
+		<div class="su-col quart">
+			<p>Contenu 1</p>
+			<p>Lorem ipsum dolor sit amet, consectetur.</p>
+		</div>
+		<div class="su-col quart">
+			<p>Contenu 2</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="su-col quart">
+			<p>Contenu 3</p>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+		<div class="su-col quart">
+			<p>Contenu 4</p>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+		<div class="su-col quart">
+			<p>Contenu 5</p>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+		<div class="su-col quart">
+			<p>Contenu 6</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</div>
+</div>
+```
+
+<style>
+    .quart {width: calc(25% - 15px); margin-top: 10px}
+    .quart:nth-child(4n) {margin-right: 0 !important}
+</style>
+<div class="sipaui">
+	<div class="demo-grille page">
+		<div>
+			Page
+		</div>
+		<div class="su-grid-auto su-row su-wrap su-has-gutter">
+			<div class="su-col quart">
+				<p>Contenu 1</p>
+				<p>Lorem ipsum dolor sit amet, consectetur.</p>
+			</div>
+			<div class="su-col quart">
+				<p>Contenu 2</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="su-col quart">
+				<p>Contenu 3</p>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="su-col quart">
+				<p>Contenu 4</p>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="su-col quart">
+				<p>Contenu 5</p>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="su-col quart">
+				<p>Contenu 6</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+	</div>
+</div>
 
 
-### Grilles imbriquées
+## Grilles imbriquées
 
 Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La seule contrainte est de **n'utiliser le conteneur que sur la première grille**.
 
 ```html
 <div class="su-row">
 	<div class="su-col-md-12 su-col-lg-16">
-		<div class="su-grid-auto su-row su-has-gutter">
+		<div class="su-grid-auto su-rowr">
 			<div class="su-col">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -524,7 +764,7 @@ Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La 
 		<div class="su-container">
 			<div class="su-row">
 				<div class="su-col-md-12 su-col-lg-16">
-					<div class="su-grid-auto su-row su-has-gutter">
+					<div class="su-grid-auto su-row">
 						<div class="su-col">
 							<p class="contenu">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

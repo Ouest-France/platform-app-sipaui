@@ -59,21 +59,24 @@
 
         @include grid-offset-definition(xs, $grid-small-max-col);
 
+        // Grille auto
         &.su-grid-auto {
             @include flex-wrap(nowrap);
 
             &.su-wrap {
                 @include flex-wrap(wrap);
+                @include justify-content(flex-start, start)
+
+                .su-col {
+                    @include flex(0 0 auto);
+                }
             }
             .su-col {
-                @include flex(1 0 0);
+                @include flex(1 0 auto);
             }
             &.su-has-gutter {
                 .su-col {
-                    margin: 0 $grid-gutter / 2;
-                }
-                .su-col:first-child {
-                    margin-left: 0;
+                    margin-right: $grid-gutter;
                 }
                 .su-col:last-child {
                     margin-right: 0;
