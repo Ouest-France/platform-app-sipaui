@@ -18,6 +18,6 @@ $background-button-primary-hover:   $color-secondary-3;
 
 
 // SECONDARY -------------------------------------------------------------------------------------------/
-$color-button-secondary:          $color-secondary-3;
-$shadow-button-secondary:         0 0 0 1px $color-button-secondary inset;
-
+// hover, focus
+$color-button-secondary-hover: $color-secondary-3;
+$border-button-secondary-hover: $color-button-secondary-hover;
