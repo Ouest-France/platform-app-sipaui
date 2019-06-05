@@ -15,6 +15,7 @@ body a {
     a.su-link {
         color: $color-link-article;
         text-decoration: none;
+        padding-bottom: 1px;
         border-bottom: 1px solid $color-link-article;
 
         &:hover,
