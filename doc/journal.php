@@ -28,7 +28,22 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">2.1.3</span></div>
+                                <div class="table-cell"><span class="version breaking">3.0.0</span></div>
+                                <div class="table-cell">
+                                    <p><strong>Breaking change&nbsp;!</strong></p>
+                                    <ul>
+                                        <li>Composants&nbsp;:
+                                            <ul>
+                                                <li>Évol&nbsp;: grille, amélioration de la grille auto.</li>
+                                                <li>Évol&nbsp;: titres, </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">2.1.2</span></div>
                                 <div class="table-cell">
                                     <ul>
                                         <li>Composants&nbsp;:
@@ -144,15 +159,15 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">2.2</span></div>
+                                <div class="table-cell"><span class="version">3.1</span></div>
                                 <div class="table-cell">Mot de passe.</div>
                             </li>
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">2.3</span></div>
+                                <div class="table-cell"><span class="version">3.2</span></div>
                                 <div class="table-cell">Popin.</div>
                             </li>
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">2.4</span></div>
+                                <div class="table-cell"><span class="version">3.3</span></div>
                                 <div class="table-cell">Pagination.</div>
                             </li>
                         </ul>
