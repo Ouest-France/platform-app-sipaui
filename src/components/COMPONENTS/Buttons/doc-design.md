@@ -96,13 +96,12 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ### Boutons d'un même sujet
 
-- Les boutons liés à un même sujet ont la même largeur.
-- La distance entre ces boutons est constante.
-- Des boutons placés de manière verticales sont espacés de 20px.
+- Les boutons ont la même largeur.
+- **Les boutons sont espacés de 20px** (horizontalement et verticalement).
 - Un seul bouton primaire est présent.
 - Deux boutons secondaires maximum sont présents. De plus, ils sont positionnés de manière proche.
-- Sur mobile, le bouton primaire se trouve au-dessus des boutons secondaires.
-- Sur desktop, lorsque vous utilisez un bouton primaire et un bouton secondaire, le bouton primaire doit être placé à gauche. **Une exception s'applique dans le cas d'écran séquentiel**, le bouton primaire est à droite.
+- **Sur mobile, le bouton primaire se trouve au-dessus des boutons secondaires.**
+- Sur desktop, lorsque un bouton primaire et un bouton secondaire sont présents, le bouton primaire doit être placé à gauche. **Une exception s'applique dans le cas d'écran séquentiel**, le bouton primaire est à droite.
 
 <div class="do-dont">
 <div class="do">
