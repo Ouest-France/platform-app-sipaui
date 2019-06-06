@@ -17,7 +17,7 @@ Les listes sont utilisées pour afficher un nombre d’éléments reliés de fa�
 - Par exemple, l’ordre d’une liste de courses n’a pas grande importance.
 
 
-![unordered-list](components/1-ATOMS/TEXT/Lists/design/unordered-list.png)
+![unordered-list](components/COMPONENTS/TEXT/Lists/design/unordered-list.png)
 <br/> Les puces sont des repères visuels.
 
 
@@ -28,7 +28,7 @@ Les listes sont utilisées pour afficher un nombre d’éléments reliés de fa�
 - Afin de faciliter la lecture, les points sont alignés verticalement et les chiffres sont ferrés à droite.
 - Concrètement, ces listes sont utilisées pour décrire des processus pas-à-pas tels qu’une recette de cuisine.
 
-![ordered-list](components/1-ATOMS/TEXT/Lists/design/ordered-list.png)
+![ordered-list](components/COMPONENTS/TEXT/Lists/design/ordered-list.png)
 <br/> Les numéros rythment et organisent les éléments.
 
 ### Les listes imbriquées
@@ -37,10 +37,10 @@ Les listes sont utilisées pour afficher un nombre d’éléments reliés de fa�
 - Les listes imbriquées sont utilisées pour des listes de liens hiérarchisés tels qu’un plan de site ou menu déroulant.
 - Dans une liste ordonnée et imbriquée, le nombre d’éléments est limité à 26&nbsp;: de «&nbsp;a&nbsp;» à «&nbsp;z&nbsp;».
 
-![unordered-nested-list](components/1-ATOMS/TEXT/Lists/design/unordered-nested-list.png)
+![unordered-nested-list](components/COMPONENTS/TEXT/Lists/design/unordered-nested-list.png)
 <br/> Un **petit disque** matérialise les listes non ordonnées imbriquées.
 
-![nested-ordered-list](components/1-ATOMS/TEXT/Lists/design/nested-ordered-list.png)
+![nested-ordered-list](components/COMPONENTS/TEXT/Lists/design/nested-ordered-list.png)
 <br/> Des **lettres en minuscule** permettent de classer les listes ordonnées imbriquées.
 
 ## Bonnes pratiques

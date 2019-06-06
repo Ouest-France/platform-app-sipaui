@@ -32,7 +32,7 @@ Thème Ouest-France
 
 Enabled | Hover / Pressed | Inactif | Check
 ------------ | ------------- | ------------- | ------------- |
-![stepper__bubbles__active](components/2-MOLECULES/Steppers/design/stepper__bubbles__active.png)| ![stepper__bubbles__hover](components/2-MOLECULES/Steppers/design/stepper__bubbles__hover.png) |  ![stepper__bubbles__disabled](components/2-MOLECULES/Steppers/design/stepper__bubbles__disabled.png) | ![stepper__bubbles__check](components/2-MOLECULES/Steppers/design/stepper__bubbles__check.png)
+![stepper__bubbles__active](components/COMPONENTS/Steppers/design/stepper__bubbles__active.png)| ![stepper__bubbles__hover](components/COMPONENTS/Steppers/design/stepper__bubbles__hover.png) |  ![stepper__bubbles__disabled](components/COMPONENTS/Steppers/design/stepper__bubbles__disabled.png) | ![stepper__bubbles__check](components/COMPONENTS/Steppers/design/stepper__bubbles__check.png)
 Taille : 30 x 30px <br> Couleur : #E2001A <br> Texte : 16px, Arial bold, #FFFFFF | Taille : 30 x 30px  <br> Couleur : #B40015 <br> Contour : 1px <br> Texte : 16px, Arial bold, #FFFFFF | Taille : 30 x 30px <br> Couleur : #D4D4D4 <br> Contour : 1px <br> Texte : 16px, Arial bold, #FFFFFF | Taille : 30 x 30px <br> Couleur : #E2001A <br> Couleur du symbole : #FFFFFF
 
 
@@ -40,24 +40,24 @@ Taille : 30 x 30px <br> Couleur : #E2001A <br> Texte : 16px, Arial bold, #FFFFFF
 
 #### Mobile - Sous-thème Abonnement
 
-**Étape 1** | ![abonnement__mobile__step__1](components/2-MOLECULES/Steppers/design/abonnement__mobile__step__1.png)
+**Étape 1** | ![abonnement__mobile__step__1](components/COMPONENTS/Steppers/design/abonnement__mobile__step__1.png)
 ------------ | -------------
-**Étape 2** | ![abonnement__mobile__step__2](components/2-MOLECULES/Steppers/design/abonnement__mobile__step__2.png)
-**Étape 3** | ![abonnement__mobile__step__3](components/2-MOLECULES/Steppers/design/abonnement__mobile__step__3.png)
+**Étape 2** | ![abonnement__mobile__step__2](components/COMPONENTS/Steppers/design/abonnement__mobile__step__2.png)
+**Étape 3** | ![abonnement__mobile__step__3](components/COMPONENTS/Steppers/design/abonnement__mobile__step__3.png)
 
 #### Mobile - Thème Ouest-France
 
-**Étape 1** | ![without-label__step__1](components/2-MOLECULES/Steppers/design/without-label__step__1.png)
+**Étape 1** | ![without-label__step__1](components/COMPONENTS/Steppers/design/without-label__step__1.png)
 ------------ | -------------
-**Étape 2** | ![without-label__step__2](components/2-MOLECULES/Steppers/design/without-label__step__2.png)
-**Étape 3** | ![without-label__step__3](components/2-MOLECULES/Steppers/design/without-label__step__3.png)
+**Étape 2** | ![without-label__step__2](components/COMPONENTS/Steppers/design/without-label__step__2.png)
+**Étape 3** | ![without-label__step__3](components/COMPONENTS/Steppers/design/without-label__step__3.png)
 
 #### Desktop - Thème Ouest-France
 
-**Étape 1** | ![default__step__1](components/2-MOLECULES/Steppers/design/default__step__1.png)
+**Étape 1** | ![default__step__1](components/COMPONENTS/Steppers/design/default__step__1.png)
 ------------ | -------------
-**Étape 2** | ![default__step__2](components/2-MOLECULES/Steppers/design/default__step__2.png)
-**Étape 3** | ![default__step__3](components/2-MOLECULES/Steppers/design/default__step__3.png)
+**Étape 2** | ![default__step__2](components/COMPONENTS/Steppers/design/default__step__2.png)
+**Étape 3** | ![default__step__3](components/COMPONENTS/Steppers/design/default__step__3.png)
 
 Présents uniquement desktop, les libellés ont une taille de caractères de 14px et leur couleur est #333333. Lorsqu’ils sont inactifs, ils sont #D4D4D4.
 ## Bonnes pratiques

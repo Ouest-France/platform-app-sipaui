@@ -21,6 +21,6 @@ Type* | Mobile | Mobile | Tablette portrait | Tablette paysage | Desktop
 
 Chaque point d'arrêt a des gouttières, des colonnes et des marges spécifiques. Celles-ci sont définis dans le doc design de la grille.
 
-![layout](components/3-LAYOUTS/Breakpoints/design/layout.png)
+![layout](components/FOUNDATIONS/Breakpoints/design/layout.png)
 
 *tendance de l'appareil
