@@ -72,7 +72,7 @@
                 }
             }
             .su-col {
-                @include flex(1 0 auto);
+                @include flex(1 1 auto);
             }
             &.su-has-gutter {
                 .su-col {
