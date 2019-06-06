@@ -7,9 +7,9 @@ Les labels permettent à l’utilisateur de savoir le type d’information du co
 
 Type | Illustration
 ------------ | ------------- |
-**Standard** | ![label__default](components/COMPONENTS/FORM/Labels/design/label__default.png)
-**Facultatif** | ![label__with-placeholder](components/COMPONENTS/FORM/Labels/design/label__facultatif.png)
-**Inactif** | ![label__disabled](components/COMPONENTS/FORM/Labels/design/label__disabled.png)
+**Standard** | ![label__default](components/COMPONENTS/Labels/design/label__default.png)
+**Facultatif** | ![label__with-placeholder](components/COMPONENTS/Labels/design/label__facultatif.png)
+**Inactif** | ![label__disabled](components/COMPONENTS/Labels/design/label__disabled.png)
 
 ## Spécifications
 
@@ -20,7 +20,7 @@ Type | Illustration
   <div class="do-dont">
   <div class="do">
 
-![label__ex__label__do](components/COMPONENTS/FORM/Labels/design/label__ex__label__do.png) |
+![label__ex__label__do](components/COMPONENTS/Labels/design/label__ex__label__do.png) |
   ------------ |
   **Do** <br/> Utiliser un texte court et précis. |
 
@@ -28,7 +28,7 @@ Type | Illustration
 
    <div class="dont">
 
-![label__ex__label__dont](components/COMPONENTS/FORM/Labels/design/label__ex__label__dont.png) |
+![label__ex__label__dont](components/COMPONENTS/Labels/design/label__ex__label__dont.png) |
   ------------ |
   **Don’t** <br/> Ne pas rédiger un label complexe. |
 
@@ -48,7 +48,7 @@ Type | Illustration
     - Color : #666666
     - Taille de caractère : 12px
 
-![textfield__ex__champs-obligatoire-facultatif](components/COMPONENTS/FORM/Labels/design/textfield__ex__champs-obligatoire-facultatif.png)
+![textfield__ex__champs-obligatoire-facultatif](components/COMPONENTS/Labels/design/textfield__ex__champs-obligatoire-facultatif.png)
 
 
 - Champ non modifiable (readonly)

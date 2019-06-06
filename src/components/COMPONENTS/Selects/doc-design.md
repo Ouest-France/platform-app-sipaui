@@ -14,12 +14,12 @@ Les selects permettent à l’utilisateur de sélectionner une option dans une l
 
 Type | Illustration
 ------------ | ------------- |
-**Enabled** | ![select__enabled](components/COMPONENTS/FORM/Selects/design/select__enabled.png)
-**With default value** |![select__with-default-value](components/COMPONENTS/FORM/Selects/design/select__with-default-value.png)
-**With placeholder** |![select__with-placeholder](components/COMPONENTS/FORM/Selects/design/select__with-placeholder.png)
-**Focus** |![select__focus](components/COMPONENTS/FORM/Selects/design/select__focus.png)
-**Error** |![select__error](components/COMPONENTS/FORM/Selects/design/select__error.png)
-**Disabled** |![select__disabled](components/COMPONENTS/FORM/Selects/design/select__disabled.png)
+**Enabled** | ![select__enabled](components/COMPONENTS/Selects/design/select__enabled.png)
+**With default value** |![select__with-default-value](components/COMPONENTS/Selects/design/select__with-default-value.png)
+**With placeholder** |![select__with-placeholder](components/COMPONENTS/Selects/design/select__with-placeholder.png)
+**Focus** |![select__focus](components/COMPONENTS/Selects/design/select__focus.png)
+**Error** |![select__error](components/COMPONENTS/Selects/design/select__error.png)
+**Disabled** |![select__disabled](components/COMPONENTS/Selects/design/select__disabled.png)
 
 ## Spécifications
 
@@ -49,7 +49,7 @@ Type | Illustration
 <div class="do-dont">
 <div class="do">
 
-![select__ex__default](components/COMPONENTS/FORM/Selects/design/select__ex__default.png) |
+![select__ex__default](components/COMPONENTS/Selects/design/select__ex__default.png) |
 ------------ |
 **Do** <br/> Par exemple, "Choisissez" insite l’utilisateur à ouvrir le champ.
 
@@ -76,7 +76,7 @@ Type | Illustration
   <div class="do-dont">
   <div class="do">
 
-  ![select__exemples__focus-ios](components/COMPONENTS/FORM/Selects/design/select__exemples__focus-ios.png) |
+  ![select__exemples__focus-ios](components/COMPONENTS/Selects/design/select__exemples__focus-ios.png) |
   ------------ |
   **Do** <br/> L’ordre alphabétique est souvent le plus approprié.
 
@@ -96,12 +96,12 @@ Type | Illustration
 
 Type | Illustration
 ------------ | ------------- |
-**Enabled** |![select__small__enabled](components/COMPONENTS/FORM/Selects/design/select__small__enabled.png)
-**With default value** |![select__small__with-default-value](components/COMPONENTS/FORM/Selects/design/select__small__with-default-value.png)
-**With placeholder** |![select__small__with-placeholder](components/COMPONENTS/FORM/Selects/design/select__small__with-placeholder.png)
-**Focus** |![select__small__focus](components/COMPONENTS/FORM/Selects/design/select__small__focus.png)
-**Error** |![select__small__error](components/COMPONENTS/FORM/Selects/design/select__small__error.png)
-**Disabled** |![select__small__disabled](components/COMPONENTS/FORM/Selects/design/select__small__disabled.png)
+**Enabled** |![select__small__enabled](components/COMPONENTS/Selects/design/select__small__enabled.png)
+**With default value** |![select__small__with-default-value](components/COMPONENTS/Selects/design/select__small__with-default-value.png)
+**With placeholder** |![select__small__with-placeholder](components/COMPONENTS/Selects/design/select__small__with-placeholder.png)
+**Focus** |![select__small__focus](components/COMPONENTS/Selects/design/select__small__focus.png)
+**Error** |![select__small__error](components/COMPONENTS/Selects/design/select__small__error.png)
+**Disabled** |![select__small__disabled](components/COMPONENTS/Selects/design/select__small__disabled.png)
 
 ## Gestion des erreurs
 
@@ -112,7 +112,7 @@ Type | Illustration
   <div class="do-dont">
   <div class="do">
 
-  ![select__exemples__error](components/COMPONENTS/FORM/Selects/design/select__exemples__error.png) |
+  ![select__exemples__error](components/COMPONENTS/Selects/design/select__exemples__error.png) |
   ------------ |
   **Do** <br/> Dans le cas d’un select obligatoire, le message d’erreur demande de renseigner le champ.
 
