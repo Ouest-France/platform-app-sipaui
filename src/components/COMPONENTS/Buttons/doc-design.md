@@ -73,7 +73,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 ### Spécifications
 - Sur mobile, les boutons en pleine largeur sont recommendés car ils sont plus accessibles.
 - La 1re lettre du bouton est en majuscule, le reste est en minuscule.
-- Le texte du bouton est limité à une ligne.
+- Le texte du bouton est limité à une ligne et composé de 3 mots maximum.
 - Le texte du bouton doit être explicite et décrire l'action de celui-ci.
 
 <div class="do-dont">
