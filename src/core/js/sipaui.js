@@ -141,6 +141,7 @@ document.onScan = function(sel,fn) {
         //=require libs/components/sutoggleclass.js
         //=require libs/components/suemptyinput.js
         //=require libs/components/sucheckboxes.js
+        //=require libs/components/supasswords.js
 
         su.asyncLoadSu();
     }, 25);
