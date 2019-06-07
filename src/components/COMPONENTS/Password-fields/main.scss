@@ -1,0 +1,168 @@
+/*
+    Styles du Password-fields de SipaUI
+*/
+@import "variables";
+
+.sipaui {
+    $size-button: 44px;
+    $padding-lateral-input: 10px;
+
+    input,
+    textarea,
+    .su-input-text {
+        font-size: $font-size-base;
+
+    }
+    #{$inputTextBase} {
+        -webkit-appearance: none;
+    }
+    #{$inputTextPlus} {
+        display: block;
+        width: 100%;
+        min-width: 140px;
+        height: $height-input;
+        border-radius:  $border-radius-input;
+        color: $color-input;
+        background: $background-input;
+        border: $border-input;
+        transition: all .3s ease-out;
+        padding: 0 $padding-lateral-input;
+
+        &:focus {
+            background: $background-input-focus;
+            border: $border-input-focus;
+        }
+
+        &[readonly] {
+            opacity: 0.4;
+            cursor: default;
+
+            &:focus {
+                background: $background-input;
+                border: $border-input;
+            }
+        }
+    }
+    .su-input-actions-1,
+    .su-input-actions-2 {
+        position: relative;
+    }
+    .su-input-actions-1 {
+        #{$inputTextBase} {
+            padding-right: $size-button;
+        }
+    }
+    .su-input-actions-2 {
+        #{$inputTextBase} {
+            padding-right: $size-button * 2;
+        }
+    }
+    .su-input-actions-area {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include display-flex();
+    }
+    .su-input-action {
+        @include display-flex(); // sert à centrer verticalement l’icône;
+        @include justify-content(center, center);
+        @include align-items(center);
+        height: $size-button;
+        width: $size-button;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: $color-main-5;
+        -webkit-appearance: none;
+        cursor: text;
+
+        &:hover {
+            color: $color-main-7;
+        }
+    }
+    .su-js-show .su-input-actions-area {
+        opacity: 1;
+
+        .su-input-action {
+            cursor: pointer;
+        }
+    }
+    textarea,
+    .su-textarea {
+        padding: 10px 15px;
+        min-height: 68px;
+    }
+
+    .su-password {
+        position: relative;
+
+        /*&::before {
+            content: "\e903";
+            font-family: 'su-icons';
+            color: $color-main-5;
+            top: 0.6rem;
+            right: 1rem;
+            position: absolute;
+            font-size: 2.4rem;
+            pointer-events: none;
+        }
+        
+        &:hover::before {
+            color: $color-main-7;
+        }*/
+
+        .su-conditions {
+            display: none;
+            margin: 1rem 0;
+            span {
+                display: block;
+                font-size: 1.4rem;
+                color: $color-main-6;
+
+                &.su-conditions-success {
+                    color: $color-success;
+                }
+
+                &.su-conditions-error {
+                    color: $color-error;
+                }
+
+                .su-icon {
+                    margin-right: 1rem;
+                    font-size: 1.4rem;
+                    position: relative;
+                    top: 0.1rem;
+                }
+            }
+        }
+
+        input {
+            &:focus {
+                & ~ .su-conditions {
+                    display: block;
+                }
+            }
+        }
+
+        &.error {
+            .su-conditions {
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
