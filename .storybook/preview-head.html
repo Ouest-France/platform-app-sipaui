@@ -320,15 +320,18 @@
         margin-top: 0 !important;
     }
 
-    .do-dont {
+    .do-dont,
+    .flex {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
     }
-    .do-dont > div {
+    .do-dont > div,
+    .flex > * {
         margin-right: 5%;
     }
-    .do-dont > div:last-child {
+    .do-dont > div:last-child,
+    .flex > *:last-child {
         margin-right: 0;
     }
     ul + .do-dont,
