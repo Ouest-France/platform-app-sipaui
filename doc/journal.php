@@ -34,8 +34,8 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li>Évol&nbsp;: grille, amélioration de la grille auto.</li>
-                                                <li>Évol&nbsp;: titres, </li>
+                                                <li class="breaking">Évol&nbsp;: grille, amélioration de la grille auto.</li>
+                                                <li class="breaking">Évol&nbsp;: titres, </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -69,7 +69,7 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li>Évol&nbsp;: la grille «&nbsp;md&nbsp;» passe de 6 à 24 colonnes.</li>
+                                                <li class="breaking">Évol&nbsp;: la grille «&nbsp;md&nbsp;» passe de 6 à 24 colonnes.</li>
                                                 <li>Stepper</li>
                                             </ul>
                                         </li>

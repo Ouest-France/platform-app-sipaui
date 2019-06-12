@@ -102,6 +102,9 @@ header + main {
         background: rgba($couleur-secondaire-1, .4);
     }
 }
+.sipaui .su-article li.breaking {
+    color: $couleur-secondaire-1;
+}
 
 .presentation {
     font-size: $font-size-medium2;
