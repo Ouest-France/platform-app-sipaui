@@ -15,7 +15,7 @@ C’est pourquoi SipaUI style à la fois les titres au sens HTML (h1…) et les 
 ### Rôle des balises `<h>`
 **Les balises `<h1>` à `<h3>`**, en tant que balises HTML, ont un poids SEO. Elles indiquent **aux moteurs de recherche** quelle est **l’importance de chaque titre**.
 
-Elles doivent donc **encadrer chaque titre qui a une valeur éditoriale** sur une page web. Cette valeur éditoriale peut parfois être *contradictoire* avec la logique du lecteur. Par exemple une page **Une Sport** va avoir un titre principal «&nbsp;Sport&nbsp;» (**`<h1>`**), plusieurs titres secondaires de rubrique comme «&nbsp;Foot&nbsp;» (**`<h2>`**), «&nbsp;Tennis&nbsp;» (**`<h2>`**), «&nbsp;En continu&nbsp;» (**pas de `<h2>`**car pas intéressant pour les moteurs de recherche)…) et les titres de chaque article de chaque liste (**`<h2>`** ou **pas de `<h2>`** en fonction des circonstences)… **C'est le SEO qui doit décider de l’utilisation de balises `<h>` ou non**.
+Elles doivent donc **encadrer chaque titre qui a une valeur éditoriale** sur une page web. Cette valeur éditoriale peut parfois être *contradictoire* avec la logique du lecteur. Par exemple une page **Une Sport** va avoir un titre principal «&nbsp;Sport&nbsp;» (**`<h1>`**), plusieurs titres secondaires de rubrique comme «&nbsp;Foot&nbsp;» (**`<h2>`**), «&nbsp;Tennis&nbsp;» (**`<h2>`**), «&nbsp;En continu&nbsp;» (**pas de `<h2>`**car pas intéressant pour les moteurs de recherche)…) et les titres de chaque article de chaque liste (**`<h2>`** ou **pas de `<h2>`** en fonction des circonstances)… **C'est le SEO qui doit décider de l’utilisation de balises `<h>` ou non**.
 
 Illustration&nbsp;:
 
@@ -40,7 +40,7 @@ Illustration&nbsp;:
 
 ### Les titres de niveau 1 / balise `<h1>`
 
-- Le titre de niveau 1 est **l’élément typographique le plus visible de la page**. On utilisera à priori toujours la balise `h1` correspondant au titre éditorial qui fait partie des «&nbsp;zones chaudes&nbsp;» en matière de référencement. En le lisant, on doit pouvoir identifier le sujet de la page.
+- Le titre de niveau 1 est **l’élément typographique le plus visible de la page**. On utilisera a priori toujours la balise `h1` correspondant au titre éditorial qui fait partie des «&nbsp;zones chaudes&nbsp;» en matière de référencement. En le lisant, on doit pouvoir identifier le sujet de la page.
 
 - **Les mots clés de la page sont au début du `<h1>`.** Google leur accordera davantage de poids.
 - **Le titre doit être concis.** Plus le titre sera long, plus les mots clés seront dilués.
