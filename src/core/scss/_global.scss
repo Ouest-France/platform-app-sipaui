@@ -29,11 +29,6 @@ body {
     position: relative;
 }
 
-// Voir https://getbootstrap.com/getting-started/#support-ie10-width pour l'explication du hack.
-@at-root {
-    @-ms-viewport { width: device-width; }
-}
-
 // Credit: https://github.com/suitcss/base
 [tabindex="-1"]:focus {
     outline: none !important;
