@@ -1,6 +1,6 @@
 # Titles / Titres
 
-Les titres sont normalement définis par leur balise HTML (`<h1>` à `<h3>` sur SipaUI). Toutefois, certaines contraintes (notamment SEO) peuvent interdire l’utilisation de ces balises. Pour cela, des classes simulant l’apparence de ces balises ont été crées. Ainsi, il est possible de créer un texte qui aura l’apparence d’un titre de niveau 1 soit avec `<h1>Titre</h1>`, soit avec la classe `su-h1`.
+Les titres sont normalement définis par leur balise HTML (`<h1>` à `<h3>` sur SipaUI). Toutefois, comme expliqué dans le document de design, certaines contraintes (notamment SEO) peuvent interdire l’utilisation de ces balises. Pour cela, des classes simulant l’apparence de ces balises ont été crées. Ainsi, il est possible de créer un texte qui aura l’apparence d’un titre de niveau 1 soit avec `<h1>Titre</h1>`, soit avec la classe `su-h1`.
 
 Dans SipaUI, il existe 2 déclinaisons de titres, en fonction de leur "univers" d’affichage&nbsp;: les titres à l’intérieur d’un article complet (les pages d’article) et tous les autres (essentiellement de contenu non éditorial&nbsp;: rubriques, titres de listes d’articles, blocs partenaires…).
 
@@ -71,7 +71,42 @@ Le style des titres de contenu non éditorial est le style de titre par défaut.
 <!------------------–------------------–------------------–------------------–------------------–------------------–------------------–------------------–------------------– -->
 
 
-## Titres dans les articles complets
+## Titres de contenu éditorial - liste d’articles
+
+Placer la classe `su-articles-list` sur le parent direct de la liste d’articles.
+
+### Cas où le `<h2>` est sur le titre de rubrique
+
+<div class="sipaui">
+    <h2>Titre de rubrique - H2</h2>
+    <div class="su-articles-list">
+    	<article>
+	    	<p>Titre de l’article 1</p>
+    	</article>
+    	<article>
+	    	<p>Titre de l’article 2</p>
+	    </article>
+    </div>
+</div>
+
+### Cas où le `<h2>` est sur les titres d’article
+
+<div class="sipaui">
+    <span class="su-h2">Titre de rubrique</span>
+    <div class="su-articles-list">
+    	<article>
+	    	<h2>Titre de l’article 1 - H2</h2>
+    	</article>
+    	<article>
+	    	<h2>Titre de l’article 2 - H2</h2>
+	    </article>
+    </div>
+</div>
+
+<!------------------–------------------–------------------–------------------–------------------–------------------–------------------–------------------–------------------– -->
+
+
+## Titres de contenu éditorial - article complet
 
 Le style des titres dans les articles est lié à la présence de la classe `su-article` sur un parent. Pour le SEO, il est très important d’utiliser ici les balises HTML `<h1>`&nbsp;->&nbsp;`<h3>`.
 
@@ -128,6 +163,7 @@ Le style des titres dans les articles est lié à la présence de la classe `su-
 
 ## Liste des classes disponibles
 - `su-article` (pour les titres sur les pages d’article)
+- `su-articles-list` (pour les articles dans une liste d’articles)
 - `su-h1` (si besoin de surcharge)
 - `su-h2` (si besoin de surcharge)
 - `su-h3` (si besoin de surcharge)
