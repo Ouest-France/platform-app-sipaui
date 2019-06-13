@@ -39,7 +39,8 @@ Taille | Mesure | Illustration
 
 ![spacing__ex__do](components/FOUNDATIONS/Margins/design/spacing__ex__do.png) |
 ------------ |
-**Do** <br/> Espacer suffisament les composants afin des les distinguer. |
+**Do**
+<p class="legende">Espacer suffisament les composants afin des les distinguer.</p> |
 
  </div>
 </div>
@@ -50,7 +51,8 @@ Taille | Mesure | Illustration
 
 ![spacing__ex__dont](components/FOUNDATIONS/Margins/design/spacing__ex__dont.png) |
 ------------ |
-**Don’t** <br/> Dans un formulaire, le label doit être plus proche du container lié. |
+**Don’t** 
+<p class="legende">Dans un formulaire, le label doit être plus proche du container lié.</p> |
 
  </div>
 </div>

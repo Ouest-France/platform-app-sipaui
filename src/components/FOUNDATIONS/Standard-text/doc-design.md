@@ -35,7 +35,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 
 ![typography__exemples__call-width-small-dont](components/FOUNDATIONS/Standard-text/design/typography__exemples__call-width-small-dont.png)|
   ------------ |
-**Don’t** <br/>
+**Don’t**
 
 </div>
 </div>
@@ -46,7 +46,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 
 ![typography__exemples__col-width-medium-do](components/FOUNDATIONS/Standard-text/design/typography__exemples__col-width-medium-do.png)|
 ------------ |
-**Do** <br/>
+**Do**
 
 </div>
 </div>
@@ -57,7 +57,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 
 ![typography__exemples__col-width-large-dont](components/FOUNDATIONS/Standard-text/design/typography__exemples__col-width-large-dont.png)|
 ------------ |
-**Don’t** <br/>
+**Don’t**
 
 </div>
 </div>
@@ -75,7 +75,8 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 
 ![typography__exemples__contrast-dont](components/FOUNDATIONS/Standard-text/design/typography__exemples__contrast-dont.png)|
 ------------ |
-**Don’t** <br/> La couleur du texte doit être compatible avec l’arrière plan.
+**Don’t**
+<p class="legende"> La couleur du texte doit être compatible avec l’arrière plan.</p>
 
  </div>
  </div>

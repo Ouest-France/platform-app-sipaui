@@ -18,7 +18,7 @@ Les listes sont utilisées pour afficher un nombre d’éléments reliés de fa�
 
 
 ![unordered-list](components/COMPONENTS/Lists/design/unordered-list.png)
-<br/> Les puces sont des repères visuels.
+<p class="legende margin-top-neg">Les puces sont des repères visuels.</p>
 
 
 ### Liste ordonnée
@@ -29,7 +29,7 @@ Les listes sont utilisées pour afficher un nombre d’éléments reliés de fa�
 - Concrètement, ces listes sont utilisées pour décrire des processus pas-à-pas tels qu’une recette de cuisine.
 
 ![ordered-list](components/COMPONENTS/Lists/design/ordered-list.png)
-<br/> Les numéros rythment et organisent les éléments.
+<p class="legende margin-top-neg">Les numéros rythment et organisent les éléments.</p>
 
 ### Les listes imbriquées
 
@@ -38,10 +38,10 @@ Les listes sont utilisées pour afficher un nombre d’éléments reliés de fa�
 - Dans une liste ordonnée et imbriquée, le nombre d’éléments est limité à 26&nbsp;: de «&nbsp;a&nbsp;» à «&nbsp;z&nbsp;».
 
 ![unordered-nested-list](components/COMPONENTS/Lists/design/unordered-nested-list.png)
-<br/> Un **petit disque** matérialise les listes non ordonnées imbriquées.
+<p class="legende margin-top-neg">Un **petit disque** matérialise les listes non ordonnées imbriquées.</p>
 
 ![nested-ordered-list](components/COMPONENTS/Lists/design/nested-ordered-list.png)
-<br/> Des **lettres en minuscule** permettent de classer les listes ordonnées imbriquées.
+<p class="legende margin-top-neg">Des **lettres en minuscule** permettent de classer les listes ordonnées imbriquées.</p>
 
 ## Bonnes pratiques
 - Les listes présentent des informations simples et courtes.

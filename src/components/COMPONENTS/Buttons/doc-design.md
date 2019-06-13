@@ -81,7 +81,8 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ![button__exemples__text__do](components/COMPONENTS/Buttons/design/button__exemples__text__do.png)|
 ------------ |
-**Do** <br/> Utiliser un texte simple |
+**Do** 
+<p class="legende">Utiliser un texte simple.</p> |
 
  </div>
 
@@ -89,7 +90,8 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ![button__exemples__text__dont](components/COMPONENTS/Buttons/design/button__exemples__text__dont.png) |
 ------------ |
-**Don’t** <br/> Ne pas surcharger le texte |
+**Don’t** 
+<p class="legende">Ne pas surcharger le texte.</p> |
 
  </div>
  </div>
@@ -108,7 +110,8 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ![Image_button_sequentiel](components/COMPONENTS/Buttons/design/Image_button_sequentiel.png)|
 ------------ |
-**Do** <br/> Mettre le bouton «&nbsp;Retour&nbsp;» à gauche
+**Do**
+<p class="legende">Mettre le bouton «&nbsp;Retour&nbsp;» à gauche.</p> |
 
  </div>
  </div>
@@ -119,7 +122,8 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ![Image_button_2 buttons_ko](components/COMPONENTS/Buttons/design/Image_button_buttons_ko.png)  |
 ------------ |
-**Don’t** <br/> Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte.
+**Don’t** 
+<p class="legende">Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte.</p> |
 
  </div>
  </div>

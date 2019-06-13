@@ -30,7 +30,8 @@ Les loaders sont des animations en boucle qui indiquent à l’utilisateur qu'**
 
 ![loader__exemples__loader-with-overflow](components/COMPONENTS/Loaders/design/loader__exemples__loader-with-overflow.png) |
 ------------ |
-**Do** <br/> Un loader centré sur l'écran indique <br /> que l'ensemble du processus est en cours <br /> de chargement.
+**Do**
+<p class="legende">Un loader centré sur l'écran indique <br /> que l'ensemble du processus est en cours <br /> de chargement.</p> |
 
 </div>
  </div>

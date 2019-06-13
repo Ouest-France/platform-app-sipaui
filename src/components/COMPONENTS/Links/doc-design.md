@@ -35,7 +35,8 @@ Contrairement aux boutons primaires et secondaires, le lien bouton ne présente 
 
 ![button-link__ex__button-do](components/COMPONENTS/Links/design/button-link__ex__button-do.png)  |
 ------------ |
-**Do** <br/> Si l'action modifie des données, utiliser un bouton. |
+**Do**
+<p class="legende">Si l'action modifie des données, utiliser un bouton.</p> |
 
  </div>
 
@@ -43,7 +44,8 @@ Contrairement aux boutons primaires et secondaires, le lien bouton ne présente 
 
 ![button-link__ex__enable-dont](components/COMPONENTS/Links/design/button-link__ex__enable-dont.png)  |
 ------------ |
-**Don’t** <br/> Si l'action modifie des données, ne pas utiliser un lien. |
+**Don’t**
+<p class="legende">Si l'action modifie des données, ne pas utiliser un lien.</p> |
 
  </div>
  </div>

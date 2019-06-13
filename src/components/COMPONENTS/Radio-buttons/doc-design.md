@@ -26,7 +26,8 @@ Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 %
 
 ![button-radio__ex__dont-only-one](components/COMPONENTS/Radio-buttons/design/button-radio__ex__dont-only-one.png)  |
 ------------ |
-**Don’t** <br/> N’utilisez jamais un seul bouton radio, une case à cocher est appropriée.
+**Don’t**
+<p class="legende">N’utilisez jamais un seul bouton radio, une case à cocher est appropriée.</p> |
 
 </div>
 </div>
@@ -37,7 +38,8 @@ Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 %
 
 ![button-radio__ex__dont-multiple-activaton](components/COMPONENTS/Radio-buttons/design/button-radio__ex__dont-multiple-activaton.png) |
 ------------ |
-**Don't** <br/> Si plusieurs éléments peuvent être choisis en même temps, utiliser des cases à cocher. |
+**Don't**
+<p class="legende">Si plusieurs éléments peuvent être choisis en même temps, utiliser des cases à cocher.</p> |
 
 </div>
 </div>
@@ -48,7 +50,8 @@ Taille : 20x20px <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, radius 100 %
 
 ![button-radio__ex__dont-greater-than-3](components/COMPONENTS/Radio-buttons/design/button-radio__ex__dont-greater-than-3.png) |
 ------------ |
-**Don't** <br/> Si le nombre d’option est supérieur ou égal à 4, utilisez un autre composant, par exemple un select. |
+**Don't**
+<p class="legende">Si le nombre d’option est supérieur ou égal à 4, utilisez un autre composant, par exemple un select.</p> |
 
 </div>
 </div>

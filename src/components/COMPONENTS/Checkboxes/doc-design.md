@@ -53,7 +53,8 @@ Multiple désactivated / over | Multiple activated / focus | Multiple indetermin
 
 ![checkboxes__ex__dont](components/COMPONENTS/Checkboxes/design/checkboxes__ex__dont.png)|
 ------------ |
-**Don’t** <br/> Eviter le terme négatif. Ici, l’utilisateur devrait cocher la case pour que quelque chose ne se produise pas.
+**Don’t**
+<p class="legende">Eviter le terme négatif. Ici, l’utilisateur devrait cocher la case pour que quelque chose ne se produise pas.</p> |
 
  </div>
  </div>

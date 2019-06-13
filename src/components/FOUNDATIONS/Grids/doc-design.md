@@ -45,7 +45,7 @@ Gouttières | 20px | 20px | 20px | 20px | 20px
 Largeur du container  | *280 à 319px*  |  *300 à 707px*  | 708px | 940px  | 1260px
 Taille de la marge externe | 20px | 30px | *30px plus fond perdu* | *10px plus fond perdu* | *10px plus fond perdu*
 
-<p class="legende">En gris et italique&nbsp;: valeurs fluides</p>
+<p class="legende margin-top-neg">En gris et italique&nbsp;: valeurs fluides</p>
 
 </div>
 
@@ -53,19 +53,19 @@ Taille de la marge externe | 20px | 30px | *30px plus fond perdu* | *10px plus f
 <div class="do">
 
 ![grid__320](components/FOUNDATIONS/Grids/design/grid__320.png)
-<p class="legende">Écran mobile&nbsp;: 320px</p>
+<p class="legende margin-top-neg">Écran mobile&nbsp;: 320px</p>
 
 ![grid__360](components/FOUNDATIONS/Grids/design/grid__360.png)
-<p class="legende">Écran mobile&nbsp;: 360px</p>
+<p class="legende margin-top-neg">Écran mobile&nbsp;: 360px</p>
 
 ![grid__768](components/FOUNDATIONS/Grids/design/grid__768.png)
-<p class="legende">Écran tablette portrait&nbsp;: 768px</p>
+<p class="legende margin-top-neg">Écran tablette portrait&nbsp;: 768px</p>
 
 ![grid__940](components/FOUNDATIONS/Grids/design/grid__940.png)
-<p class="legende">Écran tablette paysage&nbsp;: 980px</p>
+<p class="legende margin-top-neg">Écran tablette paysage&nbsp;: 980px</p>
 
 ![grid__1260](components/FOUNDATIONS/Grids/design/grid__1260.png)
-<p class="legende">Écran desktop&nbsp;: 1280px</p>
+<p class="legende margin-top-neg">Écran desktop&nbsp;: 1280px</p>
 
 ### Autres composants
 - Marges

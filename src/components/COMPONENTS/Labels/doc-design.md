@@ -15,6 +15,7 @@ Type | Illustration
 
 - Un label indique le type d’information demandée sous celui-ci.
 - La 1re lettre est en majuscule, le reste est en minuscule.
+- Le texte doit être court.
 
 
   <div class="do-dont">
@@ -22,7 +23,8 @@ Type | Illustration
 
 ![label__ex__label__do](components/COMPONENTS/Labels/design/label__ex__label__do.png) |
   ------------ |
-  **Do** <br/> Utiliser un texte court et précis. |
+  **Do**
+  <p class="legende no-marge-bottom">Utiliser un texte court et précis.</p> |
 
    </div>
 
@@ -30,7 +32,8 @@ Type | Illustration
 
 ![label__ex__label__dont](components/COMPONENTS/Labels/design/label__ex__label__dont.png) |
   ------------ |
-  **Don’t** <br/> Ne pas rédiger un label complexe. |
+  **Don’t**
+  <p class="legende no-marge-bottom">Ne pas rédiger un label complexe.</p> |
 
    </div>
    </div>

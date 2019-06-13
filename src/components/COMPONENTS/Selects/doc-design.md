@@ -51,7 +51,8 @@ Type | Illustration
 
 ![select__ex__default](components/COMPONENTS/Selects/design/select__ex__default.png) |
 ------------ |
-**Do** <br/> Par exemple, "Choisissez" insite l’utilisateur à ouvrir le champ.
+**Do**
+<p class="legende">Par exemple, "Choisissez" insite l’utilisateur à ouvrir le champ.</p> |
 
  </div>
  </div>
@@ -78,7 +79,8 @@ Type | Illustration
 
   ![select__exemples__focus-ios](components/COMPONENTS/Selects/design/select__exemples__focus-ios.png) |
   ------------ |
-  **Do** <br/> L’ordre alphabétique est souvent le plus approprié.
+  **Do**
+  <p class="legende">L’ordre alphabétique est souvent le plus approprié.</p> |
 
    </div>
    </div>
