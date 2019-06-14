@@ -22,7 +22,8 @@ $margin-paragraphe: $margin-medium;
     .su-text-standard + .su-text-standard {
         margin-top: $margin-paragraphe;
     }
-    .su-article {
+    .su-article,
+    .su-articles-list {
         p,
         li {
             font-family: $font-family-base;
@@ -31,6 +32,8 @@ $margin-paragraphe: $margin-medium;
             color: $font-color-standard;
             margin: 0;
         }
+    }
+    .su-article {
         p + p,
         ul + p,
         ol + p {

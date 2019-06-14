@@ -8,7 +8,14 @@
 // TITRES NON-ÉDITORIAUX
 
 $font-family-titles:                $font-family-secondaire             !default;
+$font-family-h1:                    null                                !default;
+$font-family-h2:                    null                                !default;
+$font-family-h3:                    null                                !default;
+
 $font-weight-titles:                $font-weight-medium                 !default;
+$font-weight-h1:                    null                                !default;
+$font-weight-h2:                    null                                !default;
+$font-weight-h3:                    null                                !default;
 
 $color-titles:                      $font-color-standard                !default;
 $color-h1:                          null                                !default;
@@ -28,43 +35,70 @@ $font-size-h2-desktop:        3rem               !default;
 $font-size-h3-desktop:        1.8rem             !default;
 
 
-// TITRES ÉDITORIAUX
+// TITRES ÉDITORIAUX - LISTE ARTICLES
 
-$font-family-titles-edito:                $font-family-titles                 !default;
-$font-family-h1-edito:                    $font-family-base                   !default;
-$font-weight-titles-edito:                $font-weight-titles                 !default;
-$font-weight-h1-edito:                    $font-weight-bold                   !default;
-$font-weight-h2-edito:                    null                                !default;
-$font-weight-h3-edito:                    null                                !default;
-$font-weight-h4-edito:                    null                                !default;
-$font-weight-h5-edito:                    null                                !default;
-$font-weight-h6-edito:                    null                                !default;
+$font-family-titles-liste-articles:                $font-family-base                   !default;
+//$font-family-h1-liste-articles:                    $font-family-base                   !default;
+$font-family-h2-liste-articles:                    null                                !default;
+$font-family-h3-liste-articles:                    null                                !default;
 
-$color-titles-edito:                      $color-titles                       !default;
-$color-h1-edito:                          null                                !default;
-$color-h2-edito:                          null                                !default;
-$color-h3-edito:                          null                                !default;
-$color-h4-edito:                          null                                !default;
-$color-h5-edito:                          null                                !default;
-$color-h6-edito:                          null                                !default;
+$font-weight-titles-liste-articles:                $font-weight-bold                   !default;
+//$font-weight-h1-liste-articles:                    $font-weight-bold                   !default;
+$font-weight-h2-liste-articles:                    null                                !default;
+$font-weight-h3-liste-articles:                    null                                !default;
 
-$text-transform-titles-edito:             null                                !default;
-$text-transform-h1-edito:                 null                                !default;
-$text-transform-h2-edito:                 null                                !default;
-$text-transform-h3-edito:                 null                                !default;
-$text-transform-h4-edito:                 null                                !default;
-$text-transform-h5-edito:                 null                                !default;
-$text-transform-h6-edito:                 null                                !default;
 
-$font-size-h1-edito:                2.4rem             !default;
-$font-size-h2-edito:                2.2rem             !default;
-$font-size-h3-edito:                1.8rem             !default;
-$font-size-h4-edito:                1.6rem             !default;
-$font-size-h5-edito:                1.4rem             !default;
-$font-size-h6-edito:                1.2rem             !default;
-$font-size-h1-edito-desktop:        3.8rem             !default;
-$font-size-h2-edito-desktop:        3rem               !default;
-$font-size-h3-edito-desktop:        2.2rem             !default;
-$font-size-h4-edito-desktop:        2rem               !default;
-$font-size-h5-edito-desktop:        1.8rem             !default;
-$font-size-h6-edito-desktop:        1.6rem             !default;
+$color-titles-liste-articles:                      $color-titles                       !default;
+//$color-h1-liste-articles:                          null                                !default;
+$color-h2-liste-articles:                          null                                !default;
+$color-h3-liste-articles:                          null                                !default;
+
+
+$text-transform-titles-liste-articles:             null                                !default;
+//$text-transform-h1-liste-articles:                 null                                !default;
+$text-transform-h2-liste-articles:                 null                                !default;
+$text-transform-h3-liste-articles:                 null                                !default;
+
+
+//$font-size-h1-liste-articles:                null             !default;
+$font-size-h2-liste-articles:                $font-size-base             !default;
+$font-size-h3-liste-articles:                $font-size-small            !default;
+
+//$font-size-h1-liste-articles-desktop:        3.8rem             !default;
+//$font-size-h2-liste-articles-desktop:        3rem               !default;
+//$font-size-h3-liste-articles-desktop:        2.2rem             !default;
+
+
+// TITRES ÉDITORIAUX - ARTICLE COMPLET
+
+$font-family-titles-article:                $font-family-titles                 !default;
+$font-family-h1-article:                    $font-family-base                   !default;
+$font-family-h2-article:                    null                                !default;
+$font-family-h3-article:                    null                                !default;
+
+$font-weight-titles-article:                $font-weight-titles                 !default;
+$font-weight-h1-article:                    $font-weight-bold                   !default;
+$font-weight-h2-article:                    null                                !default;
+$font-weight-h3-article:                    null                                !default;
+
+
+$color-titles-article:                      $color-titles                       !default;
+$color-h1-article:                          null                                !default;
+$color-h2-article:                          null                                !default;
+$color-h3-article:                          null                                !default;
+
+
+$text-transform-titles-article:             null                                !default;
+$text-transform-h1-article:                 null                                !default;
+$text-transform-h2-article:                 null                                !default;
+$text-transform-h3-article:                 null                                !default;
+
+
+$font-size-h1-article:                2.4rem             !default;
+$font-size-h2-article:                2.2rem             !default;
+$font-size-h3-article:                1.8rem             !default;
+
+$font-size-h1-article-desktop:        3.8rem             !default;
+$font-size-h2-article-desktop:        3rem               !default;
+$font-size-h3-article-desktop:        2.2rem             !default;
+

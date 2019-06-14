@@ -35,7 +35,7 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li class="breaking">Évol&nbsp;: grille, amélioration de la grille auto.</li>
-                                                <li class="breaking">Évol&nbsp;: titres, </li>
+                                                <li>Évol&nbsp;: titres, prise en compte des listes d’article.</li>
                                             </ul>
                                         </li>
                                     </ul>
