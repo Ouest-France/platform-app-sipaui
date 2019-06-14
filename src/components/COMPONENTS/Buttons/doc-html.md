@@ -101,7 +101,7 @@ L’aspect inactif peut être porté par la classe `su-disabled` (issu des *Help
 	<button class="su-button su-primary su-fullwidth-mobile">Bouton pleine largeur mobile</button>
 </div>
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-button`

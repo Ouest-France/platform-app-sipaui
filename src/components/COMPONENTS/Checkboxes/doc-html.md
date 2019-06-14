@@ -174,7 +174,7 @@ Pour la gestion des cases à cocher indéterminées en JS, cf. <a href="https://
 </div>
 
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-checkbox-area`

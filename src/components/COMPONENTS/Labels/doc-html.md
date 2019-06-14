@@ -44,7 +44,7 @@ Label standard d’un composant en readonly ou inactif. Classe `su-disabled` sur
 	<label for="input3" class="su-disabled">Label</label>
 </div>
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-label` (si besoin de surcharge)

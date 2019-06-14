@@ -76,7 +76,7 @@ Voici *un* exemple d’utilisation de classe de marge avec la classe `su-margin-
 
 
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-margin-0`

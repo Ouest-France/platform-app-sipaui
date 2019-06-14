@@ -62,7 +62,7 @@ Le positionnement de ce message dépend du composant auquel il est associé.
 </div>
 
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-error`

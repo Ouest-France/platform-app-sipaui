@@ -187,7 +187,7 @@ Textarea standard. Il est possible de forcer cet affichage avec la classe `su-te
 	<textarea id="textarea" required></textarea>
 </div>
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-input-text` (si besoin de surcharge)

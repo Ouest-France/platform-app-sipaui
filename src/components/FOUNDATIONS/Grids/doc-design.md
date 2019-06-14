@@ -49,8 +49,6 @@ Taille de la marge externe | 20px | 30px | *30px plus fond perdu* | *10px plus f
 
 </div>
 
-<div class="do-dont">
-<div class="do">
 
 ![grid__320](components/FOUNDATIONS/Grids/design/grid__320.png)
 <p class="legende margin-top-neg">Écran mobile&nbsp;: 320px</p>

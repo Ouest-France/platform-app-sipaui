@@ -252,7 +252,7 @@ Utiliser la classe `su-not-list` sur la liste.
 
 
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-article` (pour les listes éditoriales dans les articles)

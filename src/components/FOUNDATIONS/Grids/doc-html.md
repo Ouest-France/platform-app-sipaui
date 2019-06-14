@@ -789,7 +789,7 @@ Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La 
 
 
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Grille standard&nbsp;: liste des classes disponibles
 - `su-container`

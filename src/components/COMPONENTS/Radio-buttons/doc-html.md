@@ -139,7 +139,7 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 </div>
 
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-radio-area`

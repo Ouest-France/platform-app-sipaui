@@ -66,7 +66,7 @@ Le loader est affiché avec un voile blanc et est positionné en *fixed*. Il ser
 </div>
 
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-loader`

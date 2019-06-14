@@ -175,7 +175,7 @@ Classe permettant de rendre visuellement l’incapacité&nbsp;/ l’indisponibil
 </div>
 
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-clearfix` ou `su-cf`

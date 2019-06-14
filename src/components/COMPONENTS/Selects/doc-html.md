@@ -223,7 +223,7 @@ Liste déroulant inactive. Attention, si le disabled suffit à rendre le select 
 </div>
 
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-select`

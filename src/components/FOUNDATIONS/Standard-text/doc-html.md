@@ -1,6 +1,6 @@
 # Standard texts / Textes standards
 
-Le texte standard est réservé au contenu éditorial. Il est donc lié à la classe `su-article` qui englobe ces zones. Son utilisation peut être forcée en-dehors de ces zones éditoriales avec la classe `su-text-standard`.
+Le texte standard est réservé au contenu éditorial. Il est donc lié aux classes `su-article` et `su-articles-list` qui englobent ces zones. Son utilisation peut être forcée en-dehors de ces zones éditoriales avec la classe `su-text-standard`.
 
 <br />
 
@@ -196,10 +196,11 @@ Utilisation de la classe `su-text-center`.
 
 
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
-- `su-article` (si besoin de surcharge)
+- `su-article` (zone éditoriale d’un article complet)
+- `su-articles-list` (zone éditoriale d’une liste d’article)
 - `su-text-standard` (si besoin de surcharge)
 - `su-text-small`
 

@@ -210,7 +210,7 @@ Par défaut, la dernière étape, une fois active, se comporte comme les autres&
 
 
 
-<div id="stepper-full">
+<div id="stepper-full" class="control-titres">
 
 ## Indicateur de progression complet (cliquable)
 Il s'agit ici de la version complète avec retour possible aux étapes précédentes dans le tunnel d’actions. Il en existe 2 façons de faire ce genre de composant en fonction des contraintes techniques&nbsp;:
@@ -304,7 +304,7 @@ NB De part le principe même du fonctionnement du composant (changement de page 
 		</li>
 	</ol>
 	<div>
-		<h2>Etape 3</h2>
+		<h2 class="su-h2">Etape 3</h2>
 		<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 	</div>
 </div>
@@ -313,7 +313,7 @@ NB De part le principe même du fonctionnement du composant (changement de page 
 </div>
 
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-stepper`

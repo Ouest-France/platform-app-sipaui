@@ -63,7 +63,7 @@ Utiliser la classe `su-link-button`.
 	<a href="javascript:;" class="su-link-button su-disabled">Lien bouton SipaUI</a>
 </div>
 
-<div id="liste-classes">
+<div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-article`
