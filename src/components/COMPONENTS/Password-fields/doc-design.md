@@ -1,89 +1,108 @@
-# Text fields / Champs de texte
+# Password fields / champs mot de passe
 
-Les champs de texte permettent à l'utilisateur de saisir et de modifier du texte. Ils se trouvent généralement dans un formulaire. Ce composant regroupe les champs texte standards (input text, input number… et le text area).
+Les champs mot de passe sont des **champs de texte où les caractères sont utilisés comme moyens d'authentification.** L'objectif est de prouver l'identité de l'utilisateur lorsqu'il désire accéder à un service dont l'accès est limité et/ou protégé.
 
+## Usage
 
-## États
-
-Type | Illustration
------------- | ------------- |
-**Enabled** | ![textfield__default](components/COMPONENTS/Text-fields/design/textfield__default.png)
-**With placeholder** | ![textfield__with-placeholder](components/COMPONENTS/Text-fields/design/textfield__with-placeholder.png)
-**With default value** |  ![textfield__with-default-value](components/COMPONENTS/Text-fields/design/textfield__with-default-value.png)
-**Focus** |![textfield__focus](components/COMPONENTS/Text-fields/design/textfield__focus.png)
-**Error** | ![textfield__error](components/COMPONENTS/Text-fields/design/textfield__error.png)
-**Disabled** | ![textfield__disabled](components/COMPONENTS/Text-fields/design/textfield__disabled.png)
-**With icon** | ![textfield__with-icon-right](components/COMPONENTS/Text-fields/design/textfield__with-icon-right.png)
+- Un champ mot de passe se trouve généralement lors d’une **connexion** ou d’une **création de compte.**
+- Par défaut, les **caractères sont masqués** et saisis en toute discrétion et sécurité.
 
 ## Spécifications
 
-#### Label
-- Le composant "Label" indique le type d’information demandée sous celui-ci.
-- Ses spécifications sont disponibles dans son doc design.
+Le champ mot de passe présente toutes les caractéristiques d’un champ de texte : interaction, police, hauteur, etc. Elles sont disponibles dans son doc design.
 
-#### Container
-- Un container indique à l'utilisateur où saisir l'information.
-- Il est aligné à gauche avec le label.
-- Hauteur : 44px
-- Largeur : celle son parent moins le padding de celui-ci
-- Largueur minimale : 140px
-- Couleur de fond
-  - Par défaut : #FAFAFA
-  - En focus et actif : #FFFFFF
-- Contour
-  - Couleur par défaut : #D4D4D4
-  - Couleur en focus et actif : #333333
-  - Épaisseur : 1px
+-> changer le nom des images
+### Lors d'une connexion
 
-#### Texte
-  - Le texte présente les caractères saisis par l'utilisateur.
-  - Padding gauche et à droite : 15px du container
-  - Taille de caractère : 16px
-  - Graisse de caractère : regular
-  - Police du thème
-  - Couleur : #333333
+Type | Illustration |
+------------ | ------------- |
+**Enabled** |![password__enabled](components/COMPONENTS/Password-fields/design/password__enabled.png) |
+**Focus** | ![password__focus](components/COMPONENTS/Password-fields/design/password__focus.png) "oeil non symétrique" |
+**1er caractère saisi** | image |
+**Champ visible** | ![password__value-visible](components/COMPONENTS/Password-fields/design/password__value-visible.png) |
+**Sans focus, mot de passe visible** |![password__value-secret-after-validation](components/COMPONENTS/Password-fields/design/password__value-visible.png) |
+**Sans focus, mot de passe invisible** |![password__value-secret-after-validation](components/COMPONENTS/Password-fields/design/password__value-secret-after-validation.png)"non fichier" |
+**Error, absence de saisie** | ![password__error](components/COMPONENTS/Password-fields/design/password__error.png) |
+**Disabled** | ![password__disabled](components/COMPONENTS/Password-fields/design/password__disabled.png) |
 
-#### Texte du placeholder
-- Le texte du placeholder est une description supplémentaire au label. En aucun cas, il ne le substitue. Il doit guider l’utilisateur sur le format de données attendu. On peut ainsi présenter un exemple (&nbsp;prenom.nom@domaine.fr&nbsp;) ou un pattern (date&nbsp;: &nbsp;jj/mm/aaaa&nbsp;).
-- Il est facultatif.
-- Il se trouve dans le container et n'est plus visible lors de la saisie.
-- Padding gauche et à droite : 10px du container (11px avec le filet)
-- Taille de caractère : 16px
-- Graisse de caractère : regular
-- Police du thème
 
-#### Champ non modifiable (readonly)
-  - Opacité : 40 %
+### Lors de la création d'un compte
 
-### Icône
-- En cas de besoin, une icône peut être intégerée directement dans le champ de texte.
-- Celle-ci permet une action spécifique.
-- Elle est située à droite dans le container.
-- Taille maximale : 34x34px
-- Zone de tap : 44x44px
-- L’icône est centrée dans la zone de tap avec une marge minimale : 5px
-- Couleur
-  - Par défaut : #878787
-  - En hover, focus et pressed : #333333
-- Cas particulier : la croix
- - Une croix permet la suppression totale et directe du champ.
- - Elle est présente lorsque l’input est en focus et qu'un contenu est présent.
+Type | Illustration
+------------ | ------------- |
+**Enabled** |![password__enabled](components/COMPONENTS/Password-fields/design/password__enabled.png) |
+**Focus** | ![password__focus-2](components/COMPONENTS/Password-fields/design/password__focus-2.png) "oeil non symétrique" |
+**Saisie** | ![password__focus-first-character](components/COMPONENTS/Password-fields/design/password__focus-first-character.png) "check + oeil" |
+**Champ visible** | ![password__focus-visible](components/COMPONENTS/Password-fields/design/password__focus-visible.png) pb ! |
+**Sans focus, mot de passe visible** |![password__value-secret-after-validation](components/COMPONENTS/Password-fields/design/password__value-visible.png) |
+**Sans focus, mot de passe invisible** |![password__value-secret-after-validation](components/COMPONENTS/Password-fields/design/password__value-secret-after-validation.png)"non fichier" |
+**Error** | ![password__error-after-validation](components/COMPONENTS/Password-fields/design/password__error-after-validation.png) " icone + marges" |
+**Disabled** |![password__disabled](components/COMPONENTS/Password-fields/design/password__disabled.png) |
+
+
+## Visibilité
+
+- La visibilité du mot de passe permet de réduire les erreurs.
+- La saisie du mot de passe est masquée par défaut. Des ellipses ou des astérisques, selon le système d'exploitation sont affichées pour représenter chaque caractère du mot de passe saisi.
+- Les icônes “voir” et “masquer” ont les caractéristiques d’une icône d’un composant champ de texte.
+- Sans action de la part de l'utilisateur sur l'un d'entre eux, leur affichage reste constant. Alors, l'état de visibilité est identique suite à la validation du formulaire.
+
+### Icône “voir”
+
+- Cette icône permet d'afficher les caractères saisis.
+- **Elle est visible lorsque le container du champ de texte est en focus.**  Elle peut aussi être présente suite à un tape sur l'icône "masquer".
+- Elle disparaît suite à un tape sur elle-même.
+- Sa couleur est #878787.
+
+### Icône "masquer"
+
+- Cette icône permet de ne plus rendre visibles les caractères saisis en affichant des symboles.
+- Elle apparaît suite à un tape sur l'icône “voir”.
+- Elle disparaît suite à un tape sur elle-même.
+- Sa couleur est #333333.
+
+## Règles de conformité
+
+- Elles informent l'utilisateur des consignes obligatoires.
+- Ces règles sont **présentes lors la saisie du mot de passe** pour la création d'un compte. Le champ "Mot de passe" est en focus.
+- Ces règles sont également affichées suite validation du formulaire ko.
+- Chaque règle se valide dès que la saisie le permet.
+- Elles s'affichent 10px sous le champ mot de passe ou le message d'erreur.
+- Une règle est définie comme ko seulement après la validation du formulaire.
+
+Nature | Illustration | Couleur
+------------ | ------------- |------------ |
+**Information** | image | #666666 |
+**Ok** | image | #3AAA35 |
+**Ko** | ![password__indication-rule__ko](components/COMPONENTS/Password-fields/design/password__indication-rule__ko.png) | #B40015 |
 
 ## Gestion des erreurs
-- Un champ obligatoire est défini comme ko lorsque le texte n'est pas correct ou est absent.
 
-#### Message d'erreur
-- Les spécifications sont disponibles dans le doc design du composant Error.
+- Le contrôle s’effectue **suite à la validation de l'ensemble de la page**.
 
-#### Contour du container
-  - Épaisseur : 1px
-  - Couleur : #B40015
+### Message d'erreur
+
+- Ces spécifications sont disponibles dans le doc design du composant Error.
+- Chaque message d’erreur guide l'utilisateur afin de résoudre le problème.
+
+#### Lors d'une connexion
+
+- Lorsqu'aucun mot de passe n'est renseigné, le message est : " Veuillez renseigner votre mot de passe."
+- Lorsqu'un des champs du formulaire ne permet pas la connexion, il est necessaire de ne pas informer l'utiliateur quel champ est ko. C'est pourquoi, le message d'erreur n'est pas précisé sous le champ mot de passe.
+
+#### Lors d'une inscription
+- Liste de messages d’erreur possibles :
+  - " Ce mot de passe n'est pas conforme aux exigences minimales. " (Toutes les règles de conformité ne sont pas validées)
+  - " Votre mot de passe doit contenir moins de 16 caractères. "
+  - " Votre mot de passe ne doit pas contenir de caractères accentués, ex : À, é, ï . "
+  - " Votre mot de passe ne doit pas être identique à votre e-mail. "
+- Ces messages d'erreurs sont cumulables.
+
+!!!image!! lors de l'inscription 2 images Avant et Après validation Lors de la création du mot de passe les règlès non respectées s'affiche en rouge.
 
 
-## Autres composants
-- Champs de recherche
-- “ Votre adresse email OK ”
-- Mot de passe
-- Tooltip
-- Sélecteur de date
-- Etc.
+## Bonnes pratiques
+
+- L'enregistrement et la saisie automatique de mot de passe facilitent l'usage.
+- Autoriser les copier / coller lors de la connexion et création de mot de passe.
+- Les caractères de retour chariot ne sont pas autorisés. Ils ne sont pas pris en compte lors de la saisie.
