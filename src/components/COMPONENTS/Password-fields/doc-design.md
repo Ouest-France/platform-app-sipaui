@@ -4,12 +4,11 @@ Les champs mot de passe sont des **champs de texte où les caractères sont util
 
 ## Usage
 
-- Un champ mot de passe se trouve généralement lors d’une **connexion** ou d’une **création de compte.**
-- Par défaut, les **caractères sont masqués** et saisis en toute discrétion et sécurité.
+- Un champ mot de passe se trouve généralement dans un formulaire de **connexion** ou de **création de compte.**
 
 ## Spécifications
 
-Le champ mot de passe présente toutes les caractéristiques d’un champ de texte : interaction, police, hauteur, etc. Elles sont disponibles dans son doc design.
+- Le champ mot de passe présente toutes les caractéristiques d’un champ de texte : interaction, police, hauteur, etc. Elles sont disponibles dans son doc design.
 
 -> changer le nom des images
 ### Lors d'une connexion
@@ -43,7 +42,7 @@ Type | Illustration
 ## Visibilité
 
 - La visibilité du mot de passe permet de réduire les erreurs.
-- La saisie du mot de passe est masquée par défaut. Des ellipses ou des astérisques, selon le système d'exploitation sont affichées pour représenter chaque caractère du mot de passe saisi.
+- Par défaut, les **caractères sont masqués** et saisis en toute discrétion et sécurité. Des ellipses ou des astérisques, selon le système d'exploitation sont affichées pour représenter chaque caractère du mot de passe saisi.
 - Les icônes “voir” et “masquer” ont les caractéristiques d’une icône d’un composant champ de texte.
 - Sans action de la part de l'utilisateur sur l'un d'entre eux, leur affichage reste constant. Alors, l'état de visibilité est identique suite à la validation du formulaire.
 
@@ -64,11 +63,11 @@ Type | Illustration
 ## Règles de conformité
 
 - Elles informent l'utilisateur des consignes obligatoires.
-- Ces règles sont **présentes lors la saisie du mot de passe** pour la création d'un compte. Le champ "Mot de passe" est en focus.
+- Ces règles sont **présentes lors la saisie du mot de passe** dans un formulaire de création d'un compte. Le champ "Mot de passe" est en focus.
 - Ces règles sont également affichées suite validation du formulaire ko.
-- Chaque règle se valide dès que la saisie le permet.
+- Chaque règle se valide dès que le caractère saisi le permet.
 - Elles s'affichent 10px sous le champ mot de passe ou le message d'erreur.
-- Une règle est définie comme ko seulement après la validation du formulaire.
+- Une règle est définie comme ko seulement après la validation de l'ensemble du formulaire.
 
 Nature | Illustration | Couleur
 ------------ | ------------- |------------ |
@@ -78,7 +77,7 @@ Nature | Illustration | Couleur
 
 ## Gestion des erreurs
 
-- Le contrôle s’effectue **suite à la validation de l'ensemble de la page**.
+- Le contrôle du mot de passe s’effectue **suite à la validation de l'ensemble de la page**.
 
 ### Message d'erreur
 
@@ -87,8 +86,8 @@ Nature | Illustration | Couleur
 
 #### Lors d'une connexion
 
-- Lorsqu'aucun mot de passe n'est renseigné, le message est : " Veuillez renseigner votre mot de passe."
-- Lorsqu'un des champs du formulaire ne permet pas la connexion, il est necessaire de ne pas informer l'utiliateur quel champ est ko. C'est pourquoi, le message d'erreur n'est pas précisé sous le champ mot de passe.
+- Lorsqu'aucun caractère n'est renseigné, le message est : " Veuillez renseigner votre mot de passe."
+- Dans un formulaire de connexion ko, le message d'erreur n'est pas lié spécifiquement au champ mot de passe. En effet, le message d'erreur est lié à l'ensemble des éléments qui permettent la connexion.
 
 #### Lors d'une inscription
 - Liste de messages d’erreur possibles :
@@ -96,7 +95,7 @@ Nature | Illustration | Couleur
   - " Votre mot de passe doit contenir moins de 16 caractères. "
   - " Votre mot de passe ne doit pas contenir de caractères accentués, ex : À, é, ï . "
   - " Votre mot de passe ne doit pas être identique à votre e-mail. "
-- Ces messages d'erreurs sont cumulables.
+- Les messages d'erreurs sont cumulables.
 
 !!!image!! lors de l'inscription 2 images Avant et Après validation Lors de la création du mot de passe les règlès non respectées s'affiche en rouge.
 
