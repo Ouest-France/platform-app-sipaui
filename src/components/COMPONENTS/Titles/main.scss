@@ -14,7 +14,7 @@
     .su-h3 {
         font-family: $font-family-titles;
         font-weight: $font-weight-titles;
-        line-height: $line-height-medium;
+        line-height: $line-height-titles;
         color: $color-titles;
         text-transform: $text-transform-titles;
         margin: 0;
@@ -27,6 +27,7 @@
         font-weight: $font-weight-h1;
         font-size: $font-size-h1;
         color: $color-h1;
+        line-height: $line-height-h1;
         text-transform: $text-transform-h1;
     }
     h2,
@@ -35,6 +36,7 @@
         font-weight: $font-weight-h2;
         font-size: $font-size-h2;
         color: $color-h2;
+        line-height: $line-height-h2;
         text-transform: $text-transform-h2;
     }
     h3,
@@ -43,6 +45,7 @@
         font-weight: $font-weight-h3;
         font-size: $font-size-h3;
         color: $color-h3;
+        line-height: $line-height-h3;
         text-transform: $text-transform-h3;
     }
 }
@@ -56,7 +59,7 @@
         .su-h3 {
             font-family: $font-family-titles-liste-articles;
             font-weight: $font-weight-titles-liste-articles;
-            line-height: $line-height-medium;
+            line-height: $line-height-titles-liste-articles;
             color: $color-titles-liste-articles;
             text-transform: $text-transform-titles-liste-articles;
             margin: 0;
@@ -68,6 +71,7 @@
             font-weight: $font-weight-h2-liste-articles;
             font-size: $font-size-h2-liste-articles;
             color: $color-h2-liste-articles;
+            line-height: $line-height-h2-liste-articles;
             text-transform: $text-transform-h2-liste-articles;
         }
         h3,
@@ -76,17 +80,9 @@
             font-weight: $font-weight-h3-liste-articles;
             font-size: $font-size-h3-liste-articles;
             color: $color-h3-liste-articles;
+            line-height: $line-height-h3-liste-articles;
             text-transform: $text-transform-h3-liste-articles;
         }
-/*
-        h2 {
-            font-family: $font-family-base;
-            font-weight: $font-weight-bold;
-            font-size: $font-size-base;
-            margin: 0;
-            padding: 0;
-        }
-*/
     }
 }
 
@@ -102,7 +98,7 @@
         .su-h3 {
             font-family: $font-family-titles-article;
             font-weight: $font-weight-titles-article;
-            line-height: $line-height-medium;
+            line-height: $line-height-titles-article;
             color: $color-titles-article;
             text-transform: $text-transform-titles-article;
             padding: 0;
@@ -113,6 +109,7 @@
             font-weight: $font-weight-h1-article;
             font-size: $font-size-h1-article;
             color: $color-h1-article;
+            line-height: $line-height-h1-article;
             text-transform: $text-transform-h1-article;
             margin: 0 0 3rem;
         }
@@ -122,6 +119,7 @@
             font-weight: $font-weight-h2-article;
             font-size: $font-size-h2-article;
             color: $color-h2-article;
+            line-height: $line-height-h2-article;
             text-transform: $text-transform-h2-article;
             margin: 4.6rem 0 2.5rem;
         }
@@ -131,6 +129,7 @@
             font-weight: $font-weight-h3-article;
             font-size: $font-size-h3-article;
             color: $color-h3-article;
+            line-height: $line-height-h3-article;
             text-transform: $text-transform-h3-article;
             margin: 3rem 0 1.3rem;
         }

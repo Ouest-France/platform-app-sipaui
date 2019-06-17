@@ -22,6 +22,11 @@ $color-h1:                          null                                !default
 $color-h2:                          null                                !default;
 $color-h3:                          null                                !default;
 
+$line-height-titles:                $line-height-base                   !default;
+$line-height-h1:                    null                                !default;
+$line-height-h2:                    null                                !default;
+$line-height-h3:                    null                                !default;
+
 $text-transform-titles:             null                                !default;
 $text-transform-h1:                 null                                !default;
 $text-transform-h2:                 null                                !default;
@@ -47,18 +52,20 @@ $font-weight-titles-liste-articles:                $font-weight-bold            
 $font-weight-h2-liste-articles:                    null                                !default;
 $font-weight-h3-liste-articles:                    null                                !default;
 
-
 $color-titles-liste-articles:                      $color-titles                       !default;
 //$color-h1-liste-articles:                          null                                !default;
 $color-h2-liste-articles:                          null                                !default;
 $color-h3-liste-articles:                          null                                !default;
 
+$line-height-titles-liste-articles:                $line-height-base                   !default;
+//$line-height-h1-liste-articles:                    null                                !default;
+$line-height-h2-liste-articles:                    null                                !default;
+$line-height-h3-liste-articles:                    null                                !default;
 
 $text-transform-titles-liste-articles:             null                                !default;
 //$text-transform-h1-liste-articles:                 null                                !default;
 $text-transform-h2-liste-articles:                 null                                !default;
 $text-transform-h3-liste-articles:                 null                                !default;
-
 
 //$font-size-h1-liste-articles:                null             !default;
 $font-size-h2-liste-articles:                $font-size-base             !default;
@@ -81,12 +88,15 @@ $font-weight-h1-article:                    $font-weight-bold                   
 $font-weight-h2-article:                    null                                !default;
 $font-weight-h3-article:                    null                                !default;
 
-
 $color-titles-article:                      $color-titles                       !default;
 $color-h1-article:                          null                                !default;
 $color-h2-article:                          null                                !default;
 $color-h3-article:                          null                                !default;
 
+$line-height-titles-article:                $line-height-base                   !default;
+$line-height-h1-article:                    $line-height-small                  !default;
+$line-height-h2-article:                    null                                !default;
+$line-height-h3-article:                    null                                !default;
 
 $text-transform-titles-article:             null                                !default;
 $text-transform-h1-article:                 null                                !default;
