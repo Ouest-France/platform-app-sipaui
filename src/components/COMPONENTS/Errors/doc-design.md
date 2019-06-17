@@ -22,6 +22,6 @@ Type | Illustration
 - Graisse de caractère : regular
 - Police du thème
 - Couleur : #B40015
-- La position du message dépend du composant auquel il est associé.
+- La position du message dépend du composant auquel il est associé. Dans la plus part des cas, il s'affiche 5px sous celui-ci.
 
 NB&nbsp;: Généralement, l’apparence visuelle du composant en erreur change.
