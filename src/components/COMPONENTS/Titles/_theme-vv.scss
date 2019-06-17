@@ -4,8 +4,10 @@
     $border-button-premium: 0;
 */
 
-// TITRES STANDARDS
+// TITRES NON-ÉDITORIAUX
+
 $font-family-titles:                $font-family-base;
+
 $font-weight-titles:                $font-weight-medium;
 
 $color-titles:                      $color-secondary-3;
@@ -32,7 +34,7 @@ $font-weight-h2-article:                    $font-weight-thin;
 $font-weight-h3-article:                    $font-weight-h2-article;
 
 
-$text-transform-h3:                 normal;
+$text-transform-h3-article:           none;
 
 $font-size-h1-article:                2.2rem;
 $font-size-h2-article:                2rem;
