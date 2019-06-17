@@ -24,15 +24,11 @@ $margin-paragraphe: $margin-medium;
     }
     .su-article,
     .su-articles-list {
-        p,
-        li,
-        span {
-            font-family: $font-family-base;
-            font-size: $font-size-base;
-            line-height: $line-height-tall;
-            color: $font-color-standard;
-            margin: 0;
-        }
+        font-family: $font-family-base;
+        font-size: $font-size-base;
+        line-height: $line-height-tall;
+        color: $font-color-standard;
+        margin: 0;
     }
     .su-article {
         p + p,
