@@ -1,0 +1,25 @@
+{
+  "name": "@sipaui/button",
+  "version": "0.0.1",
+  "main": "dist/button.js",
+  "license": "LicenseRef-LICENSE",
+  "scripts": {
+    "build": "parcel build ./button.vue"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.0.0",
+    "cssnano": "^4.1.10",
+    "parcel": "^1.12.3",
+    "sass": "^1.21.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
