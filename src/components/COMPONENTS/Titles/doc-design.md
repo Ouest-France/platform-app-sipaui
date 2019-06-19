@@ -6,21 +6,21 @@ Les titres sont des repères visuels. Ces éléments sont donc mis en avant par 
 ## Usage
 Les titres sont les textes aux corps les plus grands. Ils sont courts, importants et sont hiérarchisés afin de faciliter le parcours de lecture. Un élément de titre décrit brièvement le sujet de la section qu’il introduit.
 
-**SipaUI propose trois niveaux de titres**, *N1* étant le plus important et *N3* le moins.
+**SipaUI propose trois niveaux de titres**, le *niveau 1* étant le plus important et le *niveau 3* le moins.
 
-### Les titres de niveau 1
+### Niveau 1
 
 - Le titre de niveau 1 est **l’élément typographique le plus visible de la page**. En le lisant, on doit pouvoir identifier le sujet de la page.
 - **Les mots clés de la page sont au début de ce titre**. Ce titre étant lié à la balise  `<h1>`, Google leur accordera davantage de poids.
 - **Le titre doit être concis.** Plus le titre sera long, plus les mots clés seront dilués.
 
-### Les titres de niveau 2
+### Niveau 2
 
-- Ils introduisent les principales sections d’un contenu**. Le contenu est divisé en blocs plus digestes pour les utilisateurs et Google.
+- Ils introduisent les **principales sections d’un contenu**. Le contenu est divisé en blocs plus digestes pour les utilisateurs et Google.
 - **Le nombre de titres de niveau 2 doit être limité** afin que les utilisateurs puissent balayer le contenu.
 - On peut utiliser la balise `<h2>` pour ces titres de niveaux 2, mais elles sont prises en compte pour le référencement. **Le choix de cette balise est donc lié au SEO**.
 
-### Les titres de niveau 3
+### Niveau 3
 
 - Ils permettent de **faire ressortir la profondeur d’un contenu**.
 - Les balises `<h3>` n’ont que peu de valeur pour le SEO.
@@ -29,14 +29,14 @@ Les titres sont les textes aux corps les plus grands. Ils sont courts, important
 ## Spécifications
 
 Sur un site de journal, publiant de nombreux articles présentés dans diverses listes, la mise en forme des titres peut varier en fonction de leur type. **Il existe 3 types de titres distinct**s&nbsp;:
-- les **titres standards** (cf. «&nbsp;**contenu non éditorial**&nbsp;»),
-- les **titres éditoriaux** des articles dans une «&nbsp;**liste d’articles**&nbsp;»,
-- les **titres éditoriaux** d’un «&nbsp;**article complet**&nbsp;» sur la page de cet article.
+- les **titres de contenu non éditorial** (cas par défaut),
+- les **titres éditoriaux des listes d’articles** (cas spécifique),
+- les **titres éditoriaux des articles complets** (cas spécifique).
 
 Par défaut, SipaUI utilise une police de caractères spéciale&nbsp;: *Oswald*. Cela peut être changé au besoin via les thèmes.
 
 ### Contenu non éditorial
-Le contenu non éditorial correspond à tout ce qui n’est pas dépendant d’article sur le site (les listes d’articles ou le contenu d’un article proprement dit). Il s’agit des titres de pages N1 et de rubriques N2.
+Le contenu non éditorial correspond à tout ce qui n’est pas dépendant d’article sur le site. Il s'agit donc des **titres standards** (titres de page et titres de rubrique), ceux appliqués par défaut. Les listes d’articles ou le contenu d’un article proprement dit rentrent dans le cas de contenu éditorial. **Tant que vous n’utilisez pas les classes spécifiques aux contenus éditoriaux, vous serez dans ce cas standard**.
 
 #### Mobile
 
@@ -62,7 +62,7 @@ Les listes d’articles sont des blocs s’affichant généralement sur une page
 
 Balise | Police | Graisse | Taille | Couleur
 ------------ | ------------- | ------------- | ------------- | -------------
-Niveau 2 | Oswald | Normal | 18px | #333333
+Niveau 2 | Oswald | Normal | 24px | #333333
 Titre d’article | Arial | Bold | Variable | #333333
 
 #### Desktop
