@@ -36,7 +36,39 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 ```html
 <label for="input1">Label</label>
 <div class="su-password">
-	<input id="input1" name="input1" type="password" required>
+	<div class="su-fake-field">
+		<input id="input1" name="input1" type="password" required>
+	</div>
+	<div class="su-input-actions-area">
+		<button type="button" class="su-input-action su-password-toggle">
+			<i class="su-icon">montrer</i>
+		</button>
+	</div>
+</div>
+```
+<div class="sipaui">
+	<label for="input1">Label</label>
+	<div class="su-password">
+		<div class="su-fake-field">
+			<input id="input1" name="input1" type="password" required>
+		</div>
+		<div class="su-input-actions-area">
+			<button type="button" class="su-input-action su-password-toggle">
+				<i class="su-icon">montrer</i>
+			</button>
+		</div>
+	</div>
+</div>
+
+### Inscription
+Input standard avec un placeholder. Le style est appliqué par défaut sur les inputs dans un site SipaUI. Il est possible de forcer cet affichage avec la classe `su-input-text`. Pour les labels (obligatoires), prendre le composant *Labels*.
+
+```html
+<label for="input2">Label</label>
+<div class="su-password">
+	<div class="su-fake-field">
+		<input id="input2" name="input2" type="password" required>
+	</div>
 	<div class="su-input-actions-area">
 		<button type="button" class="su-input-action su-password-toggle">
 			<i class="su-icon">montrer</i>
@@ -51,9 +83,11 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 </div>
 ```
 <div class="sipaui">
-	<label for="input1">Label</label>
+	<label for="input2">Label</label>
 	<div class="su-password">
-		<input id="input1" name="input1" type="password" required>
+		<div class="su-fake-field">
+			<input id="input2" name="input2" type="password" required>
+		</div>
 		<div class="su-input-actions-area">
 			<button type="button" class="su-input-action su-password-toggle">
 				<i class="su-icon">montrer</i>
@@ -69,21 +103,23 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 </div>
 
 
-
-
 ### Erreur
 Input standard avec un placeholder. Le style est appliqué par défaut sur les inputs dans un site SipaUI. Il est possible de forcer cet affichage avec la classe `su-input-text`. Pour les labels (obligatoires), prendre le composant *Labels*.
 
 ```html
-<label for="input1">Label</label>
+<label for="input3">Label</label>
 <div class="su-password">
-	<input id="input1" name="input1" type="password" required>
+	<div class="su-fake-field">
+		<input id="input3" name="input3" type="password" required>
+	</div>
 </div>
 ```
 <div class="sipaui">
-	<label for="input1">Label</label>
+	<label for="input3">Label</label>
 	<div class="su-password su-error">
-		<input id="input1" name="input1" type="password" required>
+		<div class="su-fake-field">
+			<input id="input3" name="input3" type="password" required>
+		</div>
 		<div class="su-input-actions-area">
 			<button type="button" class="su-input-action" data-suemptyinput>
 				<i class="su-icon">montrer</i>

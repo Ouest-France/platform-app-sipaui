@@ -28,7 +28,7 @@
         transition: all .3s ease-out;
         padding: 0 $padding-lateral-input;
 
-        &:focus {
+        &:focus, &:focus-within {
             background: $background-input-focus;
             border: $border-input-focus;
         }
@@ -97,21 +97,6 @@
     .su-password {
         position: relative;
 
-        /*&::before {
-            content: "\e903";
-            font-family: 'su-icons';
-            color: $color-main-5;
-            top: 0.6rem;
-            right: 1rem;
-            position: absolute;
-            font-size: 2.4rem;
-            pointer-events: none;
-        }
-        
-        &:hover::before {
-            color: $color-main-7;
-        }*/
-
         .su-input-actions-area {
             opacity: 1;
         }
@@ -141,6 +126,21 @@
             }
         }
 
+        .su-fake-field {
+            padding: 0;
+            input {
+                border: 0;
+                height: 100%;
+                padding-right: $height-input;
+            }
+            
+            &:focus-within {
+                & ~ .su-conditions {
+                    display: block;
+                }
+            }
+        }
+
         input {
             &:focus {
                 & ~ .su-conditions {
@@ -149,7 +149,7 @@
             }
         }
 
-        &.error {
+        &.su-error, &.su-password-focus {
             .su-conditions {
                 display: block;
             }
