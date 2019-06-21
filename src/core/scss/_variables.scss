@@ -159,4 +159,4 @@ $opacity-disabled: .4 !default;
 
 // Sélecteurs
 $inputTextBase: 'input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"], input[type="search"], textarea, .su-input-text, .su-textarea';
-$inputTextPlus: $inputTextBase + ', input[type="date"]' ;
+$inputTextPlus: $inputTextBase + ', input[type="date"]', '.su-fake-field' ;
