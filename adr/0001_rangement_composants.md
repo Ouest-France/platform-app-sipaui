@@ -1,8 +1,10 @@
+<!--  Modèle MADR : https://adr.github.io/madr/ -->;
+
 # Choisir le mode de rangement des composants dans la colonne de gauche du StoryBook
 
-## Statut
-
-Proposition
+* Statut&nbsp;: proposition
+* Date&nbsp;: 24/06/19
+* Décideurs&nbsp;: Cédric BOIDIN, Alexandre LÉVÊQUE, Céline COLIN, Stéphane CHESNÉ
 
 
 ## Contexte
@@ -54,7 +56,25 @@ NB StoryBook propose un moteur de filtre en haut de la colonne (moyennement fonc
 
 ## Positions
 
-*Chaque personne interrogée peut ici donner son avis.*
+*Cédric BOIDIN* - 23/05/19
+
+> un point qui va un peu contre cette approche, c'est que nous utilisons des naming du style su-list-xxx et pas prefixé par le type de composant (à la https://css-tricks.com/abem-useful-adaptation-bem/).
+
+
+*Cédric BOIDIN* - 23/05/19
+
+> Sinon avec le découpage atomicn j'aime bien l'idée de mixer éléments html/css pur et Composant Vue.
+Mais cela ne cadre helas peut être pas si bien avec notre approche double
+
+* css/html/js pur pour le site
+* framework orienté pour les applis de gestion
+
+*(exemple dropdown ou accordéon qui devraient exister à la fois en Vue et en html/js/css)*
+
+
+*Alexandre LÉVÊQUE* - 23/05/19
+
+> Je suis partisan du classement par typologie. Avoir tous les composants de formulaire rangés ensemble me paraît plus logique qu'un avatar et un input (atomic design). D'autre part, il est logique que le dossier Composants soit plus rempli. On peut sûrement découper un peu plus ? Je trouve cette structure assez facile à prendre en main, par exemple : https://element.eleme.io/#/fr-FR/component/installation
 
 
 ## Décision
