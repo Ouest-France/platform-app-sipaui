@@ -4,6 +4,10 @@ SipaUI utilise une grille de mise en page qui lui est propre. Elle est **fluide 
 
 D’un point de vue technique, la grille s'appuie sur le modèle *Flexbox*, la technologie *Grids* n’étant pas compatible Internet Explorer.
 
+<p class="alerte">
+Puisque la grille SipaUI est en `flex` elle n’est pas compatible avec <em><a href="https://masonry.desandro.com" target="_blank">Masonry</a></em>.
+</p>
+
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
 <div class="dependances">

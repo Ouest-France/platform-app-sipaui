@@ -35,6 +35,7 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li class="breaking">Évol&nbsp;: grille, amélioration de la grille auto.</li>
+                                                <li>Évol&nbsp;: grille, ajout d’une version à l’ancienne en <code>float</code> en cas de besoin de compatibilité avec <em><a href="https://masonry.desandro.com" target="_blank">Masonry</a></em>.</li>
                                                 <li>Évol&nbsp;: titres, prise en compte des listes d’article.</li>
                                             </ul>
                                         </li>
@@ -49,7 +50,7 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li>Petit select.</li>
-                                                <li>Liens&nbsp;: prise en compte de &lt;a&gt; sans classe.</li>
+                                                <li>Liens&nbsp;: prise en compte de  <code>&lt;a&gt;</code> sans classe.</li>
                                                 <li>Champs texte&nbsp;: prise en charge basique d’input search.</li>
                                             </ul>
                                         </li>
