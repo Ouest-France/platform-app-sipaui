@@ -11,7 +11,7 @@ Ce composant est une dépendance pour plusieurs composants (champs de texte, men
 
 </div>
 
-<!-- STORY -->
+
 
 ## Standard
 Pour pouvoir être utilisé, il faut 2 objets dans le DOM&nbsp;: une `<div>` englobant le composant qui devra gérer l’erreur et une `<div class="su-error-message">` contenant le texte du message d’erreur. L’affichage du message d’erreur ainsi que l’éventuelle modification visuelle du composant en erreur se fera par l’ajout de la classe `su-error` sur le 1<sup>er</sup> `<div>`.

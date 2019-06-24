@@ -13,7 +13,7 @@ SipaUI propose comme indicateur de chargement un *spinner*. À ce jour, il n’e
 </div>
 
 
-<!-- STORY -->
+
 
 ## Chargeur de page
 

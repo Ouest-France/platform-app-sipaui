@@ -14,7 +14,7 @@ Les listes déroulantes `<select>` proposent une liste d’options à l’utilis
 
 </div>
 
-<!-- STORY -->
+
 
 ## Standard
 

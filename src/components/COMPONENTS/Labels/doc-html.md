@@ -12,7 +12,7 @@ Ce composant regroupe les labels précédant les éléments de formulaire (champ
 
 </div>
 
-<!-- STORY -->
+
 
 ## Standard
 Label standard pour un composant de formulaire requis (`required`). Le style est appliqué par défaut sur les labels dans un site SipaUI. Il est possible de forcer cet affichage avec la classe `su-label`.

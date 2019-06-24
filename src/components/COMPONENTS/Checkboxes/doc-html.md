@@ -18,7 +18,7 @@ Toutefois, pour gérer l’affichage en colonne d’une suite de cases à cocher
 </div>
 
 
-<!-- STORY -->
+
 
 ## Cases à cocher standards
 

@@ -18,9 +18,6 @@ Puisque la grille SipaUI est en `flex` elle n’est pas compatible avec <em><a h
 
 </div>
 
-
-<!-- STORY -->
-
 ## Le conteneur de page
 
 Le conteneur ne fait pas partie à proprement parler de la grille. Il sert à déterminer la largeur que prend la grille principale de la page (celle de premier niveau). **Si vous avez besoin d’insérer une grille dans un sous-niveau, il n’y aura plus besoin de conteneur**. Exemple de grille multi-niveau&nbsp;: Page / conteneur / grille n1 / grille n2…

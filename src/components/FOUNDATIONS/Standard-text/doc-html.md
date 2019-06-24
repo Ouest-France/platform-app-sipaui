@@ -22,7 +22,7 @@ Ce formatage de texte accepte 2 variations en fonction de l’importance du text
 
 </div>
 
-<!-- STORY -->
+
 
 ## Texte standard
 

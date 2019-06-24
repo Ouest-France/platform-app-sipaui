@@ -6,7 +6,7 @@ Ci-dessous vous trouverez la liste des variables SCSS de points de rupture à ut
 	<p>Les points de rupture ne sont pas un composant en tant que tel, ils font partie du «&nbsp;core&nbsp;», c'est à dire des éléments obligatoires.</p>
 </div>
 
-<!-- STORY -->
+
 
 ## Tableau de correspondances
 

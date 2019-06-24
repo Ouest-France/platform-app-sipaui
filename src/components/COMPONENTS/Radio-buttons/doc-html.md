@@ -17,7 +17,7 @@ Toutefois, pour gérer l’affichage en colonne d’une suite de boutons-radio, 
 
 </div>
 
-<!-- STORY -->
+
 
 ## Boutons-radio standards
 

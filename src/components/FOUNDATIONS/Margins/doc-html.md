@@ -11,7 +11,7 @@ SipaUI fournit différents outils pour intégrer des marges **à l’extérieur*
 
 </div>
 
-<!-- STORY -->
+
 
 ## Variables SASS
 

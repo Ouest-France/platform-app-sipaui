@@ -4,7 +4,7 @@ Les classes d’aide permettent d’appliquer des styles CSS particuliers à des
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
-<!-- STORY -->
+
 
 ## Clearfix
 Le clearfix est un hack CSS permettant de faire en sorte que des objets flottants (avec la propriété CSS `float`) puissent prendre leur place dans la page et ainsi pousser le contenu suivant en dessous d’eux, plutôt que de passer par-dessus. La classe de clearfix doit être posée sur le parent du/des bloc(s) flottant(s). SipaUI propose 2 classes pour le clearfix&nbsp;: `su-clearfix` et `su-cf` qui font la même chose (la seconde est une version courte).

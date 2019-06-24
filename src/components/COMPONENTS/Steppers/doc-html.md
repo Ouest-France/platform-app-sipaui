@@ -10,7 +10,7 @@
 
 </div>
 
-<!-- STORY -->
+
 
 ## Indicateur de progression basique
 Un indicateur de progression est en fait une simple liste ordonnée (`<ol>`) redessinée. Il peut être composé de **3, 4 ou 5 étapes**, sa couleur peut dépendre **du thème du site ou d’un sous-thème** (comme *Abonnement*) et avoir au choix **un chiffre ou une coche en étape finale validée**.

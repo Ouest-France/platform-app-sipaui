@@ -14,7 +14,7 @@ Comme le prévoit le HTML, les liens ont 4 états&nbsp;: **normal** (/ ou *link*
 
 </div>
 
-<!-- STORY -->
+
 
 ## Lien article
 

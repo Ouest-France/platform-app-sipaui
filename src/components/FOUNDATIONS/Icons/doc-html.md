@@ -13,7 +13,7 @@ Ci-dessous, le catalogue des icônes disponibles dans la fonte *su-icons*. Ces i
 
 </div>
 
-<!-- STORY -->
+
 
 ## Exemples
 

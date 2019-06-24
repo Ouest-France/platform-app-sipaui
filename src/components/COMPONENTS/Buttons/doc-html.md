@@ -35,7 +35,7 @@ Cerise&nbsp;:
 </div>
 
 
-<!-- STORY -->
+
 
 ## Types de boutons
 

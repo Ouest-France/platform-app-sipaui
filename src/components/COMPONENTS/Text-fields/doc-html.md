@@ -25,7 +25,7 @@ Cerise&nbsp;:
 
 </div>
 
-<!-- STORY -->
+
 
 ## Input text
 
