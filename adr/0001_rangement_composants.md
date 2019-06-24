@@ -64,9 +64,11 @@ NB StoryBook propose un moteur de filtre en haut de la colonne (moyennement fonc
 *Cédric BOIDIN* - 23/05/19
 
 > Sinon avec le découpage atomicn j'aime bien l'idée de mixer éléments html/css pur et Composant Vue.
+> 
 > Mais cela ne cadre helas peut être pas si bien avec notre approche double
 > * css/html/js pur pour le site
 > * framework orienté pour les applis de gestion
+> 
 > *(exemple dropdown ou accordéon qui devraient exister à la fois en Vue et en html/js/css)*
 
 
