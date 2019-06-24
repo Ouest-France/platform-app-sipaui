@@ -74,12 +74,12 @@ NB StoryBook propose un moteur de filtre en haut de la colonne (moyennement fonc
 
 *Alexandre LÉVÊQUE* - 23/05/19
 
-> Je suis partisan du classement par typologie. Avoir tous les composants de formulaire rangés ensemble me paraît plus logique qu'un avatar et un input (atomic design). D'autre part, il est logique que le dossier Composants soit plus rempli. On peut sûrement découper un peu plus ? Je trouve cette structure assez facile à prendre en main, par exemple : https://element.eleme.io/#/fr-FR/component/installation
+> Je suis partisan du classement par typologie. Avoir tous les composants de formulaire rangés ensemble me paraît plus logique qu'un avatar et un input (atomic design). D'autre part, il est logique que le dossier Composants soit plus rempli. On peut sûrement découper un peu plus ? Je trouve cette structure assez facile à prendre en main, par exemple&nbsp;: https://element.eleme.io/#/fr-FR/component/installation
 
 
 *Stéphane CHESNÉ* - 24/06/19
 
-> Suite à cette conversation et à la compulsion de différents design-systems (Material Design, Material-UI, Bootstrap, Saagie, Carbon et Element) je propose cette arborescence :
+> Suite à cette conversation et à la compulsion de différents design-systems (Material Design, Material-UI, Bootstrap, Saagie, Carbon et Element) je propose cette arborescence&nbsp;:
 > 
 > * Layout
 >     * Breakpoints
