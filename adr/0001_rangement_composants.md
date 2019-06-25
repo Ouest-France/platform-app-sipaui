@@ -110,3 +110,34 @@ NB StoryBook propose un moteur de filtre en haut de la colonne (moyennement fonc
 
 
 ## Décision
+
+L’arborescence proposée est validée par forfait…
+
+* Layout
+    * Breakpoints
+    * Grids
+    * Margins
+* Components
+    * Inputs
+        * Buttons
+        * Checkboxes
+        * Radio-buttons
+        * Selects
+        * Text-fields
+    * Forms
+        * Labels
+        * Errors
+    * Text
+        * Standard-text
+        * Titles
+        * Links
+        * Lists
+    * Navigation
+        * Steppers
+    * Notifiers
+        * Loaders
+* Utilities
+    * Helpers
+    * Icons
+    
+Cette arborescence correspond au besoin présent. Des sous-rubriques à «&nbsp;Components&nbsp;» pourront être ajoutées ou modifiées.
