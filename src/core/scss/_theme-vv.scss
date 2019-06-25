@@ -38,21 +38,27 @@ $color-link-standard: $color-secondary-3;
 @import "variables";
 
 // Les fondations
-@import "../../components/FOUNDATIONS/Helpers/theme-vv";
-@import "../../components/FOUNDATIONS/Margins/theme-vv";
-@import "../../components/FOUNDATIONS/Standard-text/theme-vv";
-@import "../../components/FOUNDATIONS/Grids/theme-vv";
+@import "../../components/LAYOUT/Margins/theme-vv";
+@import "../../components/LAYOUT/Grids/theme-vv";
 
 // Les composants
-@import "../../components/COMPONENTS/Titles/theme-vv";
-@import "../../components/COMPONENTS/Lists/theme-vv";
-@import "../../components/COMPONENTS/Links/theme-vv";
-@import "../../components/COMPONENTS/Buttons/theme-vv";
-@import "../../components/COMPONENTS/Labels/theme-vv";
-@import "../../components/COMPONENTS/Text-fields/theme-vv";
-@import "../../components/COMPONENTS/Radio-buttons/theme-vv";
-@import "../../components/COMPONENTS/Checkboxes/theme-vv";
-@import "../../components/COMPONENTS/Selects/theme-vv";
-@import "../../components/COMPONENTS/Errors/theme-vv";
-@import "../../components/COMPONENTS/Loaders/theme-vv";
-@import "../../components/COMPONENTS/Steppers/theme-vv";
+@import "../../components/COMPONENTS/Text/Standard-text/theme-vv";
+@import "../../components/COMPONENTS/Text/Titles/theme-vv";
+@import "../../components/COMPONENTS/Text/Lists/theme-vv";
+@import "../../components/COMPONENTS/Text/Links/theme-vv";
+
+@import "../../components/COMPONENTS/Inputs/Buttons/theme-vv";
+@import "../../components/COMPONENTS/Inputs/Text-fields/theme-vv";
+@import "../../components/COMPONENTS/Inputs/Radio-buttons/theme-vv";
+@import "../../components/COMPONENTS/Inputs/Checkboxes/theme-vv";
+@import "../../components/COMPONENTS/Inputs/Selects/theme-vv";
+
+@import "../../components/COMPONENTS/Forms/Labels/theme-vv";
+@import "../../components/COMPONENTS/Forms/Errors/theme-vv";
+
+@import "../../components/COMPONENTS/Notifiers/Loaders/theme-vv";
+
+@import "../../components/COMPONENTS/Navigation/Steppers/theme-vv";
+
+// Les utilitaires
+@import "../../components/UTILITIES/Helpers/theme-vv";

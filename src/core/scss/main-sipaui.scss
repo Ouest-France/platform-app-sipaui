@@ -3,22 +3,28 @@
 */
 @import "main";
 
-// Les fondations
-@import "../../components/FOUNDATIONS/Helpers/main";
-@import "../../components/FOUNDATIONS/Margins/main";
-@import "../../components/FOUNDATIONS/Standard-text/main";
-@import "../../components/FOUNDATIONS/Grids/main";
+// Le layout
+@import "../../components/LAYOUT/Margins/main";
+@import "../../components/LAYOUT/Grids/main";
 
 // Les composants
-@import "../../components/COMPONENTS/Titles/main";
-@import "../../components/COMPONENTS/Lists/main";
-@import "../../components/COMPONENTS/Links/main";
-@import "../../components/COMPONENTS/Buttons/main";
-@import "../../components/COMPONENTS/Labels/main";
-@import "../../components/COMPONENTS/Text-fields/main";
-@import "../../components/COMPONENTS/Radio-buttons/main";
-@import "../../components/COMPONENTS/Checkboxes/main";
-@import "../../components/COMPONENTS/Selects/main";
-@import "../../components/COMPONENTS/Errors/main";
-@import "../../components/COMPONENTS/Loaders/main";
-@import "../../components/COMPONENTS/Steppers/main";
+@import "../../components/COMPONENTS/Text/Standard-text/main";
+@import "../../components/COMPONENTS/Text/Titles/main";
+@import "../../components/COMPONENTS/Text/Lists/main";
+@import "../../components/COMPONENTS/Text/Links/main";
+
+@import "../../components/COMPONENTS/Inputs/Buttons/main";
+@import "../../components/COMPONENTS/Inputs/Text-fields/main";
+@import "../../components/COMPONENTS/Inputs/Radio-buttons/main";
+@import "../../components/COMPONENTS/Inputs/Checkboxes/main";
+@import "../../components/COMPONENTS/Inputs/Selects/main";
+
+@import "../../components/COMPONENTS/Forms/Labels/main";
+@import "../../components/COMPONENTS/Forms/Errors/main";
+
+@import "../../components/COMPONENTS/Notifiers/Loaders/main";
+
+@import "../../components/COMPONENTS/Navigation/Steppers/main";
+
+// Les utilitaires
+@import "../../components/UTILITIES/Helpers/main";
