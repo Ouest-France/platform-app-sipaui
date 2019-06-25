@@ -12,9 +12,6 @@
     .css-1h0mv0d a { /* Zone logo */
         opacity: 1 !important;
     }
-    .css-y7phwm a { /* Tous les liens */
-        border-bottom: none !important;
-    }
     nav a {
         margin-right: 0;
         opacity: 1;
@@ -34,6 +31,10 @@
         color: #fff !important;*/
         display: none;
     }
+    .css-19bal3c > .css-0 {
+        background: #222;
+        border-bottom: 1px solid #444;
+    }
     .css-7d9ni3 { /* Texte de premier niveaux */
         color: #d4d4d4 !important;
     }
@@ -41,16 +42,15 @@
         color: #fff !important;
         font-weight: 800;
     }
-    .css-uz5kid::after { /* Fond niveau 1 ouvert */
-        content:'';
-        display: block;
-        background: red;
+
+    #explorercomponents {
+        margin-top: 20px;
     }
-    .css-y7phwm .css-0 > .css-1uwvbks { /* Sous-niveau */
-        background: #252525 !important;
-    }
-    #explorercomponents + .css-0 .css-hoo8k2 {
+    #explorercomponents + .css-0 .css-hoo8k2 { /* 2d niveau de COMPONENTS */
         text-transform: uppercase;
         color: #d4d4d4;
+    }
+    #explorercomponents + .css-0 .css-hoo8k2:hover { /* 2d niveau de COMPONENTS */
+        background: rgba(250,250,252, .2);
     }
 </style>
