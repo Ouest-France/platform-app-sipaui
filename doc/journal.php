@@ -35,8 +35,8 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li class="breaking">Évol&nbsp;: grille, amélioration de la grille auto.</li>
-                                                <li>Évol&nbsp;: grille, ajout d’une version à l’ancienne en <code>float</code> en cas de besoin de compatibilité avec <em><a href="https://masonry.desandro.com" target="_blank">Masonry</a></em>.</li>
                                                 <li>Évol&nbsp;: titres, prise en compte des listes d’article.</li>
+                                                <li>Évol&nbsp;: réordonnancement de l’arborescence des composants.</li>
                                             </ul>
                                         </li>
                                     </ul>
