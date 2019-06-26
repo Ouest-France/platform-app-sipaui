@@ -38,6 +38,7 @@
                                                 <li>Évol&nbsp;: titres, prise en compte des listes d’article.</li>
                                                 <li>Évol&nbsp;: réordonnancement de l’arborescence des composants.</li>
                                                 <li>Évol&nbsp;: amélioration du système de thèmes.</li>
+                                                <li>Évol&nbsp;: gestion de la hauteur de ligne du petit texte.</li>
                                             </ul>
                                         </li>
                                     </ul>

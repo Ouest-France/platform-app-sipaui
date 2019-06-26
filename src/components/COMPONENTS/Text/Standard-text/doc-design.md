@@ -11,6 +11,8 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 - Police&nbsp;: Arial
 - Graisse&nbsp;: Normal
 - Taille&nbsp;: 16px
+- Hauteur de ligne standard&nbsp;: 1.35
+- Hauteur de ligne éditoriale&nbsp;: 1.5 
 - Couleur&nbsp;: #333333
 
 ## Cas spécifique
@@ -18,7 +20,8 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 ### Petit texte
 
 - Cette variation permet d'afficher un texte de moindre importance.
-- Sa taille est 14px.
+- Taille&nbsp;: 14px.
+- Hauteur de ligne&nbsp;: 1.35
 - Ses autres spécifications sont identiques au texte standard.
 
 ## Bonnes pratiques
