@@ -10,7 +10,7 @@ Les titres sont les textes aux corps les plus grands. Ils sont courts, important
 
 ### Niveau 1
 
-- Le titre de niveau 1 est **l’élément typographique le plus visible de la page**. En le lisant, on doit pouvoir identifier le sujet de la page.
+- Le titre de niveau 1 est **l’élément typographique le plus visible de la page**. En le lisant, l’utilisateur doit pouvoir identifier le sujet de la page.
 - **Les mots clés de la page sont au début de ce titre**. Ce titre étant lié à la balise  `<h1>`, Google leur accordera davantage de poids.
 - **Le titre doit être concis.** Plus le titre sera long, plus les mots clés seront dilués.
 
@@ -18,7 +18,7 @@ Les titres sont les textes aux corps les plus grands. Ils sont courts, important
 
 - Ils introduisent les **principales sections d’un contenu**. Le contenu est divisé en blocs plus digestes pour les utilisateurs et Google.
 - **Le nombre de titres de niveau 2 doit être limité** afin que les utilisateurs puissent balayer le contenu.
-- On peut utiliser la balise `<h2>` pour ces titres de niveaux 2, mais elles sont prises en compte pour le référencement. **Le choix de cette balise est donc lié au SEO**.
+- On peut utiliser la balise `<h2>` pour ces titres de niveaux 2, mais elle est prise en compte pour le référencement. **Le choix de cette balise est donc lié au SEO**.
 
 ### Niveau 3
 
@@ -63,14 +63,14 @@ Les listes d’articles sont des blocs s’affichant généralement sur une page
 Balise | Police | Graisse | Taille | Couleur
 ------------ | ------------- | ------------- | ------------- | -------------
 Niveau 2 | Oswald | Normal | 24px | #333333
-Titre d’article | Arial | Bold | Variable | #333333
+Titre d’article | Arial | Bold | 16px | #333333
 
 #### Desktop
 
 Balise | Police | Graisse | Taille | Couleur
 ------------ | ------------- | ------------- | ------------- | -------------
 Niveau 2 | Oswald | Normal | 30px | #333333
-Titre d’article | Arial | Bold | Variable | #333333
+Titre d’article | Arial | Bold | 16px | #333333
 
 
 ### Contenu éditorial - article complet

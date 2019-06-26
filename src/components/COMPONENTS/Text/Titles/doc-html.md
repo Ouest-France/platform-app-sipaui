@@ -73,7 +73,7 @@ Le style des titres de contenu non éditorial est le style de titre par défaut.
 
 ## Titres de contenu éditorial - liste d’articles
 
-Placer la classe `su-articles-list` sur le parent direct de la liste d’articles. Ici, en fonction du contexte, on utilisera au choix la balise `h2>` ou la classe `su-h2` pour le titre de la liste. Par contre, **il ne faut absolument pas utiliser la balise `<h2>`si on utilise cette même balise pour identifier les titres des articles dans la liste**.
+Placer la classe `su-articles-list` sur le parent direct de la liste d’articles. Ici, en fonction du contexte, on utilisera au choix la balise `<h2>` ou la classe `su-h2` pour le titre de la liste. Par contre, **il ne faut absolument pas utiliser la balise `<h2>`si on utilise cette même balise pour identifier les titres des articles dans la liste**.
 
 ### Cas où le `<h2>` est sur le titre de rubrique
 
