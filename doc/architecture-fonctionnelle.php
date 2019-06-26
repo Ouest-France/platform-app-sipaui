@@ -24,10 +24,10 @@
                 <h1>Architecture Fonctionnelle</h2>
 
                 <h2>SipaUI intégré dans un site</h2>
-                <p>SipaUI porte tout le CSS et le JS nécessaire à l’affichage des composants graphiques prévus par la charte. Un site l’utilisant ne devrait donc pas avoir besoin de CSS supplémentaire pour afficher ces composants. D’autant plus que SipaUI intègre un système de «&nbsp;templating&nbsp;» poussé qui devrait lui permettre de répondre à ses besoins de personnalisation. SipaUI intègre aussi une grille, des classes de marges, ainsi que des classes éditoriales qui permettent de mettre en page le contenu. Toutefois, ce site aura besoin de CSS propres pour gérer tous les cas et éléments non prévus dans SipaUI. Par conséquent, il faudra <strong>concaténer les CSS du site avec ceux de SipaUI suivant la même logique</strong> (même découpage en fonction des media-querries) afin d’optimiser les performances en évitant d’appeler plusieurs fichiers CSS.</p>
+                <p>SipaUI porte tout le CSS et le JS nécessaire à l’affichage des composants graphiques prévus par la charte. Un site l’utilisant ne devrait donc pas avoir besoin de CSS supplémentaire pour afficher ces composants. D’autant plus que SipaUI intègre un système de «&nbsp;templating&nbsp;» poussé qui devrait lui permettre de répondre à ses besoins de personnalisation. SipaUI intègre aussi une grille, des classes de marges, ainsi que des classes éditoriales qui permettent de mettre en page le contenu. Toutefois, ce site aura besoin de CSS propres pour gérer tous les cas et éléments non prévus dans SipaUI. Par conséquent, il faudra <strong>concaténer les CSS du site avec ceux de SipaUI suivant la même logique</strong> (même découpage en fonction des media queries) afin d’optimiser les performances en évitant d’appeler plusieurs fichiers CSS.</p>
 
                 <h2>SipaUI et les Blocs (s’intégrant dans un site du groupe)</h2>
-                <p>Un bloc ne devrait pas avoir de CSS propres. Dans quasiment tous les cas, les composants graphiques de SipaUI devraient suffirent à gérer l’affichage du contenu d’un bloc. Dans le cas contraire, il y aura 2 possibilités&nbsp;:</p>
+                <p>Un bloc ne devrait pas avoir de CSS propres. Dans quasiment tous les cas, les composants graphiques de SipaUI devraient suffire à gérer l’affichage du contenu d’un bloc. Dans le cas contraire, il y aura 2 possibilités&nbsp;:</p>
                 <ul>
                     <li>Il y a des manques dans le framework. Il faut alors, soit demander les évolutions nécessaires (cf. ci-dessous), soit les développer vous même et faire une merge-request.</li>
                     <li>Il s'agit de besoins spécifiques à un BP très particulier (ie un bloc météo) et dans ce cas le bloc pourra porter ses propres CSS. Il serait alors possible que ces CSS soient appelées dans le bloc (au lieu d’être concaténées avec les CSS du site) pour éviter de ralentir le site, mais attention à l’effet <a href="https://fr.wikipedia.org/wiki/FOUC" target="_blank" class="su-old-blank">FOUC</a>.</li>
@@ -59,7 +59,7 @@
                         </svg>
                 </div>
 
-                <p class="table-cell bas">Pour un maximum de performances, il faut le <strong>moins d’appels CSS possible</strong> (chaque appel CSS est un point de blocage à l’affichage). Toutefois les navigateurs, si on leur dit via les media-querries  quel CSS est utile pour eux, sont capables de différer le chargement de CSS inutiles au moment de l’affichage.<br />
+                <p class="table-cell bas">Pour un maximum de performances, il faut le <strong>moins d’appels CSS possible</strong> (chaque appel CSS est un point de blocage à l’affichage). Toutefois les navigateurs, si on leur dit via les media queries  quel CSS est utile pour eux, sont capables de différer le chargement de CSS inutiles au moment de l’affichage.<br />
                 => Faire 2 appels CSS, un vers <strong>default.css</strong> qui servira pour tous les cas et un vers <strong>large.css</strong> qui surcharge pour les écrans à partir de 980px. On a ainsi un seul appel bloquant et le poids du fichier appelé ne sert qu'aux mobiles.</p>
 
                 <h2>Schéma imbriqué</h2>
