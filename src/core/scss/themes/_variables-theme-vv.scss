@@ -1,0 +1,78 @@
+/* ------------------------------------------------------------------------------------------------------------------
+
+    Variables générales du theme VOILES ET VOILIERS
+
+------------------------------------------------------------------------------------------------------------------ */
+
+// Seules les variables différentes du thème principal sont redéfinies
+
+// Import Fonts
+$font-import-url:    'https://fonts.googleapis.com/css?family=Montserrat:400,500,700';
+$font-import-path:   'montserrat/';
+$font-import-medium: true;
+$font-import-bold:   true;
+$font-import-name:   'Montserrat';
+
+$font-family-base: $font-import-name, Arial, Helvetica, sans-serif;
+$font-family-secondaire: $font-family-base;
+
+
+// COLORS ------------------------------------------------------------------------------------------------------------------
+// CHART
+$gris-tres-clair:       #F3F3F3;
+
+$bleu-tres-clair:       #E6F5FD;
+$bleu-clair:            #268BCD;
+$bleu-fonce:            #20407A;
+$bleu-tres-fonce:       #192F57;
+
+// DEFINITIONS
+$color-secondary-1: $bleu-tres-clair;
+$color-secondary-2: $bleu-clair;
+$color-secondary-3: $bleu-fonce;
+$color-secondary-4: $bleu-tres-fonce;
+
+
+// LIENS --------------------------------------------------------------------------------
+$color-link-standard: $color-secondary-3;
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------
+
+    Variables de surcharge des COMPOSANTS
+
+------------------------------------------------------------------------------------------------------------------ */
+
+@import "mixins";    // pour disponibilité dans les SCCS du thème appelés AVANT main-sipaui
+@import "variables"; // pour disponibilité dans les SCCS du thème appelés AVANT main-sipaui
+
+// Le layout
+@import "../../components/LAYOUT/Margins/variables_theme-vv";
+@import "../../components/LAYOUT/Grids/variables_theme-vv";
+
+// Les composants
+@import "../../components/COMPONENTS/Text/Standard-text/variables_theme-vv";
+@import "../../components/COMPONENTS/Text/Titles/variables_theme-vv";
+@import "../../components/COMPONENTS/Text/Lists/variables_theme-vv";
+@import "../../components/COMPONENTS/Text/Links/variables_theme-vv";
+
+@import "../../components/COMPONENTS/Inputs/Buttons/variables_theme-vv";
+@import "../../components/COMPONENTS/Inputs/Text-fields/variables_theme-vv";
+@import "../../components/COMPONENTS/Inputs/Radio-buttons/variables_theme-vv";
+@import "../../components/COMPONENTS/Inputs/Checkboxes/variables_theme-vv";
+@import "../../components/COMPONENTS/Inputs/Selects/variables_theme-vv";
+
+@import "../../components/COMPONENTS/Forms/Labels/variables_theme-vv";
+@import "../../components/COMPONENTS/Forms/Errors/variables_theme-vv";
+
+@import "../../components/COMPONENTS/Notifiers/Loaders/variables_theme-vv";
+
+@import "../../components/COMPONENTS/Navigation/Steppers/variables_theme-vv";
+
+// Les utilitaires
+@import "../../components/UTILITIES/Helpers/variables_theme-vv";
