@@ -56,4 +56,20 @@ $margin-paragraphe: $margin-medium;
             text-decoration: none;
         }
     }
+    a:not([href]):not([tabindex]) { // Voir https://github.com/twbs/bootstrap/issues/19402 (pour ne pas styler les balises <a> sans href)
+        color: inherit;
+        text-decoration: none;
+        border-bottom: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: none;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
 }
