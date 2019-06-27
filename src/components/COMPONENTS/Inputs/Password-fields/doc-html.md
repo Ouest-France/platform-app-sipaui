@@ -115,21 +115,21 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 </div>
 ```
 <div class="sipaui">
-	<label for="input3">Label</label>
+	<label for="input2">Label</label>
 	<div class="su-password su-error">
 		<div class="su-fake-field">
-			<input id="input3" name="input3" type="password" required>
+			<input id="input3" name="input3" type="password" required value="Erreur">
 		</div>
 		<div class="su-input-actions-area">
-			<button type="button" class="su-input-action" data-suemptyinput>
+			<button type="button" class="su-input-action su-password-toggle">
 				<i class="su-icon">montrer</i>
 			</button>
 		</div>
 		<div class="su-conditions">
-			<span class="su-condition-character-length su-conditions-error"><i class="su-icon">fermer</i>Au moins 8 caractères</span>	
-			<span class="su-condition-uppercase su-conditions-success"><i class="su-icon">fermer</i>Au moins 1 majuscule</span>	
-			<span class="su-condition-lowercase su-conditions-success"><i class="su-icon">fermer</i>Au moins 1 minuscule</span>	
-			<span class="su-condition-number su-conditions-error"><i class="su-icon">fermer</i>Au moins 1 chiffre</span>	
+			<span class="su-condition-character-length"><i class="su-icon">fermer</i>Au moins 8 caractères</span>	
+			<span class="su-condition-uppercase"><i class="su-icon">fermer</i>Au moins 1 majuscule</span>	
+			<span class="su-condition-lowercase"><i class="su-icon">fermer</i>Au moins 1 minuscule</span>	
+			<span class="su-condition-number"><i class="su-icon">fermer</i>Au moins 1 chiffre</span>	
 		</div>
 	</div>
 </div>
