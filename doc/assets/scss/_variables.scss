@@ -2,8 +2,8 @@
 // Variables
 //
 
-// Variables par défaut
-@import 'doc/assets/scss/old-sipaui/variables';
+@import 'src/core/scss/variables';
+
 
 // COULEURS ------------------------------------------------------------------------------------------------------------------
 // NUANCIER SIPAUI
@@ -63,3 +63,19 @@ $font-family-secondaire: null !default;
 // Titres éditoriaux
 $font-weight-titres-edito: $font-weight-thin;
 $color-titres-edito: $couleur-secondaire-2;
+
+
+$color-code: chocolate !default;
+
+
+// TABLEAUX
+$border-tableau:            1px solid $color-main-3;
+$padding-tableau:           $margin-xsmall;
+$caption-color-tableau:     $color-main-5;
+$caption-side-tableau:      bottom;
+$caption-align-tableau:     center;
+$caption-padding-tableau:   .5rem 0;
+
+$border-tableau-plus:               1px solid $color-main-4;
+$background-tableau-plus-header:    $color-main-3;
+$background-tableau-plus-even:      lighten($color-main-2, 5%);

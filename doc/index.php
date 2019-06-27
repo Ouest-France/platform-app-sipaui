@@ -23,7 +23,7 @@
 
                     <div class="su-row intro">
                         <div class="su-col-md-4 su-col-lg-16">
-                        <p class="baseline su-margin-bottom-xl">Un framework front-end moderne pour les sites du Groupe SIPA</p>
+                        <h1 class="baseline su-margin-bottom-xl">SipaUI&nbsp;: un framework front-end moderne pour les sites du Groupe SIPA</h1>
                         <p>Construisez vos sites <strong>SIPA</strong> ou vos blocs de contenu en responsif et «&nbsp;mobile-first&nbsp;», tout en l’adaptant au thème visuel de Ouest-France ou à celui de votre marque&nbsp;!</p>
                         <p>SipaUI est un framework HTML, CSS et JS agnostique&nbsp;: un fichier de variables SASS vous permet de thématiser l’apparence des composants visuels en fonction de vos besoins. Vous pourrez aussi utiliser/créer la version <strong>Vue.js</strong> d’un composant dans vos projets orientés <strong>application web</strong>.</p>
                     </div>
@@ -37,7 +37,7 @@
             </article>
             <section class="su-container">
                 <p class="github">
-                    <span>SipaUI est distribué librement sur <a href="https://github.com/Ouest-France/platform-app-sipaui" target="_blank" class="su-old-blank">Github</a>.<br />
+                    <span>SipaUI est distribué librement sur <a href="https://github.com/Ouest-France/platform-app-sipaui" target="_blank" class="blank">Github</a>.<br />
                     Toute demande d’évolution est la bienvenue.</span>
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" alt="Logo GitHub" class="logo-github" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">

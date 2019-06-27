@@ -58,7 +58,7 @@
                 <!-- ---------------–---------------–---------------–---------------–---------------–---------------–---------------–---------------– -->
                 <h2 id="github">2. npmjs</h2>
                 <p>La méthode <strong>la plus efficace</strong>&nbsp;: inclure la librairie dans votre projet pour qu'il en fasse partie intégrante et qu'il soit compilé avec. Cette méthode vous permettra de choisir les composants à intégrer ainsi que de personnaliser votre thème si nécessaire. Toutefois, vous devrez maîtriser Gulp (ou un autre préprocesseur) et comprendre au minimum le principe des variables SCSS. Par ailleurs, si vous voulez filtrer les composants, <strong>faites attention aux dépendances&nbsp;!</strong></p>
-                <p>La dépôt npm est situé ici&nbsp;: <a href="https://www.npmjs.com/package/sipa-ui" target="_blank" class="su-old-blank">https://www.npmjs.com/package/sipa-ui</a>.</p>
+                <p>La dépôt npm est situé ici&nbsp;: <a href="https://www.npmjs.com/package/sipa-ui" target="_blank" class="blank">https://www.npmjs.com/package/sipa-ui</a>.</p>
 
                 <h3>Méthodologie standard&nbsp;:</h3>
                     <ol>
