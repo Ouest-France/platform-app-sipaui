@@ -10,6 +10,14 @@
         condition_success = "su-conditions-success",
         minchar = 8;
 
+    const conts = su.doc.querySelectorAll("."+password);
+    conts.forEach(function(cont){
+        const input = cont.querySelector("input");
+        if (!cont || !input || !cont.querySelector("."+conditions)) return;
+        const konditions = cont.querySelector("."+conditions);
+        _checkPassword(e,input,konditions);
+    })
+
     function _togglePassword(cont) {
         let elem = cont.querySelector('input');
         if(elem.getAttribute("type") == "password") {
@@ -20,8 +28,6 @@
     }
 
     function _checkPassword(e,input,konditions) {
-        console.log(e);
-        console.log(input.value);
         let conf_conditions = 
         [
             {
@@ -44,7 +50,6 @@
         conf_conditions.forEach(function(obj) {
             _conditionCheck(konditions,obj.klass,_testValue(input.value,obj))
         });
-        console.log('check');
     }
 
     function _testValue(value,o) {

@@ -75,7 +75,6 @@
         cursor: pointer;
         color: $color-main-5;
         -webkit-appearance: none;
-        cursor: text;
 
         &:hover {
             color: $color-main-7;
@@ -130,13 +129,22 @@
             padding: 0;
             input {
                 border: 0;
-                height: 100%;
+                height: calc(100% - 1px);
                 padding-right: $height-input;
+                margin-top: 1px;
             }
             
             &:focus-within {
                 & ~ .su-conditions {
                     display: block;
+                }
+            }
+        }
+
+        &.su-error {
+            .su-fake-field {
+                input {
+                    border: 0 !important;
                 }
             }
         }
