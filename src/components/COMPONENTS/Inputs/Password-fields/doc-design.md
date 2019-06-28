@@ -1,4 +1,4 @@
-# Password fields / champs mot de passe
+# Password fields / Champs mot de passe
 
 Les champs mot de passe sont des **champs de texte où les caractères sont utilisés comme moyens d'authentification.** L'objectif est de prouver l'identité de l'utilisateur lorsqu'il désire accéder à un service dont l'accès est limité et/ou protégé.
 
@@ -14,26 +14,26 @@ Les champs mot de passe sont des **champs de texte où les caractères sont util
 
 Type | Illustration
 ------------ | -------------
-**Enabled** |![password__enabled](design/password__enabled.png)
-**Focus** |![password__focus-login.png](design/password__focus-login.png) @Stéphane Est-ce que tu peux couper l'image en supprimant les règles de sécurité de password__focus-login.png, stp ?
+**Enabled** |![password__enabled]ccomponents/COMPONENTS/Inputs/Password-fields/design/password__enabled.png)
+**Focus** |![password__focus-login.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-login.png) @Stéphane Est-ce que tu peux couper l'image en supprimant les règles de sécurité de password__focus-login.png, stp ?
 **Saisie** | image à màj par Jean-Ga
-**Focus, champ visible** | ![password__focus-visible-login](design/password__focus-visible-login.png) @Stéphane Est-ce que tu peux couper l'image en supprimant les règles de sécurité de password__focus-visible-login.png
-**Sans focus, champ visible** |![password__value-secret-after-validation](design/password__value-visible.png)
-**Sans focus, champ invisible** |![password__value-secret](design/password__value-secret.png)
-**Error, absence de saisie** | ![password__error](design/password__error.png) màj Jean-Ga ajouter un " . " à la fin de la phrase
-**Disabled** | ![password__disabled](design/password__disabled.png)
+**Focus, champ visible** | ![password__focus-visible-login](components/COMPONENTS/Inputs/Password-fields/design/password__focus-visible-login.png) @Stéphane Est-ce que tu peux couper l'image en supprimant les règles de sécurité de password__focus-visible-login.png
+**Sans focus, champ visible** |![password__value-secret-after-validation](components/COMPONENTS/Inputs/Password-fields/design/password__value-visible.png)
+**Sans focus, champ invisible** |![password__value-secret](components/COMPONENTS/Inputs/Password-fields/design/password__value-secret.png)
+**Error, absence de saisie** | ![password__error](components/COMPONENTS/Inputs/Password-fields/design/password__error.png) màj Jean-Ga ajouter un " . " à la fin de la phrase
+**Disabled** | ![password__disabled](components/COMPONENTS/Inputs/Password-fields/design/password__disabled.png)
 
 
 ### Lors de la création d'un compte
 
 Type | Illustration
 ------------ | -------------
-**Enabled** |![password__enabled](design/password__enabled.png)
-**Focus** | ![password__focus-registration.png](design/password__focus-registration.png)
-**Saisie** | ![password__focus-first-character](design/password__focus-first-character.png)image à màj par Jean-Ga
-**Champ visible** | ![password__focus-visible-registration.png](design/password__focus-visible-registration.png)
-**Error** | ![password__error-after-validation](design/password__error-after-validation.png)
-**Disabled** | ![password__disabled](design/password__disabled.png)
+**Enabled** |![password__enabled](components/COMPONENTS/Inputs/Password-fields/design/password__enabled.png)
+**Focus** | ![password__focus-registration.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-registration.png)
+**Saisie** | ![password__focus-first-character](components/COMPONENTS/Inputs/Password-fields/design/password__focus-first-character.png)image à màj par Jean-Ga
+**Champ visible** | ![password__focus-visible-registration.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-visible-registration.png)
+**Error** | ![password__error-after-validation](components/COMPONENTS/Inputs/Password-fields/design/password__error-after-validation.png)
+**Disabled** | ![password__disabled](components/COMPONENTS/Inputs/Password-fields/design/password__disabled.png)
 
 ## Visibilité
 
@@ -67,9 +67,9 @@ Type | Illustration
 
 Nature | Illustration | Couleur
 ------------ | ------------- |------------ |
-**Information** | ![password__indication-rule__default](design/password__indication-rule__default.png) | #666666
-**Ok** | ![password__indication-rule__ok](design/password__indication-rule__ok.png) | #3AAA35
-**Ko** | ![password__indication-rule__ko](design/password__indication-rule__ko.png) | #B40015
+**Information** | ![password__indication-rule__default](components/COMPONENTS/Inputs/Password-fields/design/password__indication-rule__default.png) | #666666
+**Ok** | ![password__indication-rule__ok](components/COMPONENTS/Inputs/Password-fields/design/password__indication-rule__ok.png) | #3AAA35
+**Ko** | ![password__indication-rule__ko](components/COMPONENTS/Inputs/Password-fields/design/password__indication-rule__ko.png) | #B40015
 
 ## Gestion des erreurs
 
