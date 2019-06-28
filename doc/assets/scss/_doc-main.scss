@@ -153,30 +153,6 @@ blockquote {
 	background-size: 20px;
 }
 
-//Code
-code,
-kbd,
-samp {
-  color: $color-code;
-	}
-
-//Adresse
-address {
-    margin-bottom: 1rem;
-    font-style: normal;
-    line-height: inherit;
-}
-
-
-//
-// Ligne horizontale
-//
-hr {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    border: 0;
-    border-top: .1rem solid $couleur-principale-4;
-}
 //————————————————————————————————————————————————————————————
 
 .version {
