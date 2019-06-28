@@ -195,3 +195,21 @@ input[type="search"] {
 [hidden] {
     display: none !important;
 }
+
+//
+/* -- AUTRES -------------------------------------------------------------------- */
+//
+//Code
+code,
+kbd,
+samp {
+    color: $color-code;
+}
+
+// Ligne horizontale
+hr {
+    margin-top: $margin-xlarge;
+    margin-bottom: $margin-xlarge;
+    border: 0;
+    border-top: .1rem solid $color-main-4;
+}
