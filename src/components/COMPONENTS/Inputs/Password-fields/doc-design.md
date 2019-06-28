@@ -10,41 +10,37 @@ Les champs mot de passe sont des **champs de texte où les caractères sont util
 
 - Le champ mot de passe présente toutes les caractéristiques d’un champ de texte : interaction, police, hauteur, etc. Elles sont disponibles dans son doc design.
 
--> changer le nom des images
 ### Lors d'une connexion
 
-Type | Illustration |
------------- | ------------- |
-**Enabled** |![password__enabled](components/COMPONENTS/Password-fields/design/password__enabled.png) |
-**Focus** | ![password__focus](components/COMPONENTS/Password-fields/design/password__focus.png) "oeil non symétrique" |
-**1er caractère saisi** | image |
-**Champ visible** | ![password__value-visible](components/COMPONENTS/Password-fields/design/password__value-visible.png) |
-**Sans focus, mot de passe visible** |![password__value-secret-after-validation](components/COMPONENTS/Password-fields/design/password__value-visible.png) |
-**Sans focus, mot de passe invisible** |![password__value-secret-after-validation](components/COMPONENTS/Password-fields/design/password__value-secret-after-validation.png)"non fichier" |
-**Error, absence de saisie** | ![password__error](components/COMPONENTS/Password-fields/design/password__error.png) |
-**Disabled** | ![password__disabled](components/COMPONENTS/Password-fields/design/password__disabled.png) |
+Type | Illustration
+------------ | -------------
+**Enabled** |![password__enabled](design/password__enabled.png)
+**Focus** |![password__focus-login.png](design/password__focus-login.png) @Stéphane Est-ce que tu peux couper l'image en supprimant les règles de sécurité de password__focus-login.png, stp ?
+**Saisie** | image à màj par Jean-Ga
+**Focus, champ visible** | ![password__focus-visible-login](design/password__focus-visible-login.png) @Stéphane Est-ce que tu peux couper l'image en supprimant les règles de sécurité de password__focus-visible-login.png
+**Sans focus, champ visible** |![password__value-secret-after-validation](design/password__value-visible.png)
+**Sans focus, champ invisible** |![password__value-secret](design/password__value-secret.png)
+**Error, absence de saisie** | ![password__error](design/password__error.png) màj Jean-Ga ajouter un " . " à la fin de la phrase
+**Disabled** | ![password__disabled](design/password__disabled.png)
 
 
 ### Lors de la création d'un compte
 
 Type | Illustration
------------- | ------------- |
-**Enabled** |![password__enabled](components/COMPONENTS/Password-fields/design/password__enabled.png) |
-**Focus** | ![password__focus-2](components/COMPONENTS/Password-fields/design/password__focus-2.png) "oeil non symétrique" |
-**Saisie** | ![password__focus-first-character](components/COMPONENTS/Password-fields/design/password__focus-first-character.png) "check + oeil" |
-**Champ visible** | ![password__focus-visible](components/COMPONENTS/Password-fields/design/password__focus-visible.png) pb ! |
-**Sans focus, mot de passe visible** |![password__value-secret-after-validation](components/COMPONENTS/Password-fields/design/password__value-visible.png) |
-**Sans focus, mot de passe invisible** |![password__value-secret-after-validation](components/COMPONENTS/Password-fields/design/password__value-secret-after-validation.png)"non fichier" |
-**Error** | ![password__error-after-validation](components/COMPONENTS/Password-fields/design/password__error-after-validation.png) " icone + marges" |
-**Disabled** |![password__disabled](components/COMPONENTS/Password-fields/design/password__disabled.png) |
-
+------------ | -------------
+**Enabled** |![password__enabled](design/password__enabled.png)
+**Focus** | ![password__focus-registration.png](design/password__focus-registration.png)
+**Saisie** | ![password__focus-first-character](design/password__focus-first-character.png)image à màj par Jean-Ga
+**Champ visible** | ![password__focus-visible-registration.png](design/password__focus-visible-registration.png)
+**Error** | ![password__error-after-validation](design/password__error-after-validation.png)
+**Disabled** | ![password__disabled](design/password__disabled.png)
 
 ## Visibilité
 
 - La visibilité du mot de passe permet de réduire les erreurs.
 - Par défaut, les **caractères sont masqués** et saisis en toute discrétion et sécurité. Des ellipses ou des astérisques, selon le système d'exploitation sont affichées pour représenter chaque caractère du mot de passe saisi.
-- Les icônes “voir” et “masquer” ont les caractéristiques d’une icône d’un composant champ de texte.
-- Sans action de la part de l'utilisateur sur l'un d'entre eux, leur affichage reste constant. Alors, l'état de visibilité est identique suite à la validation du formulaire.
+- Les icônes “voir” et “masquer” ont les caractéristiques d’une icône d’un composant champ de texte, cf son doc design.
+- Sans action de la part de l'utilisateur sur l'un d'entre eux, leur affichage reste constant. Suite à la validation du formulaire, l'état de visibilité est identique.
 
 ### Icône “voir”
 
@@ -55,7 +51,7 @@ Type | Illustration
 
 ### Icône "masquer"
 
-- Cette icône permet de ne plus rendre visibles les caractères saisis en affichant des symboles.
+- Cette icône permet de ne plus rendre visible les caractères saisis en affichant des symboles.
 - Elle apparaît suite à un tape sur l'icône “voir”.
 - Elle disparaît suite à un tape sur elle-même.
 - Sa couleur est #333333.
@@ -63,17 +59,17 @@ Type | Illustration
 ## Règles de conformité
 
 - Elles informent l'utilisateur des consignes obligatoires.
-- Ces règles sont **présentes lors la saisie du mot de passe** dans un formulaire de création d'un compte. Le champ "Mot de passe" est en focus.
-- Ces règles sont également affichées suite validation du formulaire ko.
+- Ces règles apparaissent dans un formulaire de création d'un compte et lors la saisie du mot de passe. Le champ "Mot de passe" est en focus.
+- Puis, les règles restent affichées : perte de focus, retour du formulaire ko...
 - Chaque règle se valide dès que le caractère saisi le permet.
 - Elles s'affichent 10px sous le champ mot de passe ou le message d'erreur.
 - Une règle est définie comme ko seulement après la validation de l'ensemble du formulaire.
 
 Nature | Illustration | Couleur
 ------------ | ------------- |------------ |
-**Information** | image | #666666 |
-**Ok** | image | #3AAA35 |
-**Ko** | ![password__indication-rule__ko](components/COMPONENTS/Password-fields/design/password__indication-rule__ko.png) | #B40015 |
+**Information** | ![password__indication-rule__default](design/password__indication-rule__default.png) | #666666
+**Ok** | ![password__indication-rule__ok](design/password__indication-rule__ok.png) | #3AAA35
+**Ko** | ![password__indication-rule__ko](design/password__indication-rule__ko.png) | #B40015
 
 ## Gestion des erreurs
 
@@ -96,9 +92,6 @@ Nature | Illustration | Couleur
   - " Votre mot de passe ne doit pas contenir de caractères accentués, ex : À, é, ï . "
   - " Votre mot de passe ne doit pas être identique à votre e-mail. "
 - Les messages d'erreurs sont cumulables.
-
-!!!image!! lors de l'inscription 2 images Avant et Après validation Lors de la création du mot de passe les règlès non respectées s'affiche en rouge.
-
 
 ## Bonnes pratiques
 
