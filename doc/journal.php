@@ -28,7 +28,21 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version breaking"><?= $GLOBALS['sipaversion']; ?></span></div>
+                                <div class="table-cell"><span class="version"><?= $GLOBALS['sipaversion']; ?></span></div>
+                                <div class="table-cell">
+                                    <ul>
+                                        <li>Composants&nbsp;:
+                                            <ul>
+                                                <li><strong >Mot de passe.</strong></li>
+                                                <li><code>&lt;hr&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code>, <code>&lt;samp&gt;</code>&nbsp;: basique (pas dans le catalogue et non paramétrables).</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version breaking">3.0.7</span></div>
                                 <div class="table-cell">
                                     <p><strong>Breaking change&nbsp;!</strong></p>
                                     <ul>
@@ -51,7 +65,7 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li>Petit select.</li>
+                                                <li><strong>Petit select.</strong></li>
                                                 <li>Liens&nbsp;: prise en compte de  <code>&lt;a&gt;</code> sans classe.</li>
                                                 <li>Champs texte&nbsp;: prise en charge basique d’input search.</li>
                                             </ul>
@@ -73,7 +87,7 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li class="breaking">Évol&nbsp;: la grille «&nbsp;md&nbsp;» passe de 6 à 24 colonnes.</li>
-                                                <li>Stepper</li>
+                                                <li><strong>Stepper</strong></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -85,9 +99,8 @@
                                 <ul class="table-cell">
                                     <li>Composants&nbsp;:
                                         <ul>
-                                            <li>Petit texte</li>
+                                            <li><strong>Petit texte</strong></li>
                                             <li>Mutualisation des sous-thèmes «&nbsp;abonnement&nbsp;» et «&nbsp;premium&nbsp;»</li>
-                                            <li>Stepper</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -98,8 +111,8 @@
                                 <ul class="table-cell">
                                     <li>Composants&nbsp;:
                                         <ul>
-                                            <li>Listes</li>
-                                            <li>Page loader</li>
+                                            <li><strong>Listes</strong></li>
+                                            <li><strong>Page loader</strong></li>
                                             <li>Regroupement Abonnement et Premium</li>
                                         </ul>
                                     </li>
@@ -128,21 +141,21 @@
                                 <ul class="table-cell">
                                     <li>Composants&nbsp;:
                                         <ul>
-                                            <li>Points de rupture</li>
-                                            <li>Grille (standard et libre)</li>
-                                            <li>Classes d’aide (clearfix, masquage, display…)</li>
-                                            <li>Icônes</li>
-                                            <li>Marges</li>
-                                            <li>Texte standard</li>
-                                            <li>Titre</li>
-                                            <li>Liens</li>
-                                            <li>Boutons</li>
-                                            <li>Labels</li>
-                                            <li>Cases à cocher</li>
-                                            <li>Boutons radio</li>
-                                            <li>Champs texte</li>
-                                            <li>Listes déroulantes</li>
-                                            <li>Erreurs</li>
+                                            <li><strong>Points de rupture</strong></li>
+                                            <li><strong>Grille</strong> (standard et libre)</li>
+                                            <li><strong>Classes d’aide</strong> (clearfix, masquage, display…)</li>
+                                            <li><strong>Icônes</strong></li>
+                                            <li><strong>Marges</strong></li>
+                                            <li><strong>Texte standard</strong></li>
+                                            <li><strong>Titre</strong></li>
+                                            <li><strong>Liens</strong></li>
+                                            <li><strong>Boutons</strong></li>
+                                            <li><strong>Labels</strong></li>
+                                            <li><strong>Cases à cocher</strong></li>
+                                            <li><strong>Boutons radio</strong></li>
+                                            <li><strong>Champs texte</strong></li>
+                                            <li><strong>Listes déroulantes</strong></li>
+                                            <li><strong>Erreurs</strong></li>
                                         </ul>
                                     </li>
                                     <li>Documentation&nbsp;:
@@ -161,10 +174,6 @@
                         <h2>Roadmap</h2>
 
                         <ul class="su-not-list">
-                            <li class="table-row">
-                                <div class="table-cell"><span class="version">3.1</span></div>
-                                <div class="table-cell">Mot de passe.</div>
-                            </li>
                             <li class="table-row">
                                 <div class="table-cell"><span class="version">3.2</span></div>
                                 <div class="table-cell">Popin.</div>
