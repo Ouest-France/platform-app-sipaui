@@ -200,10 +200,29 @@ input[type="search"] {
 /* -- AUTRES -------------------------------------------------------------------- */
 //
 //Code
-code,
+
+pre,
 kbd,
+code,
+samp {
+    font-family: Menlo, Courier, monospace;
+}
+code,
 samp {
     color: $color-code;
+}
+pre code {
+    font-size: $font-size-small;
+    background: $background-pre-code;
+    padding: 5px;
+    line-height: 1.2;
+    display: block;
+}
+kbd {
+    color: $color-kbd;
+    background: $background-kbd;
+    padding: 2px 6px;
+    border-radius: 2px;
 }
 
 // Ligne horizontale
