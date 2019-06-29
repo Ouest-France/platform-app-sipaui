@@ -268,14 +268,7 @@ blockquote {
 .important {
     color: $couleur-secondaire-1;
 }
-pre code {
-    font-size: 12px;
-    font-family: Courier;
-    background: #eee;
-    padding: 5px;
-    line-height: 15px;
-    display: block;
-}
+
 
 @media screen and (max-width: $max-breakpoint-xs) {
     html {
