@@ -258,6 +258,17 @@ blockquote {
     }
 }
 
+.sipaui .su-primary.negatif {
+    background: $color-main-1;
+    color: $color-secondary-1;
+
+    &:hover:not(.su-disabled):not([disabled]) {
+        background: $color-main-1;
+        color: $color-secondary-1;
+        opacity: .9;
+    }
+}
+
 .archi-fonctionnelle .logo-github,
 .archi-fonctionnelle .logo-slack {
     width: 15px;
