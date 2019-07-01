@@ -11,10 +11,10 @@
 ## Trouver un composant
 
 ### Arborescence
-Chaque composant de **SipaUI** est listé en anglais dans la colonne de gauche. Ils sont rangés en 2 catégories&nbsp;: les **composants simples** («&nbsp;COMPONENTS&nbsp;») et les **éléments utiles** commme la grille, les marges, les helpers… («&nbsp;FOUNDATIONS&nbsp;»)
+Chaque composant de **SipaUI** est listé en anglais dans la colonne de gauche. Ils sont rangés en 3 catégories&nbsp;: les **composants** («&nbsp;COMPONENTS&nbsp;» avec les boutons, les éléments de texte, de navigation…), la **mise-en-page** («&nbsp;LAYOUT&nbsp;» avec les points de ruptures, la grille, les marges) et les **éléments utiles** («&nbsp;UTILITIES&nbsp;» comme les icônes, les *helpers*).
 
 ### Filtre
-Le champ «&nbsp;Filter&nbsp;» en haut de la colonne permet de retrouver facilement un composant suite à la saisi d'au moins 2 caratères. Cette recherche se réalise uniquement via le nom du composant en anglais.
+Le champ «&nbsp;Press "/" to search…&nbsp;» en haut de la colonne permet de retrouver un composant suite à la saisi d'au moins 3 caractères. Cette recherche doit être faite via le nom du composant en anglais.
 
 ## Comprendre chaque composant
 
