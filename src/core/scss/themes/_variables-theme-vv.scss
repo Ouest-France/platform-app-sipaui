@@ -52,27 +52,28 @@ $color-link-standard: $color-secondary-3;
 @import "variables"; // pour disponibilité dans les SCCS du thème appelés AVANT main-sipaui
 
 // Le layout
-@import "../../components/LAYOUT/Margins/variables_theme-vv";
-@import "../../components/LAYOUT/Grids/variables_theme-vv";
+@import "../../../components/LAYOUT/Margins/variables_theme-vv";
+@import "../../../components/LAYOUT/Grids/variables_theme-vv";
 
 // Les composants
-@import "../../components/COMPONENTS/Text/Standard-text/variables_theme-vv";
-@import "../../components/COMPONENTS/Text/Titles/variables_theme-vv";
-@import "../../components/COMPONENTS/Text/Lists/variables_theme-vv";
-@import "../../components/COMPONENTS/Text/Links/variables_theme-vv";
+@import "../../../components/COMPONENTS/Text/Standard-text/variables_theme-vv";
+@import "../../../components/COMPONENTS/Text/Titles/variables_theme-vv";
+@import "../../../components/COMPONENTS/Text/Lists/variables_theme-vv";
+@import "../../../components/COMPONENTS/Text/Links/variables_theme-vv";
 
-@import "../../components/COMPONENTS/Inputs/Buttons/variables_theme-vv";
-@import "../../components/COMPONENTS/Inputs/Text-fields/variables_theme-vv";
-@import "../../components/COMPONENTS/Inputs/Radio-buttons/variables_theme-vv";
-@import "../../components/COMPONENTS/Inputs/Checkboxes/variables_theme-vv";
-@import "../../components/COMPONENTS/Inputs/Selects/variables_theme-vv";
+@import "../../../components/COMPONENTS/Inputs/Buttons/variables_theme-vv";
+@import "../../../components/COMPONENTS/Inputs/Text-fields/variables_theme-vv";
+@import "../../../components/COMPONENTS/Inputs/Radio-buttons/variables_theme-vv";
+@import "../../../components/COMPONENTS/Inputs/Checkboxes/variables_theme-vv";
+@import "../../../components/COMPONENTS/Inputs/Selects/variables_theme-vv";
+@import "../../../components/COMPONENTS/Inputs/Password-fields/variables_theme-vv";
 
-@import "../../components/COMPONENTS/Forms/Labels/variables_theme-vv";
-@import "../../components/COMPONENTS/Forms/Errors/variables_theme-vv";
+@import "../../../components/COMPONENTS/Forms/Labels/variables_theme-vv";
+@import "../../../components/COMPONENTS/Forms/Errors/variables_theme-vv";
 
-@import "../../components/COMPONENTS/Notifiers/Loaders/variables_theme-vv";
+@import "../../../components/COMPONENTS/Notifiers/Loaders/variables_theme-vv";
 
-@import "../../components/COMPONENTS/Navigation/Steppers/variables_theme-vv";
+@import "../../../components/COMPONENTS/Navigation/Steppers/variables_theme-vv";
 
 // Les utilitaires
-@import "../../components/UTILITIES/Helpers/variables_theme-vv";
+@import "../../../components/UTILITIES/Helpers/variables_theme-vv";
