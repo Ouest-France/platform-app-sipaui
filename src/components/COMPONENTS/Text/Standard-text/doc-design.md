@@ -36,7 +36,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 <div class="do-dont">
 <div class="dont">
 
-![typography__exemples__call-width-small-dont](components/FOUNDATIONS/Standard-text/design/typography__exemples__call-width-small-dont.png)|
+![typography__exemples__call-width-small-dont](components/COMPONENTS/Text/Standard-text/design/typography__exemples__call-width-small-dont.png)|
   ------------ |
 **Don’t**
 
@@ -47,7 +47,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 <div class="do-dont">
 <div class="do">
 
-![typography__exemples__col-width-medium-do](components/FOUNDATIONS/Standard-text/design/typography__exemples__col-width-medium-do.png)|
+![typography__exemples__col-width-medium-do](components/COMPONENTS/Text/Standard-text/design/typography__exemples__col-width-medium-do.png)|
 ------------ |
 **Do**
 
@@ -58,7 +58,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 <div class="do-dont">
 <div class="dont">
 
-![typography__exemples__col-width-large-dont](components/FOUNDATIONS/Standard-text/design/typography__exemples__col-width-large-dont.png)|
+![typography__exemples__col-width-large-dont](components/COMPONENTS/Text/Standard-text/design/typography__exemples__col-width-large-dont.png)|
 ------------ |
 **Don’t**
 
@@ -76,7 +76,7 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
  <div class="do-dont">
  <div class="dont">
 
-![typography__exemples__contrast-dont](components/FOUNDATIONS/Standard-text/design/typography__exemples__contrast-dont.png)|
+![typography__exemples__contrast-dont](components/COMPONENTS/Text/Standard-text/design/typography__exemples__contrast-dont.png)|
 ------------ |
 **Don’t**
 <p class="legende"> La couleur du texte doit être compatible avec l’arrière plan.</p>

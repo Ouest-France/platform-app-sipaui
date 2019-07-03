@@ -32,7 +32,7 @@ Thème Ouest-France
 
 Enabled | Hover / Pressed | Inactif | Check
 ------------ | ------------- | ------------- | ------------- |
-![stepper__bubbles__active](components/COMPONENTS/Steppers/design/stepper__bubbles__active.png)| ![stepper__bubbles__hover](components/COMPONENTS/Steppers/design/stepper__bubbles__hover.png) |  ![stepper__bubbles__disabled](components/COMPONENTS/Steppers/design/stepper__bubbles__disabled.png) | ![stepper__bubbles__check](components/COMPONENTS/Steppers/design/stepper__bubbles__check.png)
+![stepper__bubbles__active](components/COMPONENTS/Navigation/Steppers/design/stepper__bubbles__active.png)| ![stepper__bubbles__hover](components/COMPONENTS/Navigation/Steppers/design/stepper__bubbles__hover.png) |  ![stepper__bubbles__disabled](components/COMPONENTS/Navigation/Steppers/design/stepper__bubbles__disabled.png) | ![stepper__bubbles__check](components/COMPONENTS/Navigation/Steppers/design/stepper__bubbles__check.png)
 Taille : 30 x 30px <br> Couleur : #E2001A <br> Texte : 16px, Arial bold, #FFFFFF | Taille : 30 x 30px  <br> Couleur : #B40015 <br> Contour : 1px <br> Texte : 16px, Arial bold, #FFFFFF | Taille : 30 x 30px <br> Couleur : #D4D4D4 <br> Contour : 1px <br> Texte : 16px, Arial bold, #FFFFFF | Taille : 30 x 30px <br> Couleur : #E2001A <br> Couleur du symbole : #FFFFFF
 
 
