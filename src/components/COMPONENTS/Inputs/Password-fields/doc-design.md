@@ -14,7 +14,7 @@ Les champs mot de passe sont des **champs de texte où les caractères sont util
 
 Type | Illustration
 ------------ | -------------
-**Enabled** |![password__enabled]ccomponents/COMPONENTS/Inputs/Password-fields/design/password__enabled.png)
+**Enabled** |![password__enabled](components/COMPONENTS/Inputs/Password-fields/design/password__enabled.png)
 **Focus** |![password__focus-login.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-login.png) @Stéphane Est-ce que tu peux couper l'image en supprimant les règles de sécurité de password__focus-login.png, stp ?
 **Saisie** | image à màj par Jean-Ga
 **Focus, champ visible** | ![password__focus-visible-login](components/COMPONENTS/Inputs/Password-fields/design/password__focus-visible-login.png) @Stéphane Est-ce que tu peux couper l'image en supprimant les règles de sécurité de password__focus-visible-login.png
