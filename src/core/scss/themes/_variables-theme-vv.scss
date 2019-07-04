@@ -48,8 +48,8 @@ $color-link-standard: $color-secondary-3;
 
 ------------------------------------------------------------------------------------------------------------------ */
 
-@import "mixins";    // pour disponibilité dans les SCCS du thème appelés AVANT main-sipaui
-@import "variables"; // pour disponibilité dans les SCCS du thème appelés AVANT main-sipaui
+@import "../mixins";    // pour disponibilité dans les SCCS du thème appelés AVANT main-sipaui
+@import "../variables"; // pour disponibilité dans les SCCS du thème appelés AVANT main-sipaui
 
 // Le layout
 @import "../../../components/LAYOUT/Margins/variables_theme-vv";
