@@ -9,9 +9,15 @@
         link.charset ="utf-8";
         link.href = 'css/main-sipaui'+ ((theme == 'of') ? '' : '-'+theme) +'.css';
         document.head.appendChild(link);
-        var script = document.createElement('script');
-        script.src = 'js/sipaui.min.js';
-        document.head.appendChild(script);
+
+        document.addEventListener('readystatechange', function() {
+            if( document.readyState != 'complete') return;
+            
+            var script = document.createElement('script');
+            script.src = 'js/sipaui.min.js';
+            document.body.appendChild(script);
+
+        });
 
         // Check si l'URL contient "html"
         var storyDetection = function() {

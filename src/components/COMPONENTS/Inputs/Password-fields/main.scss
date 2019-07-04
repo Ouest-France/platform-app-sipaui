@@ -31,6 +31,9 @@
         &:focus, &:focus-within {
             background: $background-input-focus;
             border: $border-input-focus;
+            & ~ .su-input-actions-area {
+                opacity: 1;
+            }
         }
 
         &[readonly] {
@@ -80,6 +83,13 @@
             color: $color-main-7;
         }
     }
+
+    .su-toggle-text {
+        .su-input-action {
+            color: $color-main-7;
+        }
+    }
+    
     .su-js-show .su-input-actions-area {
         opacity: 1;
 
@@ -96,10 +106,6 @@
     .su-password {
         position: relative;
 
-        .su-input-actions-area {
-            opacity: 1;
-        }
-
         .su-conditions {
             display: none;
             margin: 1rem 0;
@@ -110,10 +116,6 @@
 
                 &.su-conditions-success {
                     color: $color-success;
-                }
-
-                &.su-conditions-error {
-                    color: $color-error;
                 }
 
                 .su-icon {
@@ -160,6 +162,19 @@
         &.su-error, &.su-password-focus {
             .su-conditions {
                 display: block;
+            }
+        }
+
+        &.su-error {
+            .su-conditions {
+                span {
+                    &.su-conditions-error {
+                        color: $color-error;
+                    }
+                }
+            }
+            .su-input-actions-area {
+                opacity: 1;
             }
         }
     }
