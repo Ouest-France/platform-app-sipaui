@@ -7,8 +7,7 @@
         passwordtoggle = ".su-password-toggle",
         conditions = ".su-conditions",
         condition_error = "su-conditions-error",
-        condition_success = "su-conditions-success",
-        minchar = 8;
+        condition_success = "su-conditions-success";
 
     function _launchDetection() {
         const containers = su.doc.querySelectorAll(password);
@@ -63,9 +62,11 @@
     }
 
     function _conditionCheck(konditions,klass,response) {
-        let char_condition = konditions.querySelector('.'+klass);
-        char_condition.classList.remove(condition_error,condition_success);
-        char_condition.classList.add(response ? condition_success : condition_error);
+        let condition = konditions.querySelector('.'+klass);
+        let icon = condition.querySelector('.su-icon');
+        condition.classList.remove(condition_error,condition_success);
+        condition.classList.add(response ? condition_success : condition_error);
+        icon.innerHTML = konditions.closest('.su-error') ? response ? 'valid' : 'invalid' : 'valid';
     }
 
     function _stayFocus(cont) {
