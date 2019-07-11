@@ -110,7 +110,7 @@ Input standard en erreur. **Pour pouvoir gérer les erreurs, chaque composant a 
 Il s'agit d’un input standard amélioré. L’utilisateur peut vider tout le champ d’un coup en cliquant sur un bouton «&nbsp;croix&nbsp;». Le bouton apparaît quand le champ est en focus ET qu'il a du contenu.
 
 #### CSS
-Classes à appliquer par défaut&nbsp;: `su-input-icon` sur l’input pour réserver la place à droite et `su-input-action` sur le bouton.
+Classes à appliquer par défaut&nbsp;: `su-input-actions-1` (le chiffre à la fin du nom de la classe indique qu'il y a *1* bouton d’action) sur le parent de l’input pour réserver la place à droite et `su-input-action` sur le bouton.
 
 #### JS
 
@@ -152,8 +152,8 @@ Déclencheur à mettre sur le bouton&nbsp;: `data-suemptyinput`
 ```html
 <div class="su-error">
 	<label for="input7">Label<span class="su-label-complement"> (facultatif)</span></label>
-	<div class="su-relative su-input-icon">
-		<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-sutoggleclass='{"parent":".su-input-icon","klass":"su-js-button"}' required value="Value">
+	<div class="su-input-actions-1">
+		<input id="input7" name="input7" type="text" role="textbox" placeholder="Placeholder" data-sutoggleclass='{"parent":".su-input-actions-1","klass":"su-js-show"}' required value="Value">
 		<button type="button" class="su-input-action" data-suemptyinput>
 			<i class="su-icon">vider</i>
 		</button>
@@ -191,7 +191,7 @@ Textarea standard. Il est possible de forcer cet affichage avec la classe `su-te
 
 ## Liste des classes disponibles
 - `su-input-text` (si besoin de surcharge)
-- `su-input-icon`
+- `su-input-actions-1`
 - `su-input-action`
 - `su-js-button` (positioné par le JS)
 - `su-textarea` (si besoin de surcharge)
