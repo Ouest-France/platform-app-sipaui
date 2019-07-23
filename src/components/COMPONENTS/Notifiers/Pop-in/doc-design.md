@@ -4,8 +4,8 @@ Les pop-ins sont des cadres qui s'affichent au-dessus du contenu d'un site web. 
 
 ## Usage
 
-- Grâce aux pop-ins, l'utilisateur est concentré sur **une petite quantité d'informations** ciblées.
-- Les pop-ins **répondent à une brève tâche Utilisateur ou à une simple action**, avec des informations contextuelles.
+- Les pop-ins permettent d'attirer l'attention de l'utilisateur sur **une petite quantité d'informations contextuelles** en interrompant le processus en cours.
+- Les pop-ins **répondent à une brève tâche Utilisateur ou à une simple action**.
 
 ## Types
 
@@ -21,8 +21,8 @@ Image 1 et 2
 
 ### Arrière-plan
 
-- L'arrière-plan permet d'attirer l'attention de l'utilisateur sur la pop-in en assombrissant **le reste de l'écran qui est inaccessible**. L'accès au reste de l'interface utilisateur est désactivé jusqu'à ce qu'une action soit entreprise.
-- Il permet la fermeture de la pop-in.
+- L'arrière-plan permet d'attirer l'attention de l'utilisateur sur la pop-in en assombrissant **le reste de l'écran qui est inaccessible**. L'accès au reste de l'interface utilisateur est désactivé jusqu'à ce que la pop-in soit fermée.
+- Un tape sur cet arrière-plan permet la fermeture de la pop-in.
 - Il est **obligatoire** sur tous les écrans.
 - Couleur : #000000 opacité 60% (btn 40 %) ?
 
@@ -30,7 +30,7 @@ Image 1 et 2
 ### Container
 
 - Le container **focalise l'attention de l'utilisateur**.
-- Il est centré dans l'écran.
+- Il est centré verticalement et horizontalement dans l'écran.
 
 Spécifications | Mobile | Desktop Small ? | Desktop Large ?
 ------------ | ------------- | ------------- | ------------- |
