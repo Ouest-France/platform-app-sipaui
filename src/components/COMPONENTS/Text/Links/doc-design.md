@@ -27,6 +27,7 @@ Hauteur : 44px  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de cara
 
 Contrairement aux boutons primaires et secondaires, le lien bouton ne présente pas de padding et sa largeur minimale n'est pas définie.
 
+
 ## Bonnes pratiques
 ### Comportement
 
@@ -73,6 +74,7 @@ Enabled | Hover / Focus / Pressed
 #### Lien bouton
 - La 1re lettre du lien est en majuscule, le reste est en minuscule.
 - Le texte du lien doit être uniquement sur une seule ligne.
+- Ne pas finaliser le texte par une ponctuation.
 
 ## Autres composants
 - Titre avec chevron
