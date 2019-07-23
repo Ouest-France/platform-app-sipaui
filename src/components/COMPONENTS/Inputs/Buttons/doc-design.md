@@ -73,6 +73,8 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 ### Spécifications
 - Sur mobile, les boutons en pleine largeur sont recommendés car ils sont plus accessibles.
 - La 1re lettre du bouton est en majuscule, le reste est en minuscule.
+- Ne pas finaliser le texte par une ponctuation.
+- Les marges d'un bouton primaire sont au moins de 10px.
 - Le texte du bouton est limité à une ligne et composé de 3 mots maximum.
 - Le texte du bouton doit être explicite et décrire l'action de celui-ci.
 
@@ -81,7 +83,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ![button__exemples__text__do](components/COMPONENTS/Inputs/Buttons/design/button__exemples__text__do.png)|
 ------------ |
-**Do** 
+**Do**
 <p class="legende">Utiliser un texte simple.</p> |
 
  </div>
@@ -90,7 +92,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ![button__exemples__text__dont](components/COMPONENTS/Inputs/Buttons/design/button__exemples__text__dont.png) |
 ------------ |
-**Don’t** 
+**Don’t**
 <p class="legende">Ne pas surcharger le texte.</p> |
 
  </div>
@@ -122,7 +124,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ![Image_button_2 buttons_ko](components/COMPONENTS/Inputs/Buttons/design/Image_button_buttons_ko.png)  |
 ------------ |
-**Don’t** 
+**Don’t**
 <p class="legende">Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte.</p> |
 
  </div>
