@@ -7,8 +7,11 @@ html {
     font-size: $font-size-root;
     // voir https://github.com/twbs/bootstrap/issues/18543 (bug ergo IE 10 : interraction gênante entre la scrollbar et une eventuelle zone active à côté de la scrollbar)
     -ms-overflow-style: scrollbar;
-    height: 100%;
+    -webkit-text-size-adjust: 100%;
     -webkit-overflow-scrolling: touch; // Pour avoir un défilement avec inertie sur les blocs avec scroll (ie : burger)
+    -webkit-font-smoothing: antialiased; // Pour avoir des polices grasses plus fines sur Chrome et Safari Mac OS
+    -moz-osx-font-smoothing: grayscale; // Pour avoir des polices grasses plus fines sur Firefox Mac OS
+    height: 100%;
 }
 
 html *,
