@@ -19,6 +19,7 @@ Cerise&nbsp;:
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
+- composant **Text-fields**
 - composant **Helpers**,
 - composant **Labels**,
 - composant **Errors**
@@ -35,10 +36,8 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 
 ```html
 <label for="input1">Label</label>
-<div class="su-password">
-	<div class="su-fake-field">
-		<input id="input1" name="input1" type="password" required>
-	</div>
+<div class="su-password su-input-actions-1">
+	<input id="input1" name="input1" type="password" required>
 	<div class="su-input-actions-area">
 		<button type="button" class="su-input-action su-password-toggle">
 			<i class="su-icon">montrer</i>
@@ -48,10 +47,8 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 ```
 <div class="sipaui">
 	<label for="input1">Label</label>
-	<div class="su-password">
-		<div class="su-fake-field">
-			<input id="input1" name="input1" type="password" required>
-		</div>
+	<div class="su-password su-input-actions-1">
+		<input id="input1" name="input1" type="password" required>
 		<div class="su-input-actions-area">
 			<button type="button" class="su-input-action su-password-toggle">
 				<i class="su-icon">montrer</i>
@@ -65,10 +62,8 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 
 ```html
 <label for="input2">Label</label>
-<div class="su-password">
-	<div class="su-fake-field">
-		<input id="input2" name="input2" type="password" required>
-	</div>
+<div class="su-password su-input-actions-1">
+	<input id="input2" name="input2" type="password" required>
 	<div class="su-input-actions-area">
 		<button type="button" class="su-input-action su-password-toggle">
 			<i class="su-icon">montrer</i>
@@ -84,10 +79,8 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 ```
 <div class="sipaui">
 	<label for="input2">Label</label>
-	<div class="su-password">
-		<div class="su-fake-field">
-			<input id="input2" name="input2" type="password" required>
-		</div>
+	<div class="su-password su-input-actions-1">
+		<input id="input2" name="input2" type="password" required>
 		<div class="su-input-actions-area">
 			<button type="button" class="su-input-action su-password-toggle">
 				<i class="su-icon">montrer</i>
@@ -108,18 +101,14 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 
 ```html
 <label for="input3">Label</label>
-<div class="su-password">
-	<div class="su-fake-field">
-		<input id="input3" name="input3" type="password" required>
-	</div>
+<div class="su-password su-input-actions-1">
+	<input id="input3" name="input3" type="password" required>
 </div>
 ```
 <div class="sipaui">
 	<label for="input2">Label</label>
-	<div class="su-password su-error">
-		<div class="su-fake-field">
-			<input id="input3" name="input3" type="password" required value="Erreur">
-		</div>
+	<div class="su-password su-input-actions-1 su-error">
+		<input id="input3" name="input3" type="password" required value="Erreur">
 		<div class="su-input-actions-area">
 			<button type="button" class="su-input-action su-password-toggle">
 				<i class="su-icon">montrer</i>
@@ -133,3 +122,23 @@ Input standard avec un placeholder. Le style est appliqué par défaut sur les i
 		</div>
 	</div>
 </div>
+
+
+### Inactif
+
+
+<div id="liste-classes" class="control-titres">
+
+## Liste des classes disponibles
+- `su-radio-area`
+- `su-label-radio` (si besoin de surcharge)
+- `su-input-radio` (si besoin de surcharge)
+- `su-radio-column`
+
+### Classes annexes
+- `su-error` (dépendant du composant *Errors*)
+- `su-error-message` (dépendant du composant *Errors*)
+- `su-disabled` (dépendant du composant *Helpers*)
+
+</div>
+
