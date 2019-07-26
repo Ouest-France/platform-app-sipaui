@@ -35,6 +35,7 @@
                                             <ul>
                                                 <li><strong >Mot de passe.</strong></li>
                                                 <li><code>&lt;hr&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code>, <code>&lt;samp&gt;</code>&nbsp;: basique (pas dans le catalogue et non paramétrables).</li>
+                                                <li>Affinement des textes sur Mac.</li>
                                             </ul>
                                         </li>
                                     </ul>
