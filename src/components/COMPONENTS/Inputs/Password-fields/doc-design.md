@@ -15,9 +15,9 @@ Les champs mot de passe sont des **champs de texte où les caractères sont util
 Type | Illustration
 ------------ | -------------
 **Enabled** |![password__enabled](components/COMPONENTS/Inputs/Password-fields/design/password__enabled.png)
-**Focus** |![password__focus-login.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-login.png) @Stéphane Est-ce que tu peux couper l'image en supprimant les règles de sécurité de password__focus-login.png, stp ?
-**Saisie** | image à màj par Jean-Ga
-**Focus, champ visible** | ![password__focus-visible-login](components/COMPONENTS/Inputs/Password-fields/design/password__focus-visible-login.png) @Stéphane Est-ce que tu peux couper l'image en supprimant les règles de sécurité de password__focus-visible-login.png
+**Focus** |![password__focus-login.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-login.png)
+**Saisie** | ![password__focus-secret-login.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-secret-login.png)
+**Focus, champ visible** | ![password__focus-visible-login](components/COMPONENTS/Inputs/Password-fields/design/password__focus-visible-login.png)
 **Sans focus, champ visible** |![password__value-secret-after-validation](components/COMPONENTS/Inputs/Password-fields/design/password__value-visible.png)
 **Sans focus, champ invisible** |![password__value-secret](components/COMPONENTS/Inputs/Password-fields/design/password__value-secret.png)
 **Error, absence de saisie** | ![password__error](components/COMPONENTS/Inputs/Password-fields/design/password__error.png) màj Jean-Ga ajouter un " . " à la fin de la phrase
