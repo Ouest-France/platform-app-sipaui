@@ -1,11 +1,15 @@
 # Pop-ins / Pop-ins
 
-Les pop-ins sont des cadres qui s'affichent au-dessus du contenu d'un site web. A la différence des pop-ups, elles s'ouvrent à l'intérieur d'une page web et peuvent être de tailles et de formes diverses.
+- Les pop-ins sont des cadres qui surgissent sur la page web consultée par l’utilisateur.
+- Les pop-ins sont :
+  - **"Modal"** car le contenu de la page est désactivé jusqu'à une réponse de l'utilisateur.
+  - **"Lightbox"** car l'arrière-plan est estompé.
 
 ## Usage
 
-- Les pop-ins permettent d'attirer l'attention de l'utilisateur sur **une petite quantité d'informations contextuelles** en interrompant le processus en cours.
-- Les pop-ins **répondent à une brève tâche Utilisateur ou à une simple action**.
+Les pop-ins permettrent 2 utilisations :
+- **Obtenir une petite quantité d'informations contextuelles** de l'utilisateur.
+-  **Fournir une simple information à l'utilisateur**. Ce dernier doit en prendre connaissance avant de pouvoir continuer sa navigation.
 
 ## Types
 
@@ -95,6 +99,7 @@ Image 3
 ### Autres éléments
 
 - Des composants de formulaire peuvent être utilisés : checkboxes, text fields, etc.
+- Des images ou des vidéos peuvent être présentes.
 
 ## Bonnes pratiques
 
@@ -102,9 +107,15 @@ Image 3
 
 - Les pop-ins sont vivement conseillées pour confirmer définitivement un choix avant un engagement, de sorte que l'utilisateur ait la possibilité de changer d’avis si nécessaire.
 - Elles interrompent les utilisateurs. C'est pourquoi, **elles doivent être utilisés avec parcimonie.** Leur rareté permet également d'être pris au sérieux par les utilisateurs.
-- Ne pas afficher plusieurs pop-ins en même temps car elles ajoutent une complexité. Les tunnels dans les pop-ins sont à proscrire.
-- Les pop-ins ne sont pas appropriées pour les tâches riches en plusieurs étapes. Cette complexité justifie une ou plusieurs pages dédiées.
-- Evitez les contenus trop importants et le scroll dans la pop-in.
+- Leur ouverture est **problématique pour l'accessibilité** lorsqu'elles ne peuvent pas être anticipées par l'utilisateur et elles sont difficilement détectables par les lecteurs d'écran.
+- **Ne pas afficher plusieurs pop-ins les unes après les autres** car elles ajoutent une complexité. Les tunnels dans les pop-ins sont à proscrire.
+- **Les pop-ins ne sont pas appropriées pour les tâches riches** en plusieurs étapes. Cette complexité justifie une ou plusieurs pages dédiées.
+- Evitez les contenus trop importants et le scroll dans les pop-ins.
+- Ne jamais afficher de pop-ins dans certains contextes :
+  - **Avant le chargement d'une page.** L'objectif est ne pas interrompe l'utilisateur avant même de prendre connaissance de la page. Par ailleurs, Google pénalise se type de pratique.
+  - **Juste après la connexion.** La pop-in serait tout aussi intrusif et la connexion est une étape dans un parcours.
+  - **Lors d'une tâche critique.** Les utilisateurs détestent être interrompus. La pop-in peut s'afficher une fois la tâche terminée.
+
 
 ### Titre
 
