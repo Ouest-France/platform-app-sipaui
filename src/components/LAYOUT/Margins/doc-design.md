@@ -51,14 +51,15 @@ Taille | Mesure | Illustration
 
 ![spacing__ex__dont](components/LAYOUT/Margins/design/spacing__ex__dont.png) |
 ------------ |
-**Don’t** 
+**Don’t**
 <p class="legende">Dans un formulaire, le label doit être plus proche du container lié.</p> |
 
  </div>
 </div>
 
 
-- **L'espace entre 2 éléments de formulaire (bouton, champ de texte, etc.) est M : 20px.**
+- **L'espace entre 2 éléments de formulaire (bouton, champ de texte, etc.) est de 20px.**
+- **Au-dessus d'un titre d'un contenu non éditorial, la marge est de 40px. Celle située au-dessous est de 10px.**
 
 ### Hiérarchiser les éléments
 
