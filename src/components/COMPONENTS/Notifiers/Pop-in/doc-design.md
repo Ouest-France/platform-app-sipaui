@@ -65,7 +65,8 @@ Couleur | #FFFFFF ? |  #FFFFFF ? | #FFFFFF
 
 ### Bouton
 
-- **Ses spécifications sont disponibles dans son doc design, particulièrement dans "Boutons d'un même sujet".**
+- Un à trois boutons présentent les actions possibles.
+- **Les spécifications sont disponibles dans le doc design, particulièrement dans "Boutons d'un même sujet".**
 - Sur mobile, le ou les boutons sont toujours **pleine largeur**.
 - Lorsqu'un scroll est présent, le ou les boutons peuvent être **stikies**. Une marge de 10px ? se trouve au-dessus et au-dessous des boutons stiky le plus haut et le plus bas.
 - Le bouton le plus bas est situé à 10 ? px du bas du container. ?
