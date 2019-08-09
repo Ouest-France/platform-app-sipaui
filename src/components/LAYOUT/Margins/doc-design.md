@@ -59,7 +59,7 @@ Taille | Mesure | Illustration
 
 
 - **L'espace entre 2 éléments de formulaire (bouton, champ de texte, etc.) est de 20px.**
-- **Au-dessus d'un titre d'un contenu non éditorial, la marge est de 40px. Celle située au-dessous est de 10px.**
+- L'espace entre 2 blocs est de 40px.
 
 ### Hiérarchiser les éléments
 
