@@ -38,12 +38,48 @@ body {
 }
 
 //
+/* -- TYPO -------------------------------------------------------------------- */
+//
+
+// Reset des marges de p, ul...
+p {
+    margin: 0;
+}
+
+blockquote {
+    margin: 0 0 $margin-small;
+}
+
+strong {
+    font-weight: $font-weight-bold; //a reporter ds SUI
+}
+
+//
+/* -- LIENS -------------------------------------------------------------------- */
+//
+
+// Voir https://github.com/twbs/bootstrap/issues/19402 (pour ne pas styler les balises <a> sans href)
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+
+    @include hover-active-focus {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+//
 /* -- CODE -------------------------------------------------------------------- */
 //
 pre {
     // Reset des marges
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: $margin-small;
     // Normalize v4 a enlevé cette propriété, ce qui fait que le contenu de <pre> sort de sont bloc s'il est plus long que la taille du <pre>
     overflow: auto;
 }
@@ -53,7 +89,7 @@ pre {
 /* -- FIGURES -------------------------------------------------------------------- */
 //
 figure {
-    margin: 0 0 1rem;
+    margin: 0 0 $margin-small;
 }
 
 
@@ -134,7 +170,7 @@ td {
 label {
     // Permet aux labels d'utiliser le margin pour gérer l'espace.
     display: inline-block;
-    margin-bottom: .5rem;
+    margin-bottom: $margin-xsmall;
 }
 
 input,
@@ -183,8 +219,8 @@ legend {
     display: block;
     width: 100%;
     padding: 0;
-    margin-bottom: .5rem;
-    font-size: 1.5rem;
+    margin-bottom: $margin-xsmall;
+    font-size: $font-size-small;
     line-height: inherit;
 }
 
@@ -235,5 +271,5 @@ hr {
     margin-top: $margin-xlarge;
     margin-bottom: $margin-xlarge;
     border: 0;
-    border-top: .1rem solid $color-main-4;
+    border-top: 1px solid $color-main-4;
 }
