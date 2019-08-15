@@ -12,7 +12,7 @@
 
         document.addEventListener('readystatechange', function() {
             if( document.readyState != 'complete') return;
-            
+
             var script = document.createElement('script');
             script.src = 'js/sipaui.min.js';
             document.body.appendChild(script);
@@ -401,10 +401,10 @@
 		flex-wrap: wrap;
 	}
 	.catalogue-icones .icone {
+		flex: 0;
 		border: 1px solid #d4d4d4;
 		margin: -1px 0 0 -1px;
 		text-align: center;
-		min-width: 260px;
 		padding: 5px 10px;
 	}
 	.catalogue-icones .icone h3 {

@@ -34,8 +34,9 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li><strong >Mot de passe.</strong></li>
+                                                <li>Icônes (ajout de <em>valide</em> et <em>invalide</em>).</li>
                                                 <li><code>&lt;hr&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code>, <code>&lt;samp&gt;</code>&nbsp;: basique (pas dans le catalogue et non paramétrables).</li>
-                                                <li>Gestion de l’anticrénelage (anti-aliasing) des textes sur Mac.</li>
+                                                <li>Gestion de l’anticrénelage (anti-aliasing) des textes sur Mac (quel que soit le navigateur).</li>
                                             </ul>
                                         </li>
                                     </ul>

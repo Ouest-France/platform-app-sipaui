@@ -42,13 +42,32 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 ### Pictos standards (24px)
 
 <div class="catalogue-icones">
-	<div class="icone"><!------------------------------------------------- Fermer-->
-		<h3>Fermer</h3>
+	<div class="icone"><!------------------------------------------------- Alerte-->
+		<h3>Alerte</h3>
+		<pre class="language-html"><code>&lt;i class="su-icon">
+    alerte
+&lt;/i></code></pre>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e904</code></div>
+		<div><i class="su-icon">alerte</i></div>
+		<p class="su-text-left">Références&nbsp;: alerte, alert.</p>
+	</div>
+	<div class="icone"><!------------------------------------------------- Fermer / Invalide-->
+		<h3>Fermer / Invalide</h3>
 		<pre class="language-html"><code>&lt;i class="su-icon">
     fermer
 &lt;/i></code></pre>
 		<div class="glyphe">Glyphe&nbsp;: <code>\e900</code></div>
 		<div><i class="su-icon">fermer</i></div>
+		<p class="su-text-left">Références&nbsp;: fermer, invalide, close, invalid.</p>
+	</div>
+	<div class="icone"><!------------------------------------------------- Coche / Valide-->
+		<h3>Coche / Valide</h3>
+		<pre class="language-html"><code>&lt;i class="su-icon">
+    coche
+&lt;/i></code></pre>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e905</code></div>
+		<div><i class="su-icon">coche</i></div>
+		<p class="su-text-left">Références&nbsp;: coche, valide, checked, valid.</p>
 	</div>
 	<div class="icone"><!------------------------------------------------- Flèche bas-->
 		<h3>Flèche bas</h3>
@@ -57,14 +76,7 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 &lt;/i></code></pre>
 		<div class="glyphe">Glyphe&nbsp;: <code>\e901</code></div>
 		<div><i class="su-icon">fleche_bas</i></div>
-	</div>
-	<div class="icone"><!------------------------------------------------- Vider-->
-		<h3>Vider</h3>
-		<pre class="language-html"><code>&lt;i class="su-icon">
-    vider
-&lt;/i></code></pre>
-		<div class="glyphe">Glyphe&nbsp;: <code>\e902</code></div>
-		<div><i class="su-icon">vider</i></div>
+		<p class="su-text-left">Références&nbsp;: fleche_bas, arrow_down.</p>
 	</div>
 	<div class="icone"><!------------------------------------------------- Montrer-->
 		<h3>Montrer</h3>
@@ -73,14 +85,16 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 &lt;/i></code></pre>
 		<div class="glyphe">Glyphe&nbsp;: <code>\e903</code></div>
 		<div><i class="su-icon">montrer</i></div>
+		<p class="su-text-left">Références&nbsp;: montrer, show.</p>
 	</div>
-	<div class="icone"><!------------------------------------------------- Alerte-->
-		<h3>Alerte</h3>
+	<div class="icone"><!------------------------------------------------- Vider-->
+		<h3>Vider</h3>
 		<pre class="language-html"><code>&lt;i class="su-icon">
-    alerte
+    vider
 &lt;/i></code></pre>
-		<div class="glyphe">Glyphe&nbsp;: <code>\e904</code></div>
-		<div><i class="su-icon">alerte</i></div>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e902</code></div>
+		<div><i class="su-icon">vider</i></div>
+		<p class="su-text-left">Références&nbsp;: vider, empty.</p>
 	</div>
 </div>
 
