@@ -29,9 +29,9 @@ Cerise&nbsp;:
 
 
 ### Simple (identification)
-Le mot de passe simple est utilisé dans les formulaires d’*identification*. Il sert à récupérer le mot de passe de l’utilisateur pour le comparer à celui stocké en base et vérifier l’identité. Ce composant ne vérifie pas la structure du mot de passe pour vérifier sa conformité avec les règles de sécurité SIPA. Pour des raisons de sécurité, ce composant **ne doit pas utiliser de placeholder**.
+Le mot de passe simple est utilisé dans les formulaires d’*identification*. Il sert à récupérer le mot de passe de l’utilisateur pour le comparer à celui stocké en base et vérifier l’identité. Ce composant ne vérifie pas la structure du mot de passe pour s'assurer de sa conformité avec les règles de sécurité SIPA. Pour des raisons de sécurité, ce composant **ne doit pas utiliser de placeholder**.
 
-Le style visuel est celui appliqué par défaut sur les inputs de type texte dans un site SipaUI (dépendance au composant *text-fields*), auquel est ajouté un bouton pour afficher/masquer en clair le texte du mot de passe.
+Le style visuel est celui appliqué par défaut sur les inputs de type texte dans un site SipaUI (dépendance au composant *text-fields*), auquel est ajouté un bouton pour afficher en clair le texte du mot de passe ou le masquer. Nota bene, le composant prend en compte la zone nécessaire à l’affichage du picto de gestion des mots de passe sur macOS et iOS pour Safari.
 
 Pour les labels (obligatoires), prendre le composant *Labels*.
 
@@ -59,9 +59,9 @@ Pour les labels (obligatoires), prendre le composant *Labels*.
 </div>
 
 ### Avec gestion des règles de sécurité (inscription)
-Ce composant est utilisé dans les formulaires d’*inscription*. Il sert à récupérer le mot de passe de l’utilisateur pour le comparer à celui stocké en base et vérifier l’identité. Ce composant ne vérifie pas la structure du mot de passe pour vérifier sa conformité avec les règles de sécurité SIPA. Pour des raisons de sécurité, ce composant **ne doit pas utiliser de placeholder**.
+Ce composant est utilisé dans les formulaires d’*inscription*. Il sert à l’utilisateur pour enregistrer son mot de passe en base. Contrairement à la version «&nbsp;identification&nbsp;», ce composant vérifie la structure du mot de passe pour s'assurer de sa conformité avec les règles de sécurité SIPA. Pour des raisons de sécurité, ce composant **ne doit pas utiliser de placeholder**.
 
-Le style visuel est celui appliqué par défaut sur les inputs de type texte dans un site SipaUI (dépendance au composant *text-fields*), auquel est ajouté un bouton pour afficher/masquer en clair le texte du mot de passe.
+Il est identique à celui ci-dessus (dépendance au composant *text-fields*), mais on lui a ajouté la liste des règles à respecter. Quand l’utilisateur saisi son mot de passe, il y a une vérification dynamique qui coche les règles respectées au fur et à mesure.
 
 Pour les labels (obligatoires), prendre le composant *Labels*.
 
@@ -104,19 +104,31 @@ Pour les labels (obligatoires), prendre le composant *Labels*.
 ### Readonly
 
 
-### Erreur
+### Erreurs
 
+Nous mettons à disposition les classes nécessaires à l’affichage des erreurs&nbsp;: `su-error` (dépendance au composant *error*) et `su-conditions-error`. Par contre, la méthode de remontée de ces erreurs est au choix de chacun.
 
 ```html
-<label for="input3">Label</label>
-<div class="su-password su-input-actions-1">
-	<input id="input3" name="input3" type="password" role="textbox" required>
+<label for="input4">Label</label>
+<div class="su-password su-input-actions-1 su-error">
+	<input id="input4" name="input4" type="password" role="textbox" required value="Erreur">
+	<div class="su-input-actions-area">
+		<button type="button" class="su-input-action su-password-toggle">
+			<i class="su-icon">montrer</i>
+		</button>
+	</div>
+	<div class="su-conditions">
+		<span class="su-condition-character-length su-conditions-error"><i class="su-icon">invalid</i>Au moins 8 caractères</span>	
+		<span class="su-condition-uppercase su-conditions-success"><i class="su-icon">valid</i>Au moins 1 majuscule</span>	
+		<span class="su-condition-lowercase su-conditions-success"><i class="su-icon">valid</i>Au moins 1 minuscule</span>	
+		<span class="su-condition-number su-conditions-error"><i class="su-icon">invalid</i>Au moins 1 chiffre</span>	
+	</div>
 </div>
 ```
 <div class="sipaui">
-	<label for="input2">Label</label>
+	<label for="input4">Label</label>
 	<div class="su-password su-input-actions-1 su-error">
-		<input id="input3" name="input3" type="password" role="textbox" required value="Erreur">
+		<input id="input4" name="input4" type="password" role="textbox" required value="Erreur">
 		<div class="su-input-actions-area">
 			<button type="button" class="su-input-action su-password-toggle">
 				<i class="su-icon">montrer</i>
