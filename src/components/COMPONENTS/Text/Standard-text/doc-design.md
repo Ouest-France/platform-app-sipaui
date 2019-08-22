@@ -19,8 +19,12 @@ Les textes standards sont le principal moyen utilisé pour visualiser le contenu
 
 ### Petit texte
 
-- Cette variation permet d'afficher un texte de moindre importance.
-- Taille&nbsp;: 14px.
+- Il y a 2 variations&nbsp;: 
+	- la version `small` permet d'afficher un texte de moindre importance.
+	- la version `xsmall` permet d'afficher les textes tout petits, type déclarations légales. Elle ne doit pas être utilisée pour d’autres cas car elle est baisse la lisibilité de son contenu.
+- Taille&nbsp;:
+	- `small`&nbsp;: 14px
+	- `xsmall`&nbsp;: 12px.
 - Hauteur de ligne&nbsp;: 1.35
 - Ses autres spécifications sont identiques au texte standard.
 

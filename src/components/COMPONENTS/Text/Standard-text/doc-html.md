@@ -117,6 +117,18 @@ Pour afficher un texte légèrement plus petit que le texte standard, vous pouve
 	<p class="su-text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
+### Tout petit texte
+
+Pour afficher un texte tout petit comme des conditions légales (…), vous pouvez utilisez la classe `su-text-xsmall`. Cette classe n’est pas liée aux zones éditoriales (`su-article`).
+
+```html
+<p class="su-text-xsmall">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+```
+<div class="sipaui">
+	<p class="su-text-xsmall">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
 
 
 ## Variation de justification
@@ -203,6 +215,7 @@ Utilisation de la classe `su-text-center`.
 - `su-articles-list` (zone éditoriale d’une liste d’article)
 - `su-text-standard` (si besoin de surcharge)
 - `su-text-small`
+- `su-text-xsmall`
 
 ### Classes annexes
 - `su-text-center` (dépendant du composant *Helpers*)
