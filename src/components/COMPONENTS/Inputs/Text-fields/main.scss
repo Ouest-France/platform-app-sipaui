@@ -12,6 +12,9 @@
     .su-input-text {
         font-size: $font-size-base;
 
+        &[readonly] + .su-input-actions-area {
+            display: none;
+        }
     }
     #{$inputTextBase} {
         -webkit-appearance: none;
