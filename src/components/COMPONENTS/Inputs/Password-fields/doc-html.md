@@ -25,8 +25,8 @@ Cerise&nbsp;:
 
 </div>
 
-## Input password
 
+## Input password
 
 ### Simple (identification)
 Le mot de passe simple est utilisé dans les formulaires d’*identification*. Il sert à récupérer le mot de passe de l’utilisateur pour le comparer à celui stocké en base et vérifier l’identité. Ce composant ne vérifie pas la structure du mot de passe pour s'assurer de sa conformité avec les règles de sécurité SIPA. Pour des raisons de sécurité, ce composant **ne doit pas utiliser de placeholder**.
@@ -103,15 +103,72 @@ Pour les labels (obligatoires), prendre le composant *Labels*.
 
 ### Readonly
 
+Mot de passe standard en readonly. Attention, si le readonly suffit à l’input pour changer son opacité, il faut une classe su-disabled sur le label pour le changer aussi. Cette classe est dépendante du composant Helpers.
 
-### Erreurs
+```html
+<label for="input3" class="su-disabled">Label</label>
+<div class="su-password su-input-actions-1">
+	<input id="input3" name="input3" type="password" role="textbox" required readonly aria-readonly="true">
+	<div class="su-input-actions-area">
+		<button type="button" class="su-input-action su-password-toggle">
+			<i class="su-icon">montrer</i>
+		</button>
+	</div>
+</div>
+```
+<div class="sipaui">
+	<label for="input3" class="su-disabled">Label</label>
+	<div class="su-password su-input-actions-1">
+		<input id="input3" name="input3" type="password" role="textbox" required readonly aria-readonly="true" >
+		<div class="su-input-actions-area">
+			<button type="button" class="su-input-action su-password-toggle">
+				<i class="su-icon">montrer</i>
+			</button>
+		</div>
+	</div>
+</div>
+
+
+## Gestion des erreurs
 
 Nous mettons à disposition les classes nécessaires à l’affichage des erreurs&nbsp;: `su-error` (dépendance au composant *error*) et `su-conditions-error`. Par contre, la méthode de remontée de ces erreurs est au choix de chacun.
+
+### Sur mot de passe de connexion
 
 ```html
 <label for="input4">Label</label>
 <div class="su-password su-input-actions-1 su-error">
 	<input id="input4" name="input4" type="password" role="textbox" required value="Erreur">
+	<div class="su-input-actions-area">
+		<button type="button" class="su-input-action su-password-toggle">
+			<i class="su-icon">montrer</i>
+		</button>
+	</div>
+	<div class="su-error-message">Message d’erreur</div>
+</div>
+```
+<div class="sipaui">
+	<label for="input4">Label</label>
+	<div class="su-password su-input-actions-1 su-error">
+		<input id="input4" name="input4" type="password" role="textbox" required value="Erreur">
+		<div class="su-input-actions-area">
+			<button type="button" class="su-input-action su-password-toggle">
+				<i class="su-icon">montrer</i>
+			</button>
+		</div>
+		<div class="su-error-message">Message d’erreur</div>
+	</div>
+</div>
+
+
+### Sur mot de passe d’inscription
+
+Nous mettons à disposition les classes nécessaires à l’affichage des erreurs&nbsp;: `su-error` (dépendance au composant *error*) et `su-conditions-error`. Par contre, la méthode de remontée de ces erreurs est au choix de chacun.
+
+```html
+<label for="input5">Label</label>
+<div class="su-password su-input-actions-1 su-error">
+	<input id="input5" name="input5" type="password" role="textbox" required value="Erreur">
 	<div class="su-input-actions-area">
 		<button type="button" class="su-input-action su-password-toggle">
 			<i class="su-icon">montrer</i>
@@ -126,9 +183,9 @@ Nous mettons à disposition les classes nécessaires à l’affichage des erreur
 </div>
 ```
 <div class="sipaui">
-	<label for="input4">Label</label>
+	<label for="input5">Label</label>
 	<div class="su-password su-input-actions-1 su-error">
-		<input id="input4" name="input4" type="password" role="textbox" required value="Erreur">
+		<input id="input5" name="input5" type="password" role="textbox" required value="Erreur">
 		<div class="su-input-actions-area">
 			<button type="button" class="su-input-action su-password-toggle">
 				<i class="su-icon">montrer</i>
