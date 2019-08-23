@@ -119,7 +119,6 @@
 // arrow
 @mixin arrow($direction: top, $size: 10px, $color: #ccc, $center: 50%, $margin: -1px, $pseudo: before){
     position: relative;
-    //border-color: $color;
 
     &:#{$pseudo} {
         position: absolute;
@@ -318,7 +317,6 @@
 }
 
 // Flex items ----
-
 @mixin order($order) { //
         -ms-order: $order;
     -webkit-order: $order;
