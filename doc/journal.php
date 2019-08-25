@@ -36,8 +36,8 @@
                                                 <li><strong >Mot de passe.</strong></li>
                                                 <li><code>&lt;hr&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code>, <code>&lt;samp&gt;</code>&nbsp;: basique (pas dans le catalogue et non paramétrables).</li>
                                                 <li>Évol&nbsp;: texte standard (ajout d'une version <em>xsmall</em>).</li>
-                                                <li>Évol&nbsp;: icônes (ajout de <em>valide</em> et <em>invalide</em>).</li>
-                                                <li>Évol&nbsp;: gestion de l’anticrénelage (anti-aliasing) des textes sur Mac (quel que soit le navigateur).</li>
+                                                <li>Évol&nbsp;: icônes (ajout de <em>valide</em>, <em>invalide</em>, <em>bloqué (cadenas article payant)</em> et <em>débloqué (cadenas article payé)</em>).</li>
+                                                <li>Évol&nbsp;: Gestion de l’anticrénelage (anti-aliasing) des textes sur Mac (quel que soit le navigateur).</li>
                                             </ul>
                                         </li>
                                     </ul>

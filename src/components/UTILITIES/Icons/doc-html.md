@@ -96,6 +96,24 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 		<div><i class="su-icon">vider</i></div>
 		<p class="su-text-left">Références&nbsp;: vider, empty.</p>
 	</div>
+	<div class="icone"><!------------------------------------------------- Bloqué-->
+		<h3>Bloqué</h3>
+		<pre class="language-html"><code>&lt;i class="su-icon">
+    bloqué
+&lt;/i></code></pre>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e906</code></div>
+		<div><i class="su-icon">bloqué</i></div>
+		<p class="su-text-left">Références&nbsp;: bloqué, locked.</p>
+	</div>
+	<div class="icone"><!------------------------------------------------- Débloqué-->
+		<h3>Débloqué</h3>
+		<pre class="language-html"><code>&lt;i class="su-icon">
+    débloqué
+&lt;/i></code></pre>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e907</code></div>
+		<div><i class="su-icon">débloqué</i></div>
+		<p class="su-text-left">Références&nbsp;: débloqué, unlocked.</p>
+	</div>
 </div>
 
 <!-- Désactivation de l’icône mini tant qu'elle est inutile
