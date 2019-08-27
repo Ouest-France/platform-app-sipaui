@@ -12,7 +12,7 @@ Règles minimales&nbsp;:
 - Si le champ est en `readonly` mettre l’attribut `aria-readonly="true"`.
 - Si le champ n’a pas de label, lui ajouter un `aria-label=""`.
 
-Cerise&nbsp;:
+Possibilité supplémentaire&nbsp;:
 - Utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener">«&nbsp;Utiliser l'attribut aria-labelledby&nbsp;» chez MDN Web docs [moz://a]</a>).
 
 <div class="dependances">
