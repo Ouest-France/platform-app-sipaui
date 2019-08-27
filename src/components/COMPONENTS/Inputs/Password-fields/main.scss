@@ -26,10 +26,11 @@
                 }
 
                 .su-icon {
-                    margin-right: $margin-small;
-                    font-size: $margin-small;
+                    margin-right: $margin-xsmall;
+                    font-size: $font-size-small;
                     position: relative;
-                    top: 0.1rem;
+                    top: 1px;
+                    left: -2px;
                 }
             }
         }
