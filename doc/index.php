@@ -24,7 +24,7 @@
                     <div class="su-row intro">
                         <div class="su-col-md-4 su-col-lg-16">
                             <h1 class="baseline su-margin-bottom-xl">SipaUI&nbsp;: un framework front-end moderne pour les sites du Groupe SIPA</h1>
-                            <p>Construisez vos sites <strong>SIPA</strong> ou vos blocs de contenu en responsif et «&nbsp;mobile-first&nbsp;», tout en l’adaptant au thème visuel de Ouest-France ou à celui de votre marque&nbsp;!</p>
+                            <p>Construisez vos sites <strong>SIPA</strong> ou vos blocs de contenu «&nbsp;mobile-first&nbsp;», tout en l’adaptant au thème visuel de Ouest-France ou à celui de votre marque&nbsp;!</p>
                             <p class="su-margin-bottom-xl">SipaUI est un framework HTML, CSS et JS agnostique&nbsp;: un fichier de variables SASS vous permet de thématiser l’apparence des composants visuels en fonction de vos besoins. Vous pourrez aussi utiliser/créer la version <strong>Vue.js</strong> d’un composant dans vos projets orientés <strong>application web</strong>.</p>
                             <p class="su-text-center"><a href="/doc/installation.php" class="su-button su-primary negatif">Commencer</a></p>
                         </div>

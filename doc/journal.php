@@ -33,11 +33,11 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li><strong >Mot de passe.</strong></li>
-                                                <li><code>&lt;hr&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code>, <code>&lt;samp&gt;</code>&nbsp;: basique (pas dans le catalogue et non paramétrables).</li>
-                                                <li>Évol&nbsp;: texte standard (ajout d'une version <em>xsmall</em>).</li>
-                                                <li>Évol&nbsp;: icônes (ajout de <em>valide</em>, <em>invalide</em>, <em>bloqué (cadenas article payant)</em> et <em>débloqué (cadenas article payé)</em>).</li>
-                                                <li>Évol&nbsp;: Gestion de l’anticrénelage (anti-aliasing) des textes sur Mac (quel que soit le navigateur).</li>
+                                                <li><strong >Nouveauté&nbsp;: mot de passe.</strong></li>
+                                                <li>Nouveauté&nbsp;: <code>&lt;hr&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code>, <code>&lt;samp&gt;</code>&nbsp;: basique (pas dans le catalogue et non paramétrables).</li>
+                                                <li>Évolution&nbsp;: texte standard (ajout d'une version <em>xsmall</em>).</li>
+                                                <li>Évolution&nbsp;: icônes (ajout de <em>valide</em>, <em>invalide</em>, <em>bloqué (cadenas article payant)</em> et <em>débloqué (cadenas article payé)</em>).</li>
+                                                <li>Évolution&nbsp;: gestion de l’anticrénelage (anti-aliasing) des textes sur Mac (quel que soit le navigateur).</li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -51,11 +51,11 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li class="breaking">Évol&nbsp;: grille, amélioration de la grille auto.</li>
-                                                <li>Évol&nbsp;: titres, prise en compte des listes d’article.</li>
-                                                <li>Évol&nbsp;: réordonnancement de l’arborescence des composants.</li>
-                                                <li>Évol&nbsp;: amélioration du système de thèmes.</li>
-                                                <li>Évol&nbsp;: gestion de la hauteur de ligne du petit texte.</li>
+                                                <li class="breaking">Évolution&nbsp;: grille, amélioration de la grille auto.</li>
+                                                <li>Évolution&nbsp;: titres, prise en compte des listes d’article.</li>
+                                                <li>Évolution&nbsp;: réordonnancement de l’arborescence des composants.</li>
+                                                <li>Évolution&nbsp;: amélioration du système de thèmes.</li>
+                                                <li>Évolution&nbsp;: gestion de la hauteur de ligne du petit texte.</li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -68,9 +68,9 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li><strong>Petit select.</strong></li>
-                                                <li>Liens&nbsp;: prise en compte de  <code>&lt;a&gt;</code> sans classe.</li>
-                                                <li>Champs texte&nbsp;: prise en charge basique d’input search.</li>
+                                                <li><strong>Nouveauté&nbsp;: petit select.</strong></li>
+                                                <li>Évolution&nbsp;: liens, prise en compte de  <code>&lt;a&gt;</code> sans classe.</li>
+                                                <li>Évolution&nbsp;: champs texte, prise en charge basique d’input search.</li>
                                             </ul>
                                         </li>
                                         <li>Documentation&nbsp;:
@@ -89,8 +89,8 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li class="breaking">Évol&nbsp;: la grille «&nbsp;md&nbsp;» passe de 6 à 24 colonnes.</li>
-                                                <li><strong>Stepper</strong></li>
+                                                <li class="breaking">Évolution&nbsp;: la grille «&nbsp;md&nbsp;» passe de 6 à 24 colonnes.</li>
+                                                <li><strong>Nouveauté&nbsp;: stepper</strong></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -102,8 +102,8 @@
                                 <ul class="table-cell">
                                     <li>Composants&nbsp;:
                                         <ul>
-                                            <li><strong>Petit texte</strong></li>
-                                            <li>Mutualisation des sous-thèmes «&nbsp;abonnement&nbsp;» et «&nbsp;premium&nbsp;»</li>
+                                            <li><strong>Nouveauté&nbsp;: petit texte</strong></li>
+                                            <li>Évolution&nbsp;: mutualisation des sous-thèmes «&nbsp;abonnement&nbsp;» et «&nbsp;premium&nbsp;»</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -114,9 +114,9 @@
                                 <ul class="table-cell">
                                     <li>Composants&nbsp;:
                                         <ul>
-                                            <li><strong>Listes</strong></li>
-                                            <li><strong>Page loader</strong></li>
-                                            <li>Regroupement Abonnement et Premium</li>
+                                            <li><strong>Nouveauté&nbsp;: listes</strong></li>
+                                            <li><strong>Nouveauté&nbsp;: page loader</strong></li>
+                                            <li>Évolution&nbsp;: regroupement Abonnement et Premium</li>
                                         </ul>
                                     </li>
                                     <li>Documentation&nbsp;:
