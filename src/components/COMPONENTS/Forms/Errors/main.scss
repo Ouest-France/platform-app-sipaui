@@ -10,7 +10,7 @@
         display: none;
         font-size: $font-size-error;
         color: $color-error;
-        margin-top: 2px;
+        margin-top: $margin-xsmall;
     }
     .su-error {
         .su-error-message {
