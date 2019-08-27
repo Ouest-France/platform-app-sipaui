@@ -20,7 +20,7 @@ Type | Illustration
 **Focus, champ visible** | ![password__focus-visible-login](components/COMPONENTS/Inputs/Password-fields/design/password__focus-visible-login.png)
 **Sans focus, champ visible** |![password__value-secret-after-validation](components/COMPONENTS/Inputs/Password-fields/design/password__value-visible.png)
 **Sans focus, champ invisible** |![password__value-secret](components/COMPONENTS/Inputs/Password-fields/design/password__value-secret.png)
-**Error, absence de saisie** | ![password__error](components/COMPONENTS/Inputs/Password-fields/design/password__error.png) màj Jean-Ga ajouter un " . " à la fin de la phrase
+**Error, absence de saisie** | ![password__error](components/COMPONENTS/Inputs/Password-fields/design/password__error.png)
 **Disabled** | ![password__disabled](components/COMPONENTS/Inputs/Password-fields/design/password__disabled.png)
 
 
@@ -30,7 +30,7 @@ Type | Illustration
 ------------ | -------------
 **Enabled** |![password__enabled](components/COMPONENTS/Inputs/Password-fields/design/password__enabled.png)
 **Focus** | ![password__focus-registration.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-registration.png)
-**Saisie** | ![password__focus-first-character](components/COMPONENTS/Inputs/Password-fields/design/password__focus-first-character.png)image à màj par Jean-Ga
+**Saisie** | ![password__focus-first-character](components/COMPONENTS/Inputs/Password-fields/design/password__focus-first-character.png)
 **Champ visible** | ![password__focus-visible-registration.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-visible-registration.png)
 **Error** | ![password__error-after-validation](components/COMPONENTS/Inputs/Password-fields/design/password__error-after-validation.png)
 **Disabled** | ![password__disabled](components/COMPONENTS/Inputs/Password-fields/design/password__disabled.png)
