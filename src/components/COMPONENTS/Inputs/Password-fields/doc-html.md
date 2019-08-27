@@ -1,6 +1,6 @@
 # Password fields / Champs de mot de passe
 
-Ce composant regroupe les mots de passe pour l’**identification** (mot de passe simple) et pour l’**inscription** (création du mot de passe obéissant aux règles de sécurité de SIPA).
+Ce composant regroupe les mots de passe pour la **connexionn** (mot de passe simple) et pour la **création d’un compte** (création du mot de passe obéissant aux règles de sécurité de SIPA).
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
@@ -28,8 +28,8 @@ Possibilité supplémentaire&nbsp;:
 
 ## Input password
 
-### Simple (identification)
-Le mot de passe simple est utilisé dans les formulaires d’*identification*. Il sert à récupérer le mot de passe de l’utilisateur pour le comparer à celui stocké en base et vérifier l’identité. Ce composant ne vérifie pas la structure du mot de passe pour s'assurer de sa conformité avec les règles de sécurité SIPA. Pour des raisons de sécurité, ce composant **ne doit pas utiliser de placeholder**.
+### Simple (connexion)
+Le mot de passe simple est utilisé dans les formulaires de *connexion*. Il sert à récupérer le mot de passe de l’utilisateur pour le comparer à celui stocké en base et vérifier l’identité. Ce composant ne vérifie pas la structure du mot de passe pour s'assurer de sa conformité avec les règles de sécurité SIPA. Pour des raisons de sécurité, ce composant **ne doit pas utiliser de placeholder**.
 
 Le style visuel est celui appliqué par défaut sur les inputs de type texte dans un site SipaUI (dépendance au composant *text-fields*), auquel est ajouté un bouton pour afficher en clair le texte du mot de passe ou le masquer. Nota bene, le composant prend en compte la zone nécessaire à l’affichage du picto de gestion des mots de passe sur macOS et iOS pour Safari.
 
@@ -58,8 +58,8 @@ Pour les labels (obligatoires), prendre le composant *Labels*.
 	</div>
 </div>
 
-### Avec gestion des règles de sécurité (inscription)
-Ce composant est utilisé dans les formulaires d’*inscription*. Il sert à l’utilisateur pour enregistrer son mot de passe en base. Contrairement à la version «&nbsp;identification&nbsp;», ce composant vérifie la structure du mot de passe pour s'assurer de sa conformité avec les règles de sécurité SIPA. Pour des raisons de sécurité, ce composant **ne doit pas utiliser de placeholder**.
+### Avec gestion des règles de sécurité (création de compte)
+Ce composant est utilisé dans les formulaires de *création d’un compte*. Il sert à l’utilisateur pour enregistrer son mot de passe en base. Contrairement à la version «&nbsp;connexion&nbsp;», ce composant vérifie la structure du mot de passe pour s'assurer de sa conformité avec les règles de sécurité SIPA. Pour des raisons de sécurité, ce composant **ne doit pas utiliser de placeholder**.
 
 Il est identique à celui ci-dessus (dépendance au composant *text-fields*), mais on lui a ajouté la liste des règles à respecter. Quand l’utilisateur saisi son mot de passe, il y a une vérification dynamique qui coche les règles respectées au fur et à mesure.
 
@@ -161,7 +161,7 @@ Nous mettons à disposition les classes nécessaires à l’affichage des erreur
 </div>
 
 
-### Sur mot de passe d’inscription
+### Sur mot de passe de création de compte
 
 Nous mettons à disposition les classes nécessaires à l’affichage des erreurs&nbsp;: `su-error` (dépendance au composant *error*) et `su-conditions-error`. Par contre, la méthode de remontée de ces erreurs est au choix de chacun.
 
