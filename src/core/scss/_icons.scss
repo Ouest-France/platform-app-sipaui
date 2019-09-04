@@ -2,13 +2,24 @@
     Fonte d’icônes
 */
 
-@font-face {
-  font-family: 'su-icons';
-  src:
-    url('#{$font-import-directory}/su-icons/su-icons.woff2?f7hcz') format('woff2'),
-    url('#{$font-import-directory}/su-icons/su-icons.woff?f7hcz') format('woff');
-  font-weight: normal;
-  font-style: normal;
+@if $font-import-use-local == null {
+    @font-face {
+      font-family: 'su-icons';
+      src:
+        url('https://cdn.sipaof.fr/sipaui/latest/fonts/su-icons/su-icons.woff2?f7hcz') format('woff2'),
+        url('https://cdn.sipaof.fr/sipaui/latest/fonts/su-icons/su-icons.woff?f7hcz') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+} else {
+    @font-face {
+      font-family: 'su-icons';
+      src:
+        url('#{$font-import-directory}/su-icons/su-icons.woff2?f7hcz') format('woff2'),
+        url('#{$font-import-directory}/su-icons/su-icons.woff?f7hcz') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
 }
 
 [class^="su-icon"], [class*=" su-icon"] {
