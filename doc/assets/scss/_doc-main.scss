@@ -279,6 +279,11 @@ blockquote {
 .important {
     color: $couleur-secondaire-1;
 }
+.a-voir {
+    color: pink;
+    background: black;
+    padding: 2px 10px;
+}
 
 
 @media screen and (max-width: $max-breakpoint-xs) {

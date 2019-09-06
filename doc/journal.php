@@ -34,10 +34,17 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li><strong >Nouveauté&nbsp;: mot de passe.</strong></li>
+                                                <li><strong >Nouveauté&nbsp;: cocardes pour les sources journalistiques.</strong></li>
                                                 <li>Nouveauté&nbsp;: <code>&lt;hr&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code>, <code>&lt;samp&gt;</code>&nbsp;: basique (pas dans le catalogue et non paramétrables).</li>
                                                 <li>Évolution&nbsp;: texte standard (ajout d'une version <em>xsmall</em>).</li>
                                                 <li>Évolution&nbsp;: icônes (ajout de <em>valide</em>, <em>invalide</em>, <em>bloqué (cadenas article payant)</em> et <em>débloqué (cadenas article payé)</em>).</li>
                                                 <li>Évolution&nbsp;: gestion de l’anticrénelage (anti-aliasing) des textes sur Mac (quel que soit le navigateur).</li>
+                                                <li>Évolution&nbsp;: les polices (Oswald et pictos) sont appelées par défaut sur notre CDN.</li>
+                                            </ul>
+                                        </li>
+                                        <li>Documentation&nbsp;:
+                                            <ul>
+                                                <li>Mise à jour de la page d’installation.</li>
                                             </ul>
                                         </li>
                                     </ul>
