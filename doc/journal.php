@@ -197,11 +197,11 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">3.2</span></div>
+                                <div class="table-cell"><span class="version">3.3</span></div>
                                 <div class="table-cell">Popin.</div>
                             </li>
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">3.3</span></div>
+                                <div class="table-cell"><span class="version">3.4</span></div>
                                 <div class="table-cell">Pagination.</div>
                             </li>
                         </ul>
