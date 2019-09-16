@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <circle id="Oval" fill="#009ADC" cx="9" cy="9" r="9"></circle>
+            <path d="M5.4,4.5 L10.2446432,4.5 C13.5791403,4.5 14.4,5.96953912 14.4,8.00110896 C14.4,10.0175705 13.643945,11.7016482 10.0885228,11.7016482 L8.03048222,11.7016482 L8.03048222,14.4 L5.4,14.4 L5.4,4.5 Z M10.2399142,9.9 C11.3156652,9.9 11.7,9.54911661 11.7,8.56431095 C11.7,7.52438163 11.3407725,7.2 10.2263948,7.2 L8.1,7.2 L8.1,9.9 L10.2399142,9.9 Z" id="Fill-2" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

@@ -80,6 +80,14 @@ gulp.task("scripts", ["clean"], function() {
         .pipe(gulp.dest(build + '/js/dev'));
 });
 
+gulp.task("images", ["clean"], function() {
+    return gulp.src([
+            source + "/core/images/**/*",
+            source + "/components/**/images/**/*",
+        ])
+        .pipe(gulp.dest(destination + '/images'));
+});
+
 gulp.task("make-scripts-dev", ["clean", "scripts"], function() {
     return gulp.src([build + '/js/dev/**/*'])
         .pipe(gulp.dest(destination + '/js'));
@@ -271,7 +279,7 @@ gulp.task("watch", function() {
     });
 });
 
-gulp.task("make-dev-assets", ["clean", "make-assets", "make-sass", "make-css-dev", "scripts", "make-scripts-dev", "loader-storybook"]);
-gulp.task("make-prod-assets", ["clean", "make-assets", "make-sass", "make-css-prod", "scripts", "make-scripts-prod", "loader-storybook"]);
+gulp.task("make-dev-assets", ["clean", "make-assets", "make-sass", "make-css-dev", "scripts", "images", "make-scripts-dev", "loader-storybook"]);
+gulp.task("make-prod-assets", ["clean", "make-assets", "make-sass", "make-css-prod", "scripts", "images", "make-scripts-prod", "loader-storybook"]);
 gulp.task("default", ["clean", "make-dev-assets"]);
 gulp.task("html", ["clean", "generate-doc",  "generate-html"]);

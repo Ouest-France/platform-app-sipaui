@@ -14,7 +14,10 @@ gulpfile.js
 lerna.json
 index.html
 src/components/*/*/design
+src/components/*/*/images
 src/components/*/*/*/design
+src/components/*/*/*/images
 src/components/*/*/*.md
 src/components/*/*/*/*.md
+src/core/images
 *.tgz
