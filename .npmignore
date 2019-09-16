@@ -1,3 +1,4 @@
+adr
 dist
 doc
 build
@@ -10,8 +11,10 @@ build
 .stylelintrc
 Dockerfile
 gulpfile.js
+lerna.json
 index.html
-src/components/*/design
-src/components/*/*.md
-src/components/*/*.sketch
+src/components/*/*/design
+src/components/*/*/*/design
+src/components/*/*/*.md
+src/components/*/*/*/*.md
 *.tgz
