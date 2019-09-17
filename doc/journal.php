@@ -34,11 +34,17 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li><strong >Nouveauté&nbsp;: cocardes Ouest-France, Presse Océan, Maine Libre, Courrier de l’Ouest et Voiles et Voiliers.</strong></li>
+                                                <li>Évolution&nbsp;: typographie, ajout de la variable $font-weight-normale à 400 qui remplace $font-weight-medium quand elle était utilisée.</li>
                                             </ul>
                                         </li>
                                         <li>Documentation&nbsp;:
                                             <ul>
                                                 <li>Mise à jour de la page d’installation.</li>
+                                            </ul>
+                                        </li>
+                                        <li>Divers&nbsp;:
+                                            <ul>
+                                                <li>Suppression du téléchargement des dépendances du projet lors de l’installation via NPM.</li>
                                             </ul>
                                         </li>
                                     </ul>
