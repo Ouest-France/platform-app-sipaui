@@ -71,7 +71,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 ## Bonnes pratiques
 
 ### Spécifications
-- Sur mobile, les boutons en pleine largeur sont recommendés car ils sont plus accessibles.
+- **Sur mobile, les boutons en pleine largeur sont fortement recommendés** car ils sont plus accessibles.
 - La 1re lettre du bouton est en majuscule, le reste est en minuscule.
 - Ne pas finaliser le texte par une ponctuation.
 - Les marges d'un bouton primaire sont au moins de 10px.
@@ -100,12 +100,12 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ### Boutons d'un même sujet
 
-- Les boutons ont la même largeur.
+- Ces boutons ont la même largeur.
 - **Les boutons sont espacés de 20px** (horizontalement et verticalement).
 - Un seul bouton primaire est présent.
-- Deux boutons secondaires maximum sont présents. De plus, ils sont positionnés de manière proche.
+- Deux boutons secondaires maximums sont présents. De plus, ils sont positionnés de manière proche.
 - **Sur mobile, le bouton primaire se trouve au-dessus des boutons secondaires.**
-- Sur desktop, lorsque un bouton primaire et un bouton secondaire sont présents, le bouton primaire doit être placé à gauche. **Une exception s'applique dans le cas d'écran séquentiel**, le bouton primaire est à droite.
+- **Sur desktop, lorsque un bouton primaire et un bouton secondaire sont présents, le bouton primaire doit être placé à droite.**
 
 <div class="do-dont">
 <div class="do">
