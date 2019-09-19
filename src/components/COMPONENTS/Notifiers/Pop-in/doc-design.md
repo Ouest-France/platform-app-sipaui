@@ -9,7 +9,7 @@
 
 Les pop-ins permettrent 2 utilisations :
 - **Obtenir une petite quantité d'informations contextuelles** de l'utilisateur.
--  **Fournir une simple information à l'utilisateur**. Ce dernier doit en prendre connaissance avant de pouvoir continuer sa navigation.
+-  **Fournir une simple information à l'utilisateur**. Ce dernier doit en prendre connaissance avant de pouvoir poursuivre sa navigation.
 
 ## Types
 
@@ -45,14 +45,14 @@ Couleur | #FFFFFF ? |  #FFFFFF ? | #FFFFFF
 
 ### Titre
 
-- Un titre **complète le message**. Il ne peut pas être présent dans une pop-in sans message.
+- Un titre **complète le message ou la demande** sans les substituer.
 - Il est **facultatif**.
-- Un titre ne peut pas être présent sans tout autre élément tel qu'un message ou un composant de formulaire.
-- Lorsqu'un scroll est présent, le titre est stiky. Vérifier si ok tech. ?
+- Un titre ne peut pas être présent dans une pop-in sans tout autre élément tel qu'un message ou un composant input de formulaire.
+- Lorsqu'un scroll est présent, le titre est stiky.   V2?
 - La 1re lettre est en majuscule, le reste est en minuscule.
 - Il est ferré à gauche.
 - Ses paddings sont de 20px. Lorsqu'une croix est présente, le padding à droite est de 0px. ?
-- Taille de caractère : 20px ? ou Titre Niveau 2 ?
+- Taille de caractère : 20px ? ou Titre non éditorial de Niveau 2 ?
   - Police du thème
   - Graisse : regular
   - Couleur : #333333 ?
@@ -68,8 +68,8 @@ Couleur | #FFFFFF ? |  #FFFFFF ? | #FFFFFF
 - Un à trois boutons présentent les actions possibles.
 - **Les spécifications sont disponibles dans le doc design, particulièrement dans "Boutons d'un même sujet".**
 - Sur mobile, le ou les boutons sont toujours **pleine largeur**.
-- Lorsqu'un scroll est présent, le ou les boutons peuvent être **stikies**. Une marge de 10px ? se trouve au-dessus et au-dessous des boutons stiky le plus haut et le plus bas.
-- Le bouton le plus bas est situé à 10 ? px du bas du container. ?
+- Lorsqu'un scroll est présent, le ou les boutons peuvent être **stikies**. Une marge de 10px ? se trouve au-dessus et au-dessous des boutons stiky le plus haut et le plus bas. (à mettre dans le composant bouton ?) (la définition dans une V1 semble complexe pour le peu de gain)   V2 ?
+- Le bouton le plus bas est situé à 20 ? px du bas du container. ?
 
 #### Bouton primaire
 
@@ -113,7 +113,7 @@ Image 3
 - **Les pop-ins ne sont pas appropriées pour les tâches riches** en plusieurs étapes. Cette complexité justifie une ou plusieurs pages dédiées.
 - Evitez les contenus trop importants et le scroll dans les pop-ins.
 - Ne jamais afficher de pop-ins dans certains contextes :
-  - **Avant le chargement d'une page.** L'objectif est ne pas interrompe l'utilisateur avant même de prendre connaissance de la page. Par ailleurs, Google pénalise se type de pratique.
+  - **Avant le chargement d'une page.** L'objectif est ne pas interrompe l'utilisateur avant même de prendre connaissance de la page. De plus, Google pénalise se type de pratique.
   - **Juste après la connexion.** La pop-in serait tout aussi intrusif et la connexion est une étape dans un parcours.
   - **Lors d'une tâche critique.** Les utilisateurs détestent être interrompus. La pop-in peut s'afficher une fois la tâche terminée.
 
