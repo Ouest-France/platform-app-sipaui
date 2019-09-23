@@ -90,7 +90,7 @@ Nature | Illustration | Couleur
   - " Ce mot de passe n'est pas conforme aux exigences minimales. " (Toutes les règles de conformité ne sont pas validées)
   - " Votre mot de passe doit contenir moins de 16 caractères. "
   - " Votre mot de passe ne doit pas contenir de caractères accentués, ex : À, é, ï . "
-  - " Votre mot de passe ne doit pas être identique à votre e-mail. "
+  - " Votre mot de passe ne doit pas contenir votre e-mail. "
 - Les messages d'erreurs sont cumulables.
 
 ## Bonnes pratiques

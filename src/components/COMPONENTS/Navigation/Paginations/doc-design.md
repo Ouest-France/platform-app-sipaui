@@ -4,7 +4,7 @@ La pagination aident les utilisateurs à **naviguer dans de grandes quantités d
 
 ## Usage
 
-- L'utilisateur navigue dans un grand nombre d'éléments répartis sur plusieurs pages.
+- L'utilisateur consulte un grand nombre d'éléments répartis sur plusieurs pages.
 - Chaque page indique à l'utilisateur où il se trouve parmi une quantité de page.
 - Certaines pages ont un accès direct, contrairement à l'autres.
 
