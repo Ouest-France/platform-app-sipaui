@@ -1,6 +1,7 @@
 # Icons / Icônes
 
-Afin d’offrir un lot de pictogrammes, SipaUI intègre une police d’icônes. Ces polices sont des polices d’écriture qui contiennent des icônes à la place des caractères (*glyphes*).
+- Les icônes sont des symboles visuels utilisés pour représenter des idées, des objets ou des actions. Ils communiquent les messages d'un coup d'œil, permettent une interactivité et attirent l'attention sur des informations importantes.
+- Afin d’offrir un lot de pictogrammes, SipaUI intègre une police d’icônes. Ces polices sont des polices d’écriture qui contiennent des icônes à la place des caractères (*glyphes*).
 
 
 ## Usage
@@ -13,7 +14,7 @@ Afin d’offrir un lot de pictogrammes, SipaUI intègre une police d’icônes. 
 
 ### Couleur
 
-- Les polices sont **monochromes**.
+- Les polices sont **unies et monochromes**.
 - La couleur est liée à son contexte, par exemple elle est rouge dans un contexte d'erreur.
 
 ### Taille
