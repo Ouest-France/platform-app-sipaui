@@ -71,10 +71,8 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 ## Bonnes pratiques
 
 ### Spécifications
-- **Sur mobile, les boutons en pleine largeur sont fortement recommendés** car ils sont plus accessibles.
+- Sur mobile, les boutons en pleine largeur sont recommendés car ils sont plus accessibles.
 - La 1re lettre du bouton est en majuscule, le reste est en minuscule.
-- Ne pas finaliser le texte par une ponctuation.
-- Les marges d'un bouton primaire sont au moins de 10px.
 - Le texte du bouton est limité à une ligne et composé de 3 mots maximum.
 - Le texte du bouton doit être explicite et décrire l'action de celui-ci.
 
@@ -83,7 +81,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ![button__exemples__text__do](components/COMPONENTS/Inputs/Buttons/design/button__exemples__text__do.png)|
 ------------ |
-**Do**
+**Do** 
 <p class="legende">Utiliser un texte simple.</p> |
 
  </div>
@@ -92,7 +90,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ![button__exemples__text__dont](components/COMPONENTS/Inputs/Buttons/design/button__exemples__text__dont.png) |
 ------------ |
-**Don’t**
+**Don’t** 
 <p class="legende">Ne pas surcharger le texte.</p> |
 
  </div>
@@ -100,12 +98,12 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ### Boutons d'un même sujet
 
-- Ces boutons ont la même largeur.
+- Les boutons ont la même largeur.
 - **Les boutons sont espacés de 20px** (horizontalement et verticalement).
 - Un seul bouton primaire est présent.
-- Deux boutons secondaires maximums sont présents. De plus, ils sont positionnés de manière proche.
+- Deux boutons secondaires maximum sont présents. De plus, ils sont positionnés de manière proche.
 - **Sur mobile, le bouton primaire se trouve au-dessus des boutons secondaires.**
-- **Sur desktop, lorsque un bouton primaire et un bouton secondaire sont présents, le bouton primaire doit être placé à droite.**
+- Sur desktop, lorsque un bouton primaire et un bouton secondaire sont présents, le bouton primaire doit être placé à gauche. **Une exception s'applique dans le cas d'écran séquentiel**, le bouton primaire est à droite.
 
 <div class="do-dont">
 <div class="do">
@@ -124,7 +122,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 ![Image_button_2 buttons_ko](components/COMPONENTS/Inputs/Buttons/design/Image_button_buttons_ko.png)  |
 ------------ |
-**Don’t**
+**Don’t** 
 <p class="legende">Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte.</p> |
 
  </div>

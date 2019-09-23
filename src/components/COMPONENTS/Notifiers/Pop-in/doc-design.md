@@ -1,15 +1,11 @@
 # Pop-ins / Pop-ins
 
-- Les pop-ins sont des cadres qui surgissent sur la page web consultée par l’utilisateur.
-- Les pop-ins sont :
-  - **"Modal"** car le contenu de la page est désactivé jusqu'à une réponse de l'utilisateur.
-  - **"Lightbox"** car l'arrière-plan est estompé.
+Les pop-ins sont des cadres qui s'affichent au-dessus du contenu d'un site web. A la différence des pop-ups, elles s'ouvrent à l'intérieur d'une page web et peuvent être de tailles et de formes diverses.
 
 ## Usage
 
-Les pop-ins permettrent 2 utilisations :
-- **Obtenir une petite quantité d'informations contextuelles** de l'utilisateur.
--  **Fournir une simple information à l'utilisateur**. Ce dernier doit en prendre connaissance avant de pouvoir poursuivre sa navigation.
+- Grâce aux pop-ins, l'utilisateur est concentré sur **une petite quantité d'informations** ciblées.
+- Les pop-ins **répondent à une brève tâche Utilisateur ou à une simple action**, avec des informations contextuelles.
 
 ## Types
 
@@ -25,8 +21,8 @@ Image 1 et 2
 
 ### Arrière-plan
 
-- L'arrière-plan permet d'attirer l'attention de l'utilisateur sur la pop-in en assombrissant **le reste de l'écran qui est inaccessible**. L'accès au reste de l'interface utilisateur est désactivé jusqu'à ce que la pop-in soit fermée.
-- Un tape sur cet arrière-plan permet la fermeture de la pop-in.
+- L'arrière-plan permet d'attirer l'attention de l'utilisateur sur la pop-in en assombrissant **le reste de l'écran qui est inaccessible**. L'accès au reste de l'interface utilisateur est désactivé jusqu'à ce qu'une action soit entreprise.
+- Il permet la fermeture de la pop-in.
 - Il est **obligatoire** sur tous les écrans.
 - Couleur : #000000 opacité 60% (btn 40 %) ?
 
@@ -34,7 +30,7 @@ Image 1 et 2
 ### Container
 
 - Le container **focalise l'attention de l'utilisateur**.
-- Il est centré verticalement et horizontalement dans l'écran.
+- Il est centré dans l'écran.
 
 Spécifications | Mobile | Desktop Small ? | Desktop Large ?
 ------------ | ------------- | ------------- | ------------- |
@@ -45,14 +41,14 @@ Couleur | #FFFFFF ? |  #FFFFFF ? | #FFFFFF
 
 ### Titre
 
-- Un titre **complète le message ou la demande** sans les substituer.
+- Un titre **complète le message**. Il ne peut pas être présent dans une pop-in sans message.
 - Il est **facultatif**.
-- Un titre ne peut pas être présent dans une pop-in sans tout autre élément tel qu'un message ou un composant input de formulaire.
-- Lorsqu'un scroll est présent, le titre est stiky.   V2?
+- Un titre ne peut pas être présent sans tout autre élément tel qu'un message ou un composant de formulaire.
+- Lorsqu'un scroll est présent, le titre est stiky. Vérifier si ok tech. ?
 - La 1re lettre est en majuscule, le reste est en minuscule.
 - Il est ferré à gauche.
 - Ses paddings sont de 20px. Lorsqu'une croix est présente, le padding à droite est de 0px. ?
-- Taille de caractère : 20px ? ou Titre non éditorial de Niveau 2 ?
+- Taille de caractère : 20px ? ou Titre Niveau 2 ?
   - Police du thème
   - Graisse : regular
   - Couleur : #333333 ?
@@ -65,11 +61,10 @@ Couleur | #FFFFFF ? |  #FFFFFF ? | #FFFFFF
 
 ### Bouton
 
-- Un à trois boutons présentent les actions possibles.
-- **Les spécifications sont disponibles dans le doc design, particulièrement dans "Boutons d'un même sujet".**
+- **Ses spécifications sont disponibles dans son doc design, particulièrement dans "Boutons d'un même sujet".**
 - Sur mobile, le ou les boutons sont toujours **pleine largeur**.
-- Lorsqu'un scroll est présent, le ou les boutons peuvent être **stikies**. Une marge de 10px ? se trouve au-dessus et au-dessous des boutons stiky le plus haut et le plus bas. (à mettre dans le composant bouton ?) (la définition dans une V1 semble complexe pour le peu de gain)   V2 ?
-- Le bouton le plus bas est situé à 20 ? px du bas du container. ?
+- Lorsqu'un scroll est présent, le ou les boutons peuvent être **stikies**. Une marge de 10px ? se trouve au-dessus et au-dessous des boutons stiky le plus haut et le plus bas.
+- Le bouton le plus bas est situé à 10 ? px du bas du container. ?
 
 #### Bouton primaire
 
@@ -100,7 +95,6 @@ Image 3
 ### Autres éléments
 
 - Des composants de formulaire peuvent être utilisés : checkboxes, text fields, etc.
-- Des images ou des vidéos peuvent être présentes.
 
 ## Bonnes pratiques
 
@@ -108,15 +102,9 @@ Image 3
 
 - Les pop-ins sont vivement conseillées pour confirmer définitivement un choix avant un engagement, de sorte que l'utilisateur ait la possibilité de changer d’avis si nécessaire.
 - Elles interrompent les utilisateurs. C'est pourquoi, **elles doivent être utilisés avec parcimonie.** Leur rareté permet également d'être pris au sérieux par les utilisateurs.
-- Leur ouverture est **problématique pour l'accessibilité** lorsqu'elles ne peuvent pas être anticipées par l'utilisateur et elles sont difficilement détectables par les lecteurs d'écran.
-- **Ne pas afficher plusieurs pop-ins les unes après les autres** car elles ajoutent une complexité. Les tunnels dans les pop-ins sont à proscrire.
-- **Les pop-ins ne sont pas appropriées pour les tâches riches** en plusieurs étapes. Cette complexité justifie une ou plusieurs pages dédiées.
-- Evitez les contenus trop importants et le scroll dans les pop-ins.
-- Ne jamais afficher de pop-ins dans certains contextes :
-  - **Avant le chargement d'une page.** L'objectif est ne pas interrompe l'utilisateur avant même de prendre connaissance de la page. De plus, Google pénalise se type de pratique.
-  - **Juste après la connexion.** La pop-in serait tout aussi intrusif et la connexion est une étape dans un parcours.
-  - **Lors d'une tâche critique.** Les utilisateurs détestent être interrompus. La pop-in peut s'afficher une fois la tâche terminée.
-
+- Ne pas afficher plusieurs pop-ins en même temps car elles ajoutent une complexité. Les tunnels dans les pop-ins sont à proscrire.
+- Les pop-ins ne sont pas appropriées pour les tâches riches en plusieurs étapes. Cette complexité justifie une ou plusieurs pages dédiées.
+- Evitez les contenus trop importants et le scroll dans la pop-in.
 
 ### Titre
 

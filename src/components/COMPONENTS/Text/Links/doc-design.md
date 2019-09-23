@@ -27,7 +27,6 @@ Hauteur : 44px  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de cara
 
 Contrairement aux boutons primaires et secondaires, le lien bouton ne présente pas de padding et sa largeur minimale n'est pas définie.
 
-
 ## Bonnes pratiques
 ### Comportement
 
@@ -74,14 +73,6 @@ Enabled | Hover / Focus / Pressed
 #### Lien bouton
 - La 1re lettre du lien est en majuscule, le reste est en minuscule.
 - Le texte du lien doit être uniquement sur une seule ligne.
-- Ne pas finaliser le texte par une ponctuation.
-
-### Types d'ouverture
-#### Le même onglet
-- Suite à un tape sur un lien interne, une page s'ouvre dans le même onglet. Un lien interne ouvre dans le même sous-domaine que celui où il se trouve, ex : ouest-france.fr et voilesetvoiliers.ouest-france.fr
-
-#### Une nouvel onglet
-- Suite à un tape sur un lien externe, une page s'ouvre dans une nouvelle onglet. Un lien externe ouvre une page dans un autre sous-domaine, ex : ouest-france.fr et ouestfrance-auto.com
 
 ## Autres composants
 - Titre avec chevron

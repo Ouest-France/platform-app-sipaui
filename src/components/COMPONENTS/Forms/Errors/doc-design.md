@@ -12,6 +12,7 @@ Type | Illustration
 
 ## Spécifications
 
+- Un message d’erreur doit **guider l’utilisateur sur la manière de résoudre le problème.**
 - Il apparait sur une seule ligne.
 - Tant que l’erreur n’est pas corrigée, il reste affiché. Sa disparition est conditionnée au type de formulaire&nbsp;:
 	- Dans un formulaire standard, l’état d’erreur disparait suite à la soumission de l’ensemble du formulaire.
@@ -24,14 +25,3 @@ Type | Illustration
 - La position du message dépend du composant auquel il est associé. Dans la plus part des cas, il s'affiche 5px sous celui-ci.
 
 NB&nbsp;: Généralement, l’apparence visuelle du composant en erreur change.
-
-# Bonnes pratiques
-
-- Dans un formulaire, le message doit limiter la frustration de l'utilisateur afin qu'il ne quitte pas cette page.
-- Le texte doit être optimisé :
-	- Il ne blâme jamais l'utilisateur.
-	- Le message doit être compréhensible pour la cible (sans jargon ni vocabulaire technique).
-	- **Soit il explique clairement le problème soit il guide directement l’utilisateur sur la manière de résoudre le problème.**
-	- Les mots négatifs sont bannis car ils donnent l'impression à l'utilisateur qu'il a commis une grave erreur.
-	- Certains mots sont à proscrire : oups, erreur, échec, problème, invalide, faux, interdit, etc.
-	- L'humour peut être utilisé dans un contexte particulier.
