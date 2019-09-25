@@ -1,0 +1,58 @@
+/*
+    Styles du composant Newspapers identity elements de SipaUI
+*/
+@import "variables";
+
+/*
+    defaut: on cherche sur le CDN;
+
+    mais pour travailler en local il suffit de faire
+    $url-logo-identities: '../images/COMPONENTS/Identities/Cockades/images/';
+
+*/
+$url-logo-identities: 'https://cdn.sipaof.fr/sipaui/latest/images/COMPONENTS/Identities/Cockades/images/' !default;
+
+.sipaui {
+    [class*="su-cockade-"] {
+        background: no-repeat;
+        background-size: 100%;
+        display: inline-block;
+        min-height: 14px;
+        min-width: 14px;
+    }
+    .su-source {
+        font-size: $font-size-small;
+
+        &[class*="su-cockade-"] {
+            background-size: 14px;
+            background-position: 0 2px;
+            padding-left: 19px;
+        }
+    }
+    .su-cockade-of {
+        background-image: url('#{$url-logo-identities}of.svg');
+    }
+    .su-cockade-po {
+        background-image: url('#{$url-logo-identities}po.svg');
+    }
+    .su-cockade-ml {
+        background-image: url('#{$url-logo-identities}ml.svg');
+    }
+    .su-cockade-co {
+        background-image: url('#{$url-logo-identities}co.svg');
+    }
+    .su-cockade-vv {
+        background-image: url('#{$url-logo-identities}vv.svg');
+    }
+
+    .su-articles-list {
+        .su-source {
+            font-size: $font-size-xsmall;
+
+            &[class*="su-cockade-"] {
+                background-position: 0;
+                padding-top: 2px;
+            }
+        }
+    }
+}
