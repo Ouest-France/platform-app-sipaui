@@ -8,13 +8,13 @@ Les liens permettent à l'utilisateur d'atteindre un autre endroit de la page, u
 
 ## Types de liens
 ### Lien article
-Un lien article se trouve **parmi un bloc de texte** (article…). Il apporte une information supplémentaire.
+Un lien article se trouve **parmi un bloc de texte** de type article. Il apporte une information supplémentaire.
 
 
 Enabled | Hover / Focus / Pressed
 ------------ | ------------- |
-![article-link__enabled](components/COMPONENTS/Text/Links/design/article-link__enabled.png)| ![article-link__hover](components/COMPONENTS/Text/Links/design/article-link__hover.png)
-Hauteur du texte  <br> Largeur du texte <br> Couleur : #878787 <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
+![article-link__enabled](components/COMPONENTS/Text/Links/design/article-link__enabled.png)image à modifier | ![article-link__hover](components/COMPONENTS/Text/Links/design/article-link__hover.png)
+Hauteur du texte  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
 
 
 ### Lien bouton
@@ -60,11 +60,11 @@ Contrairement aux boutons primaires et secondaires, le lien bouton ne présente 
 - Évitez les termes génériques tels que «Cliquez ici», «Ici», «En savoir plus» ou l'adresse Web qui ne fournissent pas d'information aux utilisateurs sur le contenu du lien.
 - Sur une même page, mettre des noms distincts pour des liens différents.
 
-#### Lien éditorial
+#### Lien article
 
 Enabled | Hover / Focus / Pressed
 ------------ | -------------
-![article-link__ex__enable-link](components/COMPONENTS/Text/Links/design/article-link__ex__enable-link.png) |![article-link__ex__hover](components/COMPONENTS/Text/Links/design/article-link__ex__hover.png)
+![article-link__ex__enable-link](components/COMPONENTS/Text/Links/design/article-link__ex__enable-link.png) image à modifier |![article-link__ex__hover](components/COMPONENTS/Text/Links/design/article-link__ex__hover.png)
 
 - Commencer par les mots-clés.
 - Il est conseillé que le lien n’ait pas plus de 10 mots pour une meilleure performance.
@@ -82,11 +82,3 @@ Enabled | Hover / Focus / Pressed
 
 #### Une nouvel onglet
 - Suite à un tape sur un lien externe, une page s'ouvre dans une nouvelle onglet. Un lien externe ouvre une page dans un autre sous-domaine, ex : ouest-france.fr et ouestfrance-auto.com
-
-## Autres composants
-- Titre avec chevron
-- Lien blank
-- Lien download
-- Partage social
-- Fil d’ariane
-- Etc.
