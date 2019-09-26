@@ -11,16 +11,6 @@ Les pop-ins permettrent 2 utilisations :
 - **Obtenir une petite quantité d'informations contextuelles** de l'utilisateur.
 -  **Fournir une simple information à l'utilisateur**. Ce dernier doit en prendre connaissance avant de pouvoir poursuivre sa navigation.
 
-## Types
-
-3 types de pop-ins existent :
-- celles présentes sur mobile
-- celles présentes sur desktop avec très peu de contenu, nommées "Small" ?
-- celles présentes sur desktop avec plus de contenu, nommées "Large". ?
-
-Image 1 et 2
-
-
 ## Spécifications
 
 ### Arrière-plan
@@ -28,7 +18,8 @@ Image 1 et 2
 - L'arrière-plan permet d'attirer l'attention de l'utilisateur sur la pop-in en assombrissant **le reste de l'écran qui est inaccessible**. L'accès au reste de l'interface utilisateur est désactivé jusqu'à ce que la pop-in soit fermée.
 - Un tape sur cet arrière-plan permet la fermeture de la pop-in.
 - Il est **obligatoire** sur tous les écrans.
-- Couleur : #000000 opacité 60% (btn 40 %) ?
+- Couleur : #33333
+- Opacité : 60%
 
 
 ### Container
@@ -36,40 +27,37 @@ Image 1 et 2
 - Le container **focalise l'attention de l'utilisateur**.
 - Il est centré verticalement et horizontalement dans l'écran.
 
-Spécifications | Mobile | Desktop Small ? | Desktop Large ?
------------- | ------------- | ------------- | ------------- |
-Hauteur | minimum ?px ou contenu + padding ?px | minimum ?px, ou maximum ?px ou contenu + padding ?px | ?
-Largeur | celle de la grille sans ses marges | 600px ? | minimum ?px, maximum ?px(ou ?colonnes) ou contenu + padding ?px
-Contour | angle 3px à tester ? |  angle 3px à tester ? | angle 3px à tester ?
-Couleur | #FFFFFF ? |  #FFFFFF ? | #FFFFFF
+Spécifications | Mobile | Desktop
+------------ | ------------- | ------------- |
+Hauteur | minimum ?px ou contenu + padding en haut de 40px et en bas de 30px | minimum ?px ou contenu + padding en haut de 60px et en bas de 60px
+Largeur | celle de la grille sans ses marges | ? colonnes de la grille | ? colonnes de la grille
+Couleur | #FFFFFF | #FFFFFF | #FFFFFF
 
 ### Titre
 
 - Un titre **complète le message ou la demande** sans les substituer.
 - Il est **facultatif**.
 - Un titre ne peut pas être présent dans une pop-in sans tout autre élément tel qu'un message ou un composant input de formulaire.
-- Lorsqu'un scroll est présent, le titre est stiky.   V2?
 - La 1re lettre est en majuscule, le reste est en minuscule.
 - Il est ferré à gauche.
-- Ses paddings sont de 20px. Lorsqu'une croix est présente, le padding à droite est de 0px. ?
-- Taille de caractère : 20px ? ou Titre non éditorial de Niveau 2 ?
-  - Police du thème
-  - Graisse : regular
-  - Couleur : #333333 ?
+- Paddings :
+  - 30px sur mobile
+  - 60px sur desktop.
+- Le titre est un **contenu non editorial de niveau 2**. Son doc design est disponible dans le composant Titles.
 
 ### Message
 
 - Le message est **décrit le contenu** de la pop-in.
 - Son contenu est **une brève déclaration ou une question**.
-- Il s'agit d'un texte standard ferré à gauche, cf son doc design.
+- Il s'agit d'un **texte standard** ferré à gauche, cf son doc design.
+- Ce texte se situe à 10px du titre.
 
 ### Bouton
 
 - Un à trois boutons présentent les actions possibles.
 - **Les spécifications sont disponibles dans le doc design, particulièrement dans "Boutons d'un même sujet".**
-- Sur mobile, le ou les boutons sont toujours **pleine largeur**.
-- Lorsqu'un scroll est présent, le ou les boutons peuvent être **stikies**. Une marge de 10px ? se trouve au-dessus et au-dessous des boutons stiky le plus haut et le plus bas. (à mettre dans le composant bouton ?) (la définition dans une V1 semble complexe pour le peu de gain)   V2 ?
-- Le bouton le plus bas est situé à 20 ? px du bas du container. ?
+- Sur mobile, le ou les boutons sont toujours **pleine largeur** et se situe à ? px sous le contenu de la pop-in. ?
+- Sur desktop, les boutons se situent en bas à droite de la pop-in : ?px sous le contenu et à 60px à droite du bord droit du container. ?
 
 #### Bouton primaire
 
@@ -83,14 +71,16 @@ Couleur | #FFFFFF ? |  #FFFFFF ? | #FFFFFF
 
 - La croix est un des moyen de fermer la pop-in.
 - Elle est **facultative** mais recommandée.
-- L’icône est stiky et située avec une marge en haut à droite et en haut à gauche de 10px. ?
-- Taille : 20x20px
-- Zone de tape : 44x44px
+- L’icône est stiky et située avec une marge en haut à droite et en haut à gauche de 10px.
+- Taille et zone de tape : 20x20px
+- Couleur : #666666
+- Elle se situe à 10px en haut et à droite du bord du container.
 - Par ailleurs, les pop-ins peuvent être fermés via :
   - Les boutons « Annuler » ou « Fermer » de la pop-in.
   - La croix de la pop-in.
   - L'arrière-plan de la pop-in.
   - Le bouton « Précédent » du système ou son raccourci.
+
 
 ### Barre de scroll
 
@@ -99,7 +89,7 @@ Image 3
 
 ### Autres éléments
 
-- Des composants de formulaire peuvent être utilisés : checkboxes, text fields, etc.
+- D'aurtres composants peuvent être utilisés : links, checkboxes, text fields, etc.
 - Des images ou des vidéos peuvent être présentes.
 
 ## Bonnes pratiques
