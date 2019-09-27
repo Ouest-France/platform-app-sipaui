@@ -10,76 +10,43 @@
 
 
 
-## Cocarde dans la source d’un article
-
-Pour l’utilisation normale de la cocarde il faut utiliser les classes `su-source` pour styler le texte et `su-cockade-xx` (où  «&nbsp;xx&nbsp;» représente la marque) pour afficher la cocarde.
-```html
-<span class="su-source su-cockade-of">Ouest-France</span>
-```
-<div class="sipaui">
-	<span class="su-source su-cockade-of">Ouest-France</span>
-</div>
-
-
-## Cocarde dans la source d’une liste d’articles
-
-Pour un article dans une liste d’article, la taille du texte s'adapte grâce à la classe `su-articles-list` positionnée sur une balise parente.
+## Catalogue des cocardes
 
 ```html
-<ul class="su-articles-list">
+<ul>
 	<li>
-		<span class="su-source su-cockade-of">Ouest-France</span>
+		Ouest-France&nbsp;: <span class="su-cockade-of"></span>
+	</li>
+	<li>
+		Presse Océan&nbsp;: <span class="su-cockade-po"></span>
+	</li>
+	<li>
+		Le Maine Libre&nbsp;: <span class="su-cockade-ml"></span>
+	</li>
+	<li>
+		Le Courrier de l’Ouest&nbsp;: <span class="su-cockade-co"></span>
+	</li>
+	<li>
+		Voiles et Voiliers&nbsp;: <span class="su-cockade-vv"></span>
 	</li>
 </ul>
 ```
 <div class="sipaui">
-	<ul class="surcharge-storybook su-articles-list">
-		<li>
-			<span class="su-source su-cockade-of">Ouest-France</span>
-		</li>
-	</ul>
-</div>
-
-
-## Cocarde seule
-
-Comme précisé sur la page *design*, cette pratique est normalement prohibée. Toutefois, si exceptionnellement vous utilisez la cocarde sans la marque à côté, il est impératif de la rendre accessible aux robots et lecteurs d’écrans en précisant par un attribut `title` le nom de la marque.
-
-```html
-<span class="su-cockade-of" title="Ouest-France"></span>
-<span class="su-cockade-of" title="Ouest-France" style="width: 50px; height: 50px"></span>
-```
-<div class="sipaui">
-	<span class="su-cockade-of" title="Ouest-France"></span>
-	<span class="su-cockade-of" title="Ouest-France" style="width: 50px; height: 50px"></span>
-</div>
-
-
-## Catalogue
-
-```html
-<span class="su-source su-cockade-of">Ouest-France</span>
-<span class="su-source su-cockade-po">Presse Océan</span>
-<span class="su-source su-cockade-ml">Le Maine Libre</span>
-<span class="su-source su-cockade-co">Le Courrier de l’Ouest</span>
-<span class="su-source su-cockade-vv">Voiles et Voiliers</span>
-```
-<div class="sipaui">
 	<ul class="surcharge-storybook">
 		<li>
-			<span class="su-source su-cockade-of">Ouest-France</span>
+			Ouest-France&nbsp;: <span class="su-cockade-of"></span>
 		</li>
 		<li>
-			<span class="su-source su-cockade-po">Presse Océan</span>
+			Presse Océan&nbsp;: <span class="su-cockade-po"></span>
 		</li>
 		<li>
-			<span class="su-source su-cockade-ml">Le Maine Libre</span>
+			Le Maine Libre&nbsp;: <span class="su-cockade-ml"></span>
 		</li>
 		<li>
-			<span class="su-source su-cockade-co">Le Courrier de l’Ouest</span>
+			Le Courrier de l’Ouest&nbsp;: <span class="su-cockade-co"></span>
 		</li>
 		<li>
-			<span class="su-source su-cockade-vv">Voiles et Voiliers</span>
+			Voiles et Voiliers&nbsp;: <span class="su-cockade-vv"></span>
 		</li>
 	</ul>
 </div>
@@ -89,14 +56,10 @@ Comme précisé sur la page *design*, cette pratique est normalement prohibée. 
 <div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
-- `su-source`
 - `su-cockade-of`
 - `su-cockade-po`
 - `su-cockade-ml`
 - `su-cockade-co`
 - `su-cockade-vv`
-
-### Classes annexes
-- `su-articles-list`
 
 </div>

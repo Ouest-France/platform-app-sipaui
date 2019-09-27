@@ -20,15 +20,6 @@ $url-logo-identities: 'https://cdn.sipaof.fr/sipaui/latest/images/COMPONENTS/Ide
         min-height: 14px;
         min-width: 14px;
     }
-    .su-source {
-        font-size: $font-size-small;
-
-        &[class*="su-cockade-"] {
-            background-size: 14px;
-            background-position: 0 2px;
-            padding-left: 19px;
-        }
-    }
     .su-cockade-of {
         background-image: url('#{$url-logo-identities}of.svg');
     }
@@ -45,14 +36,4 @@ $url-logo-identities: 'https://cdn.sipaof.fr/sipaui/latest/images/COMPONENTS/Ide
         background-image: url('#{$url-logo-identities}vv.svg');
     }
 
-    .su-articles-list {
-        .su-source {
-            font-size: $font-size-xsmall;
-
-            &[class*="su-cockade-"] {
-                background-position: 0;
-                padding-top: 2px;
-            }
-        }
-    }
 }

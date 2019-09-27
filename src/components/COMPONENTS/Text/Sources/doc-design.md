@@ -1,6 +1,6 @@
-# Source / Source
+# Sources / Sources
 
-**Les sources informent explicitement l'utilisateur de l'origine de l'article**. Le nom de la marque est écrit en toutes lettres.
+**Les sources informent explicitement l'utilisateur de l'origine de l'article**. Elles comportent un élément d’identification visuelle (une cocarde, cf. composant **Cockades**) et le nom de la marque en toutes lettres.
 
 ## Usage
 
@@ -8,9 +8,15 @@ La source est liée à un seul article. Elle peut être utilisée lorsque l'arti
 
 ## Spécifications
 
-Police : Arial
-Graisse : Normal
-Taille : 12px ou 14px
-Couleur : #878787
+### Cocarde
+- Taille&nbsp;: 14 x 14px
+- Marge de droite&nbsp;: 5px
 
-Le composant source est toujours accompagné du composant cocarde. Ces 2 composants sont espacés de 5px.
+
+### Texte
+- Police&nbsp;: Arial
+- Graisse&nbsp;: Normal
+- Corps&nbsp;: 12px ou 14px
+- Couleur&nbsp;: #878787
+
+**Le composant source est toujours accompagné de la cocarde**, mais peut ds certains cas ne pas avoir le nom de la marque.
