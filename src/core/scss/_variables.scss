@@ -80,10 +80,11 @@ $color-subscription-3: $jaune-plus-fonce    !default;
 $color-error:   $rouge-fonce         !default;
 $color-success: $vert                !default;
 
-$color-code:            $color-secondary-3            !default;
-$background-pre-code:   $gris-tres-clair     !default;
-$color-kbd:          $color-main-1            !default;
-$background-kbd:     $color-main-6            !default;
+$color-code:            $color-secondary-3      !default;
+$background-pre-code:   $gris-tres-clair        !default;
+$color-kbd:             $color-main-1           !default;
+$background-kbd:        $color-main-6           !default;
+$color-metadata:        $color-main-5           !default;
 
 
 // RÉSEAUX SOCIAUX ET MARQUES
@@ -166,4 +167,4 @@ $opacity-disabled: .4 !default;
 
 // Sélecteurs
 $inputTextBase: 'input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"], input[type="search"], textarea, .su-input-text, .su-textarea';
-$inputTextPlus: $inputTextBase + ', input[type="date"]', '.su-fake-field' ;
+$inputTextPlus: $inputTextBase + ', input[type="date"]', '.su-fake-field';
