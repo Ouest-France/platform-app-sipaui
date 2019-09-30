@@ -33,8 +33,20 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li><strong >Nouveauté&nbsp;: sources.</strong></li>
-                                                <li><strong >Nouveauté&nbsp;: cocardes pour les sources journalistiques.</strong></li>
+                                                <li><strong>Nouveauté&nbsp;: palette de couleurs.</strong></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">3.2.6</span></div>
+                                <div class="table-cell">
+                                    <ul>
+                                        <li>Composants&nbsp;:
+                                            <ul>
+                                                <li><strong>Nouveauté&nbsp;: sources.</strong></li>
+                                                <li><strong>Nouveauté&nbsp;: cocardes pour les sources journalistiques.</strong></li>
                                                 <li>Évolution&nbsp;: typographie, ajout de la variable $font-weight-normale à 400 qui remplace $font-weight-medium quand elle était utilisée.</li>
                                             </ul>
                                         </li>
@@ -57,7 +69,7 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li><strong >Nouveauté&nbsp;: mot de passe.</strong></li>
+                                                <li><strong>Nouveauté&nbsp;: mot de passe.</strong></li>
                                                 <li>Nouveauté&nbsp;: <code>&lt;hr&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code>, <code>&lt;samp&gt;</code>&nbsp;: basique (pas dans le catalogue et non paramétrables).</li>
                                                 <li>Évolution&nbsp;: texte standard (ajout d'une version <em>xsmall</em>).</li>
                                                 <li>Évolution&nbsp;: icônes (ajout de <em>valide</em>, <em>invalide</em>, <em>bloqué (cadenas article payant)</em> et <em>débloqué (cadenas article payé)</em>).</li>
