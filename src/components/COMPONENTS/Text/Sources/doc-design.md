@@ -19,4 +19,4 @@ La source est liée à un seul article. Elle peut être utilisée lorsque l'arti
 - Corps&nbsp;: 12px ou 14px
 - Couleur&nbsp;: #878787
 
-**Le composant source est toujours accompagné de la cocarde**, mais peut ds certains cas ne pas avoir le nom de la marque.
+**Le composant source est toujours accompagné de la cocarde**, mais peut dans certains cas ne pas avoir le nom de la marque.
