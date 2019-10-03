@@ -40,19 +40,19 @@ Le contenu non éditorial correspond à tout ce qui n’est pas dépendant d’a
 
 #### Mobile
 
-Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- | -------------
-Niveau 1 | Oswald | Normal | 30px | #333333
-Niveau 2 | Oswald | Normal | 24px | #333333
-Niveau 3 | Oswald | Normal | 18px | #333333
+Balise | Police | Graisse | Taille | Line-height | Couleur
+------------ | ------------- | ------------- | ------------- | ------------- | -------------
+Niveau 1 | Oswald | Normal | 30px | 1.35 | #333333
+Niveau 2 | Oswald | Normal | 24px | 1.35 | #333333
+Niveau 3 | Oswald | Normal | 18px | 1.35 | #333333
 
 #### Desktop
 
-Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- | -------------
-Niveau 1 | Oswald | Normal | 40px | #333333
-Niveau 2 | Oswald | Normal | 30px | #333333
-Niveau 3 | Oswald | Normal | 18px | #333333
+Balise | Police | Graisse | Taille | Line-height | Couleur
+------------ | ------------- | ------------- | ------------- | ------------- | -------------
+Niveau 1 | Oswald | Normal | 40px | 1.35 | #333333
+Niveau 2 | Oswald | Normal | 30px | 1.35 | #333333
+Niveau 3 | Oswald | Normal | 18px | 1.35 | #333333
 
 
 ### Contenu éditorial - liste d’articles
@@ -60,10 +60,10 @@ Les listes d’articles sont des blocs s’affichant généralement sur une page
 
 #### Mobile
 
-Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- | -------------
-Niveau 2 | Oswald | Normal | 24px | #333333
-Titre d’article | Arial | Bold | 16px | #333333
+Balise | Police | Graisse | Taille | Line-height | Couleur
+------------ | ------------- | ------------- | ------------- | ------------- | -------------
+Niveau 2 | Oswald | Normal | 24px | 1.35 | #333333
+Titre d’article | Arial | Bold | 16px | 1.35 | #333333
 
 #### Desktop
 
@@ -77,20 +77,20 @@ Titre d’article | Arial | Bold | 16px | #333333
 **Le contenu des articles** a des caractéristiques qui lui sont propres. Les balises de titre (`<h1> à <h3>`) doivent y être présentes afin de favoriser l’indexation du contenu éditorial du site par les moteurs. Ici, la relation entre le niveau de titre en HTML et le niveau de titre visuel doivent être en accord.
 #### Mobile
 
-Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- | -------------
-h1 | Arial | Bold | 24px | #333333
-h2 | Oswald | Normal | 22px | #333333
-h3 | Oswald | Normal | 18px | #333333
+Balise | Police | Graisse | Taille | Line-height | Couleur
+------------ | ------------- | ------------- | ------------- | ------------- | -------------
+h1 | Arial | Bold | 22px | 1.35 | #333333
+h2 | Oswald | Normal | 22px | 1.35 | #333333
+h3 | Oswald | Normal | 18px | 1.35 | #333333
 
 
 #### Desktop
 
-Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- | -------------
-h1 | Arial | Bold | 38px | #333333
-h2 | Oswald | Normal | 30px | #333333
-h3 | Oswald | Normal | 22px | #333333
+Balise | Police | Graisse | Taille | Line-height | Couleur
+------------ | ------------- | ------------- | ------------- | ------------- | -------------
+h1 | Arial | Bold | 38px | 1.2 | #333333
+h2 | Oswald | Normal | 30px | 1.35 | #333333
+h3 | Oswald | Normal | 22px | 1.35 | #333333
 
 
 ## Bonnes pratiques
