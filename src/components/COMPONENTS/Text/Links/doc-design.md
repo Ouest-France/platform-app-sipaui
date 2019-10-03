@@ -13,8 +13,8 @@ Un lien article se trouve **parmi un bloc de texte** de type article. Il apporte
 
 Enabled | Hover / Focus / Pressed
 ------------ | ------------- |
-![article-link__enabled](components/COMPONENTS/Text/Links/design/article-link__enabled.png)image à modifier | ![article-link__hover](components/COMPONENTS/Text/Links/design/article-link__hover.png)
-Hauteur du texte  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 <br>
+![article-link__enabled](components/COMPONENTS/Text/Links/design/article-link__enabled.png) | ![article-link__hover](components/COMPONENTS/Text/Links/design/article-link__hover.png)
+Hauteur du texte  <br> Largeur du texte <br> Couleur : #878787 <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème <br> Ligne sous le texte : #878787 | - <br> - <br> Couleur : #B40015 <br> - <br> - <br> - <br> Ligne sous le texte : #B40015
 
 
 ### Lien bouton
@@ -23,7 +23,7 @@ Un lien bouton **se positionne comme un bouton** mais a l’apparence d’un lie
 Enabled | Hover / Focus / Pressed | Disabled
 ------------ | ------------- | ------------- |
 ![button-link__enabled](components/COMPONENTS/Text/Links/design/button-link__enabled.png) | ![button-link__hover](components/COMPONENTS/Text/Links/design/button-link__hover.png) | ![button-link__disabled](components/COMPONENTS/Text/Links/design/button-link__disabled.png)
-Hauteur : 44px  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère : 16px <br> Graisse : bold <br> Police du thème | - <br> - <br> Couleur : #B40015  <br> - <br> - <br> - <br> Texte : le lien est souligné en #B40015 | Opacité : 40 %
+Hauteur : 44px  <br> Largeur du texte <br> Couleur : #E2001A <br> Taille de caractère : 16px <br> Graisse : bold <br> Police du thème | - <br> - <br> Couleur : #B40015  <br> - <br> - <br> - <br> Ligne sous le texte : #B40015 | Opacité : 40 %
 
 Contrairement aux boutons primaires et secondaires, le lien bouton ne présente pas de padding et sa largeur minimale n'est pas définie.
 
@@ -64,7 +64,7 @@ Contrairement aux boutons primaires et secondaires, le lien bouton ne présente 
 
 Enabled | Hover / Focus / Pressed
 ------------ | -------------
-![article-link__ex__enable-link](components/COMPONENTS/Text/Links/design/article-link__ex__enable-link.png) image à modifier |![article-link__ex__hover](components/COMPONENTS/Text/Links/design/article-link__ex__hover.png)
+![article-link__ex__enable-link](components/COMPONENTS/Text/Links/design/article-link__ex__enable-link.png) |![article-link__ex__hover](components/COMPONENTS/Text/Links/design/article-link__ex__hover.png)
 
 - Commencer par les mots-clés.
 - Il est conseillé que le lien n’ait pas plus de 10 mots pour une meilleure performance.
