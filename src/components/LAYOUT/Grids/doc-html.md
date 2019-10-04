@@ -196,7 +196,7 @@ Dans l’exemple ci-dessous, la 1ère colonne est invisible en mobile.
 	</div>
 </div>
 
-### Décalage de colonnes
+### Décalage de colonnes vers la droite
 
 Vous pouvez décaler une colonne vers la droite en utilisant les classes `su-offset`+`-point de rupture`+`-nombre de colonnes`. Ces classes augmentent la marge de gauche d’une colonne de `-nombre de colonnes`. Par exemple, `su-offset-md-2` déplace la colonne de 2 colonnes vers la droite.
 
@@ -247,6 +247,69 @@ Vous pouvez décaler une colonne vers la droite en utilisant les classes `su-off
 					<p>
 						2.<br />
 						su-col-lg-10
+					</p>
+					<p class="contenu">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+### Nombre de colonnes inférieur à celui attendu
+
+La grille SipaUI étant en `flex`, elle nécessite que le **nombre total de «&nbsp;colonnes implicites&nbsp;» soit toujours égal au maximum de colonnes possible** (6 en mobile et 24 ensuite). Cela veut dire qu'en additionnant toutes les valeurs chiffrées de vos définitions de colonnes vous devez arriver à ce maximum. Par exemple&nbsp;: `su-col-lg-4 su-offset-lg-10` + `su-col-lg-10` égal bien *24*.
+
+Maintenant, vous pourriez avoir besoin de créer des colonnes qui ne tiennent pas toute la largeur de la grille. Pour cela, il faut utiliser une classe de *comblement* **sur la dernière colonne** de la ligne. Elle se présente sous la forme&nbsp;:  `su-filling`+`-point de rupture`+`-nombre de colonnes`.
+
+```html
+<div class="su-container">
+	<div class="su-row">
+		<div class="su-row">
+			<div class="su-col-md-4 su-offset-md-8">
+				<p>
+					1.<br />
+					su-col-md-4 su-offset-md-8
+				</p>
+				<p class="contenu">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</div>
+			<div class="su-col-md-8 su-filling-md-2">
+				<p>
+					2.<br />
+					su-col-md-8 su-filling-md-2
+				</p>
+				<p class="contenu">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+```
+
+<div class="sipaui demo-conteneur">
+	<div class="demo-grille page">
+		<p>
+			Page
+		</p>
+		<div class="su-container">
+			<div class="su-row">
+				<div class="su-col-md-4 su-offset-md-8">
+					<p>
+						1.<br />
+						su-col-md-4 su-offset-md-8
+					</p>
+					<p class="contenu">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+				</div>
+				<div class="su-col-md-8 su-filling-md-2">
+					<p>
+						2.<br />
+						su-col-md-8 su-filling-md-2
 					</p>
 					<p class="contenu">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

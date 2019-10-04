@@ -59,6 +59,8 @@
 
         @include grid-offset-definition(xs, $grid-small-max-col);
 
+        @include grid-filling-definition(xs, $grid-small-max-col);
+
         // Grille auto
         &.su-grid-auto {
             @include flex-wrap(nowrap);
@@ -105,6 +107,7 @@
     .sipaui .su-row {
         @include grid-col-definition(sm, $grid-small-max-col);
         @include grid-offset-definition(sm, $grid-small-max-col);
+        @include grid-filling-definition(sm, $grid-small-max-col);
     }
 }
 
@@ -112,6 +115,7 @@
     .sipaui .su-row {
         @include grid-col-definition(md, $grid-large-max-col);
         @include grid-offset-definition(md, $grid-large-max-col);
+        @include grid-filling-definition(md, $grid-large-max-col);
     }
 }
 
@@ -119,6 +123,7 @@
     .sipaui .su-row {
         @include grid-col-definition(lg, $grid-large-max-col);
         @include grid-offset-definition(lg, $grid-large-max-col);
+        @include grid-filling-definition(lg, $grid-large-max-col);
     }
 }
 
@@ -126,5 +131,6 @@
     .sipaui .su-row {
         @include grid-col-definition(xl, $grid-large-max-col);
         @include grid-offset-definition(xl, $grid-large-max-col);
+        @include grid-filling-definition(xl, $grid-large-max-col);
     }
 }

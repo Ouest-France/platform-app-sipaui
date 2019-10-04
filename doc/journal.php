@@ -34,6 +34,7 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li><strong>Nouveauté&nbsp;: palette de couleurs.</strong></li>
+                                                <li>Évolution&nbsp;: grille, ajout d’une classe <code>.su-filling-…</code> pour permettre d’utiliser un nombre de colonnes «&nbsp;implicite&nbsp;» inférieur à celui attendu par la grille.</li>
                                             </ul>
                                         </li>
                                     </ul>

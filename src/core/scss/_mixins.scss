@@ -363,6 +363,14 @@
     }
 }
 
+@mixin grid-filling-definition($breakpoint, $max-col) {
+    @for $i from 1 through $max-col {
+        .su-filling-#{$breakpoint}-#{$i} {
+            margin-right: calc(#{grid-col-base-width($i, $max-col)} - #{grid-gutter-width($i, $max-col)} + 20px);
+        }
+    }
+}
+
 // IMPORT DES FONTES ————————————————————————————————————————————————————————————————————————————————————————————————
 @mixin import-fonts() {
     @if $font-import-use-local == null {
