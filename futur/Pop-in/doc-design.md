@@ -17,80 +17,66 @@ Les pop-ins permettrent 2 utilisations :
 
 - L'arrière-plan permet d'attirer l'attention de l'utilisateur sur la pop-in en assombrissant **le reste de l'écran qui est inaccessible**. L'accès au reste de l'interface utilisateur est désactivé jusqu'à ce que la pop-in soit fermée.
 - Un tape sur cet arrière-plan permet la fermeture de la pop-in.
-- Il est **obligatoire** sur tous les écrans.
-- Couleur : #33333
-- Opacité : 60%
+- Il est présent sur tous les écrans.
+- Sa couleur est #000000 avec une opacité de 60%.
 
 
 ### Container
 
 - Le container **focalise l'attention de l'utilisateur**.
 - Il est centré verticalement et horizontalement dans l'écran.
-
-Spécifications | Mobile | Desktop
------------- | ------------- | ------------- |
-Hauteur | minimum ?px ou contenu + padding en haut de 40px et en bas de 30px | minimum ?px ou contenu + padding en haut de 60px et en bas de 60px
-Largeur | celle de la grille sans ses marges | ? colonnes de la grille | ? colonnes de la grille
-Couleur | #FFFFFF | #FFFFFF | #FFFFFF
+- La **hauteur** est celle du contenu + padding de 50px en haut et 30px en bas. Sa hauteur maximale est celle de l'arrière-plan moins 20px en haut et en bas.
+- Sur mobile, sa **largeur** est celle de la grille moins ses marges externes, cf son doc design. Sur desktop, sa largeur est fixée à 620px et ses paddings sont de 40px.
+- Sa couleur est #FFFFFF.
 
 ### Titre
 
 - Un titre **complète le message ou la demande** sans les substituer.
-- Il est **facultatif**.
-- Un titre ne peut pas être présent dans une pop-in sans tout autre élément tel qu'un message ou un composant input de formulaire.
+- Il ne peut donc pas être présent dans une pop-in sans un message ou un autre composant. Il se situe 10px au-dessus de ces derniers.
+- Le titre est un **contenu non éditorial de niveau 2**. Son doc design est disponible dans le composant Titles.
 - La 1re lettre est en majuscule, le reste est en minuscule.
 - Il est ferré à gauche.
-- Paddings :
-  - 30px sur mobile
-  - 60px sur desktop.
-- Le titre est un **contenu non editorial de niveau 2**. Son doc design est disponible dans le composant Titles.
 
 ### Message
 
 - Le message est **décrit le contenu** de la pop-in.
-- Son contenu est **une brève déclaration ou une question**.
+- Son contenu est une brève déclaration ou une question.
 - Il s'agit d'un **texte standard** ferré à gauche, cf son doc design.
-- Ce texte se situe à 10px du titre.
 
 ### Bouton
 
-- Un à trois boutons présentent les actions possibles.
-- **Les spécifications sont disponibles dans le doc design, particulièrement dans "Boutons d'un même sujet".**
-- Sur mobile, le ou les boutons sont toujours **pleine largeur** et se situe à ? px sous le contenu de la pop-in. ?
-- Sur desktop, les boutons se situent en bas à droite de la pop-in : ?px sous le contenu et à 60px à droite du bord droit du container. ?
-
-#### Bouton primaire
-
-- **Un bouton primaire est toujours présent** afin de présenter l'action principale de l'utilisateur.
-
-#### Bouton secondaire
-
-- Un à deux boutons secondaires peuvent être affichés.
+- **Un bouton primaire est fortement conseillé** afin de présenter l'action principale.
+- Un à deux boutons secondaires peuvent afficher d'autres actions.
+- Leurs spécifications sont disponibles dans son doc design, particulièrement dans "Boutons d'un même sujet".
+- Le bouton le plus haut se situe à 20px sous le contenu. Le plus bas est à 30px au-dessus du bord inférieur du container.
+- Sur mobile, les boutons sont toujours **pleine largeur** (le container sans ses paddings).
 
 ### Croix
 
-- La croix est un des moyen de fermer la pop-in.
+- La croix est un des moyen de **fermer la pop-in**.
 - Elle est **facultative** mais recommandée.
-- L’icône est stiky et située avec une marge en haut à droite et en haut à gauche de 10px.
-- Taille et zone de tape : 20x20px
-- Couleur : #666666
-- Elle se situe à 10px en haut et à droite du bord du container.
-- Par ailleurs, les pop-ins peuvent être fermés via :
+- Sa taille est 20x20px.
+- Ses couleurs sont :
+  - Par défaut #878787
+  - En hover, focus et pressed #333333.
+- La croix est au centre de la zone de tape :
+  - Sa taille est 44x44px
+  - Elle se situe à 5px en haut et à droite du bord du container.
+- Par ailleurs, les pop-ins peuvent être fermées via :
   - Les boutons « Annuler » ou « Fermer » de la pop-in.
   - La croix de la pop-in.
   - L'arrière-plan de la pop-in.
   - Le bouton « Précédent » du système ou son raccourci.
 
-
 ### Barre de scroll
 
-- Lorsqu'une pop-in contient beaucoup de contenu, un scroll permet de voir l'ensemble de l'information.
-Image 3
+- Dans un cas exceptionnel, un scroll permet d'**afficher plus de contenu** et en respectant la hauteur maximale du container, cf tableau ci-dessus.
+- Cependant, afficher une grande quantité de contenu n'est pas une bonne pratique ergonomique. Une page avec ce contenu est appropriée.
+- Seuls le titre et le message sont scrollables.
 
 ### Autres éléments
 
-- D'aurtres composants peuvent être utilisés : links, checkboxes, text fields, etc.
-- Des images ou des vidéos peuvent être présentes.
+- D'autres composants peuvent être utilisés : links, text fields, image, etc.
 
 ## Bonnes pratiques
 
@@ -110,17 +96,20 @@ Image 3
 
 ### Titre
 
-- Dans la mesure du possible, le titre se limite à une seule ligne, même sur mobile.
+- Le titre se limite à une seule ligne, même sur mobile.
 - Evitez de terminer le titre par un point.
 
 ### Message
 
 - Le message doit être direct et dédié à la réalisation d'une seule tâche.
-- Les mots, les expressions et les concepts doivent être familiers à l'utilisateur.
+- Les mots, les expressions et les concepts doivent être familiers pour l'utilisateur.
 - Choisissez un wording impactant pour l'utilisateur.
-
-Image 4 et 5
 
 ### Boutons
 
+- Privilégiez les wordings clairs et **directs**, ex : "Voulez-vous supprimer définitivement tous ces articles ?" "Supprimer" au lieu d'un simple "Oui".
  - Evitez les boutons de type " En savoir plus " ou des liens qui quittent la pop-in.
+
+![pop-in_mobile](Design/mobile.png)
+
+![pop-in_desktop](Design/tablet-desktop.png)
