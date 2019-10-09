@@ -4,9 +4,9 @@ Les couleurs permettent à l’utilisateur d'être immerger dans une ambiance gr
 
 ## Usage
 
-- **Les couleurs apparaissent toujours dans une tonalité complète** et ne peuvent pas être assombries, éclaircies ou affichées en transparence. Des exeptions sont présentes dans le doc design de quelques composants.
+- **Les couleurs existent toujours dans une tonalité complète** et ne peuvent pas être assombries, éclaircies ou affichées en transparence. Des exceptions sont spécifiées dans le doc design de quelques composants.
 
-- Cependant, certaines couleurs présentent des nuances liées à leur état. Par exemple, l'état pressed d'un bouton rouge vif est rouge foncé.
+- Certaines couleurs présentent des nuances liées à leur état. Par exemple, l'état pressed d'un bouton rouge vif est rouge foncé.
 
 ## Type
 
@@ -26,7 +26,7 @@ Illustration | Hexadécimal
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #878787"></span> | #878787
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #D4D4D4"></span> | #D4D4D4
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #EFEFEF"></span> | #EFEFEF
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #FFFFFF"></span> | #FFFFFF  
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #FFFFFF; border: 1px solid #d4d4d4"></span> | #FFFFFF  
 
 ### Les thèmes
 
@@ -49,7 +49,7 @@ Illustration | Hexadécimal
 
 ### Les marques
 
-Les couleurs des thèmes traduisent l'identité de chaque marque à l’intérieur des univers.
+Les couleurs des marques représentent chaque marque, à l’intérieur des univers.
 
 #### Le Courrier de l'Ouest
 
@@ -74,8 +74,8 @@ Illustration | Hexadécimal
 
 ### Cas particulier : Abonnement
 
-- Cette identité unique est réservée aux éléments liés aux processus d'abonnement et aux services réservés aux abonnés.
-- **L'identité " Abonnement " est majeure devant les thèmes et les marques**, exemple : un bouton " Je m'abonne " à Presse Océan.
+- Cette identité unique est dédiée aux éléments liés aux processus d'abonnement et aux services réservés aux abonnés.
+- **L'identité " Abonnement " est majeure devant les thèmes et les marques**, exemple : un bouton " Je valide " d'un formulaire d'abonnement à Presse Océan.
 
 Illustration | Hexadécimal
 ------------ | ------------- |
