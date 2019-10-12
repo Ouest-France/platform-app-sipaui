@@ -10,13 +10,13 @@ $height-select:             $height-finger                !default;
 $height-select-small:       $height-small                 !default;
 $border-radius-select:      0                             !default;
 $color-select:              $font-color-standard          !default;
-$color-select-placeholder:  $color-main-5                 !default;
+$color-select-placeholder:  $color-main-4                 !default;
 $background-select:         #fafafa                       !default;
 $border-select:             1px solid $color-main-3       !default;
 
 // FOCUS
 $background-select-focus: #fff                            !default;
-$border-select-focus:     1px solid $color-main-7         !default;
+$border-select-focus:     1px solid $color-main-6         !default;
 
 // ERROR
 $border-select-error:     1px solid $color-error       !default;

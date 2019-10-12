@@ -1,17 +1,17 @@
 # Colors / Couleurs
 
-Les couleurs permettent à l’utilisateur d'être immerger dans une ambiance grâce à une palette spécifique. Elles contribuent à créer une expérience utilisateur cohérente.
+Les couleurs permettent à l’utilisateur d’être immerger dans une ambiance grâce à une palette spécifique. Elles contribuent à créer une expérience utilisateur cohérente.
 
 ## Usage
 
 - **Les couleurs existent toujours dans une tonalité complète** et ne peuvent pas être assombries, éclaircies ou affichées en transparence. Des exceptions sont spécifiées dans le doc design de quelques composants.
 
-- Certaines couleurs présentent des nuances liées à leur état. Par exemple, l'état pressed d'un bouton rouge vif est rouge foncé.
+- Certaines couleurs présentent des nuances liées à leur état. Par exemple, l’état `active` d’un bouton rouge vif est rouge foncé.
 
 ## Type
 
 - Chaque palette de couleurs fournit une gamme de **combinaisons accessibles**.
-- Les couleurs vives apportent de l'audace aux thèmes et aux marques. Elles sont utilisées de manière logique afin de guider l'œil et de mettre en valeur les éléments importants.
+- Les couleurs vives apportent de l’audace aux thèmes et aux marques. Elles sont utilisées de manière logique afin de guider l’œil et de mettre en valeur les éléments importants.
 
 ### Les basiques
 
@@ -30,8 +30,8 @@ Illustration | Hexadécimal
 
 ### Les thèmes
 
-- Les couleurs des thèmes traduisent l'identité de chaque univers.
-- Elles mettent principalement **en évidence les actions clés** dans l'interface utilisateur, les boutons, les liens...
+- Les couleurs des thèmes traduisent l’identité de chaque univers.
+- Elles mettent principalement **en évidence les actions clés** dans l’interface utilisateur, les boutons, les liens...
 
 #### Ouest-France
 
@@ -51,7 +51,7 @@ Illustration | Hexadécimal
 
 Les couleurs des marques représentent chaque marque, à l’intérieur des univers.
 
-#### Le Courrier de l'Ouest
+#### Le Courrier de l’Ouest
 
 Illustration | Hexadécimal
 ------------ | ------------- |
@@ -72,12 +72,23 @@ Illustration | Hexadécimal
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #009ADC"></span> | #009ADC
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #007BB0"></span> | #007BB0
 
-### Cas particulier : Abonnement
+### Cas particulier&nbsp;:
 
-- Cette identité unique est dédiée aux éléments liés aux processus d'abonnement et aux services réservés aux abonnés.
-- **L'identité " Abonnement " est majeure devant les thèmes et les marques**, exemple : un bouton " Je valide " d'un formulaire d'abonnement à Presse Océan.
+#### Abonnement
+
+- Cette identité unique est dédiée aux éléments liés aux processus d’abonnement et aux services réservés aux abonnés.
+- **L’identité " Abonnement " est majeure devant les thèmes et les marques**, exemple : un bouton " Je valide " d’un formulaire d’abonnement à Presse Océan.
 
 Illustration | Hexadécimal
 ------------ | ------------- |
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #DBA504"></span> | #DBA504
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #C2940C"></span> | #C2940C
+
+#### Couleurs de réussite&nbsp;/ échec
+
+Deux couleurs servent aux composants pour illustrer une réussite ou un échec (texte d’erreur, validation des étapes du composant *mot de passe*)
+
+Illustration | Hexadécimal
+------------ | ------------- |
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #3AAA35"></span> (Réussite)| #3AAA35
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #B40015"></span> (Échec) | #B40015

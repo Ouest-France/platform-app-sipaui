@@ -396,18 +396,24 @@
     }
 
     /* Icones ------------------------- */
-    .catalogue-icones {
+    .catalogue-icones,
+    .palette-couleurs {
 		display: flex;
 		flex-wrap: wrap;
 	}
-	.catalogue-icones .icone {
+	.catalogue-icones .icone,
+	.palette-couleurs .couleur {
 		flex: 0;
 		border: 1px solid #d4d4d4;
 		margin: -1px 0 0 -1px;
 		text-align: center;
 		padding: 5px 10px;
 	}
-	.catalogue-icones .icone h3 {
+	.palette-couleurs .couleur {
+		min-width: 300px;
+	}
+	.catalogue-icones .icone h3,
+	.palette-couleurs .couleur h3 {
 		margin-top: 0 !important;
 	}
 
@@ -416,6 +422,12 @@
 	}
 	.catalogue-icones .icone .glyphe {
     	margin-bottom: 10px;
+	}
+	.palette-couleurs .pastille {
+    	width: 40px;
+    	height: 40px;
+    	border-radius: 50%;
+    	margin: 0 auto 10px;
 	}
 
 	/* Grille ------------------------- */
