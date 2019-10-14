@@ -67,7 +67,7 @@
 
             &.su-wrap {
                 @include flex-wrap(wrap);
-                @include justify-content(flex-start, start)
+                @include justify-content(flex-start, start);
 
                 .su-col {
                     @include flex(0 0 auto);
