@@ -72,7 +72,7 @@ Illustration | Hexadécimal
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #009ADC"></span> | #009ADC
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #007BB0"></span> | #007BB0
 
-### Cas particulier&nbsp;:
+### Cas particuliers&nbsp;:
 
 #### Abonnement
 
@@ -84,11 +84,12 @@ Illustration | Hexadécimal
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #DBA504"></span> | #DBA504
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #C2940C"></span> | #C2940C
 
-#### Couleurs de réussite&nbsp;/ échec
+#### Avertissement
 
-Deux couleurs servent aux composants pour illustrer une réussite ou un échec (texte d’erreur, validation des étapes du composant *mot de passe*)
+- Des couleurs permettent **d'attirer l'attention et de signaler un état** à l'utlisateur.
+- Elles sont utlisées uniquement pour les textes ou les icônes.
 
 Illustration | Hexadécimal
 ------------ | ------------- |
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #3AAA35"></span> (Réussite)| #3AAA35
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #B40015"></span> (Échec) | #B40015
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #3AAA35"></span> | #3AAA35
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #B40015"></span> | #B40015
