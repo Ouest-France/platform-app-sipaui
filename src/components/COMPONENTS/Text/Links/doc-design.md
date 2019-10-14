@@ -78,7 +78,7 @@ Enabled | Hover / Focus / Pressed
 
 ### Types d'ouverture
 #### Le même onglet
-- Suite à un tape sur un lien interne, une page s'ouvre dans le même onglet. Un lien interne ouvre dans le même sous-domaine que celui où il se trouve, ex : ouest-france.fr et voilesetvoiliers.ouest-france.fr
+- Suite à un tape sur un lien interne, une page s'ouvre dans le même onglet. Les deux sous-domaines sont identiques, ex : ouest-france.fr et voilesetvoiliers.ouest-france.fr
 
 #### Une nouvel onglet
 - Suite à un tape sur un lien externe, une page s'ouvre dans une nouvelle onglet. Un lien externe ouvre une page dans un autre sous-domaine, ex : ouest-france.fr et ouestfrance-auto.com
