@@ -69,6 +69,7 @@
 
         // On fait un premier check au chargement du DOM (si F5 par exemple)
         document.addEventListener('DOMContentLoaded', function(){
+            document.body.classList.add('theme-'+theme);
             storyDetection();
             observer.observe(document.body, config);
         });
