@@ -18,19 +18,39 @@ Aucune
 
 ### Couleurs d’identité du thème
 
-Pour Ouest-France
-<div class="palette-couleurs">
-	<div class="couleur">
-		<div class="pastille" style="background: #E2001A;"></div>
-		<p>Hexa&nbsp;: <code>#E2001A</code></p>
-		<p>RGB&nbsp;: <code>226,0,26</code></p>
-		<p>Variable&nbsp;: <code>$color-secondary-1</code></p>
+<div class="visible-of">
+	<p>Pour Ouest-France</p>
+	<div class="palette-couleurs">
+		<div class="couleur">
+			<div class="pastille" style="background: #E2001A;"></div>
+			<p>Hexa&nbsp;: <code>#E2001A</code></p>
+			<p>RGB&nbsp;: <code>226,0,26</code></p>
+			<p>Variable&nbsp;: <code>$color-secondary-1</code></p>
+		</div>
+		<div class="couleur">
+			<div class="pastille" style="background: #B40015;"></div>
+			<p>Hexa&nbsp;: <code>#B40015</code></p>
+			<p>RGB&nbsp;: <code>180,0,21</code></p>
+			<p>Variable&nbsp;: <code>$color-secondary-2</code></p>
+		</div>
 	</div>
-	<div class="couleur">
-		<div class="pastille" style="background: #B40015;"></div>
-		<p>Hexa&nbsp;: <code>#B40015</code></p>
-		<p>RGB&nbsp;: <code>180,0,21</code></p>
-		<p>Variable&nbsp;: <code>$color-secondary-2</code></p>
+</div>
+
+<div class="visible-vv">
+	<p>Pour Voiles et Voiliers</p>
+	<div class="palette-couleurs">
+		<div class="couleur">
+			<div class="pastille" style="background: #268BCD;"></div>
+			<p>Hexa&nbsp;: <code>#268BCD</code></p>
+			<p>RGB&nbsp;: <code>,139,205</code></p>
+			<p>Variable&nbsp;: <code>$color-secondary-2</code></p>
+		</div>
+		<div class="couleur">
+			<div class="pastille" style="background: #20407A;"></div>
+			<p>Hexa&nbsp;: <code>#20407A</code></p>
+			<p>RGB&nbsp;: <code>32,64,122</code></p>
+			<p>Variable&nbsp;: <code>$color-secondary-3</code></p>
+		</div>
 	</div>
 </div>
 
@@ -66,19 +86,19 @@ Pour Ouest-France
 		<div class="pastille" style="background: #666;"></div>
 		<p>Hexa&nbsp;: <code>#666</code></p>
 		<p>RGB&nbsp;: <code>102,102,102</code></p>
-		<p>Variable&nbsp;: <code>$color-main-4</code></p>
+		<p>Variable&nbsp;: <code>$color-main-5</code></p>
 	</div>
 	<div class="couleur">
 		<div class="pastille" style="background: #333;"></div>
 		<p>Hexa&nbsp;: <code>#333</code></p>
 		<p>RGB&nbsp;: <code>51,51,51</code></p>
-		<p>Variable&nbsp;: <code>$color-main-5</code></p>
+		<p>Variable&nbsp;: <code>$color-main-6</code></p>
 	</div>
 	<div class="couleur">
 		<div class="pastille" style="background: #000;"></div>
 		<p>Hexa&nbsp;: <code>#000</code></p>
 		<p>RGB&nbsp;: <code>0,0,0</code></p>
-		<p>Variable&nbsp;: <code>$color-main-6</code></p>
+		<p>Variable&nbsp;: <code>$color-main-7</code></p>
 	</div>
 </div>
 
