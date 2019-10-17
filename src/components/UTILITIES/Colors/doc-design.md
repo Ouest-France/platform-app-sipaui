@@ -38,13 +38,14 @@ Illustration | Hexadécimal
 
 Illustration | Hexadécimal
 ------------ | ------------- |
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #000000"></span> | #000000
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #333333"></span> | #333333
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #666666"></span> | #666666
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #878787"></span> | #878787
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #D4D4D4"></span> | #D4D4D4
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #EFEFEF"></span> | #EFEFEF
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #FFFFFF; border: 1px solid #d4d4d4"></span> | #FFFFFF
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #EFEFEF"></span> | #EFEFEF
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #E4E3E1"></span> | #DE4E3E1
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #D4D4D4"></span> | #D4D4D4
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #878787"></span> | #878787
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #666666"></span> | #666666
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #333333"></span> | #333333
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #000000"></span> | #000000
 
 ## Les couleurs spécifiques&nbsp;:
 
@@ -67,3 +68,10 @@ Illustration | Hexadécimal
 ------------ | ------------- |
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #3AAA35"></span> | #3AAA35
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #B40015"></span> | #B40015
+
+### Marques
+- Les couleurs des marques sont disponibles dans le doc design du composant Colors de Identities.
+
+## Bonnes pratiques
+L'état de compatibilité est présenté via le lien ci-dessous :
+https://abc.useallfive.com/?colors[]=EE2200,B40015,FFFFFF,EFEFEF,D4D4D4,848484,666666,000000,DBA504,C2940C
