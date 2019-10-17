@@ -71,34 +71,40 @@ Aucune
 		<p>Variable&nbsp;: <code>$color-main-2</code></p>
 	</div>
 	<div class="couleur">
+		<div class="pastille" style="background: #E4E3E1;"></div>
+		<p>Hexa&nbsp;: <code>#E4E3E1</code></p>
+		<p>RGB&nbsp;: <code>228,227,225</code></p>
+		<p>Variable&nbsp;: <code>$color-main-3</code></p>
+	</div>
+	<div class="couleur">
 		<div class="pastille" style="background: #D4D4D4;"></div>
 		<p>Hexa&nbsp;: <code>#D4D4D4</code></p>
 		<p>RGB&nbsp;: <code>212,212,212</code></p>
-		<p>Variable&nbsp;: <code>$color-main-3</code></p>
+		<p>Variable&nbsp;: <code>$color-main-4</code></p>
 	</div>
 	<div class="couleur">
 		<div class="pastille" style="background: #878787;"></div>
 		<p>Hexa&nbsp;: <code>#878787</code></p>
 		<p>RGB&nbsp;: <code>135,135,135</code></p>
-		<p>Variable&nbsp;: <code>$color-main-4</code></p>
+		<p>Variable&nbsp;: <code>$color-main-5</code></p>
 	</div>
 	<div class="couleur">
 		<div class="pastille" style="background: #666;"></div>
 		<p>Hexa&nbsp;: <code>#666</code></p>
 		<p>RGB&nbsp;: <code>102,102,102</code></p>
-		<p>Variable&nbsp;: <code>$color-main-5</code></p>
+		<p>Variable&nbsp;: <code>$color-main-6</code></p>
 	</div>
 	<div class="couleur">
 		<div class="pastille" style="background: #333;"></div>
 		<p>Hexa&nbsp;: <code>#333</code></p>
 		<p>RGB&nbsp;: <code>51,51,51</code></p>
-		<p>Variable&nbsp;: <code>$color-main-6</code></p>
+		<p>Variable&nbsp;: <code>$color-main-7</code></p>
 	</div>
 	<div class="couleur">
 		<div class="pastille" style="background: #000;"></div>
 		<p>Hexa&nbsp;: <code>#000</code></p>
 		<p>RGB&nbsp;: <code>0,0,0</code></p>
-		<p>Variable&nbsp;: <code>$color-main-7</code></p>
+		<p>Variable&nbsp;: <code>$color-main-8</code></p>
 	</div>
 </div>
 

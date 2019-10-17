@@ -40,7 +40,7 @@ Illustration | Hexadécimal
 ------------ | ------------- |
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #FFFFFF; border: 1px solid #d4d4d4"></span> | #FFFFFF
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #EFEFEF"></span> | #EFEFEF
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #E4E3E1"></span> | #DE4E3E1
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #E4E3E1"></span> | #E4E3E1
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #D4D4D4"></span> | #D4D4D4
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #878787"></span> | #878787
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #666666"></span> | #666666
