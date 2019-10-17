@@ -33,8 +33,9 @@ $max-breakpoint-lg:  79.938em !default;   /* 1279px */
 // COLORS ------------------------------------------------------------------------------------------------------------------
 // CHART
 $blanc:                     #fff    !default;
-$gris-plus-clair:			#efefef !default;
-$gris-clair:                #d4d4d4 !default;
+$gris-tres-clair:			#efefef !default;
+$gris-plus-clair:           #d4d4d4 !default;
+$gris-clair:                #c1bfc0 !default;
 $gris:                      #878787 !default;
 $gris-fonce:                #666    !default;
 $gris-plus-fonce:           #333    !default;
@@ -52,12 +53,13 @@ $vert:                      #3AAA35 !default;
 
 // DEFINITIONS
 $color-main-1: $blanc               !default;
-$color-main-2: $gris-plus-clair     !default;
-$color-main-3: $gris-clair          !default;
-$color-main-4: $gris                !default;
-$color-main-5: $gris-fonce          !default;
-$color-main-6: $gris-plus-fonce     !default;
-$color-main-7: $noir                !default;
+$color-main-2: $gris-tres-clair     !default;
+$color-main-3: $gris-plus-clair     !default;
+$color-main-4: $gris-clair          !default;
+$color-main-5: $gris                !default;
+$color-main-6: $gris-fonce          !default;
+$color-main-7: $gris-plus-fonce     !default;
+$color-main-8: $noir                !default;
 
 $color-secondary-1: $rouge               !default;
 $color-secondary-2: $rouge-fonce         !default;
@@ -79,10 +81,10 @@ $color-error:   $rouge-fonce         !default;
 $color-success: $vert                !default;
 
 $color-code:            $color-secondary-3      !default;
-$background-pre-code:   $gris-plus-clair        !default;
+$background-pre-code:   $gris-tres-clair        !default;
 $color-kbd:             $color-main-1           !default;
-$background-kbd:        $color-main-5          !default;
-$color-metadata:        $color-main-4           !default;
+$background-kbd:        $color-main-6           !default;
+$color-metadata:        $color-main-5           !default;
 
 
 // RÉSEAUX SOCIAUX ET MARQUES
@@ -111,7 +113,7 @@ $background-body: $blanc;
 
 
 // TYPO ----------------------------------------------------------------------------------
-$font-color-standard: $color-main-6;
+$font-color-standard: $color-main-7;
 
 $font-size-xsmall:  1.2rem !default;
 $font-size-small:   1.4rem !default;

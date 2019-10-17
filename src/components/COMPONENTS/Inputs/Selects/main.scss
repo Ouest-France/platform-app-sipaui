@@ -45,7 +45,7 @@
         &::before {
             content: "\e901";
             font-family: 'su-icons';
-            color: $color-main-4;
+            color: $color-main-5;
             top: 0.6rem;
             right: 1rem;
             position: absolute;
@@ -53,7 +53,7 @@
             pointer-events: none;
         }
         &:hover::before {
-            color: $color-main-6;
+            color: $color-main-7;
         }
         &.su-small {
             select {
