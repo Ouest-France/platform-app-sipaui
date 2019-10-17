@@ -1,10 +1,10 @@
-# Colors / Couleurs
+# Brands colors / Couleurs de marques
 
 Les couleurs Identities permettent de représenter les **marques**.
 
 ## Usage
 
-Les usages sont disponibles dans le doc design du composant Colors de Utilities.
+Les usages sont disponibles dans le [doc design du composant Colors](/?path=/story/utilities-colors--design) de Utilities.
 
 ## Le Courrier de l’Ouest
 

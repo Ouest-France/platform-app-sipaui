@@ -13,7 +13,7 @@ Les couleurs permettent à l’utilisateur d’être immergé dans une ambiance.
 - Certaines couleurs présentent des nuances liées à leur état. Par exemple, l’état `active` d’un bouton rouge vif est rouge foncé.
 
 
-## Les couleurs d'identité
+## Les couleurs d’identité
 
 - Ces couleurs vives **apportent de l’audace** aux interfaces.
 - Elles mettent principalement en évidence les éléments clés dans l’interface utilisateur.
@@ -52,7 +52,7 @@ Illustration | Hexadécimal
 ### Abonnement
 
 - Cette identité unique est **dédiée aux éléments liés aux processus d’abonnement et aux services réservés aux abonnés.**
-- Les couleurs " Abonnement " sont majeures devant toutes les autres, exemple : un bouton " Je valide " d’un formulaire d’abonnement à Ouest-France.
+- Les couleurs «&nbsp;Abonnement&nbsp;» sont majeures devant toutes les autres, exemple : un bouton «&nbsp;Je valide&nbsp;» d’un formulaire d’abonnement à Ouest-France.
 
 Illustration | Hexadécimal
 ------------ | ------------- |
@@ -61,7 +61,7 @@ Illustration | Hexadécimal
 
 ### Avertissement
 
-- Ces couleurs permettent **d'attirer l'attention et de signaler un état** à l'utlisateur.
+- Ces couleurs permettent **d’attirer l’attention et de signaler un état** à l’utlisateur.
 - Elles sont utlisées uniquement pour les textes ou les icônes.
 
 Illustration | Hexadécimal
@@ -70,8 +70,7 @@ Illustration | Hexadécimal
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #B40015"></span> | #B40015
 
 ### Marques
-- Les couleurs des marques sont disponibles dans le doc design du composant Colors de Identities.
+- Les couleurs des marques sont disponibles dans le [doc design du composant Brand-colors](/?path=/story/components-identities-brand-colors--design) de Identities.
 
 ## Bonnes pratiques
-L'état de compatibilité est présenté via le lien ci-dessous :
-https://abc.useallfive.com/?colors[]=EE2200,B40015,FFFFFF,EFEFEF,D4D4D4,848484,666666,000000,DBA504,C2940C
+L’<a href="https://abc.useallfive.com/?colors[]=EE2200,B40015,FFFFFF,EFEFEF,D4D4D4,848484,666666,000000,DBA504,C2940C" target="_blank">état de compatibilité</a> permet d’optimiser l’accessibilité.
