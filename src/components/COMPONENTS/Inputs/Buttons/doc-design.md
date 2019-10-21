@@ -132,13 +132,3 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 
 - La couleur d'arrière-plan ne doit pas être similaire à celle du bouton afin de mettre en avant l'action. Par exemple, le fond noir est à proscrire sous un bouton rouge.
-
-## Autres composants
-- Liens
-- Boutons avec un picto
-- Floating action buttons
-- “ Voir plus “
-- " Lire la suite + "
-- “ Votre adresse email OK ”
-- " Géolocalisez-vous "
-- Etc.
