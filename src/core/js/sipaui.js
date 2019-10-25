@@ -1,11 +1,11 @@
 //
 // Ouest-France Bootstrap
-// Framework Javascript OuestStrap
+// Framework Javascript sipaUI
 // Header
 //
 'use strict';
 // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
-// OuestStrap - start
+// sipaUI - start
 // Framework JavaScript
 // -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 var su = {
