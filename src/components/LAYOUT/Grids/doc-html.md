@@ -22,6 +22,8 @@ Puisque la grille SipaUI est en `flex` elle n’est pas compatible avec <em><a h
 
 Le conteneur ne fait pas partie à proprement parler de la grille. Il sert à déterminer la largeur que prend la grille principale de la page (celle de premier niveau). **Si vous avez besoin d’insérer une grille dans un sous-niveau, il n’y aura plus besoin de conteneur**. Exemple de grille multi-niveau&nbsp;: Page / conteneur / grille n1 / grille n2…
 
+NB&nbsp;: cette classe peut être placée au même niveau que la classe `.sipaui` si besoin.
+
 Il utilise la classe `su-container`.
 
 ```html
@@ -57,6 +59,8 @@ Aussi&nbsp;:
 - `su-col-md-18` signifie que le bloc, à partir de la taille d’écran `md` **et au-dessus**, fera les 3/4 de la largeur du rang (18 colonnes sur les 24 utilisées sur grand écran).
 
 **NB&nbsp;: Il est important que la somme des** `-nombre de colonnes` **sur un rang soit égal à 6 sur petit écran (xs et sm) et 24 sur grand (md, lg et xl).**
+
+NB 2&nbsp;: la classe `.su-row` peut être placée au même niveau que la classe `.sipaui` si besoin.
 
 ```html
 <div class="su-row">

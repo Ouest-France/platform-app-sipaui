@@ -4,99 +4,94 @@
 @import "variables";
 
 // CONTENEUR------------------------------------------------------------------------------------------/
-.sipaui {
-    .su-container {
-        width: 100%;
-        padding: 0 20px;
-    }
+.sipaui .su-container,
+.sipaui.su-container {
+    width: 100%;
+    padding: 0 20px;
 }
 
 
 @media screen and (min-width: $min-breakpoint-sm) {
-    .sipaui {
-        .su-container {
-            padding: 0 30px;
-        }
+    .sipaui .su-container,
+    .sipaui.su-container {
+        padding: 0 30px;
     }
 }
 
 @media screen and (min-width: $min-breakpoint-md) {
-    .sipaui {
-        .su-container {
-            max-width: $min-breakpoint-md;
-            margin: 0 auto;
-            padding: 0 30px;
-        }
+    .sipaui .su-container,
+    .sipaui.su-container {
+        max-width: $min-breakpoint-md;
+        margin: 0 auto;
+        padding: 0 30px;
     }
 }
 
 @media screen and (min-width: $min-breakpoint-lg) {
-    .sipaui {
-        .su-container {
-            max-width: 960px;
-            padding: 0 10px;
-        }
+    .sipaui .su-container,
+    .sipaui.su-container {
+        max-width: 960px;
+        padding: 0 10px;
     }
 }
 
 @media screen and (min-width: $min-breakpoint-xl) {
-    .sipaui {
-        .su-container {
-            max-width: 1280px;
-        }
+    .sipaui .su-container,
+    .sipaui.su-container {
+        max-width: 1280px;
     }
 }
 
 
 // GRILLE------------------------------------------------------------------------------------------/
-.sipaui {
-    .su-row {
-        @include display-flex();
-        @include justify-content(space-between, distribute);
-        @include flex-wrap(wrap);
+.sipaui .su-row,
+.sipaui.su-row {
+    @include display-flex();
+    @include justify-content(space-between, distribute);
+    @include flex-wrap(wrap);
 
-        @include grid-col-definition(xs, $grid-small-max-col);
+    @include grid-col-definition(xs, $grid-small-max-col);
 
-        @include grid-offset-definition(xs, $grid-small-max-col);
+    @include grid-offset-definition(xs, $grid-small-max-col);
 
-        @include grid-filling-definition(xs, $grid-small-max-col);
+    @include grid-filling-definition(xs, $grid-small-max-col);
 
-        // Grille auto
-        &.su-grid-auto {
-            @include flex-wrap(nowrap);
+    // Grille auto
+    &.su-grid-auto {
+        @include flex-wrap(nowrap);
 
-            &.su-wrap {
-                @include flex-wrap(wrap);
-                @include justify-content(flex-start, start);
+        &.su-wrap {
+            @include flex-wrap(wrap);
+            @include justify-content(flex-start, start);
 
-                .su-col {
-                    @include flex(0 0 auto);
-                }
-            }
             .su-col {
-                @include flex(1 1 auto);
-            }
-            &.su-has-gutter {
-                .su-col {
-                    margin-right: $grid-gutter;
-                }
-                .su-col:last-child {
-                    margin-right: 0;
-                }
+                @include flex(0 0 auto);
             }
         }
-
-        // Alignement vertical
-        &.su-vertical-start {
-            @include align-items(flex-start);
+        .su-col {
+            @include flex(1 1 auto);
         }
-        &.su-vertical-center {
-            @include align-items(center);
-        }
-        &.su-vertical-end {
-            @include align-items(flex-end);
+        &.su-has-gutter {
+            .su-col {
+                margin-right: $grid-gutter;
+            }
+            .su-col:last-child {
+                margin-right: 0;
+            }
         }
     }
+
+    // Alignement vertical
+    &.su-vertical-start {
+        @include align-items(flex-start);
+    }
+    &.su-vertical-center {
+        @include align-items(center);
+    }
+    &.su-vertical-end {
+        @include align-items(flex-end);
+    }
+
     [class*="su-col-"] {
         @include flex(1 1 100%);
     }
@@ -104,7 +99,8 @@
 
 
 @media screen and (min-width: $min-breakpoint-sm) {
-    .sipaui .su-row {
+    .sipaui .su-row,
+    .sipaui.su-row {
         @include grid-col-definition(sm, $grid-small-max-col);
         @include grid-offset-definition(sm, $grid-small-max-col);
         @include grid-filling-definition(sm, $grid-small-max-col);
@@ -112,7 +108,8 @@
 }
 
 @media screen and (min-width: $min-breakpoint-md) {
-    .sipaui .su-row {
+    .sipaui .su-row,
+    .sipaui.su-row {
         @include grid-col-definition(md, $grid-large-max-col);
         @include grid-offset-definition(md, $grid-large-max-col);
         @include grid-filling-definition(md, $grid-large-max-col);
@@ -120,7 +117,8 @@
 }
 
 @media screen and (min-width: $min-breakpoint-lg) {
-    .sipaui .su-row {
+    .sipaui .su-row,
+    .sipaui.su-row {
         @include grid-col-definition(lg, $grid-large-max-col);
         @include grid-offset-definition(lg, $grid-large-max-col);
         @include grid-filling-definition(lg, $grid-large-max-col);
@@ -128,7 +126,8 @@
 }
 
 @media screen and (min-width: $min-breakpoint-xl) {
-    .sipaui .su-row {
+    .sipaui .su-row,
+    .sipaui.su-row {
         @include grid-col-definition(xl, $grid-large-max-col);
         @include grid-offset-definition(xl, $grid-large-max-col);
         @include grid-filling-definition(xl, $grid-large-max-col);
