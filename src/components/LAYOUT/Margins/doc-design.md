@@ -18,6 +18,7 @@ Taille | Mesure | Illustration
 **M** | 20px | ![spacing__20px](components/LAYOUT/Margins/design/spacing__20px.png)
 **L** | 30px | ![spacing__30px](components/LAYOUT/Margins/design/spacing__30px.png)
 **XL** | 40px | ![spacing__40px](components/LAYOUT/Margins/design/spacing__40px.png)
+**XXL** | 50px | 
 
 ## Objectifs
 
@@ -51,7 +52,7 @@ Taille | Mesure | Illustration
 
 ![spacing__ex__dont](components/LAYOUT/Margins/design/spacing__ex__dont.png) |
 ------------ |
-**Don’t** 
+**Don’t**
 <p class="legende">Dans un formulaire, le label doit être plus proche du container lié.</p> |
 
  </div>
