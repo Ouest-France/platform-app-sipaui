@@ -128,7 +128,7 @@ Abonnement
 </div>
 
 <br />
-<p>Avertissements</p>
+<p>Avertissement</p>
 <div class="palette-couleurs">
 	<div class="couleur">
 		<div class="pastille" style="background: #3AAA35;"></div>

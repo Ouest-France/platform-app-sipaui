@@ -70,7 +70,7 @@ Illustration | Hexadécimal
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #B40015"></span> | #B40015
 
 ### Marques
-- Les couleurs des marques sont disponibles dans le [doc design du composant Brand-colors](/?path=/story/components-identities-brand-colors--design) de Identities.
+- Les couleurs des marques sont disponibles dans le [doc design du composant Brand-colors](/storybook/?path=/story/components-identities-brand-colors--design) de Identities.
 
 ## Bonnes pratiques
 L’<a href="https://abc.useallfive.com/?colors[]=EE2200,B40015,FFFFFF,EFEFEF,D4D4D4,848484,666666,000000,DBA504,C2940C" target="_blank">état de compatibilité</a> permet d’optimiser l’accessibilité.
