@@ -18,7 +18,7 @@ Taille | Mesure | Illustration
 **M** | 20px | ![spacing__20px](components/LAYOUT/Margins/design/spacing__20px.png)
 **L** | 30px | ![spacing__30px](components/LAYOUT/Margins/design/spacing__30px.png)
 **XL** | 40px | ![spacing__40px](components/LAYOUT/Margins/design/spacing__40px.png)
-**XXL** | 50px | 
+**XXL** | 50px | ![spacing__50px](components/LAYOUT/Margins/design/spacing__50px.png) 
 
 ## Objectifs
 

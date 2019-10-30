@@ -21,9 +21,10 @@ Pour gérer l’espace entre les blocs, vous aurez besoin des 5 tailles de marge
 - `$margin-medium` (par défaut = 20 px)
 - `$margin-large` (par défaut = 30 px)
 - `$margin-xlarge` (par défaut = 40 px)
+- `$margin-xxlarge` (par défaut = 50 px)
 
 ## Classes
-De façon **exceptionnelle**, vous pourriez avoir besoin de classes pour forcer des marges. Ces classes sont préfixées `su-margin-…`. Le cas les plus courant sont les marges supérieures et inférieures, pour gérer l’espace entres les composants dans le flux de lecture vertical. Nous avons toutefois créé des classes pour les marges latérales ainsi qu'une classe pour la marge tournante. Chacune de ces classes existent dans les 5 tailles standards définies par le design. Le processus de nommage des classes de marge est sous la forme `su-margin-*position*-*taille*`. Ainsi on aura par exemple `su-margin-bottom-xs`. En plus de ces classes de tailles, il existe des classes de **remise à zéro** de la marge&nbsp;: `su-margin-0`…
+De façon exceptionnelle, vous pourriez avoir besoin de classes pour forcer des marges. Ces classes sont préfixées `su-margin-…`. Le cas les plus courant sont les marges supérieures et inférieures, pour gérer l’espace entres les composants dans le flux de lecture vertical. Nous avons toutefois créé des classes pour les marges latérales ainsi qu'une classe pour la marge tournante. Chacune de ces classes existent dans les 6 tailles standards définies par le design. Le processus de nommage des classes de marge est sous la forme `su-margin-*position*-*taille*`. Ainsi on aura par exemple `su-margin-bottom-xs`. En plus de ces classes de tailles, il existe des classes de **remise à zéro** de la marge&nbsp;: `su-margin-0`…
 
 <p class="alerte">
 Ces classes sont des outils. Leur utilisation est réservée pour des cas exceptionnels, où l’utilisation des variables SASS au sein de votre propre code n’est pas possible. <strong>C'est encore plus vrai pour les classes de marge nulle</strong> où leur utilisation démontre un problème dans le code CSS.
@@ -43,8 +44,9 @@ Liste des tailles possibles&nbsp;:
 - `m` ("medium" = 20 px)
 - `l` ("large" = 30 px)
 - `xl` ("xlarge" = 40 px)
+- `xxl` ("xxlarge" = 50 px)
 
-Il existe par conséquent 30 classes de taille de marges (5X6).
+Il existe par conséquent 35 classes de taille de marges (5X7).
 
 Voici *un* exemple d’utilisation de classe de marge avec la classe `su-margin-right-l`.
 
@@ -85,28 +87,33 @@ Voici *un* exemple d’utilisation de classe de marge avec la classe `su-margin-
 - `su-margin-m`
 - `su-margin-l`
 - `su-margin-xl`
+- `su-margin-xxl`
 - `su-margin-top-0`
 - `su-margin-top-xs`
 - `su-margin-top-s`
 - `su-margin-top-m`
 - `su-margin-top-l`
 - `su-margin-top-xl`
+- `su-margin-top-xxl`
 - `su-margin-right-0`
 - `su-margin-right-xs`
 - `su-margin-right-s`
 - `su-margin-right-m`
 - `su-margin-right-l`
 - `su-margin-right-xl`
+- `su-margin-right-xxl`
 - `su-margin-bottom-0`
 - `su-margin-bottom-xs`
 - `su-margin-bottom-s`
 - `su-margin-bottom-m`
 - `su-margin-bottom-l`
 - `su-margin-bottom-xl`
+- `su-margin-bottom-xxl`
 - `su-margin-left-0`
 - `su-margin-left-xs`
 - `su-margin-left-s`
 - `su-margin-left-m`
 - `su-margin-left-l`
 - `su-margin-left-xl`
+- `su-margin-left-xxl`
 </div>
