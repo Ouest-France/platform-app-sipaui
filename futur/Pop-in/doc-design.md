@@ -1,15 +1,15 @@
 # Pop-ins / Pop-ins
 
-- Les pop-ins sont des cadres qui surgissent sur la page web consultée par l’utilisateur.
+- Les pop-ins sont des cadres qui surgissent sur les pages en cours de consultation.
 - Les pop-ins sont :
   - **"Modal"** car le contenu de la page est désactivé jusqu'à une réponse de l'utilisateur.
   - **"Lightbox"** car l'arrière-plan est estompé.
 
 ## Usage
 
-Les pop-ins permettrent 2 utilisations :
+Les pop-ins répondent à 2 besoins :
 - **Obtenir une petite quantité d'informations contextuelles** de l'utilisateur.
--  **Fournir une simple information à l'utilisateur**. Ce dernier doit en prendre connaissance avant de pouvoir poursuivre sa navigation.
+- **Fournir une simple information** à l'utilisateur. Ce dernier doit en prendre connaissance avant de pouvoir poursuivre sa navigation.
 
 ## Spécifications
 
@@ -25,14 +25,14 @@ Les pop-ins permettrent 2 utilisations :
 
 - Le container **focalise l'attention de l'utilisateur**.
 - Il est centré verticalement et horizontalement dans l'écran.
-- La **hauteur** est celle du contenu + padding de 50px en haut et 30px en bas. Sa hauteur maximale est celle de l'arrière-plan moins 20px en haut et en bas.
+- La **hauteur** est celle du contenu + padding de 50px en haut et 30px en bas. Lorsque la croix est absente, le padding en haut du container est de 30px. La hauteur maximale du container est celle de l'arrière-plan moins 20px en haut et en bas.
 - Sur mobile, sa **largeur** est celle de la grille moins ses marges externes, cf son doc design. Sur desktop, sa largeur est fixée à 620px et ses paddings sont de 40px.
 - Sa couleur est #FFFFFF.
 
 ### Titre
 
-- Un titre **complète le message ou la demande** sans les substituer.
-- Il ne peut donc pas être présent dans une pop-in sans un message ou un autre composant. Il se situe 10px au-dessus de ces derniers.
+- Un titre **complète le message ou la demande** sans les substituer. Il ne peut donc pas être présent dans une pop-in sans un message ou un autre composant.
+- Il se situe 10px au-dessus de ces derniers.
 - Le titre est un **contenu non éditorial de niveau 2**. Son doc design est disponible dans le composant Titles.
 - La 1re lettre est en majuscule, le reste est en minuscule.
 - Il est ferré à gauche.
@@ -50,11 +50,13 @@ Les pop-ins permettrent 2 utilisations :
 - Leurs spécifications sont disponibles dans son doc design, particulièrement dans "Boutons d'un même sujet".
 - Le bouton le plus haut se situe à 20px sous le contenu. Le plus bas est à 30px au-dessus du bord inférieur du container.
 - Sur mobile, les boutons sont toujours **pleine largeur** (le container sans ses paddings).
+- Lorsque les boutons sont stikies, les marges autour des boutons sont également stikies : 30px sauf au-dessus 10px.
 
 ### Croix
 
 - La croix est un des moyen de **fermer la pop-in**.
 - Elle est **facultative** mais recommandée.
+- Son doc design est dans le composant Icons.
 - Sa taille est 20x20px.
 - Ses couleurs sont :
   - Par défaut #878787
@@ -71,7 +73,7 @@ Les pop-ins permettrent 2 utilisations :
 ### Barre de scroll
 
 - Dans un cas exceptionnel, un scroll permet d'**afficher plus de contenu** et en respectant la hauteur maximale du container, cf tableau ci-dessus.
-- Cependant, afficher une grande quantité de contenu n'est pas une bonne pratique ergonomique. Une page avec ce contenu est appropriée.
+- Cependant, afficher une grande quantité de contenu n'est pas une bonne pratique ergonomique.
 - Seuls le titre et le message sont scrollables.
 
 ### Autres éléments
@@ -85,7 +87,8 @@ Les pop-ins permettrent 2 utilisations :
 - Les pop-ins sont vivement conseillées pour confirmer définitivement un choix avant un engagement, de sorte que l'utilisateur ait la possibilité de changer d’avis si nécessaire.
 - Elles interrompent les utilisateurs. C'est pourquoi, **elles doivent être utilisés avec parcimonie.** Leur rareté permet également d'être pris au sérieux par les utilisateurs.
 - Leur ouverture est **problématique pour l'accessibilité** lorsqu'elles ne peuvent pas être anticipées par l'utilisateur et elles sont difficilement détectables par les lecteurs d'écran.
-- **Ne pas afficher plusieurs pop-ins les unes après les autres** car elles ajoutent une complexité. Les tunnels dans les pop-ins sont à proscrire.
+- Ne pas afficher plusieurs pop-ins les unes après les autres car elles ajoutent une complexité.
+- Les tunnels dans les pop-ins sont à proscrire.
 - **Les pop-ins ne sont pas appropriées pour les tâches riches** en plusieurs étapes. Cette complexité justifie une ou plusieurs pages dédiées.
 - Evitez les contenus trop importants et le scroll dans les pop-ins.
 - Ne jamais afficher de pop-ins dans certains contextes :
@@ -108,7 +111,7 @@ Les pop-ins permettrent 2 utilisations :
 ### Boutons
 
 - Privilégiez les wordings clairs et **directs**, ex : "Voulez-vous supprimer définitivement tous ces articles ?" "Supprimer" au lieu d'un simple "Oui".
- - Evitez les boutons de type " En savoir plus " ou des liens qui quittent la pop-in.
+- Evitez les boutons de type " En savoir plus " ou des liens qui quittent la pop-in.
 
 ![pop-in_mobile](Design/mobile.png)
 
