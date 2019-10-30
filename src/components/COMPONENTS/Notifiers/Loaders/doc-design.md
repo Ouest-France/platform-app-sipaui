@@ -41,7 +41,3 @@ Les loaders sont des animations en boucle qui indiquent à l’utilisateur qu'**
 
 - Un seul loader par page est suffisant.
 - Si le temps d'attente est supérieure à 5 secondes, privilégier d'autres méthodes de communication. Par exemple, un message fait patienter l'utilisateur afin qu'il ne quitte pas la page.
-
-## Autre composant
-
-- Text field loader
