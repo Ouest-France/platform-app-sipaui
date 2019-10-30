@@ -64,8 +64,3 @@ Taille de la marge externe | 20px | 30px | *30px plus fond perdu* | *10px plus f
 
 ![grid__1260](components/LAYOUT/Grids/design/grid__1260.png)
 <p class="legende margin-top-neg">Écran desktop&nbsp;: 1280px</p>
-
-### Autres composants
-- Marges
-- Points d’arrêt
-- Etc.
