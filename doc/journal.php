@@ -33,8 +33,9 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li><strong>Nouveauté&nbsp;: palette de couleurs.</strong></li>
+                                                <li><strong>Nouveauté&nbsp;: couleurs.</strong></li>
                                                 <li>Évolution&nbsp;: grille, ajout d’une classe <code>.su-filling-…</code> pour permettre d’utiliser un nombre de colonnes «&nbsp;implicite&nbsp;» inférieur à celui attendu par la grille.</li>
+                                                <li>Évolution&nbsp;: grille, possibilité de mettre les classes <code>.su-container</code> et <code>.su-row</code> au même niveau que <code>.sipaui</code>.</li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -215,10 +216,6 @@
                         <h2>Roadmap</h2>
 
                         <ul class="su-not-list">
-                            <li class="table-row">
-                                <div class="table-cell"><span class="version">3.2</span></div>
-                                <div class="table-cell">Couleurs.</div>
-                            </li>
                             <li class="table-row">
                                 <div class="table-cell"><span class="version">3.4</span></div>
                                 <div class="table-cell">Popin.</div>
