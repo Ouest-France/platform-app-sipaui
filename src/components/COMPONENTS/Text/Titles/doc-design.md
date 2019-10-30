@@ -44,7 +44,7 @@ Balise | Police | Graisse | Taille | Line-height | Couleur
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
 Niveau 1 | Oswald | Normal | 30px | 1.35 | #333333
 Niveau 2 | Oswald | Normal | 24px | 1.35 | #333333
-Niveau 3 | Oswald | Normal | 18px | 1.35 | #333333
+Niveau 3 | Oswald | Normal | 20px | 1.35 | #333333
 
 #### Desktop
 
@@ -52,7 +52,7 @@ Balise | Police | Graisse | Taille | Line-height | Couleur
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
 Niveau 1 | Oswald | Normal | 40px | 1.35 | #333333
 Niveau 2 | Oswald | Normal | 30px | 1.35 | #333333
-Niveau 3 | Oswald | Normal | 18px | 1.35 | #333333
+Niveau 3 | Oswald | Normal | 20px | 1.35 | #333333
 
 
 ### Contenu éditorial - liste d’articles
