@@ -67,10 +67,10 @@ Titre d’article | Arial | Bold | 16px | 1.35 | #333333
 
 #### Desktop
 
-Balise | Police | Graisse | Taille | Couleur
------------- | ------------- | ------------- | ------------- | -------------
-Niveau 2 | Oswald | Normal | 30px | #333333
-Titre d’article | Arial | Bold | 16px | #333333
+Balise | Police | Graisse | Taille | Line-height | Couleur
+------------ | ------------- | ------------- | ------------- | ------------- | -------------
+Niveau 2 | Oswald | Normal | 30px | 1.35 | #333333
+Titre d’article | Arial | Bold | 16px | 1.35 | #333333
 
 
 ### Contenu éditorial - article complet
