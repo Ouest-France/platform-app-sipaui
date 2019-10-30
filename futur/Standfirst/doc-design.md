@@ -1,6 +1,6 @@
 # Standfirst in a list / Chapeau dans une liste
 
-- Les chapeaux ou chapôs dans une liste permet d'**afficher le chapeau d'un article uniquement dans une liste d'articles.**
+- Le chapeau ou chapô dans une liste permet d'**afficher le chapeau d'un article uniquement dans une liste d'articles.**
 
 - C'est l'élément le plus important après le titre et la photo.
 
@@ -11,7 +11,7 @@
 
 ## Spécifications
 
-Le chapeau se positionne toujours après le titre principal de l’article : **10px sous le titre.**
+Le chapeau se positionne toujours après le titre principal de l’article : **10px sous ce titre.**
 
 - Police : Arial
 - Graisse : regular
@@ -22,5 +22,5 @@ Le chapeau se positionne toujours après le titre principal de l’article : **1
 ## Bonnes pratiques
 
 - Limitez la visibilité de ce texte à quelques lignes.
-- Il répond aux cinq questions : « Quoi ? Qui ? Où ? Quand ? Comment ? » auxquelles peut être parfois ajoutée « Pourquoi ? ».
+- Il répond aux cinq questions : « Quoi ? Qui ? Où ? Quand ? Comment ? Pourquoi ? ».
 - Le chapeau dans une liste n'est pas composé du début de l'article.
