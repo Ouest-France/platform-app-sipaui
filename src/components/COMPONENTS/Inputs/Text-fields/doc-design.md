@@ -78,12 +78,3 @@ Type | Illustration
 #### Contour du container
   - Épaisseur : 1px
   - Couleur : #B40015
-
-
-## Autres composants
-- Champs de recherche
-- “ Votre adresse email OK ”
-- Mot de passe
-- Tooltip
-- Sélecteur de date
-- Etc.
