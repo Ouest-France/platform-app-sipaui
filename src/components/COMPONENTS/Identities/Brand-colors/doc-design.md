@@ -39,7 +39,7 @@ Illustration | Hexadécimal
 Illustration | Hexadécimal
 ------------ | ------------- |
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #20407A"></span> | #20407A
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #1A3362"></span> | #1A3362
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #268BCD"></span> | #268BCD
 
 
 ### Couleurs d’un thème
