@@ -29,8 +29,8 @@ Illustration | Hexadécimal
 
 Illustration | Hexadécimal
 ------------ | ------------- |
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #268BCD"></span> | #268BCD
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #20407A"></span> | #20407A
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #268BCD"></span> | #268BCD
 
 ## Les couleurs basiques
 
