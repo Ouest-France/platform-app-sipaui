@@ -15,10 +15,21 @@ Comme le prévoit le HTML, les liens ont 4 états&nbsp;: **normal** (/ ou *link*
 </div>
 
 
+## Lien par défaut
+
+Le lien par défaut est celui affiché avec une simple balise `<a>`, hors d’un contenu rédactionnel (càd hors d’un conteneur avec la classe `su-article`).
+
+```html
+<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article SipaUI</a> Tortor Cursus.</p>
+```
+<div class="sipaui">
+		<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article SipaUI</a> Tortor Cursus.</p>
+</div>
+
 
 ## Lien article
 
-Le lien article s’intégrant dans du contenu textuel, sa police, sa taille, sa graisse sont dépendants du texte dans lequel il est inclus.
+Il s'agit du lien dans un article, s’intégrant dans du contenu textuel. Sa police, sa taille, sa graisse sont dépendants du texte dans lequel il est inclus.
 
 Ce lien est le lien à utiliser dans du contenu éditorial comme un article. On l’applique en ajoutant la classe `su-article` sur un bloc parent (par exemple&nbsp;: la balise `<article>`). On peut aussi le forcer ponctuellement (si besoin, comme l’absence d’accès à un bloc parent du `<a>`) en appliquant la classe `su-link` directement sur le lien.
 
