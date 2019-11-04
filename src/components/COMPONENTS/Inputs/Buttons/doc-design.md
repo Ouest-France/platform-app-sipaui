@@ -131,4 +131,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
  </div>
 
 
-- La couleur d'arrière-plan ne doit pas être similaire à celle du bouton afin de mettre en avant l'action. Par exemple, le fond noir est à proscrire sous un bouton rouge.
+### Arrière-plan
+
+- La couleur d'arrière-plan **ne doit pas être similaire à celle du bouton**.
+- Elle doit être particulièrement **claire** afin de mettre en avant l'action.
