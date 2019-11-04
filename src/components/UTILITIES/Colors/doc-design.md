@@ -12,6 +12,20 @@ Les couleurs permettent à l’utilisateur d’être immergé dans une ambiance.
 
 - Certaines couleurs présentent des nuances liées à leur état. Par exemple, l’état `active` d’un bouton rouge vif est rouge foncé.
 
+## Les couleurs basiques
+
+- Les variations de gris aident à **créer une hiérarchie**, une profondeur et une lisibilité claire dans les interfaces.
+
+Illustration | Hexadécimal
+------------ | ------------- |
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #FFFFFF; border: 1px solid #d4d4d4"></span> | #FFFFFF
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #EFEFEF"></span> | #EFEFEF
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #E4E3E1"></span> | #E4E3E1
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #D4D4D4"></span> | #D4D4D4
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #878787"></span> | #878787
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #666666"></span> | #666666
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #333333"></span> | #333333
+<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #000000"></span> | #000000
 
 ## Les couleurs d’identité
 
@@ -31,21 +45,6 @@ Illustration | Hexadécimal
 ------------ | ------------- |
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #20407A"></span> | #20407A
 <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #268BCD"></span> | #268BCD
-
-## Les couleurs basiques
-
-- Les variations de gris aident à **créer une hiérarchie**, une profondeur et une lisibilité claire dans les interfaces.
-
-Illustration | Hexadécimal
------------- | ------------- |
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #FFFFFF; border: 1px solid #d4d4d4"></span> | #FFFFFF
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #EFEFEF"></span> | #EFEFEF
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #E4E3E1"></span> | #E4E3E1
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #D4D4D4"></span> | #D4D4D4
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #878787"></span> | #878787
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #666666"></span> | #666666
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #333333"></span> | #333333
-<span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #000000"></span> | #000000
 
 ## Les couleurs spécifiques&nbsp;:
 
