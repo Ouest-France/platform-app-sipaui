@@ -4,6 +4,9 @@
 
 ------------------------------------------------------------------------------------------------------------------ */
 
+@import "../mixins";    // pour disponibilité dans les SCCS du thème appelés AVANT main-sipaui
+@import "../variables"; // pour disponibilité dans les SCCS du thème appelés AVANT main-sipaui
+
 // Seules les variables différentes du thème principal sont redéfinies
 
 // Import Fonts
@@ -18,23 +21,14 @@ $font-family-secondaire: $font-family-base;
 
 
 // COLORS ------------------------------------------------------------------------------------------------------------------
-// CHART
-$gris-tres-clair:       #F3F3F3;
 
-$bleu-tres-clair:       #E6F5FD;
-$bleu-clair:            #268BCD;
-$bleu-fonce:            #20407A;
-$bleu-tres-fonce:       #192F57;
-
-// DEFINITIONS
-$color-secondary-1: $bleu-tres-clair;
-$color-secondary-2: $bleu-clair;
-$color-secondary-3: $bleu-fonce;
-$color-secondary-4: $bleu-tres-fonce;
+$color-secondary-1: $vv-1;
+$color-secondary-2: $vv-2;
 
 
 // LIENS --------------------------------------------------------------------------------
-$color-link-standard: $color-secondary-3;
+$color-link-standard:       $color-secondary-1;
+$color-link-standard-hover: $color-secondary-2;
 
 
 
@@ -47,9 +41,6 @@ $color-link-standard: $color-secondary-3;
     Variables de surcharge des COMPOSANTS
 
 ------------------------------------------------------------------------------------------------------------------ */
-
-@import "../mixins";    // pour disponibilité dans les SCCS du thème appelés AVANT main-sipaui
-@import "../variables"; // pour disponibilité dans les SCCS du thème appelés AVANT main-sipaui
 
 // Le layout
 @import "../../../components/LAYOUT/Margins/variables_theme-vv";
