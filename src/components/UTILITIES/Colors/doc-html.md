@@ -16,45 +16,6 @@ Aucune
 
 ## Palette
 
-### Couleurs d’identité du thème
-
-<div class="visible-of">
-	<p>Pour Ouest-France</p>
-	<div class="palette-couleurs">
-		<div class="couleur">
-			<div class="pastille" style="background: #E2001A;"></div>
-			<p>Hexa&nbsp;: <code>#E2001A</code></p>
-			<p>RGB&nbsp;: <code>226,0,26</code></p>
-			<p>Variable&nbsp;: <code>$color-secondary-1</code></p>
-		</div>
-		<div class="couleur">
-			<div class="pastille" style="background: #B40015;"></div>
-			<p>Hexa&nbsp;: <code>#B40015</code></p>
-			<p>RGB&nbsp;: <code>180,0,21</code></p>
-			<p>Variable&nbsp;: <code>$color-secondary-2</code></p>
-		</div>
-	</div>
-</div>
-
-<div class="visible-vv">
-	<p>Pour Voiles et Voiliers</p>
-	<div class="palette-couleurs">
-		<div class="couleur">
-			<div class="pastille" style="background: #268BCD;"></div>
-			<p>Hexa&nbsp;: <code>#268BCD</code></p>
-			<p>RGB&nbsp;: <code>,139,205</code></p>
-			<p>Variable&nbsp;: <code>$color-secondary-2</code></p>
-		</div>
-		<div class="couleur">
-			<div class="pastille" style="background: #20407A;"></div>
-			<p>Hexa&nbsp;: <code>#20407A</code></p>
-			<p>RGB&nbsp;: <code>32,64,122</code></p>
-			<p>Variable&nbsp;: <code>$color-secondary-3</code></p>
-		</div>
-	</div>
-</div>
-
-
 ### Couleurs basiques
 
 <div class="palette-couleurs">
@@ -107,6 +68,48 @@ Aucune
 		<p>Variable&nbsp;: <code>$color-main-8</code></p>
 	</div>
 </div>
+
+
+
+### Couleurs d’identité du thème
+
+<div class="visible-of">
+	<p>Pour Ouest-France</p>
+	<div class="palette-couleurs">
+		<div class="couleur">
+			<div class="pastille" style="background: #E2001A;"></div>
+			<p>Hexa&nbsp;: <code>#E2001A</code></p>
+			<p>RGB&nbsp;: <code>226,0,26</code></p>
+			<p>Variable&nbsp;: <code>$color-secondary-1</code></p>
+		</div>
+		<div class="couleur">
+			<div class="pastille" style="background: #B40015;"></div>
+			<p>Hexa&nbsp;: <code>#B40015</code></p>
+			<p>RGB&nbsp;: <code>180,0,21</code></p>
+			<p>Variable&nbsp;: <code>$color-secondary-2</code></p>
+		</div>
+	</div>
+</div>
+
+<div class="visible-vv">
+	<p>Pour Voiles et Voiliers</p>
+	<div class="palette-couleurs">
+		<div class="couleur">
+			<div class="pastille" style="background: #20407A;"></div>
+			<p>Hexa&nbsp;: <code>#20407A</code></p>
+			<p>RGB&nbsp;: <code>32,64,122</code></p>
+			<p>Variable&nbsp;: <code>$color-secondary-1</code></p>
+		</div>
+		<div class="couleur">
+			<div class="pastille" style="background: #268BCD;"></div>
+			<p>Hexa&nbsp;: <code>#268BCD</code></p>
+			<p>RGB&nbsp;: <code>38,139,205</code></p>
+			<p>Variable&nbsp;: <code>$color-secondary-2</code></p>
+		</div>
+	</div>
+</div>
+
+
 
 
 ### Couleurs spécifiques
