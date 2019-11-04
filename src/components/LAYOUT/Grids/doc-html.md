@@ -270,25 +270,23 @@ Maintenant, vous pourriez avoir besoin de créer des colonnes qui ne tiennent pa
 ```html
 <div class="su-container">
 	<div class="su-row">
-		<div class="su-row">
-			<div class="su-col-md-4 su-offset-md-8">
-				<p>
-					1.<br />
-					su-col-md-4 su-offset-md-8
-				</p>
-				<p class="contenu">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-			</div>
-			<div class="su-col-md-8 su-filling-md-2">
-				<p>
-					2.<br />
-					su-col-md-8 su-filling-md-2
-				</p>
-				<p class="contenu">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
+		<div class="su-col-md-4 su-offset-md-8">
+			<p>
+				1.<br />
+				su-col-md-4 su-offset-md-8
+			</p>
+			<p class="contenu">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</div>
+		<div class="su-col-md-8 su-filling-md-2">
+			<p>
+				2.<br />
+				su-col-md-8 su-filling-md-2
+			</p>
+			<p class="contenu">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
 		</div>
 	</div>
 </div>
