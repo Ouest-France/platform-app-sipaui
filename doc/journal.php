@@ -33,6 +33,19 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
+                                                <li><strong>Nouveauté&nbsp;: popin.</strong></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">3.3.3</span></div>
+                                <div class="table-cell">
+                                    <ul>
+                                        <li>Composants&nbsp;:
+                                            <ul>
                                                 <li><strong>Nouveauté&nbsp;: couleurs thématiques (Utilities/Colors).</strong></li>
                                                 <li><strong>Nouveauté&nbsp;: couleurs de marques (Components/Identities/Brand-colors).</strong></li>
                                                 <li>Évolution&nbsp;: grille, ajout d’une classe <code>.su-filling-…</code> pour permettre d’utiliser un nombre de colonnes «&nbsp;implicite&nbsp;» inférieur à celui attendu par la grille.</li>
@@ -219,8 +232,8 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">3.4</span></div>
-                                <div class="table-cell">Popin.</div>
+                                <div class="table-cell"><span class="version">3.5</span></div>
+                                <div class="table-cell">Pagination.</div>
                             </li>
                         </ul>
                     </section>
