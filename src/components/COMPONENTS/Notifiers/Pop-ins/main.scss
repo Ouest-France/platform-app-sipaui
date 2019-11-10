@@ -1,6 +1,34 @@
 /*
-    Styles du composant selects de SipaUI
-    Utilise les variables à la fois globales et du composant
+    Styles du composant [pop-ins] de SipaUI
 */
 @import "variables";
+
+// VOILE
+.sipaui {
+    .su-veil {
+        display: block;
+        position: static;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        z-index: 100;
+        background: $background-veil;
+        opacity: 0;
+        transition: $animation-veil;
+    }
+}
+body.su-veil-ok {
+    overflow: hidden;
+
+    .su-veil {
+        opacity: $opacity-veil;
+        position: fixed;
+    }
+}
+
+//POPIN
+
 
