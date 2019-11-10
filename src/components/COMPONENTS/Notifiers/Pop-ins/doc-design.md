@@ -45,7 +45,7 @@ Les pop-ins répondent à 2 besoins&nbsp;:
 
 ### Bouton
 
-- **Un bouton primaire est fortement conseillé** afin de présenter l’action principale.
+- **Un bouton primaire est fortement conseillé** afin de présenter l’action principale. Ce bouton fermera la popin **avec validation**.
 - Un à deux boutons secondaires peuvent afficher d’autres actions.
 - Leurs spécifications sont disponibles dans son doc design, particulièrement dans "Boutons d’un même sujet".
 - Le bouton le plus haut se situe à 20px sous le contenu. Le plus bas est à 30px au-dessus du bord inférieur du container.
@@ -54,21 +54,17 @@ Les pop-ins répondent à 2 besoins&nbsp;:
 
 ### Croix
 
-- La croix est un des moyens de **fermer la pop-in**.
+- La croix est un des moyens de **fermer la pop-in sans validation**.
 - Elle est **facultative**, mais recommandée.
 - Son doc design est dans le composant Icons.
-- Sa taille est 20x20px.
+- Sa taille visuelle est 20x20px.
 - Ses couleurs sont&nbsp;:
   - Par défaut #878787
   - En hover, focus et pressed #333333.
-- La croix est au centre de la zone de tape :
+- La zone de tape&nbsp;:
   - Sa taille est 44x44px
+  - La croix est en son centre.
   - Elle se situe à 5px en haut et à droite du bord du container.
-- Par ailleurs, les pop-ins peuvent être fermées via :
-  - Les boutons « Annuler » ou « Fermer » de la pop-in.
-  - La croix de la pop-in.
-  - L'arrière-plan de la pop-in.
-  - Le bouton « Précédent » du système ou son raccourci.
 
 ### Barre de scroll
 
@@ -79,6 +75,16 @@ Les pop-ins répondent à 2 besoins&nbsp;:
 ### Autres éléments
 
 - D’autres composants peuvent être utilisés&nbsp;: links, text fields, image, etc.
+
+### Fermeture d’une pop-in
+
+Les pop-ins peuvent être fermées **sans validation** via&nbsp;:
+  - Les boutons « Annuler » ou « Fermer » de la pop-in.
+  - La croix de la pop-in.
+  - L’arrière-plan de la pop-in.
+  - Le bouton « Précédent » du système ou son raccourci.
+
+Elles peuvent aussi être fermées **par validation** en cliquant sur le bouton principal (primaire).
 
 ## Bonnes pratiques
 
