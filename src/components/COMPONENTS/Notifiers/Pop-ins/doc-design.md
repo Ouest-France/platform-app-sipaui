@@ -9,14 +9,14 @@
 
 Les pop-ins répondent à 2 besoins&nbsp;:
 - **Obtenir une petite quantité d’informations contextuelles** de l’utilisateur.
-- **Fournir une simple information** à l’utilisateur. Ce dernier doit en prendre connaissance avant de pouvoir poursuivre sa navigation.
+- **Fournir une simple information** à l’utilisateur. Ce dernier **doit** en prendre connaissance avant de pouvoir poursuivre sa navigation.
 
 ## Spécifications
 
-### Arrière-plan
+### Voile
 
-- L’arrière-plan, permet d’attirer l’attention de l’utilisateur sur la pop-in en assombrissant **le reste de l’écran qui est inaccessible**. L’accès au reste de l’interface utilisateur est désactivé jusqu’à ce que la pop-in soit fermée.
-- Un tape sur cet arrière-plan permet la fermeture de la pop-in.
+- Le voile permet d’attirer l’attention de l’utilisateur sur la pop-in en assombrissant **le reste de l’écran qui est inaccessible**. L’accès au reste de l’interface utilisateur est désactivé jusqu’à ce que la pop-in soit fermée.
+- Un tape sur ce voile permet la fermeture de la pop-in **sans validation**.
 - Il est présent sur tous les écrans.
 - Sa couleur est #000000 avec une opacité de 60%.
 
@@ -25,8 +25,8 @@ Les pop-ins répondent à 2 besoins&nbsp;:
 
 - Le conteneur **focalise l’attention de l’utilisateur**.
 - Il est centré verticalement et horizontalement dans l’écran.
-- La **hauteur** est celle du contenu + padding de 50px en haut et 30px en bas. Lorsque la croix est absente, le padding en haut du container est de 30px. La hauteur maximale du container est celle de l’arrière-plan moins 20px en haut et en bas.
-- Sur mobile, sa **largeur** est celle de la grille moins ses marges externes (cf. son doc design). Sur desktop, sa largeur est fixée à 620px et ses paddings sont de 40px.
+- La **hauteur** est celle du contenu + padding de 50px en haut et 30px en bas. Lorsque la croix est absente, le padding en haut du container est de 30px. La hauteur maximale du container est celle du voile moins 20px en haut et en bas.
+- Sur mobile, sa **largeur** est celle de la grille moins ses marges externes (cf. son doc design) et le padding est de 30px. Sur desktop, sa largeur est fixée à 620px et ses paddings sont de 40px.
 - Sa couleur est #FFFFFF.
 
 ### Titre
