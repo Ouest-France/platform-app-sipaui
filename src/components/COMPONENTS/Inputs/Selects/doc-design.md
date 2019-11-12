@@ -11,7 +11,6 @@ Les selects permettent à l’utilisateur de sélectionner une option dans une l
 
 ## États
 
-
 Type | Illustration
 ------------ | ------------- |
 **Enabled** | ![select__enabled](components/COMPONENTS/Inputs/Selects/design/select__enabled.png)
@@ -67,7 +66,7 @@ Type | Illustration
 ### Liste
 
 - La liste permet de présenter différentes options.
-- Elle s’affiche de manière native selon chaque navigateur (hauteur, selection, scroll, etc).
+- **Elle s’affiche de manière native**. La hauteur, le scroll, etc. sont définis selon chaque navigateur.
 - Chaque élément est normé :
   - La 1re lettre du texte est en majuscule, le reste est en minuscule.
   - Le contenu se limite à un seule ligne.
