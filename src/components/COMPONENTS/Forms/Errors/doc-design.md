@@ -25,7 +25,7 @@ Type | Illustration
 
 NB&nbsp;: Généralement, l’apparence visuelle du composant en erreur change.
 
-# Bonnes pratiques
+## Bonnes pratiques
 
 - Dans un formulaire, le message doit limiter la frustration de l'utilisateur afin qu'il ne quitte pas cette page.
 - Le texte doit être optimisé :
