@@ -79,7 +79,7 @@ Titre d’article | Arial | Bold | 16px | 1.35 | #333333
 
 Balise | Police | Graisse | Taille | Line-height | Couleur
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
-h1 | Arial | Bold | 22px | 1.35 | #333333
+h1 | Arial | Bold | 22px | 1.2 | #333333
 h2 | Oswald | Normal | 22px | 1.35 | #333333
 h3 | Oswald | Normal | 18px | 1.35 | #333333
 
