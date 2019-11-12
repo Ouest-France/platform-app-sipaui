@@ -34,7 +34,7 @@ Le bouton primaire de 34px de haut est utilisé dans des cas spécifiques et pri
   Enabled | Hover / Focus / Pressed | Inactif
   ------------ | ------------- | ------------- |
   ![button__primary__small__enabled](components/COMPONENTS/Inputs/Buttons/design/button__primary__small__enabled.png)|![button__primary__small__hover](components/COMPONENTS/Inputs/Buttons/design/button__primary__small__hover.png)| ![button__primary__small__disabled](components/COMPONENTS/Inputs/Buttons/design/button__primary__small__disabled.png)
-  Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : angle 3px <br> Couleur : #E2001A <br> Texte : 14px, regular, police du thème, #FFFFFF | - <br> - <br> - <br> Couleur : #B40015 <br> - | Opacité : 40 %
+  Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : angle 3px <br> Couleur : #E2001A <br> Texte : 14px, bold, police du thème, #FFFFFF | - <br> - <br> - <br> Couleur : #B40015 <br> - | Opacité : 40 %
 
 ##### Bouton primaire Abonnement
 
