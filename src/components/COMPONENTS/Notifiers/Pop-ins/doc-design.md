@@ -3,7 +3,7 @@
 - Les pop-ins sont des cadres qui surgissent sur les pages en cours de consultation.
 - Les pop-ins sont&nbsp;:
   - **«&nbsp;Modales&nbsp;»**, car le contenu de la page est désactivé jusqu’à une réponse de l’utilisateur.
-  - **«&nbsp;Lightbox&nbsp;»**, car l’arrière-plan est estompé.
+  - **«&nbsp;Lightbox&nbsp;»**, car l’arrière-plan est estompé par un voile.
 
 ## Usage
 
@@ -11,12 +11,16 @@ Les pop-ins répondent à 2 besoins&nbsp;:
 - **Obtenir une petite quantité d’informations contextuelles** de l’utilisateur.
 - **Fournir une simple information** à l’utilisateur. Ce dernier **doit** en prendre connaissance avant de pouvoir poursuivre sa navigation.
 
+Il en existe 2 types&nbsp;:
+- La pop-in **informative**. Elle ne comporte qu'un seul bouton pour que l’utilisateur valide qu'il a pris connaissance du message.
+- La pop-in **décisionnelle**.  Elle comporte au moins 2 boutons pour que l’utilisateur puisse avoir un choix.
+
 ## Spécifications
 
 ### Voile
 
 - Le voile permet d’attirer l’attention de l’utilisateur sur la pop-in en assombrissant **le reste de l’écran qui est inaccessible**. L’accès au reste de l’interface utilisateur est désactivé jusqu’à ce que la pop-in soit fermée.
-- Un tape sur ce voile permet la fermeture de la pop-in **sans validation**.
+- Un tape sur ce voile permet la fermeture de la pop-in (cf. *Fermeture*).
 - Il est présent sur tous les écrans.
 - Sa couleur est #000000 avec une opacité de 60%.
 
@@ -45,7 +49,7 @@ Les pop-ins répondent à 2 besoins&nbsp;:
 
 ### Bouton
 
-- **Un bouton primaire est fortement conseillé** afin de présenter l’action principale. Ce bouton fermera la popin **avec validation**.
+- **Un bouton primaire est fortement conseillé** afin de présenter l’action principale. Ce bouton fermera la popin (cf. *Fermeture*).
 - Un à deux boutons secondaires peuvent afficher d’autres actions.
 - Leurs spécifications sont disponibles dans son doc design, particulièrement dans "Boutons d’un même sujet".
 - Le bouton le plus haut se situe à 20px sous le contenu. Le plus bas est à 30px au-dessus du bord inférieur du container.
@@ -54,7 +58,7 @@ Les pop-ins répondent à 2 besoins&nbsp;:
 
 ### Croix
 
-- La croix est un des moyens de **fermer la pop-in sans validation**.
+- La croix est un des moyens de **fermer la pop-in** (cf. *Fermeture*).
 - Elle est **facultative**, mais recommandée.
 - Son doc design est dans le composant Icons.
 - Sa taille visuelle est 20x20px.
@@ -78,13 +82,19 @@ Les pop-ins répondent à 2 besoins&nbsp;:
 
 ### Fermeture d’une pop-in
 
-Les pop-ins peuvent être fermées **sans validation** via&nbsp;:
-  - Les boutons « Annuler » ou « Fermer » de la pop-in.
+Les **pop-in informatives** (cf. *Usage*) peuvent être fermées via&nbsp;:
+  - Le bouton primaire de la pop-in.
   - La croix de la pop-in.
-  - L’arrière-plan de la pop-in.
+  - Le voile.
   - Le bouton « Précédent » du système ou son raccourci.
 
-Elles peuvent aussi être fermées **par validation** en cliquant sur le bouton principal (primaire).
+Les **pop-in décisionnelles** (cf. *Usage*) peuvent être fermées **sans «&nbsp;validation&nbsp;»** via&nbsp;:
+  - Les boutons secondaires («&nbsp;Annuler&nbsp;», «&nbsp;Fermer&nbsp;»…) de la pop-in.
+  - La croix de la pop-in.
+  - Le voile.
+  - Le bouton « Précédent » du système ou son raccourci.
+  
+Elles sont fermées **avec «&nbsp;validation&nbsp;»** en cliquant sur le bouton primaire.
 
 ## Bonnes pratiques
 
