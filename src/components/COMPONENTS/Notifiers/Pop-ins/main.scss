@@ -29,6 +29,44 @@ body.su-veil-ok {
     }
 }
 
-//POPIN
+//POP-IN
+.sipaui {
+    .su-pop-in {
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 100%;
+        max-height: calc(100vh - #{$margin-medium} * 2);
+        max-width: calc(100vw - #{$margin-medium} * 2);
+        padding: $padding-pop-in-xs;
+        z-index: 200;
+        overflow: hidden;
+        opacity: 0;
+        background: $background-pop-in;
+        transition: $animation-pop-in;
 
+        &.su-pop-in-ok {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+}
 
+@media screen and (min-width: $min-breakpoint-sm) {
+	.sipaui {
+        .su-pop-in {
+            max-width: calc(100vw - #{$margin-large} * 2);
+        }
+    }
+}
+
+@media screen and (min-width: $min-breakpoint-md) {
+	.sipaui {
+        .su-pop-in {
+            max-width: 620px;
+            padding: $padding-pop-in-md;
+        }
+    }
+}
