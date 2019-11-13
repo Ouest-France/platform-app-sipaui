@@ -235,6 +235,10 @@
                                 <div class="table-cell"><span class="version">3.5</span></div>
                                 <div class="table-cell">Pagination.</div>
                             </li>
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">3.6</span></div>
+                                <div class="table-cell">Chapô.</div>
+                            </li>
                         </ul>
                     </section>
 
