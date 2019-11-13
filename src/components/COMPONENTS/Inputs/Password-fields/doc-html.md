@@ -18,7 +18,7 @@ Possibilité supplémentaire&nbsp;:
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **Text-fields**
+- composant **Text-fields**,
 - composant **Helpers**,
 - composant **Labels**,
 - composant **Errors**

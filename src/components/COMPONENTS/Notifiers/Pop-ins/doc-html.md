@@ -8,7 +8,8 @@ SipaUI propose un type de pop-in standard et responsif.
 <div class="dependances">
 																							
 ## Dépendances
-- classe `sipaui` sur un parent (par exemple le `<body>`)
+- classe `sipaui` sur un parent (par exemple le `<body>`),
+- composant **Veil**
 
 </div>
 
@@ -17,9 +18,9 @@ SipaUI propose un type de pop-in standard et responsif.
 
 ## Mise en place
 
-Les pop-ins doivent être déjà présentes dans le DOM (ainsi que le voile) afin qu’il n’y ait pas de latence dans leur affichage. Elles sont donc masquées par défaut (par la classe `su-hidden`) et il faudra un déclencheur pour les afficher. Ce déclencheur peut être activé par l’utilisateur (lien, bouton) ou par la page elle-même (réception d’un évènement serveur, minuteur…).
+Les pop-ins doivent être déjà présentes dans le DOM (comme le voile) afin qu’il n’y ait pas de latence dans leur affichage. Elles sont donc masquées par défaut et il faudra un déclencheur pour les afficher. Ce déclencheur peut être activé par l’utilisateur (lien, bouton) ou par la page elle-même (réception d’un évènement serveur, minuteur…).
 
-Afin de simplifier la gestion de la superposition des éléments sur la page, il est préférable que le voile et toutes les pop-ins soient au premier niveau après le `<body>`.
+Afin de simplifier la gestion de la superposition des éléments sur la page, il est préférable que les pop-ins soient au premier niveau après le `<body>` (encore comme le voile).
 
 Si plusieurs éléments (pop-ins ou autre) nécessitent un voile, un seul voile est utile dans le DOM. Il faudra juste lui associer tous les cas de fermeture.
 
@@ -63,7 +64,7 @@ Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus portt
 
 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus.
 	</div>
-	<p><a href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-ok","force":1}, {"sel":".pop-in-1","klass":"su-pop-in-ok","force":1}]'>Cliquez-moi</a> pour afficher la pop-in</p>
+	<p><a href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-ok","force":1}, {"sel":".pop-in-1","klass":"su-pop-in-ok","force":1}]'>Cliquez-moi</a> pour afficher la pop-in.</p>
 </div>
 
 
@@ -71,9 +72,12 @@ Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ull
 <div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
-- `su-veil`
-- `su-veil-ok`
 - `su-pop-in`
 - `su-pop-in-ok`
+
+### Classes annexes
+- `su-veil` (dépendant du composant *Veil*)
+- `su-veil-ok` (dépendant du composant *Veil*)
+
 
 </div>
