@@ -9,18 +9,13 @@
 
 Les pop-ins répondent à 2 besoins&nbsp;:
 - **Obtenir une petite quantité d’informations contextuelles** de l’utilisateur.
-- **Fournir une simple information** à l’utilisateur. Ce dernier **doit** en prendre connaissance avant de pouvoir poursuivre sa navigation.
-
-Il en existe 2 types&nbsp;:
-- La pop-in **informative**. Elle ne comporte qu’un seul bouton pour que l’utilisateur valide qu’il a pris connaissance du message.
-- La pop-in **décisionnelle**.  Elle comporte au moins 2 boutons pour que l’utilisateur puisse avoir un choix.
+- **Fournir une simple information** à l’utilisateur. Ce dernier **doit en prendre connaissance** avant de pouvoir poursuivre sa navigation.
 
 ## Spécifications
 
 ### Voile
 
 La pop-in nécessite l’utilisation d’un voile en arrière-plan. Cf. le [doc design du composant Veil](/storybook/?path=/story/components-notifiers-veil--design).
-
 
 ### Conteneur
 
@@ -77,21 +72,21 @@ La pop-in nécessite l’utilisation d’un voile en arrière-plan. Cf. le [doc 
 
 - D’autres composants peuvent être utilisés&nbsp;: links, text fields, image, etc.
 
-### Fermeture d’une pop-in
+### Fermeture
 
-Les **pop-in informatives** (cf. *Usage*) peuvent être fermées via&nbsp;:
+Les pop-ins sont fermées **avec «&nbsp;validation&nbsp;»** en cliquant sur le bouton primaire.
+
+Les **pop-in informatives** (une seul bouton) peuvent être fermées via&nbsp;:
   - Le bouton primaire de la pop-in.
   - La croix de la pop-in.
   - Le voile.
   - Le bouton « Précédent » du système ou son raccourci.
 
-Les **pop-in décisionnelles** (cf. *Usage*) peuvent être fermées **sans «&nbsp;validation&nbsp;»** via&nbsp;:
+Les **pop-in décisionnelles** (au-moins 2 boutons) peuvent être fermées **sans «&nbsp;validation&nbsp;»** via&nbsp;:
   - Les boutons secondaires («&nbsp;Annuler&nbsp;», «&nbsp;Fermer&nbsp;»…) de la pop-in.
   - La croix de la pop-in.
   - Le voile.
   - Le bouton « Précédent » du système ou son raccourci.
-  
-Elles sont fermées **avec «&nbsp;validation&nbsp;»** en cliquant sur le bouton primaire.
 
 ## Bonnes pratiques
 
