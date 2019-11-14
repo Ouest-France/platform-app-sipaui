@@ -18,4 +18,4 @@ Il permet d’attirer l’attention de l’utilisateur sur le composant associé
 
 - Le voile apparaît et disparaît en même temps que le composant qu’il accompagne.
 - Tant que le voile est visible, **le reste de l’écran est inaccessible**.
-- Un clic / tape sur lui provoque sa fermeture.
+- Un tape / clic sur lui provoque sa fermeture.
