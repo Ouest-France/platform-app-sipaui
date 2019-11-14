@@ -76,14 +76,14 @@ La pop-in nécessite l’utilisation d’un voile en arrière-plan. Cf. le [doc 
 
 Les pop-ins sont fermées **avec «&nbsp;validation&nbsp;»** en cliquant sur le bouton primaire.
 
-Les **pop-in informatives** (une seul bouton) peuvent être fermées via&nbsp;:
+Les **pop-ins informatives** (une seul bouton) peuvent aussi être fermées via&nbsp;:
   - Le bouton primaire de la pop-in.
   - La croix de la pop-in.
   - Le voile.
   - Le bouton « Précédent » du système ou son raccourci.
 
-Les **pop-in décisionnelles** (au-moins 2 boutons) peuvent être fermées **sans «&nbsp;validation&nbsp;»** via&nbsp;:
-  - Les boutons secondaires («&nbsp;Annuler&nbsp;», «&nbsp;Fermer&nbsp;»…) de la pop-in.
+Les **pop-ins décisionnelles** (au-moins 2 boutons) peuvent être fermées **sans «&nbsp;validation&nbsp;»** via&nbsp;:
+  - Les boutons secondaires d’annulation («&nbsp;Annuler&nbsp;», «&nbsp;Fermer&nbsp;»…) de la pop-in.
   - La croix de la pop-in.
   - Le voile.
   - Le bouton « Précédent » du système ou son raccourci.
