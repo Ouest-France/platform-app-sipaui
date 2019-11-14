@@ -7,15 +7,15 @@ Les champs de texte permettent à l'utilisateur de saisir et de modifier du text
 Etat |Enabled | With placeholder | With default value | Focus | Error | Disabled | With action
 ------------ | ------------- |------------ | ------------- |------------ | ------------- | ------------- |---------- |
 Illustration | ![textfield__default](components/COMPONENTS/Inputs/Text-fields/design/textfield__default.png) | ![textfield__with-placeholder](components/COMPONENTS/Inputs/Text-fields/design/textfield__with-placeholder.png) | ![textfield__with-default-value](components/COMPONENTS/Inputs/Text-fields/design/textfield__with-default-value.png) | ![textfield__focus](components/COMPONENTS/Inputs/Text-fields/design/textfield__focus.png) | ![textfield__error](components/COMPONENTS/Inputs/Text-fields/design/textfield__error.png) | ![textfield__disabled](components/COMPONENTS/Inputs/Text-fields/design/textfield__disabled.png) | ![textfield__with-icon-right](components/COMPONENTS/Inputs/Text-fields/design/textfield__with-icon-right.png)
-Container | Hauteur : 44px <br> Largeur : celle son parent moins le padding de celui-ci, 140px minimum <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, #D4D4D4 | - <br> - <br> - <br> - <br> | - <br> - <br> - <br> - <br> |  - <br> - <br> Fond : #FFFFFF <br> Contour : épaisseur 1px, #333333 | - <br> - <br> - <br> Contour : épaisseur 1px, #B40015 | Opacité : 40 %
-Texte |   | Padding gauche et à droite : 10px du container (11px avec le filet) <br> Taille de caractère : 16px <br> Graisse de caractère : regular <br> Police du thème | Padding gauche et à droite : 15px du container <br> Taille : 16px <br> Graisse : regular <br> Police du thème <br> Couleur : #333333 |  |  |  Opacité : 40 %
+Container | Hauteur : 44px <br> Largeur : celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, #D4D4D4 | - <br> - <br> - <br> - <br> | - <br> - <br> - <br> - <br> |  - <br> - <br> Fond : #FFFFFF <br> Contour : épaisseur 1px, #333333 | - <br> - <br> - <br> Contour : épaisseur 1px, #B40015 | Opacité : 40 %  | Hauteur : 44px <br> Largeur : celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, #D4D4D4
+Texte |   | Padding à gauche et à droite : 10px du container (11px avec le contour) <br> Taille de caractère : 16px <br> Graisse de caractère : regular <br> Police du thème <br> Couleur : #878787 | - <br> - <br> - <br> - <br> Couleur : #333333 |  | Padding à gauche et à droite : 10px du container (11px avec le contour) <br> Taille de caractère : 16px <br> Graisse de caractère : regular <br> Police du thème <br> Couleur : #333333 |  Opacité : 40 %  | Padding à gauche : 10px du container (11px avec le contour) <br> Taille de caractère : 16px <br> Graisse de caractère : regular <br> Police du thème <br> Couleur : #878787
 Icône  |  |  |  |  |  |  | Taille maximale : 34x34px <br> Zone de tap : 44x44px <br> Couleur enabled : #878787, hover, focus et pressed : #333333
 
 ## Spécifications
 
 #### Label
 - Le composant "Label" indique le type d’information demandée sous celui-ci.
-- Il facultatif mais indispensable dans la plupart des usages.
+- Il obligatoire sauf dans certains cas très particiliers.
 - Ses spécifications sont disponibles dans son doc design.
 
 #### Container
