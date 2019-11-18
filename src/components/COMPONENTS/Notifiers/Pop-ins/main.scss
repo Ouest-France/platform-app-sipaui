@@ -20,9 +20,14 @@
         background: $background-pop-in;
         transition: $animation-pop-in;
 
-        &.su-pop-in-ok {
+        &.su-pop-in-in {
             opacity: 1;
             transform: translate(-50%, -50%) scale(1);
+        }
+        &.su-pop-in-out {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0);
+            transition: $animation-pop-out;
         }
     }
 }

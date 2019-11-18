@@ -22,7 +22,7 @@ Les pop-ins doivent être déjà présentes dans le DOM (comme le voile) afin qu
 
 Afin de simplifier la gestion de la superposition des éléments sur la page, il est préférable que les pop-ins soient au premier niveau après le `<body>` (encore comme le voile).
 
-Si plusieurs éléments (pop-ins ou autre) nécessitent un voile, un seul voile est utile dans le DOM. Il faudra juste lui associer tous les cas de fermeture.
+Si plusieurs éléments (pop-ins ou autres) nécessitent un voile, un seul voile est utile dans le DOM. Il faudra juste lui associer tous les cas de fermeture.
 
 Exemple d'arborescence de code pour 2 pop-ins incluses dans le DOM&nbsp;:
 
@@ -39,9 +39,18 @@ Exemple d'arborescence de code pour 2 pop-ins incluses dans le DOM&nbsp;:
 
 ## Exemple concret
 
-### CSS
+### Apparence
 
-### JS
+Pour créer une pop-in, il faut un `<div>`  avec la classe `.su-pop-in` pour cette votre pop-in. Elle sera invisible par défaut. En fonction de vos besoins, vous placerez dans cettte pop-in une croix de fermeture, du contenu (pouvant inclure un titre) et un&nbsp;/ des boutons de validation.
+
+### Déclenchement
+
+<!-- Pour déclencher l’apparition du voile, il faut utiliser ce code&nbsp;: `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}]'` sur le déclencheur. Il positionnera la classe `su-veil-in`sur le voile.-->
+
+### Fermeture
+<!-- Pour fermer le voile au tape&nbsp;/ clic sur celui-ci, il faut mettre `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}]'` sur le `<div>` du voile.-->
+
+### Code
 
 
 ```html
@@ -49,7 +58,7 @@ Exemple d'arborescence de code pour 2 pop-ins incluses dans le DOM&nbsp;:
 ```
 
 <div class="sipaui">
-	<div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-ok","force":0}, {"sel":".pop-in-1","klass":"su-pop-in-ok","force":0}]'></div>
+	<div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":".pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":".pop-in-1","klass":"su-pop-in-out","force":1}]'></div>
 	<div class="su-pop-in pop-in-1">
 		pop-in
 		Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
@@ -64,7 +73,7 @@ Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus portt
 
 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus.
 	</div>
-	<p><a href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-ok","force":1}, {"sel":".pop-in-1","klass":"su-pop-in-ok","force":1}]'>Cliquez-moi</a> pour afficher la pop-in.</p>
+	<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}, {"sel":".pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":".pop-in-1","klass":"su-pop-in-out","force":0}]'>Afficher la pop-in</a>
 </div>
 
 
@@ -73,11 +82,11 @@ Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ull
 
 ## Liste des classes disponibles
 - `su-pop-in`
-- `su-pop-in-ok`
+- `su-pop-in-in`
 
 ### Classes annexes
 - `su-veil` (dépendant du composant *Veil*)
-- `su-veil-ok` (dépendant du composant *Veil*)
+- `su-veil-in` (dépendant du composant *Veil*)
 
 
 </div>
