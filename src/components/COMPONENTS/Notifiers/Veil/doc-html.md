@@ -21,7 +21,7 @@ Le voile doit être déjà présent dans le DOM afin qu’il n’y ait pas de la
 
 Pour simplifier la gestion de la superposition des éléments sur la page, il est préférable que le voile soit au premier niveau après le `<body>`.
 
-Si plusieurs éléments (pop-ins ou autre) nécessitent un voile, un seul voile est utile dans le DOM. Il faudra juste lui associer tous les cas de fermeture.
+Si plusieurs éléments (pop-ins ou autres) nécessitent un voile, un seul voile est utile dans le DOM. Il faudra juste lui associer tous les cas de fermeture.
 
 Exemple d'arborescence de code pour le voile accompagnant 2 pop-ins &nbsp;:
 
@@ -55,13 +55,13 @@ Pour fermer le voile au tape&nbsp;/ clic sur celui-ci, il faut mettre `data-suto
 ```html
 <body class="sipaui">
 	<div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}]'></div>
-	<p><a href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}]'>Cliquez-moi</a> pour afficher le voile.</p>
+	<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}]'>Afficher le voile</a>
 </body>
 ```
 
 <div class="sipaui">
 	<div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}]'></div>
-	<p><a href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}]'>Cliquez-moi</a> pour afficher le voile.</p>
+	<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}]'>Afficher le voile</a>
 </div>
 
 
