@@ -51,6 +51,7 @@
                                                 <li>Évolution&nbsp;: grille, ajout d’une classe <code>.su-filling-…</code> pour permettre d’utiliser un nombre de colonnes «&nbsp;implicite&nbsp;» inférieur à celui attendu par la grille.</li>
                                                 <li>Évolution&nbsp;: grille, possibilité de mettre les classes <code>.su-container</code> et <code>.su-row</code> au même niveau que <code>.sipaui</code>.</li>
                                                 <li>Évolution&nbsp;: marges, ajout d’une nouvelle taille de marge à 50&nbsp;px.</li>
+                                                <li>Évolution&nbsp;: liens éditoriaux OF passent en rouge.</li>
                                             </ul>
                                         </li>
                                     </ul>
