@@ -29,8 +29,12 @@
             transform: translate(-50%, -50%) scale(0);
             transition: $animation-pop-out;
         }
+        p {
+            margin-bottom: $margin-small;
+        }
         .su-buttons-area {
             margin-top: $margin-medium;
+            @include display-flex();
         }
     }
 }
@@ -39,6 +43,18 @@
 	.sipaui {
         .su-pop-in {
             max-width: calc(100vw - #{$margin-large} * 2);
+
+            .su-buttons-area {
+                @include flex-direction(column);
+                @include align-items(stretch);
+            }
+            .su-primary {
+                @include order(1);
+            }
+            .su-secondary {
+                @include order(2);
+                margin-top: $margin-medium;
+            }
         }
     }
 }
@@ -51,7 +67,10 @@
             padding-right: $margin-xlarge;
 
             .su-buttons-area {
-                text-align: right;
+                @include justify-content(flex-end, end)
+            }
+            .su-secondary {
+                margin-right: $margin-medium;
             }
         }
     }
