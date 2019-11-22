@@ -10,6 +10,7 @@ SipaUI propose un type de pop-in standard et responsif.
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
 - composant **Veil**
+- composant **Helpers**
 
 </div>
 
@@ -37,44 +38,52 @@ Exemple d'arborescence de code pour 2 pop-ins incluses dans le DOM&nbsp;:
 </div>```
 
 
-## Exemple concret
+## Popin simple
 
 ### Apparence
 
-Pour créer une pop-in, il faut un `<div>`  avec la classe `.su-pop-in` pour cette votre pop-in. Elle sera invisible par défaut. En fonction de vos besoins, vous placerez dans cettte pop-in une croix de fermeture, du contenu (pouvant inclure un titre) et un&nbsp;/ des boutons de validation.
+Pour créer une pop-in, il faut un `<div>`  avec la classe `.su-pop-in`. Elle sera invisible par défaut.
+
+Une popin simple ne donne qu'un court message avec validation de lecture. Elle ne comportera donc qu'un seul bouton.
 
 ### Déclenchement
 
-<!-- Pour déclencher l’apparition du voile, il faut utiliser ce code&nbsp;: `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}]'` sur le déclencheur. Il positionnera la classe `su-veil-in`sur le voile.-->
+Pour déclencher l’apparition de la pop-in (ainsi que du voile), il faut utiliser ce code&nbsp;: `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":0]'` sur le déclencheur. Pour la pop-in il ajoutera la classe `su-pop-in-in` et enlèvera la classe `su-pop-in-out` si elle est déjà là. L’attribut `"#pop-in-1"` du sélecteur `"sel"` est l'ID spécifique de votre popin.
 
 ### Fermeture
-<!-- Pour fermer le voile au tape&nbsp;/ clic sur celui-ci, il faut mettre `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}]'` sur le `<div>` du voile.-->
+Pour fermer la pop-in (et le voile) il faut utiliser `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]` sur le bouton primaire, ainsi que sur le `<div>` du voile.
 
 ### Code
 
 
 ```html
-
+<!-- Voile -->
+<div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'></div>
+<!-- Pop-in -->
+<div class="su-pop-in pop-in-1">
+	<p>Message d’information. Vestibulum id ligula porta felis euismod semper.</p>
+	<div class="su-buttons-area">
+		<a class="su-button su-primary su-fullwidth-mobile" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'>OK</a>
+	</div>
+</div>
+<!-- Déclencheur -->
+<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":0}]'>Afficher la pop-in</a>
 ```
 
 <div class="sipaui">
-	<div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":".pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":".pop-in-1","klass":"su-pop-in-out","force":1}]'></div>
-	<div class="su-pop-in pop-in-1">
-		pop-in
-		Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-
-Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus.
-
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-
-Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod.
-
-Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-
-Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus.
+	<div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'></div>
+	<div id="pop-in-1" class="su-pop-in">
+		<p>Message d’information. Vestibulum id ligula porta felis euismod semper.</p>
+		<div class="su-buttons-area">
+			<a class="su-button su-primary su-fullwidth-mobile" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'>OK</a>
+		</div>
 	</div>
-	<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}, {"sel":".pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":".pop-in-1","klass":"su-pop-in-out","force":0}]'>Afficher la pop-in</a>
+	<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":0}]'>Afficher la pop-in</a>
 </div>
+
+## Popin avec titre et 2 choix
+
+## Popin avec titre, 2 choix et scroll
 
 
 
