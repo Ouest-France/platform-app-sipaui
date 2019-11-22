@@ -34,6 +34,7 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li><strong>Nouveauté&nbsp;: popin.</strong></li>
+                                                <li>Évolution&nbsp;: liens éditoriaux OF passent en rouge.</li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -41,7 +42,7 @@
                             </li>
 
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">3.3.4</span></div>
+                                <div class="table-cell"><span class="version">3.3.3</span></div>
                                 <div class="table-cell">
                                     <ul>
                                         <li>Composants&nbsp;:
@@ -51,7 +52,6 @@
                                                 <li>Évolution&nbsp;: grille, ajout d’une classe <code>.su-filling-…</code> pour permettre d’utiliser un nombre de colonnes «&nbsp;implicite&nbsp;» inférieur à celui attendu par la grille.</li>
                                                 <li>Évolution&nbsp;: grille, possibilité de mettre les classes <code>.su-container</code> et <code>.su-row</code> au même niveau que <code>.sipaui</code>.</li>
                                                 <li>Évolution&nbsp;: marges, ajout d’une nouvelle taille de marge à 50&nbsp;px.</li>
-                                                <li>Évolution&nbsp;: liens éditoriaux OF passent en rouge.</li>
                                             </ul>
                                         </li>
                                     </ul>
