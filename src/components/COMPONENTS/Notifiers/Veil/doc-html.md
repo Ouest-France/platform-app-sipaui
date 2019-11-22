@@ -69,6 +69,6 @@ Pour fermer le voile au tape&nbsp;/ clic sur celui-ci, il faut mettre `data-suto
 
 ## Liste des classes disponibles
 - `su-veil`
-- `su-veil-in`
+- `su-veil-in` (posée automatiquement par le JS)
 
 </div>
