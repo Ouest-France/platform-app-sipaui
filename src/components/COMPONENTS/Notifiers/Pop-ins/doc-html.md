@@ -47,6 +47,8 @@ Pour créer une pop-in, il faut un `<div>`  avec la classe `.su-pop-in`. Elle se
 
 Une popin simple ne donne qu'un court message avec validation de lecture. Elle ne comportera donc qu'un seul bouton.
 
+2 zones sont spécifiées à l’intérieur de la pop-in&nbsp;: `su-content-area` pour le message et `su-buttons-area` pour les boutons.
+
 ### Déclenchement
 
 Pour déclencher l’apparition de la pop-in (ainsi que du voile), il faut utiliser ce code&nbsp;: `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":0]'` sur le déclencheur. Pour la pop-in il ajoutera la classe `su-pop-in-in` et enlèvera la classe `su-pop-in-out` si elle est déjà là. L’attribut `"#pop-in-1"` du sélecteur `"sel"` est l'ID spécifique de votre popin.
@@ -62,7 +64,9 @@ Pour fermer la pop-in (et le voile) il faut utiliser `data-sutoggleclass='[{"sel
 <div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'></div>
 <!-- Pop-in -->
 <div class="su-pop-in pop-in-1">
-	<p>Message d’information. Vestibulum id ligula porta felis euismod semper.</p>
+	<div class="su-content-area">
+		<p>Message d’information. Vestibulum id ligula porta felis euismod semper.</p>
+	</div>
 	<div class="su-buttons-area">
 		<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'>Valider</a>
 	</div>
@@ -72,9 +76,11 @@ Pour fermer la pop-in (et le voile) il faut utiliser `data-sutoggleclass='[{"sel
 ```
 
 <div class="sipaui">
-	<div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'></div>
+	<div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'></div>
 	<div id="pop-in-1" class="su-pop-in">
-		<p>Message d’information. Vestibulum id ligula porta felis euismod semper.</p>
+		<div class="su-content-area">
+			<p>Message d’information. Vestibulum id ligula porta felis euismod semper.</p>
+		</div>
 		<div class="su-buttons-area">
 			<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'>Valider</a>
 		</div>
@@ -85,15 +91,19 @@ Pour fermer la pop-in (et le voile) il faut utiliser `data-sutoggleclass='[{"sel
 
 ## Popin avec titre et 2 choix
 
-Pour cette pop-in, en plus de la pop-in simple, on utilise la classe `su-h2` pour le titre et on ajoute un (ou des…) bouton `su-seconday` **avant** le bouton `su-primary`.
+Pour cette pop-in, en plus de la pop-in simple, on utilise la classe `su-h2` pour le titre et on ajoute un (ou des…) bouton `su-secondary` **avant** le bouton `su-primary`. Attention, il est préférable de mettre le titre **au-dessus** de la zone `su-content-area` afin que le scroll ne l’impacte pas.
+
+### Code
 
 ```html
 <!-- Voile -->
 <div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'></div>
 <!-- Pop-in -->
 <div id="pop-in-2" class="su-pop-in">
-	<p class="su-h2">Message de validation.</p>
-	<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+	<p class="su-h2">Pop-in avec 2 possibilités</p>
+	<div class="su-content-area">
+		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+	</div>
 	<div class="su-buttons-area">
 		<a class="su-button su-secondary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'>Annuler</a>
 		<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'>Valider</a>
@@ -106,8 +116,10 @@ Pour cette pop-in, en plus de la pop-in simple, on utilise la classe `su-h2` pou
 <div class="sipaui">
 	<!-- Utilisation du voile de la première pop-in -->
 	<div id="pop-in-2" class="su-pop-in">
-		<p class="su-h2">Message de validation.</p>
-		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+		<p class="su-h2">Pop-in avec 2 possibilités</p>
+		<div class="su-content-area">
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+		</div>
 		<div class="su-buttons-area">
 			<a class="su-button su-secondary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'>Annuler</a>
 			<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'>Valider</a>
@@ -119,17 +131,81 @@ Pour cette pop-in, en plus de la pop-in simple, on utilise la classe `su-h2` pou
 
 ## Popin avec titre, 2 choix, croix de fermeture et scroll
 
+Le scroll est géré automatiquement par `su-content-area`. Toutefois, comme dit plus haut, il est préférable que le titre ne soit pas contenu dans cette zone, afin qu'il soit toujours visible.
+
+### Code
+
+```html
+<!-- Voile -->
+<div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'></div>
+<!-- Pop-in -->
+<div id="pop-in-3" class="su-pop-in">
+	<p class="su-h2">Pop-in avec 2 possibilités, croix et long message</p>
+	<div class="su-content-area">
+		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+		<p>Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+		<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+		<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.</p>
+		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+		<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.</p>
+		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+		<p>Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+		<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+		<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.</p>
+		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+		<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.</p>
+	</div>
+	<div class="su-buttons-area">
+		<a class="su-button su-secondary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>Annuler</a>
+		<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>Valider</a>
+	</div>
+</div>
+<!-- Déclencheur -->
+<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":0}]'>Afficher la pop-in</a>
+```
+
+<div class="sipaui">
+	<!-- Utilisation du voile de la première pop-in -->
+	<div id="pop-in-3" class="su-pop-in">
+		<p class="su-h2">Pop-in avec 2 possibilités, croix et long message</p>
+		<div class="su-content-area">
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+			<p>Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+			<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+			<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.</p>
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+			<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.</p>
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+			<p>Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+			<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+			<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.</p>
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+			<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.</p>
+		</div>
+		<div class="su-buttons-area">
+			<a class="su-button su-secondary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>Annuler</a>
+			<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>Valider</a>
+		</div>
+	</div>
+	<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":0}]'>Afficher la pop-in</a>
+</div>
 
 
 <div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
 - `su-pop-in`
-- `su-pop-in-in`
+- `su-pop-in-in` (posée automatiquement par le JS)
+- `su-pop-in-out` (posée automatiquement par le JS)
+- `su-content-area`
+- `su-buttons-area`
 
 ### Classes annexes
 - `su-veil` (dépendant du composant *Veil*)
 - `su-veil-in` (dépendant du composant *Veil*)
-
+- `su-h2` (dépendant du composant *Titles*)
+- `su-button` (dépendant du composant *Buttons*)
+- `su-primary` (dépendant du composant *Buttons*)
+- `su-secondary` (dépendant du composant *Buttons*)
 
 </div>

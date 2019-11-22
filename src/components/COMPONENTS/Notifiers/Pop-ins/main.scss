@@ -5,7 +5,8 @@
 
 .sipaui {
     .su-pop-in {
-        display: block;
+        @include display-flex();
+        @include flex-direction(column);
         position: fixed;
         top: 50%;
         left: 50%;
@@ -38,6 +39,8 @@
         .su-buttons-area {
             margin-top: $margin-medium;
             @include display-flex();
+            @include flex(1 0);
+            overflow: hidden;
         }
     }
 }
