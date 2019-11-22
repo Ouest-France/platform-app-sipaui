@@ -29,6 +29,9 @@
             transform: translate(-50%, -50%) scale(0);
             transition: $animation-pop-out;
         }
+        .su-content-area {
+            overflow-y: auto;
+        }
         p {
             margin-bottom: $margin-small;
         }
@@ -43,7 +46,12 @@
 	.sipaui {
         .su-pop-in {
             max-width: calc(100vw - #{$margin-large} * 2);
-
+        }
+    }
+}
+@media screen and (max-width: $max-breakpoint-sm) {
+	.sipaui {
+        .su-pop-in {
             .su-buttons-area {
                 @include flex-direction(column);
                 @include align-items(stretch);
