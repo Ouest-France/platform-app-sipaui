@@ -54,7 +54,7 @@ Une popin simple ne donne qu'un court message avec validation de lecture. Elle n
 Pour déclencher l’apparition de la pop-in (ainsi que du voile), il faut utiliser ce code&nbsp;: `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":0]'` sur le déclencheur. Pour la pop-in il ajoutera la classe `su-pop-in-in` et enlèvera la classe `su-pop-in-out` si elle est déjà là. L’attribut `"#pop-in-1"` du sélecteur `"sel"` est l'ID spécifique de votre popin.
 
 ### Fermeture
-Pour fermer la pop-in (et le voile) il faut utiliser `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]` sur le bouton primaire, ainsi que sur le `<div>` du voile.
+Pour fermer la pop-in (et le voile) il faut utiliser `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]` sur le bouton primaire, ainsi que sur le `<div>` du voile. Bien sûr, si le fait de valider la pop-in en activant le bouton primaire entraîne un changement&nbsp;/ rechargement de page, ce déclencheur de fermeture de pop-in est inutile.
 
 ### Code
 
@@ -92,6 +92,8 @@ Pour fermer la pop-in (et le voile) il faut utiliser `data-sutoggleclass='[{"sel
 ## Popin avec titre et 2 choix
 
 Pour cette pop-in, en plus de la pop-in simple, on utilise la classe `su-h2` pour le titre et on ajoute un (ou des…) bouton `su-secondary` **avant** le bouton `su-primary`. Attention, il est préférable de mettre le titre **au-dessus** de la zone `su-content-area` afin que le scroll ne l’impacte pas.
+
+Ne pas oublier de mettre le déclancheur de fermeture si besoin, sur le(s) bouton(s) secondaire(s).
 
 ### Code
 
@@ -133,6 +135,8 @@ Pour cette pop-in, en plus de la pop-in simple, on utilise la classe `su-h2` pou
 
 Le scroll est géré automatiquement par `su-content-area`. Toutefois, comme dit plus haut, il est préférable que le titre ne soit pas contenu dans cette zone, afin qu'il soit toujours visible.
 
+Pour positionner la croix de fermeture, rajouter la `div.su-close-area` juste au premier niveau sous `su-pop-in` (au-dessus du contenu ou du titre s'il y en a un). Cette `div` doit contenir le bouton de fermeture `su-close` contenant lui-même l’icône `su-icon` «&nbsp;fermer&nbsp;». Ne pas oublier, là non-plus, de mettre le déclencheur de fermeture sur le bouton.
+
 ### Code
 
 ```html
@@ -140,6 +144,13 @@ Le scroll est géré automatiquement par `su-content-area`. Toutefois, comme dit
 <div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'></div>
 <!-- Pop-in -->
 <div id="pop-in-3" class="su-pop-in">
+	<div class="su-close-area">
+		<div class="su-close" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>
+			<i class="su-icon">
+			    fermer
+			</i>
+		</div>
+	</div>
 	<p class="su-h2">Pop-in avec 2 possibilités, croix et long message</p>
 	<div class="su-content-area">
 		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
@@ -167,6 +178,13 @@ Le scroll est géré automatiquement par `su-content-area`. Toutefois, comme dit
 <div class="sipaui">
 	<!-- Utilisation du voile de la première pop-in -->
 	<div id="pop-in-3" class="su-pop-in">
+		<div class="su-close-area">
+			<div class="su-close" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>
+				<i class="su-icon">
+				    fermer
+				</i>
+			</div>
+		</div>
 		<p class="su-h2">Pop-in avec 2 possibilités, croix et long message</p>
 		<div class="su-content-area">
 			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
@@ -199,6 +217,8 @@ Le scroll est géré automatiquement par `su-content-area`. Toutefois, comme dit
 - `su-pop-in-out` (posée automatiquement par le JS)
 - `su-content-area`
 - `su-buttons-area`
+- `su-close-area`
+- `su-close`
 
 ### Classes annexes
 - `su-veil` (dépendant du composant *Veil*)
@@ -207,5 +227,6 @@ Le scroll est géré automatiquement par `su-content-area`. Toutefois, comme dit
 - `su-button` (dépendant du composant *Buttons*)
 - `su-primary` (dépendant du composant *Buttons*)
 - `su-secondary` (dépendant du composant *Buttons*)
+- `su-icon`  (dépendant du composant *Icons*)
 
 </div>
