@@ -33,7 +33,8 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li><strong>Nouveauté&nbsp;: popin.</strong></li>
+                                                <li><strong>Nouveauté&nbsp;: voile.</strong></li>
+                                                <li><strong>Nouveauté&nbsp;: pop-ins.</strong></li>
                                                 <li>Évolution&nbsp;: liens éditoriaux OF passent en rouge.</li>
                                             </ul>
                                         </li>
