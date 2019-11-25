@@ -93,7 +93,7 @@ Les **pop-ins décisionnelles** (au-moins 2 boutons) peuvent être fermées **sa
 ### Usage
 
 - Les pop-ins sont vivement conseillées pour confirmer définitivement un choix avant un engagement, de sorte que l’utilisateur ait la possibilité de changer d’avis si nécessaire.
-- Elles interrompent les utilisateurs. C’est pourquoi **elles doivent être utilisées avec parcimonie.** Leur rareté permet également d’être pris au sérieux par les utilisateurs.
+- Elles interrompent les utilisateurs. C’est pourquoi, **elles doivent être utilisées avec parcimonie.** Leur rareté permet également d’être pris au sérieux par les utilisateurs.
 - Leur ouverture est **problématique pour l’accessibilité** lorsqu’elles ne peuvent pas être anticipées par l’utilisateur et elles sont difficilement détectables par les lecteurs d’écran.
 - Ne pas afficher plusieurs pop-ins les unes après les autres, car elles ajoutent une complexité.
 - Les tunnels dans les pop-ins sont à proscrire.
