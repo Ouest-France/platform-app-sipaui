@@ -58,6 +58,9 @@
         p {
             margin-bottom: $margin-small;
         }
+        p:last-child {
+            margin-bottom: 0;
+        }
         .su-buttons-area {
             margin-top: $margin-medium;
             @include display-flex();
