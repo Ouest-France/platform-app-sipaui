@@ -35,8 +35,8 @@
                                             <ul>
                                                 <li><strong>Nouveauté&nbsp;: voile (Utilities/Veil).</strong></li>
                                                 <li><strong>Nouveauté&nbsp;: pop-ins (Components/Notifiers/Pop-ins).</strong></li>
-                                                <li>Évolution&nbsp;: liens éditoriaux OF passent en rouge.</li>
-                                                <li>Évolution&nbsp;: titres H3 non-éditoriaux passent de 18 à 20px.</li>
+                                                <li>Évolution&nbsp;: liens&nbsp;/ Thème OF -> liens éditoriaux OF passent en rouge.</li>
+                                                <li>Évolution&nbsp;: titres&nbsp;/ Thème OF -> H3 non-éditoriaux passent de 18 à 20px.</li>
                                             </ul>
                                         </li>
                                     </ul>
