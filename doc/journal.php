@@ -33,8 +33,8 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li><strong>Nouveauté&nbsp;: voile.</strong></li>
-                                                <li><strong>Nouveauté&nbsp;: pop-ins.</strong></li>
+                                                <li><strong>Nouveauté&nbsp;: voile (Utilities/Veil).</strong></li>
+                                                <li><strong>Nouveauté&nbsp;: pop-ins (Components/Notifiers/Pop-ins).</strong></li>
                                                 <li>Évolution&nbsp;: liens éditoriaux OF passent en rouge.</li>
                                             </ul>
                                         </li>
