@@ -71,12 +71,18 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 ## Bonnes pratiques
 
 ### Spécifications
-- **Sur mobile, les boutons en pleine largeur sont fortement recommendés** car ils sont plus accessibles.
-- La 1re lettre du bouton est en majuscule, le reste est en minuscule.
-- Ne pas finaliser le texte par une ponctuation.
+
+- **Sur mobile, les boutons en pleine largeur sont fortement recommandés** car ils sont plus accessibles.
+- La hauteur d'un bouton est strictement identique quelle que soit la taille de l'écran.
 - Les marges d'un bouton primaire sont au moins de 10px.
-- Le texte du bouton est limité à une ligne et composé de 3 mots maximum.
-- Le texte du bouton doit être explicite et décrire l'action de celui-ci.
+
+### Texte
+
+- La 1re lettre du bouton est en majuscule, le reste est en minuscule.
+- Ne pas finaliser le texte par une ponctuation, ex : un point d'exclamation.
+- Les textes doivent indiquer clairement le résultat de l'action. La plupart des boutons devraient commencer par un verbe, ex : « Accepter » au lieu de « Oui » ou « S'inscrire » au lieu de « Soumettre ».
+- Le texte est limité à une ligne et composé de 3 mots maximums.
+- Mettre le texte en majuscule n'est pas autorisé, même pour donner plus d'importance à un bouton spécifique.
 
 <div class="do-dont">
  <div class="do">
@@ -98,6 +104,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
  </div>
  </div>
 
+
 ### Boutons d'un même sujet
 
 - Ces boutons ont la même largeur.
@@ -105,33 +112,11 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 - Un seul bouton primaire est présent.
 - Deux boutons secondaires maximums sont présents. De plus, ils sont positionnés de manière proche.
 - **Sur mobile, le bouton primaire se trouve au-dessus des boutons secondaires.**
-- **Sur desktop, lorsque un bouton primaire et un bouton secondaire sont présents, le bouton primaire doit être placé à droite.**
+- **Sur desktop, l'ensemble des boutons est aligné à gauche sauf s'il est dans un container, ex : pop-in, card.** Lorsque les boutons sont alignés à gauche, le bouton primaire est le plus à gauche. Lorsqu'ils sont ou alignés à droite au centre, le bouton primaire est la plus à droite.
 
-<div class="do-dont">
-<div class="do">
-
-![Image_button_sequentiel](components/COMPONENTS/Inputs/Buttons/design/Image_button_sequentiel.png)|
------------- |
-**Do**
-<p class="legende">Mettre le bouton «&nbsp;Retour&nbsp;» à gauche.</p> |
-
- </div>
- </div>
-
-
- <div class="do-dont">
- <div class="dont">
-
-![Image_button_2 buttons_ko](components/COMPONENTS/Inputs/Buttons/design/Image_button_buttons_ko.png)  |
------------- |
-**Don’t**
-<p class="legende">Ne placez pas un bouton sous un autre bouton s'il y a de la place pour les mettre côte à côte.</p> |
-
- </div>
- </div>
 
 
 ### Arrière-plan
 
-- La couleur d'arrière-plan **ne doit pas être similaire à celle du bouton**.
-- Elle doit être particulièrement **claire** afin de mettre en avant l'action.
+- L'arrière-plan **clair et uniforme** permettra une visibilité obtimale des boutons.
+- La couleur d'arrière-plan **doit être suffisamment contrastée avec celle du bouton**.
