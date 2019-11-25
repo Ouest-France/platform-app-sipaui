@@ -15,7 +15,7 @@ Icône  |  |  |  |  |  |  | Taille maximale : 34x34px <br> Zone de tap : 44x44px
 
 #### Label
 - Le composant "Label" indique le type d’information demandée sous celui-ci.
-- Il obligatoire sauf dans certains cas très particiliers.
+- Il est obligatoire sauf dans certains cas très particuliers. Quand il est absent, le placeholder est indispensable.
 - Ses spécifications sont disponibles dans son doc design.
 
 #### Container
