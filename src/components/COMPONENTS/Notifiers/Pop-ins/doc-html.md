@@ -26,7 +26,7 @@ Afin de simplifier la gestion de la superposition des éléments sur la page, il
 
 Si plusieurs éléments (pop-ins ou autres) nécessitent un voile, un seul voile est utile dans le DOM. Il faudra juste lui associer tous les cas de fermeture.
 
-Exemple d'arborescence de code pour 2 pop-ins incluses dans le DOM&nbsp;:
+Exemple d’arborescence de code pour 2 pop-ins incluses dans le DOM&nbsp;:
 
 ```html
 <body class="sipaui">
@@ -45,13 +45,13 @@ Exemple d'arborescence de code pour 2 pop-ins incluses dans le DOM&nbsp;:
 
 Pour créer une pop-in, il faut un `<div>`  avec la classe `.su-pop-in`. Elle sera invisible par défaut.
 
-Une popin simple ne donne qu'un court message avec validation de lecture. Elle ne comportera donc qu'un seul bouton.
+Une popin simple ne donne qu’un court message avec validation de lecture. Elle ne comportera donc qu’un seul bouton.
 
 2 zones sont spécifiées à l’intérieur de la pop-in&nbsp;: `su-content-area` pour le message et `su-buttons-area` pour les boutons.
 
 ### Déclenchement
 
-Pour déclencher l’apparition de la pop-in (ainsi que du voile), il faut utiliser ce code&nbsp;: `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":0]'` sur le déclencheur. Pour la pop-in il ajoutera la classe `su-pop-in-in` et enlèvera la classe `su-pop-in-out` si elle est déjà là. L’attribut `"#pop-in-1"` du sélecteur `"sel"` est l'ID spécifique de votre popin.
+Pour déclencher l’apparition de la pop-in (ainsi que du voile), il faut utiliser ce code&nbsp;: `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":0]'` sur le déclencheur. Pour la pop-in il ajoutera la classe `su-pop-in-in` et enlèvera la classe `su-pop-in-out` si elle est déjà là. L’attribut `"#pop-in-1"` du sélecteur `"sel"` est l’ID spécifique de votre popin.
 
 ### Fermeture
 Pour fermer la pop-in (et le voile) il faut utiliser `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]` sur le bouton primaire, ainsi que sur le `<div>` du voile. Bien sûr, si le fait de valider la pop-in en activant le bouton primaire entraîne un changement&nbsp;/ rechargement de page, ce déclencheur de fermeture de pop-in est inutile.
@@ -133,9 +133,9 @@ Ne pas oublier de mettre le déclancheur de fermeture si besoin, sur le(s) bouto
 
 ## Popin avec titre, 2 choix, croix de fermeture et scroll
 
-Le scroll est géré automatiquement par `su-content-area`. Toutefois, comme dit plus haut, il est préférable que le titre ne soit pas contenu dans cette zone, afin qu'il soit toujours visible.
+Le scroll est géré automatiquement par `su-content-area`. Toutefois, comme dit plus haut, il est préférable que le titre ne soit pas contenu dans cette zone, afin qu’il soit toujours visible.
 
-Pour positionner la croix de fermeture, rajouter la `div.su-close-area` juste au premier niveau sous `su-pop-in` (au-dessus du contenu ou du titre s'il y en a un). Cette `div` doit contenir le bouton de fermeture `su-close` contenant lui-même l’icône `su-icon` «&nbsp;fermer&nbsp;». Ne pas oublier, là non-plus, de mettre le déclencheur de fermeture sur le bouton.
+Pour positionner la croix de fermeture, rajouter la `div.su-close-area` juste au premier niveau sous `su-pop-in` (au-dessus du contenu ou du titre s’il y en a un). Cette `div` doit contenir le bouton de fermeture `su-close` contenant lui-même l’icône `su-icon` «&nbsp;fermer&nbsp;». Ne pas oublier, là non-plus, de mettre le déclencheur de fermeture sur le bouton.
 
 ### Code
 
