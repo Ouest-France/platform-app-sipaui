@@ -121,6 +121,6 @@ Les **pop-ins décisionnelles** (au-moins 2 boutons) peuvent être fermées **sa
 - Privilégiez les wordings clairs et **directs**, ex&nbsp;: "Voulez-vous supprimer définitivement tous ces articles ?" "Supprimer" au lieu d’un simple "Oui".
 - Évitez les boutons de type " En savoir plus " ou des liens qui quittent la pop-in.
 
-![pop-in_mobile](components/COMPONENTS/Notifiers/pop-ins/design/mobile.png)
+![pop-in_mobile](components/COMPONENTS/Notifiers/Pop-ins/design/mobile.png)
 
-![pop-in_desktop](components/COMPONENTS/Notifiers/pop-ins/design/tablet-desktop.png)
+![pop-in_desktop](components/COMPONENTS/Notifiers/Pop-ins/design/tablet-desktop.png)
