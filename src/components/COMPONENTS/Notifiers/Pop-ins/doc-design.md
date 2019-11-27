@@ -15,7 +15,7 @@ Les pop-ins répondent à 2 besoins&nbsp;:
 
 ### Voile
 
-La pop-in nécessite l’utilisation d’un voile en arrière-plan. Cf. le [doc design du composant Veil](/storybook/?path=/story/components-notifiers-veil--design).
+La pop-in nécessite l’utilisation d’un voile en arrière-plan. Cf. le [doc design du composant Veil](/storybook/?path=/story/utilities-veil--design).
 
 ### Conteneur
 
