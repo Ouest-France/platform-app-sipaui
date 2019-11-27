@@ -49,13 +49,13 @@ $margin-paragraphe: $margin-medium;
 .sipaui {
     a {
         color: $color-link-standard;
-        text-decoration: underline;
+        text-decoration: none;
 
         &:hover,
         &:focus,
         &:active {
             color: $color-link-standard-hover;
-            text-decoration: underline;
+            text-decoration: none;
         }
     }
     a:not([href]):not([tabindex]) { // Voir https://github.com/twbs/bootstrap/issues/19402 (pour ne pas styler les balises <a> sans href)
