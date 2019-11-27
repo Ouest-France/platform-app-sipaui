@@ -177,7 +177,7 @@
     body .markdown-body a,
     body .markdown-body .link-button {
         color: #e2001a;
-        text-decoration: underline;
+        text-decoration: none;
         border-bottom: 0;
     }
     body .markdown-body a:hover,
@@ -197,14 +197,14 @@
         height: 44px;
         line-height: 44px;
     }
-    body .markdown-body .a:hover,
-    body .markdown-body .a:focus,
-    body .markdown-body .a:active
+    body .markdown-body a:hover,
+    body .markdown-body a:focus,
+    body .markdown-body a:active
     body .markdown-body .link-button:hover,
     body .markdown-body .link-button:focus,
     body .markdown-body .link-button:active {
         color: #b40015;
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     /* Surcharge pour surclasser les styles de storybook. -> empêche les personalisations de SUI */
@@ -213,6 +213,12 @@
         margin: 0;
         padding: 0;
         list-style: none;
+    }
+    .markdown-body .sipaui a.surcharge-storybook {
+        color: #333;
+    }
+    .markdown-body .sipaui a.surcharge-storybook:hover {
+        color: #b40015;
     }
     /* /Surcharge */
     .markdown-body .sipaui li+li {

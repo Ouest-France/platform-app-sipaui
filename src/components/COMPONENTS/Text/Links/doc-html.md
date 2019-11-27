@@ -23,7 +23,7 @@ Le lien par défaut est celui affiché avec une simple balise `<a>`, hors d’un
 <p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article SipaUI</a> Tortor Cursus.</p>
 ```
 <div class="sipaui">
-		<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article SipaUI</a> Tortor Cursus.</p>
+		<p>Etiam Venenatis Bibendum <a href="javascript:;" class="surcharge-storybook">Lien article SipaUI</a> Tortor Cursus.</p>
 </div>
 
 
