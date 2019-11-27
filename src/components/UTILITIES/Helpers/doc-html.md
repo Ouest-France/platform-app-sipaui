@@ -174,6 +174,15 @@ Classe permettant de rendre visuellement l’incapacité&nbsp;/ l’indisponibil
 	<p class="su-disabled">Paragraphe utilisant cette classe.</p>
 </div>
 
+## Blocage du scroll
+Classe permettant de bloquer le scroll de la page, ou d’un composant.
+- `su-no-scroll`
+
+```html
+<body class="su-no-scroll"></body>
+```
+
+
 
 <div id="liste-classes" class="control-titres">
 
@@ -214,5 +223,6 @@ Classe permettant de rendre visuellement l’incapacité&nbsp;/ l’indisponibil
 - `su-fullwidth`
 - `su-fullwidth-mobile`
 - `su-disabled`
+- `su-no-scroll`
 
 </div>

@@ -17,13 +17,10 @@
         background: $background-veil;
         opacity: 0;
         transition: $animation-veil;
-    }
-}
-body.su-veil-in {
-    overflow: hidden;
 
-    .su-veil {
-        opacity: $opacity-veil;
-        position: fixed;
+        &.su-veil-in {
+            opacity: $opacity-veil;
+            position: fixed;
+        }
     }
 }

@@ -158,3 +158,8 @@ body:hover .su-visually-hidden {
     opacity: $opacity-disabled;
     cursor: default !important;
 }
+
+/* -- NO SCROLL -------------------------------------------------------------------- */
+.su-no-scroll {
+    overflow: hidden;
+}

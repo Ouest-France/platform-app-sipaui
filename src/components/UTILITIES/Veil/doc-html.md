@@ -9,6 +9,7 @@ SipaUI propose un voile pour tous les composants en ayant besoin (comme la pop-i
 																							
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`)
+- composant **Helpers**
 
 </div>
 
@@ -19,21 +20,7 @@ SipaUI propose un voile pour tous les composants en ayant besoin (comme la pop-i
 
 Le voile doit être déjà présent dans le DOM afin qu’il n’y ait pas de latence dans son affichage.
 
-Pour simplifier la gestion de la superposition des éléments sur la page, il est préférable que le voile soit au premier niveau après le `<body>`.
-
-Si plusieurs éléments (pop-ins ou autres) nécessitent un voile, un seul voile est utile dans le DOM. Il faudra juste lui associer tous les cas de fermeture.
-
-Exemple d'arborescence de code pour le voile accompagnant 2 pop-ins &nbsp;:
-
-```html
-<body class="sipaui">
-	<div class="su-veil"></div>
-	<div class="su-pop-in pop-in-1"></div>
-	<div class="su-pop-in pop-in-2"></div>
-	<main>
-		Mon contenu
-	</main>
-</body>```
+Au choix, vous pouvez utiliser un voile sur toute la page pour l’ensemble des composants qui en ont besoin, ou créer un voile par composant. Si vous maîtrisez l’ensemble de la page, choisissez plutôt un voile unique pour alléger la page (il faudra alors juste lui associer tous les cas de fermeture). Si vous ne créez qu’un bloc qui doit s’inscrire dans une page que vous ne maîtrisez pas, intégrez le voile dans votre bloc, quitte à ce qu’il y en ait plusieurs sur la page.
 
 
 ## Exemple concret
@@ -45,10 +32,10 @@ Pour créer un voile directement à la bonne apparence, il suffit de mettre un `
 
 ### Déclenchement
 
-Pour déclencher l’apparition du voile, il faut utiliser ce code&nbsp;: `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}]'` sur le déclencheur. Il positionnera la classe `su-veil-in`sur le voile.
+Pour déclencher l’apparition du voile, il faut utiliser ce code&nbsp;: `data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-1","klass":"su-veil-in","force":1}]'` sur le déclencheur. Il positionnera la classe `su-no-scroll` sur le `<body>` (pour empêcher le scroll tant que le voile est visible) et la classe `su-veil-in`sur le voile pour l’afficher. Le paramètre `"#veil-1"` du sélecteur `"sel"` est l’ID de votre voile. Donnez-lui un nom qui ne risque pas d’être utilisé par ailleurs…
 
 ### Fermeture
-Pour fermer le voile au tape&nbsp;/ clic sur celui-ci, il faut mettre `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}]'` sur le `<div>` du voile.
+Pour fermer le voile au tape&nbsp;/ clic sur celui-ci, il faut mettre `{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-1","klass":"su-veil-in","force":0}` sur le `<div>` du voile.
 
 ### Code
 
@@ -60,8 +47,8 @@ Pour fermer le voile au tape&nbsp;/ clic sur celui-ci, il faut mettre `data-suto
 ```
 
 <div class="sipaui">
-	<div class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}]'></div>
-	<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}]'>Afficher le voile</a>
+	<div id="veil-1" class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-1","klass":"su-veil-in","force":0}]'></div>
+	<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-1","klass":"su-veil-in","force":1}]'>Afficher le voile</a>
 </div>
 
 
@@ -70,5 +57,9 @@ Pour fermer le voile au tape&nbsp;/ clic sur celui-ci, il faut mettre `data-suto
 ## Liste des classes disponibles
 - `su-veil`
 - `su-veil-in` (posée automatiquement par le JS)
+
+
+### Classes annexes
+- `su-no-scroll` (posée automatiquement par le JS, dépendant du composant *Helpers*)
 
 </div>

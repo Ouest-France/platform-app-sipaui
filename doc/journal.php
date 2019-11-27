@@ -37,6 +37,7 @@
                                                 <li><strong>Nouveauté&nbsp;: pop-ins (Components/Notifiers/Pop-ins).</strong></li>
                                                 <li>Évolution&nbsp;: liens&nbsp;/ Thème OF -> liens éditoriaux OF passent en rouge.</li>
                                                 <li>Évolution&nbsp;: titres&nbsp;/ Thème OF -> H3 non-éditoriaux passent de 18 à 20px.</li>
+                                                <li>Évolution&nbsp;: Classes d’aide&nbsp; -> ajout de la classe <code>.su-no-scroll</code>.</li>
                                             </ul>
                                         </li>
                                     </ul>
