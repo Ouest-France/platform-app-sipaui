@@ -39,19 +39,19 @@ Exemple d’arborescence de code pour 2 pop-ins incluses dans le DOM&nbsp;:
 </div>```
 
 
-## Popin simple
+## Pop-in simple
 
 ### Apparence
 
 Pour créer une pop-in, il faut un `<div>`  avec la classe `.su-pop-in`. Elle sera invisible par défaut.
 
-Une popin simple ne donne qu’un court message avec validation de lecture. Elle ne comportera donc qu’un seul bouton.
+Une pop-in simple ne donne qu’un court message avec validation de lecture. Elle ne comportera donc qu’un seul bouton.
 
 2 zones sont spécifiées à l’intérieur de la pop-in&nbsp;: `su-content-area` pour le message et `su-buttons-area` pour les boutons.
 
 ### Déclenchement
 
-Pour déclencher l’apparition de la pop-in (ainsi que du voile), il faut utiliser ce code&nbsp;: `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":0]'` sur le déclencheur. Pour la pop-in il ajoutera la classe `su-pop-in-in` et enlèvera la classe `su-pop-in-out` si elle est déjà là. L’attribut `"#pop-in-1"` du sélecteur `"sel"` est l’ID spécifique de votre popin.
+Pour déclencher l’apparition de la pop-in (ainsi que du voile), il faut utiliser ce code&nbsp;: `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":0]'` sur le déclencheur. Pour la pop-in il ajoutera la classe `su-pop-in-in` et enlèvera la classe `su-pop-in-out` si elle est déjà là. L’attribut `"#pop-in-1"` du sélecteur `"sel"` est l’ID spécifique de votre pop-in.
 
 ### Fermeture
 Pour fermer la pop-in (et le voile) il faut utiliser `data-sutoggleclass='[{"sel":"body","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]` sur le bouton primaire, ainsi que sur le `<div>` du voile. Bien sûr, si le fait de valider la pop-in en activant le bouton primaire entraîne un changement&nbsp;/ rechargement de page, ce déclencheur de fermeture de pop-in est inutile.
@@ -89,7 +89,7 @@ Pour fermer la pop-in (et le voile) il faut utiliser `data-sutoggleclass='[{"sel
 </div>
 
 
-## Popin avec titre et 2 choix
+## Pop-in avec titre et 2 choix
 
 Pour cette pop-in, en plus de la pop-in simple, on utilise la classe `su-h2` pour le titre et on ajoute un (ou des…) bouton `su-secondary` **avant** le bouton `su-primary`. Attention, il est préférable de mettre le titre **au-dessus** de la zone `su-content-area` afin que le scroll ne l’impacte pas.
 
@@ -131,7 +131,7 @@ Ne pas oublier de mettre le déclancheur de fermeture si besoin, sur le(s) bouto
 </div>
 
 
-## Popin avec titre, 2 choix, croix de fermeture et scroll
+## Pop-in avec titre, 2 choix, croix de fermeture et scroll
 
 Le scroll est géré automatiquement par `su-content-area`. Toutefois, comme dit plus haut, il est préférable que le titre ne soit pas contenu dans cette zone, afin qu’il soit toujours visible.
 
