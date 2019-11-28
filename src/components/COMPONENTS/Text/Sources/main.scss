@@ -5,7 +5,7 @@
 
 .sipaui {
     .su-source {
-        font-size: $font-size-small;
+        font-size: $font-size-source-article;
         color: $color-metadata;
 
         &[class*="su-cockade-"] {
@@ -16,9 +16,15 @@
         }
     }
 
+    a.su-source,
+    .su-source a {
+        border-bottom: none;
+        color: $color-main-6;
+    }
+
     .su-articles-list {
         .su-source {
-            font-size: $font-size-xsmall;
+            font-size: $font-size-source-liste;
         }
     }
 }

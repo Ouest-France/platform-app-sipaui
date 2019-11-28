@@ -20,10 +20,31 @@ Il est lui-même composé de 2 éléments&nbsp;: la **cocarde** illustrant la ma
 
 Pour l’utilisation normale de la source il faut utiliser les classes `su-source` pour styler le texte et `su-cockade-xx` (où  «&nbsp;xx&nbsp;» représente la marque) pour afficher la cocarde.
 ```html
-<span class="su-source su-cockade-of">Ouest-France</span>
+<div class="su-article">
+	<span class="su-source su-cockade-of">Ouest-France</span>
+</div>
 ```
 <div class="sipaui">
-	<span class="su-source su-cockade-of">Ouest-France</span>
+	<div class="su-article">
+		<span class="su-source su-cockade-of">Ouest-France</span>
+	</div>
+</div>
+
+## Source avec lien dans un article
+
+Il peut être nécessaire de mettre un lien sur la source de l’article pour pointer vers son origine, mais ce lien doit rester neutre visuellement. Vous pouvez soit créer le lien avec les classes du coposant, soit l’intégrer *dans* le composant.
+
+```html
+<div class="su-article">
+	<a href="#" class="su-source su-cockade-of">Ouest-France</a>
+	<span class="su-source su-cockade-of"><a href="#">Ouest-France</a></span>
+</div>
+```
+<div class="sipaui">
+	<div class="su-article">
+		<a href="#" class="su-source su-cockade-of">Ouest-France</a>
+		<span class="su-source su-cockade-of"><a href="#">Ouest-France</a></span>
+	</div>
 </div>
 
 
