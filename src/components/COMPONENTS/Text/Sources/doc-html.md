@@ -32,7 +32,9 @@ Pour l’utilisation normale de la source il faut utiliser les classes `su-sourc
 
 ## Source avec lien dans un article
 
-Il peut être nécessaire de mettre un lien sur la source de l’article pour pointer vers son origine, mais ce lien doit rester neutre visuellement. Vous pouvez soit créer le lien avec les classes du coposant, soit l’intégrer *dans* le composant.
+Il peut être nécessaire de mettre un lien sur la source de l’article pour pointer vers son origine. Toutefois, ce lien doit rester neutre visuellement, il ne peut porter les couleurs de la marque du site  puisque les sources peuvent être extérieures au site.
+
+Vous pouvez soit créer le lien avec les classes du composant, soit l’intégrer *dans* le composant.
 
 ```html
 <div class="su-article">
