@@ -217,39 +217,36 @@
     }
 }
 
-// troncature multiligne //
-@mixin multi-line-ellipsis($lineHeight: 1.6em, $lineCount: 1, $bgColor: white){
-    @include transitioned-height($lineHeight * $lineCount);
-    line-height: $lineHeight;
-    position: relative;
-    hyphens: auto;
-    padding-right: 1.5rem;
+        // troncature multiligne //
+        @mixin multi-line-ellipsis($lineHeight: 1.6em, $lineCount: 1, $bgColor: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%)) {
+            display            : block;
+            -webkit-box-orient : vertical;
+            position           : relative;
 
-    &:before,
-    &:after {
-        @include transition(opacity 0.25s cubic-bezier(0.77, 0, 0.175, 1) 0s);
-        opacity: 1;
-    }
-    &:before {
-        content: ' ';
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 2rem;
-        height: 2rem;
-        margin-top: 0.2rem;
-        background: $bgColor;
-    }
-    &:after {
-        content: '...';
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 2rem;
-        line-height: 1.4em;
-        text-align: right;
-    }
-}
+            line-height        : $lineHeight;
+            overflow           : hidden;
+            text-overflow      : ellipsis;
+            padding            : 0;
+
+            height             : calc(#{$lineHeight} * #{$lineCount});
+
+            &::after {
+                content    : '...';
+                text-align : right;
+                bottom     : 0;
+                right      : 0;
+                width      : 25%;
+                display    : block;
+                position   : absolute;
+                height     : $lineHeight;
+                background : $bgColor;
+            }
+            @supports (-webkit-line-clamp: 1)  {
+                &::after {
+                    display : none !important;
+                }
+            }
+        }
 
 // Permet de s'assurer qu'un texte ne dépasse pas (coupe seche, sans les "..." qui ont besoin d'un texte justifié)
 @mixin multi-line-truncate($lineHeight: 1.6em, $lineCount: 1){
