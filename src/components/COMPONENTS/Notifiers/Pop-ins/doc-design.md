@@ -21,7 +21,7 @@ La pop-in nécessite l’utilisation d’un voile en arrière-plan. Cf. le [doc 
 
 - Le conteneur **focalise l’attention de l’utilisateur**.
 - Il est centré verticalement et horizontalement dans l’écran.
-- La **hauteur** est celle du contenu + padding de 50px en haut et 30px en bas. Lorsque la croix est absente, le padding en haut du container est de 30px. La hauteur maximale du container est celle du voile moins 20px en haut et en bas.
+- La **hauteur** est celle du contenu + des paddings de 30px en haut et en bas. Lorsque la croix est présente, le padding en haut du container est de 50px. La hauteur maximale du container est celle du voile moins 20px en haut et en bas.
 - Sur mobile, sa **largeur** est celle de la grille moins ses marges externes (cf. son doc design) et le padding est de 30px. Sur desktop, sa largeur est fixée à 620px et ses paddings sont de 40px.
 - Sa couleur est #FFFFFF.
 
