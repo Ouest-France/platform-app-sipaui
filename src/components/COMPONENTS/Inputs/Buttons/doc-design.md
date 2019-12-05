@@ -120,3 +120,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 - L'arrière-plan **clair et uniforme** permettra une visibilité obtimale des boutons.
 - La couleur d'arrière-plan **doit être suffisamment contrastée avec celle du bouton**.
+
+### Mise en avant
+
+- **Un même bouton doit être présent une seule fois dans une même page,** même si l'action est particulièrement importante. Par exemple, un bouton sticky permet de le mettre en avant au lieu de le multiplier.
