@@ -1,6 +1,6 @@
 # Standfirst in a list / Chapeau dans une liste
 
-- Le chapeau ou chapô dans une liste permet d'**afficher le chapeau d'un article uniquement dans une liste d'articles.**
+- Le chapeau (ou chapô) dans une liste permet d'**afficher le chapeau d'un article uniquement dans une liste d'articles.**
 
 - C'est l'élément le plus important après le titre et la photo.
 

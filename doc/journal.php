@@ -33,6 +33,20 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
+                                                <li><strong>Nouveauté&nbsp;: chapeau (Components/Text/Standfirst).</strong></li>
+                                                <!--li>Évolution&nbsp;: (titres dans su-articles-list).</li>
+                                                <li>Évolution&nbsp;: (poids des liens source).</li-->
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">3.4.7</span></div>
+                                <div class="table-cell">
+                                    <ul>
+                                        <li>Composants&nbsp;:
+                                            <ul>
                                                 <li><strong>Nouveauté&nbsp;: voile (Utilities/Veil).</strong></li>
                                                 <li><strong>Nouveauté&nbsp;: pop-ins (Components/Notifiers/Pop-ins).</strong></li>
                                                 <li>Évolution&nbsp;: liens&nbsp;/ Thème OF -> liens éditoriaux OF passent en rouge.</li>
@@ -238,11 +252,11 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">3.5</span></div>
-                                <div class="table-cell">Chapô.</div>
+                                <div class="table-cell"><span class="version">3.6</span></div>
+                                <div class="table-cell">Accordéon.</div>
                             </li>
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">3.6</span></div>
+                                <div class="table-cell"><span class="version">3.7</span></div>
                                 <div class="table-cell">Pagination.</div>
                             </li>
                         </ul>
