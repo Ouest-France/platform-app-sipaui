@@ -34,8 +34,8 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li><strong>Nouveauté&nbsp;: chapeau (Components/Text/Standfirst).</strong></li>
-                                                <!--li>Évolution&nbsp;: (titres dans su-articles-list).</li>
-                                                <li>Évolution&nbsp;: (poids des liens source).</li-->
+                                                <!--li>Évolution&nbsp;: (titres dans su-articles-list).</li-->
+                                                <li>Évolution&nbsp;: Sources&nbsp;-> le poids sélecteur des liens de source surcharge maintenant celui des liens d’article.</li-->
                                             </ul>
                                         </li>
                                     </ul>
@@ -49,10 +49,10 @@
                                             <ul>
                                                 <li><strong>Nouveauté&nbsp;: voile (Utilities/Veil).</strong></li>
                                                 <li><strong>Nouveauté&nbsp;: pop-ins (Components/Notifiers/Pop-ins).</strong></li>
-                                                <li>Évolution&nbsp;: liens&nbsp;/ Thème OF -> liens éditoriaux OF passent en rouge.</li>
-                                                <li>Évolution&nbsp;: titres&nbsp;/ Thème OF -> H3 non-éditoriaux passent de 18 à 20px.</li>
-                                                <li>Évolution&nbsp;: Classes d’aide&nbsp; -> ajout de la classe <code>.su-no-scroll</code>.</li>
-                                                <li>Évolution&nbsp;: Sources&nbsp; -> gestion d’un lien sur une source.</li>
+                                                <li>Évolution&nbsp;: liens&nbsp;/ Thème OF&nbsp;-> liens éditoriaux OF passent en rouge.</li>
+                                                <li>Évolution&nbsp;: titres&nbsp;/ Thème OF&nbsp;-> H3 non-éditoriaux passent de 18 à 20px.</li>
+                                                <li>Évolution&nbsp;: Classes d’aide&nbsp;-> ajout de la classe <code>.su-no-scroll</code>.</li>
+                                                <li>Évolution&nbsp;: Sources&nbsp;-> gestion d’un lien sur une source.</li>
                                             </ul>
                                         </li>
                                     </ul>

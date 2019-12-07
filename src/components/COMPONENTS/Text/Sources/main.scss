@@ -17,7 +17,9 @@
     }
 
     a.su-source,
-    .su-source a {
+    .su-source a,
+    .su-article a.su-source,
+    .su-article .su-source a {
         border-bottom: none;
         color: $color-main-6;
     }
