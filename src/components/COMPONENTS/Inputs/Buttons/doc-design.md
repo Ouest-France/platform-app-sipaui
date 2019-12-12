@@ -80,7 +80,7 @@ Hauteur : 34px  <br> Largeur : minimum 100px et padding 15px  <br> Contour : ép
 
 - La 1re lettre du bouton est en majuscule, le reste est en minuscule.
 - Ne pas finaliser le texte par une ponctuation, ex : un point d'exclamation.
-- Les textes doivent indiquer clairement le résultat de l'action. La plupart des boutons devraient commencer par un verbe, ex : « Accepter » au lieu de « Oui » ou « S'inscrire » au lieu de « Soumettre ».
+- Les textes doivent indiquer clairement et **précisemment le résultat de l'action**. La plupart des boutons devraient commencer par un **verbe d'action**, ex : « Accepter » au lieu de « Oui » ou « S'inscrire » au lieu de « Soumettre ».
 - Le texte est limité à une ligne et composé de 3 mots maximums.
 - Mettre le texte en majuscule n'est pas autorisé, même pour donner plus d'importance à un bouton spécifique.
 
