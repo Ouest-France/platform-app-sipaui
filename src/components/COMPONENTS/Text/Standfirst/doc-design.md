@@ -1,26 +1,23 @@
-# Standfirst in a list / Chapeau dans une liste
+# Standfirst / Chapeau
 
-- Le chapeau (ou chapô) dans une liste permet d'**afficher le chapeau d'un article uniquement dans une liste d'articles.**
-
+- Le chapeau (ou chapô) est un texte généralement court.
+- Ses objectifs sont essentiellement de **compléter le titre, d'apporter un supplément d’information et de susciter le désir d’en lire plus**, par exemple en résumant le propos qui va être développé.
 - C'est l'élément le plus important après le titre et la photo.
 
 ## Usage
 
-- Ses objectifs sont essentiellement de compléter le titre, d'apporter un supplément d’information et de susciter le désir d’en lire plus.
-- Dans une liste d'article, le chapeau est **facultatif.**
+- Le chapeau se positionne toujours après le titre principal de l’article.
+- Le chapeau est facultatif.
 
-## Spécifications
+## Type
 
-Le chapeau se positionne toujours après le titre principal de l’article : **10px sous ce titre.**
-
-- Police : Arial
-- Graisse : regular
-- Taille : 14px
-- Couleur : #666666
-- Ferrage : gauche
+Article complet Mobile | Article complet Desktop | Liste d'articles
+------------ | ------------- | -------------
+Illustration 1 | Illustration 2 | Illustration 3
+Police : Arial <br> Graisse : regular <br> Taille : 18px <br> Line height : 1,5 <br> Couleur : #666666 | - <br> - <br> Taille : 22px <br> - <br> - | - <br> - <br> Taille : 14px <br> - <br> -
 
 ## Bonnes pratiques
 
-- Limitez la visibilité de ce texte à quelques lignes.
-- Il répond aux cinq questions : « Quoi ? Qui ? Où ? Quand ? Comment ? Pourquoi ? ».
-- Le chapeau dans une liste n'est pas composé du début de l'article.
+- Dans un article complet, la marge entre le titre principal et le chapeau est de 10px en mobile et 20px en desktop.
+- Dans une liste d'articles, cette marge est de 10px.
+- Le chapeau n'est pas composé du début de l'article.
