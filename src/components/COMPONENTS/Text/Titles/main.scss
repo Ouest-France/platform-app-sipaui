@@ -53,35 +53,19 @@
 // TITRES LISTE ARTICLES ------------------------------------------------------------------------------------------/
 .sipaui {
     .su-articles-list {
+        padding: 0;
+        margin: 0;
         h2,
-        .su-h2,
         h3,
-        .su-h3 {
+        .su-title {
             font-family: $font-family-titles-liste-articles;
+            font-size: $font-size-titles-liste-articles;
             font-weight: $font-weight-titles-liste-articles;
             line-height: $line-height-titles-liste-articles;
             color: $color-titles-liste-articles;
             text-transform: $text-transform-titles-liste-articles;
             margin: 0;
             padding: 0;
-        }
-        h2,
-        .su-h2 {
-            font-family: $font-family-h2-liste-articles;
-            font-weight: $font-weight-h2-liste-articles;
-            font-size: $font-size-h2-liste-articles;
-            color: $color-h2-liste-articles;
-            line-height: $line-height-h2-liste-articles;
-            text-transform: $text-transform-h2-liste-articles;
-        }
-        h3,
-        .su-h3 {
-            font-family: $font-family-h3-liste-articles;
-            font-weight: $font-weight-h3-liste-articles;
-            font-size: $font-size-h3-liste-articles;
-            color: $color-h3-liste-articles;
-            line-height: $line-height-h3-liste-articles;
-            text-transform: $text-transform-h3-liste-articles;
         }
     }
 }

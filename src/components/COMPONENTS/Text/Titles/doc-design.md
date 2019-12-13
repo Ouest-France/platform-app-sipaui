@@ -56,7 +56,7 @@ Niveau 3 | Oswald | Normal | 20px | 1.35 | #333333
 
 
 ### Contenu éditorial - liste d’articles
-Les listes d’articles sont des blocs s’affichant généralement sur une page non éditoriale, mais peuvent aussi être présentes dans une page contenant l’article complet. Ces blocs n’ont **pas de titre de niveau 1** (puisque ce titre est porté par la page) mais ont généralement un titre de rubrique servant de titre principal au bloc. Ces listes affichent bien sûr aussi les titres d’articles, mais ces titres ne sont pas traités comme des titres standards, ils sont beaucoup plus faibles visuellement et peuvent avoir un corps variable en fonction de l’équilibre de la page et de la place dont ils disposent.
+Les listes d’articles sont des blocs s’affichant généralement sur une page non éditoriale, mais peuvent aussi être présentes dans une page contenant l’article complet. Ces blocs n’ont **pas de titre de niveau 1** (puisque ce titre est porté par la page) mais ont généralement un titre de rubrique servant de titre principal au bloc. Ces listes affichent bien sûr aussi les titres d’articles, mais ces titres ne sont pas traités comme des titres standards d’un point de vue visuel. Ils sont beaucoup plus faibles visuellement et peuvent avoir un corps variable en fonction de l’équilibre de la page et de la place dont ils disposent.
 
 #### Mobile
 
