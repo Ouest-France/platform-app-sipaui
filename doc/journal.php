@@ -35,7 +35,8 @@
                                             <ul>
                                                 <li><strong>Nouveauté&nbsp;: chapeau (Components/Text/Standfirst).</strong></li>
                                                 <!--li>Évolution&nbsp;: (titres dans su-articles-list).</li-->
-                                                <li>Évolution&nbsp;: Sources&nbsp;-> le poids sélecteur des liens de source surcharge maintenant celui des liens d’article.</li-->
+                                                <li>Évolution&nbsp;: Cocardes&nbsp;-> ajout de Publi Hebdos.</li>
+                                                <li>Évolution&nbsp;: Sources&nbsp;-> le poids sélecteur des liens de source surcharge maintenant celui des liens d’article.</li>
                                             </ul>
                                         </li>
                                     </ul>

@@ -12,6 +12,7 @@
 */
 $url-logo-identities: 'https://cdn.sipaof.fr/sipaui/latest/images/COMPONENTS/Identities/Cockades/images/' !default;
 
+
 .sipaui {
     [class*="su-cockade-"] {
         background: no-repeat;
@@ -35,5 +36,7 @@ $url-logo-identities: 'https://cdn.sipaof.fr/sipaui/latest/images/COMPONENTS/Ide
     .su-cockade-vv {
         background-image: url('#{$url-logo-identities}vv.svg');
     }
-
+    .su-cockade-ph {
+        background-image: url('#{$url-logo-identities}ph.svg');
+    }
 }

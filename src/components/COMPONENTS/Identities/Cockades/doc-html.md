@@ -29,6 +29,9 @@
 	<li>
 		Voiles et Voiliers&nbsp;: <span class="su-cockade-vv"></span>
 	</li>
+	<li>
+		Publi Hebdos&nbsp;: <span class="su-cockade-ph"></span>
+	</li>
 </ul>
 ```
 <div class="sipaui">
@@ -47,6 +50,9 @@
 		</li>
 		<li>
 			Voiles et Voiliers&nbsp;: <span class="su-cockade-vv"></span>
+		</li>
+		<li>
+			Publi Hebdos&nbsp;: <span class="su-cockade-ph"></span>
 		</li>
 	</ul>
 </div>
