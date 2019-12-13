@@ -10,7 +10,7 @@
 
         &[class*="su-cockade-"] {
             background-size: 14px;
-            background-position: 0 50%;
+            background-position: 0 43%;
             padding-left: 14px + $marge-cocarde;
 
         }
@@ -24,7 +24,8 @@
         color: $color-main-6;
     }
 
-    .su-articles-list {
+    .su-articles-list,
+    .su-articles-area {
         .su-source {
             font-size: $font-size-source-liste;
         }

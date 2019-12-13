@@ -52,7 +52,7 @@ Vous pouvez soit créer le lien avec les classes du composant, soit l’intégre
 
 ## Source dans une liste d’articles
 
-Pour un article dans une liste d’article, la taille du texte s'adapte grâce à la classe `su-articles-list` positionnée sur une balise parente.
+Pour un article dans une liste d’article, la taille du texte s'adapte grâce à la classe `su-articles-list` ou à la classe `su-articles-area`, au choix, positionnée sur une balise parente.
 
 ```html
 <ul class="su-articles-list">
@@ -100,6 +100,7 @@ Pour un article dans une liste d’article, la taille du texte s'adapte grâce �
 
 
 ### Classes annexes
+- `su-articles-area`
 - `su-articles-list`
 
 
