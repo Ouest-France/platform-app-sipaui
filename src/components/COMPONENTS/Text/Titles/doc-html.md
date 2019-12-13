@@ -96,7 +96,7 @@ Pour un article dans une liste, le `<h2>` et le `<h3>` ont la même apparence, c
 <div class="sipaui">
 	<section class="su-articles-area">
 	    <h2 class="su-h2">Titre de rubrique - H2</h2>
-	    <ul class="su-articles-list">
+	    <ul class="surcharge-storybook su-articles-list">
 	    	<li>
 		    	<p class="su-title">Titre de l’article 1</p>
 	    	</li>
@@ -126,7 +126,7 @@ Pour un article dans une liste, le `<h2>` et le `<h3>` ont la même apparence, c
 <div class="sipaui">
 	<section class="su-articles-area">
 	    <p class="su-h2">Titre de rubrique</p>
-	    <ul class="su-articles-list">
+	    <ul class="surcharge-storybook su-articles-list">
 	    	<li>
 		    	<h2>Titre de l’article 1 - H2</h2>
 	    	</li>
