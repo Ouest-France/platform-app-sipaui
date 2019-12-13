@@ -1,22 +1,32 @@
 # Sources / Sources
 
-**Les sources informent explicitement l'utilisateur de l'origine de l'article**. Elles comportent un élément d’identification visuelle (une cocarde, cf. composant **Cockades**) et le nom de la marque en toutes lettres.
+**Les sources informent explicitement l'utilisateur de l'origine d'un article**.
 
 ## Usage
 
-La source est liée à un seul article. Elle peut être utilisée lorsque l'article est complet ou présenté sous forme d'une liste.
+Chaque source est liée à un seul article. Elle peut être utilisée lorsque l'article est complet ou présenté sous forme d'une liste.
 
-## Spécifications
+## Composition
 
-### Cocarde
-- Taille&nbsp;: 14 x 14px
-- Marge de droite&nbsp;: 5px
+- La source est toujours composée d'un élément d’identification visuelle : **une cocarde**, cf. composant Cockades.
+- Ensuite, **le nom de la marque** en toutes lettres est souvent présent.
+- Une marge de 5px les séparent.
+
+## Types
+
+La source varie selon son contexte et son usage.
+
+### Dans un article
+
+Type | Information | Lien
+------------ | ------------- | ------------- |
+Illustration Ouest-France | (A venir)  |  (A venir)
+Texte | Police&nbsp;: Arial <br> Graisse&nbsp;: Normal <br> Corps&nbsp;: 14px <br> Couleur&nbsp;: #878787 | - <br> - <br> - <br> Couleur Enabled &nbsp;: #666666 <br> Couleur Hover / Focus / Pressed &nbsp;: #B40015
 
 
-### Texte
-- Police&nbsp;: Arial
-- Graisse&nbsp;: Normal
-- Corps&nbsp;: 12px ou 14px
-- Couleur&nbsp;: #878787
+### Dans une liste d'article
 
-**Le composant source est toujours accompagné de la cocarde**, mais peut dans certains cas ne pas avoir le nom de la marque.
+Type | Information | Cocarde seule
+------------ | ------------- | ------------- |
+Illustration Ouest-France | (A venir) | (A venir)
+Texte | Police&nbsp;: Arial <br> Graisse&nbsp;: Normal <br> Corps&nbsp;: 12px <br> Couleur&nbsp;: #878787 | Absent
