@@ -14,7 +14,7 @@
 Article complet Mobile | Article complet Desktop | Liste d'articles
 ------------ | ------------- | -------------
 Illustration 1 | Illustration 2 | Illustration 3
-Police : Arial <br> Graisse : regular <br> Taille : 18px <br> Line height : 1,5 <br> Couleur : #666666 | - <br> - <br> Taille : 22px <br> - <br> - | - <br> - <br> Taille : 14px <br> - <br> -
+Police : Arial <br> Graisse : regular <br> Taille : 20px <br> Line height : 1,5 <br> Couleur : #666666 | - <br> - <br> Taille : 22px <br> - <br> - | - <br> - <br> Taille : 14px <br> - <br> -
 
 ## Bonnes pratiques
 
