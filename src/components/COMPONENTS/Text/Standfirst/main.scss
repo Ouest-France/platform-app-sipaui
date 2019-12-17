@@ -1,0 +1,61 @@
+/*
+    Styles du composant [titles] de SipaUI
+*/
+@import "variables";
+
+
+// CHAPEAU GÉNÉRIQUE-----------------------------------------------------------------------------------------/
+.sipaui {
+    .su-standfirst {
+        font-family: $font-family-standfirst;
+        font-weight: $font-weight-standfirst;
+        line-height: $line-height-standfirst;
+        color: $color-standfirst;
+    }
+}
+
+
+// CHAPEAU LISTE D’ARTICLES -----------------------------------------------------------------------------------------/
+.sipaui {
+    .su-articles-list {
+        .su-standfirst {
+            font-size: $font-size-standfirst-articles-list;
+        }
+    }
+}
+
+// CHAPEAU ARTICLE COMPLET ------------------------------------------------------------------------------------------/
+.sipaui {
+    .su-article {
+        .su-standfirst {
+            font-size: $font-size-standfirst-article;
+        }
+    }
+}
+
+
+
+
+//
+/* -- DESKTOP ONLY ---------------------------------------------------------------------------------------------------------------------------------- */
+//
+
+@media only screen and (min-width: $min-breakpoint-lg) {
+    // CHAPEAU LISTE D’ARTICLES -----------------------------------------------------------------------------------------/
+    .sipaui {
+        .su-articles-list {
+            .su-standfirst {
+                font-size: $font-size-standfirst-articles-list-desktop;
+            }
+        }
+    }
+
+    // CHAPEAU ARTICLE COMPLET ------------------------------------------------------------------------------------------/
+    .sipaui {
+        .su-article {
+            .su-standfirst {
+                font-size: $font-size-standfirst-article-desktop;
+            }
+        }
+    }
+}

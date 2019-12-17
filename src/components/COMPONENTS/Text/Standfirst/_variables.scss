@@ -1,0 +1,22 @@
+/*
+    Variables liés au composant [titles]
+    ex:
+    $border-button-premium: 3px !default;
+*/
+
+
+// CHAPEAU GÉNÉRIQUE
+$font-family-standfirst: $font-family-base       !default;
+$font-weight-standfirst: $font-weight-thin       !default;
+$line-height-standfirst: $line-height-tall       !default;
+$color-standfirst:       $color-main-6           !default;
+
+
+// CHAPEAU LISTE D’ARTICLES
+$font-size-standfirst-articles-list:         $font-size-small       !default;
+$font-size-standfirst-articles-list-desktop: $font-size-small       !default;
+
+
+// CHAPEAU ARTICLE COMPLET
+$font-size-standfirst-article:          2.0rem       !default;
+$font-size-standfirst-article-desktop:  2.2rem       !default;
