@@ -38,6 +38,9 @@
         .su-input-actions-area {
             display: none;
             opacity: 1;
+            .su-input-action {
+                cursor: pointer;
+            }
         }
 
         &.su-not-empty {
