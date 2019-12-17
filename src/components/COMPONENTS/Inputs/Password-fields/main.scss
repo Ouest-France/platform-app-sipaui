@@ -35,6 +35,17 @@
             }
         }
 
+        .su-input-actions-area {
+            display: none;
+            opacity: 1;
+        }
+
+        &.su-not-empty {
+            .su-input-actions-area {
+                display: flex;
+            }
+        }
+
         input:focus {
             & ~ .su-conditions {
                 display: block;
@@ -56,7 +67,7 @@
                 }
             }
             .su-input-actions-area {
-                opacity: 1;
+                display: flex;
             }
         }
     }

@@ -14,7 +14,9 @@
 
         containers.forEach(cont => {
             let input = cont.querySelector("input");
-            if (!input || !cont.querySelector(conditions)) return;
+            if (!input) return;
+            _fillManagement(cont, input.value);
+            if (!cont.querySelector(conditions)) return;
             let konditions = cont.querySelector(conditions);
             _checkPassword(input,konditions);
         });
@@ -73,9 +75,8 @@
         cont.classList.add('su-password-focus');
     }
 
-    function _focusManagement(cont) {
-        if(cont.classList.contains('su-toggle-text')) return;
-        cont.classList.toggle('su-js-show');
+    function _fillManagement(cont,value) {
+        cont.classList.toggle('su-not-empty', !!value);
     }
 
     su.doc.addEventListener('click', function(e) {
@@ -97,12 +98,12 @@
         });
     });
 
-    ['focusin','focusout'].forEach(function(event) {
+    ['keyup'].forEach(function(event) {
         su.doc.addEventListener(event, function(e) {
             const cont = e.target.closest(password);
             const input = e.target.closest("input");
             if (!cont || !input) return;
-            _focusManagement(cont);
+            _fillManagement(cont, input.value);
         });
     });
 
