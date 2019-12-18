@@ -8,9 +8,9 @@ Les champs mot de passe sont des **champs de texte où les caractères sont util
 
 ## Spécifications
 
-- Le champ mot de passe présente toutes les caractéristiques d’un champ de texte : interaction, police, hauteur, etc. Elles sont disponibles dans son doc design.
+- Le champ mot de passe présente toutes les caractéristiques d’un Champ de texte : interaction, police, hauteur, etc. Elles sont disponibles dans son doc design.
 
-### Lors d'une connexion
+### Lors d'une connexion (non à jour)
 
 Type | Illustration
 ------------ | -------------
@@ -24,7 +24,7 @@ Type | Illustration
 **Disabled** | ![password__disabled](components/COMPONENTS/Inputs/Password-fields/design/password__disabled.png)
 
 
-### Lors de la création d'un compte
+### Lors de la création d'un compte (non à jour)
 
 Type | Illustration
 ------------ | -------------
@@ -39,13 +39,14 @@ Type | Illustration
 
 - La visibilité du mot de passe permet de réduire les erreurs.
 - Par défaut, les **caractères sont masqués** et saisis en toute discrétion et sécurité. Des ellipses ou des astérisques, selon le système d'exploitation sont affichées pour représenter chaque caractère du mot de passe saisi.
-- Les icônes “voir” et “masquer” ont les caractéristiques d’une icône d’un composant champ de texte, cf son doc design.
+- **Les icônes “voir” et “masquer” sont visibles lorsque au moins un caractère est saisi.**
+- Ces icônes ont les caractéristiques d’une icône d’un composant Champ de texte, cf son doc design.
 - Sans action de la part de l'utilisateur sur l'un d'entre eux, leur affichage reste constant. Suite à la validation du formulaire, l'état de visibilité est identique.
 
 ### Icône “voir”
 
 - Cette icône permet d'afficher les caractères saisis.
-- **Elle est visible lorsque le container du champ de texte est en focus.**  Elle peut aussi être présente suite à un tape sur l'icône "masquer".
+- Elle est aussi visible suite à un tape sur l'icône "masquer".
 - Elle disparaît suite à un tape sur elle-même.
 - Sa couleur est #878787.
 
@@ -59,7 +60,7 @@ Type | Illustration
 ## Règles de conformité
 
 - Elles informent l'utilisateur des consignes obligatoires.
-- Ces règles apparaissent dans un formulaire de création d'un compte et lors la saisie du mot de passe. Le champ "Mot de passe" est en focus.
+- Ces règles apparaissent uniquement dans un formulaire de création d'un compte et dès que le champ Mot de passe est en focus.
 - Puis, les règles restent affichées : perte de focus, retour du formulaire ko...
 - Chaque règle se valide dès que le caractère saisi le permet.
 - Elles s'affichent 10px sous le champ mot de passe ou le message d'erreur.
@@ -83,7 +84,6 @@ Nature | Illustration | Couleur
 #### Lors d'une connexion
 
 - Lorsqu'aucun caractère n'est renseigné, le message est : " Veuillez renseigner votre mot de passe."
-- Dans un formulaire de connexion ko, le message d'erreur n'est pas lié spécifiquement au champ mot de passe. En effet, le message d'erreur est lié à l'ensemble des éléments qui permettent la connexion.
 
 #### Lors d'une inscription
 - Liste de messages d’erreur possibles :
@@ -95,6 +95,6 @@ Nature | Illustration | Couleur
 
 ## Bonnes pratiques
 
-- L'enregistrement et la saisie automatique de mot de passe facilitent l'usage.
+- L'enregistrement et la saisie automatique facilitent l'usage.
 - Autoriser les copier / coller lors de la connexion et création de mot de passe.
 - Les caractères de retour chariot ne sont pas autorisés. Ils ne sont pas pris en compte lors de la saisie.
