@@ -6,11 +6,16 @@
 
 // CHAPEAU GÉNÉRIQUE-----------------------------------------------------------------------------------------/
 .sipaui {
-    .su-standfirst {
+    .su-standfirst,
+    .su-standfirst b,
+    .su-standfirst strong,
+    .su-standfirst i,
+    .su-standfirst em {
         font-family: $font-family-standfirst;
         font-weight: $font-weight-standfirst;
         line-height: $line-height-standfirst;
         color: $color-standfirst;
+        font-style: normal;
     }
 }
 
