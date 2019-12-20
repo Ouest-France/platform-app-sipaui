@@ -77,13 +77,38 @@
         h2,
         .su-h2,
         h3,
-        .su-h3 {
+            .su-h3,
+            h1 b,
+            .su-h1 b,
+            h2 b,
+            .su-h2 b,
+            h3 b,
+            .su-h3 b,
+        h1 strong,
+        .su-h1 strong,
+        h2 strong,
+        .su-h2 strong,
+        h3 strong,
+        .su-h3 strong,
+            h1 i,
+            .su-h1 i,
+            h2 i,
+            .su-h2 i,
+            h3 i,
+            .su-h3 i,
+        h1 em,
+        .su-h1 em,
+        h2 em,
+        .su-h2 em,
+        h3 em,
+        .su-h3 em {
             font-family: $font-family-titles-article;
             font-weight: $font-weight-titles-article;
             line-height: $line-height-titles-article;
             color: $color-titles-article;
             text-transform: $text-transform-titles-article;
             padding: 0;
+            font-style: normal;
         }
         h1,
         .su-h1 {
