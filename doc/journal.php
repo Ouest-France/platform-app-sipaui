@@ -37,6 +37,7 @@
                                                 <li>Évolution&nbsp;: Titres dans une liste d’articles&nbsp;-> les <code>.su-h2</code> et <code>.su-h3</code> ne sont plus impactés par <code>.su-articles-list</code>.</li>
                                                 <li>Évolution&nbsp;: Sources&nbsp;-> le poids sélecteur des liens de source surcharge maintenant celui des liens d’article.</li-->
                                                 <li>Évolution&nbsp;: Mot de passe&nbsp;-> la fonction d’affichage du mot de passe (œil) apparaît après la saisie d’un premier caractère.</li-->
+                                                <li>Évolution&nbsp;: Titres&nbsp;-> les titres d’articles ne peuvent plus être en gras ou italiques.</li-->
                                             </ul>
                                         </li>
                                     </ul>
