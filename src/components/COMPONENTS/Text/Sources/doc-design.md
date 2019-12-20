@@ -10,7 +10,7 @@ Chaque source est liée à un seul article. Elle peut être utilisée lorsque l'
 
 - La source est toujours composée d'un élément d’identification visuelle : **une cocarde**, cf. composant Cockades.
 - Ensuite, **le nom de la marque** en toutes lettres est souvent présent.
-- Une marge de 5px les séparent.
+- Une marge de 5px les séparent et ils sont centrés horizontalement.
 
 ## Types
 
@@ -18,15 +18,16 @@ La source varie selon son contexte et son usage.
 
 ### Dans un article
 
-Type | Information | Lien
+Type | Information | Lien*
 ------------ | ------------- | ------------- |
-Illustration Ouest-France | (A venir)  |  (A venir)
+Illustration | ![source__article-default](design/source__article-default.png) |  ![source__article-link](design/source__article-link.png)
 Texte | Police&nbsp;: Arial <br> Graisse&nbsp;: Normal <br> Corps&nbsp;: 14px <br> Couleur&nbsp;: #878787 | - <br> - <br> - <br> Couleur Enabled &nbsp;: #666666 <br> Couleur Hover / Focus / Pressed &nbsp;: #B40015
 
+* seul le texte est un lien
 
 ### Dans une liste d'article
 
-Type | Information | Cocarde seule
+Type | Information | Information minimale
 ------------ | ------------- | ------------- |
-Illustration Ouest-France | (A venir) | (A venir)
+Illustration | ![source__article-list](design/source__article-list.png) | ![source__article-list-no-text](design/source__article-list-no-text.png)
 Texte | Police&nbsp;: Arial <br> Graisse&nbsp;: Normal <br> Corps&nbsp;: 12px <br> Couleur&nbsp;: #878787 | Absent
