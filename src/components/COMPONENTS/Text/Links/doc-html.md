@@ -54,6 +54,26 @@ Ce lien est le lien à utiliser dans du contenu éditorial comme un article. On 
 </div>
 
 
+## Lien non stylé
+
+Il peut arriver qu'il soit nécessaire de supprimer le style de lien sur un élément. Par exemple avec un lien sur un bloc. Pour supprimer ce style, utilsez la classe `su-not-link`.
+
+```html
+<section class="su-article">
+	<a href="javascript:;" class="su-not-link" style="display: block; width: 100px; text-align: center;">
+    	<p style="background: rgba(0,0,0, .6); color: white;">Purus Lorem Pellentesque.</p>
+    </a>
+</section>
+```
+<div class="sipaui">
+	<section class="su-article">
+		<a href="javascript:;" class="su-not-link" style="display: block; width: 100px; text-align: center;">
+        	<p style="background: rgba(0,0,0, .6); color: white;">Purus Lorem Pellentesque.</p>
+        </a>
+	</section>
+</div>
+
+
 ## Lien bouton
 
 Utiliser la classe `su-link-button`.
@@ -79,6 +99,7 @@ Utiliser la classe `su-link-button`.
 ## Liste des classes disponibles
 - `su-article`
 - `su-link` (si besoin de surcharge)
+- `su-not-link`
 - `su-link-button`
 
 ### Classes annexes

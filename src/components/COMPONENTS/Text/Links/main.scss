@@ -34,6 +34,13 @@ body a {
             }
         }
     }
+    a.su-not-link,
+    .su-article a.su-not-link {
+        color: $font-color-standard;
+        text-decoration: none;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
 }
 
 
