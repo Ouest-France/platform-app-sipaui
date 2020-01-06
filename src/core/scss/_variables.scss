@@ -128,6 +128,8 @@ $font-size-xsmall:  1.2rem !default;
 $font-size-small:   1.4rem !default;
 $font-size-medium1: 1.6rem !default;
 $font-size-medium2: 1.8rem !default;
+// Le composant chapeau utilise 2 tailles supplémentaires en dur : 2rem et 2.2rem. Si ces tailles doivent resservir, les variabiliser.
+// si c'est le cas, attention à un éventuel renommage de variable qui aurait un impacte sur OF.
 $font-size-tall:    2.4rem !default;
 $font-size-xtall:   3rem   !default;
 $font-size-xxtall:  4rem   !default;
