@@ -20,7 +20,7 @@ La source varie selon son contexte et son usage.
 
 Type | Information | Lien*
 ------------ | ------------- | ------------- |
-Illustration | ![source__article-default](design/source__article-default.png) |  ![source__article-link](design/source__article-link.png)
+Illustration | ![source__article-default](components/COMPONENTS/Text/Sources/design/source__article-default.png) |  ![source__article-link](components/COMPONENTS/Text/Sources/design/source__article-link.png)
 Texte | Police&nbsp;: Arial <br> Graisse&nbsp;: Normal <br> Corps&nbsp;: 14px <br> Couleur&nbsp;: #878787 | - <br> - <br> - <br> Couleur Enabled &nbsp;: #666666 <br> Couleur Hover / Focus / Pressed &nbsp;: #B40015
 
 * seul le texte est un lien
@@ -29,5 +29,5 @@ Texte | Police&nbsp;: Arial <br> Graisse&nbsp;: Normal <br> Corps&nbsp;: 14px <b
 
 Type | Information | Information minimale
 ------------ | ------------- | ------------- |
-Illustration | ![source__article-list](design/source__article-list.png) | ![source__article-list-no-text](design/source__article-list-no-text.png)
+Illustration | ![source__article-list](components/COMPONENTS/Text/Sources/design/source__article-list.png) | ![source__article-list-no-text](components/COMPONENTS/Text/Sources/design/source__article-list-no-text.png)
 Texte | Police&nbsp;: Arial <br> Graisse&nbsp;: Normal <br> Corps&nbsp;: 12px <br> Couleur&nbsp;: #878787 | Absent
