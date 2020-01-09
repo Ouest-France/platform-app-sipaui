@@ -8,20 +8,25 @@
 
 - Les accordéons sont utilisés pour gérer de grande quantité de contenus. Ce contenu est divisé et réduit en sections logiques disposés verticalement.
 
-- L'utilisateur peut afficher le contenu de chaque section suite à un tape sur toute la zone du titre. Ce contenu s’étend en poussant le reste de la page vers le bas. Lors d'un tape sur la zone de titre, contenu déployé est masqué.
+- L'utilisateur peut afficher le contenu de chaque section suite à un tape sur celle-ci. Ce contenu s’étend en poussant le reste de la page vers le bas. Lors d'un nouveau tape sur la section ouverte,le contenu déployé est masqué.
 
-## Spécifications
+## Accrodéon de selection
+
+- L'accordéon de sélection permet en plus de choisir une seule des section.
+
+### Spécifications
 
 - L'accordéon est **auto-fermant** : une seule des sections est ouverte à la fois. Quand une nouvelle section s'ouvre, la dernière ouverte est fermée.
-- Lors de l'ouverture d'une page, aucune ou une des section peut être ouverte.
-- Les sections sont composées de contenus regroupés et organisés tels que du texte, des liens, etc.
-- Le chevron est disponible dans Icons, cf son doc design.
+- Lors de l'ouverture d'une page, aucune ou une seule des section peut être ouverte.
+- Les sections sont composées de contenus regroupés et organisés tels que du texte standard, des liens, etc.
+- La distance entre chaque section est 10px.
+- Les spécifications du radio button sont décrites dans son doc design.
 
-Etat | Enabled close | Hover / Focus / Pressed close | Open | Disabled
+Etat | Enabled close | Hover / Focus / Pressed close | Select | Disabled
 ------------ | ------------- |------------ | ------------- |------------ |
 Illustration | image 1 | image 2 | image 3 | image 4 |
-Container | Hauteur : 44px <br> Largeur : celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, #D4D4D4 | - <br> - <br> Fond : #FFFFFF <br> Contour : épaisseur 1px, #333333 <br> | - <br> - <br> - <br> - | Opacité : 40 % | - <br> - <br> - <br> Contour : épaisseur 1px, #B40015 | Opacité : 40 % | Hauteur : 44px <br> Largeur : celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, #D4D4D4
-Chevron | Taille maximale : 34x34px <br> Zone de tape : 44x44px <br> Couleur : #878787 <br> Orientation : vers le bas | - <br> - <br> - <br> - <br> |  - <br> - <br> Couleur : #333333 <br> Orientation : vers le haut | Opacité : 40 %
+Container | Hauteur : minimum 60px et padding de ??px <br> Largeur : celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond : #FFFFFF <br> Contour : épaisseur 1px, #D4D4D4 | - <br> - <br> Fond : #FFFFFF <br> Contour : épaisseur 1px, #333333 <br> | - <br> - <br> - <br> - | Opacité : 40 % | - <br> - <br> - <br> Contour : épaisseur 1px, #B40015 | Opacité : 40 % | Hauteur : 44px <br> Largeur : celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, #D4D4D4
+Radio button | Marges : 20x10x20x20px | - | - | Opacité : 40 %
 
 ## Bonnes pratiques
 
