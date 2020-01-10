@@ -33,6 +33,18 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
+                                                <li><strong>Nouveauté&nbsp;: accordéon (Components/Navigation/Accordion).</strong></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">3.5.3</span></div>
+                                <div class="table-cell">
+                                    <ul>
+                                        <li>Composants&nbsp;:
+                                            <ul>
                                                 <li><strong>Nouveauté&nbsp;: chapeau (Components/Text/Standfirst).</strong></li>
                                                 <li>Évolution&nbsp;: Titres dans une liste d’articles&nbsp;-> les <code>.su-h2</code> et <code>.su-h3</code> ne sont plus impactés par <code>.su-articles-list</code>.</li>
                                                 <li>Évolution&nbsp;: Sources&nbsp;-> le poids sélecteur des liens de source surcharge maintenant celui des liens d’article.</li-->
@@ -254,10 +266,6 @@
                         <h2>Roadmap</h2>
 
                         <ul class="su-not-list">
-                            <li class="table-row">
-                                <div class="table-cell"><span class="version">3.6</span></div>
-                                <div class="table-cell">Accordéon.</div>
-                            </li>
                             <li class="table-row">
                                 <div class="table-cell"><span class="version">3.7</span></div>
                                 <div class="table-cell">Pagination.</div>
