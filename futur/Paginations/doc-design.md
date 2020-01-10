@@ -20,7 +20,7 @@ Un élément de base est une représentation graphique non présente dans la lis
 Enabled | Hover / Focus / Pressed | Disabled
 ------------ | ------------- | ------------- |
 ![element__base__enabled](design/element__base__enabled.png) | ![element__base__hover](design/element__base__hover.png) | ![element__base__disabled](design/element__base__disabled.png)
-Hauteur : 44px  <br> Largeur : 50px <br> Couleur du fond : #FFFFFF  <br> Contour : #D4D4D4 <br> Chiffre : texte standard | -  <br> - <br> - <br> Contour : #B40015 <br> Chiffre : texte standard #B40015 | Opacité : 40 %
+Hauteur : 44px  <br> Largeur : 50px <br> Fond : #FFFFFF  <br> Contour : #D4D4D4 <br> Chiffre : texte standard | -  <br> - <br> - <br> Contour : #B40015 <br> Chiffre : texte standard #B40015 | Opacité : 40 %
 
 Le chiffre est centré dans le container.
 
@@ -33,7 +33,7 @@ Le chiffre est centré dans le container.
 Enabled | Hover / Focus / Pressed | Disabled
 ------------ | ------------- | ------------- |
 ![element__courant__enabled](design/element__courant__enabled.png) | ![element__courant__hover](design/element__courant__hover.png) | ![element__courant__disabled](design/element__courant__disabled.png)
-Hauteur : 44px  <br> Largeur : 72px <br> Couleur du fond : #FFFFFF  <br> Contour : #D4D4D4 <br> Chiffre : texte standard bold <br> Chevron : #333333 et à 5px à droite du numéro | -  <br> - <br> -  <br> Contour : #B40015 <br> Chiffre : texte standard bold #B40015 <br> Chevron : #B40015 et à 5px à droite du numéro | Opacité du chevron : 40 %
+Hauteur : 44px  <br> Largeur : 72px <br> Fond : #FFFFFF  <br> Contour : #D4D4D4 <br> Chiffre : texte standard bold <br> Chevron : #333333 et à 5px à droite du numéro | -  <br> - <br> -  <br> Contour : #B40015 <br> Chiffre : texte standard bold #B40015 <br> Chevron : #B40015 et à 5px à droite du numéro | Opacité du chevron : 40 %
 
 Le couple chiffre - chevron est centré dans le container.
 Dans l'état disabled, seule la liste de pages est inactive.
@@ -90,14 +90,14 @@ Illustration | ![default](design/default.png) |![large](design/large.png)
 
 ### Exemples
 
-La pagination **visible par l'utilisateur** :
+Pagination **visible par l'utilisateur** :
 
 Page 1 sur 2 318 | Page 2 318 sur 2 318
 ------------- | ------------- |
 ![select-active](design/select-active.png)| ![select-active-full__2318-to-2318](design/select-active-full__2318-to-2318.png)
 
 
- La pagination **pour information** :
+ Pagination **pour information** :
 
 Page 1 sur 2 318 | Page 1 505 sur 2 318
 ------------- | ------------- |
