@@ -5,6 +5,27 @@
 */
 
 
-// ERROR ------------------------------------------------------------------------------------------/
-$:     x       !default;
+// ACCORDION-RADIO ------------------------------------------------------------------------------------------/
+$margin-bottom-accordion-item:  $margin-medium                  !default;
+
+// lABEL
+$border-accordion-label:        1px solid $color-main-4         !default;
+$background-accordion-label:    $color-main-1                   !default;
+$height-accordion-label:        60px                            !default;
+
+// CONTENT
+$border-accordion-content:      $border-accordion-label         !default;
+$background-accordion-content:  $background-accordion-label     !default;
+
+// Hover
+$border-accordion-label-hover:          1px solid $color-main-7                !default;
+$background-accordion-label-hover:      null                                   !default;
+$border-accordion-content-hover:        $border-accordion-label-hover          !default;
+$background-accordion-content-hover:    $background-accordion-label-hover      !default;
+
+// Checked
+$border-accordion-label-checked:        $border-accordion-label-hover          !default;
+$background-accordion-label-checked:    $background-accordion-label-hover      !default;
+$border-accordion-content-checked:      $border-accordion-label-hover          !default;
+$background-accordion-content-checked:  $background-accordion-label-hover      !default;
 

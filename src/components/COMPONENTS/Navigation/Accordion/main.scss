@@ -4,9 +4,69 @@
 @import "variables";
 
 
-
+// ACCORDION-RADIO ------------------------------------------------------------------------------------------/
 .sipaui {
+    .su-accordion-radio {
+        min-width: 140px;
+    }
+    .su-accordion-item {
+        position: relative;
+        margin-bottom: $margin-bottom-accordion-item;
 
+        > input[type=radio] {
+
+        }
+        > label {
+            height: $height-accordion-label;
+            border: $border-accordion-label;
+            border-bottom: 0;
+            background: $background-accordion-label;
+            margin: 0;
+                                                                                                                padding: 0 0 0 60px;
+            cursor: pointer;
+
+            @include hover-active-focus {
+                border: $border-accordion-label-hover;
+                border-bottom: 0;
+                background: $background-accordion-label-hover;
+            }
+        }
+        input[type=radio]:checked + label {
+            border: $border-accordion-label-checked;
+            border-bottom: 0;
+            background: $background-accordion-label-checked;
+        }
+    }
+    .su-accordion-content {
+        border: $border-accordion-content;
+        border-top: 0;
+        background: $background-accordion-content;
+        max-height: 0;
+                                                                                                                        padding: 0 20px 0 60px;
+        overflow: hidden;
+        transition: max-height 0;
+
+        *:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .su-accordion-item label {
+        @include hover-active-focus {
+            ~ .su-accordion-content {
+                border: $border-accordion-content-hover;
+                border-top: 0;
+                background: $background-accordion-content-hover;
+            }
+        }
+    }
+    input[type=radio]:checked ~ .su-accordion-content {
+        border: $border-accordion-content-checked;
+        border-top: 0;
+        background: $background-accordion-content-checked;
+        max-height: 1000px;
+                                                                                                                        padding: 0 20px 20px 60px;
+        transition: max-height 2s ease-out;
+    }
 }
 
 
