@@ -77,7 +77,7 @@
 </script>
 <style type="text/css">
     body.sb-show-main {
-        margin: 0 10%;
+        margin: 0 200px;
         overflow-x: hidden;
     }
 
@@ -268,21 +268,9 @@
         z-index: -1;
         top: 0;
         bottom: 0;
-        left: -100%;
-        right: -100%;
+        left: -216px;
+        right: -216px;
     }
-    /*.zone-titre-accueil:after {
-        content: "";
-        display: block;
-        position: absolute;
-        background: #891a33;
-        z-index: -10;
-        height: 30px;
-        width: 30px;
-        bottom: -15px;
-        left: 50%;
-        transform: translateX(-50%) rotate(45deg)
-    }*/
 
     /*  Spécifique ------------------------------------------------------------------*/
     .theme-of .visible-of {
@@ -488,7 +476,27 @@
         border-left: 1px solid #da345d;
     }
 
+    @media screen and (max-width: 1499px) {
+        body.sb-show-main {
+            margin: 0 60px;
+        }
+        .zone-titre-accueil:before,
+        .dependances:before,
+        #liste-classes:before {
+            left: -76px;
+            right: -76px;
+        }
+    }
     @media screen and (max-width: 1023px) {
+        body.sb-show-main {
+            margin: 0 30px;
+        }
+        .zone-titre-accueil:before,
+        .dependances:before,
+        #liste-classes:before {
+            left: -46px;
+            right: -46px;
+        }
         body .markdown-body h1,
         body #root div[style] > h1 {
             font-size: 5rem;
@@ -513,6 +521,12 @@
         }
         body.sb-show-main {
             margin: 0 20px;
+        }
+        .zone-titre-accueil:before,
+        .dependances:before,
+        #liste-classes:before {
+            left: -36px;
+            right: -36px;
         }
         .logo-accueil svg {
             height: 90px;
