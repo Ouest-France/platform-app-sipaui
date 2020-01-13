@@ -14,7 +14,8 @@
         margin-bottom: $margin-bottom-accordion-item;
 
         > input[type=radio] {
-
+                                                                                                                top: 20px;
+                                                                                                                left: 20px;
         }
         > label {
             height: $height-accordion-label;
@@ -22,8 +23,13 @@
             border-bottom: 0;
             background: $background-accordion-label;
             margin: 0;
+                                                                                                                font-size: 1.6rem;
+                                                                                                                font-weight: 300;
                                                                                                                 padding: 0 0 0 60px;
             cursor: pointer;
+            @include display-flex();
+            @include flex-direction(column);
+            @include justify-content(center, center);
 
             @include hover-active-focus {
                 border: $border-accordion-label-hover;
@@ -41,10 +47,13 @@
         border: $border-accordion-content;
         border-top: 0;
         background: $background-accordion-content;
-        max-height: 0;
+        height: 0;
                                                                                                                         padding: 0 20px 0 60px;
         overflow: hidden;
-        transition: max-height 0;
+
+        &:not(.su-no-transition) {
+
+        }
 
         *:last-child {
             margin-bottom: 0;
@@ -63,8 +72,16 @@
         border: $border-accordion-content-checked;
         border-top: 0;
         background: $background-accordion-content-checked;
-        max-height: 1000px;
+        height: auto;
                                                                                                                         padding: 0 20px 20px 60px;
+    }
+    // Transition
+    .su-accordion-radio:not(.su-no-transition) .su-accordion-content {
+        max-height: 0;
+        transition: max-height 0;
+    }
+    .su-accordion-radio:not(.su-no-transition) input[type=radio]:checked ~ .su-accordion-content {
+        max-height: 1000px;
         transition: max-height 2s ease-out;
     }
 }
