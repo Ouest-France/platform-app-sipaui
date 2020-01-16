@@ -26,7 +26,7 @@
 
 Etat | Enabled | Select
 ------------ | ------------- |------------ |
-Illustration | ![list__enable-close](Design/list__enable-close.png) | ![list__active](Design/list__active.png) | image 4 |
+Illustration | ![list__enable-close](Design/list__enable-close.png) | ![list__active](Design/list__active.png)
 Container | Hauteur : minimum 64px et padding de 10px <br> Largeur : celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond : #FFFFFF <br> Contour : épaisseur 1px, #D4D4D4 | Hauteur : padding en haut 10px et padding en bas 20px <br> - <br> Fond : #FFFFFF <br> Contour : épaisseur 1px, #333333 | Opacité : 40 % | - <br> - <br> - <br> Contour : épaisseur 1px, #B40015 | Opacité : 40 % | Hauteur : 44px <br> Largeur : celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, #D4D4D4
 Radio button | Marge à gauche : 20px <br> Marge à droite : 10px <br> Centré verticalement  | - <br> - <br> Placement vertical identique à l'état enabled
 
