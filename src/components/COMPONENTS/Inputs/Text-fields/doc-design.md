@@ -23,7 +23,7 @@ Icône  |  |  |  |  |  |  | Taille maximale : 34x34px <br> Zone de tap : 44x44px
 - Il est aligné à gauche avec le label.
 
 #### Texte du placeholder
-- Le texte du placeholder est une description facultative et supplémentaire au label. En aucun cas, il ne le substitue ou est identique. Il doit guider l’utilisateur sur le format de données attendu. On peut ainsi présenter un exemple (&nbsp;prenom.nom@domaine.fr&nbsp;) ou un pattern (date&nbsp;: &nbsp;jj/mm/aaaa&nbsp;).
+- Le texte du placeholder guide l’utilisateur sur le type de données attendu. Dans la grande majorité des cas, il est facultatif et supplémentaire au label : il ne le substitue pas et n'est pas identique, ex : prenom.nom@domaine.fr
 - Il se trouve dans le container et n'est plus visible dès la saisie.
 
 #### Champ non modifiable (readonly)
@@ -35,9 +35,13 @@ Icône  |  |  |  |  |  |  | Taille maximale : 34x34px <br> Zone de tap : 44x44px
 - Elle est située à droite dans le container.
 - L’icône est centrée dans la zone de tap.
 - Cas particulier : la croix
- - Une croix permet la suppression totale et directe du champ.
+ - Il s'adit de l'icône Vider, cf doc Icons. Elle permet la suppression totale et directe du champ.
  - Elle est présente lorsque l’input est en focus et qu'un contenu est présent.
 
 ## Gestion des erreurs
 - Un champ obligatoire est défini comme ko lorsque le texte n'est pas correct ou est absent.
 - Les spécifications du message d'erreur sont disponibles dans le doc design du composant Error.
+
+## Bonnes pratiques
+- Une marge de 20px entre chaque champ permet de bien distinguer les distinguer.
+- En mobile, dès que l’utilisateur touche le champ, le clavier apparaît automatiquement. Il est approprié selon le contenu. Par exemple, le clavier numérique est adapté à un champ de type téléphone.
