@@ -10,28 +10,30 @@
 
 - L’utilisateur peut afficher le contenu de chaque section suite à un tape sur celle-ci. Ce contenu s’étend en poussant le reste de la page vers le bas. Lors d’un nouveau tape sur la section ouverte,le contenu déployé est masqué.
 
-## Accrodéon de selection
+## Accordéon-radio
 
-- L’accordéon de sélection permet en plus de choisir une seule des sections.
+- L’accordéon-radio permet en plus de choisir une seule des sections.
 
 ### Spécifications
 
-- L’accordéon est **auto-fermant**&nbsp;: une seule des sections est ouverte à la fois. Quand une nouvelle section s’ouvre, la dernière ouverte est fermée.
+- L’accordéon est **auto-fermant**&nbsp;: une seule des sections est ouverte à la fois. Quand une nouvelle section s’ouvre, la précédente section se ferme.
 - Lors de l’ouverture d’une page, aucune ou une seule des section peut être ouverte.
-- Les sections sont composées de contenus regroupés et organisés tels que du texte standard, des liens, etc.
+- Les sections sont composées de contenus regroupés et organisés tels que du texte standard, des champs de texte, etc.
 - La distance entre chaque section est 10px.
 - Les spécifications du radio button sont décrites dans son doc design.
+- Dans chaque section, le contenu déployé est au-moins à 22px sous le radio-bouton. Si le container est supérieur à 64px, il se situe à 10px sous le label.
 
-Etat | Enabled close | Hover / Focus / Pressed close | Select | Disabled
------------- | ------------- |------------ | ------------- |------------ |
-Illustration | image 1 | image 2 | image 3 | image 4 |
-Container | Hauteur&nbsp;: minimum 60px et padding de ??px <br> Largeur&nbsp;: celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond&nbsp;: #FFFFFF <br> Contour&nbsp;: épaisseur 1px, #D4D4D4 | - <br> - <br> Fond&nbsp;: #FFFFFF <br> Contour&nbsp;: épaisseur 1px, #333333 <br> | - <br> - <br> - <br> - | Opacité&nbsp;: 40 % | - <br> - <br> - <br> Contour&nbsp;: épaisseur 1px, #B40015 | Opacité&nbsp;: 40 % | Hauteur&nbsp;: 44px <br> Largeur&nbsp;: celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond&nbsp;: #FAFAFA <br> Contour&nbsp;: épaisseur 1px, #D4D4D4
-Radio button | Marges&nbsp;: 20x10x20x20px | - | - | Opacité&nbsp;: 40 %
+
+Etat | Enabled | Select
+------------ | ------------- |------------ |
+Illustration | ![list__enable-close](components/COMPONENTS/Navigation/Accordion/design/list__enable-close.png) | ![list__active](components/COMPONENTS/Navigation/Accordion/design/list__active.png)
+Container | Hauteur : minimum 64px et padding de 10px <br> Largeur : celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond : #FFFFFF <br> Contour : épaisseur 1px, #D4D4D4 | Hauteur : padding en haut 10px et padding en bas 20px <br> - <br> Fond : #FFFFFF <br> Contour : épaisseur 1px, #333333 | Opacité : 40 % | - <br> - <br> - <br> Contour : épaisseur 1px, #B40015 | Opacité : 40 % | Hauteur : 44px <br> Largeur : celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, #D4D4D4
+Radio button | Marge à gauche : 20px <br> Marge à droite : 10px <br> Centré verticalement  | - <br> - <br> Placement vertical identique à l’état enabled
+
 
 ## Bonnes pratiques
 
 - Les accordéons sont particulièrement utiles pour des interfaces Mobile first car ils réduisent les contenus volumineux dans de petits espaces.
 - Le contenu doit être organisé de manière à simplifier la navigation.
 - Cacher un contenu via un accordéon n’améliore pas nécessairement l’expérience utilisateur. Ils peuvent provoquer une désorientation. Aussi, le nombre d’interaction augmente.
-- N’utilisez pas d’accordéons lorsque tout le contenu doit être vu sur une même page.
-Si les pages sont extrêmement longues, l’accordéon n’est peut-être pas approprié. Une approche différente de la navigation et de la mise en page devront être pensée. 
+- N’utilisez pas d’accordéons lorsque tout le contenu doit être vu sur une même page. Si les pages sont extrêmement longues, l’accordéon n’est peut-être pas approprié. Une approche différente de la navigation et de la mise en page devront être pensée.
