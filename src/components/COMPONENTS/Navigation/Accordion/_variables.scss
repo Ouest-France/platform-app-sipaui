@@ -1,21 +1,29 @@
 /*
-    Variables liés au composant [errors]
+    Variables liés au composant [accordion]
     ex:
     $border-button-premium: 3px !default;
 */
 
 
 // ACCORDION-RADIO ------------------------------------------------------------------------------------------/
-$margin-bottom-accordion-item:  $margin-small                  !default;
+$margin-bottom-accordion-item:  $margin-small                   !default;
 
 // lABEL
 $border-accordion-label:        1px solid $color-main-4         !default;
 $background-accordion-label:    $color-main-1                   !default;
-$height-accordion-label:        60px                            !default;
+$min-height-accordion-label:    64px                            !default;
+$font-size-accordion-label:     $font-size-medium1              !default;
+$font-weight-accordion-label:   $font-weight-normal             !default;
+$padding-accordion-label:       $margin-small $margin-small $margin-small 50px          !default;
+
+// RADIO
+$top-accordion-radio:           $min-height-accordion-label / 2 - 10px                  !default;
+$left-accordion-radio:          $margin-medium                                          !default;
 
 // CONTENT
 $border-accordion-content:      $border-accordion-label         !default;
 $background-accordion-content:  $background-accordion-label     !default;
+$padding-accordion-content:     $margin-medium                  !default;
 
 // Hover
 $border-accordion-label-hover:          1px solid $color-main-7                !default;

@@ -14,18 +14,19 @@
         margin-bottom: $margin-bottom-accordion-item;
 
         > input[type=radio] {
-                                                                                                                top: 20px;
-                                                                                                                left: 20px;
+            top: $top-accordion-radio;
+            left: $left-accordion-radio;
         }
         > label {
-            height: $height-accordion-label;
+            height: auto; // pour contrer le height défini en standard sur les label SUI
+            min-height: $min-height-accordion-label;
             border: $border-accordion-label;
             border-bottom: 0;
             background: $background-accordion-label;
             margin: 0;
-                                                                                                                font-size: 1.6rem;
-                                                                                                                font-weight: 300;
-                                                                                                                padding: 0 0 0 60px;
+            font-size: $font-size-accordion-label;
+            font-weight: $font-weight-accordion-label;
+            padding: $padding-accordion-label;
             cursor: pointer;
             @include display-flex();
             @include flex-direction(column);
@@ -48,7 +49,7 @@
         border-top: 0;
         background: $background-accordion-content;
         height: 0;
-                                                                                                                        padding: 0 20px 0 60px;
+        padding: 0 $padding-accordion-content;
         overflow: hidden;
 
         &:not(.su-no-transition) {
@@ -73,7 +74,7 @@
         border-top: 0;
         background: $background-accordion-content-checked;
         height: auto;
-                                                                                                                        padding: 0 20px 20px 60px;
+        padding: 0 $padding-accordion-content $padding-accordion-content;
     }
     // Transition
     .su-accordion-radio:not(.su-no-transition) .su-accordion-content {

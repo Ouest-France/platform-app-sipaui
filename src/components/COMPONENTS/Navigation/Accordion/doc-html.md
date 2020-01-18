@@ -2,7 +2,7 @@
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
-En interface web, il peut exister plusieurs types d’accordéon. **SipaUI en propose un** pour l’instant&nbsp;: **l’accordéon-radio**, qui peut servir par exemple pour des sous-parties d’un formulaire, liée à un choix de l’utilisateur (comme le choix d’un moyen de paiement qui ouvre la paramètres liés à ce choix).
+En interface web, il peut exister plusieurs types d’accordéon. **SipaUI en propose un** pour l’instant&nbsp;: **l’accordéon-radio**. Il peut servir par exemple pour des sous-parties d’un formulaire, liées à un choix de l’utilisateur (comme le choix d’un moyen de paiement qui ouvre les paramètres liés à ce choix).
 
 <div class="dependances">
 
@@ -16,7 +16,7 @@ En interface web, il peut exister plusieurs types d’accordéon. **SipaUI en pr
 
 ## Accordéon-radio
 
-Comme pour les boutons-radio il ne peut y avoir qu’**une seule partie de l’accordéon d’active à la fois**. Chaque partie est donc **auto-fermante**.
+Comme pour les boutons-radio il ne peut y avoir qu’**une seule partie de l’accordéon active à la fois**. Chaque partie est donc **auto-fermante**.
 
 ```html
 <div class="su-accordion-radio">
@@ -85,7 +85,7 @@ Comme pour les boutons-radio il ne peut y avoir qu’**une seule partie de l’a
 
 <div class="alerte">
 	<p><strong>Transition = hauteur maximale de contenu&nbsp;!</strong></p>
-	<p>Pour des questions de légèreté et de simplification d’intégration, nous avons opté pour des accordéons <strong>sans javascript</strong>. Toutefois, à cause d’une limitation de CSS <em>(les transitions n’acceptent pas la valeur "auto")</em>, il n’est <strong>pas possible</strong> d’avoir à la fois un <strong>effet de transition</strong> et une <strong>hauteur automatique en fonction du contenu</strong>. Nous avons donc choisi d’appliquer un <code>max-height</code> de <strong>1000px</strong>. Il pourrait arriver que votre contenu soit supérieur à cette hauteur (notamment sur mobile où la largeur est moindre) et dans ce cas vous aurez un bug d’affichage (le contenu sortant de cette hauteur sera masqué).</p>
+	<p>Pour des questions de légèreté et de simplification d’intégration, nous avons opté pour des accordéons <strong>sans javascript</strong>. Toutefois, à cause d’une limitation de CSS <em>(les transitions n’acceptent pas la valeur "auto")</em>, il n’est <strong>pas possible</strong> d’avoir à la fois un <strong>effet de transition</strong> et une <strong>hauteur automatique en fonction du contenu</strong>. Nous avons donc choisi d’appliquer un <code>max-height</code> de <strong>1000px</strong>. Il <em>pourrait</em> arriver que votre contenu soit supérieur à cette hauteur (notamment sur mobile où la largeur est moindre) et dans ce cas vous aurez un bug d’affichage (le contenu sortant de cette hauteur sera masqué).</p>
 	<p>Par conséquent, si vous rencontrez ce problème, vous avez <strong>2 solutions</strong>&nbsp;:</p>
 	<ul>
 		<li>Désactiver la transition en ajoutant la classe <code>su-no-transition</code> à côté de la classe <code>su-accordion-radio</code>.</li>
