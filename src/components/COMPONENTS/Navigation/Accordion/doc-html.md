@@ -2,13 +2,13 @@
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
-En interface web, il peut exister plusieurs types d’accordéon. **SipaUI en propose un** pour l’instant&nbsp;: **l’accordéon-radio**. Il peut servir par exemple pour des sous-parties d’un formulaire, liées à un choix de l’utilisateur (comme le choix d’un moyen de paiement qui ouvre les paramètres liés à ce choix).
+En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en propose un** pour l’instant&nbsp;: **l’accordéon-radio**. Il peut servir par exemple pour des sous-parties d’un formulaire, liées à un choix de l’utilisateur (comme le choix d’un moyen de paiement qui ouvre les paramètres liés à ce choix).
 
 <div class="dependances">
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **Radio-buttons** (pour l’accordéon radio.
+- composant **Radio-buttons**.
 
 </div>
 
@@ -16,7 +16,14 @@ En interface web, il peut exister plusieurs types d’accordéon. **SipaUI en pr
 
 ## Accordéon-radio
 
-Comme pour les boutons-radio il ne peut y avoir qu’**une seule partie de l’accordéon active à la fois**. Chaque partie est donc **auto-fermante**.
+### Standard
+
+Comme pour les boutons-radio il ne peut y avoir qu’**une seule partie de l’accordéon active à la fois**. Chaque partie est donc **autofermante**.
+
+Cet accordéon ce construit avec ces 3 classes&nbsp;: `su-accordion-radio`, `su-accordion-item` et `su-accordion-content` ainsi qu’avec le composant **radio-buttons** qui sert à la fois d’activateur de l’effet d’accordéon et est affiché pour renforcer visuellement la logique de fonctionnement. La première classe, `su-accordion-radio` encadre l’ensemble de l’accordéon-radio, la seconde, `su-accordion-item` encadre chaque volet d’un accordéon et `su-accordion-content` est affectée à la zone affichée/masquée dans chaque volet.
+
+Il y a une dernière classe utile&nbsp;: `su-no-transition`. Elle sert à désactiver l’effet de transition sur les volets de l’accordéon. Pour en savoir plus, cf. l’encart *Transition = hauteur maximale de contenu&nbsp;!* ci-dessous.
+
 
 ```html
 <div class="su-accordion-radio">
@@ -85,7 +92,7 @@ Comme pour les boutons-radio il ne peut y avoir qu’**une seule partie de l’a
 
 <div class="alerte">
 	<p><strong>Transition = hauteur maximale de contenu&nbsp;!</strong></p>
-	<p>Pour des questions de légèreté et de simplification d’intégration, nous avons opté pour des accordéons <strong>sans javascript</strong>. Toutefois, à cause d’une limitation de CSS <em>(les transitions n’acceptent pas la valeur "auto")</em>, il n’est <strong>pas possible</strong> d’avoir à la fois un <strong>effet de transition</strong> et une <strong>hauteur automatique en fonction du contenu</strong>. Nous avons donc choisi d’appliquer un <code>max-height</code> de <strong>1000px</strong>. Il <em>pourrait</em> arriver que votre contenu soit supérieur à cette hauteur (notamment sur mobile où la largeur est moindre) et dans ce cas vous aurez un bug d’affichage (le contenu sortant de cette hauteur sera masqué).</p>
+	<p>Pour des questions de légèreté et de simplification d’intégration, nous avons opté pour des accordéons <strong>sans javascript</strong>. Toutefois, à cause d’une limitation de CSS <em>(les transitions n’acceptent pas la valeur «&nbsp;auto&nbsp;»)</em>, il n’est <strong>pas possible</strong> d’avoir à la fois un <strong>effet de transition</strong> et une <strong>hauteur automatique en fonction du contenu</strong>. Nous avons donc choisi d’appliquer un <code>max-height</code> de <strong>1000px</strong>. Il <em>pourrait</em> arriver que votre contenu soit supérieur à cette hauteur (notamment sur mobile où la largeur est moindre) et dans ce cas vous aurez un bug d’affichage (le contenu sortant de cette hauteur sera masqué).</p>
 	<p>Par conséquent, si vous rencontrez ce problème, vous avez <strong>2 solutions</strong>&nbsp;:</p>
 	<ul>
 		<li>Désactiver la transition en ajoutant la classe <code>su-no-transition</code> à côté de la classe <code>su-accordion-radio</code>.</li>
@@ -94,9 +101,66 @@ Comme pour les boutons-radio il ne peut y avoir qu’**une seule partie de l’a
 </div>
 
 
-### Inactif
+### Accordéon inactif
 
-Sur accordion et sur accordion-item.
+Pour rendre l’accordéon-radio inactif, il faut ajouter la classe `su-disabled` à `su-accordion-radio` et la valeur `disabled` sur chaque bouton-radio.
+
+<div class="sipaui">
+	<div class="su-accordion-radio su-disabled">
+		<div class="su-accordion-item">
+			<input type="radio" id="accordion-radio4" name="nom2" disabled>
+			<label for="accordion-radio4">Label 1</label>
+			<div class="su-accordion-content">
+				<p>Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			</div>
+		</div>
+		<div class="su-accordion-item">
+			<input type="radio" id="accordion-radio5" name="nom2" disabled>
+			<label for="accordion-radio5">Label 2</label>
+			<div class="su-accordion-content">
+				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+			</div>
+		</div>
+		<div class="su-accordion-item">
+			<input type="radio" id="accordion-radio6" name="nom2" disabled>
+			<label for="accordion-radio6">Label 3</label>
+			<div class="su-accordion-content">
+				<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+### Volet inactif
+
+Pour rendre uniquement un volet de l’accordéon-radio inactif, la méthode est identique, mais en mettant la classe `su-disabled` sur le `su-accordion-item` concerné et la valeur `disabled` sur son bouton-radio.
+
+<div class="sipaui">
+	<div class="su-accordion-radio">
+		<div class="su-accordion-item">
+			<input type="radio" id="accordion-radio7" name="nom3" checked>
+			<label for="accordion-radio7">Label 1</label>
+			<div class="su-accordion-content">
+				<p>Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			</div>
+		</div>
+		<div class="su-accordion-item">
+			<input type="radio" id="accordion-radio8" name="nom3">
+			<label for="accordion-radio8">Label 2</label>
+			<div class="su-accordion-content">
+				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+			</div>
+		</div>
+		<div class="su-accordion-item su-disabled">
+			<input type="radio" id="accordion-radio9" name="nom3" disabled>
+			<label for="accordion-radio9">Label 3</label>
+			<div class="su-accordion-content">
+				<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.</p>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div id="liste-classes" class="control-titres">
 
