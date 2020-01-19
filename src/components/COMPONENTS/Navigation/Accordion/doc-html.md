@@ -105,6 +105,32 @@ Il y a une dernière classe utile&nbsp;: `su-no-transition`. Elle sert à désac
 
 Pour rendre l’accordéon-radio inactif, il faut ajouter la classe `su-disabled` à `su-accordion-radio` et la valeur `disabled` sur chaque bouton-radio.
 
+```html
+<div class="su-accordion-radio su-disabled">
+	<div class="su-accordion-item">
+		<input type="radio" id="accordion-radio4" name="nom2" disabled>
+		<label for="accordion-radio4">Label 1</label>
+		<div class="su-accordion-content">
+			<p>Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+		</div>
+	</div>
+	<div class="su-accordion-item">
+		<input type="radio" id="accordion-radio5" name="nom2" disabled>
+		<label for="accordion-radio5">Label 2</label>
+		<div class="su-accordion-content">
+			<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+		</div>
+	</div>
+	<div class="su-accordion-item">
+		<input type="radio" id="accordion-radio6" name="nom2" disabled>
+		<label for="accordion-radio6">Label 3</label>
+		<div class="su-accordion-content">
+			<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.</p>
+		</div>
+	</div>
+</div>
+```
+
 <div class="sipaui">
 	<div class="su-accordion-radio su-disabled">
 		<div class="su-accordion-item">
@@ -135,6 +161,32 @@ Pour rendre l’accordéon-radio inactif, il faut ajouter la classe `su-disabled
 ### Volet inactif
 
 Pour rendre uniquement un volet de l’accordéon-radio inactif, la méthode est identique, mais en mettant la classe `su-disabled` sur le `su-accordion-item` concerné et la valeur `disabled` sur son bouton-radio.
+
+```html
+<div class="su-accordion-radio">
+	<div class="su-accordion-item">
+		<input type="radio" id="accordion-radio7" name="nom3" checked>
+		<label for="accordion-radio7">Label 1</label>
+		<div class="su-accordion-content">
+			<p>Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+		</div>
+	</div>
+	<div class="su-accordion-item">
+		<input type="radio" id="accordion-radio8" name="nom3">
+		<label for="accordion-radio8">Label 2</label>
+		<div class="su-accordion-content">
+			<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+		</div>
+	</div>
+	<div class="su-accordion-item su-disabled">
+		<input type="radio" id="accordion-radio9" name="nom3" disabled>
+		<label for="accordion-radio9">Label 3</label>
+		<div class="su-accordion-content">
+			<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.</p>
+		</div>
+	</div>
+</div>
+```
 
 <div class="sipaui">
 	<div class="su-accordion-radio">
