@@ -6,34 +6,34 @@
 
 
 // ACCORDION-RADIO ------------------------------------------------------------------------------------------/
-$margin-bottom-accordion-item:  $margin-small                   !default;
+$margin-bottom-accordion-radio-item:  $margin-small                   !default;
 
 // lABEL
-$border-accordion-label:        1px solid $color-main-4         !default;
-$background-accordion-label:    $color-main-1                   !default;
-$min-height-accordion-label:    64px                            !default;
-$font-size-accordion-label:     $font-size-medium1              !default;
-$font-weight-accordion-label:   $font-weight-normal             !default;
-$padding-accordion-label:       $margin-small $margin-small $margin-small 50px          !default;
+$border-accordion-radio-label:        1px solid $color-main-4         !default;
+$background-accordion-radio-label:    $color-main-1                   !default;
+$min-height-accordion-radio-label:    64px                            !default;
+$font-size-accordion-radio-label:     $font-size-medium1              !default;
+$font-weight-accordion-radio-label:   $font-weight-normal             !default;
+$padding-accordion-radio-label:       $margin-small $margin-small $margin-small 50px          !default;
 
 // RADIO
-$top-accordion-radio:           $min-height-accordion-label / 2 - 10px                  !default;
-$left-accordion-radio:          $margin-medium                                          !default;
+$top-accordion-radio-radio-button:           $min-height-accordion-radio-label / 2 - 10px                  !default;
+$left-accordion-radio-radio-button:          $margin-medium                                                !default;
 
 // CONTENT
-$border-accordion-content:      $border-accordion-label         !default;
-$background-accordion-content:  $background-accordion-label     !default;
-$padding-accordion-content:     $margin-medium                  !default;
+$border-accordion-radio-content:      $border-accordion-radio-label               !default;
+$background-accordion-radio-content:  $background-accordion-radio-label     !default;
+$padding-accordion-radio-content:     $margin-medium                        !default;
 
 // Hover
-$border-accordion-label-hover:          1px solid $color-main-7                !default;
-$background-accordion-label-hover:      null                                   !default;
-$border-accordion-content-hover:        $border-accordion-label-hover          !default;
-$background-accordion-content-hover:    $background-accordion-label-hover      !default;
+$border-accordion-radio-label-hover:          1px solid $color-main-7                      !default;
+$background-accordion-radio-label-hover:      null                                         !default;
+$border-accordion-radio-content-hover:        $border-accordion-radio-label-hover          !default;
+$background-accordion-radio-content-hover:    $background-accordion-radio-label-hover      !default;
 
 // Checked
-$border-accordion-label-checked:        $border-accordion-label-hover          !default;
-$background-accordion-label-checked:    $background-accordion-label-hover      !default;
-$border-accordion-content-checked:      $border-accordion-label-hover          !default;
-$background-accordion-content-checked:  $background-accordion-label-hover      !default;
+$border-accordion-radio-label-checked:        $border-accordion-radio-label-hover          !default;
+$background-accordion-radio-label-checked:    $background-accordion-radio-label-hover      !default;
+$border-accordion-radio-content-checked:      $border-accordion-radio-label-hover          !default;
+$background-accordion-radio-content-checked:  $background-accordion-radio-label-hover      !default;
 
