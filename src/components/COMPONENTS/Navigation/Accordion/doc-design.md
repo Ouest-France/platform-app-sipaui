@@ -8,7 +8,7 @@
 
 - Les accordéons sont utilisés pour gérer de grandes quantités de contenus. Ce contenu est divisé et réduit en sections logiques disposées verticalement.
 
-- L’utilisateur peut afficher le contenu de chaque section suite à un tap sur celle-ci. Ce contenu s’étend en poussant le reste de la page vers le bas. Lors d’un nouveau tap sur la section ouverte,le contenu déployé est masqué.
+- L’utilisateur peut afficher le contenu de chaque section suite à un tap sur celle-ci. Ce contenu s’étend en poussant le reste de la page vers le bas. Lors d’un nouveau tap sur la section ouverte, le contenu déployé est masqué.
 
 ## Accordéon-radio
 
@@ -17,7 +17,7 @@
 ### Spécifications
 
 - L’accordéon est **autofermant**&nbsp;: une seule des sections est ouverte à la fois. Quand une nouvelle section s’ouvre, la précédente section se ferme.
-- Lors de l’ouverture d’une page, aucune ou une seule des sections peut être ouverte.
+- Lors de l’ouverture d’une page, aucune ou une seule des section peut être ouverte.
 - Les sections sont composées de contenus regroupés et organisés tels que du texte standard, des champs de texte, etc.
 - La distance entre chaque section est 10px.
 - Les spécifications du radio button sont décrites dans son doc design.
@@ -36,4 +36,4 @@ Radio button | Marge à gauche : 20px <br> Marge à droite : 10px <br> Centré v
 - Les accordéons sont particulièrement utiles pour des interfaces Mobile first car ils réduisent les contenus volumineux dans de petits espaces.
 - Le contenu doit être organisé de manière à simplifier la navigation.
 - Cacher un contenu via un accordéon n’améliore pas nécessairement l’expérience utilisateur. Ils peuvent provoquer une désorientation. Aussi, le nombre d’interactions augmente.
-- N’utilisez pas d’accordéon lorsque tout le contenu doit être vu sur une même page. Si les pages sont extrêmement longues, l’accordéon n’est peut-être pas approprié. Une approche différente de la navigation et de la mise en page devra être pensée.
+- N’utilisez pas d’accordéon lorsque tout le contenu doit être vu sur une même page. Si la page est extrêmement longue, l’accordéon n’est peut-être pas approprié. Une approche différente de la navigation et de la mise en page devra être pensée.
