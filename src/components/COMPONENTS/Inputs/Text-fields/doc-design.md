@@ -24,7 +24,7 @@ Icône  |  |  |  |  |  |  | Taille maximale : 34x34px <br> Zone de tap : 44x44px
 
 #### Texte du placeholder
 - Le texte du placeholder guide l’utilisateur sur le type de données attendu. Dans la grande majorité des cas, il est facultatif et supplémentaire au label : il ne le substitue pas et n'est pas identique, ex : prenom.nom@domaine.fr
-- Il se trouve dans le container et n'est plus visible dès la saisie.
+- Il se trouve dans le container et n'est plus visible dès la saisie d'un caractère.
 
 #### Champ non modifiable (readonly)
   - Opacité : 40 %
