@@ -118,7 +118,7 @@
             color: $color-h1-article;
             line-height: $line-height-h1-article;
             text-transform: $text-transform-h1-article;
-            margin: 0 0 3rem;
+            margin: $margin-h1-article;
         }
         h2,
         .su-h2 {
@@ -128,7 +128,7 @@
             color: $color-h2-article;
             line-height: $line-height-h2-article;
             text-transform: $text-transform-h2-article;
-            margin: 4.6rem 0 2.5rem;
+            margin: $margin-h2-article;
         }
         h3,
         .su-h3 {
@@ -138,7 +138,7 @@
             color: $color-h3-article;
             line-height: $line-height-h3-article;
             text-transform: $text-transform-h3-article;
-            margin: 3rem 0 1.3rem;
+            margin: $margin-h3-article;
         }
         h1 + h2,
         .su-h1 + .su-h2,
@@ -178,17 +178,17 @@
             h1,
             .su-h1 {
                 font-size: $font-size-h1-article-desktop;
-                margin: 0 0 3.5rem;
+                margin: $margin-h1-article-desktop;
             }
             h2,
             .su-h2 {
                 font-size: $font-size-h2-article-desktop;
-                margin: 5.5rem 0 2.8rem;
+                margin: $margin-h2-article-desktop;
             }
             h3,
             .su-h3 {
                 font-size: $font-size-h3-article-desktop;
-                margin: 3.5rem 0 1.5rem;
+                margin: $margin-h3-article-desktop;
 
             }
         }

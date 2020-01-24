@@ -33,7 +33,8 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li><strong>Nouveauté&nbsp;: accordéon (Components/Navigation/Accordion).</strong></li>
+                                                <li><strong>Nouveauté&nbsp;: accordéon-radio (Components/Navigation/Accordion).</strong></li>
+                                                <li>Évolution&nbsp;: Titres&nbsp;-> variabilisation des titres dans les articles.</li>
                                             </ul>
                                         </li>
                                     </ul>
