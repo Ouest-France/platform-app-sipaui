@@ -15,7 +15,7 @@ Les liens permettent à l'utilisateur d'atteindre un autre endroit de la page, u
 
 Enabled | Hover / Focus / Pressed
 ------------ | ------------- |
-![light-link__enabled](design/light-link__enabled.png) | ![light-link__hover](design/light-link__hover.png)
+![light-link__enabled](components/COMPONENTS/Text/Links/design/light-link__enabled.png) | ![light-link__hover](components/COMPONENTS/Text/Links/design/light-link__hover.png)
 Hauteur du texte  <br> Largeur du texte <br> **Couleur de son contexte** <br> Taille de caractère de son contexte  <br> Graisse de son contexte <br> Police du thème <br> **Ligne sous le texte : couleur du contexte** | - <br> - <br> **Couleur : #B40015** <br> - <br> - <br> - <br> Ligne sous le texte : #B40015
 
 ### Lien article
