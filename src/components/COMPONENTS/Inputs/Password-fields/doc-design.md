@@ -8,39 +8,38 @@ Les champs mot de passe sont des **champs de texte où les caractères sont util
 
 ## Spécifications
 
-- Le champ mot de passe présente toutes les caractéristiques d’un Champ de texte : interaction, police, hauteur, etc. Elles sont disponibles dans son doc design.
+- Le champ mot de passe présente toutes les caractéristiques d’un champ de texte : interaction, police, hauteur, etc. Elles sont disponibles dans son doc design.
 
-### Lors d'une connexion (non à jour)
+### Lors d'une connexion
 
 Type | Illustration
 ------------ | -------------
 **Enabled** |![password__enabled](components/COMPONENTS/Inputs/Password-fields/design/password__enabled.png)
-**Focus** |![password__focus](design/password__focus.png)
-**Saisie** |![password__focus-first-character](design/password__focus-first-character.png)
-**Focus, champ visible** |![password__focus-visible](design/password__focus-visible.png)
-**Sans focus, champ visible** |![password__value-secret-after-validation](components/COMPONENTS/Inputs/Password-fields/design/password__value-visible.png)
-**Sans focus, champ invisible** |![password__value-secret](components/COMPONENTS/Inputs/Password-fields/design/password__value-secret.png)
+**Focus** |![password__focus](components/COMPONENTS/Inputs/Password-fields/design/password__focus.png)
+**1er caracrère saisi** |![password__focus-first-character](components/COMPONENTS/Inputs/Password-fields/design/password__focus-first-character.png)
+**Champ visible, en focus** |![password__focus-visible](components/COMPONENTS/Inputs/Password-fields/design/password__focus-visible.png)
+**Perte de focus, champ non visible** |![password__value-secret](components/COMPONENTS/Inputs/Password-fields/design/password__value-secret.png)
 **Error, absence de saisie** | ![password__error](components/COMPONENTS/Inputs/Password-fields/design/password__error.png)
 **Disabled** | ![password__disabled](components/COMPONENTS/Inputs/Password-fields/design/password__disabled.png)
 
 
-### Lors de la création d'un compte (non à jour)
+### Lors de la création d'un compte
 
 Type | Illustration
 ------------ | -------------
 **Enabled** |![password__enabled](components/COMPONENTS/Inputs/Password-fields/design/password__enabled.png)
-**Focus** |![password__focus__with-indications](design/password__focus__with-indications.png)
-**Saisie** | ![password__focus-first-character](components/COMPONENTS/Inputs/Password-fields/design/password__focus-first-character.png)
-**Champ visible** | ![password__focus-visible-registration.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-visible-registration.png)
-**Error** |![password__error__with-indications](design/password__error__with-indications.png)
-**Disabled** | ![password__disabled](components/COMPONENTS/Inputs/Password-fields/design/password__disabled.png)
+**Focus** |![password__focus__with-indications](components/COMPONENTS/Inputs/Password-fields/design/password__focus__with-indications.png)
+**1er caractère saisi** | ![password__focus-first-character](components/COMPONENTS/Inputs/Password-fields/design/password__focus-first-character.png)
+**Champ visible, en focus** | ![password__focus-visible-registration.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-visible-registration.png)
+**Suite à la validation du formulaire, champ non visible** non à jour |![password__error__with-indications](components/COMPONENTS/Inputs/Password-fields/design/password__error__with-indications.png)
+
 
 ## Visibilité
 
 - La visibilité du mot de passe permet de réduire les erreurs.
 - Par défaut, les **caractères sont masqués** et saisis en toute discrétion et sécurité. Des ellipses ou des astérisques, selon le système d'exploitation sont affichées pour représenter chaque caractère du mot de passe saisi.
 - **Les icônes “voir” et “masquer” sont visibles lorsque au moins un caractère est saisi.**
-- Ces icônes ont les caractéristiques d’une icône d’un composant Champ de texte, cf son doc design.
+- Ces icônes ont les caractéristiques d’une icône d’un composant champ de texte, cf son doc design.
 - Sans action de la part de l'utilisateur sur l'un d'entre eux, leur affichage reste constant. Suite à la validation du formulaire, l'état de visibilité est identique.
 
 ### Icône “voir”
@@ -60,7 +59,7 @@ Type | Illustration
 ## Règles de conformité
 
 - Elles informent l'utilisateur des consignes obligatoires.
-- Ces règles apparaissent uniquement dans un formulaire de création d'un compte et dès que le champ Mot de passe est en focus.
+- Ces règles apparaissent uniquement dans un formulaire de création d'un compte et dès que le champ mot de passe est en focus.
 - Puis, les règles restent affichées : perte de focus, retour du formulaire ko...
 - Chaque règle se valide dès que le caractère saisi le permet.
 - Elles s'affichent 10px sous le champ mot de passe ou le message d'erreur.
@@ -78,7 +77,7 @@ Nature | Illustration | Couleur
 
 ### Message d'erreur
 
-- Ces spécifications sont disponibles dans le doc design du composant Error.
+- Ces spécifications sont disponibles dans le doc design du composant error.
 - Chaque message d’erreur guide l'utilisateur afin de résoudre le problème.
 
 #### Lors d'une connexion
