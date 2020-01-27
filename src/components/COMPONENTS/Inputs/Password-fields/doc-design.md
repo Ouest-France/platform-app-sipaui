@@ -15,9 +15,9 @@ Les champs mot de passe sont des **champs de texte où les caractères sont util
 Type | Illustration
 ------------ | -------------
 **Enabled** |![password__enabled](components/COMPONENTS/Inputs/Password-fields/design/password__enabled.png)
-**Focus** |![password__focus-login.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-login.png)
-**Saisie** | ![password__focus-secret-login.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-secret-login.png)
-**Focus, champ visible** | ![password__focus-visible-login](components/COMPONENTS/Inputs/Password-fields/design/password__focus-visible-login.png)
+**Focus** |![password__focus](design/password__focus.png)
+**Saisie** |![password__focus-first-character](design/password__focus-first-character.png)
+**Focus, champ visible** |![password__focus-visible](design/password__focus-visible.png)
 **Sans focus, champ visible** |![password__value-secret-after-validation](components/COMPONENTS/Inputs/Password-fields/design/password__value-visible.png)
 **Sans focus, champ invisible** |![password__value-secret](components/COMPONENTS/Inputs/Password-fields/design/password__value-secret.png)
 **Error, absence de saisie** | ![password__error](components/COMPONENTS/Inputs/Password-fields/design/password__error.png)
@@ -29,10 +29,10 @@ Type | Illustration
 Type | Illustration
 ------------ | -------------
 **Enabled** |![password__enabled](components/COMPONENTS/Inputs/Password-fields/design/password__enabled.png)
-**Focus** | ![password__focus-registration.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-registration.png)
+**Focus** |![password__focus__with-indications](design/password__focus__with-indications.png)
 **Saisie** | ![password__focus-first-character](components/COMPONENTS/Inputs/Password-fields/design/password__focus-first-character.png)
 **Champ visible** | ![password__focus-visible-registration.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-visible-registration.png)
-**Error** | ![password__error-after-validation](components/COMPONENTS/Inputs/Password-fields/design/password__error-after-validation.png)
+**Error** |![password__error__with-indications](design/password__error__with-indications.png)
 **Disabled** | ![password__disabled](components/COMPONENTS/Inputs/Password-fields/design/password__disabled.png)
 
 ## Visibilité
