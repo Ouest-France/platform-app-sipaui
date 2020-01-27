@@ -20,7 +20,7 @@ En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en p
 
 Comme pour les boutons-radio il ne peut y avoir qu’**une seule partie de l’accordéon active à la fois**. Chaque partie est donc **autofermante**.
 
-Cet accordéon ce construit avec ces 3 classes&nbsp;: `su-accordion-radio`, `su-accordion-item` et `su-accordion-content` ainsi qu’avec le composant **radio-buttons** qui sert à la fois d’activateur de l’effet d’accordéon et est affiché pour renforcer visuellement la logique de fonctionnement. La première classe, `su-accordion-radio` encadre l’ensemble de l’accordéon-radio, la seconde, `su-accordion-item` encadre chaque volet d’un accordéon et `su-accordion-content` est affectée à la zone affichée/masquée dans chaque volet.
+Cet accordéon se construit avec ces 3 classes&nbsp;: `su-accordion-radio`, `su-accordion-item` et `su-accordion-content` ainsi qu’avec le composant **radio-buttons** qui sert à la fois d’activateur de l’effet d’accordéon et est affiché pour renforcer visuellement la logique de fonctionnement. La première classe, `su-accordion-radio` encadre l’ensemble de l’accordéon-radio, la seconde, `su-accordion-item` encadre chaque volet d’un accordéon et `su-accordion-content` est affectée à la zone affichée/masquée dans chaque volet.
 
 Il y a une dernière classe utile&nbsp;: `su-no-transition`. Elle sert à désactiver l’effet de transition sur les volets de l’accordéon. Pour en savoir plus, cf. l’encart *Transition = hauteur maximale de contenu&nbsp;!* ci-dessous.
 
