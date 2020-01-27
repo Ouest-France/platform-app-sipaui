@@ -29,7 +29,7 @@ Type | Illustration
 ------------ | -------------
 **Enabled** |![password__enabled](components/COMPONENTS/Inputs/Password-fields/design/password__enabled.png)
 **Focus** |![password__focus__with-indications](components/COMPONENTS/Inputs/Password-fields/design/password__focus__with-indications.png)
-**1er caractère saisi** | ![password__focus-first-character](components/COMPONENTS/Inputs/Password-fields/design/password__focus-first-character.png)
+**1er caractère saisi** | ![password__focus-first-character__with-indications](components/COMPONENTS/Inputs/Password-fields/design/password__focus-first-character__with-indications.png)
 **Champ visible, en focus** | ![password__focus-visible-registration.png](components/COMPONENTS/Inputs/Password-fields/design/password__focus-visible-registration.png)
 **Suite à la validation du formulaire, champ non visible** non à jour |![password__error__with-indications](components/COMPONENTS/Inputs/Password-fields/design/password__error__with-indications.png)
 
