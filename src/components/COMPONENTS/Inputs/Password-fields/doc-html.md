@@ -74,6 +74,7 @@ Pour les labels (obligatoires), prendre le composant *Labels*.
 			<i class="su-icon">montrer</i>
 		</button>
 	</div>
+	<div class="su-error-message">Ce mot de passe n'est pas conforme au exigences minimale.</div>
 	<div class="su-conditions">
 		<span class="su-condition-character-length"><i class="su-icon">valid</i>Au moins 8 caractères</span>	
 		<span class="su-condition-uppercase"><i class="su-icon">valid</i>Au moins 1 majuscule</span>	
@@ -91,6 +92,7 @@ Pour les labels (obligatoires), prendre le composant *Labels*.
 				<i class="su-icon">montrer</i>
 			</button>
 		</div>
+		<div class="su-error-message">Ce mot de passe n'est pas conforme au exigences minimale.</div>
 		<div class="su-conditions">
 			<span class="su-condition-character-length"><i class="su-icon">valid</i>Au moins 8 caractères</span>	
 			<span class="su-condition-uppercase"><i class="su-icon">valid</i>Au moins 1 majuscule</span>	
@@ -156,14 +158,12 @@ Nous mettons à disposition les classes nécessaires à l’affichage des erreur
 				<i class="su-icon">montrer</i>
 			</button>
 		</div>
-		<div class="su-error-message">Message d’erreur</div>
+		<div class="su-error-message">Message d’erreur.</div>
 	</div>
 </div>
 
 
 ### Sur mot de passe de création de compte
-
-Nous mettons à disposition les classes nécessaires à l’affichage des erreurs&nbsp;: `su-error` (dépendance au composant *error*) et `su-conditions-error`. Par contre, la méthode de remontée de ces erreurs est au choix de chacun.
 
 ```html
 <label for="input5">Label</label>
@@ -174,6 +174,7 @@ Nous mettons à disposition les classes nécessaires à l’affichage des erreur
 			<i class="su-icon">montrer</i>
 		</button>
 	</div>
+	<div class="su-error-message">Ce mot de passe n'est pas conforme au exigences minimale.</div>
 	<div class="su-conditions">
 		<span class="su-condition-character-length su-conditions-error"><i class="su-icon">invalid</i>Au moins 8 caractères</span>	
 		<span class="su-condition-uppercase su-conditions-success"><i class="su-icon">valid</i>Au moins 1 majuscule</span>	
@@ -191,6 +192,7 @@ Nous mettons à disposition les classes nécessaires à l’affichage des erreur
 				<i class="su-icon">montrer</i>
 			</button>
 		</div>
+		<div class="su-error-message">Ce mot de passe n'est pas conforme au exigences minimale.</div>
 		<div class="su-conditions">
 			<span class="su-condition-character-length su-conditions-error"><i class="su-icon">invalid</i>Au moins 8 caractères</span>	
 			<span class="su-condition-uppercase su-conditions-success"><i class="su-icon">valid</i>Au moins 1 majuscule</span>	
