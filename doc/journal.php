@@ -33,7 +33,7 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li><strong>Nouveauté&nbsp;: accordéon-radio (Components/Navigation/Accordion).</strong></li>
+                                                <li><strong>Nouveauté&nbsp;: accordéon-radio (Components/Navigation/Accordions).</strong></li>
                                                 <li>Évolution&nbsp;: Titres&nbsp;-> variabilisation des marges des titres dans les articles.</li>
                                                 <li>Évolution&nbsp;: Mot-de-passe&nbsp;-> ajout d’un message d’erreur en cas de mot-de-passe non conforme.</li>
                                             </ul>

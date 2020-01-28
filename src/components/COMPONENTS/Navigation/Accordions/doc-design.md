@@ -1,4 +1,4 @@
-# Accordion / Accordéon
+# Accordions / Accordéons
 
 - Les accordéons sont des composants dynamiques qui permettent d’**optimiser l’affichage d’un contenu** dans un espace réduit grâce à un système de «&nbsp;plier/déplier&nbsp;» appliqué sur un groupe de panneaux.
 
