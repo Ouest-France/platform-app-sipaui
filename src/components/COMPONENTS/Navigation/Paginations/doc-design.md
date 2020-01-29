@@ -33,7 +33,7 @@ Le chiffre est centré dans le container.
 Enabled | Hover / Focus / Pressed | Disabled
 ------------ | ------------- | ------------- |
 ![element__courant__enabled](design/element__courant__enabled.png) | ![element__courant__hover](design/element__courant__hover.png) | ![element__courant__disabled](design/element__courant__disabled.png)
-Hauteur : 44px  <br> Largeur : 72px <br> Fond : #FFFFFF  <br> Contour : #D4D4D4 <br> Chiffre : texte standard bold <br> Chevron : #333333 et à 5px à droite du numéro | -  <br> - <br> -  <br> Contour : #B40015 <br> Chiffre : texte standard bold #B40015 <br> Chevron : #B40015 et à 5px à droite du numéro | Opacité du chevron : 40 %
+Hauteur : 44px  <br> Largeur : 72px <br> Fond : #FFFFFF  <br> Contour : #D4D4D4 <br> Chiffre : texte standard bold <br> Chevron : #333333 et à 5px à droite du dernier chiffre | -  <br> - <br> -  <br> Contour : #B40015 <br> Chiffre : texte standard bold #B40015 <br> Chevron : #B40015 et à 5px à droite du dernier chiffre | Opacité du chevron : 40 %
 
 Le couple chiffre - chevron est centré dans le container.
 Dans l'état disabled, seule la liste de pages est inactive.
@@ -64,7 +64,7 @@ Dans l'état disabled, seule la liste de pages est inactive.
 
 ### Dernière page
 
-- La dernière page est toujours le dernier élémnents graphique de la pagination.
+- La dernière page est toujours le dernier élément graphique de la pagination.
 - Elle est symbolisée par son numéro de page.
 - L'accès à la dernière page est désactivé lorsque la page courante est la dernière.
 
@@ -108,5 +108,5 @@ Page 1 sur 2 318 | Page 1 505 sur 2 318
 - L'ensemble de la pagination se trouve après les données.
 - La pagination est centrée dans son parent.
 - Chaque page contient la même quantité de données, à l'exception de la dernière page.
-- Le nombre d'élément dans une page est défini en fonction des tailles des pages et des données et de leur temps de chargement.
+- Le nombre d'élément dans une page est défini en fonction des tailles des pages, des données et de leur temps de chargement.
 - La pagination doit être placée sur un fond de couleur compatible.
