@@ -35,7 +35,7 @@ Ce lien est le lien à utiliser dans du contenu éditorial comme un article. On 
 
 ### Version avec la classe `su-article` sur un parent
 ```html
-<setion class="su-article">
+<section class="su-article">
 	<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article SipaUI</a> Tortor Cursus.</p>
 </section>
 ```
