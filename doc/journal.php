@@ -36,6 +36,7 @@
                                                 <li><strong>Nouveauté&nbsp;: accordéon-radio (Components/Navigation/Accordions).</strong></li>
                                                 <li>Évolution&nbsp;: Titres&nbsp;-> variabilisation des marges des titres dans les articles.</li>
                                                 <li>Évolution&nbsp;: Mot-de-passe&nbsp;-> ajout d’un message d’erreur en cas de mot-de-passe non conforme.</li>
+                                                <li>Évolution&nbsp;: Pop-ins&nbsp;-> la croix de fermeture est maintenant un bouton (l’ancienne méthode avec un <code>div</code> reste compatible).</li>
                                             </ul>
                                         </li>
                                     </ul>

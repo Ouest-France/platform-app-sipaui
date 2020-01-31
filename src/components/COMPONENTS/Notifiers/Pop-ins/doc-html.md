@@ -140,11 +140,11 @@ Pour positionner la croix de fermeture, rajouter la `div.su-close-area` juste au
 <!-- Pop-in -->
 <div id="pop-in-3" class="su-pop-in">
 	<div class="su-close-area">
-		<div class="su-close" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>
+		<button class="su-close" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>
 			<i class="su-icon">
 			    fermer
 			</i>
-		</div>
+		</button>
 	</div>
 	<p class="su-h2">Pop-in avec 2 possibilités, croix et long message</p>
 	<div class="su-content-area">
@@ -175,11 +175,11 @@ Pour positionner la croix de fermeture, rajouter la `div.su-close-area` juste au
 	<div id="veil-3" class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'></div>
 	<div id="pop-in-3" class="su-pop-in">
 		<div class="su-close-area">
-			<div class="su-close" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>
+			<button class="su-close" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>
 				<i class="su-icon">
 				    fermer
 				</i>
-			</div>
+			</button>
 		</div>
 		<p class="su-h2">Pop-in avec 2 possibilités, croix et long message</p>
 		<div class="su-content-area">
