@@ -51,6 +51,8 @@ gulp.task('make-sass', ['clean'], function () {
 
 gulp.task("scripts", ["clean"], function() {
     return gulp.src([
+            "@babel/polyfill",
+            source + "/core/js/closest-polyfill.js",
             source + "/core/js/sipaui.js"
         ])
         .pipe(concat('sipaui.min.js', {newLine: ';'}))
@@ -61,7 +63,9 @@ gulp.task("scripts", ["clean"], function() {
             __dirname + "/src/core/js"
             ]
         }))
+        .pipe(include({
 
+        }))
         .pipe(babel({
             "presets": [
                 [
