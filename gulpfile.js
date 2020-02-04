@@ -63,9 +63,6 @@ gulp.task("scripts", ["clean"], function() {
             __dirname + "/src/core/js"
             ]
         }))
-        .pipe(include({
-
-        }))
         .pipe(babel({
             "presets": [
                 [
