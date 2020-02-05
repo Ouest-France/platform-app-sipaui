@@ -19,7 +19,7 @@ Le champ «&nbsp;Press "/" to search…&nbsp;» en haut de la colonne permet de 
 ## Comprendre chaque composant
 
 ### Design
-La vision **design** expose les usages, les spécifications et les bonnes pratiques de chaque composant.
+La vision **design** expose les usages, les spécifications et les bonnes pratiques de chaque composant. Elle donne aussi l’apparence attendue pour chaque composant dans le thème standard (Ouest-France) de SipaUI.
 
 ### HTML
 La partie framework **HTML / CSS / JS** est décrite pour tous les composants.
