@@ -33,6 +33,19 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
+                                                <li><strong>Nouveauté&nbsp;: Paginations (Components/Navigation/Paginations).</strong></li>
+                                                <li>Évolution&nbsp;: Liens&nbsp;-> lien léger.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">3.6.4</span></div>
+                                <div class="table-cell">
+                                    <ul>
+                                        <li>Composants&nbsp;:
+                                            <ul>
                                                 <li><strong>Nouveauté&nbsp;: accordéon-radio (Components/Navigation/Accordions).</strong></li>
                                                 <li>Évolution&nbsp;: Titres&nbsp;-> variabilisation des marges des titres dans les articles.</li>
                                                 <li>Évolution&nbsp;: Mot-de-passe&nbsp;-> ajout d’un message d’erreur en cas de mot-de-passe non conforme.</li>
