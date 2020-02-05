@@ -8,8 +8,12 @@
 // LIENS
 
 // LIEN ÉDITORIAL -------------------------------------------------------------------------------------------/
-$color-link-article:                 $color-secondary-1           !default;
-$color-link-article-hover:           $color-secondary-2           !default;
+$color-link-article:                 $color-secondary-1             !default;
+$color-link-article-hover:           $color-secondary-2             !default;
+$text-decoration-link-article:       none                           !default;
+$text-decoration-link-article-hover: none                           !default;
+$border-bottom-link-article:         1px solid $color-link-article  !default;
+$border-color-link-article-hover:    $color-link-article-hover      !default;
 
 // LIEN BOUTON -------------------------------------------------------------------------------------------/
 $color-link-button:                 $color-secondary-1             !default;
