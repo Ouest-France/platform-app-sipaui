@@ -27,7 +27,34 @@ Le lien par défaut est celui affiché avec une simple balise `<a>`, hors d’un
 </div>
 
 
-## Lien article
+## Lien léger
+
+Pour appliquer un style de lien léger, utilisez la classe `su-link-light` le lien sera alors souligné et de la couleur de son contexte. Par contre, la couleur hover est la même que pour les autres liens, quel que soit le contexte
+
+```html
+<p><a href="javascript:;" class="su-link-light">Lien léger</a><p>
+<p style="background: #bbb; color: #fff"><a href="javascript:;" class="su-link-light">Lien léger</a></p>
+```
+<div class="sipaui">
+	<p><a href="javascript:;" class="su-link-light">Lien léger</a></p>
+	<p style="background: #bbb; color: #fff"><a href="javascript:;" class="su-link-light">Lien léger</a></p>
+</div>
+
+Cela fonctionne aussi dans une zone éditoriale (avec la classe `su-article` sur un parent)&nbsp;:
+ 
+```html
+<section class="su-article">
+	<p>Etiam Venenatis Bibendum <a href="javascript:;" class="su-link-light">Lien léger</a> Tortor Cursus.</p>
+</section>
+```
+<div class="sipaui">
+	<section class="su-article">
+		<p>Etiam Venenatis Bibendum <a href="javascript:;" class="su-link-light">Lien léger</a> Tortor Cursus.</p>
+	</section>
+</div>
+
+
+## Lien éditorial ou lien article
 
 Il s'agit du lien dans un article, s’intégrant dans du contenu textuel. Sa police, sa taille, sa graisse sont dépendants du texte dans lequel il est inclus.
 
@@ -36,27 +63,27 @@ Ce lien est le lien à utiliser dans du contenu éditorial comme un article. On 
 ### Version avec la classe `su-article` sur un parent
 ```html
 <section class="su-article">
-	<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article SipaUI</a> Tortor Cursus.</p>
+	<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article</a> Tortor Cursus.</p>
 </section>
 ```
 <div class="sipaui">
 	<section class="su-article">
-		<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article SipaUI</a> Tortor Cursus.</p>
+		<p>Etiam Venenatis Bibendum <a href="javascript:;">Lien article</a> Tortor Cursus.</p>
 	</section>
 </div>
 
 ### Version avec la classe `su-link`
 ```html
-<a href="javascript:;" class="su-link">Lien article SipaUI</a>
+<a href="javascript:;" class="su-link">Lien article</a>
 ```
 <div class="sipaui">
-	<a href="javascript:;" class="su-link">Lien article SipaUI</a>
+	<a href="javascript:;" class="su-link">Lien article</a>
 </div>
 
 
 ## Lien non stylé
 
-Il peut arriver qu'il soit nécessaire de supprimer le style de lien sur un élément. Par exemple avec un lien sur un bloc. Pour supprimer ce style, utilsez la classe `su-not-link`.
+Il peut arriver qu'il soit nécessaire de supprimer le style de lien sur un élément. Par exemple avec un lien sur un bloc. Pour supprimer ce style, utilisez la classe `su-not-link`.
 
 ```html
 <section class="su-article">
@@ -99,8 +126,9 @@ Utiliser la classe `su-link-button`.
 ## Liste des classes disponibles
 - `su-article`
 - `su-link` (si besoin de surcharge)
-- `su-not-link`
+- `su-link-light`
 - `su-link-button`
+- `su-not-link`
 
 ### Classes annexes
 - `su-disabled` (dépendant du composant *Helpers*)

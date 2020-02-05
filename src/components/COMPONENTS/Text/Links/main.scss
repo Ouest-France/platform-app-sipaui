@@ -14,16 +14,16 @@ body a {
     .su-article a,
     a.su-link {
         color: $color-link-article;
-        text-decoration: none;
+        text-decoration: $text-decoration-link-article;
         padding-bottom: 1px;
-        border-bottom: 1px solid $color-link-article;
+        border-bottom: $border-bottom-link-article;
 
         &:hover,
         &:focus,
         &:active {
             color: $color-link-article-hover;
-            text-decoration: none;
-            border-color: $color-link-article-hover;
+            text-decoration: $text-decoration-link-article-hover;
+            border-color: $border-color-link-article-hover;
         }
         &.su-disabled {
             &:hover,
@@ -34,8 +34,20 @@ body a {
             }
         }
     }
-    a.su-not-link,
-    .su-article a.su-not-link {
+    a.su-link-light {
+        color: inherit;
+        text-decoration: underline;
+        border: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+
+    .su-article a.su-not-link,
+    a.su-not-link {
         color: $font-color-standard;
         text-decoration: none;
         padding-bottom: 0;
