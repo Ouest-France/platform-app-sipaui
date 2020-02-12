@@ -63,14 +63,14 @@ Les listes d’articles sont des blocs s’affichant généralement sur une page
 Balise | Police | Graisse | Taille | Line-height | Couleur
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
 Niveau 2 | Oswald | Normal | 24px | 1.35 | #333333
-Titre d’article | Arial | Bold | 16px | 1.35 | #333333
+Titre d’article | Arial | Normal | 16px | 1.35 | #333333
 
 #### Desktop
 
 Balise | Police | Graisse | Taille | Line-height | Couleur
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
 Niveau 2 | Oswald | Normal | 30px | 1.35 | #333333
-Titre d’article | Arial | Bold | 16px | 1.35 | #333333
+Titre d’article | Arial | Normal | 16px | 1.35 | #333333
 
 
 ### Contenu éditorial - article complet
@@ -95,5 +95,5 @@ h3 | Oswald | Normal | 22px | 1.35 | #333333
 
 ## Bonnes pratiques
 
-- La cohérence dans la hiérarchie est importante. Cela signifie que tous les éléments de même importance dans la hiérarchie devraient avoir la même taille, la même couleur et la même police. Cette cohérence offre aux utilisateurs un repère visuel et facilite l’organisation du contenu.
-- N’utilisez pas plus de deux polices de caractères sur votre mobile. Il n’y a tout simplement pas assez de place pour que les visiteurs puissent gérer visuellement autant de variations.
+- La cohérence dans la hiérarchie est importante. Cela signifie que tous les éléments de même importance dans la hiérarchie doient avoir la même taille, la même couleur et la même police. Cette cohérence offre aux utilisateurs un repère visuel et facilite l’organisation du contenu.
+- Les titres sont composés de caractères alphanumériques. Les icônes ne sont pas autorisées.
