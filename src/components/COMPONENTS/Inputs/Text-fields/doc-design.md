@@ -30,8 +30,12 @@ Icône  |  |  |  |  |  |  | Taille maximale : 34x34px <br> Zone de tap : 44x44px
   - Opacité : 40 %
 
 ### Icône
-- En cas de besoin, une icône peut être intégerée directement dans le champ de texte.
-- Celle-ci permet une **action** spécifique.
+- En cas de besoin, deux types d'icônes peuvent être intégerés directement dans le champ de texte.
+### Information
+- Cette icône illustre la nature du champ.
+- Elle est située à gauche dans le container.
+### Action
+- Lors d'un tape, cette icône permet une action spécifique.
 - Elle est située à droite dans le container.
 - L’icône est centrée dans la zone de tap.
 - Cas particulier : la croix
