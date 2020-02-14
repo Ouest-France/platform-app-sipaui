@@ -321,7 +321,7 @@
 }
 
 @mixin flex($flex) { // 0 = pas de taille, integer (1) = taille pour remplir l’espace
-        -ms-flex: $flex;
+        -ms-flex: $flex; // IE11 a besoin d’une unité pour le flex-basis
     -webkit-flex: $flex;
             flex: $flex;
 }

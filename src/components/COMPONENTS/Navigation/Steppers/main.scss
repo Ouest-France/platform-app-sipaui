@@ -10,7 +10,7 @@
 
         .su-stepper-step {
             counter-increment: steps;
-            @include flex(1 0 0);
+            @include flex(1);
             position: relative;
             z-index: 1;
 
