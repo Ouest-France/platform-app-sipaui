@@ -62,9 +62,9 @@ Mettre la classe `su-disabled` sur `su-radio-area` et la valeur `disabled` sur l
 
 ```html
 <div class="su-radio-area su-disabled">
-	<label for="radio5"><input type="radio" id="radio5" name="nom3" value="Valeur 1" checked disabled>Valeur 1</label>
+	<label for="radio5"><input type="radio" id="radio5" name="nom3" value="Valeur 1" checked disabled aria-readonly="true>Valeur 1</label>
 	<span>ou</span>
-	<label for="radio6"><input type="radio" id="radio6" name="nom3" value="Valeur 2" disabled>Valeur 2</label>
+	<label for="radio6"><input type="radio" id="radio6" name="nom3" value="Valeur 2" disabled aria-readonly="true>Valeur 2</label>
 </div>
 ```
 <div class="sipaui">
@@ -137,6 +137,30 @@ Pour positionner les choix en colonnes il faut impérativement prendre la **mét
 		<div class="su-error-message">Message d’erreur</div>
 	</div>
 </div>
+
+
+
+
+## Accessibilité
+
+Les boutons radios sont généralement groupés et liés à un choix multiple pour une question, un sujet… Dans ce cas le design permet de faire visuellement cette association. Toutefois, pour les rendre plus accessibles aux handicapés visuels, il faut les associer aussi au niveau du DOM avec l’attribut `aria-labelledby`&nbsp;:
+```html
+<div id="radio_label" class="su-label">Choix unique</div>
+<div class="su-radio-area su-radio-column" aria-labelledby="radio_label">
+	<label for="radio13"><input type="radio" id="radio13" name="nom7" value="Valeur 1" checked>Valeur 1</label>
+	<label for="radio14"><input type="radio" id="radio14" name="nom7" value="Valeur 2">Valeur 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</label>
+</div>
+```
+<div class="sipaui">
+	<div id="radio_label" class="su-label">Choix unique</div>
+	<div class="su-radio-area su-radio-column" aria-labelledby="radio_label">
+		<label for="radio13"><input type="radio" id="radio13" name="nom7" value="Valeur 1" checked>Valeur 1</label>
+		<label for="radio14"><input type="radio" id="radio14" name="nom7" value="Valeur 2">Valeur 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</label>
+	</div>
+</div>
+
+
+Pour les boutons radios inactifs, il y a l’attribut `aria-readonly="true"` à positionner sur l’input (cf. «&nbsp;Sur une ligne, inactif&nbsp;» ci-dessus).
 
 
 <div id="liste-classes" class="control-titres">

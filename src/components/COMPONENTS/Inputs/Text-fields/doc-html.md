@@ -4,17 +4,6 @@ Ce composant regroupe les champs texte standards (input text, input number… et
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
-**Accessibilité**
-
-Règles minimales&nbsp;:
-- Chaque champ doit avoir un rôle `role="textbox"`.
-- S’il s’agit d’un champ multilignes (`textarea`), rajouter `aria-multiline="true"`.
-- Si le champ est en `readonly` mettre l’attribut `aria-readonly="true"`.
-- Si le champ n’a pas de label, lui ajouter un `aria-label=""`.
-
-Possibilité supplémentaire&nbsp;:
-- Utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener">«&nbsp;Utiliser l'attribut aria-labelledby&nbsp;» chez MDN Web docs [moz://a]</a>).
-
 <div class="dependances">
 
 ## Dépendances
@@ -186,6 +175,19 @@ Textarea standard. Il est possible de forcer cet affichage avec la classe `su-te
 	<label for="textarea">Label</label>
 	<textarea id="textarea" required></textarea>
 </div>
+
+
+## Accessibilité
+
+Règles minimales&nbsp;:
+- Chaque champ doit avoir un rôle `role="textbox"`.
+- S’il s’agit d’un champ multilignes (`textarea`), rajouter `aria-multiline="true"`.
+- Si le champ est en `readonly` mettre l’attribut `aria-readonly="true"`.
+- Si le champ n’a pas de label, lui ajouter un `aria-label=""`.
+
+Possibilité supplémentaire&nbsp;:
+- Utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener">«&nbsp;Utiliser l'attribut aria-labelledby&nbsp;» chez MDN Web docs [moz://a]</a>).
+
 
 <div id="liste-classes" class="control-titres">
 
