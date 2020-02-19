@@ -4,15 +4,6 @@ Ce composant regroupe les mots de passe pour la **connexionn** (mot de passe sim
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
-**Accessibilité**
-
-Règles minimales&nbsp;:
-- Chaque champ mot de passe doit avoir un rôle `role="textbox"`.
-- Si le champ est en `readonly` mettre l’attribut `aria-readonly="true"`.
-- Si le champ n’a pas de label, lui ajouter un `aria-label=""`.
-
-Possibilité supplémentaire&nbsp;:
-- Utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener">«&nbsp;Utiliser l'attribut aria-labelledby&nbsp;» chez MDN Web docs [moz://a]</a>).
 
 <div class="dependances">
 
@@ -201,6 +192,17 @@ Nous mettons à disposition les classes nécessaires à l’affichage des erreur
 		</div>
 	</div>
 </div>
+
+
+## Accessibilité
+
+Règles minimales&nbsp;:
+- Chaque champ mot de passe doit avoir un rôle `role="textbox"`.
+- Si le champ est en `readonly` mettre l’attribut `aria-readonly="true"`.
+- Si le champ n’a pas de label, lui ajouter un `aria-label=""`.
+
+Possibilité supplémentaire&nbsp;:
+- Utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener">«&nbsp;Utiliser l'attribut aria-labelledby&nbsp;» chez MDN Web docs [moz://a]</a>).
 
 
 

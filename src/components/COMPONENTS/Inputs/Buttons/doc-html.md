@@ -15,17 +15,6 @@ Un composant `<button>` est de type `submit` par défaut. Par conséquent, sur u
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
-
-**Accessibilité**
-
-Règles minimales&nbsp;:
-- Chaque bouton doit avoir un "nom" explicite (`value` sur un input, texte dans les les balises `<button>` ou `<a>`).
-- Si le bouton ne peut avoir ce nom explicite, lui ajouter un `aria-label` (ie&nbsp;: `aria-label="Fermer"` sur un bouton qui ne comporte que le "X").
-- Si votre bouton n’est pas un bouton au sens HTML (ie&nbsp;: une balise `<a>`) il faut lui adjoindre `role="button"`.
-
-Possibilité supplémentaire&nbsp;:
-- utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener">pour en savoir plus</a>)
-
 <div class="dependances">
 
 ## Dépendances
@@ -100,6 +89,19 @@ L’aspect inactif peut être porté par la classe `su-disabled` (issu des *Help
 <div class="sipaui">
 	<button class="su-button su-primary su-fullwidth-mobile">Bouton pleine largeur mobile</button>
 </div>
+
+
+## Accessibilité
+
+Règles minimales&nbsp;:
+- Chaque bouton doit avoir un "nom" explicite (`value` sur un input, texte dans les les balises `<button>` ou `<a>`).
+- Si le bouton ne peut avoir ce nom explicite, lui ajouter un `aria-label` (ie&nbsp;: `aria-label="Fermer"` sur un bouton qui ne comporte que le "X").
+- Si votre bouton n’est pas un bouton au sens HTML (ie&nbsp;: une balise `<a>`) il faut lui adjoindre `role="button"`.
+
+Possibilité supplémentaire&nbsp;:
+- utiliser l’attribut `aria-labelledby` (<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener">pour en savoir plus</a>)
+
+
 
 <div id="liste-classes" class="control-titres">
 

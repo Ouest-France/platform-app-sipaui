@@ -35,13 +35,14 @@
                                             <ul>
                                                 <li><strong>Nouveauté&nbsp;: Paginations (Components/Navigation/Paginations).</strong></li>
                                                 <li>Évolution&nbsp;: Liens&nbsp;-> lien léger.</li>
+                                                <li>Évolution&nbsp;: Pop-ins, cases-à-cocher et boutons-radio&nbsp;-> ajout de l’accessibilité.</li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">3.6.4</span></div>
+                                <div class="table-cell"><span class="version">3.6.7</span></div>
                                 <div class="table-cell">
                                     <ul>
                                         <li>Composants&nbsp;:
