@@ -58,29 +58,29 @@ Pour fermer la pop-in (et le voile) il faut utiliser `data-sutoggleclass='[{"sel
 <!-- Voile -->
 <div id="veil-1" class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-1","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'></div>
 <!-- Pop-in -->
-<div id="pop-in-1" class="su-pop-in">
+<div id="pop-in-1" class="su-pop-in" role="dialog">
 	<div class="su-content-area">
 		<p>Message d’information. Vestibulum id ligula porta felis euismod semper.</p>
 	</div>
 	<div class="su-buttons-area">
-		<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-1","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'>Valider</a>
+		<a class="su-button su-primary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-1","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'>Valider</a>
 	</div>
 </div>
 <!-- Déclencheur -->
-<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-1","klass":"su-veil-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":0}]'>Afficher la pop-in</a>
+<a class="su-button su-primary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-1","klass":"su-veil-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":0}]'>Afficher la pop-in</a>
 ```
 
 <div class="sipaui">
 	<div id="veil-1" class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-1","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'></div>
-	<div id="pop-in-1" class="su-pop-in">
+	<div id="pop-in-1" class="su-pop-in" role="dialog">
 		<div class="su-content-area">
 			<p>Message d’information. Vestibulum id ligula porta felis euismod semper.</p>
 		</div>
 		<div class="su-buttons-area">
-			<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-1","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'>Valider</a>
+			<a class="su-button su-primary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-1","klass":"su-veil-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":1}]'>Valider</a>
 		</div>
 	</div>
-	<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-1","klass":"su-veil-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":0}]'>Afficher la pop-in</a>
+	<a class="su-button su-primary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-1","klass":"su-veil-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-1","klass":"su-pop-in-out","force":0}]'>Afficher la pop-in</a>
 </div>
 
 
@@ -96,33 +96,33 @@ Ne pas oublier de mettre le déclancheur de fermeture si besoin, sur le(s) bouto
 <!-- Voile -->
 <div id="veil-2" class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-2","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'></div>
 <!-- Pop-in -->
-<div id="pop-in-2" class="su-pop-in">
-	<p class="su-h2">Pop-in avec 2 possibilités</p>
+<div id="pop-in-2" class="su-pop-in" role="dialog" aria-labelledby="pop-in-2-title">
+	<p id="pop-in-2-title" class="su-h2">Pop-in avec 2 possibilités</p>
 	<div class="su-content-area">
 		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
 	</div>
 	<div class="su-buttons-area">
-		<a class="su-button su-secondary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-2","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'>Annuler</a>
-		<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-2","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'>Valider</a>
+		<a class="su-button su-secondary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-2","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'>Annuler</a>
+		<a class="su-button su-primary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-2","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'>Valider</a>
 	</div>
 </div>
 <!-- Déclencheur -->
-<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-2","klass":"su-veil-in","force":1}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":0}]''>Afficher la pop-in</a>
+<a class="su-button su-primary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-2","klass":"su-veil-in","force":1}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":0}]''>Afficher la pop-in</a>
 ```
 
 <div class="sipaui">
 	<div id="veil-2" class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-2","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'></div>
-	<div id="pop-in-2" class="su-pop-in">
-		<p class="su-h2">Pop-in avec 2 possibilités</p>
+	<div id="pop-in-2" class="su-pop-in" role="dialog" aria-labelledby="pop-in-2-title">
+		<p id="pop-in-2-title" class="su-h2">Pop-in avec 2 possibilités</p>
 		<div class="su-content-area">
 			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
 		</div>
 		<div class="su-buttons-area">
-			<a class="su-button su-secondary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-2","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'>Annuler</a>
-			<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-2","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'>Valider</a>
+			<a class="su-button su-secondary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-2","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'>Annuler</a>
+			<a class="su-button su-primary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-2","klass":"su-veil-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":1}]'>Valider</a>
 		</div>
 	</div>
-	<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-2","klass":"su-veil-in","force":1}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":0}]''>Afficher la pop-in</a>
+	<a class="su-button su-primary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-2","klass":"su-veil-in","force":1}, {"sel":"#pop-in-2","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-2","klass":"su-pop-in-out","force":0}]''>Afficher la pop-in</a>
 </div>
 
 
@@ -138,7 +138,7 @@ Pour positionner la croix de fermeture, rajouter la `div.su-close-area` juste au
 <!-- Voile -->
 <div id="veil-3" class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'></div>
 <!-- Pop-in -->
-<div id="pop-in-3" class="su-pop-in">
+<div id="pop-in-3" class="su-pop-in" role="dialog" aria-labelledby="pop-in-3-title">
 	<div class="su-close-area">
 		<button class="su-close" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>
 			<i class="su-icon">
@@ -146,7 +146,7 @@ Pour positionner la croix de fermeture, rajouter la `div.su-close-area` juste au
 			</i>
 		</button>
 	</div>
-	<p class="su-h2">Pop-in avec 2 possibilités, croix et long message</p>
+	<p id="pop-in-3-title" class="su-h2">Pop-in avec 2 possibilités, croix et long message</p>
 	<div class="su-content-area">
 		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
 		<p>Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
@@ -162,18 +162,18 @@ Pour positionner la croix de fermeture, rajouter la `div.su-close-area` juste au
 		<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.</p>
 	</div>
 	<div class="su-buttons-area">
-		<a class="su-button su-secondary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>Annuler</a>
-		<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>Valider</a>
+		<a class="su-button su-secondary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>Annuler</a>
+		<a class="su-button su-primary" role="button" shref="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>Valider</a>
 	</div>
 </div>
 
 <!-- Déclencheur -->
-<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-3","klass":"su-veil-in","force":1}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":0}]''>Afficher la pop-in</a>
+<a class="su-button su-primary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-3","klass":"su-veil-in","force":1}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":0}]''>Afficher la pop-in</a>
 ```
 
 <div class="sipaui">
 	<div id="veil-3" class="su-veil" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'></div>
-	<div id="pop-in-3" class="su-pop-in">
+	<div id="pop-in-3" class="su-pop-in" role="dialog" aria-labelledby="pop-in-3-title">
 		<div class="su-close-area">
 			<button class="su-close" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>
 				<i class="su-icon">
@@ -181,7 +181,7 @@ Pour positionner la croix de fermeture, rajouter la `div.su-close-area` juste au
 				</i>
 			</button>
 		</div>
-		<p class="su-h2">Pop-in avec 2 possibilités, croix et long message</p>
+		<p id="pop-in-3-title" class="su-h2">Pop-in avec 2 possibilités, croix et long message</p>
 		<div class="su-content-area">
 			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
 			<p>Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
@@ -197,12 +197,26 @@ Pour positionner la croix de fermeture, rajouter la `div.su-close-area` juste au
 			<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.</p>
 		</div>
 		<div class="su-buttons-area">
-			<a class="su-button su-secondary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>Annuler</a>
-			<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>Valider</a>
+			<a class="su-button su-secondary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>Annuler</a>
+			<a class="su-button su-primary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":0}, {"sel":"#veil-3","klass":"su-veil-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":0}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":1}]'>Valider</a>
 		</div>
 	</div>
-	<a class="su-button su-primary" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-3","klass":"su-veil-in","force":1}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":0}]''>Afficher la pop-in</a>
+	<a class="su-button su-primary" role="button" href="javascript:;" data-sutoggleclass='[{"sel":"body","klass":"su-no-scroll","force":1}, {"sel":"#veil-3","klass":"su-veil-in","force":1}, {"sel":"#pop-in-3","klass":"su-pop-in-in","force":1}, {"sel":"#pop-in-3","klass":"su-pop-in-out","force":0}]''>Afficher la pop-in</a>
 </div>
+
+
+## Accessibilité
+
+Pour rendre une pop-in accessible, il y a plusieurs règles à respecter&nbsp;:
+1. L’attribut `role`&nbsp;:
+	- `role="dialog"` à mettre sur le pop-in.
+	- `role="button"` à mettre sur les boutons qui ne sont pas des `button` ou des `input`.
+2. L’attribut `aria-labelledby` associé à des ID&nbsp;:
+	- Mettre un ID sur le titre de la pop-in et l’attribut `aria-labelledby="nomIDTitre pour associer la pop-in avec son titre"`.
+
+<a href="https://developer.mozilla.org/fr/docs/Accessibilité/ARIA/Techniques_ARIA/Utiliser_l_attribut_aria-labelledby" target="_blank" rel="noopener">Pour en savoir plus</a>
+
+NB&nbsp;: pas besoin d'attribut `aria-label` sur la croix de fermeture puisque le bouton porte le texte "fermer".
 
 
 <div id="liste-classes" class="control-titres">

@@ -59,20 +59,20 @@ La classe `su-checkbox-area` est nécessaire pour encadrer la zone des case à c
 
 ### Sur une ligne, inactif
 
-Mettre la classe `su-disabled` sur `su-checkbox-area` et la valeur `disabled` sur l’input.
+Mettre la classe `su-disabled` sur `su-checkbox-area` ainsi que la valeur `disabled` et `aria-readonly="true"` sur l’input.
 
 ```html
 <div class="su-checkbox-area su-disabled">
-	<label for="checkbox5"><input type="checkbox" id="checkbox5" name="nom3" value="Valeur 1" checked disabled>Valeur 1</label>
+	<label for="checkbox5"><input type="checkbox" id="checkbox5" name="nom3" value="Valeur 1" checked disabled aria-readonly="true">Valeur 1</label>
 	<span>ou</span>
-	<label for="checkbox6"><input type="checkbox" id="checkbox6" name="nom3" value="Valeur 2" disabled>Valeur 2</label>
+	<label for="checkbox6"><input type="checkbox" id="checkbox6" name="nom3" value="Valeur 2" disabled aria-readonly="true">Valeur 2</label>
 </div>
 ```
 <div class="sipaui">
 	<div class="su-checkbox-area su-disabled">
-		<label for="checkbox5"><input type="checkbox" id="checkbox5" name="nom3" value="Valeur 1" checked disabled>Valeur 1</label>
+		<label for="checkbox5"><input type="checkbox" id="checkbox5" name="nom3" value="Valeur 1" checked disabled aria-readonly="true">Valeur 1</label>
 		<span>ou</span>
-		<label for="checkbox6"><input type="checkbox" id="checkbox6" name="nom3" value="Valeur 2" disabled>Valeur 2</label>
+		<label for="checkbox6"><input type="checkbox" id="checkbox6" name="nom3" value="Valeur 2" disabled aria-readonly="true">Valeur 2</label>
 	</div>
 </div>
 
@@ -172,6 +172,30 @@ Pour la gestion des cases à cocher indéterminées en JS, cf. <a href="https://
 		<label for="checkbox14"><input type="checkbox" id="checkbox14" name="nom7" value="Valeur 2">Valeur 2</label>
 	</div>
 </div>
+
+
+
+## Accessibilité
+
+Les cases-à-cocher sont généralement groupées et liées à un choix multiple pour une question, un sujet… Dans ce cas le design permet de faire visuellement cette association. Toutefois, pour les rendre plus accessibles aux handicapés visuels, il faut les associer aussi au niveau du DOM avec l’attribut `aria-labelledby`&nbsp;:
+```html
+<div id="checkboxes_label" class="su-label">Choix multiple</div>
+<div class="su-checkbox-area su-checkbox-column su-error" aria-labelledby="checkboxes_label">
+	<label for="checkbox15"><input type="checkbox" id="checkbox15" name="nom8" value="Valeur 1">Valeur 1</label>
+	<label for="checkbox16"><input type="checkbox" id="checkbox16" name="nom8" value="Valeur 2">Valeur 2</label>
+</div>
+```
+<div class="sipaui">
+	<div id="checkboxes_label" class="su-label">Choix multiple</div>
+	<div class="su-checkbox-area su-checkbox-column su-error" aria-labelledby="checkboxes_label">
+		<label for="checkbox15"><input type="checkbox" id="checkbox15" name="nom8" value="Valeur 1">Valeur 1</label>
+		<label for="checkbox16"><input type="checkbox" id="checkbox16" name="nom8" value="Valeur 2">Valeur 2</label>
+	</div>
+</div>
+
+
+Pour les cases-à-cocher inactives, il y a l’attribut `aria-readonly="true"` à positionner sur l’input (cf. «&nbsp;Sur une ligne, inactif&nbsp;» ci-dessus).
+
 
 
 <div id="liste-classes" class="control-titres">
