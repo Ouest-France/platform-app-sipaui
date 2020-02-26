@@ -4,7 +4,7 @@
 @import "variables";
 
 .sipaui {
-    $size-button: 44px;
+    $size-button: $height-finger;
     $padding-lateral-input: 10px;
 
     input,
