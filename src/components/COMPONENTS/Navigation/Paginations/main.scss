@@ -4,3 +4,52 @@
 */
 @import "variables";
 
+// PAGINATION PAUVRE --------------------------------------------------------------------------------------/
+.sipaui {
+    .su-pagination {
+        @include display-flex();
+        @include justify-content(center, center);
+    }
+    .su-page-item {
+        height: $height-finger;
+        width: 50px;
+                                                            background: $color-main-1;
+                                                            border: 1px solid $color-main-4;
+                                                            border-radius: 3px;
+                                                            margin-right: $margin-small;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        a,
+        span {
+            @include display-flex();
+            @include justify-content(center, center);
+            @include align-items(center);
+            height: 100%;
+            width: 100%;
+                                                            color: $font-color-standard;
+                                                            //font-weight: : null;
+        }
+    }
+    .su-page-link {
+        &:hover {
+                                                            border: 1px solid $color-secondary-2;
+        }
+    }
+    .su-page-active {
+        span {
+                                                            //color: $font-color-standard;
+                                                            font-weight: $font-weight-bold;
+                                                            //background: null;s
+        }
+    }
+}
+
+@media screen and (max-width: $max-breakpoint-xs) {
+	.sipaui {
+        .su-page-item {
+            margin-right: $margin-xsmall;
+        }
+    }
+}
