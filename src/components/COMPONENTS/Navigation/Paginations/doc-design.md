@@ -45,13 +45,13 @@ Dans l’état disabled, seule la liste de pages est inactive.
 - La hauteur visible de la liste est fixée à 297px.
 - Sa largeur est celle de l’ensemble de la pagination.
 - Elle est composée de certains numéros de pages&nbsp;:
-  - **Toutes les unités de la dizaine en cours.
-  - Les dizaines suivantes jusqu’à la centaine suivante exclue.
-  - Les centaines suivantes jusqu’au millier suivant exclue.
-  - Les milliers suivants.**
+  - **Toutes les unités de la dizaine en cours.**
+  - **Les dizaines suivantes jusqu’à la centaine suivante exclue.**
+  - **Les centaines suivantes jusqu’au millier suivant exclue.**
+  - **Les milliers suivants.**
   - Une ligne de séparation de 1px et #E4E3E1 permet de dissocier les unités.
   - Une ligne de séparation de 2px et #E4E3E1 permet de dissocier les dizaines, les centaines et les milliers.
-- La hauteur de chaque page sans ligne de séparation est de 34px.
+- La hauteur de chaque ligne page sans ligne de séparation est de 34px.
 - Tous les chiffres sont des textes standards sauf la page courante qui en bold.
 - Un dégradé est présent en bas de la liste. Il disparaît dès que le dernier chiffre de la liste est visible.
 
@@ -97,11 +97,11 @@ Page 1 sur 2 318 | Page 2 318 sur 2 318
 ![select-active](components/COMPONENTS/Navigation/Paginations/design/select-active.png)| ![select-active-full__2318-to-2318](components/COMPONENTS/Navigation/Paginations/design/select-active-full__2318-to-2318.png)
 
 
- Pagination **pour information**&nbsp;:s
+ Pagination **pour information**&nbsp;:
 
 Page 1 sur 2 318 | Page 1 505 sur 2 318
 ------------- | ------------- |
-  ![select-active-full](components/COMPONENTS/Navigation/Paginations/design/select-active-full.png) |  ![select-active-full__1505-to-2318](components/COMPONENTS/Navigation/Paginations/design/sselect-active-full__1505-to-2318.png)
+  ![select-active-full](components/COMPONENTS/Navigation/Paginations/design/select-active-full.png) |  ![select-active-full__1505-to-2318](components/COMPONENTS/Navigation/Paginations/design/select-active-full__1505-to-2318.png)
 
 ## Bonnes pratiques
 
