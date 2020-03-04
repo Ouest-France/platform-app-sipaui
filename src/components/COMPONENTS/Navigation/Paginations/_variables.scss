@@ -3,3 +3,25 @@
     ex:
     $border-button-premium: 3px !default;
 */
+
+// PAGINATION BASE --------------------------------------------------------------------------------------/
+$background-page-item:          $color-main-1                   !default;
+$border-page-item:              1px solid $color-main-4         !default;
+$border-radius-page-item:       3px                             !default;
+$color-page-item:               $font-color-standard            !default;
+$font-weight-page-item:         null                            !default;
+
+$border-page-item-hover:        1px solid $color-secondary-2    !default;
+$color-page-item-hover:         $color-secondary-2              !default;
+
+// Page active
+$background-page-active:        $background-page-item           !default;
+$border-page-active:            null                            !default;
+$color-page-active:             $color-page-item                !default;
+$font-weight-page-active:       $font-weight-bold               !default;
+
+
+
+// PAGINATION RICHE --------------------------------------------------------------------------------------/
+$border-page-active-in:         1px solid $color-main-7                 !default;
+$border-bottom-page-active-in:  1px solid $background-page-active       !default;
