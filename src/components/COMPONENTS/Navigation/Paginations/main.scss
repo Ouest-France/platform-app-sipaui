@@ -4,52 +4,133 @@
 */
 @import "variables";
 
-// PAGINATION PAUVRE --------------------------------------------------------------------------------------/
+// PAGINATION BASE --------------------------------------------------------------------------------------/
 .sipaui {
     .su-pagination {
         @include display-flex();
         @include justify-content(center, center);
     }
-    .su-page-item {
+    .su-pagination-item {
         height: $height-finger;
-        width: 50px;
-                                                            background: $color-main-1;
-                                                            border: 1px solid $color-main-4;
-                                                            border-radius: 3px;
-                                                            margin-right: $margin-small;
+        width: $height-finger;
+        background: $background-page-item;
+        border: $border-page-item;
+        border-radius: $border-radius-page-item;
+        margin-right: $margin-small;
 
+        &:first-child,
+        &:last-child {
+            width: 50px;
+        }
         &:last-child {
             margin-right: 0;
         }
-        a,
-        span {
+        > a,
+        > span,
+        > button {
             @include display-flex();
             @include justify-content(center, center);
             @include align-items(center);
             height: 100%;
             width: 100%;
-                                                            color: $font-color-standard;
-                                                            //font-weight: : null;
+            color: $color-page-item;
+            font-weight: $font-weight-page-item;
+        }
+        &.su-page-link {
+            &:hover {
+                border: $border-page-item-hover;
+            }
         }
     }
     .su-page-link {
         &:hover {
-                                                            border: 1px solid $color-secondary-2;
+            a {
+                color: $color-page-item-hover;
+            }
         }
     }
     .su-page-active {
-        span {
-                                                            //color: $font-color-standard;
-                                                            font-weight: $font-weight-bold;
-                                                            //background: null;s
+        border: $border-page-active;
+        background: $background-page-active;
+
+        > button,
+        > span {
+            color: $color-page-active;
+            font-weight: $font-weight-page-active;
         }
     }
 }
 
+
+// PAGINATION RICHE --------------------------------------------------------------------------------------/
+.sipaui {
+    .su-rich {
+        .su-page-active {
+            width: 72px;
+
+            &:hover {
+                border: $border-page-item-hover;
+
+                > button {
+                    color: $color-page-item-hover;
+                }
+            }
+            > button {
+                background: none;
+                border: none;
+                cursor: pointer;
+
+                .su-icon {
+                    font-size: 18px;
+                    margin-left: 3px;
+                    height: 18px;
+                    width: 18px;
+                    transition: transform .1s ease-out;
+                }
+            }
+        }
+        .su-pages-list {
+            max-height: 0;
+            overflow: hidden;
+            width: 300px;
+            position: relative;
+            top: 1px;
+            left: -115px;
+                                                                                            background: $color-main-1;
+            text-align: center;
+        }
+    }
+    .su-pages-list-in {
+        .su-page-active {
+            border: $border-page-active-in;
+            border-bottom: $border-bottom-page-active-in;
+
+            > button {
+                .su-icon {
+                    transform: rotate(180deg);
+                    transition: transform .3s ease-out;
+                }
+            }
+        }
+        .su-pages-list {
+            max-height: 297px;
+            transition: max-height .5s ease-out;
+            transition-delay: .3s
+        }
+    }
+}
+
+
+
+
 @media screen and (max-width: $max-breakpoint-xs) {
 	.sipaui {
-        .su-page-item {
+        .su-pagination-item {
             margin-right: $margin-xsmall;
+        }
+        .su-rich .su-pages-list {
+            width: 280px;
+            left: -105px;
         }
     }
 }
