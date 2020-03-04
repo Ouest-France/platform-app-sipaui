@@ -1,54 +1,50 @@
 # Paginations / Paginations
 
+Donec sed odio dui. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
+Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 
-## Pagination pauvre
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+Donec sed odio dui. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+
+Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
 <div class="sipaui">
-	<nav>
-		<ul class="surcharge-storybook su-pagination">
-		    <li class="su-page-item su-page-link"><a href="#">1</a></li>
-		    <li class="su-page-item su-page-link"><a href="#">2</a></li>
-		    <li class="su-page-item su-page-link"><a href="#">3</a></li>
-		    <li class="su-page-item su-page-active"><span>4</span></li>
-		    <li class="su-page-item su-page-link"><a href="#">5</a></li>
+	<nav id="pagination01">
+		<ul class="surcharge-storybook su-pagination su-rich">
+		    <li class="su-pagination-item su-page-link"><a href="#">1</a></li>
+		    <li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">precedent</i></a></li>
+		    <li class="su-pagination-item su-page-active">
+		    	<button data-sutoggleclass='{"sel":"#pagination01","klass":"su-pages-list-in"}'>22<i class="su-icon">fleche_bas</i></button>
+		    	<ul class="surcharge-storybook su-pages-list">
+				    <li><a href="#">10</a></li>
+				    <li><a href="#">20</a></li>
+				    <li><a href="#">21</a></li>
+				    <li><a href="#">22</a></li>
+				    <li><a href="#">23</a></li>
+				    <li><a href="#">24</a></li>
+				    <li><a href="#">25</a></li>
+				    <li><a href="#">26</a></li>
+				    <li><a href="#">27</a></li>
+				    <li><a href="#">28</a></li>
+				    <li><a href="#">29</a></li>
+				    <li><a href="#">30</a></li>
+				    <li><a href="#">40</a></li>
+				</ul>
+		    </li>
+		    <li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">suivant</i></a></li>
+		    <li class="su-pagination-item su-page-link"><a href="#">45</a></li>
 		</ul>
 	</nav>
 </div>
 
-## Pagination riche
-
-<div class="sipaui">
-	<nav>
-		<ul class="surcharge-storybook su-pagination">
-		    <li class="su-page-item su-page-link"><a href="#">1</a></li>
-		    <li class="su-page-item su-page-link"><a href="#">Précédent</a></li>
-		    <li class="su-page-item su-page-active"><a href="#">22</a></li>
-		    <ul class="surcharge-storybook">
-			    <li class="su-page-link"><a href="#">10</a></li>
-			    <li class="su-page-link"><a href="#">20</a></li>
-			    <li class="su-page-link"><a href="#">21</a></li>
-			    <li class="su-page-link"><a href="#">22</a></li>
-			    <li class="su-page-link"><a href="#">23</a></li>
-			    <li class="su-page-link"><a href="#">24</a></li>
-			    <li class="su-page-link"><a href="#">25</a></li>
-			    <li class="su-page-link"><a href="#">26</a></li>
-			    <li class="su-page-link"><a href="#">27</a></li>
-			    <li class="su-page-link"><a href="#">28</a></li>
-			    <li class="su-page-link"><a href="#">29</a></li>
-			    <li class="su-page-link"><a href="#">30</a></li>
-			    <li class="su-page-link"><a href="#">40</a></li>
-			</ul>
-		    <li class="su-page-item su-page-link"><a href="#">Suivant</a></li>
-		    <li class="su-page-item su-page-link"><a href="#">45</a></li>
-		</ul>
-	</nav>
-</div>
 
 
 
-
-
+disabled pas su-page-active
 
 
 
@@ -71,3 +67,4 @@ Possibilité supplémentaire&nbsp;:
 - role="dialog"
 - aria-label="Fermer"
 - aria-labelledby
+- nav ?
