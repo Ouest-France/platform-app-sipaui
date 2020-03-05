@@ -36,6 +36,7 @@
                                                 <li><strong>Nouveauté&nbsp;: Paginations (Components/Navigation/Paginations).</strong></li>
                                                 <li>Évolution&nbsp;: Liens&nbsp;-> lien léger.</li>
                                                 <li>Évolution&nbsp;: Pop-ins, cases-à-cocher et boutons-radio&nbsp;-> ajout de l’accessibilité.</li>
+                                                <li>Fix&nbsp;: correction de la graisse des chapeaux sur Android.</li>
                                             </ul>
                                         </li>
                                     </ul>
