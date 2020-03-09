@@ -1,46 +1,120 @@
 # Paginations / Paginations
 
-Donec sed odio dui. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-Donec sed odio dui. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
 <div class="sipaui">
 	<nav id="pagination01">
 		<ul class="surcharge-storybook su-pagination su-rich">
 		    <li class="su-pagination-item su-page-link"><a href="#">1</a></li>
 		    <li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">precedent</i></a></li>
-		    <li class="su-pagination-item su-page-active">
-		    	<button data-sutoggleclass='{"sel":"#pagination01","klass":"su-pages-list-in"}'>22<i class="su-icon">fleche_bas</i></button>
+		    <li class="su-pagination-item su-page-select">
+		    	<button data-sutoggleclass='{"sel":"#pagination01","klass":"su-pages-list-in"}'>3<i class="su-icon">fleche_bas</i></button>
 		    	<ul class="surcharge-storybook su-pages-list">
-				    <li><a href="#">10</a></li>
-				    <li><a href="#">20</a></li>
-				    <li><a href="#">21</a></li>
-				    <li><a href="#">22</a></li>
-				    <li><a href="#">23</a></li>
-				    <li><a href="#">24</a></li>
-				    <li><a href="#">25</a></li>
-				    <li><a href="#">26</a></li>
-				    <li><a href="#">27</a></li>
-				    <li><a href="#">28</a></li>
-				    <li><a href="#">29</a></li>
-				    <li><a href="#">30</a></li>
-				    <li><a href="#">40</a></li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li class="su-page-active"><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li><a href="#">6</a></li>
+				    <li><a href="#">7</a></li>
 				</ul>
 		    </li>
 		    <li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">suivant</i></a></li>
-		    <li class="su-pagination-item su-page-link"><a href="#">45</a></li>
+		    <li class="su-pagination-item su-page-link"><a href="#">7</a></li>
 		</ul>
 	</nav>
 </div>
 
+<div class="sipaui">
+	<nav id="pagination02">
+		<ul class="surcharge-storybook su-pagination su-rich">
+		    <li class="su-pagination-item su-page-link"><a href="#">1</a></li>
+		    <li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">precedent</i></a></li>
+		    <li class="su-pagination-item su-page-select">
+		    	<button data-sutoggleclass='{"sel":"#pagination02","klass":"su-pages-list-in"}'>1<i class="su-icon">fleche_bas</i></button>
+		    	<ul class="surcharge-storybook su-pages-list">
+				    <li class="su-page-active"><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li><a href="#">6</a></li>
+				    <li><a href="#">7</a></li>
+				    <li><a href="#">8</a></li>
+				    <li><a href="#">9</a></li>
+				    <li><a href="#">10</a></li>
+				    <li><a href="#">20</a></li>
+				    <li><a href="#">30</a></li>
+				    <li><a href="#">40</a></li>
+				    <li><a href="#">50</a></li>
+				    <li><a href="#">60</a></li>
+				    <li><a href="#">70</a></li>
+				    <li><a href="#">80</a></li>
+				    <li><a href="#">90</a></li>
+				    <li><a href="#">100</a></li>
+				    <li><a href="#">200</a></li>
+				    <li><a href="#">300</a></li>
+				    <li><a href="#">400</a></li>
+				    <li><a href="#">500</a></li>
+				    <li><a href="#">600</a></li>
+				    <li><a href="#">700</a></li>
+				    <li><a href="#">800</a></li>
+				    <li><a href="#">900</a></li>
+				    <li><a href="#">1000</a></li>
+				    <li><a href="#">2000</a></li>
+				</ul>
+		    </li>
+		    <li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">suivant</i></a></li>
+		    <li class="su-pagination-item su-page-link"><a href="#">2045</a></li>
+		</ul>
+	</nav>
+</div>
+
+
+<div class="sipaui">
+	<nav id="pagination03">
+		<ul class="surcharge-storybook su-pagination su-rich">
+		    <li class="su-pagination-item su-page-link"><a href="#">1</a></li>
+		    <li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">precedent</i></a></li>
+		    <li class="su-pagination-item su-page-select">
+		    	<button data-sutoggleclass='{"sel":"#pagination03","klass":"su-pages-list-in"}'>1002<i class="su-icon">fleche_bas</i></button>
+		    	<ul class="surcharge-storybook su-pages-list">
+				    <li><a href="#">1001</a></li>
+				    <li class="su-page-active"><a href="#">1002</a></li>
+				    <li><a href="#">1003</a></li>
+				    <li><a href="#">1004</a></li>
+				    <li><a href="#">1005</a></li>
+				    <li><a href="#">1006</a></li>
+				    <li><a href="#">1007</a></li>
+				    <li><a href="#">1008</a></li>
+				    <li><a href="#">1009</a></li>
+				    <li><a href="#">1010</a></li>
+				    <li><a href="#">1020</a></li>
+				    <li><a href="#">1030</a></li>
+				    <li><a href="#">1040</a></li>
+				    <li><a href="#">1050</a></li>
+				    <li><a href="#">1060</a></li>
+				    <li><a href="#">1070</a></li>
+				    <li><a href="#">1080</a></li>
+				    <li><a href="#">1090</a></li>
+				    <li><a href="#">1100</a></li>
+				    <li><a href="#">1200</a></li>
+				    <li><a href="#">1300</a></li>
+				    <li><a href="#">1400</a></li>
+				    <li><a href="#">1500</a></li>
+				    <li><a href="#">1600</a></li>
+				    <li><a href="#">1700</a></li>
+				    <li><a href="#">1800</a></li>
+				    <li><a href="#">1900</a></li>
+				    <li><a href="#">2000</a></li>
+				</ul>
+		    </li>
+		    <li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">suivant</i></a></li>
+		    <li class="su-pagination-item su-page-link"><a href="#">2045</a></li>
+		</ul>
+	</nav>
+</div>
 
 
 
