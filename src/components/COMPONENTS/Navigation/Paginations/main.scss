@@ -33,12 +33,16 @@
             @include align-items(center);
             height: 100%;
             width: 100%;
+        }
+        a,
+        span,
+        button {
             color: $color-page-item;
             font-weight: $font-weight-page-item;
         }
         &.su-page-link {
             &:hover {
-                border: $border-page-item-hover;
+                border-color: $border-color-page-item-hover;
             }
         }
     }
@@ -50,14 +54,7 @@
         }
     }
     .su-page-active {
-        border: $border-page-active;
-        background: $background-page-active;
-
-        > button,
-        > span {
-            color: $color-page-active;
-            font-weight: $font-weight-page-active;
-        }
+                                                                                                font-weight: $font-weight-page-active;
     }
 }
 
@@ -65,20 +62,17 @@
 // PAGINATION RICHE --------------------------------------------------------------------------------------/
 .sipaui {
     .su-rich {
-        .su-page-active {
+        .su-page-select {
             width: 72px;
+            border: $border-page-select;
+            background: $background-page-select;
 
-            &:hover {
-                border: $border-page-item-hover;
-
-                > button {
-                    color: $color-page-item-hover;
-                }
-            }
             > button {
                 background: none;
                 border: none;
                 cursor: pointer;
+                color: $color-page-select;
+                font-weight: $font-weight-page-select;
 
                 .su-icon {
                     font-size: 18px;
@@ -88,22 +82,36 @@
                     transition: transform .1s ease-out;
                 }
             }
+            &:hover {
+                border-color: $border-color-page-item-hover;
+
+                > button {
+                    color: $color-page-item-hover;
+                }
+            }
         }
         .su-pages-list {
+            $background-color-pages-list: $color-main-1;
             max-height: 0;
             overflow: hidden;
             width: 300px;
             position: relative;
             top: 1px;
             left: -115px;
-                                                                                            background: $color-main-1;
-            text-align: center;
+                                                                                            background: linear-gradient(to top, rgba(0,0,0, .1), rgba(0,0,0, 0)) 0 100%;/*dégradé bas quand on est en haut*/
+                                                                                            background-color: $background-color-pages-list;
+            background-repeat: no-repeat;
+                                                                                        	background-size: 100% 25px;
+
+
+        	background-attachment: scroll;
         }
     }
     .su-pages-list-in {
-        .su-page-active {
-            border: $border-page-active-in;
-            border-bottom: $border-bottom-page-active-in;
+        .su-page-select {
+            border: $border-page-select-in;
+            border-bottom: $border-bottom-page-select-in;
+            border-radius: $border-radius-page-item $border-radius-page-item 0 0 ;
 
             > button {
                 .su-icon {
@@ -115,12 +123,26 @@
         .su-pages-list {
             max-height: 297px;
             transition: max-height .5s ease-out;
-            transition-delay: .3s
+            overflow-y: auto;
+            z-index: 100;
+
+            > li {
+                height: 35px;
+                @include display-flex();
+                @include justify-content(center, center);
+                @include align-items(center);
+                                                                                            border-bottom: 1px solid $color-main-3;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+                &:nth-child(9n) {
+                                                                                            border-bottom-width: 2px
+                }
+            }
         }
     }
 }
-
-
 
 
 @media screen and (max-width: $max-breakpoint-xs) {
@@ -134,3 +156,47 @@
         }
     }
 }
+
+
+
+
+/*.zone-scrollable {
+            width: 300px;
+
+            background:
+        		linear-gradient(#fff, #fff),/*dégradé haut quand on est en haut = masque
+        		linear-gradient(#fff, #fff) 0 100%,/*dégradé bas quand on est en bas = masque
+
+        		linear-gradient(to bottom, rgba(0,0,0, .1), rgba(0,0,0, 0)),/*dégradé haut quand on est en bas
+        		linear-gradient(to top, rgba(0,0,0, .1), rgba(0,0,0, 0)) 0 100%;/*dégradé bas quand on est en haut
+        	background-repeat: no-repeat;
+            background-color: $background-color-pages-list;
+        	background-size: 100% 30px, 100% 30px, 100% 25px, 100% 25px;
+        	background-attachment: local, local, scroll, scroll;
+        }
+
+.scrollbox {
+	background:
+
+		linear-gradient(white 30%, rgba(255,255,255,0)),
+		linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
+
+
+		radial-gradient(50% 0, farthest-side, rgba(0,0,0,.2), rgba(0,0,0,0)),
+		radial-gradient(50% 100%,farthest-side, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+	background:
+
+		linear-gradient(white 30%, rgba(255,255,255,0)),
+		linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
+
+
+		radial-gradient(farthest-side at 50% 0, rgba(0,0,0,.2), rgba(0,0,0,0)),
+		radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+	background-repeat: no-repeat;
+	background-color: white;
+	background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+
+
+	background-attachment: local, local, scroll, scroll;
+}
+*/
