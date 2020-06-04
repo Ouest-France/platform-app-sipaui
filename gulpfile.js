@@ -10,7 +10,6 @@ var gulp            = require("gulp"),
     cssnano         = require('gulp-cssnano'),
     replace         = require('gulp-replace'),
     log             = require('fancy-log'),
-    es              = require('event-stream'),
     through2        = require('through2'),
     runner          = require('child_process'),
     fs              = require('fs'),
@@ -24,7 +23,21 @@ var doc = './doc/assets'; // dossier de travail
 var destination = './dist'; // dossier à livrer
 var build = './build'; // dossier de ocmpilation
 
-gulp.task('make-sass', ['clean'], function () {
+gulp.task("clean-dest", function(done) {
+    del.sync([
+        destination + '/**/*'
+    ]);
+    done();
+});
+gulp.task("clean-build", function(done) {
+    del.sync([
+        build + '/**/*'
+    ]);
+    done();
+});
+gulp.task("clean", gulp.series("clean-dest", "clean-build"));
+
+gulp.task('make-sass', function () {
     var scssList = [];
 
     fs.readdirSync(doc+ '/scss/', { withFileTypes: true })
@@ -37,21 +50,19 @@ gulp.task('make-sass', ['clean'], function () {
         .filter(dirent => dirent.name.endsWith('.scss'))
         .map(dirent => scssList.push(source+ '/core/scss/' +dirent.name));
 
-    return es.merge(scssList.map(function(a) {
-        return gulp.src(a)
-            .pipe(plumber(function(e){log.error('Erreur lors de la compilation SASS !', e);}))
-            .pipe(sourcemaps.init())
-            .pipe(sass())
-            .pipe(sourcemaps.write())
-            .pipe(gulp.dest(build + '/css/dev'))
-            .pipe(cssnano({zindex: false}))
-            .pipe(gulp.dest(build + '/css/min'));
-    }));
+    return gulp.src(scssList)
+        .pipe(plumber(function(e){log.error('Erreur lors de la compilation SASS !', e);}))
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(build + '/css/dev'))
+        .pipe(cssnano({zindex: false}))
+        .pipe(gulp.dest(build + '/css/min'))
+    ;
 });
 
-gulp.task("scripts", ["clean"], function() {
+gulp.task("scripts", function() {
     return gulp.src([
-            "@babel/polyfill",
             source + "/core/js/closest-polyfill.js",
             source + "/core/js/sipaui.js"
         ])
@@ -77,71 +88,74 @@ gulp.task("scripts", ["clean"], function() {
                 ]
             ]
         }))
-            .on('error', console.log)
-        .pipe(gulp.dest(build + '/js/dev'));
+        .on('error', console.log)
+        .pipe(gulp.dest(build + '/js/dev'))
+    ;
 });
 
-gulp.task("images", ["clean"], function() {
+gulp.task("images", function() {
     return gulp.src([
             source + "/core/images/**/*",
             source + "/components/**/images/**/*",
         ])
-        .pipe(gulp.dest(destination + '/images'));
+        .pipe(gulp.dest(destination + '/images'))
+    ;
 });
 
-gulp.task("make-scripts-dev", ["clean", "scripts"], function() {
+gulp.task("make-scripts-dev", gulp.series("scripts", function() {
     return gulp.src([build + '/js/dev/**/*'])
-        .pipe(gulp.dest(destination + '/js'));
-});
+        .pipe(gulp.dest(destination + '/js'))
+    ;
+}));
 
-gulp.task("make-scripts-prod", ["clean", "scripts"], function() {
+gulp.task("make-scripts-prod", gulp.series("scripts", function() {
     return gulp.src([build + '/js/dev/**/*'])
         .pipe(uglify()
             .on('error', console.log))
             .pipe(rename('sipaui.min.js'))
-        .pipe(gulp.dest(destination + '/js'));
-});
+        .pipe(gulp.dest(destination + '/js'))
+    ;
+}));
 
-gulp.task("make-css-dev", ["make-sass"], function() {
+gulp.task("make-css-dev", gulp.series("make-sass", function() {
     return gulp.src([build + '/css/dev/**/*'])
         .pipe(gulp.dest(destination + '/css'));
-});
+}));
 
-gulp.task("make-css-prod", ["make-sass"], function() {
+gulp.task("make-css-prod", gulp.series("make-sass", function() {
     return gulp.src([build + '/css/min/**/*'])
         .pipe(gulp.dest(destination + '/css'));
-});
+}));
 
-gulp.task("make-assets", ["clean"], function() {
+gulp.task("make-assets", function() {
     return gulp.src([source + '/core/fonts/**/*'])
         .pipe(gulp.dest(destination + '/fonts'));
 });
 
-gulp.task("copy-storybook", ["clean"], function() {
+gulp.task("copy-storybook", function() {
     return gulp.src(['./doc/storybook/**/*'])
         .pipe(gulp.dest(build + '/storybook'));
 });
 
-gulp.task("copy-stories", ["clean", "copy-storybook"], function() {
+gulp.task("copy-stories", gulp.series("copy-storybook", function() {
     return gulp.src(['src/components/**/*'])
         .pipe(gulp.dest('dist/components'));
-});
+}));
 
-gulp.task("build-stories", ["clean", "copy-storybook", "copy-stories"], function() {
+gulp.task("build-stories", gulp.series("copy-stories", function(done) {
     var components = fs.readdirSync('dist/components/', {withFileTypes: true})
         .filter(dirent => dirent.isDirectory())
         .forEach(dirent => {
-
-
-            return gulp.src('dist/components/' + dirent.name + '/**/*.md')
+            gulp.src('dist/components/' + dirent.name + '/**/*.md')
                 .pipe(replace(/\]\((design\/[^.]+\..{3,4})\)/g, '](components/' + dirent.name + '/$1)'))
                 .pipe(gulp.dest('dist/components/' + dirent.name));
 
         });
     ;
-});
+    done();
+}));
 
-gulp.task("loader-storybook", ["clean", "build-stories"], function() {
+gulp.task("loader-storybook", gulp.series("build-stories", function() {
     var components = [];
     function _liste(dirPath, name) {
         var liste = fs.readdirSync(dirPath, {withFileTypes: true})
@@ -163,7 +177,7 @@ gulp.task("loader-storybook", ["clean", "build-stories"], function() {
             })
     }
     _liste('src/components/', '');
-    console.log(components);
+    // console.log(components);
 
     var imports = components.map(component =>
         ['design', 'html', 'vuejs']
@@ -203,33 +217,7 @@ gulp.task("loader-storybook", ["clean", "build-stories"], function() {
         .pipe(replace('##stories##', stories))
         .pipe(gulp.dest(build + '/storybook/stories/'));
     ;
-});
-
-gulp.task("clean-css", function() {
-    return del([
-        destination + '/**/*.css'
-    ]);
-});
-gulp.task("clean-js", function() {
-    return del([
-        destination + '/**/*.js'
-    ]);
-});
-gulp.task("clean-html", function() {
-    return del([
-        destination + '/**/*.html'
-    ]);
-});
-gulp.task("clean-assets", function() {
-    return del([
-        destination + '/fonts/**/*'
-    ]);
-});
-gulp.task("clean", ["clean-html", "clean-js", "clean-css", "clean-assets"], function(){
-    return del([
-        build + '/**/*'
-    ]);
-});
+}));
 
 function myPhp2Html(file, enc, cb) {
     runner.exec('php ' + file.path, function(err, phpResponse, stderr) {
@@ -253,21 +241,14 @@ function php2html(glob, dest){
         .pipe(gulp.dest(dest));
 }
 
-gulp.task("generate-doc", ["make-prod-assets"], function() {
-    // Generate doc
-    return php2html(["./doc/*.php"], build + "/");
-});
-
-gulp.task("generate-html", ["generate-doc", "clean-html", "make-prod-assets"], function() {
-    // replace html
-    return gulp.src([build + '/**/*.html'])
-        .pipe(gulp.dest(destination + '/'));
-});
 
 
 //
 // Commandes utiles ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
+gulp.task("make-dev-assets", gulp.series('clean', "make-assets", "make-css-dev", "images", "make-scripts-dev", "loader-storybook"));
+gulp.task("default", gulp.series("make-dev-assets"));
+
 gulp.task("watch", function() {
     gulp.start('make-dev-assets');
     watch( [
@@ -280,7 +261,17 @@ gulp.task("watch", function() {
     });
 });
 
-gulp.task("make-dev-assets", ["clean", "make-assets", "make-sass", "make-css-dev", "scripts", "images", "make-scripts-dev", "loader-storybook"]);
-gulp.task("make-prod-assets", ["clean", "make-assets", "make-sass", "make-css-prod", "scripts", "images", "make-scripts-prod", "loader-storybook"]);
-gulp.task("default", ["clean", "make-dev-assets"]);
-gulp.task("html", ["clean", "generate-doc",  "generate-html"]);
+gulp.task("make-prod-assets", gulp.series("clean", "make-assets", "make-css-prod", "images", "make-scripts-prod", "loader-storybook"));
+
+gulp.task("generate-doc", gulp.series("make-prod-assets", function(done) {
+    // Generate doc
+    php2html(["./doc/*.php"], build + "/");
+    done();
+}));
+
+gulp.task("generate-html", gulp.series("generate-doc", function() {
+    // replace html
+    return gulp.src([build + '/**/*.html'])
+        .pipe(gulp.dest(destination + '/'));
+}));
+gulp.task("html", gulp.series("generate-html"));
