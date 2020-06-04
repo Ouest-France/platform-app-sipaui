@@ -377,6 +377,7 @@
                 url('#{$font-import-url}-Regular.woff') format('woff');
             font-weight: 400;
             font-style: normal;
+            font-display: swap;
         }
 
         @if $font-import-medium {
@@ -386,6 +387,7 @@
                     url('#{$font-import-url}-Medium.woff') format('woff');
                 font-weight: 500;
                 font-style: normal;
+                font-display: swap;
             }
         }
 
@@ -396,6 +398,7 @@
                     url('#{$font-import-url}-Bold.woff') format('woff');
                 font-weight: 700;
                 font-style: normal;
+                font-display: swap;
             }
         }
 
