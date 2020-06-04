@@ -1,4 +1,4 @@
-FROM matthieupresse/php7-node10:latest
+FROM matthieupresse/php7-node14:latest
 
 RUN apt-get install nginx  -y
 

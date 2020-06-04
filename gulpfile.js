@@ -232,14 +232,14 @@ function myPhp2Html(file, enc, cb) {
         return cb(null, file);
     });
 }
-function php2html(glob, dest){
-    return gulp.src(glob)
+gulp.task("php2html", function(glob, dest) {
+    return gulp.src(["./doc/*.php"])
         .pipe(through2.obj(myPhp2Html))
         .pipe(rename(function (path) {
             path.extname = ".html"
         }))
-        .pipe(gulp.dest(dest));
-}
+        .pipe(gulp.dest(build + "/"));
+});
 
 
 
@@ -263,11 +263,7 @@ gulp.task("watch", function() {
 
 gulp.task("make-prod-assets", gulp.series("clean", "make-assets", "make-css-prod", "images", "make-scripts-prod", "loader-storybook"));
 
-gulp.task("generate-doc", gulp.series("make-prod-assets", function(done) {
-    // Generate doc
-    php2html(["./doc/*.php"], build + "/");
-    done();
-}));
+gulp.task("generate-doc", gulp.series("make-prod-assets", "php2html"));
 
 gulp.task("generate-html", gulp.series("generate-doc", function() {
     // replace html

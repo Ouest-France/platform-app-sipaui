@@ -62,11 +62,11 @@ src /
             main.scss
             _variables.scss
             _theme-[name].scss
-            index.vue.js  
+            index.vue.js
     core /
         fonts /
         js /
-        scss / 
+        scss /
 .storybook / (usefull directory to generate the catalog)
     config.js
     head.html
@@ -76,11 +76,11 @@ src /
 
 ```
 docker build -t sipa-ui . -f .utils/Dockerfile-local
-docker run -v `pwd`:/sipaui -v /sipaui/node_modules/ -d -p 8789:80 --name sipa-ui_1 sipa-ui 
+docker run -v `pwd`:/sipaui -v /sipaui/node_modules/ -d -p 8789:80 --name sipa-ui_1 sipa-ui
 docker exec -it sipa-ui_1 bash
 
 yarn install
-yarn build
+yarn html
 ```
 
 Stop
@@ -100,5 +100,6 @@ URL
 
 ```
 http://IP_MACHINE_DOCKER:8789/
-http://192.168.99.100:8789/storybook/catalogue/
+http://localhost:8789/storybook/?path=/story/intro--documentation
 ```
+192.168.1.13
