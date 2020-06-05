@@ -249,17 +249,10 @@ gulp.task("php2html", function(glob, dest) {
 gulp.task("make-dev-assets", gulp.series('clean', "make-assets", "make-css-dev", "images", "make-scripts-dev", "loader-storybook"));
 gulp.task("default", gulp.series("make-dev-assets"));
 
-gulp.task("watch", function() {
-    gulp.series('make-dev-assets');
-    watch( [
-            source+ '/core/scss/**/*.scss',
-            source+ '/components/**/*.scss',
-            source+ '/core/**/*.js',
-            doc+ '/scss/**/*.scss',
-        ], function(){
-        gulp.series('make-dev-assets');
-    });
+gulp.task("watch", function(){
+    gulp.watch([source+ '/core/scss/**/*.scss',source+ '/components/**/*.scss',source+ '/core/**/*.js',doc+ '/scss/**/*.scss'], gulp.series('make-dev-assets'));
 });
+
 
 gulp.task("make-prod-assets", gulp.series("clean", "make-assets", "make-css-prod", "images", "make-scripts-prod", "loader-storybook"));
 
