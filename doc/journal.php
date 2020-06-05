@@ -39,6 +39,7 @@
                                                 <li>Évolution&nbsp;: Pop-ins&nbsp;-> la croix de fermeture est maintenant un bouton (l’ancienne méthode avec un <code>div</code> reste compatible).</li>
                                                 <li>Évolution&nbsp;: Chapeaux&nbsp;-> la graisse du texte est indépendante entre les listes d’articles et le détail article.</li>
                                                 <li>Évolution&nbsp;: Optimisation de la gestion des fontes Googles pour améliorer les performances.</li>
+                                                <li>Évolution&nbsp;: Cocardes&nbsp;-> ajout de la cocarde API.</li>
                                                 <li>Fix&nbsp;: ajout de Polyfills pour IE11.</li>
                                                 <li>Fix&nbsp;: débug flex sur le stepper pour IE11.</li>
                                                 <li>Fix&nbsp;: mauvaise graisse du chapeau OF dans le détail-article.</li>
