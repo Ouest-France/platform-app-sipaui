@@ -32,6 +32,9 @@
 	<li>
 		Publi Hebdos&nbsp;: <span class="su-cockade-ph"></span>
 	</li>
+	<li>
+		API&nbsp;: <span class="su-cockade-api"></span>
+	</li>
 </ul>
 ```
 <div class="sipaui">
@@ -54,6 +57,9 @@
 		<li>
 			Publi Hebdos&nbsp;: <span class="su-cockade-ph"></span>
 		</li>
+		<li>
+			API&nbsp;: <span class="su-cockade-api"></span>
+		</li>
 	</ul>
 </div>
 
@@ -68,5 +74,6 @@
 - `su-cockade-co`
 - `su-cockade-vv`
 - `su-cockade-ph`
+- `su-cockade-api`
 
 </div>

@@ -11,6 +11,7 @@
 
 */
 $url-logo-identities: 'https://cdn.sipaof.fr/sipaui/latest/images/COMPONENTS/Identities/Cockades/images/' !default;
+$url-logo-identities: '/images/COMPONENTS/Identities/Cockades/images/'; // version pour dev en local
 
 
 .sipaui {
@@ -38,5 +39,8 @@ $url-logo-identities: 'https://cdn.sipaof.fr/sipaui/latest/images/COMPONENTS/Ide
     }
     .su-cockade-ph {
         background-image: url('#{$url-logo-identities}ph.svg');
+    }
+    .su-cockade-api {
+        background-image: url('#{$url-logo-identities}api.svg');
     }
 }
