@@ -250,14 +250,14 @@ gulp.task("make-dev-assets", gulp.series('clean', "make-assets", "make-css-dev",
 gulp.task("default", gulp.series("make-dev-assets"));
 
 gulp.task("watch", function() {
-    gulp.start('make-dev-assets');
+    gulp.series('make-dev-assets');
     watch( [
             source+ '/core/scss/**/*.scss',
             source+ '/components/**/*.scss',
             source+ '/core/**/*.js',
             doc+ '/scss/**/*.scss',
         ], function(){
-        gulp.start('make-dev-assets');
+        gulp.series('make-dev-assets');
     });
 });
 
