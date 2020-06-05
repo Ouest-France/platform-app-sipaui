@@ -71,6 +71,6 @@
     "gulp-concat": "^2.6.1",
     "gulp-replace": "^1.0.0",
     "image-webpack-loader": "^4.6.0",
-    "replace-in-file": "^3.4.2"
+    "replace-in-file": "^6.0.0"
   }
 }
