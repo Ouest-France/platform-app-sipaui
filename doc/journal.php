@@ -42,7 +42,7 @@
                                 </div>
                             </li>
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">3.6.8</span></div>
+                                <div class="table-cell"><span class="version">3.6.10</span></div>
                                 <div class="table-cell">
                                     <ul>
                                         <li>Composants&nbsp;:
