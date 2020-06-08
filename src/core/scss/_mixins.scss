@@ -409,6 +409,7 @@
                 url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Regular.woff') format('woff');
             font-weight: 400;
             font-style: normal;
+            font-display: swap;
         }
 
         @if $font-import-medium {
@@ -418,6 +419,7 @@
                     url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Medium.woff') format('woff');
                 font-weight: 500;
                 font-style: normal;
+                font-display: swap;
             }
         }
 
@@ -428,6 +430,7 @@
                     url('#{$font-import-directory}/#{$font-import-path}#{$font-import-name}-Bold.woff') format('woff');
                 font-weight: 700;
                 font-style: normal;
+                font-display: swap;
             }
         }
     }
