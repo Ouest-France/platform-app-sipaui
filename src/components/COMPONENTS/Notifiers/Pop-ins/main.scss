@@ -15,7 +15,7 @@
         max-height: calc(100vh - #{$margin-medium} * 2);
         max-width: calc(100vw - #{$margin-medium} * 2);
         padding: $margin-large;
-        z-index: 200;
+        z-index: 10200;
         overflow: hidden;
         opacity: 0;
         background: $background-pop-in;
