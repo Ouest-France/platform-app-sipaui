@@ -10,7 +10,7 @@ Les boutons rendent les actions visibles et permettent aux utilisateurs d'effect
 
 ### Bouton primaire
 
-Le bouton principal, met en évidence une action importante dans une page. Il est utilisé principalement sur une action spécifique ou dans un formulaire. Son utilisation dans une page doit être limitée.
+Le bouton principal, met en évidence une action importante dans une page (ou d'un bloc). Il est utilisé principalement sur une action spécifique ou dans un formulaire. Son utilisation dans une page doit être limitée.
 
 Enabled | Hover / Focus / Pressed | Inactif
 ------------ | ------------- | ------------- |
