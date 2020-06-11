@@ -4,7 +4,6 @@ var gulp            = require("gulp"),
     rename          = require("gulp-rename"),
     uglify          = require("gulp-uglify"),
     sass            = require("gulp-sass"),
-    watch           = require("gulp-watch"),
     sourcemaps      = require('gulp-sourcemaps'),
     plumber         = require('gulp-plumber'),
     cssnano         = require('gulp-cssnano'),
@@ -246,15 +245,9 @@ gulp.task("php2html", function(glob, dest) {
 //
 // Commandes utiles ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-gulp.task("make-dev-assets", gulp.series('clean', "make-assets", "make-css-dev", "images", "make-scripts-dev", "loader-storybook"));
-gulp.task("default", gulp.series("make-dev-assets"));
+gulp.task("make-dev-assets", gulp.series("make-assets", "make-css-dev", "images", "make-scripts-dev", "loader-storybook"));
 
-gulp.task("watch", function(){
-    gulp.watch([source+ '/core/scss/**/*.scss',source+ '/components/**/*.scss',source+ '/core/**/*.js',doc+ '/scss/**/*.scss'], gulp.series('make-dev-assets'));
-});
-
-
-gulp.task("make-prod-assets", gulp.series("clean", "make-assets", "make-css-prod", "images", "make-scripts-prod", "loader-storybook"));
+gulp.task("make-prod-assets", gulp.series("make-assets", "make-css-prod", "images", "make-scripts-prod", "loader-storybook"));
 
 gulp.task("generate-doc", gulp.series("make-prod-assets", "php2html"));
 
@@ -263,4 +256,11 @@ gulp.task("generate-html", gulp.series("generate-doc", function() {
     return gulp.src([build + '/**/*.html'])
         .pipe(gulp.dest(destination + '/'));
 }));
-gulp.task("html", gulp.series("generate-html"));
+
+gulp.task("watch", function(){
+    gulp.watch([source+ '/core/scss/**/*.scss',source+ '/components/**/*.scss',source+ '/core/**/*.js',doc+ '/scss/**/*.scss'], gulp.series('generate-html'));
+});
+
+gulp.task("html", gulp.series("clean", "generate-html"));
+gulp.task("build", gulp.series("html"));
+gulp.task("default", gulp.series("html"));

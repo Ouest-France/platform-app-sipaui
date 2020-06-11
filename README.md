@@ -76,11 +76,12 @@ src /
 
 ```
 docker build -t sipa-ui . -f .utils/Dockerfile-local
-docker run -v `pwd`:/sipaui -v /sipaui/node_modules/ -d -p 8789:80 --name sipa-ui_1 sipa-ui
+docker run -v `pwd`:/sipaui -v /sipaui/node_modules/ -d -p 8789:80 -p 9001:9001 --name sipa-ui_1 sipa-ui
 docker exec -it sipa-ui_1 bash
 
 yarn install
-yarn html
+yarn build
+yarn storybook
 ```
 
 Stop
@@ -94,12 +95,18 @@ Start
 ```
 docker start sipa-ui_1
 docker exec -it sipa-ui_1 bash
+yarn storybook
 ```
 
 URL
 
+mode doc:
 ```
-http://IP_MACHINE_DOCKER:8789/
+http://localhost:8789/
 http://localhost:8789/storybook/?path=/story/intro--documentation
 ```
-192.168.1.13
+
+mode catalogue
+```
+http://localhost:9001/?path=/story/intro--documentation
+```
