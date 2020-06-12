@@ -799,6 +799,17 @@ Comme dit plus haut, le contenu de la grille libre est *automatiquement réparti
 
 **Pour un objet qui a une taille définie**, il n’y a besoin de rien de plus.
 
+```html
+<div class="demo-grille page">
+	<div>
+		Page
+	</div>
+	<div class="su-grid-auto su-row su-row-right">
+		<button class="su-button su-secondary su-small su-margin-right-m">Bouton 1</button>
+		<button class="su-button su-primary su-small">Bouton 2</button>
+	</div>
+</div>
+```
 
 <div class="sipaui">
 	<div class="demo-grille page">
@@ -818,15 +829,13 @@ Comme dit plus haut, le contenu de la grille libre est *automatiquement réparti
 <style>
     .taille-fixe {width: 100px}
 </style>
-<div class="sipaui">
-	<div class="demo-grille page">
-		<div>
-			Page
-		</div>
-		<div class="su-grid-auto su-row su-has-gutter su-row-center">
-			<div class="su-col taille-fixe">Lorem ipsum dolor sit amet.</div>
-			<div class="su-col taille-fixe">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-		</div>
+<div class="demo-grille page">
+	<div>
+		Page
+	</div>
+	<div class="su-grid-auto su-row su-has-gutter su-row-center">
+		<div class="su-col taille-fixe">Lorem ipsum dolor sit amet.</div>
+		<div class="su-col taille-fixe">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
 	</div>
 </div>
 ```
