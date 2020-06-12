@@ -137,8 +137,8 @@ gulp.task("copy-storybook", function() {
 });
 
 gulp.task("copy-stories", gulp.series("copy-storybook", function() {
-    return gulp.src(['src/components/**/*'])
-        .pipe(gulp.dest('dist/components'));
+    return gulp.src([source + '/components/**/*'])
+        .pipe(gulp.dest(destination + '/components'));
 }));
 
 gulp.task("build-stories", gulp.series("copy-stories", function(done) {
@@ -259,6 +259,11 @@ gulp.task("generate-html", gulp.series("generate-doc", function() {
 
 gulp.task("watch", function(){
     gulp.watch([source+ '/core/scss/**/*.scss',source+ '/components/**/*.scss',source+ '/core/**/*.js',doc+ '/scss/**/*.scss'], gulp.series('generate-html'));
+
+    gulp.watch([source+ '/components/**/*.md'], gulp.series(() => {
+        return gulp.src([source + '/components/**/*.md'])
+            .pipe(gulp.dest(destination + '/components'));
+    }));
 });
 
 gulp.task("html", gulp.series("clean", "generate-html", "loader-storybook"));
