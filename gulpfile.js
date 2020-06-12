@@ -245,9 +245,9 @@ gulp.task("php2html", function(glob, dest) {
 //
 // Commandes utiles ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-gulp.task("make-dev-assets", gulp.series("make-assets", "make-css-dev", "images", "make-scripts-dev", "loader-storybook"));
+gulp.task("make-dev-assets", gulp.series("make-assets", "make-css-dev", "images", "make-scripts-dev"));
 
-gulp.task("make-prod-assets", gulp.series("make-assets", "make-css-prod", "images", "make-scripts-prod", "loader-storybook"));
+gulp.task("make-prod-assets", gulp.series("make-assets", "make-css-prod", "images", "make-scripts-prod"));
 
 gulp.task("generate-doc", gulp.series("make-prod-assets", "php2html"));
 
@@ -261,6 +261,6 @@ gulp.task("watch", function(){
     gulp.watch([source+ '/core/scss/**/*.scss',source+ '/components/**/*.scss',source+ '/core/**/*.js',doc+ '/scss/**/*.scss'], gulp.series('generate-html'));
 });
 
-gulp.task("html", gulp.series("clean", "generate-html"));
+gulp.task("html", gulp.series("clean", "generate-html", "loader-storybook"));
 gulp.task("build", gulp.series("html"));
 gulp.task("default", gulp.series("html"));
