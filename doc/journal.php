@@ -35,6 +35,7 @@
                                             <ul>
                                                 <li><strong>Nouveauté&nbsp;: Paginations (Components/Navigation/Paginations).</strong></li>
                                                 <li>Évolution&nbsp;: Liens&nbsp;-> lien léger.</li>
+                                                <li>Évolution&nbsp;: Grille&nbsp;-> ajout de classes pour gérer l’alignement du contenu de la grille libre.</li>
                                                 <li>Évolution&nbsp;: Pop-ins, cases-à-cocher et boutons-radio&nbsp;-> ajout de l’accessibilité.</li>
                                                 <li>Évolution&nbsp;: Pop-ins et voile, z-index augmentés pour être plus sûr de passer au-dessus des autres éléments de la page. <strong>Attention&nbsp;! Cela peut entrainer une régression sur une page qui voudrait positionner du contenu au-dessus de ce voile.</strong></li>
                                             </ul>

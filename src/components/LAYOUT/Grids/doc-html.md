@@ -793,6 +793,58 @@ Pour mettre en place le retour automatique utilisez la classe `su-wrap` sur le r
 	</div>
 </div>
 
+### Alignements horizontaux
+
+Comme dit plus haut, le contenu de la grille libre est *automatiquement réparti dans l’espace accordé par le parent*. Pour plus de possibilités, les classes `su-row-left`, `su-row-center` et `su-row-right` permettent d’aligner les enfants de la grille (colonnes ou n’importe quel objet de niveau 1) à gauche, centré ou à droite.
+
+**Pour un objet qui a une taille définie**, il n’y a besoin de rien de plus.
+
+
+<div class="sipaui">
+	<div class="demo-grille page">
+		<div>
+			Page
+		</div>
+		<div class="su-grid-auto su-row su-row-right">
+			<button class="su-button su-secondary su-small su-margin-right-m">Bouton 1</button>
+			<button class="su-button su-primary su-small">Bouton 2</button>
+		</div>
+	</div>
+</div>
+
+**Pour un objet sans taille définie** (comme une colonne), il faut définir cette taille.
+
+```html
+<style>
+    .taille-fixe {width: 100px}
+</style>
+<div class="sipaui">
+	<div class="demo-grille page">
+		<div>
+			Page
+		</div>
+		<div class="su-grid-auto su-row su-has-gutter su-row-center">
+			<div class="su-col taille-fixe">Lorem ipsum dolor sit amet.</div>
+			<div class="su-col taille-fixe">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+		</div>
+	</div>
+</div>
+```
+
+<style>
+    .taille-fixe {width: 100px}
+</style>
+<div class="sipaui">
+	<div class="demo-grille page">
+		<div>
+			Page
+		</div>
+		<div class="su-grid-auto su-row su-has-gutter su-row-center">
+			<div class="su-col taille-fixe">Lorem ipsum dolor sit amet.</div>
+			<div class="su-col taille-fixe">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+		</div>
+	</div>
+</div>
 
 ## Grilles imbriquées
 
@@ -870,7 +922,11 @@ Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La 
 
 ## Grille libre&nbsp;: liste des classes disponibles
 - `su-container`
+- `su-grid-auto`
 - `su-row`
+- `su-row-left`
+- `su-row-center`
+- `su-row-right`
 - `su-col`
 - `su-has-gutter`
 - `su-visible-xs`… (dépendant du composant *Helpers*)

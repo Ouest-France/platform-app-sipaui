@@ -47,7 +47,7 @@
 .sipaui .su-row,
 .sipaui.su-row {
     @include display-flex();
-    @include justify-content(space-between, distribute);
+    @include justify-content(space-between, justify);
     @include flex-wrap(wrap);
 
     @include grid-col-definition(xs, $grid-small-max-col);
@@ -77,6 +77,22 @@
             }
             .su-col:last-child {
                 margin-right: 0;
+            }
+        }
+        &.su-row-left {
+            @include justify-content(flex-start, start);
+        }
+        &.su-row-right {
+            @include justify-content(flex-end, end);
+        }
+        &.su-row-center {
+            @include justify-content(center, center);
+        }
+        &.su-row-left,
+        &.su-row-right,
+        &.su-row-center {
+            .su-col {
+                @include flex(0 0 auto);
             }
         }
     }
