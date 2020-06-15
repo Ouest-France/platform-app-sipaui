@@ -54,7 +54,7 @@
     "react-dom": "^16.6.3",
     "sass-loader": "^7.1.0",
     "storybook-readme": "^4.0.2",
-    "through2": "^2.0.3",
+    "through2": "^3.0.1",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "^2.6.10",
