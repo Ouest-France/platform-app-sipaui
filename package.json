@@ -52,7 +52,7 @@
     "lerna": "^3.13.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^9.0.2",
     "storybook-readme": "^4.0.2",
     "through2": "^2.0.3",
     "vue": "^2.6.10",
