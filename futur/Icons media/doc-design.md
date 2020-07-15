@@ -1,6 +1,6 @@
-# Icons media / Icônes média ?
+# Icons media / Icônes média
 
-Les icônes media ? permettent d’informer l’utilisateur qu'un article complet est composé d'un format autre que textuel.
+Les icônes media permettent d’informer l’utilisateur qu'un article complet est composé d'un format autre que textuel.
 
 ## Usage
 
@@ -13,18 +13,18 @@ Les icônes media ? permettent d’informer l’utilisateur qu'un article comple
 ### Icônes
 
 - 3 types d'icônes existent :
-  - **Vidéo** ? permet d'indiquer l'utilisateur qu'un article est composé d'au moins une vidéo. Celui-ci ne permet pas de lire la vidéo.
-  - **Podcast** ? permet d'informer l'utilisateur qu'un article est composé d'au moins un podcast.
-  - **Photo** ou photos ? permet d'indiquer à l'utilisateur qu'un article est composé d'au moins deux images. Ces images sont présentes directement dans le corps de l'article, sous forme d'un carrousel, etc.
-- Ces pastilles ne sont pas des boutons. Dans ce contexte de liste, un tape sur celles-ci ouvre l'article complet.
+  - **Vidéo** permet d'indiquer l'utilisateur qu'un article est composé d'au moins une vidéo. Celui-ci ne permet pas de lire la vidéo.
+  - **Podcast** permet d'informer l'utilisateur qu'un article est composé d'au moins un podcast.
+  - **Photos** permet d'indiquer à l'utilisateur qu'un article est composé d'**au moins deux images**. Ces images peuvent être présentes directement dans le corps de l'article, sous forme d'un carrousel, etc.
+- Ces pastilles ne sont pas des boutons. C'est pourquoi dans ce contexte de liste, un tape sur celles-ci ouvre l'article complet.
 - 2 tailles sont disponibles.
 - A l'intérieur de chaque icône, la couleur de chaque pictogramme est #333333.
 
 Type | **Grande** | **Petite**
 ------------ | -------------| -------------
-Vidéo ?| ![Grande icone video.png](design/Grande icone video.png) | ![Petite icone video.png](design/Petite icone video.png)
-Podcast ? | ![Grande icone podcast.png](design/Grande icone podcast.png) | ![Petite icone podcast.png](design/Petite icone podcast.png)
-Photo ?| ![Grande icone photo](design/Grande icone photo.png) | ![Petite icone photo](design/Petite icone photo.png)
+Vidéo | ![Grande icone video.png](design/Grande icone video.png) | ![Petite icone video.png](design/Petite icone video.png)
+Podcast | ![Grande icone podcast.png](design/Grande icone podcast.png) | ![Petite icone podcast.png](design/Petite icone podcast.png)
+Photo | ![Grande icone photo](design/Grande icone photo.png) | ![Petite icone photo](design/Petite icone photo.png)
 Cercle | Taille : 34x34px <br> Couleur : #FFFFFF <br> Opacité : 70%  <br> Position : 20px en haut à gauche de l'image | Taille : 24x24px <br> - <br> -  <br> Position : 10px en haut à gauche de l'image
 
 
