@@ -218,7 +218,7 @@
 }
 
         // troncature multiligne //
-        @mixin multi-line-ellipsis($lineHeight: 1.6em, $lineCount: 1) {
+        @mixin multi-line-ellipsis($lineHeight: 1.6em, $lineCount: 1, $bgColor: '') {
             display            : block;
             -webkit-box-orient : vertical;
             position           : relative;
