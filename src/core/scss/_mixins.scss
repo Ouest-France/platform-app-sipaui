@@ -231,7 +231,7 @@
             height             : calc(#{$lineHeight} * #{$lineCount});
 
             &::after {
-                content    : '...';
+                content    : ' ';
                 text-align : right;
                 bottom     : 0;
                 right      : 0;
@@ -242,6 +242,9 @@
                 background : $bgColor;
             }
             @supports (-webkit-line-clamp: 1)  {
+                display            : -webkit-box;
+                -webkit-line-clamp : $lineCount;
+
                 &::after {
                     display : none !important;
                 }
