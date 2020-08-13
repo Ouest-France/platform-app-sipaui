@@ -1,4 +1,4 @@
-# Paginations / Paginations
+# Pagination / Pagination
 
 La pagination aide les utilisateurs à **naviguer dans de grandes quantités de données.**
 

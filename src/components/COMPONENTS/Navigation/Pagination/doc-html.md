@@ -1,7 +1,16 @@
-# Paginations / Paginations
+# Pagination / Pagination
 
+Le composant de pagination permet de présenter au lecteur mais aussi et *surtout* aux robots .
 
+<a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
+<div class="dependances">
+
+## Dépendances
+- classe `sipaui` sur un parent (par exemple le `<body>`),
+- composant **Icons**.
+
+</div>
 
 <div class="sipaui">
 	<nav id="pagination01">
@@ -142,3 +151,16 @@ Possibilité supplémentaire&nbsp;:
 - aria-label="Fermer"
 - aria-labelledby
 - nav ?
+
+
+<div id="liste-classes" class="control-titres">
+
+## Liste des classes disponibles
+- `su-`
+- `su-`
+
+### Classes annexes
+- `su-` (dépendant du composant *Labels*, si besoin de surcharge)
+- `su-` (dépendant du composant *Labels*)
+
+</div>
