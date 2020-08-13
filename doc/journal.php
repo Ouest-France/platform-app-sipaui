@@ -38,13 +38,14 @@
                                                 <li>Évolution&nbsp;: Grille&nbsp;-> ajout de classes pour gérer l’alignement du contenu de la grille libre.</li>
                                                 <li>Évolution&nbsp;: Pop-ins, cases-à-cocher et boutons-radio&nbsp;-> ajout de l’accessibilité.</li>
                                                 <li>Évolution&nbsp;: Pop-ins et voile, z-index augmentés pour être plus sûr de passer au-dessus des autres éléments de la page. <strong>Attention&nbsp;! Cela peut entrainer une régression sur une page qui voudrait positionner du contenu au-dessus de ce voile.</strong></li>
+                                                <li>Évolution&nbsp;: mixins SCSS, amélioration de la troncature multilignes.</li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">3.6.10</span></div>
+                                <div class="table-cell"><span class="version">3.6.12</span></div>
                                 <div class="table-cell">
                                     <ul>
                                         <li>Composants&nbsp;:
