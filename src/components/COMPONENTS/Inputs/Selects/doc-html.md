@@ -10,6 +10,7 @@ Les listes déroulantes `<select>` proposent une liste d’options à l’utilis
 - classe `sipaui` sur un parent (par exemple le `<body>`),
 - composant **Helpers**,
 - composant **Labels**,
+- composant **Icons**,
 - composant **Errors**
 
 </div>
