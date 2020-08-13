@@ -1,8 +1,8 @@
 # Accordions / Accordéons
 
-<a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
-
 En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en propose un** pour l’instant&nbsp;: **l’accordéon-radio**. Il peut servir par exemple pour des sous-parties d’un formulaire, liées à un choix de l’utilisateur (comme le choix d’un moyen de paiement qui ouvre les paramètres liés à ce choix).
+
+<a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
 <div class="dependances">
 
