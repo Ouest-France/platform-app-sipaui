@@ -34,6 +34,7 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li><strong>Nouveauté&nbsp;: Paginations (Components/Navigation/Pagination).</strong></li>
+                                                <li>Évolution&nbsp;: Icônes&nbsp;-> ajout des flèches haut, gauche et droite.</li>
                                                 <li>Évolution&nbsp;: Liens&nbsp;-> lien léger.</li>
                                                 <li>Évolution&nbsp;: Grille&nbsp;-> ajout de classes pour gérer l’alignement du contenu de la grille libre.</li>
                                                 <li>Évolution&nbsp;: Pop-ins, cases-à-cocher et boutons-radio&nbsp;-> ajout de l’accessibilité.</li>

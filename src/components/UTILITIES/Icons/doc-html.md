@@ -78,6 +78,33 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 		<div><i class="su-icon">fleche_bas</i></div>
 		<p class="su-text-left">Références&nbsp;: fleche_bas, arrow_down.</p>
 	</div>
+	<div class="icone"><!------------------------------------------------- Flèche haut-->
+		<h3>Flèche haut</h3>
+		<pre class="language-html"><code>&lt;i class="su-icon">
+	fleche_haut
+&lt;/i></code></pre>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e908</code></div>
+		<div><i class="su-icon">fleche_haut</i></div>
+		<p class="su-text-left">Références&nbsp;: fleche_haut, arrow_up.</p>
+	</div>
+	<div class="icone"><!------------------------------------------------- Flèche gauche-->
+		<h3>Flèche gauche</h3>
+		<pre class="language-html"><code>&lt;i class="su-icon">
+	précédent
+&lt;/i></code></pre>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e909</code></div>
+		<div><i class="su-icon">précédent</i></div>
+		<p class="su-text-left">Références&nbsp;: fleche_gauche, précédent, arrow_left, previous.</p>
+	</div>
+	<div class="icone"><!------------------------------------------------- Flèche droite-->
+		<h3>Flèche droite</h3>
+		<pre class="language-html"><code>&lt;i class="su-icon">
+	suivant
+&lt;/i></code></pre>
+		<div class="glyphe">Glyphe&nbsp;: <code>\e90a</code></div>
+		<div><i class="su-icon">suivant</i></div>
+		<p class="su-text-left">Références&nbsp;: fleche_droite, suivant, arrow_right, next.</p>
+	</div>
 	<div class="icone"><!------------------------------------------------- Montrer-->
 		<h3>Montrer</h3>
 		<pre class="language-html"><code>&lt;i class="su-icon">

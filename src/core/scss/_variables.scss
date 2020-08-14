@@ -7,6 +7,7 @@
 // Import Fonts
 $font-import-url:        'https://cdn.sipaof.fr/sipaui/latest/fonts/oswald/Oswald' !default;
 $font-import-use-local:  null        !default;
+                                                                $font-import-use-local:  true        !default;
 $font-import-directory:  '../fonts'  !default;
 $font-import-path:       'oswald/'   !default;
 $font-import-medium:     null        !default;
