@@ -9,7 +9,7 @@ La pagination aide les utilisateurs à **naviguer dans de grandes quantités de 
 - Certaines pages ont un accès direct, contrairement à d’autres.
 
 ## La pagination
-- L’ensemble de la pagination est composé de la première page, la page précédente, la page courante, la page suivante et la dernière page. Une liste de page est présente le cas échéant.
+- L’ensemble de la pagination est composé de la première page, la page précédente, la page courante, la page suivante et la dernière page. Une liste de pages est présente le cas échéant.
 
 ## Élément de base
 
@@ -19,7 +19,7 @@ La pagination aide les utilisateurs à **naviguer dans de grandes quantités de 
 
 Enabled | Hover / Focus / Pressed | Disabled
 ------------ | ------------- | ------------- |
-![element__base__enabled](components/COMPONENTS/Navigation/Paginations/design/element__base__enabled.png) | ![element__base__hover](components/COMPONENTS/Navigation/Paginations/design/element__base__hover.png) | ![element__base__disabled](components/COMPONENTS/Navigation/Paginations/design/element__base__disabled.png)
+![element__base__enabled](components/COMPONENTS/Navigation/Pagination/design/element__base__enabled.png) | ![element__base__hover](components/COMPONENTS/Navigation/Pagination/design/element__base__hover.png) | ![element__base__disabled](components/COMPONENTS/Navigation/Pagination/design/element__base__disabled.png)
 Hauteur&nbsp;: 44px  <br> Largeur&nbsp;: 50px <br> Fond&nbsp;: #FFFFFF  <br> Contour&nbsp;: #D4D4D4 <br> Chiffre&nbsp;: texte standard | -  <br> - <br> - <br> Contour&nbsp;: #B40015 <br> Chiffre&nbsp;: texte standard #B40015 | Opacité&nbsp;: 40&nbsp;%
 
 - Le chiffre est centré dans le conteneur.
@@ -32,7 +32,7 @@ Hauteur&nbsp;: 44px  <br> Largeur&nbsp;: 50px <br> Fond&nbsp;: #FFFFFF  <br> Con
 
 Enabled | Hover / Focus / Pressed | Disabled
 ------------ | ------------- | ------------- |
-![element__courant__enabled](components/COMPONENTS/Navigation/Paginations/design/element__courant__enabled.png) | ![element__courant__hover](components/COMPONENTS/Navigation/Paginations/design/element__courant__hover.png) | ![element__courant__disabled](components/COMPONENTS/Navigation/Paginations/design/element__courant__disabled.png)
+![element__courant__enabled](components/COMPONENTS/Navigation/Pagination/design/element__courant__enabled.png) | ![element__courant__hover](components/COMPONENTS/Navigation/Pagination/design/element__courant__hover.png) | ![element__courant__disabled](components/COMPONENTS/Navigation/Pagination/design/element__courant__disabled.png)
 Hauteur&nbsp;: 44px  <br> Largeur&nbsp;: 72px <br> Fond&nbsp;: #FFFFFF  <br> Contour&nbsp;: #D4D4D4 <br> Chiffre&nbsp;: texte standard bold <br> Chevron&nbsp;: #333333 et à 5px à droite du dernier chiffre | -  <br> - <br> -  <br> Contour&nbsp;: #B40015 <br> Chiffre&nbsp;: texte standard bold #B40015 <br> Chevron&nbsp;: #B40015 et à 5px à droite du dernier chiffre | Opacité du chevron&nbsp;: 40 %
 
 - Le couple chiffre - chevron est centré dans le container.
@@ -87,7 +87,7 @@ Taille de l’écran | De 320 à 359px | De 360px ou plus
 ------------ | ------------- |------------- |
 Marge entre les éléments de base | 5px | 10px |
 Largeur totale | 280px | 300px |
-Illustration | ![default](components/COMPONENTS/Navigation/Paginations/design/default.png) |![large](components/COMPONENTS/Navigation/Paginations/design/large.png)
+Illustration | ![default](components/COMPONENTS/Navigation/Pagination/design/default.png) |![large](components/COMPONENTS/Navigation/Pagination/design/large.png)
 
 ### Exemples
 
@@ -95,14 +95,14 @@ Pagination **visible par l’utilisateur**&nbsp;:
 
 Page 1 sur 2 318 | Page 2 318 sur 2 318
 ------------- | ------------- |
-![select-active](components/COMPONENTS/Navigation/Paginations/design/select-active.png)| ![select-active-full__2318-to-2318](components/COMPONENTS/Navigation/Paginations/design/select-active-full__2318-to-2318.png)
+![select-active](components/COMPONENTS/Navigation/Pagination/design/select-active.png)| ![select-active-full__2318-to-2318](components/COMPONENTS/Navigation/Pagination/design/select-active-full__2318-to-2318.png)
 
 
  Pagination **pour information**&nbsp;:
 
 Page 1 sur 2 318 | Page 1 505 sur 2 318
 ------------- | ------------- |
-  ![select-active-full](components/COMPONENTS/Navigation/Paginations/design/select-active-full.png) |  ![select-active-full__1505-to-2318](components/COMPONENTS/Navigation/Paginations/design/select-active-full__1505-to-2318.png)
+  ![select-active-full](components/COMPONENTS/Navigation/Pagination/design/select-active-full.png) |  ![select-active-full__1505-to-2318](components/COMPONENTS/Navigation/Pagination/design/select-active-full__1505-to-2318.png)
 
 ## Bonnes pratiques
 

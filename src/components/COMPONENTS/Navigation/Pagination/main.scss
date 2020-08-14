@@ -9,6 +9,37 @@
     .su-pagination {
         @include display-flex();
         @include justify-content(center, center);
+        
+        &.su-first-page {
+            >:nth-child(-n+2) {
+                opacity: $opacity-disabled;
+                
+                &:hover {
+                    border: $border-page-item;
+                    
+                    a {
+                        color: $color-page-item;
+                        cursor: default;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+        &.su-last-page {
+            >:nth-last-child(-n+2) {
+                opacity: $opacity-disabled;
+                
+                &:hover {
+                    border: $border-page-item;
+                    
+                    a {
+                        color: $color-page-item;
+                        cursor: default;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
     }
     .su-pagination-item {
         height: $height-finger;
@@ -60,6 +91,10 @@
 
 
 // PAGINATION RICHE --------------------------------------------------------------------------------------/
+
+// VIRER LA GESTION DE PAGINATION RICHE ET LA CLASSE QUI VA AVEC ?
+
+
 .sipaui {
     .su-rich {
         .su-page-select {
@@ -105,6 +140,11 @@
 
 
         	background-attachment: scroll;
+            
+            a {
+                width: 100%;
+                text-align: center;
+            }
         }
     }
     .su-pages-list-in {
