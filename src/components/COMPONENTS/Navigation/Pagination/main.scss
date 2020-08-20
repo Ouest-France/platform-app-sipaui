@@ -9,6 +9,7 @@
     .su-pagination {
         @include display-flex();
         @include justify-content(center, center);
+        position: relative;
         
         &.su-first-page {
             >:nth-child(-n+2) {
@@ -160,12 +161,21 @@
             text-align: center;
         }
     }
+    .su-pages-list-close {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        opacity: 0;
+    }
     .su-pages-list-in {
         .su-page-select {
             border: $border-page-select-in;
             border-bottom: $border-bottom-page-select-in;
             border-radius: $border-radius-page-item $border-radius-page-item 0 0 ;
-
+            
             > button {
                 &::after {
                     transform: rotate(180deg);
@@ -178,6 +188,9 @@
             transition: max-height .5s ease-out;
             overflow-y: auto;
             z-index: 100;            
+        }
+        .su-pages-list-close {
+            display: block
         }
     }
 }

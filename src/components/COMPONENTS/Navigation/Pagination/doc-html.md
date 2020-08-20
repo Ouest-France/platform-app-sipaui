@@ -40,6 +40,7 @@ Parler de l’importance de l’ID pour le menu.
 			<li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">suivant</i></a></li>
 			<li class="su-pagination-item su-page-link"><a href="#">7</a></li>
 		</ul>
+		<button type="button" class="su-pages-list-close" data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in","force":0}'>Fermer la liste de pages</button>
 	</nav>
 </div>
 
@@ -74,6 +75,7 @@ Scroll sur la liste
 		    <li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">suivant</i></a></li>
 		    <li class="su-pagination-item su-page-link"><a href="#">56</a></li>
 		</ul>
+		<button type="button" class="su-pages-list-close" data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in","force":0}'>Fermer la liste de pages</button>
 	</nav>
 </div>
 
@@ -122,6 +124,7 @@ Cf. si "un système de navigation qui permet d’aller sur n’importe quelle pa
 			<li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">suivant</i></a></li>
 			<li class="su-pagination-item su-page-link"><a href="#">2235</a></li>
 		</ul>
+		<button type="button" class="su-pages-list-close" data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in","force":0}'>Fermer la liste de pages</button>
 	</nav>
 </div>
 
