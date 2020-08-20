@@ -18,35 +18,15 @@ Parler de l’importance de l’ID pour le menu.
 
 ## Variations en fonction du nombre de pages totales
 
-### Cas avec 3 pages
-<div class="sipaui">
-	<nav id="pagination01">
-		<ul class="surcharge-storybook su-pagination su-rich su-first-page">
-		    <li class="su-pagination-item su-page-link"><a href="#">1</a></li>
-		    <li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">précédent</i></a></li>
-		    <li class="su-pagination-item su-page-select">
-		    	<button data-sutoggleclass='{"sel":"#pagination01","klass":"su-pages-list-in"}'>1<i class="su-icon">fleche_bas</i></button>
-		    	<ul class="surcharge-storybook su-pages-list">
-				    <li class="su-page-active"><a href="#">1</a></li>
-				    <li><a href="#">2</a></li>
-				    <li><a href="#">3</a></li>
-				</ul>
-		    </li>
-		    <li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">suivant</i></a></li>
-		    <li class="su-pagination-item su-page-link"><a href="#">3</a></li>
-		</ul>
-	</nav>
-</div>
-
 ### Cas avec 7 pages
 
 <div class="sipaui">
-	<nav id="pagination02">
-		<ul class="surcharge-storybook su-pagination su-rich su-first-page">
+	<nav>
+		<ul class="surcharge-storybook su-pagination su-first-page">
 			<li class="su-pagination-item su-page-link"><a href="#">1</a></li>
 			<li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">précédent</i></a></li>
 			<li class="su-pagination-item su-page-select">
-				<button data-sutoggleclass='{"sel":"#pagination02","klass":"su-pages-list-in"}'>1<i class="su-icon">fleche_bas</i></button>
+				<button data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in"}'>1</button>
 				<ul class="surcharge-storybook su-pages-list">
 					<li class="su-page-active"><a href="#">1</a></li>
 					<li><a href="#">2</a></li>
@@ -68,12 +48,12 @@ Parler de l’importance de l’ID pour le menu.
 Scroll sur la liste
 
 <div class="sipaui">
-	<nav id="pagination03">
-		<ul class="surcharge-storybook su-pagination su-rich su-first-page">
+	<nav>
+		<ul class="surcharge-storybook su-pagination su-first-page">
 		    <li class="su-pagination-item su-page-link"><a href="#">1</a></li>
 		    <li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">précédent</i></a></li>
 		    <li class="su-pagination-item su-page-select">
-		    	<button data-sutoggleclass='{"sel":"#pagination03","klass":"su-pages-list-in"}'>1<i class="su-icon">fleche_bas</i></button>
+		    	<button data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in"}'>1</button>
 		    	<ul class="surcharge-storybook su-pages-list">
 				    <li class="su-page-active"><a href="#">1</a></li>
 				    <li><a href="#">2</a></li>
@@ -101,12 +81,12 @@ Scroll sur la liste
 
 Cf. si "un système de navigation qui permet d’aller sur n’importe quelle page en 2 liens maximums" en intro est vrai
 <div class="sipaui">
-	<nav id="pagination04">
-		<ul class="surcharge-storybook su-pagination su-rich su-first-page">
+	<nav>
+		<ul class="surcharge-storybook su-pagination su-first-page">
 			<li class="su-pagination-item su-page-link"><a href="#">1</a></li>
 			<li class="su-pagination-item su-page-link"><a href="#"><i class="su-icon">précédent</i></a></li>
 			<li class="su-pagination-item su-page-select">
-				<button data-sutoggleclass='{"sel":"#pagination04","klass":"su-pages-list-in"}'>1<i class="su-icon">fleche_bas</i></button>
+				<button data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in"}'>1</button>
 				<ul class="surcharge-storybook su-pages-list">
 					<li class="su-page-active"><a href="#">1</a></li>
 					<li><a href="#">2</a></li>
@@ -169,7 +149,6 @@ Possibilité supplémentaire&nbsp;:
 	<h2 style="margin-top: 0">À faire</h2>
 	<ul>
 		<li>Cas dernière page</li>
-		<li>Virer la gestion de pagination riche et la classe qui va avec ?</li>
 		<li>Virer $font-import-use-local: de core/scss/_variables.scss</li>
 	</ul>
 </div>

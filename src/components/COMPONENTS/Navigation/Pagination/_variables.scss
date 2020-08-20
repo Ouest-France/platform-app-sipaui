@@ -26,6 +26,12 @@ $font-weight-page-select:       $font-weight-bold                               
 $border-page-select-in:         1px solid $color-main-7                             !default;
 $border-bottom-page-select-in:  1px solid $background-page-select !important        !default;
 
+// Pages list
+$max-height-pages-list:                     297px                                                               !default;
+$background-color-pages-list:               $color-main-1                                                       !default;
+$background-gradient-pages-list:            linear-gradient(to top, rgba(0,0,0, .1), rgba(0,0,0, 0)) 0 100%     !default;
+$background-gradient-height-pages-list:     25px                                                                !default;
 
-
-$font-import-use-local:  true;
+$height-pages-list-item:                    35px                            !default;
+$border-bottom-pages-list-item:             1px solid $color-main-3         !default;
+$border-bottom-width-pages-list-item-10:    2px                             !default;

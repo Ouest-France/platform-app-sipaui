@@ -85,66 +85,79 @@
         }
     }
     .su-page-active {
-                                                                                                font-weight: $font-weight-page-active;
+        font-weight: $font-weight-page-active;
     }
 }
 
 
 // PAGINATION RICHE --------------------------------------------------------------------------------------/
-
-// VIRER LA GESTION DE PAGINATION RICHE ET LA CLASSE QUI VA AVEC ?
-
-
 .sipaui {
-    .su-rich {
-        .su-page-select {
-            width: 72px;
-            border: $border-page-select;
-            background: $background-page-select;
+    .su-page-select {
+        width: 72px;
+        border: $border-page-select;
+        background: $background-page-select;
 
-            > button {
-                background: none;
-                border: none;
-                cursor: pointer;
-                color: $color-page-select;
-                font-weight: $font-weight-page-select;
+        > button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: $color-page-select;
+            font-weight: $font-weight-page-select;
 
-                .su-icon {
-                    font-size: 18px;
-                    margin-left: 3px;
-                    height: 18px;
-                    width: 18px;
-                    transition: transform .1s ease-out;
-                }
-            }
-            &:hover {
-                border-color: $border-color-page-item-hover;
-
-                > button {
-                    color: $color-page-item-hover;
-                }
+            &::after {
+                content: "\e901";
+                display: inline-block;
+                font-family: su-icons;
+                font-size: 19px;
+                font-weight: $font-weight-normal;
+                line-height: 1;
+                margin-left: 3px;
+                height: 18px;
+                width: 18px;
+                transition: transform .1s ease-out;
             }
         }
-        .su-pages-list {
-            $background-color-pages-list: $color-main-1;
-            max-height: 0;
-            overflow: hidden;
-            width: 300px;
-            position: relative;
-            top: 1px;
-            left: -115px;
-                                                                                            background: linear-gradient(to top, rgba(0,0,0, .1), rgba(0,0,0, 0)) 0 100%;/*dégradé bas quand on est en haut*/
-                                                                                            background-color: $background-color-pages-list;
-            background-repeat: no-repeat;
-                                                                                        	background-size: 100% 25px;
+        &:hover {
+            border-color: $border-color-page-item-hover;
 
-
-        	background-attachment: scroll;
-            
-            a {
-                width: 100%;
-                text-align: center;
+            > button {
+                color: $color-page-item-hover;
             }
+        }
+    }
+    .su-pages-list {
+        max-height: 0;
+        overflow: hidden;
+        width: 300px;
+        position: relative;
+        top: 1px;
+        left: -115px;
+        background: $background-gradient-pages-list; /* dégradé bas quand on est en haut*/
+        background-color: $background-color-pages-list;
+        background-repeat: no-repeat;
+        background-size: 100% $background-gradient-height-pages-list;
+        background-position-y: calc(#{$max-height-pages-list} - #{$background-gradient-height-pages-list});
+
+
+    	background-attachment: scroll;
+        
+        > li {
+            height: $height-pages-list-item;
+            @include display-flex();
+            @include justify-content(center, center);
+            @include align-items(center);
+            border-bottom: $border-bottom-pages-list-item;
+            
+            &:last-child {
+                    background: $background-color-pages-list;
+                }
+            &:nth-child(9n) {
+                border-bottom-width: $border-bottom-width-pages-list-item-10;
+            }
+        }
+        a { 
+            width: 100%;
+            text-align: center;
         }
     }
     .su-pages-list-in {
@@ -154,32 +167,17 @@
             border-radius: $border-radius-page-item $border-radius-page-item 0 0 ;
 
             > button {
-                .su-icon {
+                &::after {
                     transform: rotate(180deg);
                     transition: transform .3s ease-out;
                 }
             }
         }
         .su-pages-list {
-            max-height: 297px;
+            max-height: $max-height-pages-list;
             transition: max-height .5s ease-out;
             overflow-y: auto;
-            z-index: 100;
-
-            > li {
-                height: 35px;
-                @include display-flex();
-                @include justify-content(center, center);
-                @include align-items(center);
-                                                                                            border-bottom: 1px solid $color-main-3;
-
-                &:last-child {
-                    border-bottom: none;
-                }
-                &:nth-child(9n) {
-                                                                                            border-bottom-width: 2px
-                }
-            }
+            z-index: 100;            
         }
     }
 }
@@ -190,7 +188,7 @@
         .su-pagination-item {
             margin-right: $margin-xsmall;
         }
-        .su-rich .su-pages-list {
+        .su-pages-list {
             width: 280px;
             left: -105px;
         }
