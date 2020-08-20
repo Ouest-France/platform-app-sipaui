@@ -69,41 +69,41 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 		<div><i class="su-icon">coche</i></div>
 		<p class="su-text-left">Références&nbsp;: coche, valide, checked, valid.</p>
 	</div>
-	<div class="icone"><!------------------------------------------------- Flèche bas-->
-		<h3>Flèche bas</h3>
+	<div class="icone"><!------------------------------------------------- Chevron bas-->
+		<h3>Chevron bas</h3>
 		<pre class="language-html"><code>&lt;i class="su-icon">
-    fleche_bas
+    chevron_bas
 &lt;/i></code></pre>
 		<div class="glyphe">Glyphe&nbsp;: <code>\e901</code></div>
-		<div><i class="su-icon">fleche_bas</i></div>
-		<p class="su-text-left">Références&nbsp;: fleche_bas, arrow_down.</p>
+		<div><i class="su-icon">chevron_bas</i></div>
+		<p class="su-text-left">Références&nbsp;: chevron_bas, chevron_down.</p>
 	</div>
-	<div class="icone"><!------------------------------------------------- Flèche haut-->
-		<h3>Flèche haut</h3>
+	<div class="icone"><!------------------------------------------------- Chevron haut-->
+		<h3>Chevron haut</h3>
 		<pre class="language-html"><code>&lt;i class="su-icon">
-	fleche_haut
+	chevron_haut
 &lt;/i></code></pre>
 		<div class="glyphe">Glyphe&nbsp;: <code>\e908</code></div>
-		<div><i class="su-icon">fleche_haut</i></div>
-		<p class="su-text-left">Références&nbsp;: fleche_haut, arrow_up.</p>
+		<div><i class="su-icon">chevron_haut</i></div>
+		<p class="su-text-left">Références&nbsp;: chevron_haut, chevron_up.</p>
 	</div>
-	<div class="icone"><!------------------------------------------------- Flèche gauche-->
-		<h3>Flèche gauche</h3>
+	<div class="icone"><!------------------------------------------------- Chevron gauche-->
+		<h3>Chevron gauche</h3>
 		<pre class="language-html"><code>&lt;i class="su-icon">
 	précédent
 &lt;/i></code></pre>
 		<div class="glyphe">Glyphe&nbsp;: <code>\e909</code></div>
 		<div><i class="su-icon">précédent</i></div>
-		<p class="su-text-left">Références&nbsp;: fleche_gauche, précédent, arrow_left, previous.</p>
+		<p class="su-text-left">Références&nbsp;: chevron_gauche, précédent, chevron_left, previous.</p>
 	</div>
-	<div class="icone"><!------------------------------------------------- Flèche droite-->
-		<h3>Flèche droite</h3>
+	<div class="icone"><!------------------------------------------------- Chevron droite-->
+		<h3>Chevron droite</h3>
 		<pre class="language-html"><code>&lt;i class="su-icon">
 	suivant
 &lt;/i></code></pre>
 		<div class="glyphe">Glyphe&nbsp;: <code>\e90a</code></div>
 		<div><i class="su-icon">suivant</i></div>
-		<p class="su-text-left">Références&nbsp;: fleche_droite, suivant, arrow_right, next.</p>
+		<p class="su-text-left">Références&nbsp;: chevron_droite, suivant, chevron_right, next.</p>
 	</div>
 	<div class="icone"><!------------------------------------------------- Montrer-->
 		<h3>Montrer</h3>
