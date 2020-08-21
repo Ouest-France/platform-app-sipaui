@@ -14,8 +14,6 @@ $font-weight-page-item:         null                            !default;
 $border-color-page-item-hover:  $color-secondary-2              !default;
 $color-page-item-hover:         $color-secondary-2              !default;
 
-$font-weight-page-active:       $font-weight-bold               !default;
-
 
 // PAGINATION RICHE --------------------------------------------------------------------------------------/
 // Page select
@@ -35,3 +33,7 @@ $background-gradient-height-pages-list:     25px                                
 $height-pages-list-item:                    35px                            !default;
 $border-bottom-pages-list-item:             1px solid $color-main-3         !default;
 $border-bottom-width-pages-list-item-10:    2px                             !default;
+
+$background-page-active:                    null                            !default;
+$color-page-active:                         null                            !default;
+$font-weight-page-active:                   $font-weight-bold               !default;

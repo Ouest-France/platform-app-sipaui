@@ -7,12 +7,52 @@
 // PAGINATION BASE --------------------------------------------------------------------------------------/
 .sipaui {
     .su-pagination {
-        @include display-flex();
-        @include justify-content(center, center);
-        position: relative;
-        
+        > ul {
+            @include display-flex();
+            @include justify-content(center, center);
+            position: relative;
+            
+            > li {
+                height: $height-finger;
+                width: $height-finger;
+                background: $background-page-item;
+                border: $border-page-item;
+                border-radius: $border-radius-page-item;
+                margin-right: $margin-small;
+                
+                &:first-child,
+                &:last-child {
+                    width: 50px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover {
+                    border-color: $border-color-page-item-hover;
+                }
+                > a,
+                > span,
+                > button {
+                    @include display-flex();
+                    @include justify-content(center, center);
+                    @include align-items(center);
+                    height: 100%;
+                    width: 100%;
+                }
+                a,
+                span,
+                button {
+                    color: $color-page-item;
+                    font-weight: $font-weight-page-item;
+                }
+            }
+            li:hover > a {
+                color: $color-page-item-hover;
+            }
+            
+        }
         &.su-first-page {
-            >:nth-child(-n+2) {
+            > ul >:nth-child(-n+2) {
                 opacity: $opacity-disabled;
                 
                 &:hover {
@@ -27,7 +67,7 @@
             }
         }
         &.su-last-page {
-            >:nth-last-child(-n+2) {
+            > ul >:nth-last-child(-n+2) {
                 opacity: $opacity-disabled;
                 
                 &:hover {
@@ -41,158 +81,118 @@
                 }
             }
         }
-    }
-    .su-pagination-item {
-        height: $height-finger;
-        width: $height-finger;
-        background: $background-page-item;
-        border: $border-page-item;
-        border-radius: $border-radius-page-item;
-        margin-right: $margin-small;
-
-        &:first-child,
-        &:last-child {
-            width: 50px;
+        .su-page-active {
+            font-weight: $font-weight-page-active;
+            background: $background-page-active;
+            color: $color-page-active;
         }
-        &:last-child {
-            margin-right: 0;
-        }
-        > a,
-        > span,
-        > button {
-            @include display-flex();
-            @include justify-content(center, center);
-            @include align-items(center);
-            height: 100%;
-            width: 100%;
-        }
-        a,
-        span,
-        button {
-            color: $color-page-item;
-            font-weight: $font-weight-page-item;
-        }
-        &.su-page-link {
-            &:hover {
-                border-color: $border-color-page-item-hover;
-            }
-        }
-    }
-    .su-page-link {
-        &:hover {
-            a {
-                color: $color-page-item-hover;
-            }
-        }
-    }
-    .su-page-active {
-        font-weight: $font-weight-page-active;
     }
 }
 
 
 // PAGINATION RICHE --------------------------------------------------------------------------------------/
 .sipaui {
-    .su-page-select {
-        width: 72px;
-        border: $border-page-select;
-        background: $background-page-select;
-
-        > button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: $color-page-select;
-            font-weight: $font-weight-page-select;
-
-            &::after {
-                content: "\e901";
-                display: inline-block;
-                font-family: su-icons;
-                font-size: 19px;
-                font-weight: $font-weight-normal;
-                line-height: 1;
-                margin-left: 3px;
-                height: 18px;
-                width: 18px;
-                transition: transform .1s ease-out;
-            }
-        }
-        &:hover {
-            border-color: $border-color-page-item-hover;
-
-            > button {
-                color: $color-page-item-hover;
-            }
-        }
-    }
-    .su-pages-list {
-        max-height: 0;
-        overflow: hidden;
-        width: 300px;
-        position: relative;
-        top: 1px;
-        left: -115px;
-        background: $background-gradient-pages-list; /* dégradé bas quand on est en haut*/
-        background-color: $background-color-pages-list;
-        background-repeat: no-repeat;
-        background-size: 100% $background-gradient-height-pages-list;
-        background-position-y: calc(#{$max-height-pages-list} - #{$background-gradient-height-pages-list});
-
-
-    	background-attachment: scroll;
-        
-        > li {
-            height: $height-pages-list-item;
-            @include display-flex();
-            @include justify-content(center, center);
-            @include align-items(center);
-            border-bottom: $border-bottom-pages-list-item;
-            
-            &:last-child {
-                    background: $background-color-pages-list;
-                }
-            &:nth-child(9n) {
-                border-bottom-width: $border-bottom-width-pages-list-item-10;
-            }
-        }
-        a { 
-            width: 100%;
-            text-align: center;
-        }
-    }
-    .su-pages-list-close {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%; /* utile pour un bug Chrome et Firefox */
-        -webkit-appearance: none;
-        display: none;
-        opacity: 0;
-    }
-    .su-pages-list-in {
+    .su-pagination {
         .su-page-select {
-            border: $border-page-select-in;
-            border-bottom: $border-bottom-page-select-in;
-            border-radius: $border-radius-page-item $border-radius-page-item 0 0 ;
-            
+            width: 72px;
+            border: $border-page-select;
+            background: $background-page-select;
+    
             > button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: $color-page-select;
+                font-weight: $font-weight-page-select;
+    
                 &::after {
-                    transform: rotate(180deg);
-                    transition: transform .3s ease-out;
+                    content: "\e901";
+                    display: inline-block;
+                    font-family: su-icons;
+                    font-size: 19px;
+                    font-weight: $font-weight-normal;
+                    line-height: 1;
+                    margin-left: 3px;
+                    height: 18px;
+                    width: 18px;
+                    transition: transform .1s ease-out;
+                }
+            }
+            &:hover {
+                border-color: $border-color-page-item-hover;
+    
+                > button {
+                    color: $color-page-item-hover;
                 }
             }
         }
         .su-pages-list {
-            max-height: $max-height-pages-list;
-            transition: max-height .5s ease-out;
-            overflow-y: auto;
-            z-index: 100;            
+            max-height: 0;
+            overflow: hidden;
+            width: 300px;
+            position: relative;
+            top: 1px;
+            left: -115px;
+            background: $background-gradient-pages-list; /* dégradé bas quand on est en haut*/
+            background-color: $background-color-pages-list;
+            background-repeat: no-repeat;
+            background-size: 100% $background-gradient-height-pages-list;
+            background-position-y: calc(#{$max-height-pages-list} - #{$background-gradient-height-pages-list});
+        	background-attachment: scroll;
+            
+            > li {
+                height: $height-pages-list-item;
+                @include display-flex();
+                @include justify-content(center, center);
+                @include align-items(center);
+                border-bottom: $border-bottom-pages-list-item;
+                
+                &:last-child {
+                        background: $background-color-pages-list;
+                    }
+                &:nth-child(9n) {
+                    border-bottom-width: $border-bottom-width-pages-list-item-10;
+                }
+            }
+            a { 
+                width: 100%;
+                text-align: center;
+            }
         }
-        .su-pages-list-close {
-            display: block
+        .su-close {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%; /* utile pour un bug Chrome et Firefox */
+            -webkit-appearance: none; /* utile pour un bug Safari mobile */
+            display: none;
+            opacity: 0;
+            z-index: 1; /* utile pour passer au-dessus des éléments plus bas dans le DOM */
+        }
+        &.su-pages-list-in {
+            .su-page-select {
+                border: $border-page-select-in;
+                border-bottom: $border-bottom-page-select-in;
+                border-radius: $border-radius-page-item $border-radius-page-item 0 0 ;
+                
+                > button {
+                    &::after {
+                        transform: rotate(180deg);
+                        transition: transform .3s ease-out;
+                    }
+                }
+            }
+            .su-pages-list {
+                max-height: $max-height-pages-list;
+                transition: max-height .5s ease-out;
+                overflow-y: auto;
+                z-index: 100;            
+            }
+            .su-close {
+                display: block
+            }
         }
     }
 }
@@ -200,12 +200,14 @@
 
 @media screen and (max-width: $max-breakpoint-xs) {
 	.sipaui {
-        .su-pagination-item {
-            margin-right: $margin-xsmall;
-        }
-        .su-pages-list {
-            width: 280px;
-            left: -105px;
+        .su-pagination {
+            .su-pagination-item {
+                margin-right: $margin-xsmall;
+            }
+            .su-pages-list {
+                width: 280px;
+                left: -105px;
+            }
         }
     }
 }
