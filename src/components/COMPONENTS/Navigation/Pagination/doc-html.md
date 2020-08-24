@@ -48,8 +48,8 @@ Exemple de code complet&nbsp;:
 ``` html
 	<nav class="su-pagination su-first-page">
 		<ul>
-			<li><a href="#">1</a></li>
-			<li><a href="#"><i class="su-icon">précédent</i></a></li>
+			<li><a href="#" aria-disabled="true">1</a></li>
+			<li><a href="#" aria-disabled="true"><i class="su-icon">précédent</i></a></li>
 			<li class="su-page-select">
 				<button type="button" aria-label="Afficher la liste de pages" data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in"}'><span class="su-visually-hidden">Page en cours :</span>1</button>
 				<ul class="su-pages-list">
@@ -77,8 +77,8 @@ Exemple de code complet&nbsp;:
 <div class="sipaui">
 	<nav class="surcharge-storybook su-pagination su-first-page">
 		<ul>
-			<li><a href="#">1</a></li>
-			<li><a href="#"><i class="su-icon">précédent</i></a></li>
+			<li><a href="#" aria-disabled="true">1</a></li>
+			<li><a href="#" aria-disabled="true"><i class="su-icon">précédent</i></a></li>
 			<li class="su-page-select">
 				<button type="button" aria-label="Afficher la liste de pages" data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in"}'><span class="su-visually-hidden">Page en cours :</span>1</button>
 				<ul class="surcharge-storybook su-pages-list">
@@ -105,7 +105,7 @@ Exemple de code complet&nbsp;:
 
 ### Explications
 
-La classe `su-pagination` sur `<nav>` est la *classe d’identification* du composant. Sur cette même balise peuvent être ajoutées les classes `su-first-page` et `su-last-page` quand l’utilisateur est sur **la première** ou **la dernière page**. Cela permet de rendre les 2 premiers ou 2 derniers boutons inactifs en fonction des cas (cf. plus bas).
+La classe `su-pagination` sur `<nav>` est la *classe d’identification* du composant. Sur cette même balise peuvent être ajoutées les classes `su-first-page` et `su-last-page` quand l’utilisateur est sur **la première**, **la dernière page** ou qu’il n’y a **qu’une page**. Cela permet de rendre les 2 premiers ou les 2 derniers boutons, ainsi que le sélecteur de page, inactifs en fonction des cas (cf. plus bas). Dans ces cas là, ne pas oublier l’*aria-disabled* sur les boutons pour l’accessibilité.
 
 La navigation de base comporte les liens vers la *première page*, la *page précédente*, le bouton d’accès à la *liste de pages*, la *page suivante* et la *dernière page*. Les boutons pour la page précédente et la page suivante utilise la fonte d’icônes pour afficher les chevrons grâce à la classe `su-icon`.
 
@@ -117,6 +117,38 @@ Enfin, sous cette navigation, se trouve un *bouton pour facilité la fermeture d
 
 ### Variations en fonction du nombre de pages totales
 
+#### Cas avec 1 page
+
+S’il n’y a qu’une page, les boutons de navigations et la liste de pages sont inutiles. Ils sont donc désactivés. Pour cela, par rapport au code standard, il faut **enlever *le JS d’affichage de la liste*, *la liste* et *le bouton de fermeture de la liste*, remplacer *les liens* `<a>` par des `<span>`** et **ajouter *disabled* sur le bouton**.
+
+``` html
+	<nav class="su-pagination su-first-page su-last-page">
+			<ul>
+				<li><span>1</span></li>
+				<li><span><i class="su-icon">précédent</i></span></li>
+				<li class="su-page-select">
+					<button type="button" disabled><span class="su-visually-hidden">Page en cours :</span>1</button>
+				</li>
+				<li><span><i class="su-icon">suivant</i></span></li>
+				<li><span>1</span></li>
+			</ul>
+	</nav>
+```
+
+<div class="sipaui">
+	<nav class="surcharge-storybook su-pagination su-first-page su-last-page">
+		<ul>
+			<li><span>1</span></li>
+			<li><span><i class="su-icon">précédent</i></span></li>
+			<li class="su-page-select">
+				<button type="button" disabled><span class="su-visually-hidden">Page en cours :</span>1</button>
+			</li>
+			<li><span><i class="su-icon">suivant</i></span></li>
+			<li><span>1</span></li>
+		</ul>
+	</nav>
+</div>
+
 #### Cas avec 7 pages
 
 Quand il y a un faible nombre de page (inférieur au nombre maximum de pages affichables dans le volet ouvert), il n’y a pas de scroll ni de dégradé indiquant qu’il y a une suite en bas de liste.
@@ -124,8 +156,8 @@ Quand il y a un faible nombre de page (inférieur au nombre maximum de pages aff
 ``` html
 	<nav class="su-pagination su-first-page">
 		<ul>
-			<li><a href="#">1</a></li>
-			<li><a href="#"><i class="su-icon">précédent</i></a></li>
+			<li><a href="#" aria-disabled="true">1</a></li>
+			<li><a href="#" aria-disabled="true"><i class="su-icon">précédent</i></a></li>
 			<li class="su-page-select">
 				<button type="button" aria-label="Afficher la liste de pages" data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in"}'><span class="su-visually-hidden">Page en cours :</span>1</button>
 				<ul class="su-pages-list">
@@ -147,8 +179,8 @@ Quand il y a un faible nombre de page (inférieur au nombre maximum de pages aff
 <div class="sipaui">
 	<nav class="surcharge-storybook su-pagination su-first-page">
 		<ul>
-			<li><a href="#">1</a></li>
-			<li><a href="#"><i class="su-icon">précédent</i></a></li>
+			<li><a href="#" aria-disabled="true">1</a></li>
+			<li><a href="#" aria-disabled="true"><i class="su-icon">précédent</i></a></li>
 			<li class="su-page-select">
 				<button type="button" aria-label="Afficher la liste de pages" data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in"}'><span class="su-visually-hidden">Page en cours :</span>1</button>
 				<ul class="surcharge-storybook su-pages-list">
@@ -170,13 +202,13 @@ Quand il y a un faible nombre de page (inférieur au nombre maximum de pages aff
 
 #### Cas avec 56 pages
 
-Avec un tel nombre de pages, le scroll et le dégradé sont apparus.
+Avec un nombre de pages supérieur, à la capacité d’affichage du volet, le scroll et le dégradé sont apparus.
 
 ``` html
 	<nav class="su-pagination su-first-page">
 		<ul>
-			<li><a href="#">1</a></li>
-			<li><a href="#"><i class="su-icon">précédent</i></a></li>
+			<li><a href="#" aria-disabled="true">1</a></li>
+			<li><a href="#" aria-disabled="true"><i class="su-icon">précédent</i></a></li>
 			<li class="su-page-select">
 				<button type="button" aria-label="Afficher la liste de pages" data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in"}'><span class="su-visually-hidden">Page en cours :</span>1</button>
 				<ul class="su-pages-list">
@@ -206,8 +238,8 @@ Avec un tel nombre de pages, le scroll et le dégradé sont apparus.
 <div class="sipaui">
 	<nav class="surcharge-storybook su-pagination su-first-page">
 		<ul>
-		    <li><a href="#">1</a></li>
-		    <li><a href="#"><i class="su-icon">précédent</i></a></li>
+		    <li><a href="#" aria-disabled="true">1</a></li>
+		    <li><a href="#" aria-disabled="true"><i class="su-icon">précédent</i></a></li>
 		    <li class="su-page-select">
 		    	<button type="button" aria-label="Afficher la liste de pages" data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in"}'><span class="su-visually-hidden">Page en cours :</span>1</button>
 		    	<ul class="surcharge-storybook su-pages-list">
@@ -234,16 +266,19 @@ Avec un tel nombre de pages, le scroll et le dégradé sont apparus.
 	</nav>
 </div>
 
+
+
+
 ### Variations en fonction de la position dans le nombre de pages
 
-#### Cas avec 2235 pages en page 1
+#### Cas en page 1 sur 2235 (première page)
 
-Cf. si "un système de navigation qui permet d’aller sur n’importe quelle page en 2 liens maximums" en intro est vrai
+*Cf. si "un système de navigation qui permet d’aller sur n’importe quelle page en 2 liens maximums" en intro est vrai*
 <div class="sipaui">
 	<nav class="surcharge-storybook su-pagination su-first-page">
 		<ul>
-			<li><a href="#">1</a></li>
-			<li><a href="#"><i class="su-icon">précédent</i></a></li>
+			<li><a href="#" aria-disabled="true">1</a></li>
+			<li><a href="#" aria-disabled="true"><i class="su-icon">précédent</i></a></li>
 			<li class="su-page-select">
 				<button type="button" aria-label="Afficher la liste de pages" data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in"}'><span class="su-visually-hidden">Page en cours :</span>1</button>
 				<ul class="surcharge-storybook su-pages-list">
@@ -285,7 +320,7 @@ Cf. si "un système de navigation qui permet d’aller sur n’importe quelle pa
 	</nav>
 </div>
 
-#### Cas avec 2235 pages en page 1565
+#### Cas en page 1565 sur 2235 pages
 
 <div class="sipaui">
 	<nav class="surcharge-storybook su-pagination">
@@ -295,6 +330,13 @@ Cf. si "un système de navigation qui permet d’aller sur n’importe quelle pa
 			<li class="su-page-select">
 				<button type="button" aria-label="Afficher la liste de pages" data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in"}'><span class="su-visually-hidden">Page en cours :</span>1565</button>
 				<ul class="surcharge-storybook su-pages-list">
+					<li><a href="#">1500</a></li>
+					<li><a href="#">1510</a></li>
+					<li><a href="#">1520</a></li>
+					<li><a href="#">1530</a></li>
+					<li><a href="#">1540</a></li>
+					<li><a href="#">1550</a></li>
+					<li><a href="#">1560</a></li>					
 					<li><a href="#">1561</a></li>
 					<li><a href="#">1562</a></li>
 					<li><a href="#">1563</a></li>
@@ -321,11 +363,53 @@ Cf. si "un système de navigation qui permet d’aller sur n’importe quelle pa
 	</nav>
 </div>
 
+#### Cas en page 2235 sur 2235 (dernière page)
+
+<div class="sipaui">
+	<nav class="surcharge-storybook su-pagination su-last-page">
+		<ul>
+			<li><a href="#">1</a></li>
+			<li><a href="#"><i class="su-icon">précédent</i></a></li>
+			<li class="su-page-select">
+				<button type="button" aria-label="Afficher la liste de pages" data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in"}'><span class="su-visually-hidden">Page en cours :</span>2235</button>
+				<ul class="surcharge-storybook su-pages-list">
+					<li><a href="#">1</a></li>
+					<li><a href="#">100</a></li>
+					<li><a href="#">200</a></li>
+					<li><a href="#">300</a></li>
+					<li><a href="#">400</a></li>
+					<li><a href="#">500</a></li>
+					<li><a href="#">600</a></li>
+					<li><a href="#">700</a></li>
+					<li><a href="#">800</a></li>
+					<li><a href="#">900</a></li>
+					<li><a href="#">1000</a></li>
+					<li><a href="#">2000</a></li>
+					<li><a href="#">2100</a></li>
+					<li><a href="#">2200</a></li>
+					<li><a href="#">2210</a></li>
+					<li><a href="#">2220</a></li>
+					<li><a href="#">2230</a></li>
+					<li><a href="#">2231</a></li>
+					<li><a href="#">2232</a></li>
+					<li><a href="#">2233</a></li>
+					<li><a href="#">2234</a></li>
+					<li class="su-page-active">2235</li>
+				</ul>
+			</li>
+			<li><a href="#" aria-disabled="true"><i class="su-icon">suivant</i></a></li>
+			<li><a href="#" aria-disabled="true">2235</a></li>
+		</ul>
+		<button type="button" class="su-close" data-sutoggleclass='{"parent":"nav","klass":"su-pages-list-in","force":0}'>Fermer la liste de pages</button>
+	</nav>
+</div>
+
 
 <div style="color: red; background: rgba(255,0,0, .1); padding: 10px; border-radius: 10px; margin: 100px 0;">
-	<h2 style="margin-top: 0">À faire</h2>
+	<h2 style="margin-top: 0">Reste à faire</h2>
 	<ul>
-		<li>Cas dernière page</li>
+		<li>Règles de choix des pages ds la liste.</li>
+		<li>Scroll to su-page-active dans la liste ?</li>
 		<li>Virer $font-import-use-local: de core/scss/_variables.scss</li>
 	</ul>
 </div>

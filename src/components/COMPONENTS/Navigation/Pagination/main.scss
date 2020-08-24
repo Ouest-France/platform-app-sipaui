@@ -194,6 +194,18 @@
                 display: block
             }
         }
+        &.su-first-page.su-last-page {
+            .su-page-select {
+                pointer-events: none;
+                cursor: default;
+                > button {
+                    
+                    &::after {
+                        opacity: $opacity-disabled; 
+                    }
+                }
+            }
+        }
     }
 }
 
