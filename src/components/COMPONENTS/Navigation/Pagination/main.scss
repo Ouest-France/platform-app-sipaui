@@ -11,6 +11,7 @@
             @include display-flex();
             @include justify-content(center, center);
             position: relative;
+            z-index: 2;
             
             > li {
                 height: $height-finger;

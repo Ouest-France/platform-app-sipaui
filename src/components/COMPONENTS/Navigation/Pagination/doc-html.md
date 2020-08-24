@@ -15,7 +15,7 @@ Le composant de pagination permet de présenter aux lecteurs, mais aussi, *et su
 
 ## Principe général
 
-La pagination est composée d’une balise `<nav>` (puisqu’il s'agit d’un système de navigation) contenant 2 listes imbriquées et un bouton de fermeture de la liste de pages. La première liste contient les éléments de navigation de premier niveau (page 1, précédente, page en cours, suivante et dernière page). La seconde liste contient les accès vers les autres pages. Le bouton sous ces listes permet de simplifier la fermeture de la liste de pages en permettant le clic à l’extérieur de cette liste.
+La pagination est composée d’une balise `<nav>` (puisqu’il s'agit d’un système de navigation) contenant 2 listes imbriquées (`<ul>` et `<li>`), et de **2 boutons** d'ouverture et fermeture de la liste de pages (`<button type="button">`). La première liste contient les éléments de navigation de premier niveau (page 1, précédente, page en cours, suivante et dernière page). La seconde liste contient les accès vers les autres pages. Le bouton sous ces listes permet de simplifier la fermeture de la liste de pages en permettant le clic à l’extérieur de cette liste.
 
 Architecture de base&nbsp;:
 ``` html
@@ -410,6 +410,8 @@ Avec un nombre de pages supérieur, à la capacité d’affichage du volet, le s
 	<ul>
 		<li>Règles de choix des pages ds la liste.</li>
 		<li>Scroll to su-page-active dans la liste ?</li>
+		<li>Vérification ortho.</li>
+		<li>Validation SEO.</li>
 		<li>Virer $font-import-use-local: de core/scss/_variables.scss</li>
 	</ul>
 </div>
