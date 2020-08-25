@@ -925,6 +925,7 @@ Vous pouvez imbriquer une grille (standard ou automatique) dans une colonne. La 
 - `su-visible-xs`… (dépendant du composant *Helpers*)
 - `su-hidden-xs`… (dépendant du composant *Helpers*)
 - `su-offset-xs-1`…
+- `su-filling-xs-1`…
 - `su-vertical-start`
 - `su-vertical-center`
 - `su-vertical-end`
