@@ -167,11 +167,13 @@ La seconde n’applique la largeur à 100% que sous le palier mobile.
 Classe permettant de rendre visuellement l’incapacité&nbsp;/ l’indisponibilté d’un objet en le rendant en partie transparent&nbsp;:
 - `su-disabled`
 
+NB, si la balise est une balise HTML qui accepte l’attribut `disabled`, mettre aussi cet attribut. Sinon, ajouter `aria-disabled="true"` pour l’accessibilité.
+
 ```html
-<p class="su-disabled">Paragraphe utilisant cette classe.</p>
+<p class="su-disabled" aria-disabled="true">Paragraphe utilisant cette classe.</p>
 ```
 <div class="sipaui">
-	<p class="su-disabled">Paragraphe utilisant cette classe.</p>
+	<p class="su-disabled" aria-disabled="true">Paragraphe utilisant cette classe.</p>
 </div>
 
 ## Blocage du scroll

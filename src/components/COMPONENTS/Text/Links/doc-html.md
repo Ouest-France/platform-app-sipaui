@@ -115,10 +115,10 @@ Utiliser la classe `su-link-button`.
 
 ### Version inactive
 ```html
-<a href="javascript:;" class="su-link-button su-disabled">Lien bouton SipaUI</a>
+<a href="javascript:;" class="su-link-button su-disabled" aria-disabled="true">Lien bouton SipaUI</a>
 ```
 <div class="sipaui">
-	<a href="javascript:;" class="su-link-button su-disabled">Lien bouton SipaUI</a>
+	<a href="javascript:;" class="su-link-button su-disabled" aria-disabled="true">Lien bouton SipaUI</a>
 </div>
 
 <div id="liste-classes" class="control-titres">

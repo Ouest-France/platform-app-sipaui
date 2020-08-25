@@ -58,11 +58,11 @@ Un composant `<button>` est de type `submit` par défaut. Par conséquent, sur u
 L’aspect inactif peut être porté par la classe `su-disabled` (issu des *Helpers*) ou par l’attribut `disabled`.
 ```html
 <button class="su-button su-primary" disabled="disabled">Bouton primaire inactif</button>
-<button class="su-button su-secondary su-disabled">Bouton secondaire inactif</button>
-<button class="su-button su-subscription su-disabled">Bouton abonnement inactif</button>
+<button class="su-button su-secondary su-disabled" disabled="disabled">Bouton secondaire inactif</button>
+<button class="su-button su-subscription su-disabled" disabled="disabled">Bouton abonnement inactif</button>
 ```
 <div class="sipaui">
-	<button class="su-button su-primary" disabled="disabled">Bouton primaire</button> <button class="su-button su-secondary su-disabled">Bouton secondaire inactif</button> <button class="su-button su-subscription su-disabled">Bouton abonnement inactif</button>
+	<button class="su-button su-primary" disabled="disabled">Bouton primaire</button> <button class="su-button su-secondary su-disabled" disabled="disabled">Bouton secondaire inactif</button> <button class="su-button su-subscription su-disabled" disabled="disabled">Bouton abonnement inactif</button>
 </div>
 
 ### Petits boutons
