@@ -11,6 +11,7 @@ Ce composant regroupe les mots de passe pour la **connexionn** (mot de passe sim
 - classe `sipaui` sur un parent (par exemple le `<body>`),
 - composant **Text-fields**,
 - composant **Helpers**,
+- composant **Icons**,
 - composant **Labels**,
 - composant **Errors**
 

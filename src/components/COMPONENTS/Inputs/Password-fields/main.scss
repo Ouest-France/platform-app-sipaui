@@ -42,6 +42,12 @@
                 cursor: pointer;
             }
         }
+        
+        .su-password-toggle {
+            .su-icon {
+                font-size: 30px;
+            }
+        }
 
         &.su-not-empty {
             .su-input-actions-area {
