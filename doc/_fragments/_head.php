@@ -1,7 +1,7 @@
 <head>
     <?php $GLOBALS['sipaversion']=json_decode(file_get_contents(dirname(__FILE__).'/../../package.json'))->version; ?>
     <meta charset="UTF-8" />
-    <title>SipaUI</title>
+    <title>SipaUI : framework front-end du Groupe SIPA / Ouest-France</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
