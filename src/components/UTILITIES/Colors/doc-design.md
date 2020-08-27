@@ -30,7 +30,7 @@ Illustration | Hexadécimal
 ## Les couleurs d’identité
 
 - Ces couleurs vives **apportent de l’audace** aux interfaces.
-- Elles mettent principalement en évidence les éléments clés dans l’interface utilisateur.
+- Elles mettent principalement en évidence les éléments clés et actifs dans l’interface utilisateur.
 
 ### Ouest-France
 
