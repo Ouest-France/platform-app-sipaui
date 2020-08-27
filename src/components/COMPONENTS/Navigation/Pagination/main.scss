@@ -59,7 +59,7 @@
                 &:hover {
                     border: $border-page-item;
                     
-                    a {
+                    a { // pour le cas où le dev ne transformerait pas le <a> en <span>
                         color: $color-page-item;
                         cursor: default;
                         pointer-events: none;
@@ -74,7 +74,7 @@
                 &:hover {
                     border: $border-page-item;
                     
-                    a {
+                    a { // pour le cas où le dev ne transformerait pas le <a> en <span>
                         color: $color-page-item;
                         cursor: default;
                         pointer-events: none;
@@ -150,10 +150,10 @@
                 
                 &:last-child {
                         background: $background-color-pages-list;
-                    }
-                &:nth-child(9n) {
-                    border-bottom-width: $border-bottom-width-pages-list-item-10;
-                }
+                    }                
+            }
+            .su-separator {
+                border-bottom-width: $border-bottom-width-pages-list-item-10;
             }
             a { 
                 width: 100%;
@@ -195,7 +195,7 @@
                 display: block
             }
         }
-        &.su-first-page.su-last-page {
+        &.su-last-page {
             .su-page-select {
                 pointer-events: none;
                 cursor: default;
