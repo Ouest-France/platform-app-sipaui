@@ -20,9 +20,10 @@ La pagination aide les utilisateurs à **naviguer dans de grandes quantités de 
 Enabled | Hover / Focus / Pressed | Disabled
 ------------ | ------------- | ------------- |
 ![element__base__enabled](components/COMPONENTS/Navigation/Pagination/design/element__base__enabled.png) | ![element__base__hover](components/COMPONENTS/Navigation/Pagination/design/element__base__hover.png) | ![element__base__disabled](components/COMPONENTS/Navigation/Pagination/design/element__base__disabled.png)
-Hauteur&nbsp;: 44px  <br> Largeur&nbsp;: 50px <br> Fond&nbsp;: #FFFFFF  <br> Contour&nbsp;: #D4D4D4 <br> Chiffre&nbsp;: texte standard | -  <br> - <br> - <br> Contour&nbsp;: #B40015 <br> Chiffre&nbsp;: texte standard #B40015 | Opacité&nbsp;: 40&nbsp;%
+Hauteur&nbsp;: 44px  <br> Largeur&nbsp;: 50px* <br> Fond&nbsp;: #FFFFFF  <br> Contour&nbsp;: #D4D4D4 <br> Chiffre&nbsp;: texte standard | -  <br> - <br> - <br> Contour&nbsp;: #B40015 <br> Chiffre&nbsp;: texte standard #B40015 | Opacité&nbsp;: 40&nbsp;%
 
 - Le chiffre est centré dans le conteneur.
+- *Une exception s'applique pour la largeur des éléments Page suivante et Page précédente : 44px.
 
 ## Types de pages
 
@@ -42,7 +43,7 @@ Hauteur&nbsp;: 44px  <br> Largeur&nbsp;: 72px <br> Fond&nbsp;: #FFFFFF  <br> Con
 
 - Un tape sur l’ensemble de l’élément Page courante permet d’afficher une liste de pages.
 - Cette liste s'affiche verticalement sous l’ensemble de la pagination.
-- La hauteur visible de la liste est fixée à 297px.
+- La hauteur visible de la liste est fixée à 300px.
 - Sa largeur est celle de l'ensemble de la pagination.
 - Elle est composée de certains numéros de pages&nbsp;:
   - **Toutes les unités de la dizaine en cours.**
@@ -55,7 +56,7 @@ Hauteur&nbsp;: 44px  <br> Largeur&nbsp;: 72px <br> Fond&nbsp;: #FFFFFF  <br> Con
 - Tous les chiffres sont des textes standards sauf la page courante qui en bold.
 - Un dégradé est présent en bas de la liste. Il disparaît dès que le dernier chiffre de la liste est visible.
 - Un tape sur toute la zone d'une des pages ouvre la page correspondante dans le même onglet.
-
+- Suite à l'ouverture de cette liste de page, tout tape en dehors de cette liste permet sa fermeture.
 
 ### Page suivante
 
@@ -73,13 +74,13 @@ Hauteur&nbsp;: 44px  <br> Largeur&nbsp;: 72px <br> Fond&nbsp;: #FFFFFF  <br> Con
 
 - La page précédente est toujours le deuxième élément de la pagination.
 - Elle est symbolisée par le composant Flèche gauche disponible dans Icons.
-- l’accès à la page précédente est désactivé lorsque la page courante est la première.
+- L’accès à la page précédente est désactivé lorsque la page courante est la première.
 
 ### Première page
 
 - La première page est toujours le premier élément graphique de la pagination.
 - Elle est symbolisée par le numéro&nbsp;1.
-- l’accès à la première page est désactivé lorsque la page courante est la première.
+- L’accès à la première page est désactivé lorsque la page courante est la première.
 
 ## L’ensemble de la pagination
 
