@@ -4,26 +4,36 @@
 */
 @import "variables";
 
+$varFix-pagination-largeur-bouton-premier-dernier: 50px;
+$varFix-pagination-largeur-bouton-precedent-suivant: $height-finger;
+$varFix-pagination-largeur-bouton-select: 72px;
+$varFix-pagination-marges-boutons: $margin-small;
+$varFix-pagination-largeur-max-composant: $varFix-pagination-largeur-bouton-premier-dernier * 2 + $varFix-pagination-largeur-bouton-precedent-suivant * 2 + $varFix-pagination-largeur-bouton-select + $varFix-pagination-marges-boutons * 4;
+
+
+
 // PAGINATION BASE --------------------------------------------------------------------------------------/
 .sipaui {
     .su-pagination {
         > ul {
             @include display-flex();
-            @include justify-content(center, center);
+            max-width: $varFix-pagination-largeur-max-composant;
+            margin: 0 auto;
             position: relative;
             z-index: 2;
+            padding: 0;
             
             > li {
                 height: $height-finger;
-                width: $height-finger;
+                width: $varFix-pagination-largeur-bouton-precedent-suivant;
                 background: $background-page-item;
                 border: $border-page-item;
                 border-radius: $border-radius-page-item;
-                margin-right: $margin-small;
+                margin-right: $varFix-pagination-marges-boutons;
                 
                 &:first-child,
                 &:last-child {
-                    width: 50px;
+                    width: $varFix-pagination-largeur-bouton-premier-dernier;
                 }
                 &:last-child {
                     margin-right: 0;
@@ -95,7 +105,7 @@
 .sipaui {
     .su-pagination {
         .su-page-select {
-            width: 72px;
+            width: $varFix-pagination-largeur-bouton-select;
             border: $border-page-select;
             background: $background-page-select;
     
@@ -214,7 +224,7 @@
 @media screen and (max-width: $max-breakpoint-xs) {
 	.sipaui {
         .su-pagination {
-            .su-pagination-item {
+            > ul > li {
                 margin-right: $margin-xsmall;
             }
             .su-pages-list {
