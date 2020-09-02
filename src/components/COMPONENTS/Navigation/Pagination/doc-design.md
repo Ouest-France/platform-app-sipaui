@@ -23,7 +23,7 @@ Enabled | Hover / Focus / Pressed | Disabled
 Hauteur&nbsp;: 44px  <br> Largeur&nbsp;: 50px* <br> Fond&nbsp;: #FFFFFF  <br> Contour&nbsp;: #D4D4D4 <br> Chiffre&nbsp;: texte standard | -  <br> - <br> - <br> Contour&nbsp;: #B40015 <br> Chiffre&nbsp;: texte standard #B40015 | Opacité&nbsp;: 40&nbsp;%
 
 - Le chiffre est centré dans le conteneur.
-- *Une exception s'applique pour la largeur des éléments Page suivante et Page précédente : 44px.
+- *Une exception s’applique pour la largeur des éléments Page suivante et Page précédente : 44px.
 
 ## Types de pages
 
@@ -34,17 +34,17 @@ Hauteur&nbsp;: 44px  <br> Largeur&nbsp;: 50px* <br> Fond&nbsp;: #FFFFFF  <br> Co
 Enabled | Hover / Focus / Pressed | Disabled
 ------------ | ------------- | ------------- |
 ![element__courant__enabled](components/COMPONENTS/Navigation/Pagination/design/element__courant__enabled.png) | ![element__courant__hover](components/COMPONENTS/Navigation/Pagination/design/element__courant__hover.png) | ![element__courant__disabled](components/COMPONENTS/Navigation/Pagination/design/element__courant__disabled.png)
-Hauteur&nbsp;: 44px  <br> Largeur&nbsp;: 72px <br> Fond&nbsp;: #FFFFFF  <br> Contour&nbsp;: #D4D4D4 <br> Chiffre&nbsp;: texte standard bold <br> Chevron&nbsp;: #333333 et à 5px à droite du dernier chiffre | -  <br> - <br> -  <br> Contour&nbsp;: #B40015 <br> Chiffre&nbsp;: texte standard bold #B40015 <br> Chevron&nbsp;: #B40015 et à 5px à droite du dernier chiffre | Opacité du chevron&nbsp;: 40 %
+Hauteur&nbsp;: 44px  <br> Largeur&nbsp;: 72px <br> Fond&nbsp;: #FFFFFF  <br> Contour&nbsp;: #D4D4D4 <br> Chiffre&nbsp;: texte standard gras <br> Chevron&nbsp;: #333333 et à 5px à droite du dernier chiffre | -  <br> - <br> -  <br> Contour&nbsp;: #B40015 <br> Chiffre&nbsp;: texte standard gras #B40015 <br> Chevron&nbsp;: #B40015 et à 5px à droite du dernier chiffre | Opacité du chevron&nbsp;: 40&nbsp;%
 
 - Le couple chiffre - chevron est centré dans le container.
-- Dans l’état disabled, seule la liste de pages est inactive.
+- Dans l’état inactif, seule la liste de pages est inactive.
 
 ### Liste des pages
 
-- Un tape sur l’ensemble de l’élément Page courante permet d’afficher une liste de pages.
-- Cette liste s'affiche verticalement sous l’ensemble de la pagination.
+- Une tape sur l’ensemble de l’élément Page courante permet d’afficher une liste de pages.
+- Cette liste s’affiche verticalement sous l’ensemble de la pagination.
 - La hauteur visible de la liste est fixée à 300px.
-- Sa largeur est celle de l'ensemble de la pagination.
+- Sa largeur est celle de l’ensemble de la pagination.
 - Elle est composée de certains numéros de pages&nbsp;:
   - **Toutes les unités de la dizaine en cours.**
   - **Les dizaines suivantes jusqu’à la centaine suivante exclue.**
@@ -53,10 +53,10 @@ Hauteur&nbsp;: 44px  <br> Largeur&nbsp;: 72px <br> Fond&nbsp;: #FFFFFF  <br> Con
   - Une ligne de séparation de 1px et #E4E3E1 permet de dissocier les unités.
   - Une ligne de séparation de 2px et #E4E3E1 permet de dissocier les dizaines, les centaines et les milliers.
 - La hauteur de chaque zone est de 34px sans les lignes de séparation.
-- Tous les chiffres sont des textes standards sauf la page courante qui en bold.
+- Tous les chiffres sont des textes standards sauf la page courante qui en gras.
 - Un dégradé est présent en bas de la liste. Il disparaît dès que le dernier chiffre de la liste est visible.
-- Un tape sur toute la zone d'une des pages ouvre la page correspondante dans le même onglet.
-- Suite à l'ouverture de cette liste de page, tout tape en dehors de cette liste permet sa fermeture.
+- Un tape sur toute la zone d’une des pages ouvre la page correspondante dans le même onglet.
+- Suite à l’ouverture de cette liste de page, toute tape en dehors de cette liste permet sa fermeture.
 
 ### Page suivante
 
@@ -111,4 +111,4 @@ Page 1 sur 2 318 | Page 1 505 sur 2 318
 - La pagination est centrée dans son parent.
 - Chaque page contient la même quantité de données, à l’exception de la dernière page.
 - Le nombre d’éléments dans une page est défini en fonction des tailles des pages, des données et de leur temps de chargement.
-- La pagination doit être placée sur un fond de couleur compatible, cf Bonnes pratiques du doc design de Colors
+- La pagination doit être placée sur un fond de couleur compatible, cf. Bonnes pratiques du doc design de Colors.
