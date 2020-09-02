@@ -141,6 +141,24 @@ L’intégration d’une icône peut se faire via la balise HTML neutre et inlin
 		<div><i class="su-icon">débloqué</i></div>
 		<p class="su-text-left">Références&nbsp;: débloqué, unlocked.</p>
 	</div>
+	<div class="icone"><!------------------------------------------------- Chercher-->
+			<h3>Chercher</h3>
+			<pre class="language-html"><code>&lt;i class="su-icon">
+	chercher
+&lt;/i></code></pre>
+			<div class="glyphe">Glyphe&nbsp;: <code>\e90b</code></div>
+			<div><i class="su-icon">chercher</i></div>
+			<p class="su-text-left">Références&nbsp;: chercher, search, loupe, magnifier.</p>
+		</div>
+	<div class="icone"><!------------------------------------------------- Citation-->
+			<h3>Citation</h3>
+			<pre class="language-html"><code>&lt;i class="su-icon">
+	citation
+&lt;/i></code></pre>
+			<div class="glyphe">Glyphe&nbsp;: <code>\e90c</code></div>
+			<div><i class="su-icon">citation</i></div>
+			<p class="su-text-left">Références&nbsp;: citation, quotation, guillemet, quote.</p>
+		</div>
 </div>
 
 <!-- Désactivation de l’icône mini tant qu'elle est inutile
