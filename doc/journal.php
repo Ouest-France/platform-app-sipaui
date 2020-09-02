@@ -33,12 +33,14 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li><strong>Nouveauté&nbsp;: Paginations (Components/Navigation/Pagination).</strong></li>
+                                                <li><strong>Nouveauté&nbsp;: Pagination (Components/Navigation/Pagination).</strong></li>
+                                                <li>Évolution&nbsp;: Icônes&nbsp;-> «&nbsp;fleche_bas&nbsp;» est devenu «&nbsp;chevron_bas&nbsp;». <strong>Par souci de rétrocompatibilité, «&nbsp;fleche_bas&nbsp;» est toujours supporté pour vous permettre d’avoir le temps de changer, mais cette référence sera supprimée dans une version future.</strong></li>
                                                 <li>Évolution&nbsp;: Icônes&nbsp;-> ajout des chevrons haut, gauche et droite.</li>
+                                                <li>Évolution&nbsp;: Icônes&nbsp;-> ajout de la loupe.</li>
                                                 <li>Évolution&nbsp;: Liens&nbsp;-> lien léger.</li>
                                                 <li>Évolution&nbsp;: Grille&nbsp;-> ajout de classes pour gérer l’alignement du contenu de la grille libre.</li>
-                                                <li>Évolution&nbsp;: Pop-ins, cases-à-cocher et boutons-radio&nbsp;-> ajout de l’accessibilité.</li>
-                                                <li>Évolution&nbsp;: Pop-ins et voile, z-index augmentés pour être plus sûr de passer au-dessus des autres éléments de la page. <strong>Attention&nbsp;! Cela peut entrainer une régression sur une page qui voudrait positionner du contenu au-dessus de ce voile.</strong></li>
+                                                <li>Évolution&nbsp;: Pop-ins, cases à cocher et boutons-radio&nbsp;-> ajout de l’accessibilité.</li>
+                                                <li>Évolution&nbsp;: Pop-ins et voile, z-index augmentés pour être plus sûr de passer au-dessus des autres éléments de la page. <strong>Attention&nbsp;! Cela peut entraîner une régression sur une page qui voudrait positionner du contenu au-dessus de ce voile.</strong></li>
                                                 <li>Évolution&nbsp;: mixins SCSS, amélioration de la troncature multilignes.</li>
                                             </ul>
                                         </li>
@@ -77,7 +79,7 @@
                                                 <li>Évolution&nbsp;: Sources&nbsp;-> le poids sélecteur des liens de source surcharge maintenant celui des liens d’article.</li-->
                                                 <li>Évolution&nbsp;: Mot de passe&nbsp;-> la fonction d’affichage du mot de passe (œil) apparaît après la saisie d’un premier caractère.</li-->
                                                 <li>Évolution&nbsp;: Titres&nbsp;-> les titres dans les articles ne sont plus modifiés par <code>&lt;strong&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;em&gt;</code> ou <code>&lt;i&gt;</code>.</li>
-                                                <li>Évolution&nbsp;: Liens&nbsp;-> ajout de la classe <code>.su-not-link</code> pour les cas où l’apparence de lien est gênante (ie&nbsp;: lien sur un bloc).</li>
+                                                <li>Évolution&nbsp;: Liens&nbsp;-> ajout de la classe <code>.su-not-link</code> pour les cas où l’apparence de lien est gênante (p. ex.&nbsp;: lien sur un bloc).</li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -92,7 +94,7 @@
                                                 <li><strong>Nouveauté&nbsp;: voile (Utilities/Veil).</strong></li>
                                                 <li><strong>Nouveauté&nbsp;: pop-ins (Components/Notifiers/Pop-ins).</strong></li>
                                                 <li>Évolution&nbsp;: liens&nbsp;/ Thème OF&nbsp;-> liens éditoriaux OF passent en rouge.</li>
-                                                <li>Évolution&nbsp;: titres&nbsp;/ Thème OF&nbsp;-> H3 non-éditoriaux passent de 18 à 20px.</li>
+                                                <li>Évolution&nbsp;: titres&nbsp;/ Thème OF&nbsp;-> H3 non éditoriaux passent de 18 à 20px.</li>
                                                 <li>Évolution&nbsp;: Classes d’aide&nbsp;-> ajout de la classe <code>.su-no-scroll</code>.</li>
                                                 <li>Évolution&nbsp;: Sources&nbsp;-> gestion d’un lien sur une source.</li>
                                             </ul>
@@ -294,8 +296,12 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <div class="table-cell"><span class="version">3.7</span></div>
-                                <div class="table-cell">Pagination.</div>
+                                <div class="table-cell"><span class="version">3.8</span></div>
+                                <div class="table-cell">Accordéon simple.</div>
+                            </li>
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">3.9</span></div>
+                                <div class="table-cell">Champ de recherche.</div>
                             </li>
                         </ul>
                     </section>
