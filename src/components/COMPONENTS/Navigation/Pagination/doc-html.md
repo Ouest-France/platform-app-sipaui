@@ -487,15 +487,6 @@ Quand on est sur la dernière page, **les 3 derniers «&nbsp;boutons&nbsp;» son
 	</nav>
 </div>
 
-
-<div style="color: red; background: rgba(255,0,0, .1); padding: 10px; border-radius: 10px; margin: 100px 0;">
-	<h2 style="margin-top: 0">Reste à faire</h2>
-	<ul>
-		<li>Décider de la 3.8 pour mettre ds le journal</li>
-		<li>Virer $font-import-use-local: de core/scss/_variables.scss</li>
-	</ul>
-</div>
-
 <div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
