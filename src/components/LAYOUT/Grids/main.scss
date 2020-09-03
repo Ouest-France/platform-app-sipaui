@@ -21,7 +21,7 @@
 @media screen and (min-width: $min-breakpoint-md) {
     .sipaui .su-container,
     .sipaui.su-container {
-        max-width: $min-breakpoint-md;
+        max-width: 768px;
         margin: 0 auto;
         padding: 0 30px;
     }
