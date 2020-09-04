@@ -33,6 +33,18 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
+                                                <li><strong>Nouveauté&nbsp;: Accordéon simple (Components/Navigation/Accordions).</strong></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">3.7.7</span></div>
+                                <div class="table-cell">
+                                    <ul>
+                                        <li>Composants&nbsp;:
+                                            <ul>
                                                 <li><strong>Nouveauté&nbsp;: Pagination (Components/Navigation/Pagination).</strong></li>
                                                 <li>Évolution&nbsp;: Icônes&nbsp;-> «&nbsp;fleche_bas&nbsp;» est devenu «&nbsp;chevron_bas&nbsp;». <strong>Par souci de rétrocompatibilité, «&nbsp;fleche_bas&nbsp;» est toujours supporté pour vous permettre d’avoir le temps de changer, mais cette référence sera supprimée dans une version future.</strong></li>
                                                 <li>Évolution&nbsp;: Icônes&nbsp;-> ajout des chevrons haut, gauche et droite.</li>
@@ -295,10 +307,6 @@
                         <h2>Roadmap</h2>
 
                         <ul class="su-not-list">
-                            <li class="table-row">
-                                <div class="table-cell"><span class="version">3.8</span></div>
-                                <div class="table-cell">Accordéon simple.</div>
-                            </li>
                             <li class="table-row">
                                 <div class="table-cell"><span class="version">3.9</span></div>
                                 <div class="table-cell">Champ de recherche.</div>
