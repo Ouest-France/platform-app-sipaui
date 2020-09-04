@@ -296,11 +296,11 @@
 
                         <ul class="su-not-list">
                             <li class="table-row">
-                                <!--div class="table-cell"><span class="version">3.8</span></div-->
+                                <div class="table-cell"><span class="version">3.8</span></div>
                                 <div class="table-cell">Accordéon simple.</div>
                             </li>
                             <li class="table-row">
-                                <!--div class="table-cell"><span class="version">3.9</span></div-->
+                                <div class="table-cell"><span class="version">3.9</span></div>
                                 <div class="table-cell">Champ de recherche.</div>
                             </li>
                         </ul>
