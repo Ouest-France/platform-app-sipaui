@@ -38,7 +38,8 @@
                     }
                 }
             }
-            > input[type=radio]:checked {
+            > input[type=radio]:checked,
+            > input[type=checkbox]:checked {
                 + label {
                     border: $border-accordion-radio-label-checked;
                     border-bottom: 0;
@@ -58,7 +59,8 @@
                 max-height: 0;
                 transition: max-height 0;
             }
-            &:not(.su-no-transition) input[type=radio]:checked ~ .su-accordion-content {
+            &:not(.su-no-transition) input[type=radio]:checked ~ .su-accordion-content,
+            &:not(.su-no-transition) input[type=checkbox]:checked ~ .su-accordion-content {
                 max-height: 1000px;
                 transition: max-height 2s ease-out;
             }
@@ -101,7 +103,8 @@
 .sipaui {
     .su-accordion {
         .su-accordion-item {
-            > input[type=radio] {
+            > input[type=radio],
+            > input[type=checkbox] {
                 display: none;
             }
             > label {
@@ -135,7 +138,8 @@
                     transition: transform 0;
                 }
             }
-            > input[type=radio]:checked {
+            > input[type=radio]:checked,
+            > input[type=checkbox]:checked {
                 + label {
                     &::after {
                         color: $color-main-7;
