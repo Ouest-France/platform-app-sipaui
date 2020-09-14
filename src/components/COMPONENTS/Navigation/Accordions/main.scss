@@ -6,96 +6,63 @@
 
 // ACCORDÉON GÉNÉRIQUE --------------------------------------------------------------------------------------/
 .sipaui {
-    .su-accordion-item {
+    [class*="su-accordion"] {
         position: relative;
-
-        > label {
-            height: auto; // pour contrer le height défini en standard sur les label SUI
-            cursor: pointer;
-            @include display-flex();
-            @include flex-direction(column);
-            @include justify-content(center, center);
-        }
-    }
-    .su-accordion-content {
-        height: 0;
-        padding: 0;
-        overflow: hidden;
-
-        *:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-// ACCORDÉON-RADIO ------------------------------------------------------------------------------------------/
-.sipaui {
-    .su-accordion-radio {
         min-width: 140px;
 
         .su-accordion-item {
-            margin-bottom: $margin-bottom-accordion-radio-item;
+            margin-bottom: $margin-bottom-accordion-item;
 
-            > input[type=radio] {
-                top: $top-accordion-radio-radio-button;
-                left: $left-accordion-radio-radio-button;
-            }
             > label {
-                min-height: $min-height-accordion-radio-label;
-                border: $border-accordion-radio-label;
-                border-bottom: 0;
-                background: $background-accordion-radio-label;
+                height: auto; // pour contrer le height défini en standard sur les label SUI
+                cursor: pointer;
+                @include display-flex();
+                @include flex-direction(column);
+                @include justify-content(center, center);
                 margin: 0;
-                font-size: $font-size-accordion-radio-label;
-                font-weight: $font-weight-accordion-radio-label;
-                padding: $padding-accordion-radio-label;
+                border: $border-accordion-label;
+                border-bottom: 0;
+                background: $background-accordion-label;
+                font-size: $font-size-accordion-label;
+                font-weight: $font-weight-accordion-label;
 
                 @include hover-active-focus {
-                    border: $border-accordion-radio-label-hover;
+                    border: $border-accordion-label-hover;
                     border-bottom: 0;
-                    background: $background-accordion-radio-label-hover;
-                }
-            }
-            input[type=radio]:checked + label {
-                border: $border-accordion-radio-label-checked;
-                border-bottom: 0;
-                background: $background-accordion-radio-label-checked;
-                cursor: default;
-            }
-        }
-        .su-accordion-content {
-            border: $border-accordion-radio-content;
-            border-top: 0;
-            background: $background-accordion-radio-content;
-            height: 0;
-            padding: 0 $padding-accordion-radio-content;
-        }
-        .su-accordion-item label {
-            @include hover-active-focus {
-                ~ .su-accordion-content {
-                    border: $border-accordion-radio-content-hover;
-                    border-top: 0;
-                    background: $background-accordion-radio-content-hover;
-                }
-            }
-        }
-        input[type=radio]:checked ~ .su-accordion-content {
-            border: $border-accordion-radio-content-checked;
-            border-top: 0;
-            background: $background-accordion-radio-content-checked;
-            height: auto;
-            padding: 0 $padding-accordion-radio-content $padding-accordion-radio-content;
-        }
-        // Transition
-        &:not(.su-no-transition) .su-accordion-content {
-            max-height: 0;
-            transition: max-height 0;
-        }
-        &:not(.su-no-transition) input[type=radio]:checked ~ .su-accordion-content {
-            max-height: 1000px;
-            transition: max-height 2s ease-out;
-        }
+                    background: $background-accordion-label-hover;
 
+                    ~ .su-accordion-content {
+                        border: $border-accordion-content-hover;
+                        border-top: 0;
+                        background: $background-accordion-content-hover;
+                    }
+                }
+            }
+            > input[type=radio]:checked {
+                + label {
+                    border: $border-accordion-radio-label-checked;
+                    border-bottom: 0;
+                    background: $background-accordion-radio-label-checked;
+                    cursor: default;
+                }
+                ~ .su-accordion-content {
+                    border: $border-accordion-radio-content-checked;
+                    border-top: 0;
+                    background: $background-accordion-radio-content-checked;
+                    height: auto;
+                    padding: 0 $padding-accordion-content $padding-accordion-content;
+                }
+            }
+            // Transition
+            &:not(.su-no-transition) .su-accordion-content {
+                max-height: 0;
+                transition: max-height 0;
+            }
+            &:not(.su-no-transition) input[type=radio]:checked ~ .su-accordion-content {
+                max-height: 1000px;
+                transition: max-height 2s ease-out;
+            }
+        }
         //Inactif
         &.su-disabled,
         .su-accordion-item.su-disabled {
@@ -103,16 +70,95 @@
                 cursor: default;
 
                 @include hover-active-focus {
-                    border: $border-accordion-radio-label;
+                    border: $border-accordion-label;
                     border-bottom: 0;
-                    background: $background-accordion-radio-label;
+                    background: $background-accordion-label;
 
                     ~ .su-accordion-content {
-                        border: $border-accordion-radio-content;
+                        border: $border-accordion-content;
                         border-top: 0;
-                        background: $background-accordion-radio-content;
+                        background: $background-accordion-content;
                     }
                 }
+            }
+        }
+    }
+    .su-accordion-content {
+        height: 0;
+        padding: 0 $padding-accordion-content;
+        overflow: hidden;
+        background: $background-accordion-content;
+        border: $border-accordion-content;
+        border-top: 0;
+
+        *:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// ACCORDÉON SIMPLE ------------------------------------------------------------------------------------------/
+.sipaui {
+    .su-accordion {
+        .su-accordion-item {
+            > input[type=radio] {
+                display: none;
+            }
+            > label {
+                min-height: $min-height-accordion-simple-label;
+                padding: $padding-accordion-simple-label;
+                position: relative;
+
+                &::after {
+                    content: "chevron_bas";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 7px;
+                    font-family: su-icons;
+                    font-size: 3.2rem;
+                    font-weight: $font-weight-normal;
+                    color: $color-main-5;
+                    font-style: normal;
+                    font-variant: normal;
+                    line-height: $line-height-xsmall;
+                    -webkit-font-feature-settings: "liga";
+                      -moz-font-feature-settings: "liga=1";
+                      -moz-font-feature-settings: "liga";
+                      -ms-font-feature-settings: "liga" 1;
+                      font-feature-settings: "liga";
+                      -webkit-font-variant-ligatures: discretionary-ligatures;
+                      font-variant-ligatures: discretionary-ligatures;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing:grayscale;
+                    transition: transform 0;
+                }
+            }
+            > input[type=radio]:checked {
+                + label {
+                    &::after {
+                        color: $color-main-7;
+                        transform: translateY(-50%) rotate(-180deg);
+                        transition: transform .3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ACCORDÉON-RADIO ------------------------------------------------------------------------------------------/
+.sipaui {
+    .su-accordion-radio {
+        .su-accordion-item {
+            > input[type=radio] {
+                top: $top-accordion-radio-radio-button;
+                left: $left-accordion-radio-radio-button;
+            }
+            > label {
+                min-height: $min-height-accordion-radio-label;
+                padding: $padding-accordion-radio-label;
             }
         }
     }
