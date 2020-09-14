@@ -13,7 +13,8 @@
         .su-accordion-item {
             margin-bottom: $margin-bottom-accordion-item;
 
-            > label {
+            > label,
+            > dt > label {
                 height: auto; // pour contrer le height défini en standard sur les label SUI
                 cursor: pointer;
                 @include display-flex();
@@ -25,12 +26,17 @@
                 background: $background-accordion-label;
                 font-size: $font-size-accordion-label;
                 font-weight: $font-weight-accordion-label;
+                font-style: normal;
 
                 @include hover-active-focus {
                     border: $border-accordion-label-hover;
                     border-bottom: 0;
                     background: $background-accordion-label-hover;
-
+                }
+            }
+            > label,
+            > dt {
+                @include hover-active-focus {
                     ~ .su-accordion-content {
                         border: $border-accordion-content-hover;
                         border-top: 0;
@@ -38,9 +44,10 @@
                     }
                 }
             }
-            > input[type=radio]:checked,
-            > input[type=checkbox]:checked {
-                + label {
+
+            > input:checked {
+                + label,
+                + dt > label {
                     border: $border-accordion-radio-label-checked;
                     border-bottom: 0;
                     background: $background-accordion-radio-label-checked;
@@ -59,8 +66,7 @@
                 max-height: 0;
                 transition: max-height 0;
             }
-            &:not(.su-no-transition) input[type=radio]:checked ~ .su-accordion-content,
-            &:not(.su-no-transition) input[type=checkbox]:checked ~ .su-accordion-content {
+            &:not(.su-no-transition) input:checked ~ .su-accordion-content {
                 max-height: 1000px;
                 transition: max-height 2s ease-out;
             }
@@ -68,7 +74,8 @@
         //Inactif
         &.su-disabled,
         .su-accordion-item.su-disabled {
-            label {
+            > label,
+            > dt > label {
                 cursor: default;
 
                 @include hover-active-focus {
@@ -103,11 +110,11 @@
 .sipaui {
     .su-accordion {
         .su-accordion-item {
-            > input[type=radio],
-            > input[type=checkbox] {
+            > input {
                 display: none;
             }
-            > label {
+            > label,
+            > dt > label {
                 min-height: $min-height-accordion-simple-label;
                 padding: $padding-accordion-simple-label;
                 position: relative;
@@ -138,9 +145,9 @@
                     transition: transform 0;
                 }
             }
-            > input[type=radio]:checked,
-            > input[type=checkbox]:checked {
-                + label {
+            > input:checked {
+                + label,
+                + dt > label {
                     &::after {
                         color: $color-main-7;
                         transform: translateY(-50%) rotate(-180deg);
