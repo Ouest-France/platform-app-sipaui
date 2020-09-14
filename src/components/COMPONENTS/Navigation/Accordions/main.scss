@@ -51,7 +51,6 @@
                     border: $border-accordion-radio-label-checked;
                     border-bottom: 0;
                     background: $background-accordion-radio-label-checked;
-                    cursor: default;
                 }
                 ~ .su-accordion-content {
                     border: $border-accordion-radio-content-checked;
@@ -59,6 +58,12 @@
                     background: $background-accordion-radio-content-checked;
                     height: auto;
                     padding: 0 $padding-accordion-content $padding-accordion-content;
+                }
+            }
+            > input[type=radio]:checked {
+                + label,
+                + dt > label {
+                    cursor: default;
                 }
             }
             // Transition
@@ -72,7 +77,7 @@
             }
         }
         //Inactif
-        &.su-disabled,
+        &.su-disabled .su-accordion-item,
         .su-accordion-item.su-disabled {
             > label,
             > dt > label {
@@ -82,7 +87,11 @@
                     border: $border-accordion-label;
                     border-bottom: 0;
                     background: $background-accordion-label;
-
+                }
+            }
+            > label,
+            > dt {
+                @include hover-active-focus {
                     ~ .su-accordion-content {
                         border: $border-accordion-content;
                         border-top: 0;
