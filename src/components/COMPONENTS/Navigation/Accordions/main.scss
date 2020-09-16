@@ -66,16 +66,17 @@
                     cursor: default;
                 }
             }
-            // Transition
-            &:not(.su-no-transition) .su-accordion-content {
-                max-height: 0;
-                transition: max-height 0;
-            }
-            &:not(.su-no-transition) input:checked ~ .su-accordion-content {
-                max-height: 1000px;
-                transition: max-height 2s ease-out;
-            }
         }
+        // Transition
+        &:not(.su-no-transition) .su-accordion-item .su-accordion-content {
+            max-height: 0;
+            transition: max-height 0;
+        }
+        &:not(.su-no-transition) .su-accordion-item input:checked ~ .su-accordion-content {
+            max-height: 1000px;
+            transition: max-height 2s ease-out;
+        }
+
         //Inactif
         &.su-disabled .su-accordion-item,
         .su-accordion-item.su-disabled {
