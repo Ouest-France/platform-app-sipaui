@@ -1,6 +1,6 @@
 # Accordions / Accordéons
 
-En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en propose un** pour l’instant&nbsp;: **l’accordéon-radio**. Il peut servir par exemple pour des sous-parties d’un formulaire, liées à un choix de l’utilisateur (comme le choix d’un moyen de paiement qui ouvre les paramètres liés à ce choix).
+En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en propose 2** pour l’instant&nbsp;: **l’accordéon simple et l’accordéon-radio**. Tous deux sont des accordéons qui se déplient verticalement.
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
@@ -8,9 +8,18 @@ En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en p
 
 ## Dépendances
 - classe `sipaui` sur un parent (par exemple le `<body>`),
-- composant **Icons** (pour l’accordéon simple).
 - composant **Radio-buttons** (pour l’accordéon-radio).
 
+</div>
+
+<div class="alerte">
+	<p><strong>Transition = hauteur maximale de contenu&nbsp;!</strong></p>
+	<p>Un effet de transition est appliqué aux élément de l’accordéon lors de l’ouverture. Pour le déclanchement de ces ouvertures, nous avons opté pour des accordéons <strong>sans javascript</strong>. Toutefois, à cause d’une limitation de CSS <em>(les transitions n’acceptent pas la valeur «&nbsp;auto&nbsp;»)</em>, il n’est <strong>pas possible</strong> d’avoir à la fois un <strong>effet de transition</strong> et une <strong>hauteur automatique en fonction du contenu</strong>. Nous avons donc choisi d’appliquer un <code>max-height</code> de <strong>1&nbsp;000px</strong>. Il <em>pourrait</em> arriver que votre contenu soit supérieur à cette hauteur (notamment sur mobile où la largeur est moindre) et dans ce cas vous aurez un bug d’affichage (le contenu sortant de cette hauteur sera masqué).</p>
+	<p>Par conséquent, si vous rencontrez ce problème, vous avez <strong>2 solutions</strong>&nbsp;:</p>
+	<ul>
+		<li>Désactiver la transition en ajoutant la classe <code>su-no-transition</code> à côté des classes <code>su-accordion</code> ou <code>su-accordion-radio</code>.</li>
+		<li>Rajouter du style dans vos propres CSS pour surcharger la hauteur max initiale (sélecteur à surcharger&nbsp;: <code>.sipaui [class*=su-accordion]:not(.su-no-transition) .su-accordion-item input:checked~.su-accordion-content</code>).</li>
+	</ul>
 </div>
 
 ## Accordéon simple
@@ -124,6 +133,8 @@ En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en p
 
 ## Accordéon-radio
 
+cet accordéon peut servir par exemple pour des sous-parties d’un formulaire, liées à un choix de l’utilisateur (comme le choix d’un moyen de paiement qui ouvre les paramètres liés à ce choix).
+
 ### Standard
 
 Comme pour les boutons-radio il ne peut y avoir qu’**une seule partie de l’accordéon active à la fois**. Chaque partie est donc **autofermante**.
@@ -194,18 +205,6 @@ Il y a une dernière classe utile&nbsp;: `su-no-transition`. Elle sert à désac
 			</div>
 		</div>
 	</div>
-</div>
-
-
-
-<div class="alerte">
-	<p><strong>Transition = hauteur maximale de contenu&nbsp;!</strong></p>
-	<p>Pour des questions de légèreté et de simplification d’intégration, nous avons opté pour des accordéons <strong>sans javascript</strong>. Toutefois, à cause d’une limitation de CSS <em>(les transitions n’acceptent pas la valeur «&nbsp;auto&nbsp;»)</em>, il n’est <strong>pas possible</strong> d’avoir à la fois un <strong>effet de transition</strong> et une <strong>hauteur automatique en fonction du contenu</strong>. Nous avons donc choisi d’appliquer un <code>max-height</code> de <strong>1000px</strong>. Il <em>pourrait</em> arriver que votre contenu soit supérieur à cette hauteur (notamment sur mobile où la largeur est moindre) et dans ce cas vous aurez un bug d’affichage (le contenu sortant de cette hauteur sera masqué).</p>
-	<p>Par conséquent, si vous rencontrez ce problème, vous avez <strong>2 solutions</strong>&nbsp;:</p>
-	<ul>
-		<li>Désactiver la transition en ajoutant la classe <code>su-no-transition</code> à côté de la classe <code>su-accordion-radio</code>.</li>
-		<li>Rajouter du style dans vos propres CSS pour surcharger la hauteur max initiale (sélecteur à surcharger&nbsp;: <code>.sipaui input[type=radio]:checked~.su-accordion-content</code>).</li>
-	</ul>
 </div>
 
 
