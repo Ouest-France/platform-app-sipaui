@@ -116,17 +116,17 @@
     }
 }
 
-// ACCORDÉON SIMPLE ------------------------------------------------------------------------------------------/
+// ACCORDÉON CHEVRON ------------------------------------------------------------------------------------------/
 .sipaui {
-    .su-accordion {
+    .su-accordion-chevron {
         .su-accordion-item {
             > input {
                 display: none;
             }
             > label,
             > dt > label {
-                min-height: $min-height-accordion-simple-label;
-                padding: $padding-accordion-simple-label;
+                min-height: $min-height-accordion-chevron-label;
+                padding: $padding-accordion-chevron-label;
                 position: relative;
 
                 &::after {

@@ -22,12 +22,12 @@ En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en p
 	</ul>
 </div>
 
-## Accordéon simple
+## Accordéon chevron
 
 ### Standard
 
 <div class="sipaui">
-	<div class="su-accordion">
+	<div class="su-accordion-chevron">
 		<div class="su-accordion-item">
 			<input type="checkbox" id="accordion-radio1" name="nom1">
 			<label for="accordion-radio1">Label court</label>
@@ -61,7 +61,7 @@ En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en p
 ### Standard autofermant
 
 <div class="sipaui">
-	<div class="su-accordion">
+	<div class="su-accordion-chevron">
 		<div class="su-accordion-item">
 			<input type="radio" id="accordion-radio4" name="nom2" checked>
 			<label for="accordion-radio4">Label court</label>
@@ -94,7 +94,7 @@ En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en p
 
 ### DL DT
 <div class="sipaui">
-	<dl class="su-accordion">
+	<dl class="su-accordion-chevron">
 		<div class="su-accordion-item">
 			<input type="checkbox" id="accordion-radio7" name="nom3">
 			<dt>
