@@ -12,9 +12,7 @@
 
 ### Spécifications
 
-- L’accordéon est **autofermant**&nbsp;: une seule des sections est ouverte à la fois. Quand une nouvelle section s’ouvre, la précédente section se ferme.
 - Lors de l’ouverture d’une page, aucune ou une seule des section peut être ouverte.
-- Les chevrons bas et haut sont disponibles dans le composant Icônes.
 - La distance entre chaque section est 10px.
 - Les sections sont composées de contenus regroupés et organisés tels que du texte standard, des champs de texte, etc.
 
@@ -27,13 +25,15 @@
 - Dans chaque section, le contenu déployé est à 10px sous le 1er texte visible.
 - Lors d’un nouveau tap sur la même section ouverte, le contenu déployé est masqué.
 - L'ensemble de la section fermée ou ouverte est cliquable.
+- Il peut être **autofermant** ou non. Autofermant&nbsp;: une seule des sections est ouverte à la fois. Quand une nouvelle section s’ouvre, la précédente section se ferme.
+- Les chevrons bas et haut sont disponibles dans le composant Icônes.
 
 
 Etat | Enabled | Select
 ------------ | ------------- |------------ |
 Illustration | ![accordion_list__enable-close](components/COMPONENTS/Navigation/Accordions/design/accordion_list__enable-close.png) | ![accordion_list__active](components/COMPONENTS/Navigation/Accordions/design/accordion_list__active.png)
-Container | Hauteur : minimum 42px et padding de 10px <br> Largeur : celle de son container parent moins le padding de celui-ci, 320px minimum <br> Fond : #FFFFFF <br> Contour : épaisseur 1px, #D4D4D4 | Hauteur : padding en haut 10px et padding en bas 20px <br> - <br> Fond : #FFFFFF <br> Contour : épaisseur 1px, #333333 | Opacité : 40 % | - <br> - <br> - <br> Contour : épaisseur 1px, #B40015 | Opacité : 40 % | Hauteur : 44px <br> Largeur : celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, #D4D4D4
-Chevron | Marge à gauche : 16px <br> Marge à droite : 10px <br> Centré verticalement  | - <br> - <br> Placement vertical identique à l’état enabled
+Container | Hauteur : minimum 42px et padding de 10px <br> Largeur : celle de son container parent moins le padding de celui-ci, 300px minimum avec un padding interne de 20px à gauche, 44px à droite. <br> Fond : #FFFFFF <br> Contour : épaisseur 1px, #D4D4D4 | Hauteur : padding en haut 10px et padding en bas 20px <br> - <br> Fond : #FFFFFF <br> Contour : épaisseur 1px, #333333 | Opacité : 40 % | - <br> - <br> - <br> Contour : épaisseur 1px, #B40015 | Opacité : 40 % | Hauteur : 44px <br> Largeur : celle de son container parent moins le padding de celui-ci, 140px minimum <br> Fond : #FAFAFA <br> Contour : épaisseur 1px, #D4D4D4
+Chevron | Largeur : 24px <br> Marge à gauche : 16px <br> Marge à droite : 10px <br> Centré verticalement <br> Couleur : #878787  | - <br> - <br> - <br> Placement vertical identique à l’état enabled <br> Couleur : #333333
 
 
 ## Accordéon-radio
@@ -45,6 +45,7 @@ Chevron | Marge à gauche : 16px <br> Marge à droite : 10px <br> Centré vertic
 - Dans chaque section, le contenu déployé est au moins à 22px sous le radio-bouton. Si le container est supérieur à 64px, il se situe à 10px sous le label.
 - Suite à un tap sur une section, il n'est plus possible qu'aucune des sections soit ouverte.
 - Les spécifications du radio button sont décrites dans son doc design.
+- Il est **forcément autofermant**.
 
 Etat | Enabled | Select
 ------------ | ------------- |------------ |
