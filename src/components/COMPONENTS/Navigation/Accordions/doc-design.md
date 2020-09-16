@@ -16,16 +16,16 @@
 - La distance entre chaque section est 10px.
 - Les sections sont composées de contenus regroupés et organisés tels que du texte standard, des champs de texte, etc.
 
-## Accordéon simple
+## Accordéon-chevron
 
-- Cet accordéon est le plus courant et il est reconnaissable grâce à son **chevron**.
+- Cet accordéon est le plus courant.
 
 ### Spécifications
 
 - Dans chaque section, le contenu déployé est à 10px sous le 1er texte visible.
-- Lors d’un nouveau tap sur la même section ouverte, le contenu déployé est masqué.
-- L'ensemble de la section fermée ou ouverte est cliquable.
-- Il peut être **autofermant** ou non. Autofermant&nbsp;: une seule des sections est ouverte à la fois. Quand une nouvelle section s’ouvre, la précédente section se ferme.
+- L'accordéon-chevron peut être **autofermant** ou non. Autofermant&nbsp;: une seule des sections est ouverte à la fois. Quand une nouvelle section s’ouvre, la précédente section se ferme.
+- Lors d’un nouveau tap sur une section ouverte d'un **accordéon-chevron standard**, le contenu déployé est masqué. Ce n'est pas le cas pour accordéon-chevron autofermant.
+- L'ensemble de la section fermée ou ouverte est cliquable. ????
 - Les chevrons bas et haut sont disponibles dans le composant Icônes.
 
 
