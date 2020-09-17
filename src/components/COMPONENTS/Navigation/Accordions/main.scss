@@ -56,7 +56,6 @@
                     border: $border-accordion-radio-content-checked;
                     border-top: 0;
                     background: $background-accordion-radio-content-checked;
-                    height: auto;
                     padding: 0 $padding-accordion-content $padding-accordion-content;
                 }
             }
@@ -66,15 +65,6 @@
                     cursor: default;
                 }
             }
-        }
-        // Transition
-        &:not(.su-no-transition) .su-accordion-item .su-accordion-content {
-            max-height: 0;
-            transition: max-height 0;
-        }
-        &:not(.su-no-transition) .su-accordion-item input:checked ~ .su-accordion-content {
-            max-height: 1000px;
-            transition: max-height 2s ease-out;
         }
 
         //Inactif
@@ -103,16 +93,33 @@
         }
     }
     .su-accordion-content {
-        height: 0;
         padding: 0 $padding-accordion-content;
         overflow: hidden;
         background: $background-accordion-content;
         border: $border-accordion-content;
         border-top: 0;
+        max-height: 0;
 
         *:last-child {
             margin-bottom: 0;
         }
+    }
+    // Transitions
+    // standard
+    &:not(.su-no-transition) .su-accordion-item input[type="checkbox"] ~ .su-accordion-content {
+        transition: max-height .2s, padding .2s;
+    }
+    &:not(.su-no-transition) .su-accordion-item input[type="checkbox"]:checked ~ .su-accordion-content {
+        max-height: 1000px;
+        transition: max-height 2s ease-out, padding .3s;
+    }
+    // autofermante
+    &:not(.su-no-transition) .su-accordion-item input[type="radio"] ~ .su-accordion-content {
+        transition: max-height 0;
+    }
+    &:not(.su-no-transition) .su-accordion-item input[type="radio"]:checked ~ .su-accordion-content {
+        max-height: 1000px;
+        transition: max-height 2s ease-out;
     }
 }
 
@@ -152,7 +159,7 @@
                       font-variant-ligatures: discretionary-ligatures;
                     -webkit-font-smoothing: antialiased;
                     -moz-osx-font-smoothing:grayscale;
-                    transition: transform 0;
+                    transition: transform .3s;
                 }
             }
             > input:checked {
@@ -173,7 +180,7 @@
 .sipaui {
     .su-accordion-radio {
         .su-accordion-item {
-            > input[type=radio] {
+            > input[type="radio"] {
                 top: $top-accordion-radio-radio-button;
                 left: $left-accordion-radio-radio-button;
             }
