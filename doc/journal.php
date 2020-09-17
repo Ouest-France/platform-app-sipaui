@@ -33,7 +33,7 @@
                                     <ul>
                                         <li>Composants&nbsp;:
                                             <ul>
-                                                <li><strong>Nouveauté&nbsp;: Accordéon simple (Components/Navigation/Accordions).</strong></li>
+                                                <li><strong>Nouveauté&nbsp;: Accordéon chevron (Components/Navigation/Accordions).</strong></li>
                                             </ul>
                                         </li>
                                     </ul>
