@@ -92,7 +92,10 @@ En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en p
 	</div>
 </div>
 
-### DL DT
+### Version «&nbsp;Definition-list&nbsp;»
+
+Une présentation par accordéon peut être utilisée pour présenter un glossaire ou une FAQ. Dans ce cas, il est important de respecter l’utilisation d’un balisage sémantique du DOM avec des `<dl>`, `<dt>` et `<dd>`. Voici le code nécessaire pour y parvenir.
+
 <div class="sipaui">
 	<dl class="su-accordion-chevron">
 		<div class="su-accordion-item">
