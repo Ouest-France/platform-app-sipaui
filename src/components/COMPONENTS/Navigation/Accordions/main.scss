@@ -27,6 +27,7 @@
                 font-size: $font-size-accordion-label;
                 font-weight: $font-weight-accordion-label;
                 font-style: normal;
+                color: $color-accordion-label;
 
                 @include hover-active-focus {
                     border: $border-accordion-label-hover;

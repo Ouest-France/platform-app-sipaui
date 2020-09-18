@@ -13,6 +13,7 @@ $border-accordion-label:                1px solid $color-main-4             !def
 $background-accordion-label:            $color-main-1                       !default;
 $font-size-accordion-label:             $font-size-medium1                  !default;
 $font-weight-accordion-label:           $font-weight-normal                 !default;
+$color-accordion-label:                 inherit                             !default;
 
 // CONTENT
 $border-accordion-content:              $border-accordion-label             !default;
