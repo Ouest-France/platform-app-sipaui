@@ -21,8 +21,10 @@
                 @include flex-direction(column);
                 @include justify-content(center, center);
                 margin: 0;
-                border: $border-accordion-label;
-                border-bottom: 0;
+                border-top: $border-top-accordion-label;
+                border-right: $border-side-accordion-label;
+                border-bottom: $border-bottom-accordion-label;
+                border-left: $border-side-accordion-label;
                 background: $background-accordion-label;
                 font-size: $font-size-accordion-label;
                 font-weight: $font-weight-accordion-label;
@@ -30,8 +32,10 @@
                 color: $color-accordion-label;
 
                 @include hover-active-focus {
-                    border: $border-accordion-label-hover;
-                    border-bottom: 0;
+                    border-top: $border-top-accordion-label-hover;
+                    border-right: $border-side-accordion-label-hover;
+                    border-bottom: $border-bottom-accordion-label-hover;
+                    border-left: $border-side-accordion-label-hover;
                     background: $background-accordion-label-hover;
                 }
             }
@@ -39,8 +43,10 @@
             > dt {
                 @include hover-active-focus {
                     ~ .su-accordion-content {
-                        border: $border-accordion-content-hover;
-                        border-top: 0;
+                        border-top: $border-top-accordion-content-hover;
+                        border-right: $border-side-accordion-content-hover;
+                        border-bottom: $border-bottom-accordion-content-hover;
+                        border-left: $border-side-accordion-content-hover;
                         background: $background-accordion-content-hover;
                     }
                 }
@@ -49,13 +55,17 @@
             > input:checked {
                 + label,
                 + dt > label {
-                    border: $border-accordion-radio-label-checked;
-                    border-bottom: 0;
+                    border-top: $border-top-accordion-label-checked;
+                    border-right: $border-side-accordion-label-checked;
+                    border-bottom: $border-bottom-accordion-label-checked;
+                    border-left: $border-side-accordion-label-checked;
                     background: $background-accordion-radio-label-checked;
                 }
                 ~ .su-accordion-content {
-                    border: $border-accordion-radio-content-checked;
-                    border-top: 0;
+                    border-top: $border-top-accordion-content-checked;
+                    border-right: $border-side-accordion-content-checked;
+                    border-bottom: $border-bottom-accordion-content-checked;
+                    border-left: $border-side-accordion-content-checked;
                     background: $background-accordion-radio-content-checked;
                     padding: 0 $padding-accordion-content $padding-accordion-content;
                 }
@@ -76,8 +86,10 @@
                 cursor: default;
 
                 @include hover-active-focus {
-                    border: $border-accordion-label;
-                    border-bottom: 0;
+                    border-top: $border-top-accordion-label;
+                    border-right: $border-side-accordion-label;
+                    border-bottom: $border-bottom-accordion-label;
+                    border-left: $border-side-accordion-label;
                     background: $background-accordion-label;
                 }
             }
@@ -85,8 +97,10 @@
             > dt {
                 @include hover-active-focus {
                     ~ .su-accordion-content {
-                        border: $border-accordion-content;
-                        border-top: 0;
+                        border-top: $border-top-accordion-content;
+                        border-right: $border-side-accordion-content;
+                        border-bottom: $border-bottom-accordion-content;
+                        border-left: $border-side-accordion-content;
                         background: $background-accordion-content;
                     }
                 }
@@ -97,8 +111,10 @@
         padding: 0 $padding-accordion-content;
         overflow: hidden;
         background: $background-accordion-content;
-        border: $border-accordion-content;
-        border-top: 0;
+        border-top: $border-top-accordion-content;
+        border-right: $border-side-accordion-content;
+        border-bottom: $border-bottom-accordion-content;
+        border-left: $border-side-accordion-content;
         max-height: 0;
 
         *:last-child {
