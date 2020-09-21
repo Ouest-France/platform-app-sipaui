@@ -5,10 +5,15 @@
 */
 
 // ACCORDION-BASE ------------------------------------------------------------------------------------------/
-// lABEL
-$border-accordion-label:                1px solid $color-main-3;
-$font-weight-accordion-label:           $font-weight-medium;
-$color-accordion-label:                 $color-secondary-1;
 
-// Hover
-$border-accordion-label-hover:          1px solid $color-secondary-1;
+// BORDURES
+$border-accordion:                                  1px solid $color-main-3;
+$border-accordion-hover:                            1px solid $color-secondary-1;
+
+// lABEL
+$font-weight-accordion-label:                       $font-weight-medium;
+$color-accordion-label:                             $color-secondary-1;
+
+
+// Tests ---------/
+

@@ -37,6 +37,7 @@
                     border-bottom: $border-bottom-accordion-label-hover;
                     border-left: $border-side-accordion-label-hover;
                     background: $background-accordion-label-hover;
+                    z-index: 1; // permet de passer au-dessus des autres qd les items se touchent avec une marge de -1px;
                 }
             }
             > label,
@@ -48,6 +49,7 @@
                         border-bottom: $border-bottom-accordion-content-hover;
                         border-left: $border-side-accordion-content-hover;
                         background: $background-accordion-content-hover;
+                        z-index: 1; // permet de passer au-dessus des autres qd les items se touchent avec une marge de -1px;
                     }
                 }
             }
@@ -60,6 +62,7 @@
                     border-bottom: $border-bottom-accordion-label-checked;
                     border-left: $border-side-accordion-label-checked;
                     background: $background-accordion-radio-label-checked;
+                    z-index: 1; // permet de passer au-dessus des autres qd les items se touchent avec une marge de -1px;
                 }
                 ~ .su-accordion-content {
                     border-top: $border-top-accordion-content-checked;
@@ -68,6 +71,7 @@
                     border-left: $border-side-accordion-content-checked;
                     background: $background-accordion-radio-content-checked;
                     padding: 0 $padding-accordion-content $padding-accordion-content;
+                    z-index: 1; // permet de passer au-dessus des autres qd les items se touchent avec une marge de -1px;
                 }
             }
             > input[type=radio]:checked {
