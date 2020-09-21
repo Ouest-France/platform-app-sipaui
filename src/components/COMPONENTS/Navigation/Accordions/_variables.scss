@@ -37,7 +37,7 @@ $border-bottom-accordion-label-hover:             null                          
     $background-accordion-label-hover:            null                                   !default;
 //--
 $border-top-accordion-content-hover:              null                                   !default;
-$border-side-accordion-content-hover:             null                                   !default;
+$border-side-accordion-content-hover:             $border-accordion-hover                !default;
 $border-bottom-accordion-content-hover:           $border-accordion-hover                !default;
     $background-accordion-content-hover:          $background-accordion-label-hover      !default;
 
