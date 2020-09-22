@@ -70,7 +70,7 @@
                     border-bottom: $border-bottom-accordion-content-checked;
                     border-left: $border-side-accordion-content-checked;
                     background: $background-accordion-radio-content-checked;
-                    padding: 0 $padding-accordion-content $padding-accordion-content;
+                    padding: $padding-accordion-content-checked;
                     z-index: 1; // permet de passer au-dessus des autres qd les items se touchent avec une marge de -1px;
                 }
             }
