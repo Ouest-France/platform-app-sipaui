@@ -15,17 +15,17 @@
 - Lors de l’ouverture d’une page, aucune ou une seule des sections peut être ouverte.
 - La distance entre chaque section est 10px.
 - Les sections sont composées de contenus regroupés et organisés tels que du texte standard, des champs de texte, etc.
+- Seule la zone du lavel est clicable.
 
-## Accordéon-chevron
+## Accordéon avec chevron
 
 - Cet accordéon est le plus courant.
 
 ### Spécifications
 
 - Dans chaque section, le contenu déployé est à 10px sous le 1er texte visible.
-- L'accordéon-chevron peut être **autofermant** ou non. Autofermant&nbsp;: une seule des sections est ouverte à la fois. Quand une nouvelle section s’ouvre, la précédente section se ferme.
-- Lors d’un nouveau tap sur une section ouverte d'un **accordéon-chevron standard**, le contenu déployé est masqué. Ce n'est pas le cas pour accordéon-chevron autofermant.
-- L'ensemble de la section fermée ou ouverte est cliquable. ????
+- L'accordéon avec chevron peut être **autofermant** ou non. Autofermant&nbsp;: une seule des sections est ouverte à la fois. Quand une nouvelle section s’ouvre, la précédente section se ferme.
+- Lors d’un nouveau tap sur une section ouverte d'un **accordéon avec chevron standard**, le contenu déployé est masqué. Ce n'est pas le cas pour accordéon avec chevron autofermant.
 - Les chevrons bas et haut sont disponibles dans le composant Icônes.
 
 
@@ -60,4 +60,4 @@ Radio button | Marge à gauche : 20px <br> Marge à droite : 10px <br> Centré v
 - Le contenu doit être organisé de manière à simplifier la navigation.
 - Cacher un contenu via un accordéon n’améliore pas nécessairement l’expérience utilisateur. Ils peuvent provoquer une désorientation. Aussi, le nombre d’interactions augmente.
 - N’utilisez pas d’accordéon lorsque tout le contenu doit être vu sur une même page. Si la page est extrêmement longue, l’accordéon n’est peut-être pas approprié. Une approche différente de la navigation et de la mise en page devra être pensée.
-- L'accordéon simple est très souvent utilisé dans les foires aux questions.
+- L'accordéon avec chevron est très souvent utilisé dans les foires aux questions.
