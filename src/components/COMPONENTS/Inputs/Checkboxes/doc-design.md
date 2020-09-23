@@ -60,9 +60,9 @@ Multiple désactivated / over | Multiple activated / focus | Multiple indetermin
  </div>
 
 
-- On ne peut mettre un lien dans un label de case à cocher. Il y aurait concurrence de clic entre ce lien et l’activation de la case sur le label.
-- Lorsqu’il y a plusieurs cases à cocher, les présenter dans un ordre logique, par exemple&nbsp;: les plus susceptibles d’être sélectionnées en premier.
-- Dans le cas de plus de deux case à cocher, elles sont disposées verticalement, une case à cocher par ligne.
+- On ne peut mettre pas un lien dans un label de case à cocher. Il y aurait concurrence de clics entre ce lien et l’activation de la case sur le label.
+- Lorsqu’il y a une suite de cases à cocher, les présenter dans un ordre alphabétique ou logique, par exemple&nbsp;: les plus susceptibles d’être sélectionnées en premier.
+- Dans le cas de plus de deux cases à cocher, elles sont disposées verticalement, une case à cocher par ligne.
 - Si les options s’excluent mutuellement, utilisez des radio boutons.
 - Lorsque l’utilisateur doit activer / désactiver une option ou pour exécuter une commande, un switch est recommandé.
 - Suite à un clic sur une case à cocher inactive, un message explique les raisons de cet état.
