@@ -12,7 +12,7 @@
 
 ### Spécifications
 
-- Lors de l’ouverture d’une page, aucune ou une seule des section peut être ouverte.
+- Lors de l’ouverture d’une page, aucune ou une seule des sections peut être ouverte.
 - La distance entre chaque section est 10px.
 - Les sections sont composées de contenus regroupés et organisés tels que du texte standard, des champs de texte, etc.
 
@@ -43,7 +43,7 @@ Chevron | Largeur : 24px <br> Marge à gauche : 16px <br> Marge à droite : 10px
 ### Spécifications
 
 - Dans chaque section, le contenu déployé est au moins à 22px sous le radio-bouton. Si le container est supérieur à 64px, il se situe à 10px sous le label.
-- Suite à un tap sur une section, il n'est plus possible qu'aucune des sections soit ouverte.
+- Suite à un tap sur une section, il n'est plus possible qu'aucune des sections ne soit ouverte.
 - Les spécifications du radio button sont décrites dans son doc design.
 - Il est **forcément autofermant**.
 

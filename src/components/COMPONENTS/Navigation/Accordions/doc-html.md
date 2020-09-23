@@ -14,7 +14,7 @@ En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en p
 
 <div class="alerte">
 	<p><strong>Transition = hauteur maximale de contenu&nbsp;!</strong></p>
-	<p>Un effet de transition est appliqué aux élément de l’accordéon lors de l’ouverture. Pour le déclanchement de ces ouvertures, nous avons opté pour des accordéons <strong>sans javascript</strong>. Toutefois, à cause d’une limitation de CSS <em>(les transitions n’acceptent pas la valeur «&nbsp;auto&nbsp;»)</em>, il n’est <strong>pas possible</strong> d’avoir à la fois un <strong>effet de transition</strong> et une <strong>hauteur automatique en fonction du contenu</strong>. Nous avons donc choisi d’appliquer un <code>max-height</code> de <strong>1&nbsp;000px</strong>. Il <em>pourrait</em> arriver que votre contenu soit supérieur à cette hauteur (notamment sur mobile où la largeur est moindre) et dans ce cas vous aurez un bug d’affichage (le contenu sortant de cette hauteur sera masqué).</p>
+	<p>Un effet de transition est appliqué aux éléments de l’accordéon lors de l’ouverture. Pour le déclenchement de ces ouvertures, nous avons opté pour des accordéons <strong>sans javascript</strong>. Toutefois, à cause d’une limitation de CSS <em>(les transitions n’acceptent pas la valeur «&nbsp;auto&nbsp;»)</em>, il n’est <strong>pas possible</strong> d’avoir à la fois un <strong>effet de transition</strong> et une <strong>hauteur automatique en fonction du contenu</strong>. Nous avons donc choisi d’appliquer un <code>max-height</code> de <strong>1&nbsp;000px</strong>. Il <em>pourrait</em> arriver que votre contenu soit supérieur à cette hauteur (notamment sur mobile où la largeur est moindre) et dans ce cas vous aurez un bug d’affichage (le contenu sortant de cette hauteur sera masqué).</p>
 	<p>Par conséquent, si vous rencontrez ce problème, vous avez <strong>2 solutions</strong>&nbsp;:</p>
 	<ul>
 		<li>Désactiver la transition en ajoutant la classe <code>su-no-transition</code> à côté des classes <code>su-accordion</code> ou <code>su-accordion-radio</code>.</li>
@@ -24,7 +24,7 @@ En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en p
 
 ## Accordéon chevron
 
-L’accordéon chevron est le type d’accordéon le plus commun. Il peut servir pour des glossaire, des FAQ… En fonction des cas, il peut être **autofermant** ou non. Par ailleurs, une version spéciale «&nbsp;Definition-list&nbsp;» existe avec les balises `<dl>`, `<dd>` et `<dt>` pour avoir du code sémantique quand nécessaire (dans le glossaire…).
+L’accordéon chevron est le type d’accordéon le plus commun. Il peut servir pour des glossaires, des FAQ… En fonction des cas, il peut être **autofermant** ou non. Par ailleurs, une version spéciale «&nbsp;Definition-list&nbsp;» existe avec les balises `<dl>`, `<dd>` et `<dt>` pour avoir du code sémantique quand nécessaire (dans le glossaire…).
 
 ### Standard
 
@@ -32,7 +32,7 @@ Cet accordéon se construit avec ces **3 classes**&nbsp;: `su-accordion-chevron`
 
 Il y a une dernière classe utile&nbsp;: `su-no-transition`. Elle sert à **désactiver l’effet de transition sur les volets de l’accordéon**. Pour en savoir plus, cf. l’encart *Transition = hauteur maximale de contenu&nbsp;!* en haut de cet article.
 
-Le fonctionnement de l’ouverture / fermeture s’appuie sur la présence d’une **case-à-cocher qui est masquée et d’un label**. Quand la case est cochée, le contenu est affiché et quand elle est décochée, le contenu est masqué.
+Le fonctionnement de l’ouverture / fermeture s’appuie sur la présence d’une **case à cocher qui est masquée et d’un label**. Quand la case est cochée, le contenu est affiché et quand elle est décochée, le contenu est masqué.
 
 ``` html
 <div class="su-accordion-chevron">
@@ -100,7 +100,7 @@ Le fonctionnement de l’ouverture / fermeture s’appuie sur la présence d’u
 
 ### Standard autofermant
 
-Ici, c'est exactement la même chose que le cas standard ci-dessus, sauf que **les cases-à-cocher sont remplacées par des boutons-radio**.
+Ici, c'est exactement la même chose que le cas standard ci-dessus, sauf que **les cases à cocher sont remplacées par des boutons-radio**.
 
 ``` html
 <div class="su-accordion-chevron">
@@ -437,10 +437,10 @@ Pour rendre uniquement un volet de l’accordéon-radio inactif, la méthode est
 <div id="liste-classes" class="control-titres">
 
 ## Liste des classes disponibles
-- `su-accordion`
+- `su-accordion-chevron`
+- `su-accordion-radio`
 - `su-accordion-item`
 - `su-accordion-content`
-- `su-accordion-radio`
 - `su-no-transition`
 
 </div>
