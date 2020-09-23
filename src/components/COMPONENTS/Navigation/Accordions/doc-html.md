@@ -1,6 +1,6 @@
 # Accordions / Accordéons
 
-En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en propose 2** pour l’instant&nbsp;: **l’accordéon simple et l’accordéon-radio**. Tous deux sont des accordéons qui se déplient verticalement.
+En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en propose 2** pour l’instant&nbsp;: **l’accordéon avec chevron et l’accordéon-radio**. Tous deux sont des accordéons qui se déplient verticalement.
 
 <a href="#liste-classes" target="_self" class="link-button">Liste des classes disponibles</a>
 
@@ -22,9 +22,9 @@ En interface web, il peut exister plusieurs types d’accordéons. **SipaUI en p
 	</ul>
 </div>
 
-## Accordéon chevron
+## Accordéon avec chevron
 
-L’accordéon chevron est le type d’accordéon le plus commun. Il peut servir pour des glossaires, des FAQ… En fonction des cas, il peut être **autofermant** ou non. Par ailleurs, une version spéciale «&nbsp;Definition-list&nbsp;» existe avec les balises `<dl>`, `<dd>` et `<dt>` pour avoir du code sémantique quand nécessaire (dans le glossaire…).
+L’accordéon avec chevron est le type d’accordéon le plus commun. Il peut servir pour des glossaires, des FAQ… En fonction des cas, il peut être **autofermant** ou non. Par ailleurs, une version spéciale «&nbsp;Definition-list&nbsp;» existe avec les balises `<dl>`, `<dd>` et `<dt>` pour avoir du code sémantique quand nécessaire (dans le glossaire…).
 
 ### Standard
 
@@ -252,7 +252,7 @@ L’accordéon-radio est un type plus particulier. Il peut servir, par exemple, 
 
 ### Standard
 
-Comme l’*accordéon chevron* cet accordéon se construit avec **3 classes**. Ce sont d’ailleurs **les mêmes à l’exception de la première**, `su-accordion-radio` qui remplace `su-accordion-chevron`. Il a aussi besoin du composant **radio-buttons** qui sert à activer l’effet d’accordéon et est affiché pour renforcer visuellement la logique de fonctionnement.
+Comme l’*accordéon avec chevron* cet accordéon se construit avec **3 classes**. Ce sont d’ailleurs **les mêmes à l’exception de la première**, `su-accordion-radio` qui remplace `su-accordion-chevron`. Il a aussi besoin du composant **radio-buttons** qui sert à activer l’effet d’accordéon et est affiché pour renforcer visuellement la logique de fonctionnement.
 
 Lui aussi peut utiliser la classe `su-no-transition` pour **désactiver l’effet de transition sur les volets de l’accordéon**. Pour en savoir plus, cf. l’encart *Transition = hauteur maximale de contenu&nbsp;!* en haut de cet article.
 
