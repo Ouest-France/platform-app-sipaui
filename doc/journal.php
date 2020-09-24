@@ -311,6 +311,10 @@
                                 <div class="table-cell"><span class="version">3.9</span></div>
                                 <div class="table-cell">Champ de recherche.</div>
                             </li>
+                            <li class="table-row">
+                                <div class="table-cell"><span class="version">3.10</span></div>
+                                <div class="table-cell">Citations.</div>
+                            </li>
                         </ul>
                     </section>
 
