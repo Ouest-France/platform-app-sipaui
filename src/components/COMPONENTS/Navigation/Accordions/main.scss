@@ -25,6 +25,7 @@
                 border-right: $border-side-accordion-label;
                 border-bottom: $border-bottom-accordion-label;
                 border-left: $border-side-accordion-label;
+                border-radius: $border-radius-accordion $border-radius-accordion 0 0;
                 background: $background-accordion-label;
                 font-size: $font-size-accordion-label;
                 font-weight: $font-weight-accordion-label;
@@ -112,14 +113,15 @@
         }
     }
     .su-accordion-content {
-        padding: 0 $padding-accordion-content;
+        padding: $padding-accordion-content;
         overflow: hidden;
         background: $background-accordion-content;
         border-top: $border-top-accordion-content;
         border-right: $border-side-accordion-content;
         border-bottom: $border-bottom-accordion-content;
+        border-radius: 0 0 $border-radius-accordion $border-radius-accordion;
         border-left: $border-side-accordion-content;
-        max-height: 0;
+        max-height: $border-radius-accordion;
 
         *:last-child {
             margin-bottom: 0;
@@ -161,7 +163,7 @@
                     content: "chevron_bas";
                     display: block;
                     position: absolute;
-                    top: 50%;
+                    top: calc(50% + #{$border-radius-accordion}/2);
                     transform: translateY(-50%);
                     right: 7px;
                     font-family: su-icons;
