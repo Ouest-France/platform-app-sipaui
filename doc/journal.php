@@ -34,6 +34,7 @@
                                         <li>Composants&nbsp;:
                                             <ul>
                                                 <li><strong>Nouveauté&nbsp;: Accordéon avec chevron (Components/Navigation/Accordions).</strong></li>
+                                                <li>Évolution&nbsp;: Icônes&nbsp;-> le sélecteur CSS passe de <code>[class^="su-icon"], [class*=" su-icon"]</code> à <code>.su-icon</code> pour être moins lourd et surtout permettre le <code>@extend</code>.</li>
                                             </ul>
                                         </li>
                                     </ul>
