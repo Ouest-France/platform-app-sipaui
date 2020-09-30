@@ -22,7 +22,7 @@
     }
 }
 
-[class^="su-icon"], [class*=" su-icon"] {
+.su-icon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'su-icons' !important;
   speak: none;
@@ -48,10 +48,10 @@
 }
 
 /* Gestion de la taille par defaut */
-[class*="su-icon"] {
+.su-icon {
     font-size: 2.4rem;
 }
 /* Gestion de la taille mini */
-[class*="su-icon-mini"] {
+.su-icon-mini {
     font-size: 1.4rem;
 }
