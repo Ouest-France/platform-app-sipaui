@@ -3,12 +3,16 @@
 */
 @import "variables";
 
-
 // ACCORDÉON GÉNÉRIQUE --------------------------------------------------------------------------------------/
 .sipaui {
     [class*="su-accordion"] {
         position: relative;
         min-width: 140px;
+        margin: 0;
+        
+        dd {
+            margin: 0;
+        }
 
         .su-accordion-item {
             margin-bottom: $margin-bottom-accordion-item;
