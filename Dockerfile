@@ -1,4 +1,4 @@
-FROM nginx:1.11
+FROM nginx:stable
 
 # Configuration nginx
 COPY ./dist/ /usr/share/nginx/html
